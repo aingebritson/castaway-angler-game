@@ -8,12 +8,12 @@
     "lengthCm": {
       "min": 12,
       "common": 30,
-      "max": 76,
+      "max": 89,
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0151,
-      "b": 2.99
+      "a": 0.01514,
+      "b": 2.96
     },
     "fight": {
       "archetype": "diver",
@@ -33,30 +33,37 @@
     "description": "The mangrove snapper of every dock and creek mouth: a wary grey-bronze fish that hangs in the shade of pilings and roots and studies a bait before taking it. Small ones are everywhere inshore. The big ones move out to the reef, feed after dark, and cut a line on the nearest piling given half a chance.",
     "facts": [
       "Young gray snapper grow up in mangroves and seagrass, then move to reefs as adults.",
-      "It feeds mostly at night on shrimp, crabs and small fish.",
-      "A dark stripe through the eye appears when the fish is excited or feeding."
+      "Adults feed mostly at night on shrimp, crabs and small fish; the young feed by day.",
+      "Young ones have a dark stripe from the snout through the eye."
     ],
     "visualNotes": "Slender snapper, grey to bronze with reddish tinge; rows of small rust spots along the scale rows; dark stripe from snout through the eye in young fish; two large canine teeth; rounded anal fin; shallow-forked tail.",
     "sources": [
       {
         "title": "FishBase: Lutjanus griseus",
         "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b: FishBase Bayesian TL estimate; 8.9 kg at 89 cm, +6% against the IGFA record"
       },
       {
         "title": "IUCN Red List: Lutjanus griseus",
         "url": "https://www.iucnredlist.org/search?query=Lutjanus%20griseus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Lutjanus griseus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-griseus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/gray-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: juveniles settle in seagrass and mangroves and move to reefs; adults feed at night; spawns April to November around the full moon"
+      },
+      {
+        "title": "North Carolina Division of Marine Fisheries: state record fish certified (2018)",
+        "url": "https://www.deq.nc.gov/news/press-releases/2018/08/24/division-marine-fisheries-certifies-two-state-record-fish",
+        "accessed": "2026-11-17",
+        "supports": "IGFA all-tackle gray snapper record of 18 lb 10 oz, Louisiana 2015 (search excerpt); FishBase's 20 kg maximum weight is implausible beside it"
       }
-    ]
+    ],
+    "recordNote": "IGFA all-tackle record is 18 lb 10 oz (about 8.5 kg), from Louisiana in 2015."
   },
   {
     "id": "haemulon-plumierii",
@@ -71,8 +78,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0166,
-      "b": 3.0
+      "a": 0.0152,
+      "b": 3.02
     },
     "fight": {
       "archetype": "diver",
@@ -92,7 +99,7 @@
     "description": "A silver-grey grunt with narrow blue stripes on its head and a mouth lined in bright red. It crowds docks and patch reefs by day and spreads over grass beds at night. Pairs sometimes face off mouth to mouth, pushing. It is the fish in the pan at half the kitchens on the coast.",
     "facts": [
       "Two white grunts will 'kiss', pushing with open mouths, in a contest over territory.",
-      "The inside of the mouth is bright red.",
+      "The inside of the mouth is red.",
       "It grunts by grinding teeth in its throat."
     ],
     "visualNotes": "Silver-grey body with bluish stripes on the head and a chequered pattern of pale scale centres on the flank; red mouth lining; dusky tail and soft dorsal; forked tail.",
@@ -100,20 +107,32 @@
       {
         "title": "FishBase: Haemulon plumierii",
         "url": "https://www.fishbase.se/summary/Haemulon-plumierii.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Haemulon plumierii",
         "url": "https://www.iucnredlist.org/search?query=Haemulon%20plumierii",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Haemulon plumierii",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/haemulon-plumierii/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/white-grunt/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: schools by day, feeds off the reef at night; kissing displays; red mouth; grunts with pharyngeal teeth"
+      },
+      {
+        "title": "FishBase length-weight table: Haemulon plumierii",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1140&GenusName=Haemulon&SpeciesName=plumierii&fc=327",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from North and South Carolina (10-50 cm, n=226); 2.45 kg at 53 cm. FishBase's 4.4 kg maximum weight is implausible: every published set gives 1.9 to 2.5 kg at 53 cm, and the North Carolina state record is 5 lb 3 oz (2.4 kg)"
+      },
+      {
+        "title": "North Carolina state saltwater records",
+        "url": "https://deq.nc.gov/about/divisions/marine-fisheries/coastal-fishing-information/nc-saltwater-fishing-tournament/records",
+        "accessed": "2026-11-17",
+        "supports": "state records: white grunt 5 lb 3 oz (2024), queen triggerfish 10 lb 11 oz (2012), hogfish 21 lb 6 oz (2005, marked as a world all-tackle record) (search excerpt)"
       }
     ]
   },
@@ -130,10 +149,10 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0063,
-      "b": 3.07
+      "a": 0.00724,
+      "b": 3.03
     },
-    "recordNote": "IGFA all-tackle record is about 24 kg.",
+    "recordNote": "The hook-and-line record FishBase cites is 53 lb 10 oz (about 24 kg), from Costa Rica.",
     "fight": {
       "archetype": "jumper",
       "strengthFactor": 1.6,
@@ -152,34 +171,28 @@
     "description": "A long, golden-silver ambush hunter with a jutting lower jaw and a single black line drawn down its side. Snook lie along mangrove edges, under docks and in the shadow line of harbour lights, facing the current. The strike is a loud pop at the surface, followed by a jump and a run for the roots.",
     "facts": [
       "The black lateral line is unmistakable, and gives it the nickname 'linesider'.",
-      "Most snook begin life male and some become female as they grow.",
-      "It cannot survive cold water, which limits how far north it lives."
+      "Snook begin life male, and many become female as they grow.",
+      "Water colder than about 6 to 12 °C kills adults, which limits how far north it lives."
     ],
     "visualNotes": "Elongate golden-silver body; sloping forehead and long protruding lower jaw; bold black lateral line running into the tail; two separate dorsal fins; yellowish pelvic fins; forked tail.",
     "sources": [
       {
         "title": "FishBase: Centropomus undecimalis",
         "url": "https://www.fishbase.se/summary/Centropomus-undecimalis.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b: FishBase Bayesian TL estimate; 23 kg at 140 cm, -5% against the 24.3 kg record"
       },
       {
         "title": "IUCN Red List: Centropomus undecimalis",
         "url": "https://www.iucnredlist.org/search?query=Centropomus%20undecimalis",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Centropomus undecimalis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/centropomus-undecimalis/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
-      },
-      {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/common-snook/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: protandric; cold limits of 6 to 12 °C for adults; black lateral line; hook-and-line record 53 lb 10 oz"
       }
     ]
   },
@@ -190,13 +203,13 @@
     "kind": "fish",
     "family": "Carangidae",
     "lengthCm": {
-      "min": 20,
-      "common": 55,
-      "max": 115,
-      "measure": "FL"
+      "min": 22,
+      "common": 62,
+      "max": 124,
+      "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.019,
+      "a": 0.01622,
       "b": 2.96
     },
     "fight": {
@@ -214,9 +227,9 @@
       "releaseOnly": false
     },
     "baseValue": 12,
-    "description": "A blunt-headed, brass-flanked bully that hunts in packs and herds bait against sea walls and into the corners of the harbour. A jack hits anything moving and then simply refuses to stop pulling, turning broadside and circling under the rod. Poor eating, by common agreement, and a first-rate fight.",
+    "description": "A blunt-headed, brass-flanked bully that hunts in fast schools and chases bait into the corners of the harbour. A jack hits anything moving and then simply refuses to stop pulling, turning broadside and circling under the rod. Poor eating, by common agreement, and a first-rate fight.",
     "facts": [
-      "Packs of jacks drive baitfish against shorelines and sea walls to trap them.",
+      "It hunts by day, usually in fast-moving schools; the biggest often travel alone.",
       "A black spot on the gill cover and another on the pectoral fin identify it.",
       "Hooked jacks often make a croaking sound."
     ],
@@ -225,20 +238,20 @@
       {
         "title": "FishBase: Caranx hippos",
         "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b: FishBase Bayesian TL estimate, now on a TL measure; 25.5 kg at 124 cm, -20% against FishBase's 32 kg maximum weight. The earlier values applied an unsourced set to fork length."
       },
       {
         "title": "IUCN Red List: Caranx hippos",
         "url": "https://www.iucnredlist.org/search?query=Caranx%20hippos",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Caranx hippos",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/caranx-hippos/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/crevalle-jack/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: diurnal predator in schools; spawns March to September; black pectoral spot; croaks when caught"
       }
     ]
   },
@@ -251,12 +264,12 @@
     "lengthCm": {
       "min": 25,
       "common": 55,
-      "max": 110,
+      "max": 122,
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0107,
-      "b": 3.11
+      "a": 0.01148,
+      "b": 3.05
     },
     "fight": {
       "archetype": "bulldog",
@@ -271,13 +284,13 @@
     "conservation": {
       "iucn": "CR",
       "releaseOnly": true,
-      "note": "Critically Endangered. Fishing its winter spawning aggregations collapsed the species across the Caribbean; most countries now protect it."
+      "note": "Critically Endangered. Belize closes the fishery from December to March and allows only fish of 51 to 76 cm; the game treats it as release-only. Fishing its spawning aggregations collapsed the species across the Caribbean."
     },
     "baseValue": 0,
     "description": "A big, curious, pale grouper banded in brown, with a black saddle on the tail stalk. It was once the commonest large fish on Caribbean reefs. Every winter, around the full moon, Nassau grouper travel to the same few reef points to spawn in their thousands, which made them very easy to catch.",
     "facts": [
-      "It spawns in huge gatherings at fixed sites around winter full moons.",
-      "It can change its colour pattern in seconds, from pale to nearly black.",
+      "It spawns in huge gatherings at fixed sites around the full moons of November to February.",
+      "It can change its colour pattern within minutes, from almost white to dark brown.",
       "Whole spawning aggregations have been fished out and have never returned."
     ],
     "visualNotes": "Robust pale tan grouper with five irregular dark brown bars; a black saddle on top of the tail stalk; dark 'tuning fork' mark on the forehead; small black dots around the eye; rounded tail.",
@@ -285,20 +298,32 @@
       {
         "title": "FishBase: Epinephelus striatus",
         "url": "https://www.fishbase.se/summary/Epinephelus-striatus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b: FishBase Bayesian TL estimate; 26.5 kg at 122 cm, +6% against FishBase's 25 kg maximum weight. The Jamaica set used before gives +33% at 122 cm."
       },
       {
         "title": "IUCN Red List: Epinephelus striatus",
         "url": "https://www.iucnredlist.org/search?query=Epinephelus%20striatus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "NOAA Fisheries: Nassau grouper",
         "url": "https://www.fisheries.noaa.gov/species/nassau-grouper",
-        "accessed": "pending-review",
-        "supports": "protected status, spawning aggregations"
+        "accessed": "2026-11-17",
+        "supports": "ESA threatened; aggregations November to February around the full moon; colour change within minutes; up to 4 ft and 55 lb"
+      },
+      {
+        "title": "Channel 5 Belize: Nassau grouper critically endangered; fish has protection in Belize",
+        "url": "https://archive.channel5belize.com/?p=197194",
+        "accessed": "2026-11-17",
+        "supports": "Belize closed season 1 December to 31 March and a 20 to 30 inch slot (search excerpt)"
+      },
+      {
+        "title": "Mongabay (2025): important Nassau grouper spawning site in Belize near collapse",
+        "url": "https://news.mongabay.com/2025/11/study-finds-important-nassau-grouper-spawning-site-in-belize-near-collapse/",
+        "accessed": "2026-11-17",
+        "supports": "aggregations already lost at other Belize sites (search excerpt)"
       }
     ]
   },
@@ -315,10 +340,10 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0105,
-      "b": 3.08
+      "a": 0.0104,
+      "b": 3.09
     },
-    "recordNote": "IGFA all-tackle record is about 56 kg.",
+    "recordNote": "IGFA all-tackle record is 124 lb (about 56 kg), from Texas in 2003.",
     "fight": {
       "archetype": "bulldog",
       "strengthFactor": 1.7,
@@ -338,33 +363,39 @@
     "facts": [
       "It swallows prey whole by opening its mouth so fast that the fish is sucked in.",
       "Black grouper start life female and the largest become male.",
-      "Once in its hole it wedges itself by flaring its gill covers."
+      "Black grouper spawn from November to May."
     ],
     "visualNotes": "Heavy elongate grouper; olive-grey with rows of dark rectangular blotches and brassy spots; squared-off tail with a black margin; fins edged in black; large mouth with a protruding lower jaw.",
     "sources": [
       {
         "title": "FishBase: Mycteroperca bonaci",
         "url": "https://www.fishbase.se/summary/Mycteroperca-bonaci.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Mycteroperca bonaci",
         "url": "https://www.iucnredlist.org/search?query=Mycteroperca%20bonaci",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Mycteroperca bonaci",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mycteroperca-bonaci/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/black-grouper/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: protogynous; spawns November to May; reef and rocky bottom 6 to 33 m"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Mycteroperca bonaci",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1209&GenusName=Mycteroperca&SpeciesName=bonaci&fc=798",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from Campeche Bank, Mexico (25-132 cm, n=572); 55 kg at 150 cm, -2% against the IGFA record. FishBase's 100 kg maximum weight is implausible beside it"
+      },
+      {
+        "title": "Sport Fishing: 10 largest world-record groupers",
+        "url": "https://sportfishingmag.com/10-heaviest-world-record-groupers",
+        "accessed": "2026-11-17",
+        "supports": "IGFA all-tackle black grouper record of 124 lb, Texas, 2003 (search excerpt)"
       }
     ]
   },
@@ -404,29 +435,42 @@
     "facts": [
       "It roots in sand with its snout like a pig, which is where the name comes from.",
       "All hogfish begin as females; large ones become males and guard a harem.",
-      "It shifts colour from pale to mottled red-brown to match the bottom."
+      "Its colour varies with age, sex and habitat, from pale to mottled red-brown."
     ],
     "visualNotes": "Deep, compressed body with a long sloping snout; first three dorsal spines elongated into streamers; pearly white to reddish-brown, males with a dark maroon band over the top of the head; dark spot at the rear base of the dorsal; lunate tail with long tips.",
     "sources": [
       {
         "title": "FishBase: Lachnolaimus maximus",
         "url": "https://www.fishbase.se/summary/Lachnolaimus-maximus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Lachnolaimus maximus",
         "url": "https://www.iucnredlist.org/search?query=Lachnolaimus%20maximus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Lachnolaimus maximus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lachnolaimus-maximus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/hogfish/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: roots with a pig-like snout; protogynous harem; first three dorsal spines elongate; forages by day"
+      },
+      {
+        "title": "FishBase length-weight table: Lachnolaimus maximus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1071&GenusName=Lachnolaimus&SpeciesName=maximus&fc=362",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: FL set from Cuba (12-62 cm, n=196); 9.75 kg at 80 cm FL, within 1% of the 21 lb 6 oz record"
+      },
+      {
+        "title": "North Carolina state saltwater records",
+        "url": "https://deq.nc.gov/about/divisions/marine-fisheries/coastal-fishing-information/nc-saltwater-fishing-tournament/records",
+        "accessed": "2026-11-17",
+        "supports": "state records: white grunt 5 lb 3 oz (2024), queen triggerfish 10 lb 11 oz (2012), hogfish 21 lb 6 oz (2005, marked as a world all-tackle record) (search excerpt)"
       }
-    ]
+    ],
+    "recordNote": "The world all-tackle record is 21 lb 6 oz (about 9.7 kg), from North Carolina in 2005."
   },
   {
     "id": "balistes-vetula",
@@ -441,8 +485,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0306,
-      "b": 2.92
+      "a": 0.02818,
+      "b": 2.9
     },
     "fight": {
       "archetype": "bulldog",
@@ -461,29 +505,29 @@
     "baseValue": 20,
     "description": "A plate-shaped fish in blue, green and yellow, with electric blue lines across its face and long trailing fin tips. It blows jets of water at sea urchins to flip them over and bites through the soft underside. The mouth is tiny and hard, so it takes a small hook and a patient strike.",
     "facts": [
-      "It flips sea urchins by blowing water at them, then attacks the unprotected underside.",
-      "It locks its first dorsal spine upright with the second, like a trigger, to wedge into holes.",
-      "Its small beak-like mouth has teeth strong enough to crush shells."
+      "It overturns sea urchins with jets of water to reach the short spines underneath.",
+      "Its first dorsal spine locks upright and only the second spine releases it, like a trigger.",
+      "Its small mouth has chisel-like teeth that cut holes in hard-shelled prey."
     ],
     "visualNotes": "Deep, laterally compressed oval body; yellow-green to blue-grey; two bright blue curved lines from snout to pectoral fin; dark lines radiating from the eye; trailing filaments on the dorsal fin and both tail lobes; small terminal mouth.",
     "sources": [
       {
         "title": "FishBase: Balistes vetula",
         "url": "https://www.fishbase.se/summary/Balistes-vetula.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b: FishBase Bayesian TL estimate; 4.0 kg at 60 cm, -25% against FishBase's 5.4 kg maximum weight"
       },
       {
         "title": "IUCN Red List: Balistes vetula",
         "url": "https://www.iucnredlist.org/search?query=Balistes%20vetula",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Balistes vetula",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/balistes-vetula/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/queen-triggerfish/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: feeds by day and wedges into crevices at night; overturns urchins with water currents; first spine locks, second releases"
       }
     ]
   },
@@ -496,14 +540,14 @@
     "lengthCm": {
       "min": 25,
       "common": 45,
-      "max": 86,
+      "max": 90,
       "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.01,
-      "b": 3.0
+      "a": 0.0202,
+      "b": 2.8
     },
-    "recordNote": "IGFA all-tackle record is nearly 8 kg.",
+    "recordNote": "FishBase and the IGFA record both put the largest cero at about 7.8 kg.",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 1.5,
@@ -521,7 +565,7 @@
     "baseValue": 30,
     "description": "The reef's own mackerel: a slim silver sprinter marked with a bronze stripe and rows of yellow dashes. Cero hunt alone or in small groups along the reef edge, slashing through schools of bait at first light. They hit a flashing lure at full speed and can bite clean through a light line.",
     "facts": [
-      "Unlike other mackerels it stays close to coral reefs rather than open water.",
+      "It is most common in clear water around coral reefs, often alone.",
       "A bronze stripe with yellow spots above and below separates it from king and Spanish mackerel.",
       "Its teeth are flat and sharp as blades."
     ],
@@ -530,26 +574,26 @@
       {
         "title": "FishBase: Scomberomorus regalis",
         "url": "https://www.fishbase.se/summary/Scomberomorus-regalis.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Scomberomorus regalis",
         "url": "https://www.iucnredlist.org/search?query=Scomberomorus%20regalis",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Scomberomorus regalis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/scomberomorus-regalis/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/cero-mackerel/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: bronze stripe with yellow spots; usually solitary, mid-water; record 17 lb (7.76 kg)"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Scomberomorus regalis",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=134&GenusName=Scomberomorus&SpeciesName=regalis&fc=416",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: FL set from Cuba (40-66 cm, n=262), the only fork-length set; 6.0 kg at 90 cm FL, -23% against the 7.8 kg record. Maximum length is uncertain: FishBase's 183 cm TL is implausible for a cero"
       }
     ]
   },
@@ -566,10 +610,10 @@
       "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.0085,
-      "b": 3.0
+      "a": 0.00677,
+      "b": 3.02
     },
-    "recordNote": "IGFA all-tackle record is about 42 kg.",
+    "recordNote": "IGFA all-tackle record is 93 lb (about 42 kg).",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 1.8,
@@ -596,26 +640,32 @@
       {
         "title": "FishBase: Scomberomorus cavalla",
         "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Scomberomorus cavalla",
         "url": "https://www.iucnredlist.org/search?query=Scomberomorus%20cavalla",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "NOAA Fisheries: King mackerel",
         "url": "https://www.fisheries.noaa.gov/species/king-mackerel",
-        "accessed": "pending-review",
-        "supports": "migration, seasons, biology"
+        "accessed": "2026-11-17",
+        "supports": "up to 5.5 ft and 100 lb; sharply dipping lateral line; seasonal north-south migrations"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Scomberomorus cavalla",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=120&GenusName=Scomberomorus&SpeciesName=cavalla&fc=416",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: FL set from Ceara, Brazil (46-115 cm, n=666); 38.9 kg at 173 cm FL, -8% against the IGFA record"
+      },
+      {
+        "title": "Sport Fishing: world's biggest king mackerel",
+        "url": "https://www.sportfishingmag.com/worlds-biggest-king-mackerel/",
+        "accessed": "2026-11-17",
+        "supports": "IGFA all-tackle king mackerel record of 93 lb (search excerpt)"
       }
     ]
   },
@@ -632,8 +682,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0126,
-      "b": 3.1
+      "a": 0.00871,
+      "b": 3.07
     },
     "fight": {
       "archetype": "none",
@@ -665,14 +715,14 @@
       {
         "title": "FishBase: Harengula jaguana",
         "url": "https://www.fishbase.se/summary/Harengula-jaguana.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b: FishBase Bayesian TL estimate; 100 g at 21 cm"
       },
       {
         "title": "IUCN Red List: Harengula jaguana",
         "url": "https://www.iucnredlist.org/search?query=Harengula%20jaguana",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       }
     ]
   },
@@ -685,12 +735,12 @@
     "lengthCm": {
       "min": 6,
       "common": 14,
-      "max": 23,
+      "max": 22.7,
       "measure": "CW"
     },
     "lengthWeight": {
-      "a": 0.05,
-      "b": 3.0
+      "a": 0.10839,
+      "b": 2.775
     },
     "fight": {
       "archetype": "none",
@@ -718,14 +768,20 @@
       {
         "title": "SeaLifeBase: Callinectes sapidus",
         "url": "https://www.sealifebase.se/summary/Callinectes-sapidus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum carapace width 22.7 cm, habitat"
       },
       {
         "title": "NOAA Fisheries: Blue crab",
         "url": "https://www.fisheries.noaa.gov/species/blue-crab",
-        "accessed": "pending-review",
-        "supports": "biology, habitat"
+        "accessed": "2026-11-17",
+        "supports": "carapace up to 9 in; paddle-shaped rear legs; mature females have red claw tips"
+      },
+      {
+        "title": "SeaLifeBase length-weight table: Callinectes sapidus",
+        "url": "https://www.sealifebase.se/PopDyn/LWRelationshipList.php?ID=26794&GenusName=Callinectes&SpeciesName=sapidus&fc=473",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: carapace-width set for males from Galveston Bay, Texas; 0.64 kg at 22.7 cm"
       }
     ]
   },
@@ -767,16 +823,22 @@
     "visualNotes": "Massive grey spindle-shaped body with wrinkled skin; small head with a bristled, squared muzzle; two paddle-like front flippers; broad rounded paddle tail; no dorsal fin.",
     "sources": [
       {
-        "title": "IUCN Red List: Trichechus manatus",
-        "url": "https://www.iucnredlist.org/search?query=Trichechus%20manatus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "title": "Wikipedia: West Indian manatee (IUCN status)",
+        "url": "https://en.wikipedia.org/wiki/West_Indian_manatee",
+        "accessed": "2026-11-17",
+        "supports": "Vulnerable (as shown on Wikipedia; the Red List page refuses automated reads)"
       },
       {
         "title": "US Fish and Wildlife Service: West Indian manatee",
         "url": "https://www.fws.gov/species/manatee-trichechus-manatus",
-        "accessed": "pending-review",
-        "supports": "biology, diet, threats"
+        "accessed": "2026-11-17",
+        "supports": "adults typically 9-10 ft, over 13 ft at most; eats up to 10% of body weight a day; molars replaced throughout life"
+      },
+      {
+        "title": "EDGE of Existence: Survival Blueprint for Antillean manatees in Belize",
+        "url": "https://www.edgeofexistence.org/wp-content/uploads/2017/06/Survival_Blueprint_2020_Antillean-Manatees_Belize.pdf",
+        "accessed": "2026-11-17",
+        "supports": "Belize holds the largest share of the Endangered Antillean manatee population (search excerpt)"
       }
     ]
   },
@@ -819,14 +881,14 @@
       {
         "title": "FishBase: Ginglymostoma cirratum",
         "url": "https://www.fishbase.se/summary/Ginglymostoma-cirratum.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, behaviour"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, habitat, nocturnal feeding; VU (2019). FishBase gives a 430 cm maximum; the game keeps 308 cm, the largest widely reported"
       },
       {
         "title": "IUCN Red List: Ginglymostoma cirratum",
         "url": "https://www.iucnredlist.org/search?query=Ginglymostoma%20cirratum",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       }
     ]
   }

@@ -76,6 +76,12 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Doubtful claims were reworded and source notes trimmed to what each page says.
     Details are in the dossier.
 39. **Island rumours checked against the data and the real animals.** All pass. The spiny lobster gains a second rumour and the bottlenose dolphin gets two, carried by journal pages 7 and 4, so every rare and epic island species has two. The permit's "only crab" lines are softened, both in the Cut rumour and on journal page 8.
+40. **The Cayes species records were checked against live sources on 17 November 2026** (details in `research/belize-cayes/dossier.md`).
+    - Several length-weight sets were replaced so that weight at maximum length lands within 30% of the record. White grunt still misses, against an implausible 4.4 kg FishBase weight.
+    - Maximums changed for gray snapper (89 cm), Nassau grouper (122 cm), cero (90 cm FL) and blue crab. Crevalle jack moves to a total-length measure (124 cm TL).
+    - Fourteen unsourced or contradicted facts were corrected.
+    - Nassau grouper stays release-only, which is stricter than Belize's April to November slot fishery.
+    - The Cayes occurrence records are still unchecked.
 
 ## Schema additions (spec section 11)
 
