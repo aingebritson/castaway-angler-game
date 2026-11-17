@@ -175,7 +175,40 @@
           "y": 0.345,
           "label": "The wreck",
           "glyph": "⚓",
-          "station": "wreck"
+          "station": "wreck",
+          "hideIf": "flag:launched"
+        },
+        {
+          "id": "wreck-salvage",
+          "kind": "gather",
+          "x": 0.8,
+          "y": 0.345,
+          "label": "Wreck salvage",
+          "glyph": "⚓",
+          "showIf": "flag:launched",
+          "node": {
+            "table": [
+              {
+                "item": "old-coin",
+                "weight": 3
+              },
+              {
+                "item": "sea-glass",
+                "weight": 3
+              },
+              {
+                "item": "rope",
+                "weight": 2
+              },
+              {
+                "item": "canvas",
+                "weight": 2
+              }
+            ],
+            "max": 3,
+            "regrowMin": 1440,
+            "daily": true
+          }
         }
       ]
     }

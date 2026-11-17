@@ -1,0 +1,581 @@
+[
+  {
+    "speciesId": "gerres-cinereus",
+    "locationId": "the-cut",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 1,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "shrimp": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Gerres cinereus",
+        "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
+        "accessed": "pending-review",
+        "supports": "sandy channels"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-griseus",
+    "locationId": "the-cut",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.8,
+      "dusk": 1.4,
+      "night": 1.5
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "shrimp": 1.5,
+      "livefish": 1.6,
+      "cutfish": 1.1,
+      "crab": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus griseus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
+        "accessed": "pending-review",
+        "supports": "channels near mangroves"
+      }
+    ]
+  },
+  {
+    "speciesId": "albula-vulpes",
+    "locationId": "the-cut",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.5
+    },
+    "monthMod": [
+      1.2,
+      1.2,
+      1.2,
+      1.1,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.1,
+      1.2
+    ],
+    "methods": [
+      "sight",
+      "bait"
+    ],
+    "affinity": {
+      "shrimp": 1.6,
+      "crab": 1.5,
+      "crustacean": 1.3,
+      "fly": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Albula vulpes",
+        "url": "https://www.fishbase.se/summary/Albula-vulpes.html",
+        "accessed": "pending-review",
+        "supports": "sand flats and channel edges"
+      },
+      {
+        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "flats on the rising tide"
+      }
+    ]
+  },
+  {
+    "speciesId": "trachinotus-falcatus",
+    "locationId": "the-cut",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 0.2
+    },
+    "monthMod": [
+      0.7,
+      0.8,
+      1.2,
+      1.4,
+      1.5,
+      1.5,
+      1.4,
+      1,
+      0.8,
+      0.8,
+      0.7,
+      0.7
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {
+      "crab": 1.8,
+      "shrimp": 0.5,
+      "fly": 0.4
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Trachinotus falcatus",
+        "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
+        "accessed": "pending-review",
+        "supports": "channels and flats"
+      },
+      {
+        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "permit in cuts between cayes"
+      }
+    ]
+  },
+  {
+    "speciesId": "caranx-hippos",
+    "locationId": "the-cut",
+    "zones": [
+      "channel",
+      "blue-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 0.9,
+      "dusk": 1.5,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure",
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "popper": 1.6,
+      "plug": 1.3,
+      "jig": 1.2,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Caranx hippos",
+        "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
+        "accessed": "pending-review",
+        "supports": "channels with current"
+      }
+    ]
+  },
+  {
+    "speciesId": "tylosurus-crocodilus",
+    "locationId": "the-cut",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 0.8
+    },
+    "monthMod": [
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.2,
+      1.4,
+      1.4,
+      1.4,
+      1.2,
+      1,
+      0.8,
+      0.7
+    ],
+    "methods": [
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1,
+      "popper": 1.5,
+      "feather": 1.3
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Tylosurus crocodilus",
+        "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
+        "accessed": "pending-review",
+        "supports": "surface waters"
+      }
+    ]
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "the-cut",
+    "zones": [
+      "channel",
+      "blue-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0.3
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "lure",
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "plug": 1.6,
+      "livefish": 1.8,
+      "feather": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "channels"
+      }
+    ]
+  },
+  {
+    "speciesId": "ocyurus-chrysurus",
+    "locationId": "the-cut",
+    "zones": [
+      "blue-edge"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.8,
+      "dusk": 1.5,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "shrimp": 1.3,
+      "squid": 1.3
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Ocyurus chrysurus",
+        "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
+        "accessed": "pending-review",
+        "supports": "channel edges"
+      }
+    ]
+  },
+  {
+    "speciesId": "scomberomorus-regalis",
+    "locationId": "the-cut",
+    "zones": [
+      "blue-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.7,
+      "day": 0.9,
+      "dusk": 1.4,
+      "night": 0.1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.7,
+      "jig": 1.3,
+      "plug": 1.2,
+      "livefish": 1.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus regalis",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-regalis.html",
+        "accessed": "pending-review",
+        "supports": "reef passes"
+      }
+    ]
+  },
+  {
+    "speciesId": "megalops-atlanticus",
+    "locationId": "the-cut",
+    "zones": [
+      "blue-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.7,
+      "day": 0.5,
+      "dusk": 1.8,
+      "night": 1.2
+    },
+    "monthMod": [
+      0.5,
+      0.5,
+      0.7,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      1.2,
+      0.8,
+      0.5,
+      0.5
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "plug": 1.5,
+      "crab": 1,
+      "jig": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Megalops atlanticus",
+        "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
+        "accessed": "pending-review",
+        "supports": "passes and channels on moving tides"
+      },
+      {
+        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "tarpon in cuts at dusk"
+      }
+    ]
+  },
+  {
+    "speciesId": "scomberomorus-cavalla",
+    "locationId": "the-cut",
+    "zones": [
+      "blue-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1.4,
+      1.4,
+      1.5,
+      1.3,
+      1,
+      0.7,
+      0.6,
+      0.6,
+      0.7,
+      1,
+      1.3,
+      1.4
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "plug": 1.4,
+      "spoon": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus cavalla",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
+        "accessed": "pending-review",
+        "supports": "channel mouths and open water"
+      }
+    ]
+  },
+  {
+    "speciesId": "scomberomorus-cavalla",
+    "locationId": "the-cut",
+    "zones": [
+      "blue-water"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1.4,
+      1.4,
+      1.5,
+      1.3,
+      1,
+      0.7,
+      0.6,
+      0.6,
+      0.7,
+      1,
+      1.3,
+      1.4
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "plug": 1.4,
+      "spoon": 1.2
+    },
+    "minGear": {
+      "rodTier": 4
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus cavalla",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
+        "accessed": "pending-review",
+        "supports": "open water"
+      }
+    ]
+  }
+]

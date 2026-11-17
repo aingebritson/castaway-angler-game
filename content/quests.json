@@ -1,1 +1,268 @@
-[]
+[
+  {
+    "id": "alvarez-1",
+    "personId": "alvarez",
+    "order": 1,
+    "title": "Earn your keep",
+    "offer": "Nobody here feeds a stranger twice. Catch five fish off the town pier and sell them to Delphine. Then we will talk about boats.",
+    "goal": {
+      "type": "catchAny",
+      "count": 5,
+      "distinct": false,
+      "locationId": "town-pier"
+    },
+    "progressText": "Fish caught at the Town Pier",
+    "done": "Good. You can fish. That is one more thing than most people who wash up here.",
+    "reward": {
+      "coins": 40,
+      "rumours": [
+        "snook-lights"
+      ]
+    }
+  },
+  {
+    "id": "alvarez-2",
+    "personId": "alvarez",
+    "order": 2,
+    "title": "A proper line",
+    "offer": "That braided coconut string will get you killed, or worse, laughed at. Buy a mono line from Marisol and show me.",
+    "goal": {
+      "type": "have",
+      "item": "mono-line"
+    },
+    "progressText": "Own a mono line",
+    "done": "Now you look like you live here.",
+    "reward": {
+      "coins": 30,
+      "rumours": [
+        "jack-dawn"
+      ]
+    }
+  },
+  {
+    "id": "alvarez-3",
+    "personId": "alvarez",
+    "order": 3,
+    "title": "Something that floats on purpose",
+    "offer": "I have a skiff in the yard that needs an owner. It is not free, but it is honest. Come back when it is yours.",
+    "goal": {
+      "type": "have",
+      "item": "skiff"
+    },
+    "progressText": "Buy the skiff at the boatyard",
+    "done": "She leaks a little at the transom. They all do. Mind the Cut on a falling tide.",
+    "reward": {
+      "coins": 0,
+      "rumours": [
+        "creek-tarpon"
+      ],
+      "items": [
+        {
+          "item": "shrimp",
+          "qty": 12
+        }
+      ]
+    }
+  },
+  {
+    "id": "alvarez-4",
+    "personId": "alvarez",
+    "order": 4,
+    "title": "The wreck",
+    "offer": "That island you came from. There was a ship on its reef, before your time and mine. With the skiff you could get out to her. Go and look; bring back the story.",
+    "goal": {
+      "type": "visit",
+      "locationId": "beach"
+    },
+    "progressText": "Sail back to Wreck Beach",
+    "done": "So she is still there. Bring me whatever she gives up, and I will see you right.",
+    "reward": {
+      "coins": 150,
+      "rumours": [
+        "tarpon-cut"
+      ]
+    }
+  },
+  {
+    "id": "marisol-1",
+    "personId": "marisol",
+    "order": 1,
+    "title": "The dock fish",
+    "offer": "Start where everybody starts. Bring me word you have caught a gray snapper: they are under the pier, and they are cleverer than they look.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "lutjanus-griseus",
+      "count": 1
+    },
+    "progressText": "Catch a gray snapper",
+    "done": "Shrimp, light line, patience. You are learning.",
+    "reward": {
+      "coins": 25,
+      "rumours": [
+        "hogfish-crab",
+        "bluecrab-pot"
+      ],
+      "items": [
+        {
+          "item": "steel-hook-small",
+          "qty": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "marisol-2",
+    "personId": "marisol",
+    "order": 2,
+    "title": "Something that pulls",
+    "offer": "You want to know what a rod is for? Hook a crevalle jack. They come into the harbour at first and last light.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "caranx-hippos",
+      "count": 1
+    },
+    "progressText": "Catch a crevalle jack",
+    "done": "Ha! Your arm hurts. Good. That is the feeling I sell.",
+    "reward": {
+      "coins": 40,
+      "rumours": [
+        "cero-spoon"
+      ],
+      "items": [
+        {
+          "item": "spoon",
+          "qty": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "marisol-3",
+    "personId": "marisol",
+    "order": 3,
+    "title": "Bait that swims",
+    "offer": "The serious fish want serious bait. Buy a cast net, throw it on the sardine school by the pier, and show me a live one.",
+    "goal": {
+      "type": "have",
+      "item": "live-sardine"
+    },
+    "progressText": "Net a live sardine",
+    "done": "Now you are dangerous. Hook it through the nose and it swims for an hour.",
+    "reward": {
+      "coins": 30,
+      "rumours": [
+        "snook-live",
+        "king-live"
+      ]
+    }
+  },
+  {
+    "id": "marisol-4",
+    "personId": "marisol",
+    "order": 4,
+    "title": "Linesider",
+    "offer": "A snook of sixty centimetres. Under the lamp at night, or along the mangrove roots at dawn. I want to hear how it jumped.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "centropomus-undecimalis",
+      "count": 1,
+      "minCm": 60
+    },
+    "progressText": "Catch a snook of 60 cm or more",
+    "done": "Three jumps? They always tell me three. Take this; you have earned a real lure.",
+    "reward": {
+      "coins": 80,
+      "items": [
+        {
+          "item": "plug",
+          "qty": 1
+        }
+      ],
+      "rumours": [
+        "blackgrouper-dusk"
+      ]
+    }
+  },
+  {
+    "id": "tobias-1",
+    "personId": "tobias",
+    "order": 1,
+    "title": "Supper",
+    "offer": "My teeth are not what they were, but a yellowtail snapper, fresh, I can still manage. Bring me one.",
+    "goal": {
+      "type": "deliverFish",
+      "speciesId": "ocyurus-chrysurus",
+      "count": 1
+    },
+    "progressText": "Bring a yellowtail snapper",
+    "done": "Ah. Sit. I will tell you about the black ones under the ledge.",
+    "reward": {
+      "coins": 20,
+      "rumours": [
+        "blackgrouper-ledge",
+        "nassau-edge"
+      ]
+    }
+  },
+  {
+    "id": "tobias-2",
+    "personId": "tobias",
+    "order": 2,
+    "title": "The other shift",
+    "offer": "You young people fish in the sun and go home. Catch three fish after dark and tell me the sea is the same place.",
+    "goal": {
+      "type": "catchAny",
+      "count": 3,
+      "distinct": false,
+      "phase": "night"
+    },
+    "progressText": "Fish caught at night",
+    "done": "No. It is not the same place. Now you know.",
+    "reward": {
+      "coins": 35,
+      "rumours": [
+        "nassau-winter",
+        "king-winter"
+      ]
+    }
+  },
+  {
+    "id": "tobias-3",
+    "personId": "tobias",
+    "order": 3,
+    "title": "One for the wall",
+    "offer": "Any fool catches fish. Bring me word of a trophy: a fish big for its kind, any kind.",
+    "goal": {
+      "type": "catchAny",
+      "count": 1,
+      "distinct": false,
+      "grade": "trophy"
+    },
+    "progressText": "Catch a trophy-grade fish",
+    "done": "Measure it twice and tell it once. That is how records are kept.",
+    "reward": {
+      "coins": 60,
+      "rumours": [
+        "permit-cut"
+      ]
+    }
+  },
+  {
+    "id": "tobias-4",
+    "personId": "tobias",
+    "order": 4,
+    "title": "The silver king",
+    "offer": "There is one fish I never brought to the boat. You know which. Land a tarpon, let it go, and come and tell an old man what it felt like.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "megalops-atlanticus",
+      "count": 1
+    },
+    "progressText": "Land a tarpon",
+    "done": "…Yes. That is what I thought it would be like. Thank you.",
+    "reward": {
+      "coins": 300,
+      "clue": "Tobias: “There is an old tarpon in the Cut they call the Bishop. Longer than my skiff. He comes on the biggest tides, at dusk, in the months when the mangoes drop. He has never been landed.”"
+    }
+  }
+]

@@ -408,5 +408,279 @@
     "boat": {
       "tier": 0
     }
+  },
+  {
+    "id": "glass-rod",
+    "name": "Glass rod",
+    "kind": "rod",
+    "glyph": "🎣",
+    "desc": "A second-hand fibreglass rod. Casts past the reef edge and has a backbone.",
+    "rod": {
+      "tier": 2,
+      "range": 0.84,
+      "power": 5.5,
+      "accuracy": 0.85
+    }
+  },
+  {
+    "id": "graphite-rod",
+    "name": "Graphite rod",
+    "kind": "rod",
+    "glyph": "🎣",
+    "desc": "Light, stiff and long. Reaches the deep ledge and turns heavy fish.",
+    "rod": {
+      "tier": 3,
+      "range": 0.92,
+      "power": 9,
+      "accuracy": 0.92
+    }
+  },
+  {
+    "id": "offshore-rod",
+    "name": "Offshore rod",
+    "kind": "rod",
+    "glyph": "🎣",
+    "desc": "A short, thick blue-water rod. For a bigger boat and bigger water.",
+    "rod": {
+      "tier": 4,
+      "range": 0.99,
+      "power": 14,
+      "accuracy": 0.9
+    }
+  },
+  {
+    "id": "mono-line",
+    "name": "Mono line",
+    "kind": "line",
+    "glyph": "➰",
+    "desc": "Clear nylon. Far stronger than anything braided on a beach.",
+    "line": {
+      "strength": 5.5
+    }
+  },
+  {
+    "id": "heavy-mono",
+    "name": "Heavy mono",
+    "kind": "line",
+    "glyph": "➰",
+    "desc": "Thick nylon for fish that go for the rocks.",
+    "line": {
+      "strength": 9
+    }
+  },
+  {
+    "id": "braid-line",
+    "name": "Braid",
+    "kind": "line",
+    "glyph": "➰",
+    "desc": "Thin woven line with no stretch. Holds almost anything.",
+    "line": {
+      "strength": 14
+    }
+  },
+  {
+    "id": "spinning-reel",
+    "name": "Spinning reel",
+    "kind": "reel",
+    "glyph": "🧿",
+    "desc": "A smooth drag takes the shock out of a surge. The safe part of the gauge is wider.",
+    "reel": {
+      "greenBonus": 0.6,
+      "capacity": 1
+    }
+  },
+  {
+    "id": "steel-hook-small",
+    "name": "Small steel hook",
+    "kind": "hook",
+    "glyph": "🪝",
+    "desc": "Sharp and fine. For small mouths.",
+    "hook": {
+      "minCm": 6,
+      "maxCm": 42,
+      "sizeShift": 0
+    }
+  },
+  {
+    "id": "steel-hook",
+    "name": "Steel hook",
+    "kind": "hook",
+    "glyph": "🪝",
+    "desc": "A proper medium hook. Small fry cannot take it.",
+    "hook": {
+      "minCm": 20,
+      "maxCm": 95,
+      "sizeShift": 0.45
+    }
+  },
+  {
+    "id": "steel-hook-large",
+    "name": "Large steel hook",
+    "kind": "hook",
+    "glyph": "🪝",
+    "desc": "A big circle hook for big baits and big fish.",
+    "hook": {
+      "minCm": 45,
+      "maxCm": 260,
+      "sizeShift": 0.8
+    }
+  },
+  {
+    "id": "shrimp",
+    "name": "Shrimp",
+    "kind": "bait",
+    "glyph": "🦐",
+    "desc": "Fresh shrimp from the market. Nearly everything inshore eats it.",
+    "bait": {
+      "tags": [
+        "shrimp",
+        "crustacean"
+      ],
+      "sizeShift": 0.1
+    },
+    "value": 1
+  },
+  {
+    "id": "squid",
+    "name": "Squid",
+    "kind": "bait",
+    "glyph": "🦑",
+    "desc": "Tough strips of squid. Stays on the hook; reef fish like it.",
+    "bait": {
+      "tags": [
+        "squid"
+      ],
+      "sizeShift": 0.2
+    },
+    "value": 1
+  },
+  {
+    "id": "live-sardine",
+    "name": "Live sardine",
+    "kind": "bait",
+    "glyph": "🐟",
+    "desc": "A lively sardine. Predators that ignore everything else will eat this.",
+    "bait": {
+      "tags": [
+        "livefish"
+      ],
+      "sizeShift": 0.7
+    },
+    "value": 1
+  },
+  {
+    "id": "spoon",
+    "name": "Spoon",
+    "kind": "lure",
+    "glyph": "🥄",
+    "desc": "A curved slip of polished metal. Flashes and wobbles. Wants to be worked fast.",
+    "lure": {
+      "type": "spoon",
+      "speedBand": [
+        0.55,
+        0.9
+      ],
+      "sizeShift": 0.2
+    }
+  },
+  {
+    "id": "jig",
+    "name": "Jig",
+    "kind": "lure",
+    "glyph": "🪀",
+    "desc": "A weighted head with a tail. Hop it back slowly near the bottom.",
+    "lure": {
+      "type": "jig",
+      "speedBand": [
+        0.2,
+        0.5
+      ],
+      "sizeShift": 0.3
+    }
+  },
+  {
+    "id": "plug",
+    "name": "Plug",
+    "kind": "lure",
+    "glyph": "🐠",
+    "desc": "A painted wooden minnow that dives and swims. A steady middle pace.",
+    "lure": {
+      "type": "plug",
+      "speedBand": [
+        0.4,
+        0.75
+      ],
+      "sizeShift": 0.6
+    }
+  },
+  {
+    "id": "popper",
+    "name": "Popper",
+    "kind": "lure",
+    "glyph": "🎈",
+    "desc": "A cupped surface lure. Chug it fast and it spits water.",
+    "lure": {
+      "type": "popper",
+      "speedBand": [
+        0.6,
+        0.95
+      ],
+      "sizeShift": 0.3
+    }
+  },
+  {
+    "id": "cast-net",
+    "name": "Cast net",
+    "kind": "tool",
+    "glyph": "🕸️",
+    "desc": "A weighted circle of mesh. Thrown over a bait school it comes back full of sardines."
+  },
+  {
+    "id": "cooler",
+    "name": "Cooler",
+    "kind": "utility",
+    "glyph": "🧊",
+    "desc": "An ice chest. The catch basket holds twelve more."
+  },
+  {
+    "id": "crab-pot",
+    "name": "Crab pot",
+    "kind": "trap",
+    "glyph": "🪤",
+    "desc": "A wire pot. Holds more than a woven trap and soaks longer.",
+    "trap": {
+      "capacity": 5,
+      "minSoakH": 1,
+      "maxSoakH": 12,
+      "method": "trap"
+    }
+  },
+  {
+    "id": "skiff",
+    "name": "Skiff",
+    "kind": "boat",
+    "glyph": "🚤",
+    "desc": "A flat-bottomed boat with a small outboard. Reaches the mangroves, the patch reef, the Cut, and back to the island.",
+    "boat": {
+      "tier": 1
+    }
+  },
+  {
+    "id": "sloop",
+    "name": "Sloop",
+    "kind": "boat",
+    "glyph": "⛵",
+    "desc": "A real sea boat. Offshore water, and passages to other coasts.",
+    "boat": {
+      "tier": 2
+    }
+  },
+  {
+    "id": "old-coin",
+    "name": "Old coin",
+    "kind": "goods",
+    "glyph": "🪙",
+    "desc": "A black disc of silver from the wreck. The market will weigh it.",
+    "value": 45
   }
 ]

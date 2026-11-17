@@ -1,0 +1,488 @@
+[
+  {
+    "speciesId": "lutjanus-griseus",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "roots",
+      "creek"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.8,
+      "dusk": 1.4,
+      "night": 1.5
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight",
+      "trap"
+    ],
+    "affinity": {
+      "shrimp": 1.5,
+      "livefish": 1.6,
+      "cutfish": 1.1,
+      "crab": 1,
+      "crustacean": 0.8,
+      "trap": 0.5
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus griseus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
+        "accessed": "pending-review",
+        "supports": "mangrove nursery habitat"
+      }
+    ]
+  },
+  {
+    "speciesId": "gerres-cinereus",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "roots"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 1,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "shrimp": 1.2
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Gerres cinereus",
+        "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
+        "accessed": "pending-review",
+        "supports": "mangrove edges"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-apodus",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "roots"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.7,
+      "dusk": 1.5,
+      "night": 1.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "shrimp": 1.3,
+      "crab": 1.2,
+      "cutfish": 1.2,
+      "crustacean": 1
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus apodus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
+        "accessed": "pending-review",
+        "supports": "juveniles among mangrove roots"
+      }
+    ]
+  },
+  {
+    "speciesId": "centropomus-undecimalis",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "roots",
+      "creek"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 0.6,
+      "dusk": 1.6,
+      "night": 1.4
+    },
+    "monthMod": [
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.2,
+      1.4,
+      1.4,
+      1.4,
+      1.2,
+      1,
+      0.8,
+      0.7
+    ],
+    "methods": [
+      "lure",
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "shrimp": 1.3,
+      "plug": 1.5,
+      "jig": 1.3,
+      "spoon": 0.9,
+      "feather": 0.7
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Centropomus undecimalis",
+        "url": "https://www.fishbase.se/summary/Centropomus-undecimalis.html",
+        "accessed": "pending-review",
+        "supports": "mangrove shorelines, ambush predator"
+      },
+      {
+        "title": "Florida Museum species profile: Centropomus undecimalis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/centropomus-undecimalis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "roots"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1.2,
+      "dusk": 1.2,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "plug": 1.5,
+      "feather": 1.2,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "juveniles in mangroves"
+      }
+    ]
+  },
+  {
+    "speciesId": "megalops-atlanticus",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "creek"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.7,
+      "day": 0.5,
+      "dusk": 1.7,
+      "night": 1.3
+    },
+    "monthMod": [
+      0.5,
+      0.5,
+      0.7,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      1.2,
+      0.8,
+      0.5,
+      0.5
+    ],
+    "methods": [
+      "lure",
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "plug": 1.5,
+      "jig": 1,
+      "crab": 0.8,
+      "shrimp": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Megalops atlanticus",
+        "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
+        "accessed": "pending-review",
+        "supports": "juveniles and adults in mangrove creeks"
+      },
+      {
+        "title": "Florida Museum species profile: Megalops atlanticus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ],
+    "designNotes": "Rare rather than epic here: creek tarpon are the first ones a shop rod can turn."
+  },
+  {
+    "speciesId": "caranx-hippos",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "creek"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 0.9,
+      "dusk": 1.5,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "popper": 1.6,
+      "plug": 1.3,
+      "jig": 1.2,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Caranx hippos",
+        "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
+        "accessed": "pending-review",
+        "supports": "enters creeks and river mouths"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-analis",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "creek"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.6,
+      "dusk": 1.6,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crab": 1.5,
+      "cutfish": 1.3,
+      "livefish": 1.8,
+      "shrimp": 1,
+      "squid": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus analis",
+        "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
+        "accessed": "pending-review",
+        "supports": "juveniles and adults over sand and grass near mangroves"
+      }
+    ]
+  },
+  {
+    "speciesId": "callinectes-sapidus",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "roots"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 0.6,
+      "dusk": 1.2,
+      "night": 1.5
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "trap"
+    ],
+    "affinity": {
+      "trap": 1.6,
+      "cutfish": 1.5,
+      "squid": 1.2
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Callinectes sapidus",
+        "url": "https://www.sealifebase.se/summary/Callinectes-sapidus.html",
+        "accessed": "pending-review",
+        "supports": "mangrove creeks and estuaries"
+      }
+    ]
+  },
+  {
+    "speciesId": "trichechus-manatus",
+    "locationId": "mangrove-creek",
+    "zones": [
+      "creek",
+      "roots"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.5
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "IUCN Red List: Trichechus manatus",
+        "url": "https://www.iucnredlist.org/search?query=Trichechus%20manatus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ],
+    "designNotes": "Sighting only."
+  }
+]

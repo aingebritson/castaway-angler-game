@@ -8,6 +8,27 @@
       "x": 0.3,
       "y": 0.42
     },
-    "unlock": []
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "id": "belize-cayes",
+    "name": "The Cayes",
+    "order": 1,
+    "blurb": "A fishing town on the Belize coast, and the mangroves, patch reefs and channels inside the barrier reef.",
+    "map": {
+      "x": 0.24,
+      "y": 0.44
+    },
+    "unlock": [
+      {
+        "type": "flag",
+        "flag": "launched"
+      }
+    ]
   }
 ]

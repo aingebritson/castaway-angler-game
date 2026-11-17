@@ -156,5 +156,179 @@
       "bait:feather"
     ],
     "source": "The castaway's journal"
+  },
+  {
+    "id": "snook-lights",
+    "speciesId": "centropomus-undecimalis",
+    "dimension": "when",
+    "text": "Snook sit in the shadow line under the pier lamp after dark, facing the tide.",
+    "fillsCells": [
+      "phase:night",
+      "zone:town-pier/pilings"
+    ],
+    "source": "Mr Alvarez, harbourmaster"
+  },
+  {
+    "id": "snook-live",
+    "speciesId": "centropomus-undecimalis",
+    "dimension": "bait",
+    "text": "A snook will look at a shrimp. It will not refuse a live sardine.",
+    "fillsCells": [
+      "bait:livefish",
+      "bait:shrimp"
+    ],
+    "source": "Marisol"
+  },
+  {
+    "id": "jack-dawn",
+    "speciesId": "caranx-hippos",
+    "dimension": "when",
+    "text": "Jacks smash bait against the sea wall at first light. Throw something that flashes.",
+    "fillsCells": [
+      "phase:dawn",
+      "bait:spoon",
+      "zone:town-pier/harbour"
+    ],
+    "source": "Mr Alvarez, harbourmaster"
+  },
+  {
+    "id": "hogfish-crab",
+    "speciesId": "lachnolaimus-maximus",
+    "dimension": "bait",
+    "text": "Hogfish root on the reef top in full daylight, and what they are rooting for is crab.",
+    "fillsCells": [
+      "bait:crab",
+      "phase:day",
+      "zone:patch-reef/reef-top"
+    ],
+    "source": "Marisol"
+  },
+  {
+    "id": "cero-spoon",
+    "speciesId": "scomberomorus-regalis",
+    "dimension": "method",
+    "text": "Cero cut along the reef edge at dawn. A spoon, worked fast.",
+    "fillsCells": [
+      "bait:spoon",
+      "phase:dawn",
+      "zone:patch-reef/reef-edge"
+    ],
+    "source": "Marisol"
+  },
+  {
+    "id": "king-live",
+    "speciesId": "scomberomorus-cavalla",
+    "dimension": "bait",
+    "text": "Kingfish want a live bait, the bigger the better. They cut it in half and come back.",
+    "fillsCells": [
+      "bait:livefish"
+    ],
+    "source": "Marisol"
+  },
+  {
+    "id": "king-winter",
+    "speciesId": "scomberomorus-cavalla",
+    "dimension": "when",
+    "text": "The big kings come down the coast in the cool months and hold off the deep ledge and the channel mouth.",
+    "fillsCells": [
+      "month:0",
+      "month:1",
+      "month:2",
+      "month:11",
+      "zone:patch-reef/deep",
+      "zone:the-cut/blue-edge"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "blackgrouper-ledge",
+    "speciesId": "mycteroperca-bonaci",
+    "dimension": "where",
+    "text": "The black ones live under the ledge at the reef edge and deeper. You will not see them. They see you.",
+    "fillsCells": [
+      "zone:patch-reef/reef-edge",
+      "zone:patch-reef/deep"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "blackgrouper-dusk",
+    "speciesId": "mycteroperca-bonaci",
+    "dimension": "when",
+    "text": "A live bait at dusk, and a line you trust. Turn its head in the first three seconds or say goodbye.",
+    "fillsCells": [
+      "phase:dusk",
+      "bait:livefish"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "nassau-winter",
+    "speciesId": "epinephelus-striatus",
+    "dimension": "when",
+    "text": "The Nassau gather on the winter moons. My father filled boats with them. Do not be my father.",
+    "fillsCells": [
+      "month:11",
+      "month:0",
+      "month:1"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "nassau-edge",
+    "speciesId": "epinephelus-striatus",
+    "dimension": "where",
+    "text": "Striped, pale and curious, at the reef edge. It comes to cut fish. It goes back, by law and by decency.",
+    "fillsCells": [
+      "zone:patch-reef/reef-edge",
+      "bait:cutfish"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "tarpon-cut",
+    "speciesId": "megalops-atlanticus",
+    "dimension": "where",
+    "text": "Tarpon stack up in the mouth of the Cut at dusk when the tide runs. Live bait or a plug.",
+    "fillsCells": [
+      "zone:the-cut/blue-edge",
+      "phase:dusk",
+      "bait:livefish",
+      "bait:plug"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "permit-cut",
+    "speciesId": "trachinotus-falcatus",
+    "dimension": "where",
+    "text": "Permit ride the tide onto the shoulders of the Cut. Crab. Only crab. And lead them well.",
+    "fillsCells": [
+      "zone:the-cut/channel",
+      "bait:crab"
+    ],
+    "source": "Old Tobias"
+  },
+  {
+    "id": "creek-tarpon",
+    "speciesId": "megalops-atlanticus",
+    "dimension": "when",
+    "text": "Small tarpon roll in the creek bend at dawn. Small for a tarpon.",
+    "fillsCells": [
+      "zone:mangrove-creek/creek",
+      "phase:dawn"
+    ],
+    "source": "Mr Alvarez, harbourmaster"
+  },
+  {
+    "id": "bluecrab-pot",
+    "speciesId": "callinectes-sapidus",
+    "dimension": "method",
+    "text": "Sink a trap by the mangrove roots with fish scraps and the blue crabs will fight to get in.",
+    "fillsCells": [
+      "bait:trap",
+      "zone:mangrove-creek/roots"
+    ],
+    "source": "Marisol"
   }
 ]

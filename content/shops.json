@@ -1,1 +1,114 @@
-[]
+[
+  {
+    "id": "tackle",
+    "locationId": "port-esperanza",
+    "name": "Marisol’s Tackle",
+    "keeper": "marisol",
+    "stock": [
+      {
+        "item": "shrimp",
+        "price": 2
+      },
+      {
+        "item": "squid",
+        "price": 3
+      },
+      {
+        "item": "steel-hook-small",
+        "price": 3
+      },
+      {
+        "item": "steel-hook",
+        "price": 6
+      },
+      {
+        "item": "steel-hook-large",
+        "price": 12
+      },
+      {
+        "item": "spoon",
+        "price": 30
+      },
+      {
+        "item": "jig",
+        "price": 35
+      },
+      {
+        "item": "popper",
+        "price": 50
+      },
+      {
+        "item": "plug",
+        "price": 65
+      },
+      {
+        "item": "mono-line",
+        "price": 180,
+        "once": true
+      },
+      {
+        "item": "glass-rod",
+        "price": 420,
+        "once": true
+      },
+      {
+        "item": "cast-net",
+        "price": 300,
+        "once": true
+      },
+      {
+        "item": "cooler",
+        "price": 450,
+        "once": true
+      },
+      {
+        "item": "crab-pot",
+        "price": 380,
+        "once": true
+      },
+      {
+        "item": "spinning-reel",
+        "price": 900,
+        "once": true
+      },
+      {
+        "item": "heavy-mono",
+        "price": 1400,
+        "once": true
+      },
+      {
+        "item": "graphite-rod",
+        "price": 2800,
+        "once": true
+      },
+      {
+        "item": "braid-line",
+        "price": 4000,
+        "once": true
+      },
+      {
+        "item": "offshore-rod",
+        "price": 9000,
+        "once": true
+      }
+    ]
+  },
+  {
+    "id": "boatyard",
+    "locationId": "port-esperanza",
+    "name": "Boatyard",
+    "keeper": "alvarez",
+    "stock": [
+      {
+        "item": "skiff",
+        "price": 900,
+        "once": true
+      },
+      {
+        "item": "sloop",
+        "price": 14000,
+        "once": true
+      }
+    ]
+  }
+]

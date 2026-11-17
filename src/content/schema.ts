@@ -95,7 +95,7 @@ export const GatherNode = z.object({
 
 export const Hotspot = z.object({
   id,
-  kind: z.enum(['gather', 'station', 'pickup', 'npc', 'shop', 'board']),
+  kind: z.enum(['gather', 'station', 'pickup', 'npc', 'shop', 'board', 'market']),
   x: z.number().min(0).max(1),
   y: z.number().min(0).max(1),
   label: z.string(),
@@ -294,6 +294,7 @@ export const Shop = z.object({
   id,
   locationId: id,
   name: z.string(),
+  keeper: id.optional(),
   stock: z.array(z.object({ item: id, price: z.number().positive(), requiresFlag: z.string().optional(), once: z.boolean().optional() })),
 });
 

@@ -73,5 +73,30 @@
         "weight": 2
       }
     ]
+  },
+  {
+    "id": "harbour-junk",
+    "entries": [
+      {
+        "item": "rope",
+        "weight": 4
+      },
+      {
+        "item": "driftwood",
+        "weight": 3
+      },
+      {
+        "item": "sea-glass",
+        "weight": 3
+      },
+      {
+        "item": "plank",
+        "weight": 2
+      },
+      {
+        "item": "shell",
+        "weight": 2
+      }
+    ]
   }
 ]

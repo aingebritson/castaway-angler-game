@@ -129,7 +129,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
       needItem(h.node?.requiresTool, where);
       h.node?.table?.forEach((t) => needItem(t.item, where));
       if (h.node?.handZone && !loc.zones.some((z) => z.id === h.node!.handZone)) err(`${where}: hand zone "${h.node.handZone}" is not a zone`);
-      if (h.kind === 'npc' && !people[h.ref ?? '']) err(`${where}: missing person "${h.ref}"`);
+      if ((h.kind === 'npc' || h.kind === 'market') && !people[h.ref ?? '']) err(`${where}: missing person "${h.ref}"`);
       if (h.kind === 'shop' && !shops[h.ref ?? '']) err(`${where}: missing shop "${h.ref}"`);
     }
   }
@@ -181,6 +181,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
   for (const s of Object.values(shops)) {
     if (!locations[s.locationId]) err(`shop ${s.id}: missing location`);
     s.stock.forEach((e) => needItem(e.item, `shop ${s.id}`));
+    if (s.keeper && !people[s.keeper]) err(`shop ${s.id}: missing keeper "${s.keeper}"`);
   }
 
   // Research bookkeeping: sources that no one has checked yet are allowed, and reported.

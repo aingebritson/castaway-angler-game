@@ -57,5 +57,52 @@
     "line": "braided-line",
     "lure": "feather-lure",
     "method": "lure"
+  },
+  {
+    "id": "arrival",
+    "label": "Arrival: bamboo rod, braided line, bone hook, shrimp",
+    "rod": "bamboo-rod",
+    "line": "braided-line",
+    "hook": "bone-hook",
+    "bait": "shrimp",
+    "float": "coconut-float",
+    "method": "bait"
+  },
+  {
+    "id": "deckhand",
+    "label": "Deckhand: glass rod, mono, steel hook, shrimp",
+    "rod": "glass-rod",
+    "line": "mono-line",
+    "hook": "steel-hook",
+    "bait": "shrimp",
+    "float": "coconut-float",
+    "method": "bait"
+  },
+  {
+    "id": "deckhand-spoon",
+    "label": "Deckhand: glass rod, mono, spoon",
+    "rod": "glass-rod",
+    "line": "mono-line",
+    "lure": "spoon",
+    "method": "lure"
+  },
+  {
+    "id": "skipper",
+    "label": "Skipper: graphite rod, heavy mono, reel, large hook, live sardine",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "hook": "steel-hook-large",
+    "bait": "live-sardine",
+    "method": "bait"
+  },
+  {
+    "id": "skipper-plug",
+    "label": "Skipper: graphite rod, heavy mono, reel, plug",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "lure": "plug",
+    "method": "lure"
   }
 ]

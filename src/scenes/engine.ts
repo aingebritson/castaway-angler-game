@@ -11,6 +11,7 @@ import type { Store } from '../state/store';
 import { Fishing, type FishingHost } from './fishing';
 import { type Light, css, lightFor } from './light';
 import { PAINTERS, type Painter, type SceneInfo } from './painters';
+import './paintersCayes';
 
 const SEA_LEVEL: Record<string, number> = { beach: 1, 'rocky-point': 1, lagoon: 0.6, camp: 0.5, grove: 0.2 };
 

@@ -420,12 +420,16 @@ export function MapPanel({ onClose }: { onClose(): void }) {
   const s = useGameState();
   const c = store.content;
   const here = c.locations[s.locationId];
-  const regions = Object.values(c.regions).filter((r) => regionOpen(s, r.id, c)).sort((a, b) => a.order - b.order);
+  const seenRegion = (id: string) => Object.keys(s.visited).some((l) => c.locations[l]?.regionId === id);
+  const regions = Object.values(c.regions).filter((r) => seenRegion(r.id) || regionOpen(s, r.id, c)).sort((a, b) => a.order - b.order);
   const [regionId, setRegion] = useState(here.regionId);
   const region = c.regions[regionId];
   const locs = Object.values(c.locations).filter((l) => l.regionId === regionId);
   const goal = nextGoal(s, c);
+  const away = here.regionId !== regionId;
+  const crossing = away && !regionOpen(s, regionId, c);
   const go = (id: string) => {
+    if (away) store.emit([{ type: 'toast', text: `The crossing to ${region.name} takes two days. You arrive with the tide.`, glyph: '⛵' }]);
     store.run(travel, id);
     onClose();
   };
@@ -437,18 +441,19 @@ export function MapPanel({ onClose }: { onClose(): void }) {
       <div class="map">
         <MapArt regionId={regionId} />
         {locs.map((l) => {
-          const locked = !locationOpen(s, l.id, c);
+          const locked = crossing || !locationOpen(s, l.id, c);
           return (
             <button key={l.id} class={`pin-btn ${l.id === s.locationId ? 'here' : ''} ${goal?.where === l.id ? 'goal' : ''} ${locked ? 'locked' : ''}`}
-              style={{ left: `${l.map.x * 100}%`, top: `${l.map.y * 100}%` }} onClick={() => (locked ? undefined : go(l.id))}>
+              style={{ left: `${l.map.x * 100}%`, top: `${l.map.y * 100}%` }}
+              onClick={() => (locked ? store.emit([{ type: 'toast', text: crossing ? 'That is open sea. The raft will not make that crossing twice; a proper boat would.' : 'Too far for this boat. The boatyard has something that would reach it.', glyph: '🔒', tone: 'warn' }]) : go(l.id))}>
               <span class="d">{locked ? '🔒' : PLACE_GLYPH[l.kind] ?? '📍'}</span>
               <span class="l">{l.name}</span>
             </button>
           );
         })}
       </div>
-      <p class="quote">{here.regionId === regionId ? `${here.name}. ${here.blurb}` : region.blurb}</p>
-      {here.regionId !== regionId && <p class="muted">Tap a place to sail there.</p>}
+      <p class="quote">{!away ? `${here.name}. ${here.blurb}` : crossing ? 'Out of reach for now.' : 'Tap a place to sail there.'}</p>
+      {!away && locs.some((l) => !locationOpen(s, l.id, c)) && <p class="muted">Locked places need a better boat.</p>}
     </Sheet>
   );
 }

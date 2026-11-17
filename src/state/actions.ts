@@ -189,6 +189,12 @@ export function travel(s: GameState, ctx: Ctx, locationId: string): GameEvent[] 
     s.visited[locationId] = true;
     log(s, ctx, 'travel', `${loc.name}. ${loc.blurb}`, { locationId });
   }
+  for (const { quest, save } of activeQuests(s, ctx)) {
+    if (quest.goal.type === 'visit' && quest.goal.locationId === locationId) {
+      save.state = 'ready';
+      log(s, ctx, 'quest', `“${quest.title}”: done. ${ctx.content.people[quest.personId].name} will want to hear.`);
+    }
+  }
   return [{ type: 'sfx', id: 'travel' }];
 }
 

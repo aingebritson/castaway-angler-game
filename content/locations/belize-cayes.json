@@ -1,0 +1,384 @@
+[
+  {
+    "id": "port-esperanza",
+    "name": "Port Esperanza",
+    "kind": "port",
+    "habitat": "Fishing town on a sheltered harbour",
+    "blurb": "Pastel houses on stilts, a fish market, a tackle shop with a hand-painted sign, and more boats than people.",
+    "regionId": "belize-cayes",
+    "lat": 17.25,
+    "lon": -88.0,
+    "tz": "America/Belize",
+    "unlock": [],
+    "zones": [],
+    "sightZones": [],
+    "map": {
+      "x": 0.3,
+      "y": 0.4
+    },
+    "scene": {
+      "background": "scene/port-esperanza",
+      "painter": "port",
+      "waterPolygon": [],
+      "hotspots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "x": 0.24,
+          "y": 0.63,
+          "label": "Fish market",
+          "glyph": "🐟",
+          "ref": "delphine"
+        },
+        {
+          "id": "board",
+          "kind": "board",
+          "x": 0.46,
+          "y": 0.55,
+          "label": "Orders board",
+          "glyph": "📋"
+        },
+        {
+          "id": "tackle",
+          "kind": "shop",
+          "x": 0.74,
+          "y": 0.6,
+          "label": "Marisol’s Tackle",
+          "glyph": "🎣",
+          "ref": "tackle"
+        },
+        {
+          "id": "boatyard",
+          "kind": "shop",
+          "x": 0.8,
+          "y": 0.8,
+          "label": "Boatyard",
+          "glyph": "⛵",
+          "ref": "boatyard"
+        },
+        {
+          "id": "tobias",
+          "kind": "npc",
+          "x": 0.2,
+          "y": 0.82,
+          "label": "Old Tobias",
+          "glyph": "🧓",
+          "ref": "tobias"
+        }
+      ]
+    }
+  },
+  {
+    "id": "town-pier",
+    "name": "Town Pier",
+    "kind": "spot",
+    "habitat": "Wooden pier over sand, rubble and pilings",
+    "blurb": "Barnacled pilings, a lamp at the end, and a school of sardines that never quite leaves.",
+    "regionId": "belize-cayes",
+    "lat": 17.25,
+    "lon": -88.0,
+    "tz": "America/Belize",
+    "unlock": [],
+    "zones": [
+      {
+        "id": "pilings",
+        "name": "Pilings",
+        "minCastRange": 0,
+        "junkRate": 0.06,
+        "junkTable": "harbour-junk",
+        "blurb": "Shade and barnacles."
+      },
+      {
+        "id": "harbour",
+        "name": "Open harbour",
+        "minCastRange": 0.5,
+        "junkRate": 0.04,
+        "junkTable": "harbour-junk",
+        "blurb": "Where the bait gets chased."
+      },
+      {
+        "id": "bait-school",
+        "name": "Bait school",
+        "minCastRange": 0,
+        "junkRate": 0,
+        "junkTable": "harbour-junk",
+        "cast": false
+      }
+    ],
+    "sightZones": [],
+    "map": {
+      "x": 0.4,
+      "y": 0.5
+    },
+    "scene": {
+      "background": "scene/town-pier",
+      "painter": "pier",
+      "waterPolygon": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "sardines",
+          "kind": "gather",
+          "x": 0.14,
+          "y": 0.72,
+          "label": "Sardine school",
+          "glyph": "🐟",
+          "node": {
+            "handZone": "bait-school",
+            "max": 3,
+            "regrowMin": 6,
+            "requiresTool": "cast-net"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "mangrove-creek",
+    "name": "Mangrove Creek",
+    "kind": "spot",
+    "habitat": "Red mangrove shoreline and tidal creek",
+    "blurb": "Green walls, brown water, and the pop of something feeding back in the roots.",
+    "regionId": "belize-cayes",
+    "lat": 17.25,
+    "lon": -88.0,
+    "tz": "America/Belize",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      }
+    ],
+    "zones": [
+      {
+        "id": "roots",
+        "name": "Root line",
+        "minCastRange": 0,
+        "junkRate": 0.05,
+        "junkTable": "lagoon-junk",
+        "blurb": "Shade under the prop roots."
+      },
+      {
+        "id": "creek",
+        "name": "Creek channel",
+        "minCastRange": 0.5,
+        "junkRate": 0.04,
+        "junkTable": "lagoon-junk",
+        "blurb": "The deep bend."
+      }
+    ],
+    "sightZones": [
+      "roots",
+      "creek"
+    ],
+    "map": {
+      "x": 0.34,
+      "y": 0.72
+    },
+    "scene": {
+      "background": "scene/mangrove-creek",
+      "painter": "mangrove",
+      "waterPolygon": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "trap",
+          "kind": "station",
+          "x": 0.14,
+          "y": 0.62,
+          "label": "Trap",
+          "glyph": "🧺",
+          "station": "trap"
+        }
+      ]
+    }
+  },
+  {
+    "id": "patch-reef",
+    "name": "Patch Reef",
+    "kind": "spot",
+    "habitat": "Coral patch reefs and sand inside the barrier reef",
+    "blurb": "Coral heads like sunken gardens, the anchor line straight down, and blue beyond the last of them.",
+    "regionId": "belize-cayes",
+    "lat": 17.25,
+    "lon": -88.0,
+    "tz": "America/Belize",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      }
+    ],
+    "zones": [
+      {
+        "id": "reef-top",
+        "name": "Reef top",
+        "minCastRange": 0,
+        "junkRate": 0.04,
+        "junkTable": "reef-junk",
+        "blurb": "Coral heads and rubble."
+      },
+      {
+        "id": "reef-edge",
+        "name": "Reef edge",
+        "minCastRange": 0.45,
+        "junkRate": 0.03,
+        "junkTable": "reef-junk",
+        "blurb": "The ledge."
+      },
+      {
+        "id": "deep",
+        "name": "Deep ledge",
+        "minCastRange": 0.86,
+        "junkRate": 0.02,
+        "junkTable": "reef-junk",
+        "blurb": "Past the last coral."
+      }
+    ],
+    "sightZones": [
+      "reef-top"
+    ],
+    "map": {
+      "x": 0.62,
+      "y": 0.6
+    },
+    "scene": {
+      "background": "scene/patch-reef",
+      "painter": "reef",
+      "waterPolygon": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "trap",
+          "kind": "station",
+          "x": 0.86,
+          "y": 0.66,
+          "label": "Trap",
+          "glyph": "🧺",
+          "station": "trap"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the-cut",
+    "name": "The Cut",
+    "kind": "spot",
+    "habitat": "Tidal channel between two cayes, opening to the barrier reef",
+    "blurb": "The tide pours through between two islands. Sand flats on the shoulders, and at the mouth the water goes the colour of ink.",
+    "regionId": "belize-cayes",
+    "lat": 17.25,
+    "lon": -88.0,
+    "tz": "America/Belize",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      }
+    ],
+    "zones": [
+      {
+        "id": "channel",
+        "name": "Channel shoulder",
+        "minCastRange": 0,
+        "junkRate": 0.03,
+        "junkTable": "lagoon-junk",
+        "blurb": "Sand and current."
+      },
+      {
+        "id": "blue-edge",
+        "name": "Channel mouth",
+        "minCastRange": 0.55,
+        "junkRate": 0.02,
+        "junkTable": "reef-junk",
+        "blurb": "Where the bottom drops away."
+      },
+      {
+        "id": "blue-water",
+        "name": "Blue water",
+        "minCastRange": 0.98,
+        "junkRate": 0,
+        "junkTable": "reef-junk",
+        "blurb": "Beyond the reef. A bigger boat."
+      }
+    ],
+    "sightZones": [
+      "channel"
+    ],
+    "map": {
+      "x": 0.7,
+      "y": 0.28
+    },
+    "scene": {
+      "background": "scene/the-cut",
+      "painter": "cut",
+      "waterPolygon": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": []
+    }
+  }
+]

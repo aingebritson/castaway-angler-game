@@ -21,8 +21,28 @@ export function stage(s: GameState): number {
 
 export const STAGE_NAMES = ['Washed up', 'Toolmaker', 'Angler', 'Raft', 'Deckhand', 'Skipper', 'Voyager', 'Master'];
 
+/** After the island, the next thought comes from whoever you owe a visit. */
+function portGoal(s: GameState, content: Content): Goal | null {
+  const port = Object.values(content.locations).find((l) => l.kind === 'port' && l.regionId === content.locations[s.locationId]?.regionId)
+    ?? Object.values(content.locations).find((l) => l.kind === 'port');
+  if (!port) return null;
+  const entries = Object.entries(s.quests);
+  const ready = entries.find(([id, q]) => q.state === 'ready' && content.quests[id]);
+  if (ready) return { text: `${content.people[content.quests[ready[0]].personId].name} will want to hear about it.`, where: port.id };
+  const active = entries.find(([id, q]) => q.state === 'active' && content.quests[id]);
+  if (active) {
+    const q = content.quests[active[0]];
+    const g = q.goal;
+    const n = 'count' in g ? g.count : 1;
+    return { text: `${content.people[q.personId].name}: ${q.progressText.toLowerCase()}${n > 1 ? ` (${Math.min(active[1].progress, n)} of ${n})` : ''}.`, where: 'locationId' in g ? g.locationId : undefined };
+  }
+  if (!entries.length) return { text: 'A town, and people. Somebody at the boatyard must know about boats; the pier is free to fish.', where: port.id };
+  const open = Object.values(content.questsByPerson).some((list) => list.some((q) => !s.quests[q.id]));
+  return open ? { text: 'Someone in town may have another errand.', where: port.id } : null;
+}
+
 export function nextGoal(s: GameState, content: Content): Goal | null {
-  if (s.flags.launched) return null;
+  if (s.flags.launched) return portGoal(s, content);
   const held = (id: string) => !!s.everHeld[id];
   const caught = speciesCaught(s, content);
   if (!s.flags.hasRod) return { text: 'Something long and thin is tangled in the wrack on the beach.', where: 'beach' };

@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "alvarez",
+    "locationId": "port-esperanza",
+    "name": "Mr Alvarez",
+    "role": "Harbourmaster",
+    "glyph": "🧑‍✈️",
+    "greeting": "You came in on that? I have seen coffins with better lines. Sit down before you fall down.",
+    "idle": [
+      "The pier is free to fish. Everything else needs a boat.",
+      "Tide waits for nobody, and nobody in this town waits for the tide."
+    ]
+  },
+  {
+    "id": "marisol",
+    "locationId": "port-esperanza",
+    "name": "Marisol",
+    "role": "Tackle seller",
+    "glyph": "👩‍🔧",
+    "greeting": "A bamboo rod and a bone hook. I have not seen a rig like that since my grandmother’s. Does it catch?",
+    "idle": [
+      "Match the hook to the fish, not to your hopes.",
+      "A lure is a lie you tell with your wrist. Tell it at the right speed."
+    ]
+  },
+  {
+    "id": "tobias",
+    "locationId": "port-esperanza",
+    "name": "Old Tobias",
+    "role": "Old salt",
+    "glyph": "🧓",
+    "greeting": "Sixty years on this water. Ask me where the fish are and I will tell you where they were.",
+    "idle": [
+      "The sea keeps its books. You only ever see one page.",
+      "Every fish I lost is bigger now than the day it got away."
+    ]
+  },
+  {
+    "id": "delphine",
+    "locationId": "port-esperanza",
+    "name": "Delphine",
+    "role": "Fishmonger",
+    "glyph": "👩‍🍳",
+    "greeting": "Fresh is money. Big is more money. Protected is none of my business and none of yours.",
+    "idle": [
+      "Check the board. Restaurants pay double when they are desperate.",
+      "Smoked keeps, and smoked sells."
+    ]
+  }
+]

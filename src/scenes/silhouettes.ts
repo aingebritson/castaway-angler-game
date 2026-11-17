@@ -48,6 +48,7 @@ const FISH: Record<string, FishShape> = {
   parrot: { h: 0.36, tail: 'trunc', dorsal: 'long', nose: 0.15, ped: 0.08, marks: 'none' },
   wahoo: { h: 0.14, tail: 'lunate', dorsal: 'long', nose: 1, ped: 0.02, anal: 'far', marks: 'bars' },
   shark: { h: 0.2, tail: 'lunate', dorsal: 'short', nose: 0.9, ped: 0.03, under: true, marks: 'none' },
+  hogfish: { h: 0.44, tail: 'lunate', dorsal: 'spiny', nose: 0.95, ped: 0.05, marks: 'none' },
   sardine: { h: 0.2, tail: 'deepfork', dorsal: 'short', nose: 0.7, ped: 0.03, marks: 'none' },
 };
 
@@ -423,6 +424,27 @@ const SPECIAL: Record<string, Special> = {
       dot(g, -0.2, 0.05, 0.016);
     }
   },
+  manatee(g, o) {
+    g.beginPath();
+    g.moveTo(-0.5, 0);
+    g.bezierCurveTo(-0.46, -0.13, -0.3, -0.17, -0.1, -0.18);
+    g.bezierCurveTo(0.12, -0.19, 0.26, -0.1, 0.32, -0.05);
+    g.bezierCurveTo(0.4, -0.16, 0.5, -0.12, 0.5, 0);
+    g.bezierCurveTo(0.5, 0.12, 0.4, 0.16, 0.32, 0.05);
+    g.bezierCurveTo(0.26, 0.1, 0.12, 0.19, -0.1, 0.18);
+    g.bezierCurveTo(-0.3, 0.17, -0.46, 0.13, -0.5, 0);
+    g.fill();
+    for (const s of [-1, 1]) {
+      g.beginPath();
+      g.ellipse(-0.25, s * 0.2, 0.09, 0.04, s * 0.7, 0, 7);
+      g.fill();
+    }
+    if (!o.flat) {
+      g.fillStyle = 'rgba(0,0,0,0.45)';
+      dot(g, -0.42, -0.05, 0.012);
+      dot(g, -0.42, 0.05, 0.012);
+    }
+  },
   dolphin(g, o) {
     g.beginPath();
     g.moveTo(-0.5, 0.02);
@@ -450,11 +472,11 @@ const SPECIAL: Record<string, Special> = {
 export function shapeAspect(shape: string): number {
   const f = FISH[shape];
   if (f) return Math.max(0.3, f.h + 0.34);
-  return { eel: 0.3, lobster: 0.45, crab: 0.7, molecrab: 0.6, octopus: 0.6, conch: 0.65, turtle: 0.9, ray: 0.8, dolphin: 0.5 }[shape] ?? 0.5;
+  return { eel: 0.3, lobster: 0.45, crab: 0.7, molecrab: 0.6, octopus: 0.6, conch: 0.65, turtle: 0.9, ray: 0.8, dolphin: 0.5, manatee: 0.5 }[shape] ?? 0.5;
 }
 
 /** Shapes that are seen from above when cruising. */
-export const TOP_DOWN = new Set(['turtle', 'ray', 'crab', 'lobster', 'octopus', 'conch', 'molecrab']);
+export const TOP_DOWN = new Set(['manatee', 'turtle', 'ray', 'crab', 'lobster', 'octopus', 'conch', 'molecrab']);
 
 /** Draw a creature in unit space (length 1, facing left). The caller sets the transform. */
 export function drawShape(g: G, shape: string, o: DrawOpts): void {

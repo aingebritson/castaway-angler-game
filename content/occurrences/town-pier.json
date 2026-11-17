@@ -1,0 +1,547 @@
+[
+  {
+    "speciesId": "abudefduf-saxatilis",
+    "locationId": "town-pier",
+    "zones": [
+      "pilings"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 0.8,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crustacean": 1,
+      "shrimp": 1.2,
+      "cutfish": 0.8,
+      "fruit": 1,
+      "squid": 0.8
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Abudefduf saxatilis",
+        "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
+        "accessed": "pending-review",
+        "supports": "pilings and harbour walls"
+      }
+    ]
+  },
+  {
+    "speciesId": "haemulon-plumierii",
+    "locationId": "town-pier",
+    "zones": [
+      "pilings",
+      "harbour"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 0.9,
+      "dusk": 1.3,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "shrimp": 1.4,
+      "crustacean": 1.1,
+      "squid": 1.2,
+      "cutfish": 0.9,
+      "crab": 0.7
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Haemulon plumierii",
+        "url": "https://www.fishbase.se/summary/Haemulon-plumierii.html",
+        "accessed": "pending-review",
+        "supports": "docks, patch reefs, nocturnal foraging"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-griseus",
+    "locationId": "town-pier",
+    "zones": [
+      "pilings",
+      "harbour"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.7,
+      "dusk": 1.4,
+      "night": 1.5
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "shrimp": 1.5,
+      "livefish": 1.6,
+      "cutfish": 1.1,
+      "crustacean": 0.8,
+      "crab": 1,
+      "squid": 1
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus griseus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
+        "accessed": "pending-review",
+        "supports": "docks and mangroves, nocturnal feeding"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus griseus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-griseus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "gerres-cinereus",
+    "locationId": "town-pier",
+    "zones": [
+      "pilings"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 1,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "shrimp": 1.2,
+      "fruit": 0.5
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Gerres cinereus",
+        "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
+        "accessed": "pending-review",
+        "supports": "sandy harbour shallows"
+      }
+    ]
+  },
+  {
+    "speciesId": "gymnothorax-moringa",
+    "locationId": "town-pier",
+    "zones": [
+      "pilings"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.3,
+      "day": 0,
+      "dusk": 0.8,
+      "night": 1.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.5,
+      "squid": 1.4,
+      "crab": 0.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Gymnothorax moringa",
+        "url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
+        "accessed": "pending-review",
+        "supports": "rubble and pilings, nocturnal"
+      }
+    ]
+  },
+  {
+    "speciesId": "centropomus-undecimalis",
+    "locationId": "town-pier",
+    "zones": [
+      "pilings",
+      "harbour"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.3,
+      "dusk": 1.5,
+      "night": 1.8
+    },
+    "monthMod": [
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.2,
+      1.4,
+      1.4,
+      1.4,
+      1.2,
+      1,
+      0.8,
+      0.7
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "shrimp": 1.2,
+      "plug": 1.5,
+      "jig": 1.3,
+      "spoon": 0.8,
+      "feather": 0.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Centropomus undecimalis",
+        "url": "https://www.fishbase.se/summary/Centropomus-undecimalis.html",
+        "accessed": "pending-review",
+        "supports": "docks and harbour lights"
+      },
+      {
+        "title": "Florida Museum species profile: Centropomus undecimalis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/centropomus-undecimalis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "night feeding under lights"
+      }
+    ]
+  },
+  {
+    "speciesId": "caranx-hippos",
+    "locationId": "town-pier",
+    "zones": [
+      "harbour"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 0.8,
+      "dusk": 1.6,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "popper": 1.6,
+      "plug": 1.3,
+      "jig": 1.2,
+      "feather": 1,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Caranx hippos",
+        "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
+        "accessed": "pending-review",
+        "supports": "harbours and channels, schooling predator"
+      },
+      {
+        "title": "Florida Museum species profile: Caranx hippos",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/caranx-hippos/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "tylosurus-crocodilus",
+    "locationId": "town-pier",
+    "zones": [
+      "harbour"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 1
+    },
+    "monthMod": [
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.2,
+      1.4,
+      1.4,
+      1.4,
+      1.2,
+      1,
+      0.8,
+      0.7
+    ],
+    "methods": [
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1,
+      "popper": 1.5,
+      "feather": 1.3,
+      "plug": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Tylosurus crocodilus",
+        "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
+        "accessed": "pending-review",
+        "supports": "surface waters of harbours"
+      }
+    ]
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "town-pier",
+    "zones": [
+      "harbour"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0.3
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "plug": 1.6,
+      "feather": 1,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "harbours and channels"
+      }
+    ]
+  },
+  {
+    "speciesId": "megalops-atlanticus",
+    "locationId": "town-pier",
+    "zones": [
+      "harbour"
+    ],
+    "rarity": "epic",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 0.3,
+      "dusk": 1.5,
+      "night": 1.8
+    },
+    "monthMod": [
+      0.5,
+      0.5,
+      0.7,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      1.2,
+      0.8,
+      0.5,
+      0.5
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "plug": 1.5,
+      "cutfish": 0.6,
+      "jig": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Megalops atlanticus",
+        "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
+        "accessed": "pending-review",
+        "supports": "harbours, feeds under lights at night"
+      },
+      {
+        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "night tarpon around docks"
+      }
+    ]
+  },
+  {
+    "speciesId": "harengula-jaguana",
+    "locationId": "town-pier",
+    "zones": [
+      "bait-school"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 0.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "hand"
+    ],
+    "affinity": {},
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Harengula jaguana",
+        "url": "https://www.fishbase.se/summary/Harengula-jaguana.html",
+        "accessed": "pending-review",
+        "supports": "schools around piers and over grass"
+      }
+    ],
+    "designNotes": "Taken with a cast net; the game records the method as by hand."
+  }
+]

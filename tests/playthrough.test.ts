@@ -196,7 +196,7 @@ describe('castaway playthrough', () => {
     const events = launchRaft(s, p.ctx);
     expect(events.some((e) => e.type === 'ending')).toBe(true);
     expect(s.flags.launched).toBe(true);
-    expect(nextGoal(s, content)).toBeNull();
+    expect(nextGoal(s, content)?.where).toBe('port-esperanza');
 
     // The journal wrote itself along the way.
     const kindsLogged = new Set(s.journal.map((j) => j.kind));

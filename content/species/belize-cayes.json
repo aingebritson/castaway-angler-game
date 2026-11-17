@@ -1,0 +1,833 @@
+[
+  {
+    "id": "lutjanus-griseus",
+    "commonName": "Gray snapper",
+    "scientificName": "Lutjanus griseus",
+    "kind": "fish",
+    "family": "Lutjanidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 30,
+      "max": 76,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0151,
+      "b": 2.99
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 1.2,
+      "stamina": 8
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#9a8f86",
+      "accent": "#b5553f"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 9,
+    "description": "The mangrove snapper of every dock and creek mouth: a wary grey-bronze fish that hangs in the shade of pilings and roots and studies a bait before taking it. Small ones are everywhere inshore. The big ones move out to the reef, feed after dark, and cut a line on the nearest piling given half a chance.",
+    "facts": [
+      "Young gray snapper grow up in mangroves and seagrass, then move to reefs as adults.",
+      "It feeds mostly at night on shrimp, crabs and small fish.",
+      "A dark stripe through the eye appears when the fish is excited or feeding."
+    ],
+    "visualNotes": "Slender snapper, grey to bronze with reddish tinge; rows of small rust spots along the scale rows; dark stripe from snout through the eye in young fish; two large canine teeth; rounded anal fin; shallow-forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus griseus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Lutjanus griseus",
+        "url": "https://www.iucnredlist.org/search?query=Lutjanus%20griseus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus griseus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-griseus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "haemulon-plumierii",
+    "commonName": "White grunt",
+    "scientificName": "Haemulon plumierii",
+    "kind": "fish",
+    "family": "Haemulidae",
+    "lengthCm": {
+      "min": 10,
+      "common": 25,
+      "max": 53,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0166,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 0.9,
+      "stamina": 4
+    },
+    "silhouette": "grunt",
+    "tint": {
+      "body": "#cfd9e0",
+      "accent": "#4a78c8"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 5,
+    "description": "A silver-grey grunt with narrow blue stripes on its head and a mouth lined in bright red. It crowds docks and patch reefs by day and spreads over grass beds at night. Pairs sometimes face off mouth to mouth, pushing. It is the fish in the pan at half the kitchens on the coast.",
+    "facts": [
+      "Two white grunts will 'kiss', pushing with open mouths, in a contest over territory.",
+      "The inside of the mouth is bright red.",
+      "It grunts by grinding teeth in its throat."
+    ],
+    "visualNotes": "Silver-grey body with bluish stripes on the head and a chequered pattern of pale scale centres on the flank; red mouth lining; dusky tail and soft dorsal; forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Haemulon plumierii",
+        "url": "https://www.fishbase.se/summary/Haemulon-plumierii.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Haemulon plumierii",
+        "url": "https://www.iucnredlist.org/search?query=Haemulon%20plumierii",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Haemulon plumierii",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/haemulon-plumierii/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "centropomus-undecimalis",
+    "commonName": "Common snook",
+    "scientificName": "Centropomus undecimalis",
+    "kind": "fish",
+    "family": "Centropomidae",
+    "lengthCm": {
+      "min": 25,
+      "common": 60,
+      "max": 140,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0063,
+      "b": 3.07
+    },
+    "recordNote": "IGFA all-tackle record is about 24 kg.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.6,
+      "stamina": 22
+    },
+    "silhouette": "snook",
+    "tint": {
+      "body": "#c9cfc0",
+      "accent": "#23262a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 45,
+    "description": "A long, golden-silver ambush hunter with a jutting lower jaw and a single black line drawn down its side. Snook lie along mangrove edges, under docks and in the shadow line of harbour lights, facing the current. The strike is a loud pop at the surface, followed by a jump and a run for the roots.",
+    "facts": [
+      "The black lateral line is unmistakable, and gives it the nickname 'linesider'.",
+      "Most snook begin life male and some become female as they grow.",
+      "It cannot survive cold water, which limits how far north it lives."
+    ],
+    "visualNotes": "Elongate golden-silver body; sloping forehead and long protruding lower jaw; bold black lateral line running into the tail; two separate dorsal fins; yellowish pelvic fins; forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Centropomus undecimalis",
+        "url": "https://www.fishbase.se/summary/Centropomus-undecimalis.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Centropomus undecimalis",
+        "url": "https://www.iucnredlist.org/search?query=Centropomus%20undecimalis",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Centropomus undecimalis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/centropomus-undecimalis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "caranx-hippos",
+    "commonName": "Crevalle jack",
+    "scientificName": "Caranx hippos",
+    "kind": "fish",
+    "family": "Carangidae",
+    "lengthCm": {
+      "min": 20,
+      "common": 55,
+      "max": 115,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.019,
+      "b": 2.96
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 2.0,
+      "stamina": 26
+    },
+    "silhouette": "jack",
+    "tint": {
+      "body": "#c8cf9a",
+      "accent": "#d6c23a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 12,
+    "description": "A blunt-headed, brass-flanked bully that hunts in packs and herds bait against sea walls and into the corners of the harbour. A jack hits anything moving and then simply refuses to stop pulling, turning broadside and circling under the rod. Poor eating, by common agreement, and a first-rate fight.",
+    "facts": [
+      "Packs of jacks drive baitfish against shorelines and sea walls to trap them.",
+      "A black spot on the gill cover and another on the pectoral fin identify it.",
+      "Hooked jacks often make a croaking sound."
+    ],
+    "visualNotes": "Deep body with a steep blunt forehead; olive-green back, silver to brassy flanks, yellow tail and anal fin; black spot on the gill cover and on the lower pectoral rays; hard scutes before the deeply forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Caranx hippos",
+        "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Caranx hippos",
+        "url": "https://www.iucnredlist.org/search?query=Caranx%20hippos",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Caranx hippos",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/caranx-hippos/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "epinephelus-striatus",
+    "commonName": "Nassau grouper",
+    "scientificName": "Epinephelus striatus",
+    "kind": "fish",
+    "family": "Epinephelidae",
+    "lengthCm": {
+      "min": 25,
+      "common": 55,
+      "max": 110,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0107,
+      "b": 3.11
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.5,
+      "stamina": 30
+    },
+    "silhouette": "grouper",
+    "tint": {
+      "body": "#d9b8a0",
+      "accent": "#6a3a2a"
+    },
+    "conservation": {
+      "iucn": "CR",
+      "releaseOnly": true,
+      "note": "Critically Endangered. Fishing its winter spawning aggregations collapsed the species across the Caribbean; most countries now protect it."
+    },
+    "baseValue": 0,
+    "description": "A big, curious, pale grouper banded in brown, with a black saddle on the tail stalk. It was once the commonest large fish on Caribbean reefs. Every winter, around the full moon, Nassau grouper travel to the same few reef points to spawn in their thousands, which made them very easy to catch.",
+    "facts": [
+      "It spawns in huge gatherings at fixed sites around winter full moons.",
+      "It can change its colour pattern in seconds, from pale to nearly black.",
+      "Whole spawning aggregations have been fished out and have never returned."
+    ],
+    "visualNotes": "Robust pale tan grouper with five irregular dark brown bars; a black saddle on top of the tail stalk; dark 'tuning fork' mark on the forehead; small black dots around the eye; rounded tail.",
+    "sources": [
+      {
+        "title": "FishBase: Epinephelus striatus",
+        "url": "https://www.fishbase.se/summary/Epinephelus-striatus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Epinephelus striatus",
+        "url": "https://www.iucnredlist.org/search?query=Epinephelus%20striatus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "NOAA Fisheries: Nassau grouper",
+        "url": "https://www.fisheries.noaa.gov/species/nassau-grouper",
+        "accessed": "pending-review",
+        "supports": "protected status, spawning aggregations"
+      }
+    ]
+  },
+  {
+    "id": "mycteroperca-bonaci",
+    "commonName": "Black grouper",
+    "scientificName": "Mycteroperca bonaci",
+    "kind": "fish",
+    "family": "Epinephelidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 70,
+      "max": 150,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0105,
+      "b": 3.08
+    },
+    "recordNote": "IGFA all-tackle record is about 56 kg.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.7,
+      "stamina": 40
+    },
+    "silhouette": "grouper",
+    "tint": {
+      "body": "#6f6a5c",
+      "accent": "#2c2a24"
+    },
+    "conservation": {
+      "iucn": "NT",
+      "releaseOnly": false
+    },
+    "baseValue": 90,
+    "description": "The heavyweight of the reef edge: a dark, blotched grouper that holds beside a ledge and inhales fish whole. It is slow to grow and slow to bite. When it does, the only question is whether it reaches its hole before the angler turns its head, and it usually does.",
+    "facts": [
+      "It swallows prey whole by opening its mouth so fast that the fish is sucked in.",
+      "Black grouper start life female and the largest become male.",
+      "Once in its hole it wedges itself by flaring its gill covers."
+    ],
+    "visualNotes": "Heavy elongate grouper; olive-grey with rows of dark rectangular blotches and brassy spots; squared-off tail with a black margin; fins edged in black; large mouth with a protruding lower jaw.",
+    "sources": [
+      {
+        "title": "FishBase: Mycteroperca bonaci",
+        "url": "https://www.fishbase.se/summary/Mycteroperca-bonaci.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Mycteroperca bonaci",
+        "url": "https://www.iucnredlist.org/search?query=Mycteroperca%20bonaci",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Mycteroperca bonaci",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mycteroperca-bonaci/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "lachnolaimus-maximus",
+    "commonName": "Hogfish",
+    "scientificName": "Lachnolaimus maximus",
+    "kind": "fish",
+    "family": "Labridae",
+    "lengthCm": {
+      "min": 15,
+      "common": 35,
+      "max": 80,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.0237,
+      "b": 2.95
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 1.1,
+      "stamina": 10
+    },
+    "silhouette": "hogfish",
+    "tint": {
+      "body": "#d98a6a",
+      "accent": "#7a2f2a"
+    },
+    "conservation": {
+      "iucn": "VU",
+      "releaseOnly": false,
+      "note": "Vulnerable. Easy to spear and slow to recover."
+    },
+    "baseValue": 55,
+    "description": "A large, deep-bodied wrasse with a long pig-like snout that it uses to root in the sand for crabs and shellfish. The first three dorsal spines trail as long streamers. Hogfish are calm, slow, and reckoned the best table fish on the reef, which is the whole of their problem.",
+    "facts": [
+      "It roots in sand with its snout like a pig, which is where the name comes from.",
+      "All hogfish begin as females; large ones become males and guard a harem.",
+      "It shifts colour from pale to mottled red-brown to match the bottom."
+    ],
+    "visualNotes": "Deep, compressed body with a long sloping snout; first three dorsal spines elongated into streamers; pearly white to reddish-brown, males with a dark maroon band over the top of the head; dark spot at the rear base of the dorsal; lunate tail with long tips.",
+    "sources": [
+      {
+        "title": "FishBase: Lachnolaimus maximus",
+        "url": "https://www.fishbase.se/summary/Lachnolaimus-maximus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Lachnolaimus maximus",
+        "url": "https://www.iucnredlist.org/search?query=Lachnolaimus%20maximus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Lachnolaimus maximus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lachnolaimus-maximus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "balistes-vetula",
+    "commonName": "Queen triggerfish",
+    "scientificName": "Balistes vetula",
+    "kind": "fish",
+    "family": "Balistidae",
+    "lengthCm": {
+      "min": 15,
+      "common": 30,
+      "max": 60,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0306,
+      "b": 2.92
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.2,
+      "stamina": 9
+    },
+    "silhouette": "trigger",
+    "tint": {
+      "body": "#5fa8a0",
+      "accent": "#e8c84a"
+    },
+    "conservation": {
+      "iucn": "NT",
+      "releaseOnly": false
+    },
+    "baseValue": 20,
+    "description": "A plate-shaped fish in blue, green and yellow, with electric blue lines across its face and long trailing fin tips. It blows jets of water at sea urchins to flip them over and bites through the soft underside. The mouth is tiny and hard, so it takes a small hook and a patient strike.",
+    "facts": [
+      "It flips sea urchins by blowing water at them, then attacks the unprotected underside.",
+      "It locks its first dorsal spine upright with the second, like a trigger, to wedge into holes.",
+      "Its small beak-like mouth has teeth strong enough to crush shells."
+    ],
+    "visualNotes": "Deep, laterally compressed oval body; yellow-green to blue-grey; two bright blue curved lines from snout to pectoral fin; dark lines radiating from the eye; trailing filaments on the dorsal fin and both tail lobes; small terminal mouth.",
+    "sources": [
+      {
+        "title": "FishBase: Balistes vetula",
+        "url": "https://www.fishbase.se/summary/Balistes-vetula.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Balistes vetula",
+        "url": "https://www.iucnredlist.org/search?query=Balistes%20vetula",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Balistes vetula",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/balistes-vetula/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "scomberomorus-regalis",
+    "commonName": "Cero",
+    "scientificName": "Scomberomorus regalis",
+    "kind": "fish",
+    "family": "Scombridae",
+    "lengthCm": {
+      "min": 25,
+      "common": 45,
+      "max": 86,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.01,
+      "b": 3.0
+    },
+    "recordNote": "IGFA all-tackle record is nearly 8 kg.",
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.5,
+      "stamina": 12
+    },
+    "silhouette": "wahoo",
+    "tint": {
+      "body": "#b8c8d0",
+      "accent": "#d8b83a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 30,
+    "description": "The reef's own mackerel: a slim silver sprinter marked with a bronze stripe and rows of yellow dashes. Cero hunt alone or in small groups along the reef edge, slashing through schools of bait at first light. They hit a flashing lure at full speed and can bite clean through a light line.",
+    "facts": [
+      "Unlike other mackerels it stays close to coral reefs rather than open water.",
+      "A bronze stripe with yellow spots above and below separates it from king and Spanish mackerel.",
+      "Its teeth are flat and sharp as blades."
+    ],
+    "visualNotes": "Elongate, streamlined silver body, blue-green on the back; bronze-yellow stripe along the mid-side with rows of yellow streaks and spots above and below; black patch at the front of the first dorsal fin; deeply forked tail with finlets ahead of it.",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus regalis",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-regalis.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Scomberomorus regalis",
+        "url": "https://www.iucnredlist.org/search?query=Scomberomorus%20regalis",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Scomberomorus regalis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/scomberomorus-regalis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "scomberomorus-cavalla",
+    "commonName": "King mackerel",
+    "scientificName": "Scomberomorus cavalla",
+    "kind": "fish",
+    "family": "Scombridae",
+    "lengthCm": {
+      "min": 45,
+      "common": 80,
+      "max": 173,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.0085,
+      "b": 3.0
+    },
+    "recordNote": "IGFA all-tackle record is about 42 kg.",
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.8,
+      "stamina": 35
+    },
+    "silhouette": "wahoo",
+    "tint": {
+      "body": "#9fb0bb",
+      "accent": "#5a6a78"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 110,
+    "description": "The kingfish: a long grey torpedo of the channel edges and blue water, built for one thing. It comes up under a live bait from below, cuts it in half and circles back for the rest. The first run empties a small reel. Big ones, called smokers, travel alone.",
+    "facts": [
+      "Its lateral line drops sharply below the second dorsal fin, unlike other mackerels.",
+      "Big kingfish are called 'smokers' for what they do to a reel.",
+      "It migrates along the coast with the seasons and water temperature."
+    ],
+    "visualNotes": "Very elongate iron-grey to silver body without spots in adults; lateral line dips abruptly below the second dorsal fin; pale first dorsal with no black patch; deeply forked tail with a row of finlets; large mouth with razor teeth.",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus cavalla",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Scomberomorus cavalla",
+        "url": "https://www.iucnredlist.org/search?query=Scomberomorus%20cavalla",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "NOAA Fisheries: King mackerel",
+        "url": "https://www.fisheries.noaa.gov/species/king-mackerel",
+        "accessed": "pending-review",
+        "supports": "migration, seasons, biology"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "harengula-jaguana",
+    "commonName": "Scaled sardine",
+    "scientificName": "Harengula jaguana",
+    "kind": "fish",
+    "family": "Clupeidae",
+    "lengthCm": {
+      "min": 6,
+      "common": 12,
+      "max": 21,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0126,
+      "b": 3.1
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "sardine",
+    "tint": {
+      "body": "#c8d6dc",
+      "accent": "#5f7f92"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 1,
+    "gathersAs": {
+      "item": "live-sardine",
+      "qty": 3
+    },
+    "description": "A small, deep-bellied silver herring that packs into shimmering schools around piers and over grass flats. Everything with teeth eats it. A cast net thrown over a school at first light fills a bait bucket, and a lively sardine on a hook will find fish that ignore every lure in the box.",
+    "facts": [
+      "Schools form tight flashing balls when predators attack.",
+      "It is among the most-used live baits in the Caribbean and Gulf.",
+      "Scales come off at a touch, which is why bait nets end up glittering."
+    ],
+    "visualNotes": "Small silver herring with a deep, compressed belly and a keel of sharp scutes; dark blue-green back; small dark spot behind the gill cover; forked tail; large eye.",
+    "sources": [
+      {
+        "title": "FishBase: Harengula jaguana",
+        "url": "https://www.fishbase.se/summary/Harengula-jaguana.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Harengula jaguana",
+        "url": "https://www.iucnredlist.org/search?query=Harengula%20jaguana",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "callinectes-sapidus",
+    "commonName": "Blue crab",
+    "scientificName": "Callinectes sapidus",
+    "kind": "crustacean",
+    "family": "Portunidae",
+    "lengthCm": {
+      "min": 6,
+      "common": 14,
+      "max": 23,
+      "measure": "CW"
+    },
+    "lengthWeight": {
+      "a": 0.05,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "crab",
+    "tint": {
+      "body": "#5f7fa8",
+      "accent": "#d86a3a"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": false
+    },
+    "baseValue": 14,
+    "description": "A fast, bad-tempered swimming crab with sapphire claws and a shell drawn out into a spike on each side. It scuttles sideways through creek mouths and mangrove channels, eating whatever it can catch or scavenge. Its back legs are flattened into paddles, and it swims better than a crab has any right to.",
+    "facts": [
+      "The rear pair of legs are flat paddles used for swimming.",
+      "Its scientific name means 'savoury beautiful swimmer'.",
+      "Mature females have red tips on their claws."
+    ],
+    "visualNotes": "Broad olive-green carapace about twice as wide as long, ending in a sharp spine on each side; bright blue claws and legs; rear legs flattened into oval paddles.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Callinectes sapidus",
+        "url": "https://www.sealifebase.se/summary/Callinectes-sapidus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      },
+      {
+        "title": "NOAA Fisheries: Blue crab",
+        "url": "https://www.fisheries.noaa.gov/species/blue-crab",
+        "accessed": "pending-review",
+        "supports": "biology, habitat"
+      }
+    ]
+  },
+  {
+    "id": "trichechus-manatus",
+    "commonName": "West Indian manatee",
+    "scientificName": "Trichechus manatus",
+    "kind": "sighting",
+    "family": "Trichechidae",
+    "lengthCm": {
+      "min": 150,
+      "common": 300,
+      "max": 400,
+      "measure": "TL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "manatee",
+    "tint": {
+      "body": "#8a8f8c",
+      "accent": "#b8bcb8"
+    },
+    "conservation": {
+      "iucn": "VU",
+      "releaseOnly": true,
+      "note": "Vulnerable. Belize holds one of the largest remaining populations of the Antillean subspecies."
+    },
+    "baseValue": 0,
+    "description": "A huge, slow, grey mammal that drifts through mangrove creeks and grass beds eating plants for most of the day. It surfaces every few minutes with a soft snort, showing a whiskered nose and nothing else. Boats are its main danger. A manatee has never hurried anywhere.",
+    "facts": [
+      "It eats up to a tenth of its body weight in plants every day.",
+      "Its closest living relatives on land are elephants.",
+      "Its teeth are replaced continuously, moving forward like a conveyor belt."
+    ],
+    "visualNotes": "Massive grey spindle-shaped body with wrinkled skin; small head with a bristled, squared muzzle; two paddle-like front flippers; broad rounded paddle tail; no dorsal fin.",
+    "sources": [
+      {
+        "title": "IUCN Red List: Trichechus manatus",
+        "url": "https://www.iucnredlist.org/search?query=Trichechus%20manatus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "US Fish and Wildlife Service: West Indian manatee",
+        "url": "https://www.fws.gov/species/manatee-trichechus-manatus",
+        "accessed": "pending-review",
+        "supports": "biology, diet, threats"
+      }
+    ]
+  },
+  {
+    "id": "ginglymostoma-cirratum",
+    "commonName": "Nurse shark",
+    "scientificName": "Ginglymostoma cirratum",
+    "kind": "sighting",
+    "family": "Ginglymostomatidae",
+    "lengthCm": {
+      "min": 100,
+      "common": 240,
+      "max": 308,
+      "measure": "TL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#a08a6a",
+      "accent": "#7a6648"
+    },
+    "conservation": {
+      "iucn": "VU",
+      "releaseOnly": true
+    },
+    "baseValue": 0,
+    "description": "A broad-headed, rust-brown shark that spends the day piled up with others under reef ledges, pumping water over its gills without moving. At night it cruises the bottom, sucking lobsters, conch and sleeping fish out of crevices with a mouth that works like a vacuum.",
+    "facts": [
+      "Unlike most sharks it can breathe while lying still by pumping water over its gills.",
+      "It feeds by suction strong enough to pull a conch from its shell.",
+      "Two fleshy barbels by the nostrils help it find prey in the sand."
+    ],
+    "visualNotes": "Stout yellowish-brown shark with a broad flat head; two barbels at the nostrils; two rounded dorsal fins of nearly equal size set far back; very long upper tail lobe held low; small mouth ahead of the eyes.",
+    "sources": [
+      {
+        "title": "FishBase: Ginglymostoma cirratum",
+        "url": "https://www.fishbase.se/summary/Ginglymostoma-cirratum.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, behaviour"
+      },
+      {
+        "title": "IUCN Red List: Ginglymostoma cirratum",
+        "url": "https://www.iucnredlist.org/search?query=Ginglymostoma%20cirratum",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  }
+]

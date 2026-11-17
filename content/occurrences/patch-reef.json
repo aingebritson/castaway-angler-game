@@ -1,0 +1,847 @@
+[
+  {
+    "speciesId": "ocyurus-chrysurus",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top",
+      "reef-edge",
+      "deep"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.8,
+      "dusk": 1.5,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1.2,
+      1.3,
+      1.3,
+      1.2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "shrimp": 1.3,
+      "squid": 1.3,
+      "livefish": 1.2,
+      "jig": 0.8,
+      "crustacean": 0.7
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Ocyurus chrysurus",
+        "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
+        "accessed": "pending-review",
+        "supports": "reef habitat"
+      },
+      {
+        "title": "Florida Museum species profile: Ocyurus chrysurus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "haemulon-plumierii",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 0.9,
+      "dusk": 1.3,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "shrimp": 1.4,
+      "squid": 1.2,
+      "cutfish": 0.9,
+      "crustacean": 1,
+      "trap": 0.6
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Haemulon plumierii",
+        "url": "https://www.fishbase.se/summary/Haemulon-plumierii.html",
+        "accessed": "pending-review",
+        "supports": "patch reefs"
+      }
+    ]
+  },
+  {
+    "speciesId": "thalassoma-bifasciatum",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 0.9,
+      "day": 1.2,
+      "dusk": 0.6,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "shrimp": 1,
+      "crustacean": 1,
+      "squid": 0.6
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Thalassoma bifasciatum",
+        "url": "https://www.fishbase.se/summary/Thalassoma-bifasciatum.html",
+        "accessed": "pending-review",
+        "supports": "reef tops, diurnal"
+      }
+    ]
+  },
+  {
+    "speciesId": "holocentrus-adscensionis",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top",
+      "reef-edge"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 0.4,
+      "day": 0,
+      "dusk": 0.6,
+      "night": 1.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "shrimp": 1.3,
+      "crab": 1,
+      "crustacean": 1.1,
+      "squid": 0.8,
+      "trap": 0.5
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Holocentrus adscensionis",
+        "url": "https://www.fishbase.se/summary/Holocentrus-adscensionis.html",
+        "accessed": "pending-review",
+        "supports": "nocturnal reef fish"
+      }
+    ]
+  },
+  {
+    "speciesId": "lachnolaimus-maximus",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top",
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.3,
+      "dusk": 1,
+      "night": 0.1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crab": 1.8,
+      "shrimp": 1.3,
+      "crustacean": 0.9,
+      "squid": 0.4
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lachnolaimus maximus",
+        "url": "https://www.fishbase.se/summary/Lachnolaimus-maximus.html",
+        "accessed": "pending-review",
+        "supports": "sand and rubble near reefs, diurnal, eats molluscs and crabs"
+      },
+      {
+        "title": "Florida Museum species profile: Lachnolaimus maximus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lachnolaimus-maximus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "balistes-vetula",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.3,
+      "dusk": 1,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crab": 1.5,
+      "shrimp": 1.3,
+      "squid": 1.3,
+      "crustacean": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Balistes vetula",
+        "url": "https://www.fishbase.se/summary/Balistes-vetula.html",
+        "accessed": "pending-review",
+        "supports": "reef tops and rubble, diurnal"
+      },
+      {
+        "title": "Florida Museum species profile: Balistes vetula",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/balistes-vetula/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "caranx-ruber",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1,
+      "dusk": 1.5,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "jig": 1.3,
+      "feather": 1.4,
+      "plug": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Caranx ruber",
+        "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
+        "accessed": "pending-review",
+        "supports": "reef edges"
+      }
+    ]
+  },
+  {
+    "speciesId": "scomberomorus-regalis",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-edge",
+      "deep"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.7,
+      "day": 0.9,
+      "dusk": 1.4,
+      "night": 0.1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.7,
+      "jig": 1.3,
+      "plug": 1.2,
+      "feather": 1,
+      "livefish": 1.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus regalis",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-regalis.html",
+        "accessed": "pending-review",
+        "supports": "reef-associated mackerel"
+      },
+      {
+        "title": "Florida Museum species profile: Scomberomorus regalis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/scomberomorus-regalis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-analis",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.6,
+      "dusk": 1.6,
+      "night": 1.2
+    },
+    "monthMod": [
+      0.8,
+      0.8,
+      1,
+      1.4,
+      1.8,
+      1.6,
+      1,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crab": 1.5,
+      "cutfish": 1.3,
+      "livefish": 1.8,
+      "squid": 1.2,
+      "shrimp": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus analis",
+        "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
+        "accessed": "pending-review",
+        "supports": "reef and sand"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus analis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.3
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "plug": 1.6,
+      "livefish": 1.8,
+      "feather": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "reef edge"
+      }
+    ]
+  },
+  {
+    "speciesId": "epinephelus-striatus",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-edge",
+      "deep"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.8,
+      "dusk": 1.5,
+      "night": 0.8
+    },
+    "monthMod": [
+      1.8,
+      1.6,
+      1,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.6
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "livefish": 1.8,
+      "crab": 1.2,
+      "squid": 1.3
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Epinephelus striatus",
+        "url": "https://www.fishbase.se/summary/Epinephelus-striatus.html",
+        "accessed": "pending-review",
+        "supports": "reef habitat"
+      },
+      {
+        "title": "IUCN Red List: Epinephelus striatus",
+        "url": "https://www.iucnredlist.org/search?query=Epinephelus%20striatus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ],
+    "designNotes": "Month weights follow the winter spawning season, when the fish are most active near reef points."
+  },
+  {
+    "speciesId": "mycteroperca-bonaci",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.6,
+      "dusk": 1.7,
+      "night": 0.8
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "cutfish": 1.2,
+      "jig": 1,
+      "plug": 0.8,
+      "squid": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Mycteroperca bonaci",
+        "url": "https://www.fishbase.se/summary/Mycteroperca-bonaci.html",
+        "accessed": "pending-review",
+        "supports": "reef ledges and drop-offs"
+      },
+      {
+        "title": "Florida Museum species profile: Mycteroperca bonaci",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mycteroperca-bonaci/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "mycteroperca-bonaci",
+    "locationId": "patch-reef",
+    "zones": [
+      "deep"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.6,
+      "dusk": 1.7,
+      "night": 0.8
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "cutfish": 1.2,
+      "jig": 1,
+      "squid": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Mycteroperca bonaci",
+        "url": "https://www.fishbase.se/summary/Mycteroperca-bonaci.html",
+        "accessed": "pending-review",
+        "supports": "deeper reef"
+      }
+    ]
+  },
+  {
+    "speciesId": "scomberomorus-cavalla",
+    "locationId": "patch-reef",
+    "zones": [
+      "deep"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1.4,
+      1.4,
+      1.5,
+      1.3,
+      1,
+      0.7,
+      0.6,
+      0.6,
+      0.7,
+      1,
+      1.3,
+      1.4
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 2,
+      "plug": 1.4,
+      "spoon": 1.2,
+      "cutfish": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Scomberomorus cavalla",
+        "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
+        "accessed": "pending-review",
+        "supports": "outer reef and open water"
+      },
+      {
+        "title": "NOAA Fisheries: King mackerel",
+        "url": "https://www.fisheries.noaa.gov/species/king-mackerel",
+        "accessed": "pending-review",
+        "supports": "seasonal migration"
+      }
+    ]
+  },
+  {
+    "speciesId": "panulirus-argus",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.6,
+      "day": 0.2,
+      "dusk": 1,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1.2,
+      1.5,
+      1.5,
+      1.2
+    ],
+    "methods": [
+      "trap"
+    ],
+    "affinity": {
+      "trap": 1,
+      "cutfish": 1.5,
+      "squid": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Panulirus argus",
+        "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
+        "accessed": "pending-review",
+        "supports": "reef dens"
+      }
+    ]
+  },
+  {
+    "speciesId": "octopus-briareus",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.3,
+      "day": 0,
+      "dusk": 0.8,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "trap"
+    ],
+    "affinity": {
+      "trap": 0.8,
+      "crab": 1.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Octopus briareus",
+        "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
+        "accessed": "pending-review",
+        "supports": "nocturnal reef hunter"
+      }
+    ]
+  },
+  {
+    "speciesId": "ginglymostoma-cirratum",
+    "locationId": "patch-reef",
+    "zones": [
+      "reef-top",
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 1,
+      "dusk": 1,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Ginglymostoma cirratum",
+        "url": "https://www.fishbase.se/summary/Ginglymostoma-cirratum.html",
+        "accessed": "pending-review",
+        "supports": "rests under reef ledges by day"
+      }
+    ],
+    "designNotes": "Sighting only."
+  }
+]
