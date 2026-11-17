@@ -24,7 +24,7 @@
     "id": "bonefish-bait",
     "speciesId": "albula-vulpes",
     "dimension": "bait",
-    "text": "They are after crabs and sand fleas, and nothing dead.",
+    "text": "They are after crabs and sand fleas, and they like them alive.",
     "fillsCells": [
       "bait:crustacean",
       "bait:crab"
@@ -99,7 +99,7 @@
     "id": "permit-crab",
     "speciesId": "trachinotus-falcatus",
     "dimension": "bait",
-    "text": "The round silver fish with sickle fins will look at nothing but a crab.",
+    "text": "The round silver fish with sickle fins wants a crab above anything else.",
     "fillsCells": [
       "bait:crab"
     ],

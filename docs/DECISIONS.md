@@ -61,6 +61,13 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 
 35. **The island species records were checked against live sources on 17 November 2026.** Details are in `research/castaway-island/dossier.md`. Several length-weight sets were replaced so that weight at maximum length lands within 30% of the record. Maximums changed for schoolmaster (now 79.1 cm FL), bar jack, bonefish (down to 80 cm FL), permit (up to 122 cm FL), spiny lobster, queen conch and Sally Lightfoot crab. Queen conch is now IUCN Near Threatened. The spotted moray is no longer absent by day. Occurrence records are still unchecked. 
 36. **Bonefish and permit stay sellable**, Andy's call on 17 November 2026, although Belize law (SI 114 of 2009) makes them catch-and-release only. Selling them keeps both in the museum wing and on the orders board. The departure is recorded in each occurrence's `designNotes`, and the field guide carries the real rule as a fact. Tarpon stays release-only.
+37. **The island occurrence records were checked on 17 November 2026**, and every island source is now dated (details in the dossier).
+    - Bonefish, great barracuda and houndfish are now the same in every month. Belize guides report no season for the first two, and nothing was found for the third.
+    - Permit, tarpon and mutton snapper keep their seasons, reshaped to Belize guide reports and the Gladden Spit spawning months.
+    - Yellowtail now leans harder to night, mutton snapper bites through the day, and tarpon bite more by day.
+    - Bonefish take cut bait more often.
+    - Two rumours were rewritten so that they are true of real fish.
+    - Old Ironjaw's November to March window no longer matches any barracuda season, and is kept as a design choice.
 
 ## Schema additions (spec section 11)
 

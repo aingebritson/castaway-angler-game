@@ -1,6 +1,6 @@
 # Castaway Island research dossier
 
-First pass: 17 November 2026. Scope: the 24 species records on the island, checked against live sources (spec section 12). The occurrence records (time of day, months, methods, baits) have **not** been checked yet, apart from one change to the spotted moray; see "Still to do".
+Passes on 17 November 2026 (spec section 12): first the 24 species records, then the 34 occurrence records (time of day, months, methods, baits) at the Beach, Rocky Point and Lagoon Flats. Every island source is now read and dated; none is `pending-review`.
 
 ## Overview
 
@@ -82,6 +82,61 @@ The simulator was run at Rocky Point (angler and toolmaker rigs) and Lagoon Flat
 - Spotted moray share at dawn in the shallows rises from 6% to 11%.
 - Zone rarity shares move by less than 2 points. All tests pass (60/60).
 
+## Occurrence pass
+
+The 34 island occurrences were checked against guide and lodge month-by-month pages, Florida Museum profiles, FishBase and SeaLifeBase behaviour notes, Animal Diversity Web, and published studies. Seasonal values follow what anglers in Belize report. Studies from Florida were used only for time of day and diet, because seasons there differ.
+
+### Months
+
+| Species | Before | After | Why |
+| --- | --- | --- | --- |
+| Bonefish | Winter peak (1.2), summer low (0.8) | **Flat 1.0** | Belize guides call bonefish a daily option in every month. The spec says year-round species are 1.0. |
+| Great barracuda | Winter peak (1.3) | **Flat 1.0** | The winter peak is a Florida Keys pattern. A Belize charter listing says barracuda fishing does not vary through the year. |
+| Houndfish | Summer peak (1.4) | **Flat 1.0**, confidence low | No source found for any season |
+| Permit | Peak April to July, low from August | Peak **March to August** (1.3–1.5), 1.1 in September, lowest in January (0.7) | Lodge guides: best from mid-February through August, still good in September and October; cold fronts spoil December and January |
+| Tarpon | Peak June to July, 1.2 in September | Peak May to August; September **0.9**, March 0.9 | Migratory tarpon build from March, peak May to August, mostly gone by mid-September. Residents stay all year, so it never drops below 0.5. |
+| Mutton snapper | Peak May | March raised to 1.2, April to 1.5 | Belize spawning aggregations run March to June around the full moon (Gladden Spit) |
+| Yellowtail snapper | Small summer rise | Same rise, with winter months at 0.9 | Spawns year-round with a winter decline (Florida Museum) |
+| Spiny lobster, green turtle, all others | – | Unchanged | Lobster's autumn peak matches its mass migrations. Turtle sightings peak with the May to November nesting season. |
+
+**iNaturalist does not help here.** Research-grade Belize observations for all 24 species (place 6953) follow the tourist calendar: every species peaks in December to March, with a spike in March. After dividing by the shape of common reef-fish observations, the only signal left is mutton snapper at about twice the expected rate in April. That is consistent with the spawning season, but rests on 67 records.
+
+### Time of day
+
+| Species | Change | Why |
+| --- | --- | --- |
+| Yellowtail snapper | Night 1.2 → **1.5**, dusk 1.5 → 1.4 | Florida Museum calls adults nocturnal predators, and US Caribbean fishers target them at night (SEDAR 84) |
+| Mutton snapper | Day 0.6 → **1.0**, dusk 1.6 → 1.4, night 1.2 → 1.0 | Feeds day and night (FishBase); picks food all day with strikes morning and evening (Florida Museum) |
+| Tarpon | Day 0.5 → **0.8** | Feeds by day and by night (Florida Museum). Dawn and dusk stay highest because rolling tarpon are easiest to find then. |
+| Bonefish | Dawn 1.5 → 1.2, dusk 1.4 → 1.2 | No source ties bonefish to light. They follow the tide (Florida Museum). Tide is not yet modelled for the island. |
+| Spotted moray | (first pass) Day 0 → 0.3 | See above |
+
+**Confirmed as written:** French grunt and schoolmaster feed over seagrass and sand at night (Florida Museum; a 2018 telemetry study in *Ecosphere*); squirrelfish is nocturnal; barracuda is diurnal; Caribbean reef octopus hunts only at night; ghost crabs shelter by day and forage at night; spiny lobsters leave their dens to forage at night; bluehead wrasse spawns at midday.
+
+**Southern stingray** buries in sand by day and forages at night (FishBase). The game keeps it most visible by day because it is a sighting, and this is now stated in `designNotes`.
+
+### Baits and methods
+
+- **Bonefish** cut-bait affinity rises from 0.2 to 0.5. Bahamas guides use cut conch and freshly dead shrimp, though live shrimp and crab work best.
+- **Two rumours rewritten** (open question 3, now resolved). Bonefish: "They are after crabs and sand fleas, and they like them alive." Permit: "The round silver fish with sickle fins wants a crab above anything else."
+- The bar-jack lure-only and permit sight-only rules stay as disclosed design choices (DECISIONS 15).
+- Every method and every cast zone still has at least three species.
+
+### Simulator effect
+
+The same 12 runs as the first pass:
+- Lagoon bait fishing shifts toward uncommon fish (from about 10% to 17% of bites), because bonefish now take cut bait more often.
+- Lure fishing in the lagoon sees fewer barracuda in January.
+- Rocky Point moves by less than 2 points.
+- Sight casting on the flats lands a tarpon bite in 0.6% of fish bites in January and 2.4% in June.
+
+### Sources fixed
+
+- The Florida Museum links used scientific-name slugs, which do not exist. They now use the real common-name pages for seven species, including the copies of those links at the Cayes.
+- The schoolmaster profile returns 404, so it was replaced on the island by the telemetry study.
+- "Guide fishing reports (general angler knowledge)" entries were replaced with named pages.
+- The southern stingray's maximum disc width is corrected from 150 to 200 cm (FishBase). Green turtle and bottlenose dolphin sizes match NOAA.
+
 ## Selection against the quotas
 
 The island is a small, early region (15 fish), so the 30-fish quotas apply at about half scale.
@@ -90,7 +145,7 @@ The island is a small, early region (15 fish), so the 30-fish quotas apply at ab
 | --- | --- | --- | --- |
 | Night-biased fish | 2+ | 4 (squirrelfish, French grunt, spotted moray, schoolmaster) | Met |
 | Dawn or dusk-biased | 2+ | 8 | Met |
-| Real month-to-month change | 3+ | 5 (tarpon, houndfish, mutton snapper, barracuda, permit) | Met |
+| Real month-to-month change | 3+ | 3 (tarpon, mutton snapper, permit) | Met exactly. Barracuda and houndfish went flat in the occurrence pass. |
 | Every method and zone has 3+ species | – | Beach sand and swash have 1 each; tide pools have 3 | Beach zones are hand-gather nodes, so this is acceptable |
 | Release-only fish | 1+ | 1 (tarpon) | Bonefish and permit kept sellable on purpose (open question 1) |
 
@@ -135,21 +190,20 @@ These are the species anglers and beachcombers really meet on Belize lagoon caye
 
 ## Legendary
 
-Already built (DECISIONS 27): **Old Ironjaw**, a 160 cm great barracuda off the Rocky Point drop-off, by day from November to March, on a spoon. The species and behaviour fit: barracuda are diurnal (FishBase), hold off reef edges, and take flashy lures. The size does not fit (open question 2).
+Already built (DECISIONS 27): **Old Ironjaw**, a 160 cm great barracuda off the Rocky Point drop-off, by day from November to March, on a spoon. The species and behaviour fit: barracuda are diurnal (FishBase), hold off reef edges, and take flashy lures. The size does not fit (open question 2). Its November to March window is now a pure design choice, because Belize barracuda show no season.
 
 ## Open questions
 
 1. **Resolved: bonefish and permit stay sellable** (Andy, 17 November 2026). This is a deliberate departure from Belize SI 114 of 2009, which makes them catch-and-release only. It is recorded in `designNotes` and disclosed as a field guide fact (DECISIONS 36).
 2. **Both legendaries are smaller than their species' maximum.** Ironjaw is 160 cm against a 200 cm barracuda maximum. The Bishop is 236 cm against a 250 cm tarpon maximum. The spec says a legendary is "just above the normal in-game range". Options: raise them (Ironjaw about 190 cm and 40 kg, still under the 47 kg record), or cap the species' in-game maximum below the legendary.
-3. **Two rumours overstate reality.** "They are after crabs and sand fleas, and nothing dead" (bonefish): anglers commonly use dead shrimp and conch. "Will look at nothing but a crab" (permit): permit also take shrimp and jigs. The spec asks for rumours that are true statements. These are true of the game data (DECISIONS 15), but not of real fish.
+3. **Resolved: two rumours overstated reality** and were rewritten in the occurrence pass. "They are after crabs and sand fleas, and nothing dead" (bonefish): anglers commonly use dead shrimp and conch. "Will look at nothing but a crab" (permit): permit also take shrimp and jigs. The spec asks for rumours that are true statements. These are true of the game data (DECISIONS 15), but not of real fish.
 4. **Rarity targets per zone.** No single zone comes near 70/22/7/1. For example, lagoon lure fishing has no common species. Should the target apply per location, per zone, or per rig?
-5. **Common length.** For some species FishBase's common length is far above the game's typical catch (permit 94 FL against 55; barracuda 140 TL against 85). I kept the game values because the spec defines common as the typical angler catch. They need guide-report sources in the occurrence pass.
+5. **Common length.** For some species FishBase's common length is far above the game's typical catch (permit 94 FL against 55; barracuda 140 TL against 85). I kept the game values because the spec defines common as the typical angler catch. No guide source found in the occurrence pass gives typical sizes, so this stays open.
 6. **Yellowfin mojarra misses the 30% check whichever set is used.** FishBase's 530 g maximum weight is implausibly light for a 41 cm fish; every published set gives 0.74 to 1.35 kg. I kept the Mexico set and logged the conflict.
 7. **Lobster and conch closed seasons.** Belize closes lobster from 1 March to 30 June and conch over the summer. This does not matter on the island, which has no market, but the Cayes market currently buys both all year.
 
 ## Still to do
 
-- **Occurrence pass:** check phase and month modifiers, methods and bait affinities for every island occurrence against guide and charter reports and iNaturalist months. Mark confidence. This is most of the remaining work, and 48 of the island's occurrence sources are still `pending-review`.
-- Sources not yet read: the Florida Museum profiles, NOAA green turtle and bottlenose dolphin pages, and the IUCN pages for the three sightings. Sighting sizes are unchecked.
-- **Review (spec step 7):** a second agent checks every rare and epic record and 30% of the rest against the sources.
-- **Rumours (spec step 6):** each rare and epic island species has two rumours. Their truth was checked above (question 3), but not against the occurrence data.
+- **Review (spec step 7):** a second agent checks every rare and epic record and 30% of the rest against the sources, and lists conflicts.
+- **Rumours (spec step 6):** each rare and epic island species has two rumours; check each against the occurrence values as they now stand.
+- **Moon and tide:** permit and tarpon in Belize are reported best around new and full moon tides. Mutton snapper aggregate at the full moon. The schema reserves `conditions.moon` and `conditions.tide`, but no island occurrence uses them yet.

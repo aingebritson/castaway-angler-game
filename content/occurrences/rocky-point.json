@@ -41,8 +41,8 @@
       {
         "title": "FishBase: Abudefduf saxatilis",
         "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
-        "accessed": "pending-review",
-        "supports": "rocky shore habitat, diurnal activity, omnivorous diet"
+        "accessed": "2026-11-17",
+        "supports": "tide pools and shallow reef tops; eats algae, small crustaceans and larvae"
       }
     ]
   },
@@ -87,8 +87,8 @@
       {
         "title": "FishBase: Thalassoma bifasciatum",
         "url": "https://www.fishbase.se/summary/Thalassoma-bifasciatum.html",
-        "accessed": "pending-review",
-        "supports": "reef habitat, strictly diurnal"
+        "accessed": "2026-11-17",
+        "supports": "reefs and seagrass; feeds on zooplankton and small benthic animals; spawns at midday"
       }
     ]
   },
@@ -137,14 +137,14 @@
       {
         "title": "FishBase: Haemulon flavolineatum",
         "url": "https://www.fishbase.se/summary/Haemulon-flavolineatum.html",
-        "accessed": "pending-review",
-        "supports": "reef schooling by day, nocturnal foraging"
+        "accessed": "2026-11-17",
+        "supports": "schools on rocky and coral reefs, juveniles in nearshore seagrass; eats small crustaceans"
       },
       {
         "title": "Florida Museum species profile: Haemulon flavolineatum",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/haemulon-flavolineatum/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/french-grunt/",
+        "accessed": "2026-11-17",
+        "supports": "nocturnal; schools on reefs by day and scavenges sand flats and seagrass at night"
       }
     ]
   },
@@ -158,22 +158,22 @@
     "phaseMod": {
       "dawn": 1.3,
       "day": 0.8,
-      "dusk": 1.5,
-      "night": 1.2
+      "dusk": 1.4,
+      "night": 1.5
     },
     "monthMod": [
-      1,
-      1,
-      1,
+      0.9,
+      0.9,
+      1.0,
       1.2,
       1.3,
       1.3,
       1.2,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.0,
+      1.0,
+      1.0,
+      0.9,
+      0.9
     ],
     "methods": [
       "bait"
@@ -189,14 +189,20 @@
       {
         "title": "FishBase: Ocyurus chrysurus",
         "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
-        "accessed": "pending-review",
-        "supports": "reef habitat, mid-water feeding"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, usually well above the bottom; feeds mainly at night"
       },
       {
         "title": "Florida Museum species profile: Ocyurus chrysurus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/yellowtail-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "adults are nocturnal predators; spawns year round with a winter decline"
+      },
+      {
+        "title": "SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology",
+        "url": "https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps",
+        "accessed": "2026-11-17",
+        "supports": "phase and months: fishers target feeding aggregations at night; spawning mainly spring and summer"
       }
     ]
   },
@@ -211,22 +217,22 @@
     "phaseMod": {
       "dawn": 1.3,
       "day": 0.8,
-      "dusk": 1.5,
-      "night": 1.2
+      "dusk": 1.4,
+      "night": 1.5
     },
     "monthMod": [
-      1,
-      1,
-      1,
+      0.9,
+      0.9,
+      1.0,
       1.2,
       1.3,
       1.3,
       1.2,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.0,
+      1.0,
+      1.0,
+      0.9,
+      0.9
     ],
     "methods": [
       "bait",
@@ -245,14 +251,20 @@
       {
         "title": "FishBase: Ocyurus chrysurus",
         "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
-        "accessed": "pending-review",
-        "supports": "reef edge habitat, mid-water feeding"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, usually well above the bottom; feeds mainly at night"
       },
       {
         "title": "Florida Museum species profile: Ocyurus chrysurus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/yellowtail-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "adults are nocturnal predators; spawns year round with a winter decline"
+      },
+      {
+        "title": "SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology",
+        "url": "https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps",
+        "accessed": "2026-11-17",
+        "supports": "phase and months: fishers target feeding aggregations at night; spawning mainly spring and summer"
       }
     ]
   },
@@ -301,14 +313,14 @@
       {
         "title": "FishBase: Lutjanus apodus",
         "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
-        "accessed": "pending-review",
-        "supports": "shallow reef and mangrove habitat, nocturnal feeding"
+        "accessed": "2026-11-17",
+        "supports": "clear shallow reef water, juveniles over seagrass and mangrove mud; rests in groups by day"
       },
       {
-        "title": "Florida Museum species profile: Lutjanus apodus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-apodus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "title": "Ecosphere (2018): acoustic telemetry of schoolmaster snapper and great barracuda",
+        "url": "https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213",
+        "accessed": "2026-11-17",
+        "supports": "phase: schoolmaster move into channels and seagrass to forage at night"
       }
     ]
   },
@@ -356,8 +368,8 @@
       {
         "title": "FishBase: Holocentrus adscensionis",
         "url": "https://www.fishbase.se/summary/Holocentrus-adscensionis.html",
-        "accessed": "pending-review",
-        "supports": "nocturnal, shelters in crevices by day, eats crustaceans"
+        "accessed": "2026-11-17",
+        "supports": "nocturnal; hides in crevices by day and feeds on crabs over sand and grass at night"
       }
     ]
   },
@@ -457,8 +469,8 @@
       {
         "title": "FishBase: Caranx ruber",
         "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
-        "accessed": "pending-review",
-        "supports": "clear reef water, feeds on fish and shrimp by day"
+        "accessed": "2026-11-17",
+        "supports": "reef-associated, 0 to 35 m; eats fishes, shrimps and other invertebrates"
       }
     ],
     "designNotes": "Bar jacks will sometimes take bait in reality; the game makes them lure-only so the lure method has a clear first target."
@@ -478,18 +490,18 @@
       "night": 0.8
     },
     "monthMod": [
-      0.7,
-      0.7,
-      0.8,
-      1,
-      1.2,
-      1.4,
-      1.4,
-      1.4,
-      1.2,
-      1,
-      0.8,
-      0.7
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure"
@@ -500,13 +512,13 @@
       "popper": 1.5,
       "plug": 1.2
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Tylosurus crocodilus",
         "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
-        "accessed": "pending-review",
-        "supports": "surface-dwelling over reefs and lagoons, eats small fish"
+        "accessed": "2026-11-17",
+        "supports": "surface waters over lagoons and seaward reefs; caught on cast or trolled surface lures"
       }
     ]
   },
@@ -519,18 +531,18 @@
     "rarity": "rare",
     "phaseMod": {
       "dawn": 1.3,
-      "day": 0.6,
-      "dusk": 1.6,
-      "night": 1.2
+      "day": 1.0,
+      "dusk": 1.4,
+      "night": 1.0
     },
     "monthMod": [
       0.8,
       0.8,
-      1,
-      1.4,
+      1.2,
+      1.5,
       1.8,
       1.6,
-      1,
+      1.0,
       0.8,
       0.8,
       0.8,
@@ -554,14 +566,20 @@
       {
         "title": "FishBase: Lutjanus analis",
         "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
-        "accessed": "pending-review",
-        "supports": "reef and sand habitat, diet"
+        "accessed": "2026-11-17",
+        "supports": "feeds day and night on fish, shrimp, crabs and cephalopods; groups disband at night"
       },
       {
         "title": "Florida Museum species profile: Lutjanus analis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
-        "accessed": "pending-review",
-        "supports": "spawning season, feeding times"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mutton-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "picks food through the day, midwater strikes in morning and evening; transient spawning aggregations"
+      },
+      {
+        "title": "Belize mutton snapper spawning aggregations, AFS 2013 abstract",
+        "url": "https://afs.confex.com/afs/2013/webprogram/Paper12113.html",
+        "accessed": "2026-11-17",
+        "supports": "months: Gladden Spit aggregations recur March to June around the full moon"
       }
     ]
   },
@@ -574,18 +592,18 @@
     "rarity": "uncommon",
     "phaseMod": {
       "dawn": 1.3,
-      "day": 0.6,
-      "dusk": 1.6,
-      "night": 1.2
+      "day": 1.0,
+      "dusk": 1.4,
+      "night": 1.0
     },
     "monthMod": [
       0.8,
       0.8,
-      1,
-      1.4,
+      1.2,
+      1.5,
       1.8,
       1.6,
-      1,
+      1.0,
       0.8,
       0.8,
       0.8,
@@ -608,14 +626,20 @@
       {
         "title": "FishBase: Lutjanus analis",
         "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
-        "accessed": "pending-review",
-        "supports": "reef and sand habitat, diet"
+        "accessed": "2026-11-17",
+        "supports": "feeds day and night on fish, shrimp, crabs and cephalopods; groups disband at night"
       },
       {
         "title": "Florida Museum species profile: Lutjanus analis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
-        "accessed": "pending-review",
-        "supports": "spawning season"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mutton-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "picks food through the day, midwater strikes in morning and evening; transient spawning aggregations"
+      },
+      {
+        "title": "Belize mutton snapper spawning aggregations, AFS 2013 abstract",
+        "url": "https://afs.confex.com/afs/2013/webprogram/Paper12113.html",
+        "accessed": "2026-11-17",
+        "supports": "months: Gladden Spit aggregations recur March to June around the full moon"
       }
     ]
   },
@@ -633,18 +657,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure",
@@ -662,14 +686,20 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "reef edge habitat, visual daytime predator"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
       },
       {
         "title": "Florida Museum species profile: Sphyraena barracuda",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/great-barracuda/",
+        "accessed": "2026-11-17",
+        "supports": "generally diurnal; a sight-hunting ambush predator over reefs, seagrass and mangroves"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: barracuda fishing in Belize does not vary through the year"
       }
     ]
   },
@@ -687,18 +717,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure",
@@ -716,8 +746,14 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "reef edge habitat, visual daytime predator"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: barracuda fishing in Belize does not vary through the year"
       }
     ]
   },
@@ -763,8 +799,14 @@
       {
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
-        "accessed": "pending-review",
-        "supports": "nocturnal, dens in rocky reef, autumn migrations"
+        "accessed": "2026-11-17",
+        "supports": "shallow reefs, rocks and seagrass; gregarious, with autumn mass migrations"
+      },
+      {
+        "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
+        "url": "https://publish.csiro.au/mf/MF97198",
+        "accessed": "2026-11-17",
+        "supports": "phase: lobsters leave reef dens to forage at night"
       }
     ]
   },
@@ -810,8 +852,14 @@
       {
         "title": "SeaLifeBase: Octopus briareus",
         "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
-        "accessed": "pending-review",
-        "supports": "nocturnal reef hunter, eats crabs and shrimp"
+        "accessed": "2026-11-17",
+        "supports": "coral reef, seagrass, rubble and sand, 0 to 20 m"
+      },
+      {
+        "title": "Animal Diversity Web: Octopus briareus",
+        "url": "https://animaldiversity.org/accounts/Octopus_briareus/",
+        "accessed": "2026-11-17",
+        "supports": "phase: hunts only at night and returns to its den; spiny lobster is a main prey"
       }
     ]
   },
@@ -851,8 +899,8 @@
       {
         "title": "SeaLifeBase: Grapsus grapsus",
         "url": "https://www.sealifebase.se/summary/Grapsus-grapsus.html",
-        "accessed": "pending-review",
-        "supports": "wave-washed rocky shore, active by day"
+        "accessed": "2026-11-17",
+        "supports": "rocks at the water line and splash zone; very active out of water"
       }
     ]
   },
@@ -892,8 +940,8 @@
       {
         "title": "NOAA Fisheries: Common bottlenose dolphin",
         "url": "https://www.fisheries.noaa.gov/species/common-bottlenose-dolphin",
-        "accessed": "pending-review",
-        "supports": "coastal habitat, group travel"
+        "accessed": "2026-11-17",
+        "supports": "coastal and offshore waters; groups split and reform"
       }
     ],
     "designNotes": "Sighting only. Dawn and dusk bias is a design choice to make first and last light feel special."
@@ -907,22 +955,22 @@
     "rarity": "epic",
     "phaseMod": {
       "dawn": 1.6,
-      "day": 0.5,
+      "day": 0.8,
       "dusk": 1.6,
       "night": 1.2
     },
     "monthMod": [
       0.5,
-      0.5,
+      0.6,
+      0.9,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      0.9,
       0.7,
-      1.2,
-      1.6,
-      1.8,
-      1.8,
-      1.6,
-      1.2,
-      0.8,
-      0.5,
+      0.6,
       0.5
     ],
     "methods": [
@@ -943,14 +991,20 @@
       {
         "title": "FishBase: Megalops atlanticus",
         "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
-        "accessed": "pending-review",
-        "supports": "coastal waters, seasonal movements"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, bays and mangrove lagoons; air-breather; eats sardines, mullet and crabs"
       },
       {
         "title": "Florida Museum species profile: Megalops atlanticus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/",
+        "accessed": "2026-11-17",
+        "supports": "feeds by day and by night; main spawning May to July; air-breather of bays and mangrove lagoons"
+      },
+      {
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: migratory tarpon build from March, peak May to August, mostly gone by mid-September; residents all year"
       }
     ]
   }

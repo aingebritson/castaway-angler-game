@@ -164,9 +164,9 @@
       },
       {
         "title": "Florida Museum species profile: Haemulon flavolineatum",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/haemulon-flavolineatum/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/french-grunt/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: nocturnal; schools on reefs by day and scavenges sand flats and seagrass at night"
       }
     ]
   },
@@ -283,9 +283,9 @@
       },
       {
         "title": "Florida Museum species profile: Ocyurus chrysurus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/yellowtail-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: adults are nocturnal predators; spawns year round with a winter decline"
       },
       {
         "title": "FishBase length-weight table: Ocyurus chrysurus",
@@ -345,12 +345,6 @@
         "url": "https://www.iucnredlist.org/search?query=Lutjanus%20apodus",
         "accessed": "2026-11-17",
         "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
-      },
-      {
-        "title": "Florida Museum species profile: Lutjanus apodus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-apodus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
       },
       {
         "title": "FishBase length-weight table: Lutjanus apodus",
@@ -640,9 +634,9 @@
       },
       {
         "title": "Florida Museum species profile: Albula vulpes",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/albula-vulpes/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/bonefish/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: moves onto the flats on rising tides and off on falling tides; spawns year round"
       },
       {
         "title": "FishBase length-weight table: Albula vulpes",
@@ -718,9 +712,9 @@
       },
       {
         "title": "Florida Museum species profile: Lutjanus analis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mutton-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: picks food through the day, midwater strikes in morning and evening; transient spawning aggregations"
       },
       {
         "title": "FishBase length-weight table: Lutjanus analis",
@@ -785,9 +779,9 @@
       },
       {
         "title": "Florida Museum species profile: Trachinotus falcatus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/trachinotus-falcatus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/permit/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: forages on flats on incoming tides; adults eat crabs, gastropods, urchins and bivalves"
       },
       {
         "title": "IGFA all-tackle records, as tabulated by Tackle Village (data as of June 2022)",
@@ -857,9 +851,9 @@
       },
       {
         "title": "Florida Museum species profile: Sphyraena barracuda",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/great-barracuda/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: generally diurnal; a sight-hunting ambush predator over reefs, seagrass and mangroves"
       }
     ]
   },
@@ -918,9 +912,9 @@
       },
       {
         "title": "Florida Museum species profile: Megalops atlanticus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/",
+        "accessed": "2026-11-17",
+        "supports": "behaviour, diet, habitat: feeds by day and by night; main spawning May to July; air-breather of bays and mangrove lagoons"
       },
       {
         "title": "FishBase length-weight table: Megalops atlanticus",
@@ -1320,8 +1314,8 @@
       {
         "title": "NOAA Fisheries: Green turtle",
         "url": "https://www.fisheries.noaa.gov/species/green-turtle",
-        "accessed": "pending-review",
-        "supports": "biology, nesting, diet"
+        "accessed": "2026-11-17",
+        "supports": "adults 3 to 4 feet long; herbivore of seagrass and algae; nests at night from late spring"
       },
       {
         "title": "Mongabay: Green turtle rebounds, moving from Endangered to Least Concern",
@@ -1340,7 +1334,7 @@
     "lengthCm": {
       "min": 40,
       "common": 90,
-      "max": 150,
+      "max": 200,
       "measure": "CW"
     },
     "lengthWeight": null,
@@ -1371,7 +1365,7 @@
         "title": "FishBase: Hypanus americanus",
         "url": "https://www.fishbase.se/summary/Hypanus-americanus.html",
         "accessed": "2026-11-17",
-        "supports": "taxonomy, maximum length, habitat"
+        "supports": "maximum 200 cm and common 90 cm disc width; buries in sand by day and forages at night"
       },
       {
         "title": "IUCN Red List: Hypanus americanus",
@@ -1420,14 +1414,14 @@
       {
         "title": "IUCN Red List: Tursiops truncatus",
         "url": "https://www.iucnredlist.org/search?query=Tursiops%20truncatus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "Least Concern (as shown on Wikipedia, citing the 2019 assessment; the Red List page refuses automated reads)"
       },
       {
         "title": "NOAA Fisheries: Common bottlenose dolphin",
         "url": "https://www.fisheries.noaa.gov/species/common-bottlenose-dolphin",
-        "accessed": "pending-review",
-        "supports": "biology, behaviour"
+        "accessed": "2026-11-17",
+        "supports": "adults 6 to 13 feet long; coastal and offshore; groups split and reform"
       }
     ]
   }

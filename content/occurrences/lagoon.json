@@ -43,8 +43,8 @@
       {
         "title": "FishBase: Gerres cinereus",
         "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
-        "accessed": "pending-review",
-        "supports": "sandy shallows and mangrove edges, feeds on benthic invertebrates"
+        "accessed": "2026-11-17",
+        "supports": "shallow sandy areas, seagrass and mangrove channels; eats benthic invertebrates"
       }
     ]
   },
@@ -56,24 +56,24 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.5,
-      "day": 1,
-      "dusk": 1.4,
+      "dawn": 1.2,
+      "day": 1.0,
+      "dusk": 1.2,
       "night": 0.5
     },
     "monthMod": [
-      1.2,
-      1.2,
-      1.2,
-      1.1,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.1,
-      1.2
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "sight",
@@ -84,27 +84,33 @@
       "crab": 1.5,
       "shrimp": 1.6,
       "fly": 1.2,
-      "cutfish": 0.2
+      "cutfish": 0.5
     },
     "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Albula vulpes",
         "url": "https://www.fishbase.se/summary/Albula-vulpes.html",
-        "accessed": "pending-review",
-        "supports": "shallow flats habitat, diet of crabs and shrimp"
+        "accessed": "2026-11-17",
+        "supports": "shallow coastal waters and bays over sand and mud"
       },
       {
         "title": "Florida Museum species profile: Albula vulpes",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/albula-vulpes/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/bonefish/",
+        "accessed": "2026-11-17",
+        "supports": "moves onto the flats on rising tides and off on falling tides; spawns year round"
       },
       {
-        "title": "Caribbean flats and reef guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "tailing behaviour, best light and tide, cooler months"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: bonefish are a daily option in every month"
+      },
+      {
+        "title": "FishingBooker: how to go bonefishing in the Bahamas",
+        "url": "https://fishingbooker.com/blog/?p=59582",
+        "accessed": "2026-11-17",
+        "supports": "baits: live shrimp and small crabs first; cut conch and freshly dead shrimp also work"
       }
     ],
     "designNotes": "Kept sellable in the game on purpose. In Belize bonefish are catch-and-release only by law (SI 114 of 2009); the field guide says so."
@@ -124,17 +130,17 @@
     },
     "monthMod": [
       0.7,
-      0.8,
-      1.2,
+      0.9,
+      1.3,
       1.4,
       1.5,
       1.5,
+      1.5,
       1.4,
-      1,
-      0.8,
-      0.8,
-      0.7,
-      0.7
+      1.1,
+      1.0,
+      0.9,
+      0.8
     ],
     "methods": [
       "sight"
@@ -150,20 +156,20 @@
       {
         "title": "FishBase: Trachinotus falcatus",
         "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
-        "accessed": "pending-review",
-        "supports": "flats and channel habitat, crab diet"
+        "accessed": "2026-11-17",
+        "supports": "adults over sandy flats, around reefs and in channels"
       },
       {
         "title": "Florida Museum species profile: Trachinotus falcatus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/trachinotus-falcatus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/permit/",
+        "accessed": "2026-11-17",
+        "supports": "forages on flats on incoming tides; adults eat crabs, gastropods, urchins and bivalves"
       },
       {
-        "title": "Caribbean flats and reef guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "spring and summer season on the flats, refusal of non-crab baits"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: permit best from mid-February through August, still good September and October, weather-limited in December and January"
       }
     ],
     "designNotes": "Sight casting only: blind casts never find a permit. Real permit are occasionally caught blind, but this keeps the species as the sight method's prize. Kept sellable in the game on purpose. In Belize permit are catch-and-release only by law (SI 114 of 2009); the field guide says so."
@@ -183,18 +189,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "sight",
@@ -212,14 +218,20 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "juveniles and adults over seagrass and flats"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
       },
       {
         "title": "Florida Museum species profile: Sphyraena barracuda",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/great-barracuda/",
+        "accessed": "2026-11-17",
+        "supports": "generally diurnal; a sight-hunting ambush predator over reefs, seagrass and mangroves"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: barracuda fishing in Belize does not vary through the year"
       }
     ]
   },
@@ -265,8 +277,8 @@
       {
         "title": "FishBase: Caranx ruber",
         "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
-        "accessed": "pending-review",
-        "supports": "follows rays over sand flats"
+        "accessed": "2026-11-17",
+        "supports": "reef-associated, 0 to 35 m; eats fishes, shrimps and other invertebrates"
       }
     ]
   },
@@ -284,18 +296,18 @@
       "night": 0.8
     },
     "monthMod": [
-      0.7,
-      0.7,
-      0.8,
-      1,
-      1.2,
-      1.4,
-      1.4,
-      1.4,
-      1.2,
-      1,
-      0.8,
-      0.7
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure"
@@ -305,13 +317,13 @@
       "popper": 1.5,
       "spoon": 1
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Tylosurus crocodilus",
         "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
-        "accessed": "pending-review",
-        "supports": "surface waters of lagoons"
+        "accessed": "2026-11-17",
+        "supports": "surface waters over lagoons and seaward reefs; caught on cast or trolled surface lures"
       }
     ]
   },
@@ -358,8 +370,14 @@
       {
         "title": "FishBase: Lutjanus apodus",
         "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
-        "accessed": "pending-review",
-        "supports": "mangrove and channel habitat"
+        "accessed": "2026-11-17",
+        "supports": "clear shallow reef water, juveniles over seagrass and mangrove mud; rests in groups by day"
+      },
+      {
+        "title": "Ecosphere (2018): acoustic telemetry of schoolmaster snapper and great barracuda",
+        "url": "https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213",
+        "accessed": "2026-11-17",
+        "supports": "phase: schoolmaster move into channels and seagrass to forage at night"
       }
     ]
   },
@@ -405,8 +423,8 @@
       {
         "title": "FishBase: Haemulon flavolineatum",
         "url": "https://www.fishbase.se/summary/Haemulon-flavolineatum.html",
-        "accessed": "pending-review",
-        "supports": "forages over seagrass and sand at night"
+        "accessed": "2026-11-17",
+        "supports": "schools on rocky and coral reefs, juveniles in nearshore seagrass; eats small crustaceans"
       }
     ]
   },
@@ -419,22 +437,22 @@
     "rarity": "epic",
     "phaseMod": {
       "dawn": 1.8,
-      "day": 0.5,
+      "day": 0.8,
       "dusk": 1.8,
       "night": 1.2
     },
     "monthMod": [
       0.5,
-      0.5,
+      0.6,
+      0.9,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      0.9,
       0.7,
-      1.2,
-      1.6,
-      1.8,
-      1.8,
-      1.6,
-      1.2,
-      0.8,
-      0.5,
+      0.6,
       0.5
     ],
     "methods": [
@@ -455,20 +473,20 @@
       {
         "title": "FishBase: Megalops atlanticus",
         "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
-        "accessed": "pending-review",
-        "supports": "lagoon channels, air-gulping at the surface"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, bays and mangrove lagoons; air-breather; eats sardines, mullet and crabs"
       },
       {
         "title": "Florida Museum species profile: Megalops atlanticus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/",
+        "accessed": "2026-11-17",
+        "supports": "feeds by day and by night; main spawning May to July; air-breather of bays and mangrove lagoons"
       },
       {
-        "title": "Caribbean flats and reef guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "dawn and dusk rolling, spring to summer peak"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: migratory tarpon build from March, peak May to August, mostly gone by mid-September; residents all year"
       }
     ]
   },
@@ -511,8 +529,14 @@
       {
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
-        "accessed": "pending-review",
-        "supports": "juveniles and adults in lagoon channels and seagrass"
+        "accessed": "2026-11-17",
+        "supports": "shallow reefs, rocks and seagrass; gregarious, with autumn mass migrations"
+      },
+      {
+        "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
+        "url": "https://publish.csiro.au/mf/MF97198",
+        "accessed": "2026-11-17",
+        "supports": "phase: lobsters leave reef dens to forage at night"
       }
     ]
   },
@@ -552,8 +576,8 @@
       {
         "title": "SeaLifeBase: Aliger gigas",
         "url": "https://www.sealifebase.se/summary/Aliger-gigas.html",
-        "accessed": "pending-review",
-        "supports": "seagrass and sand flats"
+        "accessed": "2026-11-17",
+        "supports": "seagrass and sandy algal flats; nocturnal"
       }
     ]
   },
@@ -592,10 +616,10 @@
     "confidence": "medium",
     "sources": [
       {
-        "title": "NOAA Fisheries: Green turtle",
-        "url": "https://www.fisheries.noaa.gov/species/green-turtle",
-        "accessed": "pending-review",
-        "supports": "seagrass grazing in shallow lagoons, nesting season"
+        "title": "San Pedro Sun: green turtle reports",
+        "url": "https://www.sanpedrosun.com/topics/green-turtle",
+        "accessed": "2026-11-17",
+        "supports": "months: Belize nesting season runs May to November, peaking in July or August"
       }
     ]
   },
@@ -635,9 +659,10 @@
       {
         "title": "FishBase: Hypanus americanus",
         "url": "https://www.fishbase.se/summary/Hypanus-americanus.html",
-        "accessed": "pending-review",
-        "supports": "sand flats and seagrass habitat"
+        "accessed": "2026-11-17",
+        "supports": "sand, seagrass and lagoons; buries in sand by day and forages at night in seagrass"
       }
-    ]
+    ],
+    "designNotes": "Sighting only. Rays are seen most easily in daylight, so the day value reflects how visible they are, not when they feed (they forage mostly at night)."
   }
 ]

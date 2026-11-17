@@ -62,3 +62,31 @@ SeaLifeBase:
 ## Behaviour
 
 - Young and Winn (2003). [Activity patterns, diet, and shelter site use for two species of moray eels, *Gymnothorax moringa* and *Gymnothorax vicinus*, in Belize](https://bioone.org/journals/copeia/volume-2003/issue-1/0045-8511(2003)003[0044:APDASS]2.0.CO;2/Activity-Patterns-Diet-and-Shelter-Site-Use-for-Two-Species/10.1643/0045-8511(2003)003[0044:APDASS]2.0.CO;2.full). *Copeia* 2003(1). Only the abstract was read, via search.
+
+## Occurrence pass (seasons, time of day, baits)
+
+Guide and charter pages (medium confidence; these reflect angler experience and are partly marketing):
+
+- [Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize](https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize), and the lodge's [month-by-month page](https://www.aardvarkmcleod.com/belize-blue-horizon-lodge-month-by-month/): bonefish, permit and tarpon by month
+- [FishingBooker: great barracuda fishing in Belize](https://fishingbooker.com/fish/barracuda-great/bz): no seasonal variation
+- [FishingBooker: how to go bonefishing in the Bahamas](https://fishingbooker.com/blog/?p=59582): baits
+
+Species profiles:
+
+- Florida Museum, Discover Fishes: [bonefish](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/bonefish/), [permit](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/permit/), [tarpon](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/), [great barracuda](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/great-barracuda/), [mutton snapper](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mutton-snapper/), [yellowtail snapper](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/yellowtail-snapper/), [French grunt](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/french-grunt/). The schoolmaster page returns 404.
+- Animal Diversity Web: [Octopus briareus](https://animaldiversity.org/accounts/Octopus_briareus/) and [Ocypode quadrata](https://animaldiversity.org/accounts/Ocypode_quadrata/). Read through search excerpts, not the full pages.
+- NOAA Fisheries: [green turtle](https://www.fisheries.noaa.gov/species/green-turtle) and [common bottlenose dolphin](https://www.fisheries.noaa.gov/species/common-bottlenose-dolphin)
+- [FishBase: Hypanus americanus](https://www.fishbase.se/summary/Hypanus-americanus.html): size and day burying
+- [Wikipedia: common bottlenose dolphin](https://en.wikipedia.org/wiki/Common_bottlenose_dolphin): IUCN status, because the Red List page refuses automated reads
+
+Studies and reports:
+
+- [Belize mutton snapper spawning aggregations, American Fisheries Society 2013 abstract](https://afs.confex.com/afs/2013/webprogram/Paper12113.html): March to June, around the full moon
+- [SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology](https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps): night feeding and spawning season. Read through search excerpts.
+- [*Ecosphere* (2018): acoustic telemetry of schoolmaster snapper and great barracuda](https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213): schoolmaster forage in seagrass at night. Read through search excerpts.
+- [*Marine and Freshwater Research*: nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida](https://publish.csiro.au/mf/MF97198). Abstract only.
+- [San Pedro Sun: green turtle reports](https://www.sanpedrosun.com/topics/green-turtle): Belize nesting season May to November
+
+Occurrence by month:
+
+- [iNaturalist API](https://api.inaturalist.org/v1/docs/): research-grade observations in Belize (place 6953), by month of year, for all 24 species. Observer effort dominates the counts, so no month values were taken from them.

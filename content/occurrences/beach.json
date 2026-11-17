@@ -35,8 +35,14 @@
       {
         "title": "SeaLifeBase: Ocypode quadrata",
         "url": "https://www.sealifebase.se/summary/Ocypode-quadrata.html",
-        "accessed": "pending-review",
-        "supports": "upper beach burrows, mostly nocturnal"
+        "accessed": "2026-11-17",
+        "supports": "supratidal to intertidal sand beaches"
+      },
+      {
+        "title": "Animal Diversity Web: Ocypode quadrata",
+        "url": "https://animaldiversity.org/accounts/Ocypode_quadrata/",
+        "accessed": "2026-11-17",
+        "supports": "phase: shelters in burrows by day and forages at night"
       }
     ]
   },
@@ -76,8 +82,8 @@
       {
         "title": "SeaLifeBase: Emerita portoricensis",
         "url": "https://www.sealifebase.se/summary/Emerita-portoricensis.html",
-        "accessed": "pending-review",
-        "supports": "swash zone of sandy beaches"
+        "accessed": "2026-11-17",
+        "supports": "western Atlantic sand crab"
       }
     ]
   }
