@@ -8,14 +8,15 @@ const { sky, sea, palm, foam, patches, hills, poly, blob } = toolkit;
 function skiffBow(p: P): void {
   const { g, W, H, L } = p;
   const bobY = Math.sin(p.t * 1.1) * 0.004;
+  const y = -0.055 + bobY;
   g.fillStyle = L.shade('#f4f0e2');
-  poly(g, W, H, [[0.14, 1.02], [0.2, 0.955 + bobY], [0.5, 0.905 + bobY], [0.8, 0.955 + bobY], [0.86, 1.02]]);
+  poly(g, W, H, [[0.1, 1.02], [0.2, 0.955 + y], [0.5, 0.905 + y], [0.8, 0.955 + y], [0.9, 1.02]]);
   g.fill();
   g.fillStyle = L.shade('#3fa7a0');
-  poly(g, W, H, [[0.2, 0.955 + bobY], [0.5, 0.905 + bobY], [0.8, 0.955 + bobY], [0.79, 0.968 + bobY], [0.5, 0.921 + bobY], [0.21, 0.968 + bobY]]);
+  poly(g, W, H, [[0.2, 0.955 + y], [0.5, 0.905 + y], [0.8, 0.955 + y], [0.79, 0.968 + y], [0.5, 0.921 + y], [0.21, 0.968 + y]]);
   g.fill();
   g.fillStyle = L.shade('#d9d3c0');
-  poly(g, W, H, [[0.3, 1.02], [0.34, 0.975 + bobY], [0.66, 0.975 + bobY], [0.7, 1.02]]);
+  poly(g, W, H, [[0.26, 1.02], [0.34, 0.975 + y], [0.66, 0.975 + y], [0.74, 1.02]]);
   g.fill();
 }
 

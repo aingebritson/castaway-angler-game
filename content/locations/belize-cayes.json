@@ -135,9 +135,9 @@
         {
           "id": "sardines",
           "kind": "gather",
-          "x": 0.14,
+          "x": 0.24,
           "y": 0.72,
-          "label": "Sardine school",
+          "label": "Sardines",
           "glyph": "🐟",
           "node": {
             "handZone": "bait-school",
