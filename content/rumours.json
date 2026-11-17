@@ -240,12 +240,11 @@
     "id": "king-winter",
     "speciesId": "scomberomorus-cavalla",
     "dimension": "when",
-    "text": "The big kings come down the coast in the cool months and hold off the deep ledge and the channel mouth.",
+    "text": "The big kings show off the deep ledge and the channel mouth in spring, April into June.",
     "fillsCells": [
-      "month:0",
-      "month:1",
-      "month:2",
-      "month:11",
+      "month:3",
+      "month:4",
+      "month:5",
       "zone:patch-reef/deep",
       "zone:the-cut/blue-edge"
     ],
@@ -277,12 +276,8 @@
     "id": "nassau-winter",
     "speciesId": "epinephelus-striatus",
     "dimension": "when",
-    "text": "The Nassau gather on the winter moons. My father filled boats with them. Do not be my father.",
-    "fillsCells": [
-      "month:11",
-      "month:0",
-      "month:1"
-    ],
+    "text": "The Nassau gather to spawn on the winter moons, at a few points out on the reef. My father filled boats with them. Do not be my father.",
+    "fillsCells": [],
     "source": "Old Tobias"
   },
   {

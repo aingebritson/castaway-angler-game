@@ -11,22 +11,22 @@
     "phaseMod": {
       "dawn": 1.3,
       "day": 0.8,
-      "dusk": 1.5,
-      "night": 1.2
+      "dusk": 1.4,
+      "night": 1.5
     },
     "monthMod": [
-      1,
-      1,
-      1,
+      0.9,
+      1.0,
       1.2,
       1.3,
-      1.3,
       1.2,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      1.0,
+      1.0,
+      1.1,
+      1.0,
+      0.9,
+      0.9
     ],
     "methods": [
       "bait",
@@ -45,14 +45,20 @@
       {
         "title": "FishBase: Ocyurus chrysurus",
         "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
-        "accessed": "pending-review",
-        "supports": "reef habitat"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, usually well above the bottom; feeds mainly at night"
       },
       {
         "title": "Florida Museum species profile: Ocyurus chrysurus",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/yellowtail-snapper/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "accessed": "2026-11-17",
+        "supports": "adults are nocturnal predators; spawns year round with a winter decline"
+      },
+      {
+        "title": "SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology",
+        "url": "https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps",
+        "accessed": "2026-11-17",
+        "supports": "phase and months: night feeding aggregations targeted by fishers; Caribbean spawning year-round with a March to April peak (search excerpts)"
       }
     ]
   },
@@ -99,8 +105,8 @@
       {
         "title": "FishBase: Haemulon plumierii",
         "url": "https://www.fishbase.se/summary/Haemulon-plumierii.html",
-        "accessed": "pending-review",
-        "supports": "patch reefs"
+        "accessed": "2026-11-17",
+        "supports": "dense aggregations on patch reefs by day; juveniles in turtle grass"
       }
     ]
   },
@@ -144,8 +150,8 @@
       {
         "title": "FishBase: Thalassoma bifasciatum",
         "url": "https://www.fishbase.se/summary/Thalassoma-bifasciatum.html",
-        "accessed": "pending-review",
-        "supports": "reef tops, diurnal"
+        "accessed": "2026-11-17",
+        "supports": "reefs and seagrass; feeds on zooplankton and small benthic animals; spawns at midday"
       }
     ]
   },
@@ -193,8 +199,8 @@
       {
         "title": "FishBase: Holocentrus adscensionis",
         "url": "https://www.fishbase.se/summary/Holocentrus-adscensionis.html",
-        "accessed": "pending-review",
-        "supports": "nocturnal reef fish"
+        "accessed": "2026-11-17",
+        "supports": "nocturnal; hides in crevices by day and feeds on crabs over sand and grass at night"
       }
     ]
   },
@@ -240,14 +246,14 @@
       {
         "title": "FishBase: Lachnolaimus maximus",
         "url": "https://www.fishbase.se/summary/Lachnolaimus-maximus.html",
-        "accessed": "pending-review",
-        "supports": "sand and rubble near reefs, diurnal, eats molluscs and crabs"
+        "accessed": "2026-11-17",
+        "supports": "open bottoms and coral reefs; eats mainly molluscs, also crabs and urchins"
       },
       {
         "title": "Florida Museum species profile: Lachnolaimus maximus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lachnolaimus-maximus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/hogfish/",
+        "accessed": "2026-11-17",
+        "supports": "forages by day over hard sand and rock near patch reefs"
       }
     ]
   },
@@ -292,14 +298,14 @@
       {
         "title": "FishBase: Balistes vetula",
         "url": "https://www.fishbase.se/summary/Balistes-vetula.html",
-        "accessed": "pending-review",
-        "supports": "reef tops and rubble, diurnal"
+        "accessed": "2026-11-17",
+        "supports": "rocky and coral areas, sometimes over sand and grass; eats benthic invertebrates"
       },
       {
         "title": "Florida Museum species profile: Balistes vetula",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/balistes-vetula/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/queen-triggerfish/",
+        "accessed": "2026-11-17",
+        "supports": "feeds by day and wedges into crevices at night"
       }
     ]
   },
@@ -344,8 +350,8 @@
       {
         "title": "FishBase: Caranx ruber",
         "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
-        "accessed": "pending-review",
-        "supports": "reef edges"
+        "accessed": "2026-11-17",
+        "supports": "reef-associated, 0 to 35 m; eats fishes, shrimps and other invertebrates"
       }
     ]
   },
@@ -358,10 +364,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.7,
-      "day": 0.9,
-      "dusk": 1.4,
-      "night": 0.1
+      "dawn": 1.3,
+      "day": 1.0,
+      "dusk": 1.2,
+      "night": 0.2
     },
     "monthMod": [
       1,
@@ -388,19 +394,19 @@
       "feather": 1,
       "livefish": 1.6
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Scomberomorus regalis",
         "url": "https://www.fishbase.se/summary/Scomberomorus-regalis.html",
-        "accessed": "pending-review",
-        "supports": "reef-associated mackerel"
+        "accessed": "2026-11-17",
+        "supports": "most abundant in clear water around coral reefs"
       },
       {
         "title": "Florida Museum species profile: Scomberomorus regalis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/scomberomorus-regalis/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/cero-mackerel/",
+        "accessed": "2026-11-17",
+        "supports": "usually solitary, mid-water and near the surface; sometimes over reefs and ledges"
       }
     ]
   },
@@ -413,18 +419,18 @@
     "rarity": "uncommon",
     "phaseMod": {
       "dawn": 1.3,
-      "day": 0.6,
-      "dusk": 1.6,
-      "night": 1.2
+      "day": 1.0,
+      "dusk": 1.4,
+      "night": 1.0
     },
     "monthMod": [
       0.8,
       0.8,
-      1,
-      1.4,
+      1.2,
+      1.5,
       1.8,
       1.6,
-      1,
+      1.0,
       0.8,
       0.8,
       0.8,
@@ -446,14 +452,20 @@
       {
         "title": "FishBase: Lutjanus analis",
         "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
-        "accessed": "pending-review",
-        "supports": "reef and sand"
+        "accessed": "2026-11-17",
+        "supports": "feeds day and night on fish, shrimp, crabs and cephalopods; groups disband at night"
       },
       {
         "title": "Florida Museum species profile: Lutjanus analis",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mutton-snapper/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "accessed": "2026-11-17",
+        "supports": "picks food through the day, midwater strikes in morning and evening"
+      },
+      {
+        "title": "Belize mutton snapper spawning aggregations, AFS 2013 abstract",
+        "url": "https://afs.confex.com/afs/2013/webprogram/Paper12113.html",
+        "accessed": "2026-11-17",
+        "supports": "months: Gladden Spit aggregations March to June around the full moon (search excerpt)"
       }
     ]
   },
@@ -471,18 +483,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure",
@@ -499,8 +511,14 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "reef edge"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt)"
       }
     ]
   },
@@ -513,24 +531,24 @@
     ],
     "rarity": "rare",
     "phaseMod": {
-      "dawn": 1.3,
-      "day": 0.8,
-      "dusk": 1.5,
-      "night": 0.8
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.5
     },
     "monthMod": [
-      1.8,
-      1.6,
-      1,
-      0.8,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.8,
-      1,
-      1.6
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait"
@@ -546,17 +564,22 @@
       {
         "title": "FishBase: Epinephelus striatus",
         "url": "https://www.fishbase.se/summary/Epinephelus-striatus.html",
-        "accessed": "pending-review",
-        "supports": "reef habitat"
+        "accessed": "2026-11-17",
+        "supports": "solitary and mainly diurnal; close to caves on reefs, juveniles in seagrass"
       },
       {
         "title": "IUCN Red List: Epinephelus striatus",
         "url": "https://www.iucnredlist.org/search?query=Epinephelus%20striatus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "Critically Endangered (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "NOAA Fisheries: Nassau grouper",
+        "url": "https://www.fisheries.noaa.gov/species/nassau-grouper",
+        "accessed": "2026-11-17",
+        "supports": "spawning aggregations form November to February at a few reef sites, not on ordinary patch reefs"
       }
-    ],
-    "designNotes": "Month weights follow the winter spawning season, when the fish are most active near reef points."
+    ]
   },
   {
     "speciesId": "mycteroperca-bonaci",
@@ -567,23 +590,23 @@
     "rarity": "rare",
     "phaseMod": {
       "dawn": 1.2,
-      "day": 0.6,
-      "dusk": 1.7,
-      "night": 0.8
+      "day": 0.9,
+      "dusk": 1.3,
+      "night": 0.7
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait",
@@ -596,19 +619,19 @@
       "plug": 0.8,
       "squid": 0.8
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Mycteroperca bonaci",
         "url": "https://www.fishbase.se/summary/Mycteroperca-bonaci.html",
-        "accessed": "pending-review",
-        "supports": "reef ledges and drop-offs"
+        "accessed": "2026-11-17",
+        "supports": "solitary on rocky and coral reefs; adults eat fish"
       },
       {
         "title": "Florida Museum species profile: Mycteroperca bonaci",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/mycteroperca-bonaci/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/black-grouper/",
+        "accessed": "2026-11-17",
+        "supports": "rocky bottoms and coral reefs, 6 to 33 m; spawns November to May"
       }
     ]
   },
@@ -621,23 +644,23 @@
     "rarity": "uncommon",
     "phaseMod": {
       "dawn": 1.2,
-      "day": 0.6,
-      "dusk": 1.7,
-      "night": 0.8
+      "day": 0.9,
+      "dusk": 1.3,
+      "night": 0.7
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait",
@@ -649,13 +672,13 @@
       "jig": 1,
       "squid": 0.8
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Mycteroperca bonaci",
         "url": "https://www.fishbase.se/summary/Mycteroperca-bonaci.html",
-        "accessed": "pending-review",
-        "supports": "deeper reef"
+        "accessed": "2026-11-17",
+        "supports": "solitary on rocky and coral reefs; adults eat fish"
       }
     ]
   },
@@ -673,18 +696,18 @@
       "night": 0.4
     },
     "monthMod": [
-      1.4,
+      1.0,
+      1.0,
+      1.1,
       1.4,
       1.5,
-      1.3,
-      1,
-      0.7,
-      0.6,
-      0.6,
-      0.7,
-      1,
-      1.3,
-      1.4
+      1.4,
+      1.0,
+      0.9,
+      0.8,
+      0.9,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait",
@@ -696,19 +719,25 @@
       "spoon": 1.2,
       "cutfish": 0.8
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Scomberomorus cavalla",
         "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
-        "accessed": "pending-review",
-        "supports": "outer reef and open water"
+        "accessed": "2026-11-17",
+        "supports": "outer reef areas and open water; migrates with water temperature"
       },
       {
         "title": "NOAA Fisheries: King mackerel",
         "url": "https://www.fisheries.noaa.gov/species/king-mackerel",
-        "accessed": "pending-review",
-        "supports": "seasonal migration"
+        "accessed": "2026-11-17",
+        "supports": "seasonal north-south migrations along the US coast; the Florida winter mixing zone does not apply to Belize"
+      },
+      {
+        "title": "Caribbean Lifestyle: plan a vacation around this fishing calendar in Belize",
+        "url": "https://caribbeanlifestyle.com/?p=5796",
+        "accessed": "2026-11-17",
+        "supports": "months: Belize kingfish year round, best April to June; an Ambergris Caye species list gives the same months (search excerpts). The Florida winter peak does not apply."
       }
     ]
   },
@@ -752,10 +781,23 @@
       {
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
-        "accessed": "pending-review",
-        "supports": "reef dens"
+        "accessed": "2026-11-17",
+        "supports": "shallow reefs, rocks and seagrass; gregarious, with autumn mass migrations"
+      },
+      {
+        "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
+        "url": "https://doi.org/10.1071/MF97198",
+        "accessed": "2026-11-17",
+        "supports": "phase: lobsters leave reef dens to forage at night"
+      },
+      {
+        "title": "San Pedro Sun: closure of the Caribbean spiny lobster season, 2024",
+        "url": "https://www.sanpedrosun.com/community-and-society/2024/02/25/closure-of-the-caribbean-spiny-lobster-fishing-season/",
+        "accessed": "2026-11-17",
+        "supports": "Belize closed season 1 March to 30 June"
       }
-    ]
+    ],
+    "designNotes": "Belize closes the lobster season from 1 March to 30 June; the game does not model closed seasons, and the market buys lobster all year."
   },
   {
     "speciesId": "octopus-briareus",
@@ -796,8 +838,14 @@
       {
         "title": "SeaLifeBase: Octopus briareus",
         "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
-        "accessed": "pending-review",
-        "supports": "nocturnal reef hunter"
+        "accessed": "2026-11-17",
+        "supports": "coral reef, seagrass, rubble and sand, 0 to 20 m"
+      },
+      {
+        "title": "Animal Diversity Web: Octopus briareus",
+        "url": "https://animaldiversity.org/accounts/Octopus_briareus/",
+        "accessed": "2026-11-17",
+        "supports": "phase: hunts only at night and returns to its den"
       }
     ]
   },
@@ -838,8 +886,8 @@
       {
         "title": "FishBase: Ginglymostoma cirratum",
         "url": "https://www.fishbase.se/summary/Ginglymostoma-cirratum.html",
-        "accessed": "pending-review",
-        "supports": "rests under reef ledges by day"
+        "accessed": "2026-11-17",
+        "supports": "nocturnal bottom feeder on lobsters, crabs and fish; shallow flats, channels and reefs"
       }
     ],
     "designNotes": "Sighting only."

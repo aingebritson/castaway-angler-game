@@ -39,8 +39,8 @@
       {
         "title": "FishBase: Gerres cinereus",
         "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
-        "accessed": "pending-review",
-        "supports": "sandy channels"
+        "accessed": "2026-11-17",
+        "supports": "shallow sandy areas, seagrass and mangrove channels; eats benthic invertebrates"
       }
     ]
   },
@@ -85,8 +85,8 @@
       {
         "title": "FishBase: Lutjanus griseus",
         "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
-        "accessed": "pending-review",
-        "supports": "channels near mangroves"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, estuaries and mangroves; feeds mainly at night; spawns in summer near the full moon"
       }
     ]
   },
@@ -98,24 +98,24 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.5,
-      "day": 1,
-      "dusk": 1.4,
+      "dawn": 1.2,
+      "day": 1.0,
+      "dusk": 1.2,
       "night": 0.5
     },
     "monthMod": [
-      1.2,
-      1.2,
-      1.2,
-      1.1,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.1,
-      1.2
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "sight",
@@ -125,21 +125,22 @@
       "shrimp": 1.6,
       "crab": 1.5,
       "crustacean": 1.3,
-      "fly": 1.2
+      "fly": 1.2,
+      "cutfish": 0.5
     },
     "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Albula vulpes",
         "url": "https://www.fishbase.se/summary/Albula-vulpes.html",
-        "accessed": "pending-review",
-        "supports": "sand flats and channel edges"
+        "accessed": "2026-11-17",
+        "supports": "shallow coastal waters and bays over sand and mud"
       },
       {
-        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "flats on the rising tide"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: bonefish are a daily option in every month"
       }
     ],
     "designNotes": "Kept sellable in the game on purpose. In Belize bonefish are catch-and-release only by law (SI 114 of 2009); the field guide says so."
@@ -159,17 +160,17 @@
     },
     "monthMod": [
       0.7,
-      0.8,
-      1.2,
+      0.9,
+      1.3,
       1.4,
       1.5,
       1.5,
+      1.5,
       1.4,
-      1,
-      0.8,
-      0.8,
-      0.7,
-      0.7
+      1.1,
+      1.0,
+      0.9,
+      0.8
     ],
     "methods": [
       "sight"
@@ -184,14 +185,14 @@
       {
         "title": "FishBase: Trachinotus falcatus",
         "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
-        "accessed": "pending-review",
-        "supports": "channels and flats"
+        "accessed": "2026-11-17",
+        "supports": "adults over sandy flats, around reefs and in channels"
       },
       {
-        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "permit in cuts between cayes"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: permit best from mid-February through August, still good September and October"
       }
     ],
     "designNotes": "Kept sellable in the game on purpose. In Belize permit are catch-and-release only by law (SI 114 of 2009); the field guide says so."
@@ -241,8 +242,8 @@
       {
         "title": "FishBase: Caranx hippos",
         "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
-        "accessed": "pending-review",
-        "supports": "channels with current"
+        "accessed": "2026-11-17",
+        "supports": "shelf waters from shallow flats to offshore; juveniles in estuaries and mangroves; fast-moving schools"
       }
     ]
   },
@@ -260,18 +261,18 @@
       "night": 0.8
     },
     "monthMod": [
-      0.7,
-      0.7,
-      0.8,
-      1,
-      1.2,
-      1.4,
-      1.4,
-      1.4,
-      1.2,
-      1,
-      0.8,
-      0.7
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure"
@@ -281,13 +282,13 @@
       "popper": 1.5,
       "feather": 1.3
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Tylosurus crocodilus",
         "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
-        "accessed": "pending-review",
-        "supports": "surface waters"
+        "accessed": "2026-11-17",
+        "supports": "surface waters over lagoons and seaward reefs; caught on cast or trolled surface lures"
       }
     ]
   },
@@ -306,18 +307,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure",
@@ -335,8 +336,14 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "channels"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt)"
       }
     ]
   },
@@ -350,22 +357,22 @@
     "phaseMod": {
       "dawn": 1.3,
       "day": 0.8,
-      "dusk": 1.5,
-      "night": 1.2
+      "dusk": 1.4,
+      "night": 1.5
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      0.9,
+      1.0,
+      1.2,
+      1.3,
+      1.2,
+      1.1,
+      1.0,
+      1.0,
+      1.1,
+      1.0,
+      0.9,
+      0.9
     ],
     "methods": [
       "bait"
@@ -380,8 +387,14 @@
       {
         "title": "FishBase: Ocyurus chrysurus",
         "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
-        "accessed": "pending-review",
-        "supports": "channel edges"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, usually well above the bottom; feeds mainly at night"
+      },
+      {
+        "title": "SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology",
+        "url": "https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps",
+        "accessed": "2026-11-17",
+        "supports": "phase and months: night feeding aggregations targeted by fishers; Caribbean spawning year-round with a March to April peak (search excerpts)"
       }
     ]
   },
@@ -393,10 +406,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.7,
-      "day": 0.9,
-      "dusk": 1.4,
-      "night": 0.1
+      "dawn": 1.3,
+      "day": 1.0,
+      "dusk": 1.2,
+      "night": 0.2
     },
     "monthMod": [
       1,
@@ -422,13 +435,13 @@
       "plug": 1.2,
       "livefish": 1.6
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Scomberomorus regalis",
         "url": "https://www.fishbase.se/summary/Scomberomorus-regalis.html",
-        "accessed": "pending-review",
-        "supports": "reef passes"
+        "accessed": "2026-11-17",
+        "supports": "most abundant in clear water around coral reefs"
       }
     ]
   },
@@ -441,22 +454,22 @@
     "rarity": "rare",
     "phaseMod": {
       "dawn": 1.7,
-      "day": 0.5,
+      "day": 0.8,
       "dusk": 1.8,
       "night": 1.2
     },
     "monthMod": [
       0.5,
-      0.5,
+      0.6,
+      0.9,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      0.9,
       0.7,
-      1.2,
-      1.6,
-      1.8,
-      1.8,
-      1.6,
-      1.2,
-      0.8,
-      0.5,
+      0.6,
       0.5
     ],
     "methods": [
@@ -474,14 +487,20 @@
       {
         "title": "FishBase: Megalops atlanticus",
         "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
-        "accessed": "pending-review",
-        "supports": "passes and channels on moving tides"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, bays and mangrove lagoons; air-breather; eats sardines, mullet and crabs"
       },
       {
-        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "tarpon in cuts at dusk"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
+      },
+      {
+        "title": "Sport Fishing: tarpon fishing in Miami at night",
+        "url": "https://www.sportfishingmag.com/?p=44462",
+        "accessed": "2026-11-17",
+        "supports": "phase: tarpon hold in the shadows of bridges and dock lights at night, especially May to September (search excerpt)"
       }
     ]
   },
@@ -499,18 +518,18 @@
       "night": 0.4
     },
     "monthMod": [
-      1.4,
+      1.0,
+      1.0,
+      1.1,
       1.4,
       1.5,
-      1.3,
-      1,
-      0.7,
-      0.6,
-      0.6,
-      0.7,
-      1,
-      1.3,
-      1.4
+      1.4,
+      1.0,
+      0.9,
+      0.8,
+      0.9,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait",
@@ -521,13 +540,19 @@
       "plug": 1.4,
       "spoon": 1.2
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Scomberomorus cavalla",
         "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
-        "accessed": "pending-review",
-        "supports": "channel mouths and open water"
+        "accessed": "2026-11-17",
+        "supports": "outer reef areas and open water; migrates with water temperature"
+      },
+      {
+        "title": "Caribbean Lifestyle: plan a vacation around this fishing calendar in Belize",
+        "url": "https://caribbeanlifestyle.com/?p=5796",
+        "accessed": "2026-11-17",
+        "supports": "months: Belize kingfish year round, best April to June; an Ambergris Caye species list gives the same months (search excerpts). The Florida winter peak does not apply."
       }
     ]
   },
@@ -545,18 +570,18 @@
       "night": 0.4
     },
     "monthMod": [
-      1.4,
+      1.0,
+      1.0,
+      1.1,
       1.4,
       1.5,
-      1.3,
-      1,
-      0.7,
-      0.6,
-      0.6,
-      0.7,
-      1,
-      1.3,
-      1.4
+      1.4,
+      1.0,
+      0.9,
+      0.8,
+      0.9,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait",
@@ -570,13 +595,19 @@
     "minGear": {
       "rodTier": 4
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Scomberomorus cavalla",
         "url": "https://www.fishbase.se/summary/Scomberomorus-cavalla.html",
-        "accessed": "pending-review",
-        "supports": "open water"
+        "accessed": "2026-11-17",
+        "supports": "outer reef areas and open water; migrates with water temperature"
+      },
+      {
+        "title": "Caribbean Lifestyle: plan a vacation around this fishing calendar in Belize",
+        "url": "https://caribbeanlifestyle.com/?p=5796",
+        "accessed": "2026-11-17",
+        "supports": "months: Belize kingfish year round, best April to June; an Ambergris Caye species list gives the same months (search excerpts). The Florida winter peak does not apply."
       }
     ]
   }

@@ -37,3 +37,23 @@ SeaLifeBase: [Callinectes sapidus](https://www.sealifebase.se/summary/Callinecte
 - [Channel 5 Belize: Nassau grouper has protection in Belize](https://archive.channel5belize.com/?p=197194): closed season and slot (search excerpt)
 - [Mongabay (2025): Nassau grouper spawning site in Belize near collapse](https://news.mongabay.com/2025/11/study-finds-important-nassau-grouper-spawning-site-in-belize-near-collapse/) (search excerpt)
 - [EDGE of Existence: Survival Blueprint for Antillean manatees in Belize](https://www.edgeofexistence.org/wp-content/uploads/2017/06/Survival_Blueprint_2020_Antillean-Manatees_Belize.pdf) (search excerpt)
+
+## Occurrence pass (seasons, time of day, baits)
+
+Guide and charter pages and articles (medium confidence; angler experience, partly marketing; several were read only through search excerpts):
+
+- [Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize](https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize): bonefish, permit and tarpon by month
+- [FishingBooker: great barracuda fishing in Belize](https://fishingbooker.com/fish/barracuda-great/bz) (search excerpt)
+- [FishingBooker: San Pedro, Belize fishing guide](https://fishingbooker.com/blog/?p=52063): snook season (search excerpt)
+- [Caribbean Lifestyle: plan a vacation around this fishing calendar in Belize](https://caribbeanlifestyle.com/?p=5796): kingfish months (search excerpt)
+- [Salt Water Sportsman: sundown snook](https://www.saltwatersportsman.com/?p=50910): snook at dock and bridge lights (search excerpt)
+- [Sport Fishing: tarpon fishing in Miami at night](https://www.sportfishingmag.com/?p=44462): tarpon at dock lights (search excerpt)
+
+Studies and agencies:
+
+- [NOAA Fisheries: Nassau grouper](https://www.fisheries.noaa.gov/species/nassau-grouper): spawning aggregation timing and sites
+- [NOAA Fisheries: king mackerel](https://www.fisheries.noaa.gov/species/king-mackerel): Florida winter mixing zone
+- [Fishery Bulletin: Delaware Bay shore-zone fauna by day and night](https://fisherybulletin.nmfs.noaa.gov/sites/default/files/pdf-content/fish-bull/torre.pdf): blue crab at night (search excerpt)
+- [San Pedro Sun: closure of the Caribbean spiny lobster season, 2024](https://www.sanpedrosun.com/community-and-society/2024/02/25/closure-of-the-caribbean-spiny-lobster-fishing-season/)
+- The island sources (the Florida Museum profiles, the *Ecosphere* schoolmaster study, Young and Winn on morays, the spiny lobster foraging study, the AFS mutton snapper abstract, SEDAR 84 on yellowtail) are listed in `research/castaway-island/sources.md`.
+- Page that refused automated reads: the Ambergris Caye species-by-month list (ambergriscaye.com), seen only in search results.

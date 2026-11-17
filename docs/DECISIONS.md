@@ -81,7 +81,13 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Maximums changed for gray snapper (89 cm), Nassau grouper (122 cm), cero (90 cm FL) and blue crab. Crevalle jack moves to a total-length measure (124 cm TL).
     - Fourteen unsourced or contradicted facts were corrected.
     - Nassau grouper stays release-only, which is stricter than Belize's April to November slot fishery.
-    - The Cayes occurrence records are still unchecked.
+    - The Cayes occurrence records were checked separately (entry 41).
+41. **The Cayes occurrence records were checked on 17 November 2026**, and every source in the game's content is now dated.
+    - King mackerel now peaks in spring (April to June), as Belize sources report; the winter peak was Florida's.
+    - Nassau and black grouper are the same in every month: a lagoon patch reef is not a spawning site, and no Belize source gives a season.
+    - Island species carry the island's corrected values.
+    - Two rumours changed to match: the king mackerel rumour now names spring, and the Nassau grouper rumour keeps its story but no longer marks winter months.
+    - The lobster occurrence now states that Belize's 1 March to 30 June closed season is not modelled.
 
 ## Schema additions (spec section 11)
 

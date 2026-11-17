@@ -45,8 +45,8 @@
       {
         "title": "FishBase: Lutjanus griseus",
         "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
-        "accessed": "pending-review",
-        "supports": "mangrove nursery habitat"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, estuaries and mangroves; feeds mainly at night; spawns in summer near the full moon"
       }
     ]
   },
@@ -90,8 +90,8 @@
       {
         "title": "FishBase: Gerres cinereus",
         "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
-        "accessed": "pending-review",
-        "supports": "mangrove edges"
+        "accessed": "2026-11-17",
+        "supports": "shallow sandy areas, seagrass and mangrove channels; eats benthic invertebrates"
       }
     ]
   },
@@ -137,8 +137,14 @@
       {
         "title": "FishBase: Lutjanus apodus",
         "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
-        "accessed": "pending-review",
-        "supports": "juveniles among mangrove roots"
+        "accessed": "2026-11-17",
+        "supports": "clear shallow reef water, juveniles over seagrass and mangrove mud; rests in groups by day"
+      },
+      {
+        "title": "Ecosphere (2018): acoustic telemetry of schoolmaster snapper and great barracuda",
+        "url": "https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213",
+        "accessed": "2026-11-17",
+        "supports": "phase: schoolmaster move into channels and seagrass at night, when barracuda are scarce (abstract via search)"
       }
     ]
   },
@@ -188,14 +194,26 @@
       {
         "title": "FishBase: Centropomus undecimalis",
         "url": "https://www.fishbase.se/summary/Centropomus-undecimalis.html",
-        "accessed": "pending-review",
-        "supports": "mangrove shorelines, ambush predator"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, estuaries, lagoons and mangroves; gathers at passes and river mouths to spawn May to September"
       },
       {
         "title": "Florida Museum species profile: Centropomus undecimalis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/centropomus-undecimalis/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/common-snook/",
+        "accessed": "2026-11-17",
+        "supports": "mangroves, beaches and river mouths; cold limits of 6 to 12 °C for adults"
+      },
+      {
+        "title": "Salt Water Sportsman: sundown snook",
+        "url": "https://www.saltwatersportsman.com/?p=50910",
+        "accessed": "2026-11-17",
+        "supports": "phase: snook hold along the shadow lines of lighted docks and bridges at night (search excerpt)"
+      },
+      {
+        "title": "FishingBooker: San Pedro, Belize fishing guide",
+        "url": "https://fishingbooker.com/blog/?p=52063",
+        "accessed": "2026-11-17",
+        "supports": "months: snook are year-round residents, best in the warm summer months when they spawn (search excerpt)"
       }
     ]
   },
@@ -213,18 +231,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "sight",
@@ -241,8 +259,14 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "juveniles in mangroves"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt)"
       }
     ]
   },
@@ -255,22 +279,22 @@
     "rarity": "rare",
     "phaseMod": {
       "dawn": 1.7,
-      "day": 0.5,
+      "day": 0.8,
       "dusk": 1.7,
       "night": 1.3
     },
     "monthMod": [
       0.5,
-      0.5,
+      0.6,
+      0.9,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      0.9,
       0.7,
-      1.2,
-      1.6,
-      1.8,
-      1.8,
-      1.6,
-      1.2,
-      0.8,
-      0.5,
+      0.6,
       0.5
     ],
     "methods": [
@@ -290,14 +314,26 @@
       {
         "title": "FishBase: Megalops atlanticus",
         "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
-        "accessed": "pending-review",
-        "supports": "juveniles and adults in mangrove creeks"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, bays and mangrove lagoons; air-breather; eats sardines, mullet and crabs"
       },
       {
         "title": "Florida Museum species profile: Megalops atlanticus",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "accessed": "2026-11-17",
+        "supports": "feeds by day and by night; air-breather of bays, lagoons and passes"
+      },
+      {
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
+      },
+      {
+        "title": "Sport Fishing: tarpon fishing in Miami at night",
+        "url": "https://www.sportfishingmag.com/?p=44462",
+        "accessed": "2026-11-17",
+        "supports": "phase: tarpon hold in the shadows of bridges and dock lights at night, especially May to September (search excerpt)"
       }
     ],
     "designNotes": "Rare rather than epic here: creek tarpon are the first ones a shop rod can turn."
@@ -345,8 +381,8 @@
       {
         "title": "FishBase: Caranx hippos",
         "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
-        "accessed": "pending-review",
-        "supports": "enters creeks and river mouths"
+        "accessed": "2026-11-17",
+        "supports": "shelf waters from shallow flats to offshore; juveniles in estuaries and mangroves; fast-moving schools"
       }
     ]
   },
@@ -359,9 +395,9 @@
     "rarity": "rare",
     "phaseMod": {
       "dawn": 1.3,
-      "day": 0.6,
-      "dusk": 1.6,
-      "night": 1.2
+      "day": 1.0,
+      "dusk": 1.4,
+      "night": 1.0
     },
     "monthMod": [
       1,
@@ -392,8 +428,14 @@
       {
         "title": "FishBase: Lutjanus analis",
         "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
-        "accessed": "pending-review",
-        "supports": "juveniles and adults over sand and grass near mangroves"
+        "accessed": "2026-11-17",
+        "supports": "feeds day and night on fish, shrimp, crabs and cephalopods; groups disband at night"
+      },
+      {
+        "title": "Belize mutton snapper spawning aggregations, AFS 2013 abstract",
+        "url": "https://afs.confex.com/afs/2013/webprogram/Paper12113.html",
+        "accessed": "2026-11-17",
+        "supports": "months: Gladden Spit aggregations March to June around the full moon (search excerpt)"
       }
     ]
   },
@@ -437,8 +479,14 @@
       {
         "title": "SeaLifeBase: Callinectes sapidus",
         "url": "https://www.sealifebase.se/summary/Callinectes-sapidus.html",
-        "accessed": "pending-review",
-        "supports": "mangrove creeks and estuaries"
+        "accessed": "2026-11-17",
+        "supports": "bays and estuaries over sandy and muddy bottoms"
+      },
+      {
+        "title": "Fishery Bulletin: Delaware Bay shore-zone fauna by day and night",
+        "url": "https://fisherybulletin.nmfs.noaa.gov/sites/default/files/pdf-content/fish-bull/torre.pdf",
+        "accessed": "2026-11-17",
+        "supports": "phase: blue crabs denser in the shore zone at night than by day (search excerpt)"
       }
     ]
   },
@@ -477,10 +525,16 @@
     "confidence": "medium",
     "sources": [
       {
-        "title": "IUCN Red List: Trichechus manatus",
-        "url": "https://www.iucnredlist.org/search?query=Trichechus%20manatus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "title": "Wikipedia: West Indian manatee (IUCN status)",
+        "url": "https://en.wikipedia.org/wiki/West_Indian_manatee",
+        "accessed": "2026-11-17",
+        "supports": "Vulnerable; the Red List page refuses automated reads"
+      },
+      {
+        "title": "US Fish and Wildlife Service: West Indian manatee",
+        "url": "https://www.fws.gov/species/manatee-trichechus-manatus",
+        "accessed": "2026-11-17",
+        "supports": "spends up to 8 hours a day eating seagrass and other plants"
       }
     ],
     "designNotes": "Sighting only."

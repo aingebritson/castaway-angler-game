@@ -41,8 +41,8 @@
       {
         "title": "FishBase: Abudefduf saxatilis",
         "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
-        "accessed": "pending-review",
-        "supports": "pilings and harbour walls"
+        "accessed": "2026-11-17",
+        "supports": "shallow reef tops and rocky shores; eats algae, small crustaceans and larvae"
       }
     ]
   },
@@ -89,8 +89,8 @@
       {
         "title": "FishBase: Haemulon plumierii",
         "url": "https://www.fishbase.se/summary/Haemulon-plumierii.html",
-        "accessed": "pending-review",
-        "supports": "docks, patch reefs, nocturnal foraging"
+        "accessed": "2026-11-17",
+        "supports": "dense aggregations on patch reefs by day; juveniles in turtle grass"
       }
     ]
   },
@@ -138,14 +138,14 @@
       {
         "title": "FishBase: Lutjanus griseus",
         "url": "https://www.fishbase.se/summary/Lutjanus-griseus.html",
-        "accessed": "pending-review",
-        "supports": "docks and mangroves, nocturnal feeding"
+        "accessed": "2026-11-17",
+        "supports": "coastal reefs, estuaries and mangroves; feeds mainly at night; spawns in summer near the full moon"
       },
       {
         "title": "Florida Museum species profile: Lutjanus griseus",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-griseus/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/gray-snapper/",
+        "accessed": "2026-11-17",
+        "supports": "adults forage at night and school by day; juveniles in mangroves and seagrass"
       }
     ]
   },
@@ -189,8 +189,8 @@
       {
         "title": "FishBase: Gerres cinereus",
         "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
-        "accessed": "pending-review",
-        "supports": "sandy harbour shallows"
+        "accessed": "2026-11-17",
+        "supports": "shallow sandy areas, seagrass and mangrove channels; eats benthic invertebrates"
       }
     ]
   },
@@ -202,8 +202,8 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 0.3,
-      "day": 0,
+      "dawn": 0.6,
+      "day": 0.3,
       "dusk": 0.8,
       "night": 1.6
     },
@@ -234,8 +234,14 @@
       {
         "title": "FishBase: Gymnothorax moringa",
         "url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
-        "accessed": "pending-review",
-        "supports": "rubble and pilings, nocturnal"
+        "accessed": "2026-11-17",
+        "supports": "shallow rocky and grassy areas and reefs; FishBase says it is active during the day as well"
+      },
+      {
+        "title": "Young and Winn (2003), Activity patterns, diet and shelter site use for two species of moray eels in Belize, Copeia 2003(1)",
+        "url": "https://bioone.org/journals/copeia/volume-2003/issue-1/0045-8511(2003)003[0044:APDASS]2.0.CO;2/Activity-Patterns-Diet-and-Shelter-Site-Use-for-Two-Species/10.1643/0045-8511(2003)003[0044:APDASS]2.0.CO;2.full",
+        "accessed": "2026-11-17",
+        "supports": "phase: tagged spotted morays in Belize moved mostly at night"
       }
     ]
   },
@@ -284,20 +290,26 @@
       {
         "title": "FishBase: Centropomus undecimalis",
         "url": "https://www.fishbase.se/summary/Centropomus-undecimalis.html",
-        "accessed": "pending-review",
-        "supports": "docks and harbour lights"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, estuaries, lagoons and mangroves; gathers at passes and river mouths to spawn May to September"
       },
       {
         "title": "Florida Museum species profile: Centropomus undecimalis",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/centropomus-undecimalis/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/common-snook/",
+        "accessed": "2026-11-17",
+        "supports": "mangroves, beaches and river mouths; cold limits of 6 to 12 °C for adults"
       },
       {
-        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "night feeding under lights"
+        "title": "Salt Water Sportsman: sundown snook",
+        "url": "https://www.saltwatersportsman.com/?p=50910",
+        "accessed": "2026-11-17",
+        "supports": "phase: snook hold along the shadow lines of lighted docks and bridges at night (search excerpt)"
+      },
+      {
+        "title": "FishingBooker: San Pedro, Belize fishing guide",
+        "url": "https://fishingbooker.com/blog/?p=52063",
+        "accessed": "2026-11-17",
+        "supports": "months: snook are year-round residents, best in the warm summer months when they spawn (search excerpt)"
       }
     ]
   },
@@ -345,14 +357,14 @@
       {
         "title": "FishBase: Caranx hippos",
         "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
-        "accessed": "pending-review",
-        "supports": "harbours and channels, schooling predator"
+        "accessed": "2026-11-17",
+        "supports": "shelf waters from shallow flats to offshore; juveniles in estuaries and mangroves; fast-moving schools"
       },
       {
         "title": "Florida Museum species profile: Caranx hippos",
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/caranx-hippos/",
-        "accessed": "pending-review",
-        "supports": "behaviour, diet, habitat, angling notes"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/crevalle-jack/",
+        "accessed": "2026-11-17",
+        "supports": "diurnal predator, usually in schools"
       }
     ]
   },
@@ -370,18 +382,18 @@
       "night": 1
     },
     "monthMod": [
-      0.7,
-      0.7,
-      0.8,
-      1,
-      1.2,
-      1.4,
-      1.4,
-      1.4,
-      1.2,
-      1,
-      0.8,
-      0.7
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure"
@@ -392,13 +404,13 @@
       "feather": 1.3,
       "plug": 1.2
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Tylosurus crocodilus",
         "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
-        "accessed": "pending-review",
-        "supports": "surface waters of harbours"
+        "accessed": "2026-11-17",
+        "supports": "surface waters over lagoons and seaward reefs; caught on cast or trolled surface lures"
       }
     ]
   },
@@ -416,18 +428,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1.3,
-      1.3,
-      1.2,
-      1,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.9,
-      1,
-      1.2,
-      1.3
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure",
@@ -444,8 +456,14 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "harbours and channels"
+        "accessed": "2026-11-17",
+        "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
+      },
+      {
+        "title": "FishingBooker: great barracuda fishing in Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "accessed": "2026-11-17",
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt)"
       }
     ]
   },
@@ -458,22 +476,22 @@
     "rarity": "epic",
     "phaseMod": {
       "dawn": 1.4,
-      "day": 0.3,
+      "day": 0.6,
       "dusk": 1.5,
       "night": 1.8
     },
     "monthMod": [
       0.5,
-      0.5,
+      0.6,
+      0.9,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      0.9,
       0.7,
-      1.2,
-      1.6,
-      1.8,
-      1.8,
-      1.6,
-      1.2,
-      0.8,
-      0.5,
+      0.6,
       0.5
     ],
     "methods": [
@@ -491,14 +509,20 @@
       {
         "title": "FishBase: Megalops atlanticus",
         "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
-        "accessed": "pending-review",
-        "supports": "harbours, feeds under lights at night"
+        "accessed": "2026-11-17",
+        "supports": "coastal waters, bays and mangrove lagoons; air-breather; eats sardines, mullet and crabs"
       },
       {
-        "title": "Belize and Caribbean inshore guide fishing reports (general angler knowledge)",
-        "url": "https://www.bonefishtarpontrust.org/",
-        "accessed": "pending-review",
-        "supports": "night tarpon around docks"
+        "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
+        "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
+        "accessed": "2026-11-17",
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
+      },
+      {
+        "title": "Sport Fishing: tarpon fishing in Miami at night",
+        "url": "https://www.sportfishingmag.com/?p=44462",
+        "accessed": "2026-11-17",
+        "supports": "phase: tarpon hold in the shadows of bridges and dock lights at night, especially May to September (search excerpt)"
       }
     ]
   },
@@ -538,8 +562,8 @@
       {
         "title": "FishBase: Harengula jaguana",
         "url": "https://www.fishbase.se/summary/Harengula-jaguana.html",
-        "accessed": "pending-review",
-        "supports": "schools around piers and over grass"
+        "accessed": "2026-11-17",
+        "supports": "schools in coastal waters over mud and sand, near estuaries"
       }
     ],
     "designNotes": "Taken with a cast net; the game records the method as by hand."
