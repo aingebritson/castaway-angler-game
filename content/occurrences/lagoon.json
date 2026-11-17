@@ -231,7 +231,7 @@
         "title": "FishingBooker: great barracuda fishing in Belize",
         "url": "https://fishingbooker.com/fish/barracuda-great/bz",
         "accessed": "2026-11-17",
-        "supports": "months: barracuda fishing in Belize does not vary through the year"
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt: does not vary through the year)"
       }
     ]
   },
@@ -377,7 +377,7 @@
         "title": "Ecosphere (2018): acoustic telemetry of schoolmaster snapper and great barracuda",
         "url": "https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213",
         "accessed": "2026-11-17",
-        "supports": "phase: schoolmaster move into channels and seagrass to forage at night"
+        "supports": "phase: schoolmaster move into channels and seagrass at night, when barracuda are scarce (abstract via search)"
       }
     ]
   },
@@ -486,7 +486,7 @@
         "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
         "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
         "accessed": "2026-11-17",
-        "supports": "months: migratory tarpon build from March, peak May to August, mostly gone by mid-September; residents all year"
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
       }
     ]
   },
@@ -534,7 +534,7 @@
       },
       {
         "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
-        "url": "https://publish.csiro.au/mf/MF97198",
+        "url": "https://doi.org/10.1071/MF97198",
         "accessed": "2026-11-17",
         "supports": "phase: lobsters leave reef dens to forage at night"
       }
@@ -619,7 +619,7 @@
         "title": "San Pedro Sun: green turtle reports",
         "url": "https://www.sanpedrosun.com/topics/green-turtle",
         "accessed": "2026-11-17",
-        "supports": "months: Belize nesting season runs May to November, peaking in July or August"
+        "supports": "months: Belize nesting season runs April to November, with hatching peaking in summer"
       }
     ]
   },

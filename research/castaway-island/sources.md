@@ -90,3 +90,17 @@ Studies and reports:
 Occurrence by month:
 
 - [iNaturalist API](https://api.inaturalist.org/v1/docs/): research-grade observations in Belize (place 6953), by month of year, for all 24 species. Observer effort dominates the counts, so no month values were taken from them.
+
+## Review (spec step 7)
+
+Pages the reviewers relied on that are not listed above:
+
+- [FishBase length-weight table: Trachinotus falcatus](https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1010&GenusName=Trachinotus&SpeciesName=falcatus) and [length-length table](https://www.fishbase.se/popdyn/LLRelationshipList.php?ID=1010&GenusName=Trachinotus&SpeciesName=falcatus)
+- [Total Fishing: barracuda beats world record](https://www.total-fishing.com/barracuda-beats-world-record/): IGFA great barracuda record, 85 lb, 1992 (search excerpt)
+- [NOAA Fisheries: seasonal prohibition on mutton and lane snapper in the US Caribbean](https://www.fisheries.noaa.gov/bulletin/seasonal-prohibition-fishing-or-possession-mutton-and-lane-snapper-us-caribbean) (search result)
+- [Animal Diversity Web: Panulirus argus](https://animaldiversity.org/accounts/Panulirus_argus/) (search excerpt)
+- [Wikipedia: Atlantic ghost crab](https://en.wikipedia.org/wiki/Atlantic_ghost_crab) and [Puerto Rican sand crab](https://en.wikipedia.org/wiki/Puerto_Rican_sand_crab)
+- [SICB abstract: limb loss and running speed in ghost crabs](https://sicb.org/?p=20218)
+- [Living World: sand crabs of Mayaro, Trinidad](https://livingworld.ttfnc.org/index.php/lwj/article/download/quesnel1975b/743/768) (search excerpt)
+- [Texas Parks and Wildlife: tarpon](https://tpwd.texas.gov/gis/ris/ton/) (search excerpt)
+- The spiny lobster foraging study is now linked by its DOI: [10.1071/MF97198](https://doi.org/10.1071/MF97198)

@@ -137,6 +137,63 @@ The same 12 runs as the first pass:
 - "Guide fishing reports (general angler knowledge)" entries were replaced with named pages.
 - The southern stingray's maximum disc width is corrected from 150 to 200 cm (FishBase). Green turtle and bottlenose dolphin sizes match NOAA.
 
+## Review (spec step 7)
+
+On 17 November 2026, three independent agents reviewed the records. They had no access to this dossier's reasoning and could not edit files.
+- Two of them checked all 7 species that have a rare or epic occurrence on the island (tarpon, permit, great barracuda, mutton snapper, spiny lobster, reef octopus, bottlenose dolphin), their 12 occurrences, rumours and both legendaries.
+- The third checked a seeded random 30% of the rest: 6 of 17 species (sergeant major, bar jack, yellowtail snapper, green turtle, ghost crab, sand crab) and 7 of 22 occurrences.
+
+Every conflict they raised was checked against its source before anything changed.
+
+### Errors found and fixed
+
+| Record | Problem | Fix |
+| --- | --- | --- |
+| Permit | Total-length weight parameters were applied to a fork-length maximum. At 122 cm FL (about 148 cm TL) the true weight is 43–49 kg, far over the 27 kg IGFA record. My first pass missed this. | Use FishBase's only fork-length set (Florida, n=488, a=0.0531, b=2.803). Maximum back to 110 cm FL: 28 kg, +3% against IGFA. FishBase's own 122 cm and 36 kg figures exceed the rod record and are noted in the source. |
+| Bar jack rumour | "Ignore bait but hit a moving feather" is false of the real fish | "Come hard at a moving feather" |
+| Bar jack fact | "Many authorities now place it in Carangoides" overstates a split: FishBase, WoRMS and GBIF use *Caranx* | "Some references place it in *Carangoides*; FishBase keeps it in *Caranx*" |
+| Bar jack description | "Chase moving prey and little else" | They also eat shrimp; reworded |
+| Ghost crab fact | "Over three metres a second": field trials measured about 2.2 m/s | "More than two metres a second" |
+| Sand crab size | Maximum 3 cm CL. Females average about 19 mm and the largest egg-bearing females are about 25 mm. | Min, common and max now 0.8, 1.6 and 2.6 cm. Placeholder weight reduced (16 g → 5 g at maximum). |
+| Sand crab fact | "Only ever moves backward" | "Digs, swims and crawls backward" |
+| Ghost crab, sand crab | SeaLifeBase sources claimed to support a maximum length the pages do not give | Supports text corrected; size now cites Wikipedia and a Trinidad study |
+
+### Doubtful claims corrected
+
+- **Barracuda record:** now the IGFA all-tackle record, 85 lb, Christmas Island, 1992, which the rule prefers. It was FishBase's 103 lb. Weight at maximum is +22% against it.
+- **Old Ironjaw's season clue:** said "when the barracuda come inshore". That is a Florida pattern with no Belize source. The clue now speaks only of him: "In the cool months, November to March, and never in the heat."
+- **Permit:**
+  - Fact changed from "eat mostly crabs" to "crush crabs, clams and snails".
+  - visualNotes: "orange-yellow patch" became "sometimes a yellow wash on the belly".
+- **Tarpon:**
+  - Scale fact changed from "wider than a palm" to "about 7 cm across".
+  - The length-weight note gave the wrong reason the two published sets fail. It is corrected.
+- **Mutton snapper:**
+  - "Several Caribbean countries close the fishery": only the US Caribbean does (1 April to 30 June). Belize protects the spawning sites instead. Fact rewritten.
+  - The spawning months are now Belize's March to June.
+  - The reef-edge and drop-off records now give sand fleas the same weak pull.
+- **Reef octopus:**
+  - Maximum mantle length now cites Animal Diversity Web (120 mm). SeaLifeBase does not give it.
+  - Common length changed from 8 to 6 cm (average about 54 mm).
+  - "Iridescent" and "dark ring around each eye" have no source; replaced with "bright blue-green flecked with red-brown" and "dark red-brown eyes".
+- **Spiny lobster:**
+  - The record note now says "reported to about 4.5 kg". The length-weight set gives 4.2 kg at maximum.
+  - "In autumn storms" changed to "In autumn": the storm trigger is a hypothesis.
+  - The study link now uses its DOI.
+- **Bottlenose dolphin:** the description no longer states the dawn and dusk bias as fact. That bias is a disclosed design choice in `designNotes`.
+- **Yellowtail snapper:**
+  - Caribbean spawning peaks in March and April, not Florida's May to July. The Rocky Point months now peak March to May.
+  - The shallows record notes that adults live deeper (10 to 70 m).
+- **Source wording:** the San Pedro Sun turtle page (April to November), the schoolmaster telemetry abstract (night movement when barracuda are scarce), the Belize tarpon months, the barracuda calendar and the permit law article now say only what the pages say.
+
+### Left as they are, with reasons
+
+- **Permit common length** (55 cm FL, about 4 kg) is low for Belize flats permit, but no source gives a typical catch size.
+- **Lobster legal size and closed season** (7.6 cm CL minimum; closed 1 March to 30 June) are not modelled. The island has no market. See open question 7.
+- **Sergeant major** common length: FishBase gives 15 cm SL, and the game uses 15 cm TL as the typical catch. The length-weight set comes from juveniles (1.5–7 cm) extrapolated to 22.9 cm. It still passes the weight check.
+- **Ghost crab and sand crab** length-weight values have no published basis. They are marked as placeholders in their sources.
+- **Unchecked IGFA figures:** the IGFA records for mutton snapper (30 lb 4 oz) and yellowtail snapper (11 lb, Bermuda 2004) were seen only in search excerpts. The record notes keep FishBase's weights, and both species pass the weight check either way.
+
 ## Selection against the quotas
 
 The island is a small, early region (15 fish), so the 30-fish quotas apply at about half scale.
@@ -204,6 +261,5 @@ Already built (DECISIONS 27): **Old Ironjaw**, a 160 cm great barracuda off the 
 
 ## Still to do
 
-- **Review (spec step 7):** a second agent checks every rare and epic record and 30% of the rest against the sources, and lists conflicts.
 - **Rumours (spec step 6):** each rare and epic island species has two rumours; check each against the occurrence values as they now stand.
 - **Moon and tide:** permit and tarpon in Belize are reported best around new and full moon tides. Mutton snapper aggregate at the full moon. The schema reserves `conditions.moon` and `conditions.tide`, but no island occurrence uses them yet.

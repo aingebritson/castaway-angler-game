@@ -163,14 +163,14 @@
     },
     "monthMod": [
       0.9,
-      0.9,
       1.0,
       1.2,
       1.3,
-      1.3,
       1.2,
+      1.1,
       1.0,
       1.0,
+      1.1,
       1.0,
       0.9,
       0.9
@@ -202,9 +202,10 @@
         "title": "SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology",
         "url": "https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps",
         "accessed": "2026-11-17",
-        "supports": "phase and months: fishers target feeding aggregations at night; spawning mainly spring and summer"
+        "supports": "phase and months: night feeding aggregations targeted by fishers; Caribbean spawning year-round with a March to April peak (search excerpts; PDF not readable)"
       }
-    ]
+    ],
+    "designNotes": "Adult yellowtail live over deeper reef (10 to 70 m); the shallows hold smaller ones, which is why it is uncommon here."
   },
   {
     "speciesId": "ocyurus-chrysurus",
@@ -222,14 +223,14 @@
     },
     "monthMod": [
       0.9,
-      0.9,
       1.0,
       1.2,
       1.3,
-      1.3,
       1.2,
+      1.1,
       1.0,
       1.0,
+      1.1,
       1.0,
       0.9,
       0.9
@@ -264,7 +265,7 @@
         "title": "SEDAR 84-DW-08: US Caribbean yellowtail snapper reproductive biology",
         "url": "https://sedarweb.org/documents/sedar-84-dw-08-u-s-caribbean-yellowtail-snapper-population-demographics-growth-and-reproductive-biology-addressing-critical-life-history-gaps",
         "accessed": "2026-11-17",
-        "supports": "phase and months: fishers target feeding aggregations at night; spawning mainly spring and summer"
+        "supports": "phase and months: night feeding aggregations targeted by fishers; Caribbean spawning year-round with a March to April peak (search excerpts; PDF not readable)"
       }
     ]
   },
@@ -320,7 +321,7 @@
         "title": "Ecosphere (2018): acoustic telemetry of schoolmaster snapper and great barracuda",
         "url": "https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213",
         "accessed": "2026-11-17",
-        "supports": "phase: schoolmaster move into channels and seagrass to forage at night"
+        "supports": "phase: schoolmaster move into channels and seagrass at night, when barracuda are scarce (abstract via search)"
       }
     ]
   },
@@ -619,7 +620,8 @@
       "livefish": 1.8,
       "squid": 1.2,
       "shrimp": 1,
-      "sinker": 1.5
+      "sinker": 1.5,
+      "crustacean": 0.4
     },
     "confidence": "medium",
     "sources": [
@@ -699,7 +701,7 @@
         "title": "FishingBooker: great barracuda fishing in Belize",
         "url": "https://fishingbooker.com/fish/barracuda-great/bz",
         "accessed": "2026-11-17",
-        "supports": "months: barracuda fishing in Belize does not vary through the year"
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt: does not vary through the year)"
       }
     ]
   },
@@ -753,7 +755,7 @@
         "title": "FishingBooker: great barracuda fishing in Belize",
         "url": "https://fishingbooker.com/fish/barracuda-great/bz",
         "accessed": "2026-11-17",
-        "supports": "months: barracuda fishing in Belize does not vary through the year"
+        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt: does not vary through the year)"
       }
     ]
   },
@@ -804,7 +806,7 @@
       },
       {
         "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
-        "url": "https://publish.csiro.au/mf/MF97198",
+        "url": "https://doi.org/10.1071/MF97198",
         "accessed": "2026-11-17",
         "supports": "phase: lobsters leave reef dens to forage at night"
       }
@@ -1004,7 +1006,7 @@
         "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
         "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
         "accessed": "2026-11-17",
-        "supports": "months: migratory tarpon build from March, peak May to August, mostly gone by mid-September; residents all year"
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
       }
     ]
   }

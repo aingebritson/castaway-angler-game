@@ -68,6 +68,13 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Bonefish take cut bait more often.
     - Two rumours were rewritten so that they are true of real fish.
     - Old Ironjaw's November to March window no longer matches any barracuda season, and is kept as a design choice.
+38. **Independent review of the island data (spec step 7), 17 November 2026.** Three reviewer agents checked every rare and epic record and a 30% sample of the rest. Confirmed errors were fixed:
+    - Permit's length-weight parameters now fit its fork-length measure, and its maximum is back to 110 cm.
+    - Bar jack, ghost crab and sand crab facts and rumours were corrected.
+    - The sand crab was resized.
+    - Ironjaw's season clue no longer claims a barracuda migration.
+    - Doubtful claims were reworded and source notes trimmed to what each page says.
+    Details are in the dossier.
 
 ## Schema additions (spec section 11)
 

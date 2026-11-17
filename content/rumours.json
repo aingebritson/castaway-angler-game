@@ -35,7 +35,7 @@
     "id": "barjack-lure",
     "speciesId": "caranx-ruber",
     "dimension": "method",
-    "text": "The blue-backed jacks at the reef edge ignore bait but hit a moving feather.",
+    "text": "The blue-backed jacks at the reef edge come hard at a moving feather.",
     "fillsCells": [
       "bait:feather",
       "zone:rocky-point/reef-edge"

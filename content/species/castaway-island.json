@@ -497,11 +497,11 @@
       "releaseOnly": false
     },
     "baseValue": 14,
-    "description": "A fast silver jack that patrols the reef edge in small packs, marked by a dark bar along the back that runs down into the lower tail lobe beside a stripe of electric blue. Bar jacks often shadow feeding stingrays to snap up whatever they flush. They chase moving prey and little else.",
+    "description": "A fast silver jack that patrols the reef edge in small packs, marked by a dark bar along the back that runs down into the lower tail lobe beside a stripe of electric blue. Bar jacks sometimes shadow feeding stingrays to snap up whatever they flush, and hunt small fish and shrimp in open water.",
     "facts": [
       "Bar jacks follow stingrays and goatfish to catch prey those fish stir up.",
       "The dark bar and blue stripe along the back make it easy to tell from other jacks.",
-      "Many authorities now place it in the genus Carangoides."
+      "Some references place it in the genus Carangoides; FishBase keeps it in Caranx."
     ],
     "visualNotes": "Streamlined silver jack; dark bar along the base of the dorsal fin continuing onto the lower tail lobe, bordered by an electric blue stripe; deeply forked tail; bony scutes along the rear lateral line.",
     "sources": [
@@ -690,11 +690,11 @@
       "releaseOnly": false
     },
     "baseValue": 40,
-    "description": "A big, handsome snapper, olive above and brick-red below, with a small black spot on each flank and blue lines under the eye. Muttons are solitary and careful, working the reef edge and sand patches for crabs and fish. They gather in great numbers to spawn around the full moons of late spring.",
+    "description": "A big, handsome snapper, olive above and brick-red below, with a small black spot on each flank and blue lines under the eye. Muttons are solitary and careful, working the reef edge and sand patches for crabs and fish. They gather in great numbers to spawn around the full moons of spring.",
     "facts": [
-      "Mutton snapper form large spawning aggregations around full moons from about April to June.",
+      "In Belize, mutton snapper gather to spawn around the full moons of March to June.",
       "The pointed anal fin and the black spot on the upper side set it apart from other snappers.",
-      "Several Caribbean countries close the fishery during the spawning season."
+      "The US Caribbean closes mutton snapper fishing from April to June, and Belize protects its spawning sites in reserves."
     ],
     "visualNotes": "Deep-bodied snapper; olive back, reddish flanks and fins; small black spot on the upper side below the soft dorsal; two blue lines on the cheek under the eye; pointed anal fin; crescent tail with a dark edge.",
     "sources": [
@@ -721,6 +721,18 @@
         "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1403&GenusName=Lutjanus&SpeciesName=analis&fc=323",
         "accessed": "2026-11-17",
         "supports": "length-weight a and b: TL set from the Florida east coast, 1992-2000"
+      },
+      {
+        "title": "NOAA Fisheries: seasonal prohibition on mutton and lane snapper in the US Caribbean",
+        "url": "https://www.fisheries.noaa.gov/bulletin/seasonal-prohibition-fishing-or-possession-mutton-and-lane-snapper-us-caribbean",
+        "accessed": "2026-11-17",
+        "supports": "April 1 to June 30 closure in US Caribbean federal waters (search result)"
+      },
+      {
+        "title": "Belize mutton snapper spawning aggregations, AFS 2013 abstract",
+        "url": "https://afs.confex.com/afs/2013/webprogram/Paper12113.html",
+        "accessed": "2026-11-17",
+        "supports": "Gladden Spit aggregations March to June around the full moon (search excerpt)"
       }
     ]
   },
@@ -733,12 +745,12 @@
     "lengthCm": {
       "min": 25,
       "common": 55,
-      "max": 122,
+      "max": 110,
       "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.02884,
-      "b": 2.86
+      "a": 0.0531,
+      "b": 2.803
     },
     "recordNote": "IGFA all-tackle record is 60 lb (about 27 kg), from Brazil in 2002.",
     "fight": {
@@ -758,18 +770,18 @@
     "baseValue": 80,
     "description": "A tall, slab-sided silver fish with sickle fins and the best eyesight on the flats. Permit tip down to crush crabs in the sand and will ignore nearly anything else, including a perfect cast. Anglers spend years trying for one. Hooked, it uses its deep body side-on to the pull and never gives up.",
     "facts": [
-      "Permit eat mostly crabs, crushing them with bony plates in the throat.",
+      "Permit crush crabs, clams and snails with bony plates in the throat.",
       "Bonefish, permit and tarpon in one day is the angler's 'grand slam'.",
       "The black sickle tips of the dorsal fin and tail often show above the water when it feeds.",
       "In Belize the law makes permit catch-and-release only; anglers here would let it go."
     ],
-    "visualNotes": "Very deep, laterally compressed silver body with a blunt rounded head; long sickle-shaped second dorsal and anal fins; deeply forked tail with dark edges; often an orange-yellow patch on the belly ahead of the anal fin.",
+    "visualNotes": "Very deep, laterally compressed silver body with a blunt rounded head; long sickle-shaped second dorsal and anal fins; deeply forked tail with dark edges; sometimes a yellow wash on the belly.",
     "sources": [
       {
         "title": "FishBase: Trachinotus falcatus",
         "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
         "accessed": "2026-11-17",
-        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
+        "supports": "taxonomy, habitat; FishBase gives a maximum of 122 cm FL and 36 kg, above the IGFA rod record"
       },
       {
         "title": "IUCN Red List: Trachinotus falcatus",
@@ -794,6 +806,12 @@
         "url": "https://www.sanpedrosun.com/environment/2012/06/09/the-palometa-report-catch-and-release-law-for-bonefish-permit-and-tarpon/",
         "accessed": "2026-11-17",
         "supports": "Belize SI 114 of 2009 designates bonefish, permit and tarpon for catch and release only"
+      },
+      {
+        "title": "FishBase length-weight table: Trachinotus falcatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1010&GenusName=Trachinotus&SpeciesName=falcatus",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: the only fork-length set (Florida Keys and Tampa Bay, n=488); 28 kg at the 110 cm FL game maximum, within 3% of the IGFA record. The earlier Bayesian set is based on total length and overstated weight on fork lengths."
       }
     ]
   },
@@ -813,7 +831,7 @@
       "a": 0.00851,
       "b": 2.93
     },
-    "recordNote": "The hook-and-line record FishBase cites is a 103 lb (about 47 kg) fish from the Bahamas.",
+    "recordNote": "IGFA all-tackle record is 85 lb (about 39 kg), from Christmas Island in 1992.",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 1.5,
@@ -854,6 +872,12 @@
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/great-barracuda/",
         "accessed": "2026-11-17",
         "supports": "behaviour, diet, habitat: generally diurnal; a sight-hunting ambush predator over reefs, seagrass and mangroves"
+      },
+      {
+        "title": "Total Fishing: barracuda beats world record",
+        "url": "https://www.total-fishing.com/barracuda-beats-world-record/",
+        "accessed": "2026-11-17",
+        "supports": "IGFA all-tackle record of 85 lb, John Helfrich, Christmas Island, April 1992 (search excerpt); weight at 200 cm is 47 kg, +22%"
       }
     ]
   },
@@ -893,7 +917,7 @@
     "description": "The silver king: a giant, armour-scaled fish with an upturned bucket of a mouth. Tarpon roll at the surface to gulp air, flashing like sheet metal at first light. The take is soft. What follows is not: a head-shaking leap clear of the water, then another, and usually a slack line.",
     "facts": [
       "Tarpon gulp air into a lung-like swim bladder, so they 'roll' at the surface.",
-      "A single scale from a big fish can be wider than a palm.",
+      "A single scale from a big fish can be about 7 cm across.",
       "They can live for more than fifty years."
     ],
     "visualNotes": "Massive, elongate silver body covered in very large scales; dark blue-green back; large upturned mouth with a protruding bony lower jaw; single dorsal fin whose last ray is drawn out into a long filament; deeply forked tail.",
@@ -920,13 +944,19 @@
         "title": "FishBase length-weight table: Megalops atlanticus",
         "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1079&GenusName=Megalops&SpeciesName=atlanticus&fc=47",
         "accessed": "2026-11-17",
-        "supports": "length-weight a: geometric mean of the US Virgin Islands TL set (a=0.00532) and FishBase's Bayesian TL estimate (a=0.01023), b=3.0; neither alone is within 30% of the IGFA record at 250 cm"
+        "supports": "length-weight a: geometric mean of the US Virgin Islands TL set (a=0.00532, b=3.0; -36% at 250 cm) and FishBase's Bayesian TL estimate (a=0.01023, b=3.02; +37%), with b=3.0; 116 kg at 250 cm, -11% against the IGFA record"
       },
       {
         "title": "IGFA all-tackle records, as tabulated by Tackle Village (data as of June 2022)",
         "url": "https://tacklevillage.com/igfa-world-record-list-table-of-species/",
         "accessed": "2026-11-17",
         "supports": "record size (flavour only); secondary copy of the IGFA database"
+      },
+      {
+        "title": "Texas Parks and Wildlife: tarpon",
+        "url": "https://tpwd.texas.gov/gis/ris/ton/",
+        "accessed": "2026-11-17",
+        "supports": "scales up to about 3 inches (search excerpt)"
       }
     ]
   },
@@ -962,7 +992,7 @@
       "note": "Heavily fished. Most countries set a closed season and a minimum size."
     },
     "baseValue": 45,
-    "description": "A clawless lobster armed instead with two long, thorny antennae that it whips at anything that comes close. It spends the day packed into dens under ledges with only the antennae showing, and walks the reef at night to feed. In autumn storms, lobsters migrate in long single files across open sand.",
+    "description": "A clawless lobster armed instead with two long, thorny antennae that it whips at anything that comes close. It spends the day packed into dens under ledges with only the antennae showing, and walks the reef at night to feed. In autumn, lobsters may migrate in long single files across open sand.",
     "facts": [
       "It has no claws; the spiny antennae are its defence.",
       "Migrating lobsters walk in single-file queues, each touching the one ahead.",
@@ -987,8 +1017,15 @@
         "url": "https://www.sealifebase.se/PopDyn/LWRelationshipList.php?ID=26102&GenusName=Panulirus&SpeciesName=argus&fc=13",
         "accessed": "2026-11-17",
         "supports": "length-weight a and b: carapace-length set from Cuba; maximum carapace length 18.1 cm (South Caicos) from the Max. ages / sizes table"
+      },
+      {
+        "title": "Animal Diversity Web: Panulirus argus",
+        "url": "https://animaldiversity.org/accounts/Panulirus_argus/",
+        "accessed": "2026-11-17",
+        "supports": "weight up to about 4.5 kg (search excerpt); the length-weight set gives 4.2 kg at 18.1 cm CL"
       }
-    ]
+    ],
+    "recordNote": "Reported to about 4.5 kg."
   },
   {
     "id": "octopus-briareus",
@@ -998,7 +1035,7 @@
     "family": "Octopodidae",
     "lengthCm": {
       "min": 4,
-      "common": 8,
+      "common": 6,
       "max": 12,
       "measure": "ML"
     },
@@ -1021,19 +1058,19 @@
       "releaseOnly": false
     },
     "baseValue": 30,
-    "description": "A night-hunting octopus with an iridescent blue-green sheen. It flows over the reef after dark and throws the webbing between its arms over a coral head like a cast net, then feels underneath for crabs and shrimp. By day it is sealed into a den and almost impossible to find.",
+    "description": "A night-hunting octopus in bright blue-green flecked with red-brown. It flows over the reef after dark and throws the webbing between its arms over a coral head like a cast net, then feels underneath for crabs and shrimp. By day it is sealed into a den and almost impossible to find.",
     "facts": [
       "It spreads its arm web into a tent over coral to trap the animals hiding inside.",
       "It is strictly nocturnal and lives for only about a year.",
       "It can change both colour and skin texture in a moment."
     ],
-    "visualNotes": "Rounded mantle with long arms of unequal length joined by deep webbing; pale blue-green iridescent skin with brown mottling; dark ring around each eye.",
+    "visualNotes": "Rounded mantle with long arms of unequal length joined by deep webbing; bright blue-green skin flecked and mottled with red-brown; dark red-brown eyes.",
     "sources": [
       {
         "title": "SeaLifeBase: Octopus briareus",
         "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
         "accessed": "2026-11-17",
-        "supports": "taxonomy, maximum length, habitat"
+        "supports": "taxonomy, habitat, 1.5 kg maximum weight"
       },
       {
         "title": "IUCN Red List: Octopus briareus",
@@ -1046,6 +1083,12 @@
         "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
         "accessed": "2026-11-17",
         "supports": "length-weight a and b are derived, not published: chosen so weight at 12 cm mantle length is within 15% of the 1.5 kg maximum weight"
+      },
+      {
+        "title": "Animal Diversity Web: Octopus briareus",
+        "url": "https://animaldiversity.org/accounts/Octopus_briareus/",
+        "accessed": "2026-11-17",
+        "supports": "mantle up to 120 mm, averaging 54 mm; bright green and blue with red-brown specks; hunts at night; lives 10 to 12 months"
       }
     ]
   },
@@ -1086,7 +1129,7 @@
     },
     "description": "A pale, square-bodied crab the colour of dry sand, with eyes on tall stalks. It spends the heat of the day in a deep burrow above the tide line and comes out at dusk to scavenge the beach, moving sideways in sudden sprints and stopping dead so it seems to vanish.",
     "facts": [
-      "It can run at over three metres a second.",
+      "It can sprint at more than two metres a second.",
       "The stalked eyes swivel to give it all-round vision.",
       "It wets its gills by drawing water up from damp sand."
     ],
@@ -1096,7 +1139,19 @@
         "title": "SeaLifeBase: Ocypode quadrata",
         "url": "https://www.sealifebase.se/summary/Ocypode-quadrata.html",
         "accessed": "2026-11-17",
-        "supports": "taxonomy, maximum length, habitat"
+        "supports": "taxonomy, habitat (no size data on the page; length-weight values are unpublished placeholders)"
+      },
+      {
+        "title": "Wikipedia: Atlantic ghost crab",
+        "url": "https://en.wikipedia.org/wiki/Atlantic_ghost_crab",
+        "accessed": "2026-11-17",
+        "supports": "size about 5 cm across"
+      },
+      {
+        "title": "SICB abstract: limb loss and running speed in ghost crabs",
+        "url": "https://sicb.org/?p=20218",
+        "accessed": "2026-11-17",
+        "supports": "intact crabs ran about 2.2 m/s in field trials"
       }
     ]
   },
@@ -1158,13 +1213,13 @@
     "kind": "crustacean",
     "family": "Hippidae",
     "lengthCm": {
-      "min": 1,
-      "common": 2,
-      "max": 3,
+      "min": 0.8,
+      "common": 1.6,
+      "max": 2.6,
       "measure": "CL"
     },
     "lengthWeight": {
-      "a": 0.6,
+      "a": 0.3,
       "b": 3.0
     },
     "fight": {
@@ -1188,7 +1243,7 @@
     },
     "description": "The 'sand flea' of Caribbean beaches: a barrel-shaped mole crab that lives in the wash of the waves. It burrows backward into wet sand in a second or two and raises feathery antennae to strain food from each retreating wave. Nearly every fish on the flats will eat one.",
     "facts": [
-      "It only ever moves backward.",
+      "It digs, swims and crawls backward.",
       "It feeds by netting plankton from the backwash with its antennae.",
       "Colonies move up and down the beach with the tide."
     ],
@@ -1198,7 +1253,19 @@
         "title": "SeaLifeBase: Emerita portoricensis",
         "url": "https://www.sealifebase.se/summary/Emerita-portoricensis.html",
         "accessed": "2026-11-17",
-        "supports": "taxonomy, maximum length, habitat"
+        "supports": "taxonomy, western Atlantic range (no size data on the page; length-weight values are unpublished placeholders)"
+      },
+      {
+        "title": "Wikipedia: Puerto Rican sand crab",
+        "url": "https://en.wikipedia.org/wiki/Puerto_Rican_sand_crab",
+        "accessed": "2026-11-17",
+        "supports": "carapace length averages about 11 mm in males and 19 mm in females (Sastre and Yoshioka 1992)"
+      },
+      {
+        "title": "Living World: sand crabs of Mayaro, Trinidad",
+        "url": "https://livingworld.ttfnc.org/index.php/lwj/article/download/quesnel1975b/743/768",
+        "accessed": "2026-11-17",
+        "supports": "largest egg-bearing females about 25 mm carapace length (search excerpt)"
       }
     ]
   },
@@ -1403,7 +1470,7 @@
       "releaseOnly": true
     },
     "baseValue": 0,
-    "description": "A grey, powerful dolphin that travels the reef edge in small family groups, most often at first and last light. Dolphins find fish by echolocation and sometimes drive a school against the shallows to trap it. When they pass through, the fishing usually goes quiet for a while.",
+    "description": "A grey, powerful dolphin that travels the reef edge in small family groups. Dolphins find fish by echolocation and sometimes drive a school against the shallows to trap it. When they pass through, the fishing usually goes quiet for a while.",
     "facts": [
       "Each dolphin has a signature whistle that works like a name.",
       "They sleep with half the brain at a time so they can keep surfacing to breathe.",
@@ -1415,7 +1482,7 @@
         "title": "IUCN Red List: Tursiops truncatus",
         "url": "https://www.iucnredlist.org/search?query=Tursiops%20truncatus",
         "accessed": "2026-11-17",
-        "supports": "Least Concern (as shown on Wikipedia, citing the 2019 assessment; the Red List page refuses automated reads)"
+        "supports": "Least Concern (as shown on Wikipedia; the Red List page refuses automated reads)"
       },
       {
         "title": "NOAA Fisheries: Common bottlenose dolphin",
