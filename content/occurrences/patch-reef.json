@@ -70,10 +70,10 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.1,
-      "day": 0.9,
-      "dusk": 1.3,
-      "night": 1.2
+      "dawn": 1.0,
+      "day": 1.2,
+      "dusk": 1.0,
+      "night": 0.6
     },
     "monthMod": [
       1,
@@ -108,7 +108,8 @@
         "accessed": "2026-11-17",
         "supports": "dense aggregations on patch reefs by day; juveniles in turtle grass"
       }
-    ]
+    ],
+    "designNotes": "Rests here by day and leaves to feed over sand and seagrass at night, so it is met mostly in daylight here and at night in channels and grass beds."
   },
   {
     "speciesId": "thalassoma-bifasciatum",
@@ -424,18 +425,18 @@
       "night": 1.0
     },
     "monthMod": [
-      0.8,
-      0.8,
-      1.2,
-      1.5,
-      1.8,
-      1.6,
       1.0,
+      1.0,
+      0.9,
       0.8,
       0.8,
       0.8,
-      0.8,
-      0.8
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "bait"
@@ -467,7 +468,8 @@
         "accessed": "2026-11-17",
         "supports": "months: Gladden Spit aggregations March to June around the full moon (search excerpt)"
       }
-    ]
+    ],
+    "designNotes": "Fewer from March to June, when adults leave inner reefs for outer-reef spawning sites such as Gladden Spit."
   },
   {
     "speciesId": "sphyraena-barracuda",
@@ -515,10 +517,10 @@
         "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
       },
       {
-        "title": "FishingBooker: great barracuda fishing in Belize",
-        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "title": "FishingBooker: great barracuda fishing in Placencia, Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz/placencia",
         "accessed": "2026-11-17",
-        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt)"
+        "supports": "months: no variation through the year and no closed season (search excerpt)"
       }
     ]
   },
@@ -537,6 +539,9 @@
       "night": 0.5
     },
     "monthMod": [
+      0.6,
+      0.6,
+      0.6,
       1.0,
       1.0,
       1.0,
@@ -545,10 +550,7 @@
       1.0,
       1.0,
       1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0
+      0.6
     ],
     "methods": [
       "bait"
@@ -578,8 +580,15 @@
         "url": "https://www.fisheries.noaa.gov/species/nassau-grouper",
         "accessed": "2026-11-17",
         "supports": "spawning aggregations form November to February at a few reef sites, not on ordinary patch reefs"
+      },
+      {
+        "title": "Coral Reefs (2025): Nassau grouper spawning aggregation in Belize",
+        "url": "https://link.springer.com/article/10.1007/s00338-025-02697-8",
+        "accessed": "2026-11-17",
+        "supports": "months: fish migrate to and from spawning sites from December to March (search excerpt)"
       }
-    ]
+    ],
+    "designNotes": "Fewer from December to March, when adults leave ordinary reefs for the few spawning sites."
   },
   {
     "speciesId": "mycteroperca-bonaci",
@@ -696,7 +705,7 @@
       "night": 0.4
     },
     "monthMod": [
-      1.0,
+      0.9,
       1.0,
       1.1,
       1.4,
@@ -705,9 +714,9 @@
       1.0,
       0.9,
       0.8,
-      0.9,
-      1.0,
-      1.0
+      0.8,
+      0.8,
+      0.8
     ],
     "methods": [
       "bait",
@@ -737,7 +746,7 @@
         "title": "Caribbean Lifestyle: plan a vacation around this fishing calendar in Belize",
         "url": "https://caribbeanlifestyle.com/?p=5796",
         "accessed": "2026-11-17",
-        "supports": "months: Belize kingfish year round, best April to June; an Ambergris Caye species list gives the same months (search excerpts). The Florida winter peak does not apply."
+        "supports": "months: Belize kingfish best April to June and rare from September to January (search excerpt; the page now returns 404). The Florida winter peak does not apply."
       }
     ]
   },
@@ -755,18 +764,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1.2,
-      1.5,
-      1.5,
-      1.2
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "trap"
@@ -782,7 +791,7 @@
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
         "accessed": "2026-11-17",
-        "supports": "shallow reefs, rocks and seagrass; gregarious, with autumn mass migrations"
+        "supports": "shallow reefs, rocks and seagrass; autumn mass migrations are documented in Florida and the Bahamas, not Belize, so months are level"
       },
       {
         "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
@@ -845,7 +854,7 @@
         "title": "Animal Diversity Web: Octopus briareus",
         "url": "https://animaldiversity.org/accounts/Octopus_briareus/",
         "accessed": "2026-11-17",
-        "supports": "phase: hunts only at night and returns to its den"
+        "supports": "phase: nocturnal; almost always returns to its den after hunting"
       }
     ]
   },

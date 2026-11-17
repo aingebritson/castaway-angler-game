@@ -57,3 +57,13 @@ Studies and agencies:
 - [San Pedro Sun: closure of the Caribbean spiny lobster season, 2024](https://www.sanpedrosun.com/community-and-society/2024/02/25/closure-of-the-caribbean-spiny-lobster-fishing-season/)
 - The island sources (the Florida Museum profiles, the *Ecosphere* schoolmaster study, Young and Winn on morays, the spiny lobster foraging study, the AFS mutton snapper abstract, SEDAR 84 on yellowtail) are listed in `research/castaway-island/sources.md`.
 - Page that refused automated reads: the Ambergris Caye species-by-month list (ambergriscaye.com), seen only in search results.
+
+## Review (spec step 7)
+
+Pages the reviewers relied on that are not listed above:
+
+- [Coral Reefs (2025): Nassau grouper spawning aggregation in Belize](https://link.springer.com/article/10.1007/s00338-025-02697-8) (search excerpt)
+- [Fishes of Texas: Scomberomorus cavalla](https://www.fishesoftexas.org/taxa/scomberomorus-cavalla) (search excerpt) and [Harengula jaguana](https://fishesoftexas.org/taxa/harengula-jaguana)
+- [Florida Museum: nurse shark](https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ginglymostoma-cirratum/)
+- [Revista de Biología Tropical (2007): blue crab trap catches in Chetumal Bay](https://www.redalyc.org/pdf/449/44955125.pdf) (search excerpt)
+- [FishingBooker: great barracuda fishing in Placencia, Belize](https://fishingbooker.com/fish/barracuda-great/bz/placencia) (search excerpt)

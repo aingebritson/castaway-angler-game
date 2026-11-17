@@ -144,7 +144,7 @@
     "family": "Centropomidae",
     "lengthCm": {
       "min": 25,
-      "common": 60,
+      "common": 50,
       "max": 140,
       "measure": "TL"
     },
@@ -289,9 +289,9 @@
     "baseValue": 0,
     "description": "A big, curious, pale grouper banded in brown, with a black saddle on the tail stalk. It was once the commonest large fish on Caribbean reefs. Every winter, around the full moon, Nassau grouper travel to the same few reef points to spawn in their thousands, which made them very easy to catch.",
     "facts": [
-      "It spawns in huge gatherings at fixed sites around the full moons of November to February.",
+      "It spawns in huge gatherings at fixed reef sites around the winter full moons, December to March in Belize.",
       "It can change its colour pattern within minutes, from almost white to dark brown.",
-      "Whole spawning aggregations have been fished out and have never returned."
+      "Several of its spawning aggregations have been fished out and never returned."
     ],
     "visualNotes": "Robust pale tan grouper with five irregular dark brown bars; a black saddle on top of the tail stalk; dark 'tuning fork' mark on the forehead; small black dots around the eye; rounded tail.",
     "sources": [
@@ -324,6 +324,12 @@
         "url": "https://news.mongabay.com/2025/11/study-finds-important-nassau-grouper-spawning-site-in-belize-near-collapse/",
         "accessed": "2026-11-17",
         "supports": "aggregations already lost at other Belize sites (search excerpt)"
+      },
+      {
+        "title": "Coral Reefs (2025): Nassau grouper spawning aggregation in Belize",
+        "url": "https://link.springer.com/article/10.1007/s00338-025-02697-8",
+        "accessed": "2026-11-17",
+        "supports": "Belize's December to March closure covers the months fish migrate to and from spawning sites (search excerpt)"
       }
     ]
   },
@@ -361,7 +367,7 @@
     "baseValue": 90,
     "description": "The heavyweight of the reef edge: a dark, blotched grouper that holds beside a ledge and inhales fish whole. It is slow to grow and slow to bite. When it does, the only question is whether it reaches its hole before the angler turns its head, and it usually does.",
     "facts": [
-      "It swallows prey whole by opening its mouth so fast that the fish is sucked in.",
+      "Its tail is squared off, and the fins have black edges.",
       "Black grouper start life female and the largest become male.",
       "Black grouper spawn from November to May."
     ],
@@ -605,7 +611,7 @@
     "family": "Scombridae",
     "lengthCm": {
       "min": 45,
-      "common": 80,
+      "common": 70,
       "max": 173,
       "measure": "FL"
     },
@@ -666,6 +672,12 @@
         "url": "https://www.sportfishingmag.com/worlds-biggest-king-mackerel/",
         "accessed": "2026-11-17",
         "supports": "IGFA all-tackle king mackerel record of 93 lb (search excerpt)"
+      },
+      {
+        "title": "Fishes of Texas: Scomberomorus cavalla",
+        "url": "https://www.fishesoftexas.org/taxa/scomberomorus-cavalla",
+        "accessed": "2026-11-17",
+        "supports": "maximum 173 cm FL (search excerpt); ICCAT reports 182 cm FL"
       }
     ]
   },
@@ -677,7 +689,7 @@
     "family": "Clupeidae",
     "lengthCm": {
       "min": 6,
-      "common": 12,
+      "common": 14,
       "max": 21,
       "measure": "TL"
     },
@@ -707,8 +719,8 @@
     "description": "A small, deep-bellied silver herring that packs into shimmering schools around piers and over grass flats. Everything with teeth eats it. A cast net thrown over a school at first light fills a bait bucket, and a lively sardine on a hook will find fish that ignore every lure in the box.",
     "facts": [
       "Schools form tight flashing balls when predators attack.",
-      "It is among the most-used live baits in the Caribbean and Gulf.",
-      "Scales come off at a touch, which is why bait nets end up glittering."
+      "Anglers prize it as a live bait across the Caribbean.",
+      "A small dark spot marks the upper edge of the gill cover."
     ],
     "visualNotes": "Small silver herring with a deep, compressed belly and a keel of sharp scutes; dark blue-green back; small dark spot behind the gill cover; forked tail; large eye.",
     "sources": [
@@ -723,6 +735,12 @@
         "url": "https://www.iucnredlist.org/search?query=Harengula%20jaguana",
         "accessed": "2026-11-17",
         "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "Fishes of Texas: Harengula jaguana",
+        "url": "https://fishesoftexas.org/taxa/harengula-jaguana",
+        "accessed": "2026-11-17",
+        "supports": "scales fairly strongly attached, not easily lost (after Whitehead 1985); dark spot on the upper gill cover"
       }
     ]
   },
@@ -870,13 +888,13 @@
       "releaseOnly": true
     },
     "baseValue": 0,
-    "description": "A broad-headed, rust-brown shark that spends the day piled up with others under reef ledges, pumping water over its gills without moving. At night it cruises the bottom, sucking lobsters, conch and sleeping fish out of crevices with a mouth that works like a vacuum.",
+    "description": "A broad-headed, yellow-brown shark that spends the day piled up with others under reef ledges, pumping water over its gills without moving. At night it cruises the bottom, sucking lobsters, conch and sleeping fish out of crevices with a mouth that works like a vacuum.",
     "facts": [
-      "Unlike most sharks it can breathe while lying still by pumping water over its gills.",
-      "It feeds by suction strong enough to pull a conch from its shell.",
+      "Unlike sharks that must keep swimming, it can breathe while lying still by pumping water over its gills.",
+      "It feeds with suction and teeth, strong enough to pull a conch from its shell.",
       "Two fleshy barbels by the nostrils help it find prey in the sand."
     ],
-    "visualNotes": "Stout yellowish-brown shark with a broad flat head; two barbels at the nostrils; two rounded dorsal fins of nearly equal size set far back; very long upper tail lobe held low; small mouth ahead of the eyes.",
+    "visualNotes": "Stout yellowish-brown shark with a broad flat head; two barbels at the nostrils; two rounded dorsal fins set far back, the first a little larger; very long upper tail lobe held low; small mouth ahead of the eyes.",
     "sources": [
       {
         "title": "FishBase: Ginglymostoma cirratum",
@@ -889,6 +907,12 @@
         "url": "https://www.iucnredlist.org/search?query=Ginglymostoma%20cirratum",
         "accessed": "2026-11-17",
         "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "Florida Museum species profile: Ginglymostoma cirratum",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ginglymostoma-cirratum/",
+        "accessed": "2026-11-17",
+        "supports": "rests in groups under ledges by day; flips conchs and takes the snail with suction and teeth; first dorsal larger than the second; adults about 2.3 to 2.4 m, largest recorded 3.08 m (read by the reviewer)"
       }
     ]
   }

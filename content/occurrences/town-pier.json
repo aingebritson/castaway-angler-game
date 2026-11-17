@@ -42,7 +42,7 @@
         "title": "FishBase: Abudefduf saxatilis",
         "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
         "accessed": "2026-11-17",
-        "supports": "shallow reef tops and rocky shores; eats algae, small crustaceans and larvae"
+        "supports": "juveniles in tide pools, adults over shallow reef tops, young in mangroves"
       }
     ]
   },
@@ -260,18 +260,18 @@
       "night": 1.8
     },
     "monthMod": [
-      0.7,
-      0.7,
-      0.8,
-      1,
-      1.2,
-      1.4,
-      1.4,
-      1.4,
-      1.2,
-      1,
-      0.8,
-      0.7
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "lure",
@@ -285,7 +285,7 @@
       "spoon": 0.8,
       "feather": 0.6
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Centropomus undecimalis",
@@ -303,13 +303,13 @@
         "title": "Salt Water Sportsman: sundown snook",
         "url": "https://www.saltwatersportsman.com/?p=50910",
         "accessed": "2026-11-17",
-        "supports": "phase: snook hold along the shadow lines of lighted docks and bridges at night (search excerpt)"
+        "supports": "phase: snook hold in the shadows around dock lights and along bridge shadow lines at night (Florida)"
       },
       {
-        "title": "FishingBooker: San Pedro, Belize fishing guide",
+        "title": "Belize snook seasons (several guide pages)",
         "url": "https://fishingbooker.com/blog/?p=52063",
         "accessed": "2026-11-17",
-        "supports": "months: snook are year-round residents, best in the warm summer months when they spawn (search excerpt)"
+        "supports": "months: Belize guides disagree (summer; November to April; December to March), so the game keeps snook level all year; Belize water never reaches the cold limit"
       }
     ]
   },
@@ -321,9 +321,9 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.6,
-      "day": 0.8,
-      "dusk": 1.6,
+      "dawn": 1.4,
+      "day": 1.0,
+      "dusk": 1.4,
       "night": 0.4
     },
     "monthMod": [
@@ -358,7 +358,7 @@
         "title": "FishBase: Caranx hippos",
         "url": "https://www.fishbase.se/summary/Caranx-hippos.html",
         "accessed": "2026-11-17",
-        "supports": "shelf waters from shallow flats to offshore; juveniles in estuaries and mangroves; fast-moving schools"
+        "supports": "shelf waters from shallow flats to offshore; juveniles in brackish estuaries and on seagrass beds; fast-moving schools"
       },
       {
         "title": "Florida Museum species profile: Caranx hippos",
@@ -460,10 +460,10 @@
         "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
       },
       {
-        "title": "FishingBooker: great barracuda fishing in Belize",
-        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "title": "FishingBooker: great barracuda fishing in Placencia, Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz/placencia",
         "accessed": "2026-11-17",
-        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt)"
+        "supports": "months: no variation through the year and no closed season (search excerpt)"
       }
     ]
   },
@@ -481,7 +481,7 @@
       "night": 1.8
     },
     "monthMod": [
-      0.5,
+      0.6,
       0.6,
       0.9,
       1.2,
@@ -516,13 +516,13 @@
         "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
         "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
         "accessed": "2026-11-17",
-        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; the page refers to resident tarpon and calls October mostly resident fishing"
       },
       {
         "title": "Sport Fishing: tarpon fishing in Miami at night",
         "url": "https://www.sportfishingmag.com/?p=44462",
         "accessed": "2026-11-17",
-        "supports": "phase: tarpon hold in the shadows of bridges and dock lights at night, especially May to September (search excerpt)"
+        "supports": "phase: tarpon feed at night under bridge lights in Biscayne Bay, Florida (a Florida source; supports only the pier's lit nights)"
       }
     ]
   },

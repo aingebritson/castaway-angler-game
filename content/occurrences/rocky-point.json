@@ -101,10 +101,10 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.2,
-      "day": 0.8,
-      "dusk": 1.4,
-      "night": 1.2
+      "dawn": 1.0,
+      "day": 1.2,
+      "dusk": 1.0,
+      "night": 0.6
     },
     "monthMod": [
       1,
@@ -146,7 +146,8 @@
         "accessed": "2026-11-17",
         "supports": "nocturnal; schools on reefs by day and scavenges sand flats and seagrass at night"
       }
-    ]
+    ],
+    "designNotes": "Rests here by day and leaves to feed over sand and seagrass at night, so it is met mostly in daylight here and at night in channels and grass beds."
   },
   {
     "speciesId": "ocyurus-chrysurus",
@@ -278,10 +279,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.2,
-      "day": 0.6,
-      "dusk": 1.5,
-      "night": 1.4
+      "dawn": 1.0,
+      "day": 1.2,
+      "dusk": 1.0,
+      "night": 0.6
     },
     "monthMod": [
       1,
@@ -321,9 +322,10 @@
         "title": "Ecosphere (2018): acoustic telemetry of schoolmaster snapper and great barracuda",
         "url": "https://doaj.org/article/91a7015e84684cfbb2e4cbd63d86e213",
         "accessed": "2026-11-17",
-        "supports": "phase: schoolmaster move into channels and seagrass at night, when barracuda are scarce (abstract via search)"
+        "supports": "phase: schoolmaster hold at mangrove prop roots by day and leave them for edges, channels and seagrass at night (abstract via search)"
       }
-    ]
+    ],
+    "designNotes": "Rests here by day and leaves to feed over sand and seagrass at night, so it is met mostly in daylight here and at night in channels and grass beds."
   },
   {
     "speciesId": "holocentrus-adscensionis",
@@ -698,10 +700,10 @@
         "supports": "generally diurnal; a sight-hunting ambush predator over reefs, seagrass and mangroves"
       },
       {
-        "title": "FishingBooker: great barracuda fishing in Belize",
-        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "title": "FishingBooker: great barracuda fishing in Placencia, Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz/placencia",
         "accessed": "2026-11-17",
-        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt: does not vary through the year)"
+        "supports": "months: no variation through the year and no closed season (search excerpt)"
       }
     ]
   },
@@ -752,10 +754,10 @@
         "supports": "diurnal; juveniles in mangroves and shallow reef, adults inshore to open sea"
       },
       {
-        "title": "FishingBooker: great barracuda fishing in Belize",
-        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "title": "FishingBooker: great barracuda fishing in Placencia, Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz/placencia",
         "accessed": "2026-11-17",
-        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt: does not vary through the year)"
+        "supports": "months: no variation through the year and no closed season (search excerpt)"
       }
     ]
   },
@@ -774,18 +776,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1.2,
-      1.5,
-      1.5,
-      1.2
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "trap",
@@ -802,7 +804,7 @@
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
         "accessed": "2026-11-17",
-        "supports": "shallow reefs, rocks and seagrass; gregarious, with autumn mass migrations"
+        "supports": "shallow reefs, rocks and seagrass; autumn mass migrations are documented in Florida and the Bahamas, not Belize, so months are level"
       },
       {
         "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",
@@ -861,7 +863,7 @@
         "title": "Animal Diversity Web: Octopus briareus",
         "url": "https://animaldiversity.org/accounts/Octopus_briareus/",
         "accessed": "2026-11-17",
-        "supports": "phase: hunts only at night and returns to its den; spiny lobster is a main prey"
+        "supports": "phase: nocturnal; almost always returns to its den after hunting"
       }
     ]
   },
@@ -962,7 +964,7 @@
       "night": 1.2
     },
     "monthMod": [
-      0.5,
+      0.6,
       0.6,
       0.9,
       1.2,
@@ -1000,13 +1002,13 @@
         "title": "Florida Museum species profile: Megalops atlanticus",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/",
         "accessed": "2026-11-17",
-        "supports": "feeds by day and by night; main spawning May to July; air-breather of bays and mangrove lagoons"
+        "supports": "coastal waters, bays, estuaries and mangrove-lined lagoons; feeds by day and by night"
       },
       {
         "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
         "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
         "accessed": "2026-11-17",
-        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; the page refers to resident tarpon and calls October mostly resident fishing"
       }
     ]
   }

@@ -88,6 +88,10 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Island species carry the island's corrected values.
     - Two rumours changed to match: the king mackerel rumour now names spring, and the Nassau grouper rumour keeps its story but no longer marks winter months.
     - The lobster occurrence now states that Belize's 1 March to 30 June closed season is not modelled.
+42. **Independent review of the Cayes data (spec step 7), 17 November 2026.** Three reviewer agents checked every rare and epic Cayes record and a 30% sample of the rest. Details are in the Cayes dossier.
+    - One error was fixed: the sardine's "loose scales" fact.
+    - Doubtful values were corrected: snook level all year; Nassau grouper and mutton snapper scarcer on the patch reef while adults are at spawning sites; grunts and schoolmaster mostly by day on reefs and roots; crevalle jack neutral by day; lobster level all year; blue crab up in the rainy season.
+    - Where the same species and habitat are on the island, the island data was changed to match.
 
 ## Schema additions (spec section 11)
 

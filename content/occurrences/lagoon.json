@@ -148,8 +148,8 @@
     "affinity": {
       "crab": 1.8,
       "crustacean": 0.12,
-      "shrimp": 0.5,
-      "fly": 0.4
+      "shrimp": 0.8,
+      "fly": 1.2
     },
     "confidence": "medium",
     "sources": [
@@ -228,10 +228,10 @@
         "supports": "generally diurnal; a sight-hunting ambush predator over reefs, seagrass and mangroves"
       },
       {
-        "title": "FishingBooker: great barracuda fishing in Belize",
-        "url": "https://fishingbooker.com/fish/barracuda-great/bz",
+        "title": "FishingBooker: great barracuda fishing in Placencia, Belize",
+        "url": "https://fishingbooker.com/fish/barracuda-great/bz/placencia",
         "accessed": "2026-11-17",
-        "supports": "months: lists Belize barracuda fishing in every month with no closed season (search excerpt: does not vary through the year)"
+        "supports": "months: no variation through the year and no closed season (search excerpt)"
       }
     ]
   },
@@ -442,7 +442,7 @@
       "night": 1.2
     },
     "monthMod": [
-      0.5,
+      0.6,
       0.6,
       0.9,
       1.2,
@@ -480,13 +480,13 @@
         "title": "Florida Museum species profile: Megalops atlanticus",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/tarpon/",
         "accessed": "2026-11-17",
-        "supports": "feeds by day and by night; main spawning May to July; air-breather of bays and mangrove lagoons"
+        "supports": "coastal waters, bays, estuaries and mangrove-lined lagoons; feeds by day and by night"
       },
       {
         "title": "Aardvark McLeod: when is the best time to fish Blue Horizon Lodge, Belize",
         "url": "https://aardvarkmcleod.com/belize-when-is-it-best-to-fish-in-belize",
         "accessed": "2026-11-17",
-        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; residents all year"
+        "supports": "months: tarpon migrate through from March, larger fish arrive in April, are caught daily by May and have mostly moved on by mid-September; the page refers to resident tarpon and calls October mostly resident fishing"
       }
     ]
   },
@@ -504,18 +504,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1.2,
-      1.5,
-      1.5,
-      1.2
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
     ],
     "methods": [
       "trap"
@@ -530,7 +530,7 @@
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
         "accessed": "2026-11-17",
-        "supports": "shallow reefs, rocks and seagrass; gregarious, with autumn mass migrations"
+        "supports": "shallow reefs, rocks and seagrass; autumn mass migrations are documented in Florida and the Bahamas, not Belize, so months are level"
       },
       {
         "title": "Marine and Freshwater Research: Nocturnal foraging of the Caribbean spiny lobster on offshore reefs of Florida",

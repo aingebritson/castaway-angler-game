@@ -135,6 +135,64 @@ The same runs as the species pass:
 - **Patch Reef and the Cut:** coins per hour fall by up to 13% in January and rise by up to 9% in June. Winter loses the Nassau and king mackerel peaks, and spring gains the king mackerel peak.
 - **Rare-fish share** at Patch Reef shifts the same way, a few points down in winter and up in early summer.
 
+## Review (spec step 7)
+
+On 17 November 2026, three independent agents reviewed the region's data without access to this dossier's reasoning; none could edit files. Every conflict they raised was checked before anything changed.
+
+- **New species with rare or epic occurrences:** snook, Nassau grouper, black grouper and king mackerel. Species records, all 8 of their Cayes occurrences, and their rumours.
+- **Island species that are rare or epic here:** tarpon, permit, great barracuda, mutton snapper and reef octopus. Their 11 Cayes occurrences, Cayes rumours and the Bishop. Their species records were reviewed with the island.
+- **A seeded random 30% of the rest:** 3 of 10 species (blue crab, nurse shark, scaled sardine) and 10 of 31 occurrences. The first pass checked only a sub-sample, so the reviewer was sent back to cover all 13.
+
+All weights at maximum length passed. There was one factual error. Everything else was weakly supported, contradicted by a better source, or minor.
+
+### Error fixed
+
+| Record | Problem | Fix |
+| --- | --- | --- |
+| Scaled sardine fact | "Scales come off at a touch": FishBase, after the FAO catalogue, says its scales are fairly firmly attached (loose scales belong to its relative *H. clupeola*) | "A small dark spot marks the upper edge of the gill cover" |
+
+### Doubtful claims corrected
+
+| Record | Was | Now | Why |
+| --- | --- | --- | --- |
+| Snook months (pier, creek) | Summer peak, winter low | **Level all year**, confidence low | Belize guides disagree (summer, November to April, December to March), and Belize water never reaches the cold limit that makes Florida winters slow |
+| Nassau grouper at Patch Reef | Level | 0.6 from December to March | Fish leave ordinary reefs for the spawning sites in those months. That is why Belize closes the season then (*Coral Reefs*, 2025). |
+| Mutton snapper at Patch Reef | Peak March to June | 0.8 from April to June | Adults leave inner reefs for outer-reef spawning sites such as Gladden Spit in those months |
+| King mackerel months | 1.0 from September to January | 0.8 | The Belize source calls them rare from September to January |
+| White grunt at Patch Reef; schoolmaster at the creek roots | Night peak | **Day 1.2, night 0.6** | Both rest on reefs and mangrove roots by day and leave them to feed over sand and seagrass at night. The night peak belongs in channels and grass beds, where it stays. |
+| Crevalle jack | Day 0.8–0.9 | Day 1.0; dawn and dusk capped at 1.4 | The Florida Museum calls it a diurnal predator |
+| Spiny lobster months | Autumn peak | **Level** | The autumn mass migrations are documented in Florida and the Bahamas, not Belize |
+| Blue crab months | Level | 1.2 from June to November | Trap catches in Chetumal Bay, on the Belize border, peak in the rainy season (search excerpt) |
+| Permit at the Cut | Shrimp 0.5, fly 0.4 | Shrimp 0.8, fly 1.2 | Permit eat shrimp (FishBase), and Belize permit fishing is mostly done with crab flies. Flies are not yet in the game, so the fly value has no effect yet. |
+| Tarpon | January 0.5 | 0.6 | Aardvark describes migrating schools following bait in January |
+| Tarpon source | A Miami article on bridge lights was cited for the creek and the Cut | Kept only for the pier's lit nights | The creek and the Cut have no lights |
+| Nassau grouper facts | "Whole aggregations … never returned"; "November to February" | "Several … never returned"; "December to March in Belize" | One Belize site, Caye Glory, has reappeared (Mongabay, 2025) |
+| Black grouper fact | Suction feeding (no source) | Squared tail and black-edged fins | Florida Museum |
+| Nurse shark facts | "Unlike most sharks it can breathe while lying still"; feeds "by suction" | "Unlike sharks that must keep swimming"; "with suction and teeth" | Many sharks can pump water over their gills (search excerpts); the Florida Museum describes suction and teeth |
+| Nurse shark description | "Rust-brown"; dorsal fins "nearly equal" | Yellow-brown; the first dorsal a little larger | FishBase, Florida Museum |
+| Typical lengths | Snook 60 cm, king mackerel 80 cm, sardine 12 cm | 50 cm, 70 cm, 14 cm TL | FishBase common lengths (the sardine's 12 cm is standard length) |
+| Rumour id | `king-winter` | `king-spring` | It now names spring |
+| Source wording | Several notes said more than their pages | Trimmed: sergeant major, crevalle jack, schoolmaster, tarpon, octopus, barracuda, snook | — |
+
+Where the same species and habitat appear on the island, the fixes were applied there too. That covers tarpon January, permit shrimp and fly, the barracuda and octopus source notes, French grunt and schoolmaster on the Rocky Point reef zones, and lobster months.
+
+### Left as they are, with reasons
+
+- **The Bishop.** 236 cm and about 97 kg: under the 250 cm game maximum and the 130 kg IGFA record. Every clue matches his spawn rule. His months (June to August) and moon (spring tides) fit the Belize tarpon run. Belize tides are small, about 15 cm on average, so "big tides" means big only compared with neaps.
+- **King mackerel maximum:** 173 cm FL is now cited to Fishes of Texas. ICCAT gives 182 cm FL, which would also pass the weight check.
+- **Barracuda rarity:** "rare" at the pier and creek is lower than reality, where they are common in both. This is a balance choice.
+- **Methods without matching bait:** creek barracuda and Cut permit have bait affinities but no bait method. This is an internal design point, not a factual one.
+- **Unsourced but plausible:** white grunt at the pier pilings, manatee in the creek, mojarra's low night value, and sergeant major taking fruit bait.
+- **Manatee status:** the species is Vulnerable. Wikipedia is inconsistent on the Antillean subspecies (Endangered in the text, Near Threatened in the 2024 infobox).
+- **Black grouper depth:** the cited sources disagree (Florida Museum 6–33 m, FishBase 60–250 m).
+
+### Simulator effect
+
+- **Town Pier:** about +3% coins per hour.
+- **Elsewhere at the Cayes:** coins per hour move by under 10% in almost every run. The largest drop is −16% at Patch Reef at dusk in June, from the mutton snapper dip.
+- **Rocky Point (island):** catch shares move by 2 points or less.
+- All 60 tests pass.
+
 ## Open questions
 
 1. **Nassau grouper release-only vs Belize's slot.** The game is stricter than the law. If the Cayes market should follow Belize exactly, Nassau grouper would be sellable from April to November between 51 and 76 cm.
@@ -147,4 +205,4 @@ The same runs as the species pass:
 
 - **Closed seasons as a mechanic:** Belize closes lobster from 1 March to 30 June and Nassau grouper from December to March, and closes conch over the summer. The schema has no field for a closed season. This needs a design decision, not more research.
 - **Long list and legendary review** for the region. The Bishop was checked in the island review.
-- **Independent review (spec step 7)** and the **rumour check (step 6)** for the Cayes.
+- **Rumour check (step 6)** for the Cayes. The reviewers found every rumour they checked consistent with the data; a full pass is still to do.

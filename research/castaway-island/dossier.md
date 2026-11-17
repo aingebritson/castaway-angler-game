@@ -280,6 +280,15 @@ Already built (DECISIONS 27): **Old Ironjaw**, a 160 cm great barracuda off the 
 6. **Yellowfin mojarra misses the 30% check whichever set is used.** FishBase's 530 g maximum weight is implausibly light for a 41 cm fish; every published set gives 0.74 to 1.35 kg. I kept the Mexico set and logged the conflict.
 7. **Lobster and conch closed seasons.** Belize closes lobster from 1 March to 30 June and conch over the summer. This does not matter on the island, which has no market, but the Cayes market currently buys both all year.
 
+## Later changes from the Cayes review (17 November 2026)
+
+The Cayes review found points that apply to the same species and habitats on the island, so they were changed here too. See the Cayes dossier for the evidence.
+- **French grunt and schoolmaster on the Rocky Point reef zones:** now day 1.2, night 0.6. Both rest on reefs by day and feed over sand and seagrass at night. The lagoon channel keeps their night peak.
+- **Spiny lobster months:** now level. The autumn migrations are documented in Florida and the Bahamas, not Belize.
+- **Tarpon January** is 0.6.
+- **Permit** takes shrimp at 0.8 and fly at 1.2.
+- **Barracuda and octopus** source notes now say only what their pages say.
+
 ## Still to do
 
 - **Moon and tide:** permit and tarpon in Belize are reported best around new and full moon tides. Mutton snapper aggregate at the full moon. The schema reserves `conditions.moon` and `conditions.tide`, but no island occurrence uses them yet.
