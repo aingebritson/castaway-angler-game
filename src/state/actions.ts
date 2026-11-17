@@ -338,7 +338,10 @@ export function beginCast(s: GameState, ctx: Ctx, zoneId: string): WaitPlan | nu
   s.stats.casts++;
   s.stats.castsSinceBottle++;
   s.zonesSeen[`${s.locationId}/${zoneId}`] = true;
-  return withRng(s, (rng) => planWait(c, rng));
+  const plan = withRng(s, (rng) => planWait(c, rng));
+  // The very first fish comes quickly, after a nibble or two, so the player learns the rhythm.
+  if (s.stats.catches === 0 && plan.active) return { ...plan, waitS: Math.min(plan.waitS, 3 + 2 * (s.stats.casts - 1)), nibbles: Math.max(1, plan.nibbles) };
+  return plan;
 }
 
 /** Something takes the bait (or does not). */
@@ -354,7 +357,11 @@ export function rollBite(s: GameState, ctx: Ctx, zoneId: string): Bite {
     const next = ctx.content.pages[s.pagesFound];
     const pity = next?.bearing ? b.bearing.pityCasts : b.bearing.pagePityCasts;
     if (bottleEligible(s, ctx.content) && s.stats.castsSinceBottle >= pity) return { kind: 'junk', itemId: 'message-bottle' };
-    return resolveBite(c, rng);
+    let bite = resolveBite(c, rng);
+    // Until the first catch, the water is kind: a fish, small enough to land, with time to strike.
+    for (let i = 0; i < 8 && s.stats.catches === 0 && !(bite.kind === 'fish' && bite.outcome !== 'overmatched'); i++) bite = resolveBite(c, rng);
+    if (s.stats.catches === 0 && bite.kind === 'fish') bite = { ...bite, hookWindowS: Math.max(2.2, bite.hookWindowS * 1.8) };
+    return bite;
   });
 }
 

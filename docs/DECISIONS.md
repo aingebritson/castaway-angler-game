@@ -40,6 +40,12 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 22. **Legendaries are wired but none is placed.** The schema, spawn check and catch-once rule exist and are tested through the reducers' code path; Tobias's last errand gives the first clue ("the Bishop"). Placing it is M4 content.
 23. **The orders board names species the player may not have caught**, shown as silhouettes. This is a deliberate small leak: an order is a rumour that a fish exists.
 
+## Opening (after Andy's first play, 2026-11-17)
+
+24. **A guided opening replaces being dropped on the beach.** Three short story cards, then coach marks walk the player through one action at a time: the rod, three sand fleas, the map, Rocky Point, a cast (with an animated drag demo), the wait, the strike, keeping the fish and the field guide. The beach shows only the hotspot being taught and the bottom bar appears when there is somewhere to go. The step is derived from state, so wandering off just points the player back; "Skip tutorial" is always there.
+25. **The first catch is rigged to succeed.** Until the first fish is landed the wait is three seconds, there is always a nibble first, the bite is always a landable fish, and the strike window is at least 2.2 seconds. This bends the catch model for one cast, on purpose.
+26. **The "Thinking" note now rings the relevant hotspot in gold** when you are at the right place, so later goals ("loose stones at Rocky Point") point at the exact thing to tap.
+
 ## Schema additions (spec section 11)
 
 - `Species`: `tint` (placeholder colours), `gathersAs` (hand-caught bait creatures go into the bag as an item); `lengthCm.measure` gains `CL`, `ML`, `SH`.

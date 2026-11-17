@@ -443,7 +443,7 @@ export function MapPanel({ onClose }: { onClose(): void }) {
         {locs.map((l) => {
           const locked = crossing || !locationOpen(s, l.id, c);
           return (
-            <button key={l.id} class={`pin-btn ${l.id === s.locationId ? 'here' : ''} ${goal?.where === l.id ? 'goal' : ''} ${locked ? 'locked' : ''}`}
+            <button key={l.id} data-pin={l.id} class={`pin-btn ${l.id === s.locationId ? 'here' : ''} ${goal?.where === l.id ? 'goal' : ''} ${locked ? 'locked' : ''}`}
               style={{ left: `${l.map.x * 100}%`, top: `${l.map.y * 100}%` }}
               onClick={() => (locked ? store.emit([{ type: 'toast', text: crossing ? 'That is open sea. The raft will not make that crossing twice; a proper boat would.' : 'Too far for this boat. The boatyard has something that would reach it.', glyph: '🔒', tone: 'warn' }]) : go(l.id))}>
               <span class="d">{locked ? '🔒' : PLACE_GLYPH[l.kind] ?? '📍'}</span>

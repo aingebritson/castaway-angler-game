@@ -37,6 +37,9 @@ export function RevealCard({ reveal, onDone }: { reveal: Reveal; onDone(): void 
         )}
         {sized && <span class={`pill ${reveal.grade}`}>{GRADE_LABEL[reveal.grade]}</span>}
         {reveal.isNew && <p class="quote" style={{ fontSize: '15px', textAlign: 'left' }}>{sp.description}</p>}
+        {s.stats.catches <= 1 && !s.flags.launched && !reveal.bagged && !reveal.releaseOnly && (
+          <p class="tip">Keep it. Kept fish go in your basket, and later, with a knife, a fish gives you bait and a bone for a bigger hook.</p>
+        )}
         {reveal.bagged ? (
           <>
             <p class="muted">Into the bait bag.</p>

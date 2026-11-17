@@ -7,6 +7,8 @@ import { nodeEta } from '../sim/world';
 import { formatClock } from '../sim/time';
 import { type GameEvent, type Reveal, gather, hotspotVisible, nodeStatus, pickup, rigOf, sunAt, travel } from '../state/actions';
 import { nextGoal } from '../state/goals';
+import { coachStep, focusHotspots, navHidden } from '../state/tutorial';
+import { Coach, Intro } from './coach';
 import { Icon } from './bits';
 import { EndingCard, HaulCard, PageCard, RevealCard, type ToastMsg, Toasts } from './cards';
 import { GuidePanel, JournalPanel } from './guide';
@@ -108,7 +110,9 @@ export function App() {
     engineRef.current?.setLocation(s.locationId);
   }, [s.locationId]);
 
-  const overlay = !!(panel || port || reveal || pages.length || haul || ending || title);
+  const card = !!(reveal || pages.length || haul || ending);
+  const step = title ? null : coachStep(s, { phase, panel: panel ?? (port ? 'port' : null), card });
+  const overlay = !!(panel || port || card || title || step === 'intro');
   useEffect(() => {
     if (engineRef.current) engineRef.current.paused = overlay;
   }, [overlay]);
@@ -118,6 +122,8 @@ export function App() {
   const ctx = store.ctx();
   const sun = sunAt(ctx, loc.id);
   const goal = nextGoal(s, c);
+  const focus = focusHotspots(step);
+  const coaching = !!step && step !== 'intro';
   const fishingScene = loc.zones.some((z) => z.cast);
   const busy = phase !== 'idle' && phase !== 'aiming';
   const tense = phase === 'fight' || phase === 'bite' || phase === 'landing' || phase === 'retrieve';
@@ -126,6 +132,7 @@ export function App() {
     audio.unlock();
     audio.play('tap');
     engineRef.current?.fishing?.reset();
+    if (p === 'guide' && !s.flags.tutGuide && s.stats.catches > 0) store.act((d) => { d.flags.tutGuide = true; });
     setPanel(p);
   };
 
@@ -159,7 +166,7 @@ export function App() {
     <div class="frame">
       <canvas class="scene" ref={canvasRef} />
 
-      <div class="top" style={{ opacity: tense ? 0.25 : 1, transition: 'opacity .3s' }}>
+      <div class="top" style={{ opacity: step === 'intro' ? 0 : tense ? 0.25 : 1, transition: 'opacity .6s' }}>
         <div class="top-row">
           <div class="place">{loc.name}</div>
           <button class="clock" onClick={() => open('settings')}>
@@ -169,15 +176,15 @@ export function App() {
             <span style={{ width: '16px', height: '16px', display: 'inline-grid' }}><Icon name="gear" /></span>
           </button>
         </div>
-        {goal && !busy && !title && (
+        {goal && !busy && !title && !coaching && step !== 'intro' && (
           <button class={`goal ${goalOpen ? '' : 'min'}`} onClick={() => setGoalOpen(!goalOpen)}>
             {goalOpen ? <span><b>Thinking</b>{goal.text}</span> : <span>✎ …</span>}
           </button>
         )}
       </div>
 
-      <div class={`hotspots ${busy || phase === 'aiming' || title ? 'off' : ''}`}>
-        {loc.scene.hotspots.filter((h) => hotspotVisible(s, h)).map((h) => {
+      <div class={`hotspots ${busy || phase === 'aiming' || title || step === 'intro' ? 'off' : ''}`}>
+        {loc.scene.hotspots.filter((h) => hotspotVisible(s, h) && (!focus || focus.includes(h.id))).map((h) => {
           let cls = '';
           let count: string | null = null;
           let sub = h.label;
@@ -199,8 +206,9 @@ export function App() {
             const t = s.traps.find((x) => x.locationId === loc.id);
             sub = t ? `Trap · ${Math.floor((ctx.now - t.setAt) / 3_600_000)} h` : 'Set a trap';
           }
+          if (!coaching && goal?.where === loc.id && goal.hs === h.id) cls += ' goal';
           return (
-            <button key={h.id} class={`hs ${cls}`} style={{ left: `${h.x * 100}%`, top: `${h.y * 100}%` }} onClick={() => tapHotspot(h)}>
+            <button key={h.id} data-hs={h.id} class={`hs ${cls}`} style={{ left: `${h.x * 100}%`, top: `${h.y * 100}%` }} onClick={() => tapHotspot(h)}>
               <span class="dot">{h.glyph}{count && <span class="cnt">{count}</span>}</span>
               <span class="lbl">{sub}</span>
             </button>
@@ -208,14 +216,14 @@ export function App() {
         })}
       </div>
 
-      {cue && !overlay && <div class="cue"><span>{cue}</span></div>}
+      {cue && !overlay && !coaching && <div class="cue"><span>{cue}</span></div>}
 
-      <div class={`nav ${tense ? 'off' : ''}`}>
-        <button class={panel === 'map' ? 'on' : ''} onClick={() => open('map')}><Icon name="map" />Map{goal?.where && goal.where !== loc.id && <span class="pip" />}</button>
-        <button class={panel === 'bag' ? 'on' : ''} onClick={() => open('bag')}><Icon name="bag" />Bag</button>
-        <button class={panel === 'rig' ? 'on' : ''} onClick={() => open('rig')}><Icon name="rig" />Rig</button>
-        <button class={panel === 'guide' ? 'on' : ''} onClick={() => open('guide')}><Icon name="guide" />Guide</button>
-        <button class={panel === 'journal' ? 'on' : ''} onClick={() => open('journal')}><Icon name="journal" />{s.flags.launched ? 'Log' : 'Journal'}</button>
+      <div class={`nav ${tense || navHidden(step) || title ? 'off' : ''}`}>
+        <button data-nav="map" class={panel === 'map' ? 'on' : ''} onClick={() => open('map')}><Icon name="map" />Map{goal?.where && goal.where !== loc.id && <span class="pip" />}</button>
+        <button data-nav="bag" class={panel === 'bag' ? 'on' : ''} onClick={() => open('bag')}><Icon name="bag" />Bag</button>
+        <button data-nav="rig" class={panel === 'rig' ? 'on' : ''} onClick={() => open('rig')}><Icon name="rig" />Rig</button>
+        <button data-nav="guide" class={panel === 'guide' ? 'on' : ''} onClick={() => open('guide')}><Icon name="guide" />Guide</button>
+        <button data-nav="journal" class={panel === 'journal' ? 'on' : ''} onClick={() => open('journal')}><Icon name="journal" />{s.flags.launched ? 'Log' : 'Journal'}</button>
       </div>
 
       {panel === 'map' && <MapPanel onClose={() => setPanel(null)} />}
@@ -246,6 +254,9 @@ export function App() {
           }}
         />
       )}
+
+      {coaching && step && <Coach step={step} />}
+      {step === 'intro' && <Intro onDone={() => store.act((d) => { d.flags.introSeen = true; })} />}
 
       <Toasts toasts={toasts} gains={gains} />
 
