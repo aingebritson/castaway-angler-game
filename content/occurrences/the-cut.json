@@ -141,7 +141,8 @@
         "accessed": "pending-review",
         "supports": "flats on the rising tide"
       }
-    ]
+    ],
+    "designNotes": "Kept sellable in the game on purpose. In Belize bonefish are catch-and-release only by law (SI 114 of 2009); the field guide says so."
   },
   {
     "speciesId": "trachinotus-falcatus",
@@ -192,7 +193,8 @@
         "accessed": "pending-review",
         "supports": "permit in cuts between cayes"
       }
-    ]
+    ],
+    "designNotes": "Kept sellable in the game on purpose. In Belize permit are catch-and-release only by law (SI 114 of 2009); the field guide says so."
   },
   {
     "speciesId": "caranx-hippos",

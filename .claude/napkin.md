@@ -19,6 +19,12 @@
 5. **[2026-11-16] Harness and tool output can be enormous**
    Do instead: return counts and short summaries from page scripts, never raw logs or whole state.
 
+## Research Workstream
+1. **[2026-11-17] FishBase and SeaLifeBase pages read fine through web-fetch; sealifebase.se often resets the first request**
+   Do instead: fetch summary pages in batches of 3-5 species per web-fetch call, retry once on ECONNRESET, and follow the "Length-weight" link for the LWR table when the Bayesian set misses the record weight by more than 30%.
+2. **[2026-11-17] FishBase Bayesian length-weight sets are TL-based and often miss the record weight**
+   Do instead: compute W at max length against the IGFA record (or FishBase max weight) for every set, and log the chosen set and its deviation in the species `sources[].supports` and the region dossier.
+
 ## Shell & Command Reliability
 1. **[2026-11-16] Project path contains a space**
    Do instead: always double-quote the project path in shell commands.

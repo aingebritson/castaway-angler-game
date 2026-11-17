@@ -106,7 +106,8 @@
         "accessed": "pending-review",
         "supports": "tailing behaviour, best light and tide, cooler months"
       }
-    ]
+    ],
+    "designNotes": "Kept sellable in the game on purpose. In Belize bonefish are catch-and-release only by law (SI 114 of 2009); the field guide says so."
   },
   {
     "speciesId": "trachinotus-falcatus",
@@ -165,7 +166,7 @@
         "supports": "spring and summer season on the flats, refusal of non-crab baits"
       }
     ],
-    "designNotes": "Sight casting only: blind casts never find a permit. Real permit are occasionally caught blind, but this keeps the species as the sight method's prize."
+    "designNotes": "Sight casting only: blind casts never find a permit. Real permit are occasionally caught blind, but this keeps the species as the sight method's prize. Kept sellable in the game on purpose. In Belize permit are catch-and-release only by law (SI 114 of 2009); the field guide says so."
   },
   {
     "speciesId": "sphyraena-barracuda",

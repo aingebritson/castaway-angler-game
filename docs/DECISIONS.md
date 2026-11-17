@@ -57,6 +57,11 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 33. **The museum** has a wing per region of every kept species (protected animals, sightings and bait creatures are excluded because they cannot be kept). Donating takes the biggest one in the basket. A finished wing pays 40 coins per specimen and reveals any legendary clue sourced from it. The aquarium and livewell are not built.
 34. **Badges** are fourteen, derived from state except "grand slam", which is latched when bonefish, permit and tarpon are caught on the same local day.
 
+## Research (spec section 12)
+
+35. **The island species records were checked against live sources on 17 November 2026.** Details are in `research/castaway-island/dossier.md`. Several length-weight sets were replaced so that weight at maximum length lands within 30% of the record. Maximums changed for schoolmaster (now 79.1 cm FL), bar jack, bonefish (down to 80 cm FL), permit (up to 122 cm FL), spiny lobster, queen conch and Sally Lightfoot crab. Queen conch is now IUCN Near Threatened. The spotted moray is no longer absent by day. Occurrence records are still unchecked. 
+36. **Bonefish and permit stay sellable**, Andy's call on 17 November 2026, although Belize law (SI 114 of 2009) makes them catch-and-release only. Selling them keeps both in the museum wing and on the orders board. The departure is recorded in each occurrence's `designNotes`, and the field guide carries the real rule as a fact. Tarpon stays release-only.
+
 ## Schema additions (spec section 11)
 
 - `Species`: `tint` (placeholder colours), `gathersAs` (hand-caught bait creatures go into the bag as an item); `lengthCm.measure` gains `CL`, `ML`, `SH`.

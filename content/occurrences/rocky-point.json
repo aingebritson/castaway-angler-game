@@ -369,8 +369,8 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 0.3,
-      "day": 0,
+      "dawn": 0.6,
+      "day": 0.3,
       "dusk": 0.8,
       "night": 1.6
     },
@@ -404,8 +404,14 @@
       {
         "title": "FishBase: Gymnothorax moringa",
         "url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
-        "accessed": "pending-review",
-        "supports": "shallow rocky reef, nocturnal hunting"
+        "accessed": "2026-11-17",
+        "supports": "shallow rocky and grassy areas and reefs; FishBase says it is active during the day as well"
+      },
+      {
+        "title": "Young and Winn (2003), Activity patterns, diet and shelter site use for two species of moray eels in Belize, Copeia 2003(1)",
+        "url": "https://bioone.org/journals/copeia/volume-2003/issue-1/0045-8511(2003)003[0044:APDASS]2.0.CO;2/Activity-Patterns-Diet-and-Shelter-Site-Use-for-Two-Species/10.1643/0045-8511(2003)003[0044:APDASS]2.0.CO;2.full",
+        "accessed": "2026-11-17",
+        "supports": "phase: tagged spotted morays in Belize moved mostly at night; FishBase notes daytime activity too, so day is low rather than zero"
       }
     ]
   },

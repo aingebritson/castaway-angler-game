@@ -12,8 +12,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0214,
-      "b": 3.03
+      "a": 0.0246,
+      "b": 2.85
     },
     "fight": {
       "archetype": "thrasher",
@@ -41,14 +41,20 @@
       {
         "title": "FishBase: Abudefduf saxatilis",
         "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Abudefduf saxatilis",
         "url": "https://www.iucnredlist.org/search?query=Abudefduf%20saxatilis",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Abudefduf saxatilis",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1119&GenusName=Abudefduf&SpeciesName=saxatilis&fc=350",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from Praia dos Castelhanos, Brazil (n=156); FishBase's Bayesian set gives 37% over the 200 g maximum weight at 22.9 cm"
       }
     ]
   },
@@ -65,8 +71,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0101,
-      "b": 3.06
+      "a": 0.00912,
+      "b": 3.02
     },
     "fight": {
       "archetype": "thrasher",
@@ -94,14 +100,14 @@
       {
         "title": "FishBase: Thalassoma bifasciatum",
         "url": "https://www.fishbase.se/summary/Thalassoma-bifasciatum.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
       },
       {
         "title": "IUCN Red List: Thalassoma bifasciatum",
         "url": "https://www.iucnredlist.org/search?query=Thalassoma%20bifasciatum",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       }
     ]
   },
@@ -118,8 +124,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0155,
-      "b": 3.03
+      "a": 0.01349,
+      "b": 3.0
     },
     "fight": {
       "archetype": "diver",
@@ -147,14 +153,14 @@
       {
         "title": "FishBase: Haemulon flavolineatum",
         "url": "https://www.fishbase.se/summary/Haemulon-flavolineatum.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
       },
       {
         "title": "IUCN Red List: Haemulon flavolineatum",
         "url": "https://www.iucnredlist.org/search?query=Haemulon%20flavolineatum",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Haemulon flavolineatum",
@@ -177,8 +183,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0137,
-      "b": 3.07
+      "a": 0.0282,
+      "b": 2.74
     },
     "fight": {
       "archetype": "thrasher",
@@ -206,14 +212,20 @@
       {
         "title": "FishBase: Gerres cinereus",
         "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Gerres cinereus",
         "url": "https://www.iucnredlist.org/search?query=Gerres%20cinereus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Gerres cinereus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1054&GenusName=Gerres&SpeciesName=cinereus&fc=326",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from Rio Verde, Oaxaca, Mexico (17-37 cm, n=106), the only set covering adult sizes"
       }
     ]
   },
@@ -226,14 +238,14 @@
     "lengthCm": {
       "min": 12,
       "common": 34,
-      "max": 86,
+      "max": 86.3,
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0245,
-      "b": 2.79
+      "a": 0.0235,
+      "b": 2.74
     },
-    "recordNote": "IGFA all-tackle record is roughly 5 kg.",
+    "recordNote": "FishBase lists a largest published weight of 4.1 kg.",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 1.1,
@@ -260,14 +272,14 @@
       {
         "title": "FishBase: Ocyurus chrysurus",
         "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Ocyurus chrysurus",
         "url": "https://www.iucnredlist.org/search?query=Ocyurus%20chrysurus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Ocyurus chrysurus",
@@ -276,10 +288,10 @@
         "supports": "behaviour, diet, habitat, angling notes"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Ocyurus chrysurus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=188&GenusName=Ocyurus&SpeciesName=chrysurus&fc=323",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from the central coast of Brazil (28-64 cm, n=661); within 16% of the 4.1 kg maximum weight at 86.3 cm"
       }
     ]
   },
@@ -292,12 +304,12 @@
     "lengthCm": {
       "min": 10,
       "common": 28,
-      "max": 67,
-      "measure": "TL"
+      "max": 79.1,
+      "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.0166,
-      "b": 3.0
+      "a": 0.0194,
+      "b": 2.978
     },
     "fight": {
       "archetype": "diver",
@@ -325,20 +337,26 @@
       {
         "title": "FishBase: Lutjanus apodus",
         "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Lutjanus apodus",
         "url": "https://www.iucnredlist.org/search?query=Lutjanus%20apodus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Lutjanus apodus",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-apodus/",
         "accessed": "pending-review",
         "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "FishBase length-weight table: Lutjanus apodus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1404&GenusName=Lutjanus&SpeciesName=apodus&fc=323",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: FL set from southern Florida (3.8-79.1 cm), the same study as the maximum length"
       }
     ]
   },
@@ -355,7 +373,7 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0195,
+      "a": 0.01585,
       "b": 2.95
     },
     "fight": {
@@ -384,14 +402,14 @@
       {
         "title": "FishBase: Holocentrus adscensionis",
         "url": "https://www.fishbase.se/summary/Holocentrus-adscensionis.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
       },
       {
         "title": "IUCN Red List: Holocentrus adscensionis",
         "url": "https://www.iucnredlist.org/search?query=Holocentrus%20adscensionis",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       }
     ]
   },
@@ -408,8 +426,8 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0007,
-      "b": 3.2
+      "a": 0.00102,
+      "b": 3.07
     },
     "fight": {
       "archetype": "thrasher",
@@ -437,14 +455,20 @@
       {
         "title": "FishBase: Gymnothorax moringa",
         "url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, habitat (max length in game is capped below the largest reported)"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat (max length in game is capped below the 200 cm reported)"
       },
       {
         "title": "IUCN Red List: Gymnothorax moringa",
         "url": "https://www.iucnredlist.org/search?query=Gymnothorax%20moringa",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Gymnothorax moringa",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=7547&GenusName=Gymnothorax&SpeciesName=moringa&fc=56",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from Praia dos Castelhanos, Brazil (n=40); within 1% of the 2.5 kg maximum weight at the 120 cm game cap"
       }
     ]
   },
@@ -457,12 +481,12 @@
     "lengthCm": {
       "min": 15,
       "common": 38,
-      "max": 69,
+      "max": 73,
       "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.0166,
-      "b": 2.98
+      "a": 0.0192,
+      "b": 2.954
     },
     "fight": {
       "archetype": "runner",
@@ -490,14 +514,20 @@
       {
         "title": "FishBase: Caranx ruber",
         "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Caranx ruber",
         "url": "https://www.iucnredlist.org/search?query=Caranx%20ruber",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Caranx ruber",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1918&GenusName=Caranx&SpeciesName=ruber&fc=314",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: FL set from St Thomas and St John, US Virgin Islands (20-73 cm)"
       }
     ]
   },
@@ -514,7 +544,7 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.001,
+      "a": 0.00112,
       "b": 3.1
     },
     "recordNote": "Reported to about 1.5 m and a little over 6 kg.",
@@ -544,14 +574,14 @@
       {
         "title": "FishBase: Tylosurus crocodilus",
         "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
       },
       {
         "title": "IUCN Red List: Tylosurus crocodilus",
         "url": "https://www.iucnredlist.org/search?query=Tylosurus%20crocodilus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       }
     ]
   },
@@ -564,14 +594,14 @@
     "lengthCm": {
       "min": 20,
       "common": 48,
-      "max": 90,
+      "max": 80,
       "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.0115,
-      "b": 3.0
+      "a": 0.00729,
+      "b": 3.187
     },
-    "recordNote": "IGFA all-tackle record is a little over 8.5 kg.",
+    "recordNote": "IGFA all-tackle record is 16 lb (about 7.3 kg), from Bimini in the Bahamas in 1971.",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 2.0,
@@ -591,21 +621,22 @@
     "facts": [
       "A hooked bonefish can take more than a hundred metres of line on its first run.",
       "'Tailing' fish are feeding head-down in water shallower than they are tall.",
-      "It crushes crabs and shellfish with rounded teeth on the tongue and palate."
+      "It crushes crabs and shellfish with rounded teeth on the tongue and palate.",
+      "In Belize the law makes bonefish catch-and-release only; anglers here would let it go."
     ],
     "visualNotes": "Slender, torpedo-shaped silver fish; conical snout overhanging a small underslung mouth; single dorsal fin; deeply forked tail; faint dusky bars across the back; bluish-green tint above.",
     "sources": [
       {
         "title": "FishBase: Albula vulpes",
         "url": "https://www.fishbase.se/summary/Albula-vulpes.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Albula vulpes",
         "url": "https://www.iucnredlist.org/search?query=Albula%20vulpes",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Albula vulpes",
@@ -614,10 +645,22 @@
         "supports": "behaviour, diet, habitat, angling notes"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Albula vulpes",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=228&GenusName=Albula&SpeciesName=vulpes&fc=48",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: FL set from the Florida Keys (2-70 cm, n=518)"
+      },
+      {
+        "title": "IGFA all-tackle records, as tabulated by Tackle Village (data as of June 2022)",
+        "url": "https://tacklevillage.com/igfa-world-record-list-table-of-species/",
+        "accessed": "2026-11-17",
+        "supports": "record size (flavour only); secondary copy of the IGFA database"
+      },
+      {
+        "title": "San Pedro Sun: the catch-and-release law for bonefish, permit and tarpon",
+        "url": "https://www.sanpedrosun.com/environment/2012/06/09/the-palometa-report-catch-and-release-law-for-bonefish-permit-and-tarpon/",
+        "accessed": "2026-11-17",
+        "supports": "Belize SI 114 of 2009 designates bonefish, permit and tarpon for catch and release only"
       }
     ]
   },
@@ -634,10 +677,10 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.0156,
-      "b": 3.0
+      "a": 0.0113,
+      "b": 3.05
     },
-    "recordNote": "IGFA all-tackle record is about 15 kg.",
+    "recordNote": "FishBase lists a largest published weight of 15.6 kg.",
     "fight": {
       "archetype": "bulldog",
       "strengthFactor": 1.5,
@@ -664,14 +707,14 @@
       {
         "title": "FishBase: Lutjanus analis",
         "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Lutjanus analis",
         "url": "https://www.iucnredlist.org/search?query=Lutjanus%20analis",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Lutjanus analis",
@@ -680,10 +723,10 @@
         "supports": "behaviour, diet, habitat, angling notes"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Lutjanus analis",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1403&GenusName=Lutjanus&SpeciesName=analis&fc=323",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: TL set from the Florida east coast, 1992-2000"
       }
     ]
   },
@@ -696,14 +739,14 @@
     "lengthCm": {
       "min": 25,
       "common": 55,
-      "max": 110,
+      "max": 122,
       "measure": "FL"
     },
     "lengthWeight": {
-      "a": 0.0263,
-      "b": 2.9
+      "a": 0.02884,
+      "b": 2.86
     },
-    "recordNote": "IGFA all-tackle record is about 27 kg.",
+    "recordNote": "IGFA all-tackle record is 60 lb (about 27 kg), from Brazil in 2002.",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 1.7,
@@ -723,21 +766,22 @@
     "facts": [
       "Permit eat mostly crabs, crushing them with bony plates in the throat.",
       "Bonefish, permit and tarpon in one day is the angler's 'grand slam'.",
-      "The black sickle tips of the dorsal fin and tail often show above the water when it feeds."
+      "The black sickle tips of the dorsal fin and tail often show above the water when it feeds.",
+      "In Belize the law makes permit catch-and-release only; anglers here would let it go."
     ],
     "visualNotes": "Very deep, laterally compressed silver body with a blunt rounded head; long sickle-shaped second dorsal and anal fins; deeply forked tail with dark edges; often an orange-yellow patch on the belly ahead of the anal fin.",
     "sources": [
       {
         "title": "FishBase: Trachinotus falcatus",
         "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
       },
       {
         "title": "IUCN Red List: Trachinotus falcatus",
         "url": "https://www.iucnredlist.org/search?query=Trachinotus%20falcatus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Trachinotus falcatus",
@@ -746,10 +790,16 @@
         "supports": "behaviour, diet, habitat, angling notes"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "IGFA all-tackle records, as tabulated by Tackle Village (data as of June 2022)",
+        "url": "https://tacklevillage.com/igfa-world-record-list-table-of-species/",
+        "accessed": "2026-11-17",
+        "supports": "record size (flavour only); secondary copy of the IGFA database"
+      },
+      {
+        "title": "San Pedro Sun: the catch-and-release law for bonefish, permit and tarpon",
+        "url": "https://www.sanpedrosun.com/environment/2012/06/09/the-palometa-report-catch-and-release-law-for-bonefish-permit-and-tarpon/",
+        "accessed": "2026-11-17",
+        "supports": "Belize SI 114 of 2009 designates bonefish, permit and tarpon for catch and release only"
       }
     ]
   },
@@ -766,10 +816,10 @@
       "measure": "TL"
     },
     "lengthWeight": {
-      "a": 0.005,
-      "b": 3.0
+      "a": 0.00851,
+      "b": 2.93
     },
-    "recordNote": "IGFA all-tackle record is about 46 kg.",
+    "recordNote": "The hook-and-line record FishBase cites is a 103 lb (about 47 kg) fish from the Bahamas.",
     "fight": {
       "archetype": "runner",
       "strengthFactor": 1.5,
@@ -796,26 +846,20 @@
       {
         "title": "FishBase: Sphyraena barracuda",
         "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat, length-weight a and b (Bayesian estimate)"
       },
       {
         "title": "IUCN Red List: Sphyraena barracuda",
         "url": "https://www.iucnredlist.org/search?query=Sphyraena%20barracuda",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Sphyraena barracuda",
         "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
         "accessed": "pending-review",
         "supports": "behaviour, diet, habitat, angling notes"
-      },
-      {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
       }
     ]
   },
@@ -835,7 +879,7 @@
       "a": 0.0074,
       "b": 3.0
     },
-    "recordNote": "IGFA all-tackle record is about 130 kg, from West Africa.",
+    "recordNote": "IGFA all-tackle record is 286 lb 9 oz (about 130 kg), from Guinea-Bissau in 2003.",
     "fight": {
       "archetype": "jumper",
       "strengthFactor": 2.2,
@@ -863,14 +907,14 @@
       {
         "title": "FishBase: Megalops atlanticus",
         "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Megalops atlanticus",
         "url": "https://www.iucnredlist.org/search?query=Megalops%20atlanticus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       },
       {
         "title": "Florida Museum species profile: Megalops atlanticus",
@@ -879,10 +923,16 @@
         "supports": "behaviour, diet, habitat, angling notes"
       },
       {
-        "title": "IGFA world records",
-        "url": "https://igfa.org/world-records/",
-        "accessed": "pending-review",
-        "supports": "record size (flavour only)"
+        "title": "FishBase length-weight table: Megalops atlanticus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1079&GenusName=Megalops&SpeciesName=atlanticus&fc=47",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a: geometric mean of the US Virgin Islands TL set (a=0.00532) and FishBase's Bayesian TL estimate (a=0.01023), b=3.0; neither alone is within 30% of the IGFA record at 250 cm"
+      },
+      {
+        "title": "IGFA all-tackle records, as tabulated by Tackle Village (data as of June 2022)",
+        "url": "https://tacklevillage.com/igfa-world-record-list-table-of-species/",
+        "accessed": "2026-11-17",
+        "supports": "record size (flavour only); secondary copy of the IGFA database"
       }
     ]
   },
@@ -895,12 +945,12 @@
     "lengthCm": {
       "min": 5,
       "common": 9,
-      "max": 20,
+      "max": 18.1,
       "measure": "CL"
     },
     "lengthWeight": {
-      "a": 2.0,
-      "b": 2.75
+      "a": 1.41125,
+      "b": 2.764
     },
     "fight": {
       "archetype": "none",
@@ -929,14 +979,20 @@
       {
         "title": "SeaLifeBase: Panulirus argus",
         "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Panulirus argus",
         "url": "https://www.iucnredlist.org/search?query=Panulirus%20argus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "SeaLifeBase length-weight table: Panulirus argus",
+        "url": "https://www.sealifebase.se/PopDyn/LWRelationshipList.php?ID=26102&GenusName=Panulirus&SpeciesName=argus&fc=13",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: carapace-length set from Cuba; maximum carapace length 18.1 cm (South Caicos) from the Max. ages / sizes table"
       }
     ]
   },
@@ -953,7 +1009,7 @@
       "measure": "ML"
     },
     "lengthWeight": {
-      "a": 1.6,
+      "a": 2.0,
       "b": 2.6
     },
     "fight": {
@@ -982,14 +1038,20 @@
       {
         "title": "SeaLifeBase: Octopus briareus",
         "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Octopus briareus",
         "url": "https://www.iucnredlist.org/search?query=Octopus%20briareus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
+      },
+      {
+        "title": "SeaLifeBase: Octopus briareus (no length-weight table)",
+        "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b are derived, not published: chosen so weight at 12 cm mantle length is within 15% of the 1.5 kg maximum weight"
       }
     ]
   },
@@ -1039,8 +1101,8 @@
       {
         "title": "SeaLifeBase: Ocypode quadrata",
         "url": "https://www.sealifebase.se/summary/Ocypode-quadrata.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       }
     ]
   },
@@ -1053,7 +1115,7 @@
     "lengthCm": {
       "min": 3,
       "common": 6,
-      "max": 8,
+      "max": 8.7,
       "measure": "CW"
     },
     "lengthWeight": {
@@ -1090,8 +1152,8 @@
       {
         "title": "SeaLifeBase: Grapsus grapsus",
         "url": "https://www.sealifebase.se/summary/Grapsus-grapsus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       }
     ]
   },
@@ -1141,8 +1203,8 @@
       {
         "title": "SeaLifeBase: Emerita portoricensis",
         "url": "https://www.sealifebase.se/summary/Emerita-portoricensis.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       }
     ]
   },
@@ -1155,12 +1217,12 @@
     "lengthCm": {
       "min": 10,
       "common": 22,
-      "max": 35,
+      "max": 30,
       "measure": "SH"
     },
     "lengthWeight": {
-      "a": 0.12,
-      "b": 3.1
+      "a": 0.514,
+      "b": 2.63
     },
     "fight": {
       "archetype": "none",
@@ -1173,9 +1235,9 @@
       "accent": "#f6d9c8"
     },
     "conservation": {
-      "iucn": "NE",
+      "iucn": "NT",
       "releaseOnly": true,
-      "note": "CITES Appendix II. Listed as threatened under the US Endangered Species Act in 2024. Protected or tightly managed across the Caribbean."
+      "note": "Near Threatened (IUCN, 2025). CITES Appendix II and listed as threatened under the US Endangered Species Act in 2024. Belize closes the conch season each summer."
     },
     "baseValue": 0,
     "description": "A great pink-lipped sea snail of seagrass and sand flats. It does not glide like other snails but vaults forward on a clawed foot, peering about with eyes on long stalks. A conch needs several years to grow its flared lip, and overfishing has emptied many of the shallows it once filled.",
@@ -1189,14 +1251,26 @@
       {
         "title": "SeaLifeBase: Aliger gigas",
         "url": "https://www.sealifebase.se/summary/Aliger-gigas.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, habitat"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "NOAA Fisheries: Queen conch",
-        "url": "https://www.fisheries.noaa.gov/species/queen-conch",
-        "accessed": "pending-review",
-        "supports": "protected status, biology"
+        "url": "https://www.fisheries.noaa.gov/bulletin/noaa-fisheries-lists-queen-conch-threatened-under-endangered-species-act",
+        "accessed": "2026-11-17",
+        "supports": "listed as threatened under the US Endangered Species Act (final rule 14 February 2024)"
+      },
+      {
+        "title": "SeaLifeBase length-weight table: Aliger gigas",
+        "url": "https://www.sealifebase.se/PopDyn/LWRelationshipList.php?ID=2799&GenusName=Aliger&SpeciesName=gigas&fc=2066",
+        "accessed": "2026-11-17",
+        "supports": "length-weight a and b: shell-length set for Belize females (n=38, r2 0.53); within 19% of the 3.3 kg maximum weight at 30 cm"
+      },
+      {
+        "title": "Government of Belize Press Office: conch season closure",
+        "url": "https://www.pressoffice.gov.bz/reminder-of-closure-of-conch-season/",
+        "accessed": "2026-11-17",
+        "supports": "Belize closed season for conch"
       }
     ]
   },
@@ -1240,14 +1314,20 @@
       {
         "title": "IUCN Red List: Chelonia mydas",
         "url": "https://www.iucnredlist.org/search?query=Chelonia%20mydas",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status: moved from Endangered to Least Concern at the 2025 IUCN World Conservation Congress (checked against news coverage, not the Red List entry itself)"
       },
       {
         "title": "NOAA Fisheries: Green turtle",
         "url": "https://www.fisheries.noaa.gov/species/green-turtle",
         "accessed": "pending-review",
         "supports": "biology, nesting, diet"
+      },
+      {
+        "title": "Mongabay: Green turtle rebounds, moving from Endangered to Least Concern",
+        "url": "https://news.mongabay.com/short-article/2025/10/green-turtle-rebounds-moving-from-endangered-to-least-concern/",
+        "accessed": "2026-11-17",
+        "supports": "2025 Red List reassessment"
       }
     ]
   },
@@ -1290,14 +1370,14 @@
       {
         "title": "FishBase: Hypanus americanus",
         "url": "https://www.fishbase.se/summary/Hypanus-americanus.html",
-        "accessed": "pending-review",
-        "supports": "taxonomy, size, behaviour"
+        "accessed": "2026-11-17",
+        "supports": "taxonomy, maximum length, habitat"
       },
       {
         "title": "IUCN Red List: Hypanus americanus",
         "url": "https://www.iucnredlist.org/search?query=Hypanus%20americanus",
-        "accessed": "pending-review",
-        "supports": "conservation status"
+        "accessed": "2026-11-17",
+        "supports": "conservation status, as shown on the FishBase or SeaLifeBase page (Red List version 2025-2)"
       }
     ]
   },
