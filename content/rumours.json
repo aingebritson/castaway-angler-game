@@ -183,7 +183,7 @@
     "id": "snook-live",
     "speciesId": "centropomus-undecimalis",
     "dimension": "bait",
-    "text": "A snook will look at a shrimp. It will not refuse a live sardine.",
+    "text": "A snook will look at a shrimp. It will rarely refuse a live sardine.",
     "fillsCells": [
       "bait:livefish",
       "bait:shrimp"
@@ -194,7 +194,7 @@
     "id": "jack-dawn",
     "speciesId": "caranx-hippos",
     "dimension": "when",
-    "text": "Jacks smash bait against the sea wall at first light. Throw something that flashes.",
+    "text": "Jacks tear into the bait in the harbour at first light. Throw something that flashes.",
     "fillsCells": [
       "phase:dawn",
       "bait:spoon",
@@ -206,7 +206,7 @@
     "id": "hogfish-crab",
     "speciesId": "lachnolaimus-maximus",
     "dimension": "bait",
-    "text": "Hogfish root on the reef top in full daylight, and what they are rooting for is crab.",
+    "text": "Hogfish root on the reef top in full daylight for shellfish and crabs. Crab is what they take.",
     "fillsCells": [
       "bait:crab",
       "phase:day",
@@ -218,10 +218,9 @@
     "id": "cero-spoon",
     "speciesId": "scomberomorus-regalis",
     "dimension": "method",
-    "text": "Cero cut along the reef edge at dawn. A spoon, worked fast.",
+    "text": "Cero cut along the reef edge after the bait. A spoon, worked fast.",
     "fillsCells": [
       "bait:spoon",
-      "phase:dawn",
       "zone:patch-reef/reef-edge"
     ],
     "source": "Marisol"
@@ -265,9 +264,8 @@
     "id": "blackgrouper-dusk",
     "speciesId": "mycteroperca-bonaci",
     "dimension": "when",
-    "text": "A live bait at dusk, and a line you trust. Turn its head in the first three seconds or say goodbye.",
+    "text": "A live bait, and a line you trust. Turn its head in the first three seconds or say goodbye.",
     "fillsCells": [
-      "phase:dusk",
       "bait:livefish"
     ],
     "source": "Old Tobias"
@@ -284,7 +282,7 @@
     "id": "nassau-edge",
     "speciesId": "epinephelus-striatus",
     "dimension": "where",
-    "text": "Striped, pale and curious, at the reef edge. It comes to cut fish. It goes back, by law and by decency.",
+    "text": "Striped, pale and curious, at the reef edge. It comes to cut fish. It goes back, every time: there are too few left.",
     "fillsCells": [
       "zone:patch-reef/reef-edge",
       "bait:cutfish"
@@ -330,7 +328,7 @@
     "id": "bluecrab-pot",
     "speciesId": "callinectes-sapidus",
     "dimension": "method",
-    "text": "Sink a trap by the mangrove roots with fish scraps and the blue crabs will fight to get in.",
+    "text": "Sink a trap by the mangrove roots with fish scraps and the blue crabs will crowd in.",
     "fillsCells": [
       "bait:trap",
       "zone:mangrove-creek/roots"

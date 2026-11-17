@@ -92,6 +92,8 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - One error was fixed: the sardine's "loose scales" fact.
     - Doubtful values were corrected: snook level all year; Nassau grouper and mutton snapper scarcer on the patch reef while adults are at spawning sites; grunts and schoolmaster mostly by day on reefs and roots; crevalle jack neutral by day; lobster level all year; blue crab up in the rainy season.
     - Where the same species and habitat are on the island, the island data was changed to match.
+43. **Cayes rumours checked against the data and the real fish.** All 31 rumours that touch the Cayes pass the data check, and every rare or epic species at the port has two obtainable rumours.
+    - Seven were rewritten because they overstated reality: jacks against the sea wall, cero at dawn, black grouper at dusk, hogfish and crab, the snook and blue crab hyperbole, and Nassau grouper going back "by law" (Belize allows them in season, so it now says there are too few left).
 
 ## Schema additions (spec section 11)
 

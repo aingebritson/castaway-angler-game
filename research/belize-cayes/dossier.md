@@ -193,6 +193,30 @@ Where the same species and habitat appear on the island, the fixes were applied 
 - **Rocky Point (island):** catch shares move by 2 points or less.
 - All 60 tests pass.
 
+## Rumours (spec step 6)
+
+Checked on 17 November 2026, after the review. This covers every rumour about a species that lives at the Cayes, or that names a Cayes zone: 31 in all. Fifteen come from quests at the port, and the rest from the island's journal pages. Each was tested against the data and against the real fish, in the same way as the island's.
+
+**Data check: all 31 pass.** Every named zone has the species, every named time is that species' peak there, and every named bait has a pull of at least 1.0. The only flag is *tarpon-feather*, an island rumour about island gear; the Cayes rigs have no feather pull for tarpon.
+
+**Seven overstated the real fish and were rewritten:**
+
+| Rumour | Was | Now | Why |
+| --- | --- | --- | --- |
+| *jack-dawn* | "Jacks smash bait against the sea wall at first light" | "Jacks tear into the bait in the harbour at first light" | No source for herding against walls; the same claim was removed from the facts |
+| *cero-spoon* | "Cero cut along the reef edge at dawn" (marked dawn) | "Cero cut along the reef edge after the bait" (no time marked) | No source for a dawn peak |
+| *blackgrouper-dusk* | "A live bait at dusk" (marked dusk) | "A live bait, and a line you trust" (no time marked) | No source for a dusk peak |
+| *hogfish-crab* | "What they are rooting for is crab" | "For shellfish and crabs. Crab is what they take." | Hogfish eat mainly molluscs, also crabs (FishBase, Florida Museum) |
+| *nassau-edge* | "It goes back, by law and by decency" | "It goes back, every time: there are too few left" | Belize law allows Nassau grouper from April to November within a slot. Release is the game's rule, not the law's. |
+| *snook-live*, *bluecrab-pot* | "Will not refuse a live sardine"; crabs "fight to get in" | "Will rarely refuse"; crabs "crowd in" | Softened hyperbole |
+
+**Kept as written:** *snook-lights*, *king-live*, *king-spring*, *blackgrouper-ledge*, *nassau-winter*, *tarpon-cut*, *permit-cut*, *creek-tarpon*. All are true of the real fish and match the data. Quest dialogue was also read for the same claims. Marisol's "crevalle jack … at first and last light" and "snook … under the lamp at night, or along the mangrove roots at dawn" both match the data.
+
+**Coverage:** every rare or epic species at the Cayes has at least two obtainable rumours, which is the M2 acceptance criterion:
+- **Port quests:** snook, Nassau grouper, black grouper and king mackerel each have two.
+- **Port quests and journal pages:** tarpon (4) and permit (3).
+- **Journal pages only:** mutton snapper, barracuda and reef octopus have two each, from journal pages found on the island before the raft. Those rumours name island zones, not where these fish are rare at the Cayes (the creek, the pier and creek, and the patch reef). See open question 6.
+
 ## Open questions
 
 1. **Nassau grouper release-only vs Belize's slot.** The game is stricter than the law. If the Cayes market should follow Belize exactly, Nassau grouper would be sellable from April to November between 51 and 76 cm.
@@ -201,8 +225,9 @@ Where the same species and habitat appear on the island, the fixes were applied 
 4. **Nurse shark maximum.** FishBase gives 430 cm TL. The game keeps 308 cm, the largest size widely reported. This is a sighting, so it only affects flavour.
 5. **King mackerel maximum (173 cm FL)** has no direct source. NOAA gives "up to 5.5 feet" (168 cm), and FishBase gives 184 cm TL.
 
+6. **Port rumours for mutton snapper, barracuda and reef octopus.** Their only rumours come from island journal pages and point to island zones. Adding a port quest rumour for each would point players to the Cayes creek, pier and patch reef. That is a content change to quests, so it was not made here.
+
 ## Still to do
 
 - **Closed seasons as a mechanic:** Belize closes lobster from 1 March to 30 June and Nassau grouper from December to March, and closes conch over the summer. The schema has no field for a closed season. This needs a design decision, not more research.
 - **Long list and legendary review** for the region. The Bishop was checked in the island review.
-- **Rumour check (step 6)** for the Cayes. The reviewers found every rumour they checked consistent with the data; a full pass is still to do.
