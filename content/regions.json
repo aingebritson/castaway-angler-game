@@ -1,0 +1,13 @@
+[
+  {
+    "id": "castaway-island",
+    "name": "Castaway Island",
+    "order": 0,
+    "blurb": "A scrap of sand, palms and reef somewhere in the western Caribbean.",
+    "map": {
+      "x": 0.3,
+      "y": 0.42
+    },
+    "unlock": []
+  }
+]

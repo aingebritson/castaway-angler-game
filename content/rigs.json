@@ -1,0 +1,61 @@
+[
+  {
+    "id": "starter",
+    "label": "Washed up: old rod, rusty hook, sand flea",
+    "rod": "old-rod",
+    "line": "old-line",
+    "hook": "rusty-hook",
+    "bait": "sand-flea",
+    "method": "bait"
+  },
+  {
+    "id": "toolmaker",
+    "label": "Toolmaker: old rod, bone hook, float, sinker, cut bait",
+    "rod": "old-rod",
+    "line": "old-line",
+    "hook": "bone-hook",
+    "bait": "cut-bait",
+    "float": "coconut-float",
+    "sinker": "stone-sinker",
+    "method": "bait"
+  },
+  {
+    "id": "toolmaker-small",
+    "label": "Toolmaker: old rod, shell hook, float, sand flea",
+    "rod": "old-rod",
+    "line": "old-line",
+    "hook": "shell-hook",
+    "bait": "sand-flea",
+    "float": "coconut-float",
+    "method": "bait"
+  },
+  {
+    "id": "angler",
+    "label": "Angler: bamboo rod, braided line, bone hook, cut bait",
+    "rod": "bamboo-rod",
+    "line": "braided-line",
+    "hook": "bone-hook",
+    "bait": "cut-bait",
+    "float": "coconut-float",
+    "sinker": "stone-sinker",
+    "method": "bait"
+  },
+  {
+    "id": "angler-crab",
+    "label": "Angler: bamboo rod, braided line, bone hook, small crab",
+    "rod": "bamboo-rod",
+    "line": "braided-line",
+    "hook": "bone-hook",
+    "bait": "small-crab",
+    "float": "coconut-float",
+    "method": "bait"
+  },
+  {
+    "id": "angler-lure",
+    "label": "Angler: bamboo rod, braided line, feather lure",
+    "rod": "bamboo-rod",
+    "line": "braided-line",
+    "lure": "feather-lure",
+    "method": "lure"
+  }
+]

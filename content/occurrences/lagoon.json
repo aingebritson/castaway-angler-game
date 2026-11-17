@@ -1,0 +1,642 @@
+[
+  {
+    "speciesId": "gerres-cinereus",
+    "locationId": "lagoon",
+    "zones": [
+      "flats",
+      "channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 1,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "shrimp": 1.2,
+      "fruit": 0.6,
+      "cutfish": 0.6,
+      "crab": 0.5
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Gerres cinereus",
+        "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
+        "accessed": "pending-review",
+        "supports": "sandy shallows and mangrove edges, feeds on benthic invertebrates"
+      }
+    ]
+  },
+  {
+    "speciesId": "albula-vulpes",
+    "locationId": "lagoon",
+    "zones": [
+      "flats"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.5
+    },
+    "monthMod": [
+      1.2,
+      1.2,
+      1.2,
+      1.1,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.1,
+      1.2
+    ],
+    "methods": [
+      "sight",
+      "bait"
+    ],
+    "affinity": {
+      "crustacean": 1.3,
+      "crab": 1.5,
+      "shrimp": 1.6,
+      "fly": 1.2,
+      "cutfish": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Albula vulpes",
+        "url": "https://www.fishbase.se/summary/Albula-vulpes.html",
+        "accessed": "pending-review",
+        "supports": "shallow flats habitat, diet of crabs and shrimp"
+      },
+      {
+        "title": "Florida Museum species profile: Albula vulpes",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/albula-vulpes/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "Caribbean flats and reef guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "tailing behaviour, best light and tide, cooler months"
+      }
+    ]
+  },
+  {
+    "speciesId": "trachinotus-falcatus",
+    "locationId": "lagoon",
+    "zones": [
+      "flats"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 0.2
+    },
+    "monthMod": [
+      0.7,
+      0.8,
+      1.2,
+      1.4,
+      1.5,
+      1.5,
+      1.4,
+      1,
+      0.8,
+      0.8,
+      0.7,
+      0.7
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {
+      "crab": 1.8,
+      "crustacean": 0.12,
+      "shrimp": 0.5,
+      "fly": 0.4
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Trachinotus falcatus",
+        "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
+        "accessed": "pending-review",
+        "supports": "flats and channel habitat, crab diet"
+      },
+      {
+        "title": "Florida Museum species profile: Trachinotus falcatus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/trachinotus-falcatus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "Caribbean flats and reef guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "spring and summer season on the flats, refusal of non-crab baits"
+      }
+    ],
+    "designNotes": "Sight casting only: blind casts never find a permit. Real permit are occasionally caught blind, but this keeps the species as the sight method's prize."
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "lagoon",
+    "zones": [
+      "flats",
+      "channel"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0.3
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "sight",
+      "lure"
+    ],
+    "affinity": {
+      "feather": 1.2,
+      "spoon": 1.5,
+      "plug": 1.5,
+      "cutfish": 0.3,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "juveniles and adults over seagrass and flats"
+      },
+      {
+        "title": "Florida Museum species profile: Sphyraena barracuda",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "caranx-ruber",
+    "locationId": "lagoon",
+    "zones": [
+      "flats",
+      "channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "feather": 1.4,
+      "spoon": 1.4,
+      "jig": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Caranx ruber",
+        "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
+        "accessed": "pending-review",
+        "supports": "follows rays over sand flats"
+      }
+    ]
+  },
+  {
+    "speciesId": "tylosurus-crocodilus",
+    "locationId": "lagoon",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 0.8
+    },
+    "monthMod": [
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.2,
+      1.4,
+      1.4,
+      1.4,
+      1.2,
+      1,
+      0.8,
+      0.7
+    ],
+    "methods": [
+      "lure"
+    ],
+    "affinity": {
+      "feather": 1.2,
+      "popper": 1.5,
+      "spoon": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Tylosurus crocodilus",
+        "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
+        "accessed": "pending-review",
+        "supports": "surface waters of lagoons"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-apodus",
+    "locationId": "lagoon",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.7,
+      "dusk": 1.5,
+      "night": 1.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "crustacean": 1,
+      "crab": 1.2,
+      "cutfish": 1.2,
+      "shrimp": 1.2,
+      "trap": 0.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus apodus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
+        "accessed": "pending-review",
+        "supports": "mangrove and channel habitat"
+      }
+    ]
+  },
+  {
+    "speciesId": "haemulon-flavolineatum",
+    "locationId": "lagoon",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 0.7,
+      "dusk": 1.4,
+      "night": 1.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "cutfish": 0.8,
+      "shrimp": 1.2,
+      "trap": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Haemulon flavolineatum",
+        "url": "https://www.fishbase.se/summary/Haemulon-flavolineatum.html",
+        "accessed": "pending-review",
+        "supports": "forages over seagrass and sand at night"
+      }
+    ]
+  },
+  {
+    "speciesId": "megalops-atlanticus",
+    "locationId": "lagoon",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "epic",
+    "phaseMod": {
+      "dawn": 1.8,
+      "day": 0.5,
+      "dusk": 1.8,
+      "night": 1.2
+    },
+    "monthMod": [
+      0.5,
+      0.5,
+      0.7,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      1.2,
+      0.8,
+      0.5,
+      0.5
+    ],
+    "methods": [
+      "lure",
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "feather": 0.8,
+      "plug": 1.5,
+      "livefish": 2,
+      "cutfish": 0.6,
+      "crab": 0.8,
+      "fly": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Megalops atlanticus",
+        "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
+        "accessed": "pending-review",
+        "supports": "lagoon channels, air-gulping at the surface"
+      },
+      {
+        "title": "Florida Museum species profile: Megalops atlanticus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "Caribbean flats and reef guide fishing reports (general angler knowledge)",
+        "url": "https://www.bonefishtarpontrust.org/",
+        "accessed": "pending-review",
+        "supports": "dawn and dusk rolling, spring to summer peak"
+      }
+    ]
+  },
+  {
+    "speciesId": "panulirus-argus",
+    "locationId": "lagoon",
+    "zones": [
+      "channel"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.6,
+      "day": 0.2,
+      "dusk": 1,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1.2,
+      1.5,
+      1.5,
+      1.2
+    ],
+    "methods": [
+      "trap"
+    ],
+    "affinity": {
+      "trap": 1,
+      "cutfish": 1.5
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Panulirus argus",
+        "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
+        "accessed": "pending-review",
+        "supports": "juveniles and adults in lagoon channels and seagrass"
+      }
+    ]
+  },
+  {
+    "speciesId": "aliger-gigas",
+    "locationId": "lagoon",
+    "zones": [
+      "flats"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1,
+      "night": 1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "hand"
+    ],
+    "affinity": {},
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Aliger gigas",
+        "url": "https://www.sealifebase.se/summary/Aliger-gigas.html",
+        "accessed": "pending-review",
+        "supports": "seagrass and sand flats"
+      }
+    ]
+  },
+  {
+    "speciesId": "chelonia-mydas",
+    "locationId": "lagoon",
+    "zones": [
+      "flats",
+      "channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 1,
+      "night": 0.3
+    },
+    "monthMod": [
+      0.8,
+      0.8,
+      0.8,
+      1,
+      1.2,
+      1.5,
+      1.6,
+      1.6,
+      1.4,
+      1,
+      0.8,
+      0.8
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "NOAA Fisheries: Green turtle",
+        "url": "https://www.fisheries.noaa.gov/species/green-turtle",
+        "accessed": "pending-review",
+        "supports": "seagrass grazing in shallow lagoons, nesting season"
+      }
+    ]
+  },
+  {
+    "speciesId": "hypanus-americanus",
+    "locationId": "lagoon",
+    "zones": [
+      "flats"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Hypanus americanus",
+        "url": "https://www.fishbase.se/summary/Hypanus-americanus.html",
+        "accessed": "pending-review",
+        "supports": "sand flats and seagrass habitat"
+      }
+    ]
+  }
+]

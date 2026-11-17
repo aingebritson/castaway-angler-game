@@ -1,0 +1,1354 @@
+[
+  {
+    "id": "abudefduf-saxatilis",
+    "commonName": "Sergeant major",
+    "scientificName": "Abudefduf saxatilis",
+    "kind": "fish",
+    "family": "Pomacentridae",
+    "lengthCm": {
+      "min": 6,
+      "common": 15,
+      "max": 22.9,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0214,
+      "b": 3.03
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.8,
+      "stamina": 2
+    },
+    "silhouette": "damsel",
+    "tint": {
+      "body": "#e9d758",
+      "accent": "#26292b"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 2,
+    "description": "A bold little damselfish that swarms every rocky shoreline, barred like the sleeve stripes it is named for. Sergeant majors peck at almost anything that drifts past, which makes them the first fish most castaways ever land. Nesting males turn a dusky blue and guard purple egg patches glued to the rock.",
+    "facts": [
+      "The five black bars resemble the insignia of a military sergeant major.",
+      "Males guard the eggs and darken to a bluish colour while nesting.",
+      "It lives on both sides of the Atlantic, from the Caribbean to West Africa."
+    ],
+    "visualNotes": "Deep oval damselfish; five vertical black bars on silver-grey flanks, yellow wash across the upper back; forked tail; small terminal mouth; single continuous dorsal fin.",
+    "sources": [
+      {
+        "title": "FishBase: Abudefduf saxatilis",
+        "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Abudefduf saxatilis",
+        "url": "https://www.iucnredlist.org/search?query=Abudefduf%20saxatilis",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "thalassoma-bifasciatum",
+    "commonName": "Bluehead wrasse",
+    "scientificName": "Thalassoma bifasciatum",
+    "kind": "fish",
+    "family": "Labridae",
+    "lengthCm": {
+      "min": 5,
+      "common": 10,
+      "max": 25,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0101,
+      "b": 3.06
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.7,
+      "stamina": 1.5
+    },
+    "silhouette": "wrasse",
+    "tint": {
+      "body": "#f2d530",
+      "accent": "#2a6fd6"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 2,
+    "description": "A darting, cigar-shaped reef fish seen in clouds of yellow juveniles over every coral head. Only the largest individuals wear the blue head and green body. Blueheads are busy daytime feeders that steal bait with tiny mouths, then vanish at sunset to sleep in cracks in the reef.",
+    "facts": [
+      "Most start life as yellow females; the largest can change sex and become blue-headed males.",
+      "Young blueheads run cleaning stations, picking parasites from bigger fish.",
+      "They are strictly active by day and hide in the reef at night."
+    ],
+    "visualNotes": "Slender, elongate wrasse. Common phase: bright yellow with a dark mid-side stripe. Terminal male: blue head, two black bars separated by a pale band behind the head, green rear body, lunate tail.",
+    "sources": [
+      {
+        "title": "FishBase: Thalassoma bifasciatum",
+        "url": "https://www.fishbase.se/summary/Thalassoma-bifasciatum.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Thalassoma bifasciatum",
+        "url": "https://www.iucnredlist.org/search?query=Thalassoma%20bifasciatum",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "haemulon-flavolineatum",
+    "commonName": "French grunt",
+    "scientificName": "Haemulon flavolineatum",
+    "kind": "fish",
+    "family": "Haemulidae",
+    "lengthCm": {
+      "min": 8,
+      "common": 17,
+      "max": 30,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0155,
+      "b": 3.03
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 0.9,
+      "stamina": 3
+    },
+    "silhouette": "grunt",
+    "tint": {
+      "body": "#f0c93a",
+      "accent": "#8fbfe0"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 4,
+    "description": "A yellow-striped schooling fish that hangs in the shade of the reef by day and fans out over sand and seagrass after dark to feed. Hauled from the water it protests with an audible croak. French grunts are steady, honest biters and a staple of any island cooking fire.",
+    "facts": [
+      "Grunts make their sound by grinding teeth in the throat; the swim bladder amplifies it.",
+      "Schools rest over the reef by day and leave at dusk to forage, returning at dawn.",
+      "The stripes below the lateral line run diagonally, which separates it from other grunts."
+    ],
+    "visualNotes": "Snapper-like body with a sloping forehead; yellow stripes on a pale silver-blue ground, horizontal above the lateral line and diagonal below it; yellow fins; forked tail; mouth lining red.",
+    "sources": [
+      {
+        "title": "FishBase: Haemulon flavolineatum",
+        "url": "https://www.fishbase.se/summary/Haemulon-flavolineatum.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Haemulon flavolineatum",
+        "url": "https://www.iucnredlist.org/search?query=Haemulon%20flavolineatum",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Haemulon flavolineatum",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/haemulon-flavolineatum/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "gerres-cinereus",
+    "commonName": "Yellowfin mojarra",
+    "scientificName": "Gerres cinereus",
+    "kind": "fish",
+    "family": "Gerreidae",
+    "lengthCm": {
+      "min": 8,
+      "common": 20,
+      "max": 41,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0137,
+      "b": 3.07
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.9,
+      "stamina": 3
+    },
+    "silhouette": "mojarra",
+    "tint": {
+      "body": "#d3dadc",
+      "accent": "#e8d44a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 4,
+    "description": "A silvery, mirror-sided fish of sandy shallows, drifting in loose groups over the flats and around mangrove roots. Its mouth shoots forward into a tube to pluck worms and small crustaceans from the sand. Mojarras are nervous and quick, and are themselves prime food for everything larger on the flat.",
+    "facts": [
+      "The mouth is highly protrusible and extends downward like a short hose.",
+      "The pelvic fins are yellow, which gives the fish its common name.",
+      "It tolerates brackish water and enters lagoons and creek mouths."
+    ],
+    "visualNotes": "Compressed, diamond-shaped silver body with about seven faint dusky pinkish bars; yellow pelvic fins; deeply forked tail; pointed snout with a mouth that extends downward.",
+    "sources": [
+      {
+        "title": "FishBase: Gerres cinereus",
+        "url": "https://www.fishbase.se/summary/Gerres-cinereus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Gerres cinereus",
+        "url": "https://www.iucnredlist.org/search?query=Gerres%20cinereus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "ocyurus-chrysurus",
+    "commonName": "Yellowtail snapper",
+    "scientificName": "Ocyurus chrysurus",
+    "kind": "fish",
+    "family": "Lutjanidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 34,
+      "max": 86,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0245,
+      "b": 2.79
+    },
+    "recordNote": "IGFA all-tackle record is roughly 5 kg.",
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.1,
+      "stamina": 7
+    },
+    "silhouette": "yellowtail",
+    "tint": {
+      "body": "#a9bfdd",
+      "accent": "#f1d234"
+    },
+    "conservation": {
+      "iucn": "DD",
+      "releaseOnly": false
+    },
+    "baseValue": 12,
+    "description": "A streamlined snapper that feeds up in the water column rather than on the bottom, often in wary schools above the reef edge. A yellow stripe runs from the snout into a deeply forked yellow tail. Big ones, called flags, are sharp-eyed and line-shy, and bite best in low light.",
+    "facts": [
+      "Unlike most snappers it feeds well above the bottom, on plankton, shrimp and small fish.",
+      "Anglers call large yellowtail 'flags' for the way the tail waves.",
+      "It is one of the most important food fish of the Caribbean reef fishery."
+    ],
+    "visualNotes": "Streamlined body; bluish-olive back with yellow spots; bold yellow mid-lateral stripe from snout widening into a deeply forked, entirely yellow tail; pale belly with fine pink and yellow lines.",
+    "sources": [
+      {
+        "title": "FishBase: Ocyurus chrysurus",
+        "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Ocyurus chrysurus",
+        "url": "https://www.iucnredlist.org/search?query=Ocyurus%20chrysurus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Ocyurus chrysurus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "lutjanus-apodus",
+    "commonName": "Schoolmaster",
+    "scientificName": "Lutjanus apodus",
+    "kind": "fish",
+    "family": "Lutjanidae",
+    "lengthCm": {
+      "min": 10,
+      "common": 28,
+      "max": 67,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0166,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 1.2,
+      "stamina": 8
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#c9b46a",
+      "accent": "#f0d030"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 10,
+    "description": "A stout, brassy snapper with all-yellow fins that idles by day in the shelter of coral branches and mangrove roots. As the light fails it moves out to hunt crabs, shrimp and small fish. Hooked, it bores straight for the nearest hole, so the first seconds decide the fight.",
+    "facts": [
+      "Schoolmasters spend the day sheltering in groups and feed mostly at night.",
+      "Juveniles grow up among mangrove roots before moving to the reef.",
+      "A blue line under the eye breaks into dashes as the fish ages."
+    ],
+    "visualNotes": "Robust snapper; olive-grey to brassy back with eight narrow pale vertical bars; all fins yellow; pointed snout with large canine teeth; shallow-forked tail; thin blue line under the eye.",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus apodus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Lutjanus apodus",
+        "url": "https://www.iucnredlist.org/search?query=Lutjanus%20apodus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus apodus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-apodus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "id": "holocentrus-adscensionis",
+    "commonName": "Squirrelfish",
+    "scientificName": "Holocentrus adscensionis",
+    "kind": "fish",
+    "family": "Holocentridae",
+    "lengthCm": {
+      "min": 10,
+      "common": 25,
+      "max": 61,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0195,
+      "b": 2.95
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 1.0,
+      "stamina": 5
+    },
+    "silhouette": "squirrel",
+    "tint": {
+      "body": "#e0553f",
+      "accent": "#f4e6c8"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 6,
+    "description": "A red, spiny fish with enormous dark eyes built for the night. By day squirrelfish hide deep in caves and under ledges. After sunset they come out to hunt crabs and shrimp over the rocks, clicking and grunting at intruders. Handle one with care: the gill cover carries a sharp spine.",
+    "facts": [
+      "The oversized eyes gather light for hunting at night.",
+      "Squirrelfish defend their crevices with clicks and grunts made by the swim bladder.",
+      "The front dorsal fin is yellowish and very spiny."
+    ],
+    "visualNotes": "Reddish body with paler silver-pink stripes; very large dark eye; spiny yellowish front dorsal fin; long upper tail lobe on a deeply forked tail; stout spine on the gill cover.",
+    "sources": [
+      {
+        "title": "FishBase: Holocentrus adscensionis",
+        "url": "https://www.fishbase.se/summary/Holocentrus-adscensionis.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Holocentrus adscensionis",
+        "url": "https://www.iucnredlist.org/search?query=Holocentrus%20adscensionis",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "gymnothorax-moringa",
+    "commonName": "Spotted moray",
+    "scientificName": "Gymnothorax moringa",
+    "kind": "fish",
+    "family": "Muraenidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 60,
+      "max": 120,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0007,
+      "b": 3.2
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 1.5,
+      "stamina": 12
+    },
+    "silhouette": "eel",
+    "tint": {
+      "body": "#e3d9ae",
+      "accent": "#3a2f2a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 8,
+    "description": "A muscular, speckled eel that spends the day with only its head showing from a hole in the reef, mouth working as it breathes. At night it leaves the hole and hunts by smell, pouring through cracks after sleeping fish. On a hook it ties itself in knots and is nothing but trouble.",
+    "facts": [
+      "Morays have a second set of jaws in the throat that shoots forward to drag prey down.",
+      "The gaping mouth is breathing, not a threat: it pumps water over the gills.",
+      "It hunts mainly at night and finds prey by scent."
+    ],
+    "visualNotes": "Long, scaleless eel body; pale cream to yellowish ground densely covered in dark brown-purple spots and blotches; continuous dorsal fin from behind the head to the tail tip; no pectoral fins; small round gill opening.",
+    "sources": [
+      {
+        "title": "FishBase: Gymnothorax moringa",
+        "url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, habitat (max length in game is capped below the largest reported)"
+      },
+      {
+        "title": "IUCN Red List: Gymnothorax moringa",
+        "url": "https://www.iucnredlist.org/search?query=Gymnothorax%20moringa",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "caranx-ruber",
+    "commonName": "Bar jack",
+    "scientificName": "Caranx ruber",
+    "kind": "fish",
+    "family": "Carangidae",
+    "lengthCm": {
+      "min": 15,
+      "common": 38,
+      "max": 69,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.0166,
+      "b": 2.98
+    },
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.6,
+      "stamina": 10
+    },
+    "silhouette": "jack",
+    "tint": {
+      "body": "#bccad8",
+      "accent": "#2a57c9"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 14,
+    "description": "A fast silver jack that patrols the reef edge in small packs, marked by a dark bar along the back that runs down into the lower tail lobe beside a stripe of electric blue. Bar jacks often shadow feeding stingrays to snap up whatever they flush. They chase moving prey and little else.",
+    "facts": [
+      "Bar jacks follow stingrays and goatfish to catch prey those fish stir up.",
+      "The dark bar and blue stripe along the back make it easy to tell from other jacks.",
+      "Many authorities now place it in the genus Carangoides."
+    ],
+    "visualNotes": "Streamlined silver jack; dark bar along the base of the dorsal fin continuing onto the lower tail lobe, bordered by an electric blue stripe; deeply forked tail; bony scutes along the rear lateral line.",
+    "sources": [
+      {
+        "title": "FishBase: Caranx ruber",
+        "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Caranx ruber",
+        "url": "https://www.iucnredlist.org/search?query=Caranx%20ruber",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "tylosurus-crocodilus",
+    "commonName": "Houndfish",
+    "scientificName": "Tylosurus crocodilus",
+    "kind": "fish",
+    "family": "Belonidae",
+    "lengthCm": {
+      "min": 40,
+      "common": 85,
+      "max": 150,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.001,
+      "b": 3.1
+    },
+    "recordNote": "Reported to about 1.5 m and a little over 6 kg.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.3,
+      "stamina": 10
+    },
+    "silhouette": "needle",
+    "tint": {
+      "body": "#7fb0a8",
+      "accent": "#d8e4e6"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 10,
+    "description": "The largest of the needlefishes: a green-backed arrow that hangs just under the surface and strikes small fish with a long beak full of teeth. Startled, it leaves the water entirely and skitters across the top at speed. It hits moving lures hard and spends half the fight in the air.",
+    "facts": [
+      "Houndfish leap toward lights at night and have injured people in small boats.",
+      "Its bones are green, coloured by the pigment biliverdin.",
+      "It is the largest member of the needlefish family."
+    ],
+    "visualNotes": "Very elongate, cylindrical body; long narrow beak with many needle teeth; dark blue-green back and silver flanks; dorsal and anal fins set far back near the tail; small dark keel on the tail stalk; forked tail with larger lower lobe.",
+    "sources": [
+      {
+        "title": "FishBase: Tylosurus crocodilus",
+        "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Tylosurus crocodilus",
+        "url": "https://www.iucnredlist.org/search?query=Tylosurus%20crocodilus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "albula-vulpes",
+    "commonName": "Bonefish",
+    "scientificName": "Albula vulpes",
+    "kind": "fish",
+    "family": "Albulidae",
+    "lengthCm": {
+      "min": 20,
+      "common": 48,
+      "max": 90,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.0115,
+      "b": 3.0
+    },
+    "recordNote": "IGFA all-tackle record is a little over 8.5 kg.",
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 2.0,
+      "stamina": 18
+    },
+    "silhouette": "bonefish",
+    "tint": {
+      "body": "#d2dadd",
+      "accent": "#8fa3ad"
+    },
+    "conservation": {
+      "iucn": "NT",
+      "releaseOnly": false
+    },
+    "baseValue": 30,
+    "description": "The grey ghost of the flats: a mirror-sided torpedo that slides onto ankle-deep sand with the rising water to root out crabs and shrimp. Its tail tips out of the surface as it digs. Pricked by a hook, a bonefish leaves in a single run faster and longer than seems possible for its size.",
+    "facts": [
+      "A hooked bonefish can take more than a hundred metres of line on its first run.",
+      "'Tailing' fish are feeding head-down in water shallower than they are tall.",
+      "It crushes crabs and shellfish with rounded teeth on the tongue and palate."
+    ],
+    "visualNotes": "Slender, torpedo-shaped silver fish; conical snout overhanging a small underslung mouth; single dorsal fin; deeply forked tail; faint dusky bars across the back; bluish-green tint above.",
+    "sources": [
+      {
+        "title": "FishBase: Albula vulpes",
+        "url": "https://www.fishbase.se/summary/Albula-vulpes.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Albula vulpes",
+        "url": "https://www.iucnredlist.org/search?query=Albula%20vulpes",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Albula vulpes",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/albula-vulpes/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "lutjanus-analis",
+    "commonName": "Mutton snapper",
+    "scientificName": "Lutjanus analis",
+    "kind": "fish",
+    "family": "Lutjanidae",
+    "lengthCm": {
+      "min": 20,
+      "common": 50,
+      "max": 94,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0156,
+      "b": 3.0
+    },
+    "recordNote": "IGFA all-tackle record is about 15 kg.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.5,
+      "stamina": 30
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#d98f7a",
+      "accent": "#5aa0d0"
+    },
+    "conservation": {
+      "iucn": "NT",
+      "releaseOnly": false
+    },
+    "baseValue": 40,
+    "description": "A big, handsome snapper, olive above and brick-red below, with a small black spot on each flank and blue lines under the eye. Muttons are solitary and careful, working the reef edge and sand patches for crabs and fish. They gather in great numbers to spawn around the full moons of late spring.",
+    "facts": [
+      "Mutton snapper form large spawning aggregations around full moons from about April to June.",
+      "The pointed anal fin and the black spot on the upper side set it apart from other snappers.",
+      "Several Caribbean countries close the fishery during the spawning season."
+    ],
+    "visualNotes": "Deep-bodied snapper; olive back, reddish flanks and fins; small black spot on the upper side below the soft dorsal; two blue lines on the cheek under the eye; pointed anal fin; crescent tail with a dark edge.",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus analis",
+        "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Lutjanus analis",
+        "url": "https://www.iucnredlist.org/search?query=Lutjanus%20analis",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus analis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "trachinotus-falcatus",
+    "commonName": "Permit",
+    "scientificName": "Trachinotus falcatus",
+    "kind": "fish",
+    "family": "Carangidae",
+    "lengthCm": {
+      "min": 25,
+      "common": 55,
+      "max": 110,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.0263,
+      "b": 2.9
+    },
+    "recordNote": "IGFA all-tackle record is about 27 kg.",
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.7,
+      "stamina": 36
+    },
+    "silhouette": "permit",
+    "tint": {
+      "body": "#cfd8dc",
+      "accent": "#e8a03a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 80,
+    "description": "A tall, slab-sided silver fish with sickle fins and the best eyesight on the flats. Permit tip down to crush crabs in the sand and will ignore nearly anything else, including a perfect cast. Anglers spend years trying for one. Hooked, it uses its deep body side-on to the pull and never gives up.",
+    "facts": [
+      "Permit eat mostly crabs, crushing them with bony plates in the throat.",
+      "Bonefish, permit and tarpon in one day is the angler's 'grand slam'.",
+      "The black sickle tips of the dorsal fin and tail often show above the water when it feeds."
+    ],
+    "visualNotes": "Very deep, laterally compressed silver body with a blunt rounded head; long sickle-shaped second dorsal and anal fins; deeply forked tail with dark edges; often an orange-yellow patch on the belly ahead of the anal fin.",
+    "sources": [
+      {
+        "title": "FishBase: Trachinotus falcatus",
+        "url": "https://www.fishbase.se/summary/Trachinotus-falcatus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Trachinotus falcatus",
+        "url": "https://www.iucnredlist.org/search?query=Trachinotus%20falcatus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Trachinotus falcatus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/trachinotus-falcatus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "sphyraena-barracuda",
+    "commonName": "Great barracuda",
+    "scientificName": "Sphyraena barracuda",
+    "kind": "fish",
+    "family": "Sphyraenidae",
+    "lengthCm": {
+      "min": 35,
+      "common": 85,
+      "max": 200,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.005,
+      "b": 3.0
+    },
+    "recordNote": "IGFA all-tackle record is about 46 kg.",
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.5,
+      "stamina": 28
+    },
+    "silhouette": "barracuda",
+    "tint": {
+      "body": "#b2c0c8",
+      "accent": "#2b3338"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 35,
+    "description": "A long silver pike of a fish with an underslung jaw full of fangs. Barracuda hang motionless near the reef edge or drift over the flats, watching, then cover the distance to a meal in an instant. Anything that flashes gets a look. The strike is violent and the first run is fast.",
+    "facts": [
+      "It relies on a short burst of speed, often quoted at over 12 metres a second.",
+      "It hunts by sight and is drawn to shiny, flashing objects.",
+      "Large reef barracuda can carry ciguatera toxin, so island cooks prefer small ones."
+    ],
+    "visualNotes": "Long, cylindrical silver body; pointed head with a jutting lower jaw and large fang-like teeth; two widely separated dorsal fins; scattered inky black blotches on the lower flank; dark forked tail with pale tips.",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Sphyraena barracuda",
+        "url": "https://www.iucnredlist.org/search?query=Sphyraena%20barracuda",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Sphyraena barracuda",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "megalops-atlanticus",
+    "commonName": "Tarpon",
+    "scientificName": "Megalops atlanticus",
+    "kind": "fish",
+    "family": "Megalopidae",
+    "lengthCm": {
+      "min": 60,
+      "common": 130,
+      "max": 250,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0074,
+      "b": 3.0
+    },
+    "recordNote": "IGFA all-tackle record is about 130 kg, from West Africa.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 2.2,
+      "stamina": 90
+    },
+    "silhouette": "tarpon",
+    "tint": {
+      "body": "#ccd6db",
+      "accent": "#6f8791"
+    },
+    "conservation": {
+      "iucn": "VU",
+      "releaseOnly": true,
+      "note": "Vulnerable. A catch-and-release game fish across most of its range."
+    },
+    "baseValue": 0,
+    "description": "The silver king: a giant, armour-scaled fish with an upturned bucket of a mouth. Tarpon roll at the surface to gulp air, flashing like sheet metal at first light. The take is soft. What follows is not: a head-shaking leap clear of the water, then another, and usually a slack line.",
+    "facts": [
+      "Tarpon gulp air into a lung-like swim bladder, so they 'roll' at the surface.",
+      "A single scale from a big fish can be wider than a palm.",
+      "They can live for more than fifty years."
+    ],
+    "visualNotes": "Massive, elongate silver body covered in very large scales; dark blue-green back; large upturned mouth with a protruding bony lower jaw; single dorsal fin whose last ray is drawn out into a long filament; deeply forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Megalops atlanticus",
+        "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, lengths, length-weight parameters, habitat"
+      },
+      {
+        "title": "IUCN Red List: Megalops atlanticus",
+        "url": "https://www.iucnredlist.org/search?query=Megalops%20atlanticus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "Florida Museum species profile: Megalops atlanticus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      },
+      {
+        "title": "IGFA world records",
+        "url": "https://igfa.org/world-records/",
+        "accessed": "pending-review",
+        "supports": "record size (flavour only)"
+      }
+    ]
+  },
+  {
+    "id": "panulirus-argus",
+    "commonName": "Caribbean spiny lobster",
+    "scientificName": "Panulirus argus",
+    "kind": "crustacean",
+    "family": "Palinuridae",
+    "lengthCm": {
+      "min": 5,
+      "common": 9,
+      "max": 20,
+      "measure": "CL"
+    },
+    "lengthWeight": {
+      "a": 2.0,
+      "b": 2.75
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "lobster",
+    "tint": {
+      "body": "#b5653a",
+      "accent": "#f1d9a0"
+    },
+    "conservation": {
+      "iucn": "DD",
+      "releaseOnly": false,
+      "note": "Heavily fished. Most countries set a closed season and a minimum size."
+    },
+    "baseValue": 45,
+    "description": "A clawless lobster armed instead with two long, thorny antennae that it whips at anything that comes close. It spends the day packed into dens under ledges with only the antennae showing, and walks the reef at night to feed. In autumn storms, lobsters migrate in long single files across open sand.",
+    "facts": [
+      "It has no claws; the spiny antennae are its defence.",
+      "Migrating lobsters walk in single-file queues, each touching the one ahead.",
+      "It can navigate using the Earth's magnetic field."
+    ],
+    "visualNotes": "Cylindrical spiny carapace, brown to reddish with cream spots; two very long thick antennae covered in forward-pointing spines; no large claws; four large cream spots on the tail; broad tail fan.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Panulirus argus",
+        "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      },
+      {
+        "title": "IUCN Red List: Panulirus argus",
+        "url": "https://www.iucnredlist.org/search?query=Panulirus%20argus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "octopus-briareus",
+    "commonName": "Caribbean reef octopus",
+    "scientificName": "Octopus briareus",
+    "kind": "cephalopod",
+    "family": "Octopodidae",
+    "lengthCm": {
+      "min": 4,
+      "common": 8,
+      "max": 12,
+      "measure": "ML"
+    },
+    "lengthWeight": {
+      "a": 1.6,
+      "b": 2.6
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "octopus",
+    "tint": {
+      "body": "#5fa79b",
+      "accent": "#c9e6d8"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 30,
+    "description": "A night-hunting octopus with an iridescent blue-green sheen. It flows over the reef after dark and throws the webbing between its arms over a coral head like a cast net, then feels underneath for crabs and shrimp. By day it is sealed into a den and almost impossible to find.",
+    "facts": [
+      "It spreads its arm web into a tent over coral to trap the animals hiding inside.",
+      "It is strictly nocturnal and lives for only about a year.",
+      "It can change both colour and skin texture in a moment."
+    ],
+    "visualNotes": "Rounded mantle with long arms of unequal length joined by deep webbing; pale blue-green iridescent skin with brown mottling; dark ring around each eye.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Octopus briareus",
+        "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      },
+      {
+        "title": "IUCN Red List: Octopus briareus",
+        "url": "https://www.iucnredlist.org/search?query=Octopus%20briareus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "ocypode-quadrata",
+    "commonName": "Atlantic ghost crab",
+    "scientificName": "Ocypode quadrata",
+    "kind": "crustacean",
+    "family": "Ocypodidae",
+    "lengthCm": {
+      "min": 2,
+      "common": 4,
+      "max": 5.5,
+      "measure": "CW"
+    },
+    "lengthWeight": {
+      "a": 0.5,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "crab",
+    "tint": {
+      "body": "#e6dcc0",
+      "accent": "#8a7f66"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": false
+    },
+    "baseValue": 1,
+    "gathersAs": {
+      "item": "small-crab",
+      "qty": 1
+    },
+    "description": "A pale, square-bodied crab the colour of dry sand, with eyes on tall stalks. It spends the heat of the day in a deep burrow above the tide line and comes out at dusk to scavenge the beach, moving sideways in sudden sprints and stopping dead so it seems to vanish.",
+    "facts": [
+      "It can run at over three metres a second.",
+      "The stalked eyes swivel to give it all-round vision.",
+      "It wets its gills by drawing water up from damp sand."
+    ],
+    "visualNotes": "Square, box-like sand-coloured carapace; large club-shaped eyes on long stalks; one claw larger than the other; long pale walking legs with fine hairs.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Ocypode quadrata",
+        "url": "https://www.sealifebase.se/summary/Ocypode-quadrata.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      }
+    ]
+  },
+  {
+    "id": "grapsus-grapsus",
+    "commonName": "Sally Lightfoot crab",
+    "scientificName": "Grapsus grapsus",
+    "kind": "crustacean",
+    "family": "Grapsidae",
+    "lengthCm": {
+      "min": 3,
+      "common": 6,
+      "max": 8,
+      "measure": "CW"
+    },
+    "lengthWeight": {
+      "a": 0.5,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "crab",
+    "tint": {
+      "body": "#c8402c",
+      "accent": "#f0c060"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": false
+    },
+    "baseValue": 3,
+    "gathersAs": {
+      "item": "small-crab",
+      "qty": 2
+    },
+    "description": "A flat, brilliantly red and orange crab that clings to wave-washed rock just above the waterline, grazing on algae. It is astonishingly quick, running in any direction and skipping across gaps between rocks. Young crabs are dark and speckled to match the stone and brighten with each moult.",
+    "facts": [
+      "It can run in any direction and briefly skip across the surface of the water.",
+      "Juveniles are dark for camouflage; adults turn red and orange.",
+      "It feeds mainly on algae scraped from the rocks."
+    ],
+    "visualNotes": "Flat, rounded carapace; adults bright red-orange above with a pale blue-white underside; spoon-tipped claws; long flattened legs; juveniles blackish with pale spots.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Grapsus grapsus",
+        "url": "https://www.sealifebase.se/summary/Grapsus-grapsus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      }
+    ]
+  },
+  {
+    "id": "emerita-portoricensis",
+    "commonName": "Puerto Rican sand crab",
+    "scientificName": "Emerita portoricensis",
+    "kind": "crustacean",
+    "family": "Hippidae",
+    "lengthCm": {
+      "min": 1,
+      "common": 2,
+      "max": 3,
+      "measure": "CL"
+    },
+    "lengthWeight": {
+      "a": 0.6,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "molecrab",
+    "tint": {
+      "body": "#cbb9a0",
+      "accent": "#8f8068"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": false
+    },
+    "baseValue": 0,
+    "gathersAs": {
+      "item": "sand-flea",
+      "qty": 1
+    },
+    "description": "The 'sand flea' of Caribbean beaches: a barrel-shaped mole crab that lives in the wash of the waves. It burrows backward into wet sand in a second or two and raises feathery antennae to strain food from each retreating wave. Nearly every fish on the flats will eat one.",
+    "facts": [
+      "It only ever moves backward.",
+      "It feeds by netting plankton from the backwash with its antennae.",
+      "Colonies move up and down the beach with the tide."
+    ],
+    "visualNotes": "Small, smooth, egg-shaped carapace, sand-grey to pale tan; no claws; short paddle-like legs tucked under the body; feathery antennae; pointed tail plate folded beneath.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Emerita portoricensis",
+        "url": "https://www.sealifebase.se/summary/Emerita-portoricensis.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      }
+    ]
+  },
+  {
+    "id": "aliger-gigas",
+    "commonName": "Queen conch",
+    "scientificName": "Aliger gigas",
+    "kind": "mollusc",
+    "family": "Strombidae",
+    "lengthCm": {
+      "min": 10,
+      "common": 22,
+      "max": 35,
+      "measure": "SH"
+    },
+    "lengthWeight": {
+      "a": 0.12,
+      "b": 3.1
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "conch",
+    "tint": {
+      "body": "#e8a48c",
+      "accent": "#f6d9c8"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": true,
+      "note": "CITES Appendix II. Listed as threatened under the US Endangered Species Act in 2024. Protected or tightly managed across the Caribbean."
+    },
+    "baseValue": 0,
+    "description": "A great pink-lipped sea snail of seagrass and sand flats. It does not glide like other snails but vaults forward on a clawed foot, peering about with eyes on long stalks. A conch needs several years to grow its flared lip, and overfishing has emptied many of the shallows it once filled.",
+    "facts": [
+      "It moves in hops, digging a claw-like operculum into the sand and vaulting forward.",
+      "The flared shell lip appears only when the animal matures, at three to five years.",
+      "It can live for twenty to thirty years."
+    ],
+    "visualNotes": "Large heavy spiral shell with blunt spines on the spire; broad flared outer lip, glossy pink to orange inside; sandy tan outside, often overgrown with algae; eyes on long stalks.",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Aliger gigas",
+        "url": "https://www.sealifebase.se/summary/Aliger-gigas.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, habitat"
+      },
+      {
+        "title": "NOAA Fisheries: Queen conch",
+        "url": "https://www.fisheries.noaa.gov/species/queen-conch",
+        "accessed": "pending-review",
+        "supports": "protected status, biology"
+      }
+    ]
+  },
+  {
+    "id": "chelonia-mydas",
+    "commonName": "Green turtle",
+    "scientificName": "Chelonia mydas",
+    "kind": "sighting",
+    "family": "Cheloniidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 90,
+      "max": 120,
+      "measure": "CL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "turtle",
+    "tint": {
+      "body": "#6a8a5a",
+      "accent": "#c8b98a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": true,
+      "note": "Reassessed from Endangered to Least Concern in 2025 after decades of protection. Still legally protected."
+    },
+    "baseValue": 0,
+    "description": "A large sea turtle that grazes seagrass beds in the lagoon like a slow underwater cow, surfacing every few minutes for a breath. Adults are almost entirely vegetarian. Females cross hundreds of kilometres of open sea to lay their eggs on the beach where they themselves hatched.",
+    "facts": [
+      "It is named for the green colour of its body fat, not its shell.",
+      "Adults eat mostly seagrass and algae.",
+      "Females return to nest in the region where they hatched."
+    ],
+    "visualNotes": "Smooth, heart-shaped carapace in olive-brown with radiating streaks; small blunt head with a single pair of scales between the eyes; paddle-shaped flippers edged in pale yellow.",
+    "sources": [
+      {
+        "title": "IUCN Red List: Chelonia mydas",
+        "url": "https://www.iucnredlist.org/search?query=Chelonia%20mydas",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "NOAA Fisheries: Green turtle",
+        "url": "https://www.fisheries.noaa.gov/species/green-turtle",
+        "accessed": "pending-review",
+        "supports": "biology, nesting, diet"
+      }
+    ]
+  },
+  {
+    "id": "hypanus-americanus",
+    "commonName": "Southern stingray",
+    "scientificName": "Hypanus americanus",
+    "kind": "sighting",
+    "family": "Dasyatidae",
+    "lengthCm": {
+      "min": 40,
+      "common": 90,
+      "max": 150,
+      "measure": "CW"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "ray",
+    "tint": {
+      "body": "#7a7466",
+      "accent": "#b8b09c"
+    },
+    "conservation": {
+      "iucn": "NT",
+      "releaseOnly": true
+    },
+    "baseValue": 0,
+    "description": "A broad, diamond-shaped ray that glides over sand flats and settles to the bottom under a dusting of sand, with only its eyes showing. It feeds by blowing and flapping pits into the sand to uncover clams, worms and crabs, and bar jacks often trail it to steal what escapes.",
+    "facts": [
+      "It buries itself in sand with only the eyes and spiracles exposed.",
+      "Other fish follow feeding rays to catch flushed prey.",
+      "Females grow much larger than males."
+    ],
+    "visualNotes": "Flat diamond-shaped disc with pointed wing tips; olive-brown to grey above, white below; long whip tail with a serrated spine near its base; eyes raised on top of the head.",
+    "sources": [
+      {
+        "title": "FishBase: Hypanus americanus",
+        "url": "https://www.fishbase.se/summary/Hypanus-americanus.html",
+        "accessed": "pending-review",
+        "supports": "taxonomy, size, behaviour"
+      },
+      {
+        "title": "IUCN Red List: Hypanus americanus",
+        "url": "https://www.iucnredlist.org/search?query=Hypanus%20americanus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      }
+    ]
+  },
+  {
+    "id": "tursiops-truncatus",
+    "commonName": "Bottlenose dolphin",
+    "scientificName": "Tursiops truncatus",
+    "kind": "sighting",
+    "family": "Delphinidae",
+    "lengthCm": {
+      "min": 190,
+      "common": 270,
+      "max": 380,
+      "measure": "TL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "dolphin",
+    "tint": {
+      "body": "#7f8c96",
+      "accent": "#d5dce0"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": true
+    },
+    "baseValue": 0,
+    "description": "A grey, powerful dolphin that travels the reef edge in small family groups, most often at first and last light. Dolphins find fish by echolocation and sometimes drive a school against the shallows to trap it. When they pass through, the fishing usually goes quiet for a while.",
+    "facts": [
+      "Each dolphin has a signature whistle that works like a name.",
+      "They sleep with half the brain at a time so they can keep surfacing to breathe.",
+      "They locate prey with clicks and listen for the echoes."
+    ],
+    "visualNotes": "Robust grey body, darker on the back and pale on the belly; short stubby beak; tall curved dorsal fin in the middle of the back; horizontal tail flukes.",
+    "sources": [
+      {
+        "title": "IUCN Red List: Tursiops truncatus",
+        "url": "https://www.iucnredlist.org/search?query=Tursiops%20truncatus",
+        "accessed": "pending-review",
+        "supports": "conservation status"
+      },
+      {
+        "title": "NOAA Fisheries: Common bottlenose dolphin",
+        "url": "https://www.fisheries.noaa.gov/species/common-bottlenose-dolphin",
+        "accessed": "pending-review",
+        "supports": "biology, behaviour"
+      }
+    ]
+  }
+]

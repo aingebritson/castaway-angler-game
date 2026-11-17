@@ -1,0 +1,84 @@
+[
+  {
+    "speciesId": "ocypode-quadrata",
+    "locationId": "beach",
+    "zones": [
+      "sand"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 0.6,
+      "day": 0.1,
+      "dusk": 1.5,
+      "night": 1.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "hand"
+    ],
+    "affinity": {},
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Ocypode quadrata",
+        "url": "https://www.sealifebase.se/summary/Ocypode-quadrata.html",
+        "accessed": "pending-review",
+        "supports": "upper beach burrows, mostly nocturnal"
+      }
+    ]
+  },
+  {
+    "speciesId": "emerita-portoricensis",
+    "locationId": "beach",
+    "zones": [
+      "swash"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1,
+      "night": 1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "hand"
+    ],
+    "affinity": {},
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Emerita portoricensis",
+        "url": "https://www.sealifebase.se/summary/Emerita-portoricensis.html",
+        "accessed": "pending-review",
+        "supports": "swash zone of sandy beaches"
+      }
+    ]
+  }
+]

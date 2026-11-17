@@ -1,0 +1,77 @@
+[
+  {
+    "id": "reef-junk",
+    "entries": [
+      {
+        "item": "driftwood",
+        "weight": 5
+      },
+      {
+        "item": "rope",
+        "weight": 3
+      },
+      {
+        "item": "plank",
+        "weight": 2
+      },
+      {
+        "item": "sea-glass",
+        "weight": 2
+      },
+      {
+        "item": "message-bottle",
+        "weight": 2
+      },
+      {
+        "item": "crate",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "lagoon-junk",
+    "entries": [
+      {
+        "item": "driftwood",
+        "weight": 4
+      },
+      {
+        "item": "shell",
+        "weight": 4
+      },
+      {
+        "item": "sea-glass",
+        "weight": 2
+      },
+      {
+        "item": "message-bottle",
+        "weight": 2
+      },
+      {
+        "item": "canvas",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "beach-wrack",
+    "entries": [
+      {
+        "item": "rope",
+        "weight": 3
+      },
+      {
+        "item": "plank",
+        "weight": 3
+      },
+      {
+        "item": "canvas",
+        "weight": 2
+      },
+      {
+        "item": "message-bottle",
+        "weight": 2
+      }
+    ]
+  }
+]

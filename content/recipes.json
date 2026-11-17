@@ -1,0 +1,515 @@
+[
+  {
+    "id": "shell-hook",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "shell",
+        "qty": 2
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "shell-hook",
+      "qty": 1
+    },
+    "known": "start",
+    "blurb": "Grind one shell against another until it hooks."
+  },
+  {
+    "id": "hammerstone",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "stone",
+        "qty": 2
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "hammerstone",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Strike stone on stone until one fits the hand."
+  },
+  {
+    "id": "stone-knife",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "stone",
+        "qty": 2
+      },
+      {
+        "item": "vine",
+        "qty": 1
+      }
+    ],
+    "tools": [
+      "hammerstone"
+    ],
+    "output": {
+      "item": "stone-knife",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Knock a flake from a core and bind it to a handle."
+  },
+  {
+    "id": "cordage",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "coconut",
+        "qty": 1
+      },
+      {
+        "item": "palm-frond",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "cordage",
+      "qty": 2
+    },
+    "known": "discover",
+    "blurb": "Tease out the husk fibre and twist it wet."
+  },
+  {
+    "id": "coconut-meat",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "coconut",
+        "qty": 1
+      }
+    ],
+    "tools": [
+      "hammerstone"
+    ],
+    "output": {
+      "item": "coconut-meat",
+      "qty": 3
+    },
+    "known": "discover",
+    "blurb": "Crack it open on a rock."
+  },
+  {
+    "id": "bone-hook",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "fish-bone",
+        "qty": 1
+      }
+    ],
+    "tools": [
+      "stone-knife"
+    ],
+    "output": {
+      "item": "bone-hook",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Carve a gorge from a backbone."
+  },
+  {
+    "id": "coconut-float",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "coconut",
+        "qty": 1
+      },
+      {
+        "item": "cordage",
+        "qty": 1
+      }
+    ],
+    "tools": [
+      "stone-knife"
+    ],
+    "output": {
+      "item": "coconut-float",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "A disc of shell, drilled and pegged."
+  },
+  {
+    "id": "stone-sinker",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "stone",
+        "qty": 1
+      },
+      {
+        "item": "cordage",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "stone-sinker",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Peck a groove around a pebble and tie it on."
+  },
+  {
+    "id": "campfire",
+    "tier": 1,
+    "inputs": [
+      {
+        "item": "driftwood",
+        "qty": 4
+      },
+      {
+        "item": "stone",
+        "qty": 4
+      }
+    ],
+    "tools": [
+      "hammerstone"
+    ],
+    "output": {
+      "item": "campfire",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "A ring of stones and dry wood. Husk for tinder."
+  },
+  {
+    "id": "bamboo-rod",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "bamboo",
+        "qty": 2
+      },
+      {
+        "item": "cordage",
+        "qty": 2
+      }
+    ],
+    "tools": [
+      "stone-knife"
+    ],
+    "output": {
+      "item": "bamboo-rod",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "A long cane, whipped with cord at the grip and the tip."
+  },
+  {
+    "id": "braided-line",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "cordage",
+        "qty": 4
+      },
+      {
+        "item": "vine",
+        "qty": 2
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "braided-line",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Three strands, braided tight, rubbed with coconut oil."
+  },
+  {
+    "id": "feather-lure",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "feather",
+        "qty": 2
+      },
+      {
+        "item": "shell",
+        "qty": 1
+      },
+      {
+        "item": "bone-hook",
+        "qty": 1
+      },
+      {
+        "item": "cordage",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "feather-lure",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Feather for flutter, shell for flash, bone for the point."
+  },
+  {
+    "id": "woven-trap",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "palm-frond",
+        "qty": 6
+      },
+      {
+        "item": "vine",
+        "qty": 3
+      },
+      {
+        "item": "bamboo",
+        "qty": 2
+      }
+    ],
+    "tools": [
+      "stone-knife"
+    ],
+    "output": {
+      "item": "woven-trap",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "A basket with a funnel mouth. Easy in, hard out."
+  },
+  {
+    "id": "torch",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "bamboo",
+        "qty": 1
+      },
+      {
+        "item": "coconut",
+        "qty": 1
+      },
+      {
+        "item": "cordage",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "torch",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Split cane packed with husk and oil.",
+    "station": "campfire"
+  },
+  {
+    "id": "bait-basket",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "palm-frond",
+        "qty": 4
+      },
+      {
+        "item": "vine",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "bait-basket",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "A small lidded basket that keeps bait damp and alive."
+  },
+  {
+    "id": "drying-rack",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "bamboo",
+        "qty": 4
+      },
+      {
+        "item": "vine",
+        "qty": 2
+      },
+      {
+        "item": "driftwood",
+        "qty": 2
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "drying-rack",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Rails over the smoke.",
+    "station": "campfire"
+  },
+  {
+    "id": "bone-needle",
+    "tier": 2,
+    "inputs": [
+      {
+        "item": "fish-bone",
+        "qty": 2
+      }
+    ],
+    "tools": [
+      "stone-knife"
+    ],
+    "output": {
+      "item": "bone-needle",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Split a rib, grind a point, bore an eye."
+  },
+  {
+    "id": "raft-hull",
+    "tier": 3,
+    "inputs": [
+      {
+        "item": "driftwood",
+        "qty": 8
+      },
+      {
+        "item": "bamboo",
+        "qty": 6
+      },
+      {
+        "item": "plank",
+        "qty": 2
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "raft-hull",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Logs below, cane deck above."
+  },
+  {
+    "id": "raft-lashings",
+    "tier": 3,
+    "inputs": [
+      {
+        "item": "vine",
+        "qty": 6
+      },
+      {
+        "item": "cordage",
+        "qty": 4
+      },
+      {
+        "item": "rope",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "raft-lashings",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Every joint bound twice."
+  },
+  {
+    "id": "raft-mast",
+    "tier": 3,
+    "inputs": [
+      {
+        "item": "bamboo",
+        "qty": 3
+      },
+      {
+        "item": "rope",
+        "qty": 1
+      }
+    ],
+    "tools": [],
+    "output": {
+      "item": "raft-mast",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Three canes bound into one, stepped in the deck."
+  },
+  {
+    "id": "raft-sail",
+    "tier": 3,
+    "inputs": [
+      {
+        "item": "palm-frond",
+        "qty": 8
+      },
+      {
+        "item": "canvas",
+        "qty": 2
+      },
+      {
+        "item": "cordage",
+        "qty": 2
+      }
+    ],
+    "tools": [
+      "bone-needle"
+    ],
+    "output": {
+      "item": "raft-sail",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Frond matting sewn to sailcloth."
+  },
+  {
+    "id": "raft-oar",
+    "tier": 3,
+    "inputs": [
+      {
+        "item": "plank",
+        "qty": 1
+      },
+      {
+        "item": "bamboo",
+        "qty": 1
+      },
+      {
+        "item": "cordage",
+        "qty": 1
+      }
+    ],
+    "tools": [
+      "stone-knife"
+    ],
+    "output": {
+      "item": "raft-oar",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "A blade to steer by."
+  },
+  {
+    "id": "provisions",
+    "tier": 3,
+    "inputs": [],
+    "tools": [],
+    "output": {
+      "item": "provisions",
+      "qty": 1
+    },
+    "known": "discover",
+    "blurb": "Five smoked fish of at least three kinds.",
+    "special": "provisions"
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "id": "squirrelfish-night",
+    "speciesId": "holocentrus-adscensionis",
+    "dimension": "when",
+    "text": "Red fish with great dark eyes come out of the rock only after dark.",
+    "fillsCells": [
+      "phase:night",
+      "zone:rocky-point/shallows"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "bonefish-flats",
+    "speciesId": "albula-vulpes",
+    "dimension": "where",
+    "text": "Grey ghosts root across the lagoon flats with their tails in the air.",
+    "fillsCells": [
+      "zone:lagoon/flats"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "bonefish-bait",
+    "speciesId": "albula-vulpes",
+    "dimension": "bait",
+    "text": "They are after crabs and sand fleas, and nothing dead.",
+    "fillsCells": [
+      "bait:crustacean",
+      "bait:crab"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "barjack-lure",
+    "speciesId": "caranx-ruber",
+    "dimension": "method",
+    "text": "The blue-backed jacks at the reef edge ignore bait but hit a moving feather.",
+    "fillsCells": [
+      "bait:feather",
+      "zone:rocky-point/reef-edge"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "barracuda-flash",
+    "speciesId": "sphyraena-barracuda",
+    "dimension": "method",
+    "text": "The long toothed one will chase anything that flashes.",
+    "fillsCells": [
+      "bait:feather"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "barracuda-edge",
+    "speciesId": "sphyraena-barracuda",
+    "dimension": "where",
+    "text": "It hangs motionless just off the reef edge, watching.",
+    "fillsCells": [
+      "zone:rocky-point/reef-edge"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "lobster-trap",
+    "speciesId": "panulirus-argus",
+    "dimension": "method",
+    "text": "A baited basket left by the rocks overnight holds a whiskered lobster by morning.",
+    "fillsCells": [
+      "bait:trap",
+      "phase:night",
+      "zone:rocky-point/shallows"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "octopus-night",
+    "speciesId": "octopus-briareus",
+    "dimension": "when",
+    "text": "Something soft and blue-green walks the tide pools after dark.",
+    "fillsCells": [
+      "phase:night",
+      "zone:rocky-point/tide-pools"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "octopus-crab",
+    "speciesId": "octopus-briareus",
+    "dimension": "bait",
+    "text": "It emptied a trap baited with crab and left by the same door.",
+    "fillsCells": [
+      "bait:trap"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "permit-crab",
+    "speciesId": "trachinotus-falcatus",
+    "dimension": "bait",
+    "text": "The round silver fish with sickle fins will look at nothing but a crab.",
+    "fillsCells": [
+      "bait:crab"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "permit-flats",
+    "speciesId": "trachinotus-falcatus",
+    "dimension": "where",
+    "text": "They tip down on the lagoon flats and show black fin-tips above the water.",
+    "fillsCells": [
+      "zone:lagoon/flats"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "mutton-dusk",
+    "speciesId": "lutjanus-analis",
+    "dimension": "when",
+    "text": "Something red and heavy feeds at the reef edge as the light goes.",
+    "fillsCells": [
+      "phase:dusk",
+      "zone:rocky-point/reef-edge"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "mutton-bait",
+    "speciesId": "lutjanus-analis",
+    "dimension": "bait",
+    "text": "It took a strip of cut fish and went straight down.",
+    "fillsCells": [
+      "bait:cutfish"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "tarpon-dawn",
+    "speciesId": "megalops-atlanticus",
+    "dimension": "when",
+    "text": "At first light great silver fish roll in the lagoon channel, gulping air.",
+    "fillsCells": [
+      "phase:dawn",
+      "zone:lagoon/channel"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "tarpon-feather",
+    "speciesId": "megalops-atlanticus",
+    "dimension": "bait",
+    "text": "One took a feather lure and could not be turned. Not with island gear.",
+    "fillsCells": [
+      "bait:feather"
+    ],
+    "source": "The castaway's journal"
+  }
+]

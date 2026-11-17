@@ -1,0 +1,522 @@
+[
+  {
+    "id": "beach",
+    "name": "Wreck Beach",
+    "kind": "gather",
+    "habitat": "Sandy beach and swash zone",
+    "blurb": "Where the sea put you down. The tide leaves something new on the wrack line every day.",
+    "regionId": "castaway-island",
+    "lat": 17.3,
+    "lon": -87.6,
+    "tz": "device",
+    "solarTz": "America/Belize",
+    "unlock": [],
+    "zones": [
+      {
+        "id": "sand",
+        "name": "Upper beach",
+        "minCastRange": 0,
+        "junkRate": 0,
+        "junkTable": "beach-wrack",
+        "cast": false
+      },
+      {
+        "id": "swash",
+        "name": "Swash line",
+        "minCastRange": 0,
+        "junkRate": 0,
+        "junkTable": "beach-wrack",
+        "cast": false
+      }
+    ],
+    "sightZones": [],
+    "map": {
+      "x": 0.52,
+      "y": 0.76
+    },
+    "scene": {
+      "background": "scene/beach",
+      "painter": "beach",
+      "waterPolygon": [
+        [
+          0,
+          0.3
+        ],
+        [
+          1,
+          0.3
+        ],
+        [
+          1,
+          0.52
+        ],
+        [
+          0,
+          0.56
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "old-rod",
+          "kind": "pickup",
+          "x": 0.6,
+          "y": 0.7,
+          "label": "Old fishing rod",
+          "glyph": "🎣",
+          "ref": "start-rod",
+          "hideIf": "flag:hasRod"
+        },
+        {
+          "id": "swash",
+          "kind": "gather",
+          "x": 0.3,
+          "y": 0.585,
+          "label": "Wet sand",
+          "glyph": "🦐",
+          "node": {
+            "handZone": "swash",
+            "max": 5,
+            "regrowMin": 1.5,
+            "infinite": true
+          }
+        },
+        {
+          "id": "shells",
+          "kind": "gather",
+          "x": 0.74,
+          "y": 0.62,
+          "label": "Shell bank",
+          "glyph": "🐚",
+          "node": {
+            "item": "shell",
+            "max": 5,
+            "regrowMin": 4,
+            "infinite": true
+          }
+        },
+        {
+          "id": "driftwood",
+          "kind": "gather",
+          "x": 0.18,
+          "y": 0.74,
+          "label": "Driftwood",
+          "glyph": "🪵",
+          "node": {
+            "item": "driftwood",
+            "max": 4,
+            "regrowMin": 12
+          }
+        },
+        {
+          "id": "wrack",
+          "kind": "gather",
+          "x": 0.46,
+          "y": 0.665,
+          "label": "Wrack line",
+          "glyph": "🧺",
+          "node": {
+            "table": [
+              {
+                "item": "rope",
+                "weight": 3
+              },
+              {
+                "item": "plank",
+                "weight": 3
+              },
+              {
+                "item": "canvas",
+                "weight": 2
+              },
+              {
+                "item": "message-bottle",
+                "weight": 2
+              }
+            ],
+            "max": 4,
+            "regrowMin": 1440,
+            "daily": true
+          }
+        },
+        {
+          "id": "feathers",
+          "kind": "gather",
+          "x": 0.84,
+          "y": 0.76,
+          "label": "Gull roost",
+          "glyph": "🪶",
+          "node": {
+            "item": "feather",
+            "max": 2,
+            "regrowMin": 40
+          }
+        },
+        {
+          "id": "ghost-crabs",
+          "kind": "gather",
+          "x": 0.4,
+          "y": 0.82,
+          "label": "Crab burrows",
+          "glyph": "🦀",
+          "node": {
+            "handZone": "sand",
+            "max": 3,
+            "regrowMin": 10,
+            "phases": [
+              "dusk",
+              "night"
+            ]
+          }
+        },
+        {
+          "id": "wreck",
+          "kind": "station",
+          "x": 0.8,
+          "y": 0.345,
+          "label": "The wreck",
+          "glyph": "⚓",
+          "station": "wreck"
+        }
+      ]
+    }
+  },
+  {
+    "id": "grove",
+    "name": "Palm Grove",
+    "kind": "gather",
+    "habitat": "Coconut palm grove",
+    "blurb": "Shade, fallen fronds and the knock of coconuts. Something tall and green grows where the ground is wet.",
+    "regionId": "castaway-island",
+    "lat": 17.3,
+    "lon": -87.6,
+    "tz": "device",
+    "solarTz": "America/Belize",
+    "unlock": [],
+    "zones": [],
+    "sightZones": [],
+    "map": {
+      "x": 0.4,
+      "y": 0.5
+    },
+    "scene": {
+      "background": "scene/grove",
+      "painter": "grove",
+      "waterPolygon": [],
+      "hotspots": [
+        {
+          "id": "fronds",
+          "kind": "gather",
+          "x": 0.24,
+          "y": 0.72,
+          "label": "Fallen fronds",
+          "glyph": "🌿",
+          "node": {
+            "item": "palm-frond",
+            "max": 5,
+            "regrowMin": 8
+          }
+        },
+        {
+          "id": "coconuts",
+          "kind": "gather",
+          "x": 0.66,
+          "y": 0.6,
+          "label": "Coconuts",
+          "glyph": "🥥",
+          "node": {
+            "item": "coconut",
+            "max": 3,
+            "regrowMin": 20
+          }
+        },
+        {
+          "id": "vines",
+          "kind": "gather",
+          "x": 0.46,
+          "y": 0.42,
+          "label": "Hanging vines",
+          "glyph": "🪴",
+          "node": {
+            "item": "vine",
+            "max": 4,
+            "regrowMin": 12
+          }
+        },
+        {
+          "id": "bamboo",
+          "kind": "gather",
+          "x": 0.82,
+          "y": 0.78,
+          "label": "Bamboo stand",
+          "glyph": "🎋",
+          "node": {
+            "item": "bamboo",
+            "max": 4,
+            "regrowMin": 18,
+            "requiresTool": "stone-knife"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "rocky-point",
+    "name": "Rocky Point",
+    "kind": "spot",
+    "habitat": "Rocky shore over fringing reef",
+    "blurb": "Black rock, white water. The shallows are busy; beyond them the reef falls away into blue.",
+    "regionId": "castaway-island",
+    "lat": 17.3,
+    "lon": -87.6,
+    "tz": "device",
+    "solarTz": "America/Belize",
+    "unlock": [],
+    "zones": [
+      {
+        "id": "shallows",
+        "name": "Shallows",
+        "minCastRange": 0,
+        "junkRate": 0.07,
+        "junkTable": "reef-junk",
+        "blurb": "Knee-deep rock and rubble."
+      },
+      {
+        "id": "reef-edge",
+        "name": "Reef edge",
+        "minCastRange": 0.45,
+        "junkRate": 0.05,
+        "junkTable": "reef-junk",
+        "blurb": "Where the coral ends."
+      },
+      {
+        "id": "drop-off",
+        "name": "Drop-off",
+        "minCastRange": 0.82,
+        "junkRate": 0.03,
+        "junkTable": "reef-junk",
+        "blurb": "Deep blue water."
+      },
+      {
+        "id": "tide-pools",
+        "name": "Tide pools",
+        "minCastRange": 0,
+        "junkRate": 0,
+        "junkTable": "reef-junk",
+        "cast": false
+      }
+    ],
+    "sightZones": [],
+    "map": {
+      "x": 0.8,
+      "y": 0.56
+    },
+    "scene": {
+      "background": "scene/rocky-point",
+      "painter": "rocky-point",
+      "waterPolygon": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "tide-pools",
+          "kind": "gather",
+          "x": 0.11,
+          "y": 0.8,
+          "label": "Tide pools",
+          "glyph": "🦀",
+          "node": {
+            "handZone": "tide-pools",
+            "max": 2,
+            "regrowMin": 15
+          }
+        },
+        {
+          "id": "stones",
+          "kind": "gather",
+          "x": 0.89,
+          "y": 0.81,
+          "label": "Loose stones",
+          "glyph": "🪨",
+          "node": {
+            "item": "stone",
+            "max": 4,
+            "regrowMin": 10
+          }
+        },
+        {
+          "id": "trap",
+          "kind": "station",
+          "x": 0.2,
+          "y": 0.64,
+          "label": "Trap",
+          "glyph": "🧺",
+          "station": "trap",
+          "showIf": "everHeld:woven-trap"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lagoon",
+    "name": "Lagoon Flats",
+    "kind": "spot",
+    "habitat": "Sand and seagrass flats behind the reef, cut by a mangrove channel",
+    "blurb": "Ankle-deep water the colour of glass. Shapes move across the sand. Some of them are very large.",
+    "regionId": "castaway-island",
+    "lat": 17.3,
+    "lon": -87.6,
+    "tz": "device",
+    "solarTz": "America/Belize",
+    "unlock": [],
+    "zones": [
+      {
+        "id": "flats",
+        "name": "Flats",
+        "minCastRange": 0,
+        "junkRate": 0.03,
+        "junkTable": "lagoon-junk",
+        "blurb": "Sand and seagrass under a hand's depth of water."
+      },
+      {
+        "id": "channel",
+        "name": "Channel",
+        "minCastRange": 0.55,
+        "junkRate": 0.05,
+        "junkTable": "lagoon-junk",
+        "blurb": "A dark vein of deeper water by the mangroves."
+      }
+    ],
+    "sightZones": [
+      "flats",
+      "channel"
+    ],
+    "map": {
+      "x": 0.2,
+      "y": 0.32
+    },
+    "scene": {
+      "background": "scene/lagoon",
+      "painter": "lagoon",
+      "waterPolygon": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "conch",
+          "kind": "gather",
+          "x": 0.13,
+          "y": 0.8,
+          "label": "Seagrass bed",
+          "glyph": "🐚",
+          "node": {
+            "handZone": "flats",
+            "max": 1,
+            "regrowMin": 45
+          }
+        },
+        {
+          "id": "trap",
+          "kind": "station",
+          "x": 0.86,
+          "y": 0.6,
+          "label": "Trap",
+          "glyph": "🧺",
+          "station": "trap",
+          "showIf": "everHeld:woven-trap"
+        }
+      ]
+    }
+  },
+  {
+    "id": "camp",
+    "name": "Camp",
+    "kind": "camp",
+    "habitat": "Clearing above the high-tide line",
+    "blurb": "A lean-to, a ring of stones, and room to build.",
+    "regionId": "castaway-island",
+    "lat": 17.3,
+    "lon": -87.6,
+    "tz": "device",
+    "solarTz": "America/Belize",
+    "unlock": [],
+    "zones": [],
+    "sightZones": [],
+    "map": {
+      "x": 0.6,
+      "y": 0.6
+    },
+    "scene": {
+      "background": "scene/camp",
+      "painter": "camp",
+      "waterPolygon": [],
+      "hotspots": [
+        {
+          "id": "workbench",
+          "kind": "station",
+          "x": 0.26,
+          "y": 0.66,
+          "label": "Workbench",
+          "glyph": "🔨",
+          "station": "craft"
+        },
+        {
+          "id": "fire",
+          "kind": "station",
+          "x": 0.54,
+          "y": 0.74,
+          "label": "Fire and rack",
+          "glyph": "🔥",
+          "station": "fire"
+        },
+        {
+          "id": "basket",
+          "kind": "station",
+          "x": 0.18,
+          "y": 0.82,
+          "label": "Catch basket",
+          "glyph": "🐟",
+          "station": "creel"
+        },
+        {
+          "id": "raft",
+          "kind": "station",
+          "x": 0.78,
+          "y": 0.56,
+          "label": "Raft",
+          "glyph": "⛵",
+          "station": "raft"
+        }
+      ]
+    }
+  }
+]

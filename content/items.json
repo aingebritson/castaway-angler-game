@@ -1,0 +1,412 @@
+[
+  {
+    "id": "palm-frond",
+    "name": "Palm frond",
+    "kind": "material",
+    "glyph": "🌿",
+    "desc": "Long, tough leaves. Good for weaving.",
+    "value": 1
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "kind": "material",
+    "glyph": "🥥",
+    "desc": "Husk for fibre, shell for floats, meat for bait.",
+    "value": 2
+  },
+  {
+    "id": "driftwood",
+    "name": "Driftwood",
+    "kind": "material",
+    "glyph": "🪵",
+    "desc": "Sun-bleached and dry. Burns well, floats better.",
+    "value": 1
+  },
+  {
+    "id": "stone",
+    "name": "Stone",
+    "kind": "material",
+    "glyph": "🪨",
+    "desc": "A fist of dark volcanic rock that takes an edge.",
+    "value": 1
+  },
+  {
+    "id": "vine",
+    "name": "Vine",
+    "kind": "material",
+    "glyph": "🪴",
+    "desc": "Green and supple. Lashes anything to anything.",
+    "value": 1
+  },
+  {
+    "id": "bamboo",
+    "name": "Bamboo",
+    "kind": "material",
+    "glyph": "🎋",
+    "desc": "Light, straight and strong. Needs a knife to cut.",
+    "value": 3
+  },
+  {
+    "id": "shell",
+    "name": "Shell",
+    "kind": "material",
+    "glyph": "🐚",
+    "desc": "Hard and bright. Grinds into a hook with patience.",
+    "value": 1
+  },
+  {
+    "id": "fish-bone",
+    "name": "Fish bone",
+    "kind": "material",
+    "glyph": "🦴",
+    "desc": "A clean backbone. Hooks and needles hide inside.",
+    "value": 1
+  },
+  {
+    "id": "feather",
+    "name": "Feather",
+    "kind": "material",
+    "glyph": "🪶",
+    "desc": "A gull's flight feather. It flutters in water as it does in air.",
+    "value": 2
+  },
+  {
+    "id": "cordage",
+    "name": "Cordage",
+    "kind": "material",
+    "glyph": "🧵",
+    "desc": "Coconut fibre twisted into cord. Holds a knot.",
+    "value": 3
+  },
+  {
+    "id": "rope",
+    "name": "Rope",
+    "kind": "material",
+    "glyph": "🪢",
+    "desc": "Ship's rope, salt-stiff but sound.",
+    "value": 6
+  },
+  {
+    "id": "canvas",
+    "name": "Canvas",
+    "kind": "material",
+    "glyph": "🏳️",
+    "desc": "A torn length of sailcloth.",
+    "value": 8
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "kind": "material",
+    "glyph": "🪧",
+    "desc": "A length of ship's timber with the nails still in it.",
+    "value": 5
+  },
+  {
+    "id": "sea-glass",
+    "name": "Sea glass",
+    "kind": "goods",
+    "glyph": "💎",
+    "desc": "A bottle shard tumbled smooth by the sea. Someone will want it.",
+    "value": 12
+  },
+  {
+    "id": "message-bottle",
+    "name": "Bottle",
+    "kind": "goods",
+    "glyph": "🍾",
+    "desc": "Corked. Something rattles inside."
+  },
+  {
+    "id": "crate",
+    "name": "Waterlogged crate",
+    "kind": "goods",
+    "glyph": "📦",
+    "desc": "Ship's stores, mostly ruined. Mostly."
+  },
+  {
+    "id": "sand-flea",
+    "name": "Sand flea",
+    "kind": "bait",
+    "glyph": "🦐",
+    "desc": "A mole crab from the wet sand. Small fish love them.",
+    "bait": {
+      "tags": [
+        "crustacean"
+      ],
+      "sizeShift": 0
+    }
+  },
+  {
+    "id": "small-crab",
+    "name": "Small crab",
+    "kind": "bait",
+    "glyph": "🦀",
+    "desc": "A lively little crab. Wary fish that ignore everything else eat crabs.",
+    "bait": {
+      "tags": [
+        "crab",
+        "crustacean"
+      ],
+      "sizeShift": 0.25
+    }
+  },
+  {
+    "id": "cut-bait",
+    "name": "Cut bait",
+    "kind": "bait",
+    "glyph": "🍣",
+    "desc": "Strips of fish. Bleeds scent into the water; predators notice.",
+    "bait": {
+      "tags": [
+        "cutfish"
+      ],
+      "sizeShift": 0.3
+    }
+  },
+  {
+    "id": "coconut-meat",
+    "name": "Coconut meat",
+    "kind": "bait",
+    "glyph": "🥥",
+    "desc": "White chunks of coconut. The little reef fish will peck at it.",
+    "bait": {
+      "tags": [
+        "fruit"
+      ],
+      "sizeShift": -0.2
+    }
+  },
+  {
+    "id": "rusty-hook",
+    "name": "Rusty hook",
+    "kind": "hook",
+    "glyph": "🪝",
+    "desc": "Small, and more rust than steel. It came with the rod.",
+    "hook": {
+      "minCm": 6,
+      "maxCm": 34,
+      "sizeShift": 0
+    }
+  },
+  {
+    "id": "shell-hook",
+    "name": "Shell hook",
+    "kind": "hook",
+    "glyph": "🪝",
+    "desc": "Ground from a shell. Small and brittle, but it catches fish.",
+    "hook": {
+      "minCm": 6,
+      "maxCm": 30,
+      "sizeShift": -0.1
+    }
+  },
+  {
+    "id": "bone-hook",
+    "name": "Bone hook",
+    "kind": "hook",
+    "glyph": "🪝",
+    "desc": "A larger gorge of fish bone. Small fry cannot take it; better fish can.",
+    "hook": {
+      "minCm": 18,
+      "maxCm": 78,
+      "sizeShift": 0.45
+    }
+  },
+  {
+    "id": "old-rod",
+    "name": "Old rod",
+    "kind": "rod",
+    "glyph": "🎣",
+    "desc": "A cracked ship's rod. Short casts, no backbone.",
+    "rod": {
+      "tier": 0,
+      "range": 0.44,
+      "power": 0.8,
+      "accuracy": 0.55
+    }
+  },
+  {
+    "id": "bamboo-rod",
+    "name": "Bamboo rod",
+    "kind": "rod",
+    "glyph": "🎣",
+    "desc": "A long, whippy cane. Casts to the reef edge and bends instead of breaking.",
+    "rod": {
+      "tier": 1,
+      "range": 0.74,
+      "power": 3.0,
+      "accuracy": 0.75
+    }
+  },
+  {
+    "id": "old-line",
+    "name": "Old line",
+    "kind": "line",
+    "glyph": "➰",
+    "desc": "Sun-rotted line. Fine for small fish.",
+    "line": {
+      "strength": 0.8
+    }
+  },
+  {
+    "id": "braided-line",
+    "name": "Braided line",
+    "kind": "line",
+    "glyph": "➰",
+    "desc": "Three strands of cordage, braided and oiled. Strong.",
+    "line": {
+      "strength": 3.0
+    }
+  },
+  {
+    "id": "coconut-float",
+    "name": "Coconut float",
+    "kind": "float",
+    "glyph": "🟤",
+    "desc": "A disc of coconut shell. It shows a bite clearly and gives more time to strike.",
+    "float": {
+      "windowBonus": 0.35
+    }
+  },
+  {
+    "id": "stone-sinker",
+    "name": "Stone sinker",
+    "kind": "sinker",
+    "glyph": "⚫",
+    "desc": "A grooved pebble. Carries the bait further and holds it on the bottom.",
+    "sinker": {
+      "rangeBonus": 0.04
+    }
+  },
+  {
+    "id": "feather-lure",
+    "name": "Feather lure",
+    "kind": "lure",
+    "glyph": "🪶",
+    "desc": "Gull feather and shell flash on a bone hook. Wants a steady, pulsing retrieve.",
+    "lure": {
+      "type": "feather",
+      "speedBand": [
+        0.35,
+        0.7
+      ],
+      "sizeShift": 0.2
+    }
+  },
+  {
+    "id": "hammerstone",
+    "name": "Hammerstone",
+    "kind": "tool",
+    "glyph": "🔨",
+    "desc": "A round stone that fits the hand. Makes other tools."
+  },
+  {
+    "id": "stone-knife",
+    "name": "Stone knife",
+    "kind": "tool",
+    "glyph": "🔪",
+    "desc": "A flake edge bound to a handle. Cuts bamboo, cleans fish."
+  },
+  {
+    "id": "bone-needle",
+    "name": "Bone needle",
+    "kind": "tool",
+    "glyph": "🪡",
+    "desc": "Slender and eyed. Sews what the knife cuts."
+  },
+  {
+    "id": "campfire",
+    "name": "Campfire",
+    "kind": "station",
+    "glyph": "🔥",
+    "desc": "A ring of stones and a bed of embers that never quite goes out."
+  },
+  {
+    "id": "drying-rack",
+    "name": "Drying rack",
+    "kind": "station",
+    "glyph": "🪜",
+    "desc": "Bamboo rails over a slow fire. Smoked fish keeps for the voyage."
+  },
+  {
+    "id": "torch",
+    "name": "Torch",
+    "kind": "utility",
+    "glyph": "🔦",
+    "desc": "Split bamboo packed with husk and oil. Makes the night fishable."
+  },
+  {
+    "id": "bait-basket",
+    "name": "Bait basket",
+    "kind": "utility",
+    "glyph": "🧺",
+    "desc": "A lidded basket kept damp. Bait gathered into it stays lively: you find more each time."
+  },
+  {
+    "id": "woven-trap",
+    "name": "Woven trap",
+    "kind": "trap",
+    "glyph": "🪤",
+    "desc": "A funnel basket on a bamboo frame. Bait it, sink it, leave it.",
+    "trap": {
+      "capacity": 3,
+      "minSoakH": 1,
+      "maxSoakH": 8,
+      "method": "trap"
+    }
+  },
+  {
+    "id": "raft-hull",
+    "name": "Raft hull",
+    "kind": "raft",
+    "glyph": "🛶",
+    "desc": "Driftwood logs under a bamboo deck."
+  },
+  {
+    "id": "raft-lashings",
+    "name": "Lashings",
+    "kind": "raft",
+    "glyph": "🪢",
+    "desc": "Everything that holds the raft together."
+  },
+  {
+    "id": "raft-mast",
+    "name": "Mast",
+    "kind": "raft",
+    "glyph": "🎋",
+    "desc": "Three canes bound into one."
+  },
+  {
+    "id": "raft-sail",
+    "name": "Woven sail",
+    "kind": "raft",
+    "glyph": "⛵",
+    "desc": "Frond matting backed with canvas. It will hold a wind."
+  },
+  {
+    "id": "raft-oar",
+    "name": "Steering oar",
+    "kind": "raft",
+    "glyph": "🏏",
+    "desc": "A plank blade on a bamboo shaft."
+  },
+  {
+    "id": "provisions",
+    "name": "Provisions",
+    "kind": "raft",
+    "glyph": "🍱",
+    "desc": "Smoked fish, wrapped in leaves. Enough for the crossing."
+  },
+  {
+    "id": "raft",
+    "name": "Raft",
+    "kind": "boat",
+    "glyph": "🛶",
+    "desc": "Driftwood, bamboo and stubbornness. It got you off the island; it will not take you much further.",
+    "boat": {
+      "tier": 0
+    }
+  }
+]

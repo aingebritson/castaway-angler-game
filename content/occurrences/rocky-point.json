@@ -1,0 +1,951 @@
+[
+  {
+    "speciesId": "abudefduf-saxatilis",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.2,
+      "dusk": 0.8,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crustacean": 1,
+      "cutfish": 0.8,
+      "fruit": 1.1,
+      "crab": 0.4,
+      "shrimp": 1
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Abudefduf saxatilis",
+        "url": "https://www.fishbase.se/summary/Abudefduf-saxatilis.html",
+        "accessed": "pending-review",
+        "supports": "rocky shore habitat, diurnal activity, omnivorous diet"
+      }
+    ]
+  },
+  {
+    "speciesId": "thalassoma-bifasciatum",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 0.9,
+      "day": 1.2,
+      "dusk": 0.6,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crustacean": 1,
+      "cutfish": 0.5,
+      "fruit": 0.3,
+      "shrimp": 1
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Thalassoma bifasciatum",
+        "url": "https://www.fishbase.se/summary/Thalassoma-bifasciatum.html",
+        "accessed": "pending-review",
+        "supports": "reef habitat, strictly diurnal"
+      }
+    ]
+  },
+  {
+    "speciesId": "haemulon-flavolineatum",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows",
+      "reef-edge"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.8,
+      "dusk": 1.4,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "cutfish": 0.8,
+      "crab": 0.8,
+      "shrimp": 1.2,
+      "sinker": 1.4,
+      "trap": 0.6
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Haemulon flavolineatum",
+        "url": "https://www.fishbase.se/summary/Haemulon-flavolineatum.html",
+        "accessed": "pending-review",
+        "supports": "reef schooling by day, nocturnal foraging"
+      },
+      {
+        "title": "Florida Museum species profile: Haemulon flavolineatum",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/haemulon-flavolineatum/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "ocyurus-chrysurus",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.8,
+      "dusk": 1.5,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1.2,
+      1.3,
+      1.3,
+      1.2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "crustacean": 0.8,
+      "shrimp": 1.2,
+      "squid": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Ocyurus chrysurus",
+        "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
+        "accessed": "pending-review",
+        "supports": "reef habitat, mid-water feeding"
+      },
+      {
+        "title": "Florida Museum species profile: Ocyurus chrysurus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "ocyurus-chrysurus",
+    "locationId": "rocky-point",
+    "zones": [
+      "reef-edge",
+      "drop-off"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.8,
+      "dusk": 1.5,
+      "night": 1.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1.2,
+      1.3,
+      1.3,
+      1.2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "crustacean": 0.8,
+      "shrimp": 1.2,
+      "squid": 1.2,
+      "feather": 0.5,
+      "jig": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Ocyurus chrysurus",
+        "url": "https://www.fishbase.se/summary/Ocyurus-chrysurus.html",
+        "accessed": "pending-review",
+        "supports": "reef edge habitat, mid-water feeding"
+      },
+      {
+        "title": "Florida Museum species profile: Ocyurus chrysurus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/ocyurus-chrysurus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-apodus",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows",
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.6,
+      "dusk": 1.5,
+      "night": 1.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "crustacean": 1,
+      "crab": 1.2,
+      "cutfish": 1.2,
+      "shrimp": 1.2,
+      "sinker": 1.3,
+      "trap": 0.4
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus apodus",
+        "url": "https://www.fishbase.se/summary/Lutjanus-apodus.html",
+        "accessed": "pending-review",
+        "supports": "shallow reef and mangrove habitat, nocturnal feeding"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus apodus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-apodus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "holocentrus-adscensionis",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows",
+      "reef-edge"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 0.4,
+      "day": 0,
+      "dusk": 0.6,
+      "night": 1.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "crustacean": 1.2,
+      "crab": 1,
+      "cutfish": 0.6,
+      "shrimp": 1.2,
+      "trap": 0.5
+    },
+    "confidence": "high",
+    "sources": [
+      {
+        "title": "FishBase: Holocentrus adscensionis",
+        "url": "https://www.fishbase.se/summary/Holocentrus-adscensionis.html",
+        "accessed": "pending-review",
+        "supports": "nocturnal, shelters in crevices by day, eats crustaceans"
+      }
+    ]
+  },
+  {
+    "speciesId": "gymnothorax-moringa",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.3,
+      "day": 0,
+      "dusk": 0.8,
+      "night": 1.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "trap"
+    ],
+    "affinity": {
+      "cutfish": 1.5,
+      "crab": 0.6,
+      "squid": 1.2,
+      "sinker": 1.5,
+      "trap": 0.5
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Gymnothorax moringa",
+        "url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
+        "accessed": "pending-review",
+        "supports": "shallow rocky reef, nocturnal hunting"
+      }
+    ]
+  },
+  {
+    "speciesId": "caranx-ruber",
+    "locationId": "rocky-point",
+    "zones": [
+      "reef-edge",
+      "drop-off"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1,
+      "dusk": 1.5,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "lure"
+    ],
+    "affinity": {
+      "feather": 1.4,
+      "spoon": 1.5,
+      "jig": 1.2,
+      "plug": 1
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Caranx ruber",
+        "url": "https://www.fishbase.se/summary/Caranx-ruber.html",
+        "accessed": "pending-review",
+        "supports": "clear reef water, feeds on fish and shrimp by day"
+      }
+    ],
+    "designNotes": "Bar jacks will sometimes take bait in reality; the game makes them lure-only so the lure method has a clear first target."
+  },
+  {
+    "speciesId": "tylosurus-crocodilus",
+    "locationId": "rocky-point",
+    "zones": [
+      "shallows",
+      "reef-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1,
+      "dusk": 1.3,
+      "night": 0.8
+    },
+    "monthMod": [
+      0.7,
+      0.7,
+      0.8,
+      1,
+      1.2,
+      1.4,
+      1.4,
+      1.4,
+      1.2,
+      1,
+      0.8,
+      0.7
+    ],
+    "methods": [
+      "lure"
+    ],
+    "affinity": {
+      "feather": 1.3,
+      "spoon": 1,
+      "popper": 1.5,
+      "plug": 1.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Tylosurus crocodilus",
+        "url": "https://www.fishbase.se/summary/Tylosurus-crocodilus.html",
+        "accessed": "pending-review",
+        "supports": "surface-dwelling over reefs and lagoons, eats small fish"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-analis",
+    "locationId": "rocky-point",
+    "zones": [
+      "reef-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.6,
+      "dusk": 1.6,
+      "night": 1.2
+    },
+    "monthMod": [
+      0.8,
+      0.8,
+      1,
+      1.4,
+      1.8,
+      1.6,
+      1,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crab": 1.5,
+      "cutfish": 1.3,
+      "livefish": 1.8,
+      "squid": 1.2,
+      "crustacean": 0.4,
+      "shrimp": 1,
+      "sinker": 1.5
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus analis",
+        "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
+        "accessed": "pending-review",
+        "supports": "reef and sand habitat, diet"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus analis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
+        "accessed": "pending-review",
+        "supports": "spawning season, feeding times"
+      }
+    ]
+  },
+  {
+    "speciesId": "lutjanus-analis",
+    "locationId": "rocky-point",
+    "zones": [
+      "drop-off"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 0.6,
+      "dusk": 1.6,
+      "night": 1.2
+    },
+    "monthMod": [
+      0.8,
+      0.8,
+      1,
+      1.4,
+      1.8,
+      1.6,
+      1,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "crab": 1.5,
+      "cutfish": 1.3,
+      "livefish": 1.8,
+      "squid": 1.2,
+      "shrimp": 1,
+      "sinker": 1.5
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Lutjanus analis",
+        "url": "https://www.fishbase.se/summary/Lutjanus-analis.html",
+        "accessed": "pending-review",
+        "supports": "reef and sand habitat, diet"
+      },
+      {
+        "title": "Florida Museum species profile: Lutjanus analis",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/lutjanus-analis/",
+        "accessed": "pending-review",
+        "supports": "spawning season"
+      }
+    ]
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "rocky-point",
+    "zones": [
+      "reef-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.3
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "feather": 1,
+      "spoon": 1.5,
+      "plug": 1.6,
+      "cutfish": 0.4,
+      "livefish": 1.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "reef edge habitat, visual daytime predator"
+      },
+      {
+        "title": "Florida Museum species profile: Sphyraena barracuda",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sphyraena-barracuda/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  },
+  {
+    "speciesId": "sphyraena-barracuda",
+    "locationId": "rocky-point",
+    "zones": [
+      "drop-off"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.3
+    },
+    "monthMod": [
+      1.3,
+      1.3,
+      1.2,
+      1,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1,
+      1.2,
+      1.3
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "spoon": 1.5,
+      "plug": 1.6,
+      "feather": 1,
+      "livefish": 1.8,
+      "cutfish": 0.4
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Sphyraena barracuda",
+        "url": "https://www.fishbase.se/summary/Sphyraena-barracuda.html",
+        "accessed": "pending-review",
+        "supports": "reef edge habitat, visual daytime predator"
+      }
+    ]
+  },
+  {
+    "speciesId": "panulirus-argus",
+    "locationId": "rocky-point",
+    "zones": [
+      "tide-pools",
+      "shallows"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.6,
+      "day": 0.2,
+      "dusk": 1,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1.2,
+      1.5,
+      1.5,
+      1.2
+    ],
+    "methods": [
+      "trap",
+      "hand"
+    ],
+    "affinity": {
+      "trap": 1,
+      "cutfish": 1.5,
+      "crab": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Panulirus argus",
+        "url": "https://www.sealifebase.se/summary/Panulirus-argus.html",
+        "accessed": "pending-review",
+        "supports": "nocturnal, dens in rocky reef, autumn migrations"
+      }
+    ]
+  },
+  {
+    "speciesId": "octopus-briareus",
+    "locationId": "rocky-point",
+    "zones": [
+      "tide-pools",
+      "shallows"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.3,
+      "day": 0,
+      "dusk": 0.8,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "trap",
+      "hand"
+    ],
+    "affinity": {
+      "trap": 0.8,
+      "crab": 1.6,
+      "cutfish": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Octopus briareus",
+        "url": "https://www.sealifebase.se/summary/Octopus-briareus.html",
+        "accessed": "pending-review",
+        "supports": "nocturnal reef hunter, eats crabs and shrimp"
+      }
+    ]
+  },
+  {
+    "speciesId": "grapsus-grapsus",
+    "locationId": "rocky-point",
+    "zones": [
+      "tide-pools"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1.3,
+      "dusk": 1,
+      "night": 0.15
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "hand"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "SeaLifeBase: Grapsus grapsus",
+        "url": "https://www.sealifebase.se/summary/Grapsus-grapsus.html",
+        "accessed": "pending-review",
+        "supports": "wave-washed rocky shore, active by day"
+      }
+    ]
+  },
+  {
+    "speciesId": "tursiops-truncatus",
+    "locationId": "rocky-point",
+    "zones": [
+      "drop-off"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 0.6,
+      "dusk": 1.6,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "NOAA Fisheries: Common bottlenose dolphin",
+        "url": "https://www.fisheries.noaa.gov/species/common-bottlenose-dolphin",
+        "accessed": "pending-review",
+        "supports": "coastal habitat, group travel"
+      }
+    ],
+    "designNotes": "Sighting only. Dawn and dusk bias is a design choice to make first and last light feel special."
+  },
+  {
+    "speciesId": "megalops-atlanticus",
+    "locationId": "rocky-point",
+    "zones": [
+      "drop-off"
+    ],
+    "rarity": "epic",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 0.5,
+      "dusk": 1.6,
+      "night": 1.2
+    },
+    "monthMod": [
+      0.5,
+      0.5,
+      0.7,
+      1.2,
+      1.6,
+      1.8,
+      1.8,
+      1.6,
+      1.2,
+      0.8,
+      0.5,
+      0.5
+    ],
+    "methods": [
+      "lure",
+      "bait"
+    ],
+    "affinity": {
+      "plug": 1.5,
+      "livefish": 2,
+      "cutfish": 0.6,
+      "feather": 0.6
+    },
+    "minGear": {
+      "rodTier": 2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Megalops atlanticus",
+        "url": "https://www.fishbase.se/summary/Megalops-atlanticus.html",
+        "accessed": "pending-review",
+        "supports": "coastal waters, seasonal movements"
+      },
+      {
+        "title": "Florida Museum species profile: Megalops atlanticus",
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/megalops-atlanticus/",
+        "accessed": "pending-review",
+        "supports": "behaviour, diet, habitat, angling notes"
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "rarityWeights": {
+    "common": 100,
+    "uncommon": 30,
+    "rare": 8,
+    "epic": 1.5
+  },
+  "phases": {
+    "dawnBeforeMin": 40,
+    "dawnAfterMin": 60,
+    "duskBeforeMin": 60,
+    "duskAfterMin": 40
+  },
+  "bite": {
+    "waitMinS": 4,
+    "waitMaxS": 30,
+    "referenceWeight": 520,
+    "nibblesMin": 1,
+    "nibblesMax": 3,
+    "hookWindowMinS": 0.6,
+    "hookWindowMaxS": 1.5,
+    "overmatchedBiteMult": 0.35,
+    "missKeepBaitChance": 0.3,
+    "lureStrikePerS": 0.22,
+    "darkWindowMult": 0.7
+  },
+  "power": {
+    "autoLandRatio": 0.25,
+    "pullExp": 0.6
+  },
+  "size": {
+    "sigmaZ": 2.4,
+    "sigmaMin": 0.08,
+    "sigmaMax": 0.4,
+    "grades": {
+      "small": 0.25,
+      "large": 0.75,
+      "trophy": 0.95,
+      "record": 0.995
+    }
+  },
+  "fight": {
+    "greenAt": 0.25,
+    "yellowAt": 0.6,
+    "redAt": 0.85,
+    "snapS": 1.5,
+    "slackAt": 0.06,
+    "slackS": 2.0,
+    "reelSpeed": 0.2,
+    "runSpeed": 0.085,
+    "tensionRate": 3.2,
+    "reelBase": 0.35,
+    "reelForce": 0.72,
+    "idleForce": 0.22,
+    "drainBase": 0.3,
+    "drainTension": 0.9,
+    "tiredFloor": 0.3,
+    "autoLandS": 1.3
+  },
+  "economy": {
+    "gradeMult": {
+      "small": 0.6,
+      "average": 1,
+      "large": 1.5,
+      "trophy": 3,
+      "record": 5
+    },
+    "smokedMult": 1.6,
+    "orderMult": [
+      2,
+      3
+    ],
+    "ordersPerDay": 3,
+    "tagPayment": 25
+  },
+  "camp": {
+    "smokeMin": 10,
+    "rackSlots": 3,
+    "cleanBones": 1,
+    "cleanBait": 2
+  },
+  "bearing": {
+    "speciesNeeded": 8,
+    "pityCasts": 6,
+    "pagePityCasts": 12
+  },
+  "provisions": {
+    "fish": 5,
+    "species": 3
+  },
+  "trap": {
+    "catchesPerHour": 0.6
+  },
+  "legendaryChance": 0.1,
+  "creelLimit": 12
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "id": "page-1",
+    "order": 1,
+    "title": "Day 3",
+    "text": "I have stopped watching for a sail. A stone struck on a stone gives an edge. An edge gives a knife, and a knife gives everything else. Coconut husk, rolled wet against the thigh, twists into a cord that holds a knot.",
+    "recipes": [
+      "hammerstone",
+      "stone-knife",
+      "cordage"
+    ],
+    "rumours": []
+  },
+  {
+    "id": "page-2",
+    "order": 2,
+    "title": "Day 9",
+    "text": "The little striped thieves strip my hook all day. After dark the red ones with the great eyes come out of the rock and take a sand flea boldly. If only I could see my float.",
+    "recipes": [],
+    "rumours": [
+      "squirrelfish-night"
+    ]
+  },
+  {
+    "id": "page-3",
+    "order": 3,
+    "title": "Day 14",
+    "text": "Bone makes a better hook than shell: bigger, and it holds. The small fry cannot swallow it, so only better fish come to it. A disc of coconut shell rides the water well and tells me the moment to strike. A grooved pebble takes the bait out further.",
+    "recipes": [
+      "bone-hook",
+      "coconut-float",
+      "stone-sinker",
+      "coconut-meat"
+    ],
+    "rumours": []
+  },
+  {
+    "id": "page-4",
+    "order": 4,
+    "title": "Day 20",
+    "text": "Bamboo grows behind the palms where the ground is wet. A long cane throws nearly twice as far as the ship's rod, out to where the reef falls away. Three strands of cord, braided and oiled, did not part on a fish as long as my arm.",
+    "recipes": [
+      "bamboo-rod",
+      "braided-line"
+    ],
+    "rumours": []
+  },
+  {
+    "id": "page-5",
+    "order": 5,
+    "title": "Day 27",
+    "text": "The grey ghosts come onto the lagoon flats with their tails in the air, rooting for crabs and fleas. Drop the bait well ahead of them and let them find it. Put it on their heads and they are gone like smoke.",
+    "recipes": [],
+    "rumours": [
+      "bonefish-flats",
+      "bonefish-bait"
+    ]
+  },
+  {
+    "id": "page-6",
+    "order": 6,
+    "title": "Day 33",
+    "text": "Some fish want nothing dead. The blue-backed jacks at the reef edge follow a bait and turn away. A tuft of gull feather on a flash of shell, drawn back in steady pulses, they hit like a thrown stone. So does the long toothed one that hangs off the edge.",
+    "recipes": [
+      "feather-lure"
+    ],
+    "rumours": [
+      "barjack-lure",
+      "barracuda-flash",
+      "barracuda-edge"
+    ]
+  },
+  {
+    "id": "page-7",
+    "order": 7,
+    "title": "Day 41",
+    "text": "Wove a basket trap from fronds on a cane frame. Left overnight by the rocks with fish scraps in it, it held a whiskered lobster by morning. Once it held nothing but crab shells and a smear of ink. Split cane packed with husk burns an hour. The night water is another country.",
+    "recipes": [
+      "woven-trap",
+      "torch",
+      "bait-basket"
+    ],
+    "rumours": [
+      "lobster-trap",
+      "octopus-night",
+      "octopus-crab"
+    ]
+  },
+  {
+    "id": "page-8",
+    "order": 8,
+    "title": "Day 52",
+    "text": "The round silver ones with the sickle fins will look at nothing but a crab. I have watched them refuse everything else I own. And at dusk something red and heavy takes cut fish at the reef edge and goes straight down.",
+    "recipes": [],
+    "rumours": [
+      "permit-crab",
+      "permit-flats",
+      "mutton-dusk",
+      "mutton-bait"
+    ]
+  },
+  {
+    "id": "page-9",
+    "order": 9,
+    "title": "Day 60",
+    "text": "Fish split and hung over a slow fire keeps for weeks. I will need it. At first light great silver fish roll in the lagoon channel, gulping air like men. One took my feather and I never turned it. Not with this gear. Not on this island.",
+    "recipes": [
+      "campfire",
+      "drying-rack",
+      "bone-needle"
+    ],
+    "rumours": [
+      "tarpon-dawn",
+      "tarpon-feather"
+    ]
+  },
+  {
+    "id": "page-10",
+    "order": 10,
+    "title": "Day 71",
+    "text": "The raft is lashed. From the point at sunset I took a bearing on the smoke that rises some evenings to the west-south-west: a port, two days' sail if the wind holds. Whoever finds this: a hull, a mast, a sail, an oar to steer, food for the crossing. Then go.",
+    "recipes": [
+      "raft-hull",
+      "raft-lashings",
+      "raft-mast",
+      "raft-sail",
+      "raft-oar",
+      "provisions"
+    ],
+    "rumours": [],
+    "bearing": true
+  }
+]
