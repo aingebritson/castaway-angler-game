@@ -21,7 +21,7 @@
 
 ## Shell & Command Reliability
 1. **[2026-11-16] Project path contains a space**
-   Do instead: always quote `"/Users/andyingebritson/Documents/Castaway Angler"` in shell commands.
+   Do instead: always double-quote the project path in shell commands.
 
 ## Domain Behavior Guardrails
 1. **[2026-11-16] Toolchain is newer than most examples (Vite 8, Vitest 4, TS 7, Preact 11, zod 4)**
@@ -37,5 +37,5 @@
 ## User Directives
 1. **[2026-11-16] Andy wants continuous building, not a stop per milestone**
    Do instead: keep going past milestone gates; record spec departures in `docs/DECISIONS.md`.
-2. **[2026-11-16] The repo is `aingebritson/castaway-angler-game` (private); ignore the older public `castaway-angler`**
-   Do instead: push to `origin` only. Enabling GitHub Pages or making the repo public is Andy's call; ask first.
+2. **[2026-11-16] The repo is `aingebritson/castaway-angler-game` (public, deployed to GitHub Pages from `main`); ignore the older `castaway-angler`**
+   Do instead: push to `origin` only. Every push to `main` goes live, so run `npm run build` and `npm test` first, and keep private details out of commits.
