@@ -414,6 +414,8 @@ type SourceRef = { title: string; url: string; accessed: string; supports: strin
 
 Items, recipes, people and quests follow the same pattern: an id, display text, an asset id, and typed requirements and effects. Claude Code should define those schemas in M1 and M2 and add them to this section.
 
+**Schemas added during the build.** Items, recipes, journal pages, junk tables, rig presets, regions, people, quests and shops are defined with the rest in `src/content/schema.ts`, which is the reference; additions to the records above are listed in `docs/DECISIONS.md`.
+
 **One file for tuning.** `balance.json` holds every number a designer would want to turn: rarity weights, fight thresholds, hook windows, regrowth timers, prices, legendary chance.
 
 ## 12. Research workstream

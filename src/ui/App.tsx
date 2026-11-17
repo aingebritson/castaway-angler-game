@@ -152,7 +152,7 @@ export function App() {
   const cue =
     phase === 'waiting' ? 'Tap to reel in'
       : phase === 'idle' && fishingScene && rigOf(s, c) && s.stats.casts < 4 ? 'Drag back and release to cast'
-        : phase === 'idle' && loc.sightZones.length && s.stats.casts >= 4 && !s.flags.sightTip ? 'Cast ahead of a shape, not on it. Tap a shape to sketch it.'
+        : phase === 'idle' && loc.sightZones.length && s.stats.casts >= 4 && s.stats.casts < 40 && !Object.values(s.guide).some((e) => e.cells[`zone:${loc.id}/${loc.sightZones[0]}`] === 'c') ? 'Cast ahead of a shape, not on it. Tap a shape to sketch it.'
           : null;
 
   return (
@@ -165,7 +165,7 @@ export function App() {
           <button class="clock" onClick={() => open('settings')}>
             {s.flags.launched && <span class="coins">◉ {s.coins}</span>}
             <span>{PHASE_GLYPH[sun.phase]} {formatClock(sun.local)}</span>
-            <span class="ph">{sun.phase}</span>
+            {!s.flags.launched && <span class="ph">{sun.phase}</span>}
             <span style={{ width: '16px', height: '16px', display: 'inline-grid' }}><Icon name="gear" /></span>
           </button>
         </div>

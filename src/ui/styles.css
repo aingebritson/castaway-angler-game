@@ -36,8 +36,8 @@ textarea, input { font: inherit; -webkit-user-select: text; user-select: text; }
 /* ---------- top bar ---------- */
 .top { position: absolute; left: 0; right: 0; top: 0; padding: calc(var(--safe-t) + 10px) 12px 0; display: flex; flex-direction: column; gap: 8px; pointer-events: none; z-index: 5; }
 .top-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.place { font-family: var(--serif); font-weight: 700; font-size: 21px; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.6); letter-spacing: .2px; }
-.clock { pointer-events: auto; display: flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px; background: rgba(10,26,36,.55); color: #fff; font-size: 13px; font-weight: 600; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.place { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: var(--serif); font-weight: 700; font-size: 21px; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.6); letter-spacing: .2px; }
+.clock { flex: none; white-space: nowrap; pointer-events: auto; display: flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px; background: rgba(10,26,36,.55); color: #fff; font-size: 13px; font-weight: 600; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .clock .ph { opacity: .75; font-weight: 500; text-transform: capitalize; }
 .coins { color: #ffd874; }
 .goal { pointer-events: auto; align-self: flex-start; max-width: 100%; display: flex; gap: 8px; align-items: flex-start; padding: 8px 12px; border-radius: 12px; background: rgba(245,236,214,.94); color: var(--ink); font-family: var(--serif); font-size: 14px; line-height: 1.35; font-style: italic; box-shadow: 0 2px 10px rgba(0,0,0,.25); text-align: left; }

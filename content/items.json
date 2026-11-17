@@ -682,5 +682,12 @@
     "glyph": "🪙",
     "desc": "A black disc of silver from the wreck. The market will weigh it.",
     "value": 45
+  },
+  {
+    "id": "lantern",
+    "name": "Lantern",
+    "kind": "utility",
+    "glyph": "🏮",
+    "desc": "A paraffin storm lantern. Lights the water at night as well as any torch, and does not blow out."
   }
 ]

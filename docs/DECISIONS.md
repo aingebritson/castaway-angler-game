@@ -30,6 +30,16 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 15. **Bar jack is lure-only and permit is sight-only** in the game; both will take a blind bait in reality. Recorded in each occurrence's `designNotes`.
 16. **Spotted moray maximum is capped at 120 cm** (larger lengths are reported) so the length-weight curve stays near the record weight.
 
+## First port (M2)
+
+17. **The port region is "The Cayes"**, a lightly fictional Belize fishing town (Port Esperanza) with four spots: the Town Pier (no boat needed, so coins can be earned on arrival), Mangrove Creek, Patch Reef and the Cut (all need the skiff). Fourteen new species; the island's species reappear where they really would.
+18. **Prices are set from simulator output with a human factor of about 0.35.** The bot lands a fish every 15 seconds; a person also walks to the market, re-baits and misses bites. The pier simulates at 1,500 to 2,000 coins an hour, taken as about 650 for a player, which puts the first shop rod (420) at roughly 40 minutes. This is the least certain number in the game and needs real play to check.
+19. **The cast net reuses the gathering system.** Throwing it on the sardine school is a tool-gated hand-gather; the field guide records the method as "by hand". A true net method is reserved in the schema for crab pots and nets in M3.
+20. **Two people sell as well as talk.** Marisol runs the tackle shop and Mr Alvarez the boatyard; their errands appear at the top of their shop. Old Tobias is the old salt. Delphine at the fish market buys the catch and has no chain yet. The biologist and tag-and-release wait for M4.
+21. **The wreck is reachable after the island** by skiff, as a daily salvage node on Wreck Beach. It is a hook for a later quest, not yet a scene.
+22. **Legendaries are wired but none is placed.** The schema, spawn check and catch-once rule exist and are tested through the reducers' code path; Tobias's last errand gives the first clue ("the Bishop"). Placing it is M4 content.
+23. **The orders board names species the player may not have caught**, shown as silhouettes. This is a deliberate small leak: an order is a rumour that a fish exists.
+
 ## Schema additions (spec section 11)
 
 - `Species`: `tint` (placeholder colours), `gathersAs` (hand-caught bait creatures go into the bag as an item); `lengthCm.measure` gains `CL`, `ML`, `SH`.

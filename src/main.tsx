@@ -50,4 +50,9 @@ async function boot() {
   );
 }
 
+// iOS: no pinch zoom, no double-tap zoom, no long-press menu.
+for (const type of ['gesturestart', 'gesturechange', 'contextmenu', 'dblclick']) {
+  document.addEventListener(type, (e) => e.preventDefault(), { passive: false });
+}
+
 void boot();

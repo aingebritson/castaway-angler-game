@@ -42,6 +42,11 @@
         "price": 65
       },
       {
+        "item": "lantern",
+        "price": 150,
+        "once": true
+      },
+      {
         "item": "mono-line",
         "price": 180,
         "once": true
