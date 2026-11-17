@@ -75,6 +75,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Ironjaw's season clue no longer claims a barracuda migration.
     - Doubtful claims were reworded and source notes trimmed to what each page says.
     Details are in the dossier.
+39. **Island rumours checked against the data and the real animals.** All pass. The spiny lobster gains a second rumour and the bottlenose dolphin gets two, carried by journal pages 7 and 4, so every rare and epic island species has two. The permit's "only crab" lines are softened, both in the Cut rumour and on journal page 8.
 
 ## Schema additions (spec section 11)
 

@@ -194,6 +194,27 @@ Every conflict they raised was checked against its source before anything change
 - **Ghost crab and sand crab** length-weight values have no published basis. They are marked as placeholders in their sources.
 - **Unchecked IGFA figures:** the IGFA records for mutton snapper (30 lb 4 oz) and yellowtail snapper (11 lb, Bermuda 2004) were seen only in search excerpts. The record notes keep FishBase's weights, and both species pass the weight check either way.
 
+## Rumours (spec step 6)
+
+Checked on 17 November 2026, after the occurrence pass and the review. Every rumour about an island species, or about an island zone, was tested in two ways:
+- **Against the data:** a named zone must have an occurrence for that species; a named time must be at least neutral (1.0) there, and is flagged if it is not the species' peak; a named bait must have an affinity of at least 1.0; a named trap or hand method must be in the occurrence's methods.
+- **Against the real animal,** using the sources above.
+
+Island rumours come from the castaway's journal pages; three Cayes rumours come from quests.
+
+**Result: all 21 pass the data checks.** Every rumour that names a time of day names the species' peak there.
+- *tarpon-feather* ("One took a feather lure and could not be turned") names a bait with only moderate pull (0.8 in the lagoon, 0.6 at the drop-off). That is still true: tarpon do take feathers, and the rumour says only that one did.
+
+**Fixed:**
+- **Spiny lobster had only one rumour.** Added *lobster-channel*: "Lobsters hide under the ledges of the lagoon channel and walk out to feed after dark" (lagoon channel, night). Journal page 7 now carries it.
+- **Bottlenose dolphin had none.** Added *dolphin-dropoff*, "Grey backs roll along the drop-off where the deep water starts", and *dolphin-herd*, "Dolphins hunt together, pushing a school of small fish up against the shallows" (NOAA: they trap fish against sandbars). Journal page 4 now carries both. Neither repeats the dawn and dusk bias, which is a design choice.
+- *permit-cut* (a Cayes quest rumour) said "Crab. Only crab." It now says "Crab if you have it."
+- **Journal page 8** said permit "will look at nothing but a crab" and "refuse everything else I own". It now says "little but a crab" and "most of what I own", to match the rewritten rumour.
+
+**Kept:** journal page 6 says the bar jacks "follow a bait and turn away". It is the castaway describing what happens in this game, where bar jacks are lure-only by disclosed design (DECISIONS 15). The rumour itself now makes only a true claim.
+
+**Coverage:** each of the 7 rare or epic island species has at least two rumours obtainable on the island: barracuda, mutton snapper, permit, tarpon, spiny lobster, reef octopus and bottlenose dolphin.
+
 ## Selection against the quotas
 
 The island is a small, early region (15 fish), so the 30-fish quotas apply at about half scale.
@@ -261,5 +282,4 @@ Already built (DECISIONS 27): **Old Ironjaw**, a 160 cm great barracuda off the 
 
 ## Still to do
 
-- **Rumours (spec step 6):** each rare and epic island species has two rumours; check each against the occurrence values as they now stand.
 - **Moon and tide:** permit and tarpon in Belize are reported best around new and full moon tides. Mutton snapper aggregate at the full moon. The schema reserves `conditions.moon` and `conditions.tide`, but no island occurrence uses them yet.

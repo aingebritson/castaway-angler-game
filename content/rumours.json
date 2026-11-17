@@ -75,6 +75,17 @@
     "source": "The castaway's journal"
   },
   {
+    "id": "lobster-channel",
+    "speciesId": "panulirus-argus",
+    "dimension": "where",
+    "text": "Lobsters hide under the ledges of the lagoon channel and walk out to feed after dark.",
+    "fillsCells": [
+      "zone:lagoon/channel",
+      "phase:night"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
     "id": "octopus-night",
     "speciesId": "octopus-briareus",
     "dimension": "when",
@@ -302,7 +313,7 @@
     "id": "permit-cut",
     "speciesId": "trachinotus-falcatus",
     "dimension": "where",
-    "text": "Permit ride the tide onto the shoulders of the Cut. Crab. Only crab. And lead them well.",
+    "text": "Permit ride the tide onto the shoulders of the Cut. Crab if you have it. And lead them well.",
     "fillsCells": [
       "zone:the-cut/channel",
       "bait:crab"
@@ -330,5 +341,23 @@
       "zone:mangrove-creek/roots"
     ],
     "source": "Marisol"
+  },
+  {
+    "id": "dolphin-dropoff",
+    "speciesId": "tursiops-truncatus",
+    "dimension": "where",
+    "text": "Grey backs roll along the drop-off where the deep water starts.",
+    "fillsCells": [
+      "zone:rocky-point/drop-off"
+    ],
+    "source": "The castaway's journal"
+  },
+  {
+    "id": "dolphin-herd",
+    "speciesId": "tursiops-truncatus",
+    "dimension": "method",
+    "text": "Dolphins hunt together, pushing a school of small fish up against the shallows.",
+    "fillsCells": [],
+    "source": "The castaway's journal"
   }
 ]

@@ -38,12 +38,15 @@
     "id": "page-4",
     "order": 4,
     "title": "Day 20",
-    "text": "Bamboo grows behind the palms where the ground is wet. A long cane throws nearly twice as far as the ship's rod, out to where the reef falls away. Three strands of cord, braided and oiled, did not part on a fish as long as my arm.",
+    "text": "Bamboo grows behind the palms where the ground is wet. A long cane throws nearly twice as far as the ship's rod, out to where the reef falls away. Three strands of cord, braided and oiled, did not part on a fish as long as my arm. Twice I have seen grey backs rolling along that edge: dolphins, hunting together, pushing the small fish up against the shallows.",
     "recipes": [
       "bamboo-rod",
       "braided-line"
     ],
-    "rumours": []
+    "rumours": [
+      "dolphin-dropoff",
+      "dolphin-herd"
+    ]
   },
   {
     "id": "page-5",
@@ -74,7 +77,7 @@
     "id": "page-7",
     "order": 7,
     "title": "Day 41",
-    "text": "Wove a basket trap from fronds on a cane frame. Left overnight by the rocks with fish scraps in it, it held a whiskered lobster by morning. Once it held nothing but crab shells and a smear of ink. Split cane packed with husk burns an hour. The night water is another country.",
+    "text": "Wove a basket trap from fronds on a cane frame. Left overnight by the rocks with fish scraps in it, it held a whiskered lobster by morning. Once it held nothing but crab shells and a smear of ink. Under the ledges of the lagoon channel their whips poke from every crack by day; at night they walk out to feed. Split cane packed with husk burns an hour. The night water is another country.",
     "recipes": [
       "woven-trap",
       "torch",
@@ -82,6 +85,7 @@
     ],
     "rumours": [
       "lobster-trap",
+      "lobster-channel",
       "octopus-night",
       "octopus-crab"
     ]
@@ -90,7 +94,7 @@
     "id": "page-8",
     "order": 8,
     "title": "Day 52",
-    "text": "The round silver ones with the sickle fins will look at nothing but a crab. I have watched them refuse everything else I own. And at dusk something red and heavy takes cut fish at the reef edge and goes straight down.",
+    "text": "The round silver ones with the sickle fins will look at little but a crab. I have watched them refuse most of what I own. And at dusk something red and heavy takes cut fish at the reef edge and goes straight down.",
     "recipes": [],
     "rumours": [
       "permit-crab",
