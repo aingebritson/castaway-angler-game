@@ -8,7 +8,7 @@ import { fishValue } from '../sim/catch';
 import { range, weighted } from '../sim/rng';
 import { localTime } from '../sim/time';
 import { dailySeed } from '../sim/world';
-import { type Ctx, type GameEvent, addItem, applyRumour, has, log, takeItem } from './actions';
+import { type Ctx, type GameEvent, addItem, applyRumour, grantClue, has, log, takeItem } from './actions';
 import type { GameState, KeptFish, OrderSave, QuestSave } from './state';
 
 const toast = (text: string, glyph?: string, tone: 'good' | 'warn' | 'info' = 'info'): GameEvent => ({ type: 'toast', text, glyph, tone });
@@ -62,7 +62,7 @@ export function sellItem(s: GameState, ctx: Ctx, itemId: string, qty: number): G
 
 export function buy(s: GameState, ctx: Ctx, shopId: string, itemId: string, qty = 1): GameEvent[] {
   const entry = ctx.content.shops[shopId]?.stock.find((e) => e.item === itemId);
-  if (!entry) return [];
+  if (!entry || (entry.requiresFlag && !s.flags[entry.requiresFlag])) return [];
   if (entry.once && has(s, itemId)) return [toast('You already own one.', '✋')];
   const cost = entry.price * qty;
   if (s.coins < cost) return [toast(`Not enough coins. It costs ${cost}.`, '◉', 'warn')];
@@ -198,11 +198,9 @@ export function turnIn(s: GameState, ctx: Ctx, questId: string): GameEvent[] {
   if (r.rumours?.length) events.push(toast(`${r.rumours.length} rumour${r.rumours.length > 1 ? 's' : ''} noted in the field guide.`, '💬', 'good'));
   for (const id of r.recipes ?? []) if (!s.recipesKnown.includes(id)) s.recipesKnown.push(id);
   for (const f of r.flags ?? []) s.flags[f] = true;
-  if (r.clue) {
-    s.clues.push(r.clue);
-    log(s, ctx, 'clue', r.clue);
-    events.push(toast('A legend, written in the log.', '✨', 'good'));
-  }
+  let clues = 0;
+  for (const c of r.clues ?? []) if (grantClue(s, ctx, c)) clues++;
+  if (clues) events.push(toast('A clue to a legend, written in the log.', '✨', 'good'));
   log(s, ctx, 'quest', `“${q.title}” done. ${who}: “${q.done}”`);
   return events;
 }

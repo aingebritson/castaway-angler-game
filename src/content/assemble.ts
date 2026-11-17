@@ -129,7 +129,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
       needItem(h.node?.requiresTool, where);
       h.node?.table?.forEach((t) => needItem(t.item, where));
       if (h.node?.handZone && !loc.zones.some((z) => z.id === h.node!.handZone)) err(`${where}: hand zone "${h.node.handZone}" is not a zone`);
-      if ((h.kind === 'npc' || h.kind === 'market') && !people[h.ref ?? '']) err(`${where}: missing person "${h.ref}"`);
+      if ((h.kind === 'npc' || h.kind === 'market' || h.kind === 'museum') && !people[h.ref ?? '']) err(`${where}: missing person "${h.ref}"`);
       if (h.kind === 'shop' && !shops[h.ref ?? '']) err(`${where}: missing shop "${h.ref}"`);
     }
   }
@@ -162,6 +162,12 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
   for (const l of Object.values(legendaries)) {
     needSpecies(l.speciesId, `legendary ${l.id}`);
     if (!locations[l.spawn.locationId]) err(`legendary ${l.id}: missing location`);
+    else if (!locations[l.spawn.locationId].zones.some((z) => z.id === l.spawn.zone)) err(`legendary ${l.id}: missing zone "${l.spawn.zone}"`);
+    for (const c of l.clues) {
+      const src = c.sourceQuestId;
+      const ok = src.startsWith('museum:') ? !!regions[src.slice(7)] : quests[src]?.reward.clues?.includes(`${l.id}:${c.dimension}`);
+      if (!ok) err(`legendary ${l.id}: clue "${c.dimension}" is not given by "${src}"`);
+    }
   }
   const questsByPerson: Record<string, S.Quest[]> = {};
   for (const q of Object.values(quests)) {
@@ -175,6 +181,10 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
     q.reward.items?.forEach((i) => needItem(i.item, where));
     q.reward.rumours?.forEach((r) => !rumours[r] && err(`${where}: missing rumour "${r}"`));
     q.reward.recipes?.forEach((r) => !recipes[r] && err(`${where}: missing recipe "${r}"`));
+    for (const c of q.reward.clues ?? []) {
+      const [lid, dim] = c.split(':');
+      if (!legendaries[lid]?.clues.some((x) => x.dimension === dim)) err(`${where}: unknown clue "${c}"`);
+    }
   }
   for (const list of Object.values(questsByPerson)) list.sort((a, b) => a.order - b.order);
   for (const p of Object.values(people)) if (!locations[p.locationId]) err(`person ${p.id}: missing location "${p.locationId}"`);

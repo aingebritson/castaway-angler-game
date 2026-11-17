@@ -8,6 +8,8 @@ import { formatClock } from '../sim/time';
 import { type GameEvent, type Reveal, gather, hotspotVisible, nodeStatus, pickup, rigOf, sunAt, travel } from '../state/actions';
 import { nextGoal } from '../state/goals';
 import { coachStep, focusHotspots, navHidden } from '../state/tutorial';
+import { badges } from '../state/museum';
+import { moonIndex } from '../sim/time';
 import { Coach, Intro } from './coach';
 import { Icon } from './bits';
 import { EndingCard, HaulCard, PageCard, RevealCard, type ToastMsg, Toasts } from './cards';
@@ -19,6 +21,7 @@ import { PortPanels, type PortPanel, portHotspot } from './port';
 type Panel = 'map' | 'bag' | 'catch' | 'rig' | 'guide' | 'journal' | 'craft' | 'fire' | 'raft' | 'trap' | 'settings' | 'debug';
 
 const PHASE_GLYPH: Record<string, string> = { dawn: '🌅', day: '☀️', dusk: '🌇', night: '🌙' };
+const MOON_GLYPH = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
 let nextId = 1;
 
 export function App() {
@@ -110,6 +113,23 @@ export function App() {
     engineRef.current?.setLocation(s.locationId);
   }, [s.locationId]);
 
+  // Announce badges as they are earned (not the ones a returning save already had).
+  const earned = badges(s, store.content).filter((b) => b.got).map((b) => b.id);
+  const seenBadges = useRef<Set<string> | null>(null);
+  useEffect(() => {
+    if (!seenBadges.current) {
+      seenBadges.current = new Set(earned);
+      return;
+    }
+    for (const id of earned) {
+      if (seenBadges.current.has(id)) continue;
+      seenBadges.current.add(id);
+      const b = badges(store.state, store.content).find((x) => x.id === id)!;
+      toast(`Badge: ${b.name}. ${b.desc}`, b.glyph, 'good');
+      audio.play('discover');
+    }
+  }, [earned.join(',')]);
+
   const card = !!(reveal || pages.length || haul || ending);
   const step = title ? null : coachStep(s, { phase, panel: panel ?? (port ? 'port' : null), card });
   const overlay = !!(panel || port || card || title || step === 'intro');
@@ -171,7 +191,7 @@ export function App() {
           <div class="place">{loc.name}</div>
           <button class="clock" onClick={() => open('settings')}>
             {s.flags.launched && <span class="coins">◉ {s.coins}</span>}
-            <span>{PHASE_GLYPH[sun.phase]} {formatClock(sun.local)}</span>
+            <span>{sun.phase === 'night' ? MOON_GLYPH[moonIndex(ctx.now)] : PHASE_GLYPH[sun.phase]} {formatClock(sun.local)}</span>
             {!s.flags.launched && <span class="ph">{sun.phase}</span>}
             <span style={{ width: '16px', height: '16px', display: 'inline-grid' }}><Icon name="gear" /></span>
           </button>

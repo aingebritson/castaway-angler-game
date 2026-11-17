@@ -104,5 +104,33 @@
     "reel": "spinning-reel",
     "lure": "plug",
     "method": "lure"
+  },
+  {
+    "id": "master-live",
+    "label": "Master: big-game rod and line, lever reel, large hook, live sardine",
+    "rod": "big-game-rod",
+    "line": "big-game-line",
+    "reel": "lever-reel",
+    "hook": "steel-hook-large",
+    "bait": "live-sardine",
+    "method": "bait"
+  },
+  {
+    "id": "master-spoon",
+    "label": "Master: offshore rod, braid, spinning reel, spoon",
+    "rod": "offshore-rod",
+    "line": "braid-line",
+    "reel": "spinning-reel",
+    "lure": "spoon",
+    "method": "lure"
+  },
+  {
+    "id": "skipper-spoon",
+    "label": "Skipper: graphite rod, heavy mono, spinning reel, spoon",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "lure": "spoon",
+    "method": "lure"
   }
 ]

@@ -4,6 +4,8 @@ A fishing and crafting game for the iPhone Home Screen. You wake up shipwrecked 
 
 No timers, no hunger, no death. The island runs on your phone's clock: fish at dusk and the dusk fish are there.
 
+Play it at **https://aingebritson.github.io/castaway-angler-game/** (on iPhone: Share → Add to Home Screen).
+
 The full design is in [docs/SPEC.md](docs/SPEC.md). Where the build departs from it: [docs/DECISIONS.md](docs/DECISIONS.md).
 
 ## Play

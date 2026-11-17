@@ -115,12 +115,15 @@ export interface GameState {
     castsSinceBottle: number;
     coinsEarned: number;
     playMs: number;
+    tagged: number;
   };
   coins: number;
   quests: Record<string, QuestSave>;
   orders: { day: string; portId: string; list: OrderSave[] } | null;
   legendariesCaught: string[];
   clues: string[];
+  /** Species caught today (local day at the place), for same-day badges. */
+  today: { day: string; ids: string[] };
   settings: { sound: boolean; haptics: boolean };
   debug: { timeOffsetMs: number };
 }
@@ -156,12 +159,13 @@ export function newGame(seed: number, now: number): GameState {
     flags: {},
     visited: { beach: true },
     zonesSeen: {},
-    stats: { casts: 0, catches: 0, lost: 0, castsSinceBottle: 0, coinsEarned: 0, playMs: 0 },
+    stats: { casts: 0, catches: 0, lost: 0, castsSinceBottle: 0, coinsEarned: 0, playMs: 0, tagged: 0 },
     coins: 0,
     quests: {},
     orders: null,
     legendariesCaught: [],
     clues: [],
+    today: { day: '', ids: [] },
     settings: { sound: true, haptics: true },
     debug: { timeOffsetMs: 0 },
   };

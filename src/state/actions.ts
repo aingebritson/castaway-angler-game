@@ -98,7 +98,7 @@ export function cond(s: GameState, expr: string | undefined): boolean {
   if (!expr) return true;
   const neg = expr.startsWith('!');
   const [kind, val] = (neg ? expr.slice(1) : expr).split(':');
-  const v = kind === 'flag' ? !!s.flags[val] : kind === 'has' ? has(s, val) : kind === 'everHeld' ? !!s.everHeld[val] : false;
+  const v = kind === 'flag' ? !!s.flags[val] : kind === 'has' ? has(s, val) : kind === 'everHeld' ? !!s.everHeld[val] : kind === 'quest' ? s.quests[val]?.state === 'done' : false;
   return neg ? !v : v;
 }
 
@@ -394,6 +394,9 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
   e.cells[`month:${sun.local.month}`] = 'c';
   e.cells[`zone:${s.locationId}/${zoneId}`] = 'c';
   s.zonesSeen[`${s.locationId}/${zoneId}`] = true;
+  if (s.today.day !== sun.local.dayKey) s.today = { day: sun.local.dayKey, ids: [] };
+  if (!s.today.ids.includes(sp.id)) s.today.ids.push(sp.id);
+  if (['albula-vulpes', 'trachinotus-falcatus', 'megalops-atlanticus'].every((id) => s.today.ids.includes(id))) s.flags['badge:slam'] = true;
   const rig = rigOf(s, ctx.content);
   const bt = source === 'rod' ? (rig ? baitType(rig) : null) : source;
   if (bt) e.cells[`bait:${bt}`] = 'c';
@@ -458,7 +461,10 @@ export function loseFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string,
   } else events.push(toast('The hook pulled free.', '🪝', 'warn'));
   const e = entry(s, sp.id);
   if (e.state === 'rumoured') e.state = 'sighted';
-  if (bite.outcome !== 'auto') {
+  if (bite.legendaryId) {
+    const leg = ctx.content.legendaries[bite.legendaryId];
+    log(s, ctx, 'clue', `${leg.name}. I had him on, ${sizeClass(bite.lengthCm)} beyond anything, and then I did not. He is still out there.`, { speciesId: sp.id });
+  } else if (bite.outcome !== 'auto') {
     const how = reason === 'snapped' ? 'broke the line' : reason === 'spooled' ? 'took every yard of line I had and kept going' : 'threw the hook';
     const over = bite.outcome === 'overmatched' ? ' I could do nothing with it. Not with this gear.' : '';
     log(s, ctx, 'away', `Something ${sizeClass(bite.lengthCm)} took the ${s.rig.method === 'lure' ? 'lure' : 'bait'} in the ${zone?.name.toLowerCase() ?? 'water'} at ${sun.phase} and ${how}.${over}`, { speciesId: sp.id });
@@ -537,7 +543,29 @@ export function creelLimit(s: GameState, content: Content): number {
 export function releaseFish(s: GameState, ctx: Ctx, r: Reveal): GameEvent[] {
   entry(s, r.speciesId).released++;
   onReleaseQuests(s, ctx, r);
-  return [{ type: 'sfx', id: 'release' }];
+  const events: GameEvent[] = [{ type: 'sfx', id: 'release' }];
+  const sp = ctx.content.species[r.speciesId];
+  if (sp.conservation.releaseOnly && sp.kind !== 'sighting' && has(s, 'tag-kit')) {
+    const pay = Math.round(ctx.content.balance.economy.tagPayment * (1 + r.lengthCm / 100));
+    s.coins += pay;
+    s.stats.coinsEarned += pay;
+    s.stats.tagged++;
+    log(s, ctx, 'catch', `Tagged and released a ${sp.commonName.toLowerCase()}, ${formatLength(r.lengthCm)}. Dr Reyes pays ${pay} coins for the record.`, { speciesId: sp.id });
+    events.push(toast(`Tagged and released. +${pay} coins for the data.`, '🏷️', 'good'), { type: 'sfx', id: 'coin' });
+  }
+  return events;
+}
+
+/** Learn one condition of a legendary's spawn rule. */
+export function grantClue(s: GameState, ctx: Ctx, clueId: string): boolean {
+  if (s.clues.includes(clueId)) return false;
+  const [lid, dim] = clueId.split(':');
+  const leg = ctx.content.legendaries[lid];
+  const clue = leg?.clues.find((c) => c.dimension === dim);
+  if (!clue) return false;
+  s.clues.push(clueId);
+  log(s, ctx, 'clue', `${leg.name}: ${clue.text}`, { speciesId: leg.speciesId });
+  return true;
 }
 
 export function fishToBait(s: GameState, ctx: Ctx, r: Reveal): GameEvent[] {

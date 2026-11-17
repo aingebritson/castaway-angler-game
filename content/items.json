@@ -689,5 +689,46 @@
     "kind": "utility",
     "glyph": "🏮",
     "desc": "A paraffin storm lantern. Lights the water at night as well as any torch, and does not blow out."
+  },
+  {
+    "id": "tag-kit",
+    "name": "Tagging kit",
+    "kind": "tool",
+    "glyph": "🏷️",
+    "desc": "Dart tags, an applicator and a waterproof notebook. Protected animals you release are tagged, and Dr Reyes pays for the data."
+  },
+  {
+    "id": "big-game-rod",
+    "name": "Big-game rod",
+    "kind": "rod",
+    "glyph": "🎣",
+    "desc": "A stand-up rod built for fish heavier than you. There is nothing in these waters it cannot hold.",
+    "rod": {
+      "tier": 5,
+      "range": 0.99,
+      "power": 30,
+      "accuracy": 0.9
+    }
+  },
+  {
+    "id": "big-game-line",
+    "name": "Big-game line",
+    "kind": "line",
+    "glyph": "➰",
+    "desc": "Hundred-pound braid with a shock leader.",
+    "line": {
+      "strength": 30
+    }
+  },
+  {
+    "id": "lever-reel",
+    "name": "Lever-drag reel",
+    "kind": "reel",
+    "glyph": "🧿",
+    "desc": "A two-speed reel with a drag smooth as oil. The safe part of the gauge is much wider.",
+    "reel": {
+      "greenBonus": 1,
+      "capacity": 2
+    }
   }
 ]

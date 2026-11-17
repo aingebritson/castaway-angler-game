@@ -4,7 +4,7 @@
  */
 import type { Content } from '../content/assemble';
 import type { Rarity } from '../content/schema';
-import { type CatchCtx, type Rig, castRange, drawCruiser, fishValue, planWait, resolveBite, rigPower, sightReaction, strikeRate } from './catch';
+import { type CatchCtx, type Rig, castRange, spoolOf, drawCruiser, fishValue, planWait, resolveBite, rigPower, sightReaction, strikeRate } from './catch';
 import { simulateFight } from './fight';
 import { makeRng } from './rng';
 import { moonIndex, sunInfo } from './time';
@@ -149,7 +149,7 @@ export function runSim(content: Content, opts: SimOptions): SimReport {
       let won = true;
       let secs = b.fight.autoLandS;
       if (bite.outcome !== 'auto') {
-        const res = simulateFight({ species: sp, ratio: bite.ratio, startDist: Math.min(1, zone.minCastRange + 0.2), greenBonus: rig.reel?.reel?.greenBonus ?? 0 }, rng, b);
+        const res = simulateFight({ species: sp, ratio: bite.ratio, startDist: Math.min(1, zone.minCastRange + 0.2), greenBonus: rig.reel?.reel?.greenBonus ?? 0, capacity: spoolOf(rig) }, rng, b);
         won = res.outcome === 'landed';
         secs = res.seconds;
         fights++;

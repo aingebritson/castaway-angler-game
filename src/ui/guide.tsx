@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import type { Species } from '../content/schema';
 import { formatLength, formatWeight } from '../sim/catch';
-import { MONTH_NAMES, displayTz, formatClock, formatDate, localTime } from '../sim/time';
+import { MONTH_NAMES, MOON_NAMES, displayTz, formatClock, formatDate, localTime, moonIndex } from '../sim/time';
 import { setNote, togglePin } from '../state/actions';
 import type { GameState, GuideEntry, JournalKind } from '../state/state';
 import { BAIT_LABEL, FishArt, Sheet, Tab } from './bits';
@@ -182,6 +182,7 @@ const FILTERS: { id: string; label: string; test(k: JournalKind, pinned: boolean
   { id: 'rumour', label: 'Rumours', test: (k) => k === 'rumour' || k === 'clue' || k === 'sighting' },
   { id: 'page', label: 'Pages', test: (k) => k === 'page' },
   { id: 'quest', label: 'Errands', test: (k) => k === 'quest' },
+  { id: 'legends', label: '✨ Legends', test: () => false },
 ];
 
 export function JournalPanel({ onClose }: { onClose(): void }) {
@@ -193,17 +194,20 @@ export function JournalPanel({ onClose }: { onClose(): void }) {
   const f = FILTERS.find((x) => x.id === filter)!;
   const loc = c.locations[s.locationId];
   const deviceTz = store.ctx().deviceTz;
-  const entries = [...s.journal].reverse().filter((e) => f.test(e.kind, !!e.pinned) && (!hereOnly || e.locationId === s.locationId));
-  const shown = FILTERS.filter((x) => x.id !== 'quest' || s.flags.launched);
+  const entries = filter === 'legends' ? [] : [...s.journal].reverse().filter((e) => f.test(e.kind, !!e.pinned) && (!hereOnly || e.locationId === s.locationId));
+  const shown = FILTERS.filter((x) => (x.id !== 'quest' || s.flags.launched) && (x.id !== 'legends' || s.clues.length > 0));
   return (
     <Sheet title={s.flags.launched ? 'Captain’s log' : 'Journal'} sub="It writes itself. Pin what matters." onClose={onClose} tall
       tabs={<>{shown.map((x) => <Tab key={x.id} on={x.id === filter} onClick={() => setFilter(x.id)}>{x.label}</Tab>)}</>}>
+      {filter === 'legends' && <Legends />}
+      {filter !== 'legends' && <>
       <div class="row" style={{ justifyContent: 'space-between' }}>
         <h3 style={{ margin: '4px 0' }}>Notes on {loc.name}</h3>
         <button class={`tab ${hereOnly ? 'on' : ''}`} onClick={() => setHereOnly(!hereOnly)}>Only here</button>
       </div>
       <textarea class="note" placeholder="Your own notes for this place…" value={s.notes[loc.id] ?? ''} onChange={(e) => store.run(setNote, loc.id, (e.target as HTMLTextAreaElement).value)} />
       {!entries.length && <p class="quote muted">Nothing written here yet.</p>}
+      </>}
       {entries.map((e) => {
         const tz = displayTz(c.locations[e.locationId ?? s.locationId] ?? loc, deviceTz);
         return (
@@ -215,6 +219,49 @@ export function JournalPanel({ onClose }: { onClose(): void }) {
         );
       })}
     </Sheet>
+  );
+}
+
+const DIMENSIONS: { id: string; label: string }[] = [
+  { id: 'where', label: 'Where' }, { id: 'when', label: 'Time of day' }, { id: 'season', label: 'Season' }, { id: 'moon', label: 'Moon and tide' }, { id: 'bait', label: 'Bait' },
+];
+
+function Legends() {
+  const { store } = useGame();
+  const s = useGameState();
+  const c = store.content;
+  const moon = moonIndex(store.ctx().now);
+  const spring = [7, 0, 1, 3, 4, 5].includes(moon);
+  const known = Object.values(c.legendaries).filter((l) => s.clues.some((x) => x.startsWith(l.id + ':')));
+  return (
+    <>
+      <p class="muted">Tonight: {MOON_NAMES[moon].toLowerCase()}, {spring ? 'big spring tides' : 'small neap tides'}.</p>
+      {known.map((l) => {
+        const caught = s.legendariesCaught.includes(l.id);
+        const dims = DIMENSIONS.filter((d) => l.clues.some((x) => x.dimension === d.id));
+        const got = dims.filter((d) => s.clues.includes(`${l.id}:${d.id}`)).length;
+        return (
+          <div key={l.id} class="detail" style={{ marginBottom: '12px' }}>
+            <b>{l.name}</b> {caught ? <span class="pill record">Landed</span> : <span class="muted">· {got} of {dims.length} known</span>}
+            <p class="quote" style={{ fontSize: '14.5px' }}>{l.lore}</p>
+            {dims.map((d) => {
+              const clue = l.clues.find((x) => x.dimension === d.id)!;
+              const has = s.clues.includes(`${l.id}:${d.id}`);
+              return (
+                <div key={d.id} class="row" style={{ alignItems: 'flex-start', margin: '6px 0' }}>
+                  <span style={{ width: '18px', flex: 'none' }}>{has ? '✔︎' : '◻︎'}</span>
+                  <div class="grow">
+                    <div class="muted" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase' }}>{d.label}</div>
+                    <div class={has ? 'quote' : 'muted'} style={{ fontSize: '14px' }}>{has ? clue.text : 'Unknown. Somebody, somewhere, knows.'}</div>
+                  </div>
+                </div>
+              );
+            })}
+            {got === dims.length && !caught && <p class="muted">You know everything there is to know. When it all holds at once, each cast has a chance. You will need gear that can hold him.</p>}
+          </div>
+        );
+      })}
+    </>
   );
 }
 

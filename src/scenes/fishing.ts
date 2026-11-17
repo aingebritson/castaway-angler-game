@@ -6,7 +6,7 @@
 import type { Location, Zone } from '../content/schema';
 import type { GameAudio } from '../platform/audio';
 import { vibrate } from '../platform/audio';
-import { type Cruiser, type FishBite, castRange, drawCruiser, strikeRate } from '../sim/catch';
+import { type Cruiser, type FishBite, castRange, drawCruiser, spoolOf, strikeRate } from '../sim/catch';
 import { type FightState, startFight, stepFight } from '../sim/fight';
 import { type Rng, clamp, lerp, makeRng, range } from '../sim/rng';
 import {
@@ -387,7 +387,12 @@ export class Fishing {
     const rig = this.rig();
     const reach = rig ? castRange(rig) : 0.5;
     this.fightRng = makeRng((store.state.rng ^ 0x9e3779b9) >>> 0);
-    this.fight = startFight({ species, ratio: bite.ratio, startDist: clamp(d / Math.max(0.3, reach), 0, 1), greenBonus: rig?.reel?.reel?.greenBonus ?? 0 }, this.fightRng);
+    const leg = bite.legendaryId ? store.content.legendaries[bite.legendaryId] : null;
+    this.fight = startFight({
+      species, ratio: bite.ratio, startDist: clamp(d / Math.max(0.3, reach), 0, 1), greenBonus: rig?.reel?.reel?.greenBonus ?? 0,
+      capacity: rig ? spoolOf(rig) : 1, staminaMult: leg?.fight?.staminaMult,
+    }, this.fightRng);
+    if (leg) this.host.toast(`This is no ordinary fish. ${leg.name}?`, '✨', 'good');
     // Start the fish where the float was.
     this.fight.dist = clamp(d / 1.05, 0.2, 0.9);
     this.fight.side = clamp((this.floatPos.x - 0.5) / (0.34 * (0.35 + 0.65 * this.fight.dist)), -1, 1);
@@ -1148,7 +1153,7 @@ export class Fishing {
     g.fillStyle = 'rgba(255,255,255,0.25)';
     g.fillRect(x, ly, w, 3);
     g.fillStyle = '#fff';
-    const fx = x + w * clamp(f.dist, 0, 1);
+    const fx = x + w * clamp(f.dist / f.capacity, 0, 1);
     g.beginPath();
     g.moveTo(fx - 9, ly + 1.5);
     g.lineTo(fx + 3, ly - 5);

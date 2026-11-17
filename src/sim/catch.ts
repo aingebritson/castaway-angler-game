@@ -66,6 +66,9 @@ export type Bite =
 
 export const rigPower = (rig: Rig): number => Math.min(rig.rod.rod?.power ?? 0, rig.line.line?.strength ?? 0);
 
+/** Line on the spool, in fight distance units: a reel lets a strong fish run further before it is gone. */
+export const spoolOf = (rig: Rig): number => 1 + 0.6 * (rig.reel?.reel?.capacity ?? 0);
+
 export const castRange = (rig: Rig): number => (rig.rod.rod?.range ?? 0) + (rig.sinker?.sinker?.rangeBonus ?? 0);
 
 /** Affinity keys offered by whatever is on the end of the line. */

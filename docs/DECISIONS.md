@@ -37,7 +37,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 19. **The cast net reuses the gathering system.** Throwing it on the sardine school is a tool-gated hand-gather; the field guide records the method as "by hand". A true net method is reserved in the schema for crab pots and nets in M3.
 20. **Two people sell as well as talk.** Marisol runs the tackle shop and Mr Alvarez the boatyard; their errands appear at the top of their shop. Old Tobias is the old salt. Delphine at the fish market buys the catch and has no chain yet. The biologist and tag-and-release wait for M4.
 21. **The wreck is reachable after the island** by skiff, as a daily salvage node on Wreck Beach. It is a hook for a later quest, not yet a scene.
-22. **Legendaries are wired but none is placed.** The schema, spawn check and catch-once rule exist and are tested through the reducers' code path; Tobias's last errand gives the first clue ("the Bishop"). Placing it is M4 content.
+22. *(Superseded by 27.)* Legendaries were wired but unplaced at the end of M2.
 23. **The orders board names species the player may not have caught**, shown as silhouettes. This is a deliberate small leak: an order is a rumour that a fish exists.
 
 ## Opening (after Andy's first play, 2026-11-17)
@@ -46,10 +46,23 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 25. **The first catch is rigged to succeed.** Until the first fish is landed the wait is three seconds, there is always a nibble first, the bite is always a landable fish, and the strike window is at least 2.2 seconds. This bends the catch model for one cast, on purpose.
 26. **The "Thinking" note now rings the relevant hotspot in gold** when you are at the right place, so later goals ("loose stones at Rocky Point") point at the exact thing to tap.
 
+## Depth and collection (M4, M5)
+
+27. **Two legendaries, one per region so far.** *Old Ironjaw*, a 160 cm great barracuda off the Rocky Point drop-off (day, November to March, a spoon), and *the Bishop*, a 236 cm tarpon in the mouth of the Cut (dusk, June to August, big tides, live sardine or plug). Every condition is a clue earned from a person or a museum wing and shown as a checklist on the log's Legends page; nothing reveals a condition the player has not been told. A legendary can be caught once; losing the fight writes the story and leaves him in the water. Both are protected or kept by the existing rules (the Bishop is a tarpon, so he is released).
+28. **Reels now have line capacity**, which the spec listed but the fight model ignored: a fish that out-pulls the rig strips line until the spool is empty, and a bigger reel buys time. Without it, any fish stronger than the rig was lost in seconds, so no fight could last the 60 to 120 seconds the spec asks of a legendary.
+29. **Legendaries carry a stamina multiplier** (`fight.staminaMult`). Tuned with the bot: the Bishop takes about 78 seconds on the top rig and is unwinnable below it; Ironjaw is roughly a coin flip in about a minute on the graphite rig and easy on the offshore rod. The bot plays a perfect, steady game, so a person will lose more of these.
+30. **Big-game gear** (a 30-strength rod and line and a lever-drag reel) appears at Marisol's only after Tobias's last errand. Prices are first guesses.
+31. **Tag and release.** Dr Imani Reyes appears once the skiff is bought and runs four errands. Her tagging kit pays for every protected animal released (25 coins × (1 + length in metres)). Releasing ordinary fish still pays nothing, as before.
+32. **Moon and tide are computed, weather is not.** The moon phase is real; tides are simply "spring" near new and full moon and "neap" otherwise. Weather from the spec's M4 is not built.
+33. **The museum** has a wing per region of every kept species (protected animals, sightings and bait creatures are excluded because they cannot be kept). Donating takes the biggest one in the basket. A finished wing pays 40 coins per specimen and reveals any legendary clue sourced from it. The aquarium and livewell are not built.
+34. **Badges** are fourteen, derived from state except "grand slam", which is latched when bonefish, permit and tarpon are caught on the same local day.
+
 ## Schema additions (spec section 11)
 
 - `Species`: `tint` (placeholder colours), `gathersAs` (hand-caught bait creatures go into the bag as an item); `lengthCm.measure` gains `CL`, `ML`, `SH`.
 - `SourceRef.accessed` may be `"pending-review"`.
+- `Legendary`: `fight.staminaMult`; clue `dimension` is one of where, when, season, bait, moon; `sourceQuestId` may be `museum:<region id>`.
+- Quest `reward.clues` lists `"<legendary id>:<dimension>"`; hotspot conditions accept `quest:<id>` (done).
 - `Zone`: `cast` (false for hand and trap-only zones), `blurb`.
 - `Location`: `blurb`, `solarTz` (real zone for sun maths when `tz` is `"device"`), `sightZones`, `map`, `scene.painter`; `kind` gains `camp` and `gather`.
 - `Hotspot`, `GatherNode`, `Item`, `Recipe`, `Page`, `Rumour`, `JunkTable`, `RigPreset`, `Region`, `Person`, `Quest`, `Shop`: defined in `src/content/schema.ts`, which is the reference.

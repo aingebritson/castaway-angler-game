@@ -95,6 +95,24 @@
         "item": "offshore-rod",
         "price": 9000,
         "once": true
+      },
+      {
+        "item": "lever-reel",
+        "price": 4500,
+        "once": true,
+        "requiresFlag": "bigGame"
+      },
+      {
+        "item": "big-game-line",
+        "price": 3000,
+        "once": true,
+        "requiresFlag": "bigGame"
+      },
+      {
+        "item": "big-game-rod",
+        "price": 7000,
+        "once": true,
+        "requiresFlag": "bigGame"
       }
     ]
   },

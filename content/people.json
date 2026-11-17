@@ -46,5 +46,29 @@
       "Check the board. Restaurants pay double when they are desperate.",
       "Smoked keeps, and smoked sells."
     ]
+  },
+  {
+    "id": "reyes",
+    "locationId": "port-esperanza",
+    "name": "Dr Imani Reyes",
+    "role": "Marine biologist",
+    "glyph": "👩‍🔬",
+    "greeting": "You are the one who came in on the raft. I would very much like to know what you saw out there.",
+    "idle": [
+      "Every fish released is a fish that can be counted.",
+      "The tide is the moon's handwriting. Learn to read it."
+    ]
+  },
+  {
+    "id": "castillo",
+    "locationId": "port-esperanza",
+    "name": "Abena Castillo",
+    "role": "Museum curator",
+    "glyph": "👩‍🏫",
+    "greeting": "A natural history museum with almost no specimens. You can help with that.",
+    "idle": [
+      "One of each kind. The best of each kind, if you can.",
+      "Every wing we finish, somebody in town remembers a story."
+    ]
   }
 ]

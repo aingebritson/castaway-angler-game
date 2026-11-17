@@ -30,6 +30,8 @@ export interface FightState {
   jumping: boolean;
   /** Bonus to the green band from the reel. */
   greenBonus: number;
+  /** Line on the spool, in the same units as `dist`. A bigger reel lets a strong fish run further before it is gone. */
+  capacity: number;
   outcome: 'fighting' | 'landed' | 'snapped' | 'pulled' | 'spooled';
   /** For the renderer: the fish's lateral position, -1..1. */
   side: number;
@@ -42,6 +44,10 @@ export interface FightSetup {
   /** Where the fish was hooked, 0..1 of cast range. */
   startDist: number;
   greenBonus?: number;
+  /** Spool size; 1 without a reel. */
+  capacity?: number;
+  /** Legendary fish fight on far longer than their kind. */
+  staminaMult?: number;
 }
 
 const SURGE: Record<Archetype, { every: [number, number]; length: [number, number]; mult: number }> = {
@@ -58,7 +64,7 @@ export function startFight(setup: FightSetup, rng: Rng): FightState {
   return {
     archetype: a,
     ratio: setup.ratio,
-    stamina: Math.max(1, setup.species.fight.stamina),
+    stamina: Math.max(1, setup.species.fight.stamina * (setup.staminaMult ?? 1)),
     energy: 1,
     dist: clamp(0.3 + 0.45 * setup.startDist, 0.2, 0.8),
     tension: 0.3,
@@ -70,6 +76,7 @@ export function startFight(setup: FightSetup, rng: Rng): FightState {
     nextSurge: range(rng, 0.8, SURGE[a].every[0]),
     jumping: false,
     greenBonus: setup.greenBonus ?? 0,
+    capacity: setup.capacity ?? 1,
     outcome: 'fighting',
     side: range(rng, -0.3, 0.3),
     sideVel: 0,
@@ -152,8 +159,8 @@ export function stepFight(s: FightState, reeling: boolean, dt: number, rng: Rng,
     s.outcome = 'landed';
   } else if (s.redTime >= f.snapS) s.outcome = 'snapped';
   else if (s.slackTime >= f.slackS) s.outcome = 'pulled';
-  else if (s.dist >= 1) {
-    s.dist = 1;
+  else if (s.dist >= s.capacity) {
+    s.dist = s.capacity;
     s.outcome = 'spooled';
   }
   return s;

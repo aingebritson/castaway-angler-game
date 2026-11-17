@@ -75,11 +75,14 @@
       "locationId": "beach"
     },
     "progressText": "Sail back to Wreck Beach",
-    "done": "So she is still there. Bring me whatever she gives up, and I will see you right.",
+    "done": "So she is still there. And so is he, I suppose: the old barracuda off the point. Bring me whatever she gives up.",
     "reward": {
       "coins": 150,
       "rumours": [
         "tarpon-cut"
+      ],
+      "clues": [
+        "ironjaw:where"
       ]
     }
   },
@@ -133,6 +136,9 @@
           "item": "spoon",
           "qty": 1
         }
+      ],
+      "clues": [
+        "ironjaw:bait"
       ]
     }
   },
@@ -223,6 +229,9 @@
       "rumours": [
         "nassau-winter",
         "king-winter"
+      ],
+      "clues": [
+        "ironjaw:when"
       ]
     }
   },
@@ -244,6 +253,9 @@
       "coins": 60,
       "rumours": [
         "permit-cut"
+      ],
+      "clues": [
+        "the-bishop:when"
       ]
     }
   },
@@ -259,10 +271,96 @@
       "count": 1
     },
     "progressText": "Land a tarpon",
-    "done": "…Yes. That is what I thought it would be like. Thank you.",
+    "done": "…Yes. That is what I thought it would be like. There is one more. I will tell Marisol to order you some real gear.",
     "reward": {
       "coins": 300,
-      "clue": "Tobias: “There is an old tarpon in the Cut they call the Bishop. Longer than my skiff. He comes on the biggest tides, at dusk, in the months when the mangoes drop. He has never been landed.”"
+      "clues": [
+        "the-bishop:where"
+      ],
+      "flags": [
+        "bigGame"
+      ]
+    }
+  },
+  {
+    "id": "reyes-1",
+    "personId": "reyes",
+    "order": 1,
+    "title": "A tagged bonefish",
+    "offer": "I am Imani Reyes; I study the flats fish for the university. Bonefish move between these cayes and nobody knows quite how. Catch one and let it go, and tell me where. Here is how I tag them.",
+    "goal": {
+      "type": "release",
+      "speciesId": "albula-vulpes",
+      "count": 1
+    },
+    "progressText": "Release a bonefish",
+    "done": "Good. That fish will turn up in someone's data in a year. Keep the kit. I pay for every protected animal you tag and release.",
+    "reward": {
+      "coins": 60,
+      "items": [
+        {
+          "item": "tag-kit",
+          "qty": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "reyes-2",
+    "personId": "reyes",
+    "order": 2,
+    "title": "Night shift at the Cut",
+    "offer": "Fish move through the Cut on the tide, and the tide follows the moon. Fish it after dark, three fish, and note what the water is doing.",
+    "goal": {
+      "type": "catchAny",
+      "count": 3,
+      "locationId": "the-cut",
+      "phase": "night"
+    },
+    "progressText": "Fish caught in the Cut after dark",
+    "done": "Interesting. The big tides run hardest there. Tobias will tell you a story about that; it is mostly true.",
+    "reward": {
+      "coins": 80,
+      "clues": [
+        "the-bishop:moon"
+      ]
+    }
+  },
+  {
+    "id": "reyes-3",
+    "personId": "reyes",
+    "order": 3,
+    "title": "Silver king",
+    "offer": "Tarpon are the hardest fish to study and the easiest to love. Tag one for me. Anywhere.",
+    "goal": {
+      "type": "release",
+      "speciesId": "megalops-atlanticus",
+      "count": 1
+    },
+    "progressText": "Tag and release a tarpon",
+    "done": "Every tarpon tagged in this country is in a database, and now so is yours. And since you asked about the Bishop, every account of him agrees on the bait.",
+    "reward": {
+      "coins": 250,
+      "clues": [
+        "the-bishop:bait"
+      ]
+    }
+  },
+  {
+    "id": "reyes-4",
+    "personId": "reyes",
+    "order": 4,
+    "title": "The grouper count",
+    "offer": "Nassau grouper were the commonest big fish on this reef. Now we count them one at a time. If you catch one, measure it, release it, and tell me.",
+    "goal": {
+      "type": "release",
+      "speciesId": "epinephelus-striatus",
+      "count": 1
+    },
+    "progressText": "Release a Nassau grouper",
+    "done": "One more than last year's count. That is the best news I have had all month.",
+    "reward": {
+      "coins": 300
     }
   }
 ]

@@ -3,14 +3,15 @@ import { useState } from 'preact/hooks';
 import type { Hotspot } from '../content/schema';
 import { formatLength } from '../sim/catch';
 import { has } from '../state/actions';
+import { badges, donatable, donate, trophyWall, wings } from '../state/museum';
 import { acceptQuest, buy, currentQuest, ensureOrders, fillOrder, fishPrice, goalCount, orderMatch, questReady, sellAllFish, sellFish, sellItem, sellable, turnIn } from '../state/port';
 import { FishArt, GRADE_LABEL, ItemIcon, Sheet, Tab } from './bits';
 import { useGame, useGameState } from './hooks';
 
-export type PortPanel = { kind: 'npc' | 'shop' | 'board' | 'market'; ref: string };
+export type PortPanel = { kind: 'npc' | 'shop' | 'board' | 'market' | 'museum'; ref: string };
 
 export function portHotspot(h: Hotspot): PortPanel | null {
-  if (h.kind === 'npc' || h.kind === 'shop' || h.kind === 'board' || h.kind === 'market') return { kind: h.kind, ref: h.ref ?? '' };
+  if (h.kind === 'npc' || h.kind === 'shop' || h.kind === 'board' || h.kind === 'market' || h.kind === 'museum') return { kind: h.kind, ref: h.ref ?? '' };
   return null;
 }
 
@@ -126,7 +127,7 @@ function Shop({ shopId, onClose }: { shopId: string; onClose(): void }) {
     <Sheet title={shop.name} sub={`◉ ${s.coins} coins`} onClose={onClose} tall>
       {shop.keeper && <PersonBlock personId={shop.keeper} />}
       <h3>For sale</h3>
-      {shop.stock.map((e) => {
+      {shop.stock.filter((e) => !e.requiresFlag || s.flags[e.requiresFlag]).map((e) => {
         const it = c.items[e.item];
         const owned = !!e.once && has(s, e.item);
         const afford = s.coins >= e.price;
@@ -181,8 +182,80 @@ function Board({ onClose }: { onClose(): void }) {
   );
 }
 
+function Museum({ personId, onClose }: { personId: string; onClose(): void }) {
+  const { store } = useGame();
+  const s = useGameState();
+  const c = store.content;
+  const [tab, setTab] = useState<'wings' | 'trophies' | 'badges'>('wings');
+  const ws = wings(s, c).filter((w) => w.species.some((id) => s.guide[id]) || w.regionId === c.locations[s.locationId].regionId);
+  const wall = trophyWall(s, c);
+  const bs = badges(s, c);
+  return (
+    <Sheet title="Museum" sub="Natural history of the coast, one specimen at a time." onClose={onClose} tall
+      tabs={<>
+        <Tab on={tab === 'wings'} onClick={() => setTab('wings')}>Wings</Tab>
+        <Tab on={tab === 'trophies'} onClick={() => setTab('trophies')}>Trophy wall</Tab>
+        <Tab on={tab === 'badges'} onClick={() => setTab('badges')}>Badges {bs.filter((b) => b.got).length}/{bs.length}</Tab>
+      </>}>
+      {tab === 'wings' && (
+        <>
+          <PersonBlock personId={personId} />
+          {ws.map((w) => (
+            <div key={w.regionId}>
+              <h3>{c.regions[w.regionId].name} wing <small>{w.donated} / {w.species.length}{w.complete ? ' · complete' : ''}</small></h3>
+              <div class="bar" style={{ marginBottom: '8px' }}><i style={{ width: `${(100 * w.donated) / Math.max(1, w.species.length)}%`, background: 'var(--gold)' }} /></div>
+              <div class="guide-grid">
+                {w.species.map((id) => {
+                  const e = s.guide[id];
+                  const sp = c.species[id];
+                  const spec = !e?.donated && donatable(s, id);
+                  return (
+                    <div key={id} class={`gcell ${e?.donated ? 'caught' : e?.state === 'caught' ? 'rumoured' : 'unknown'}`} style={{ cursor: 'default' }}>
+                      {e?.donated || e?.state === 'caught' ? <FishArt speciesId={id} width={80} ink={!e?.donated} /> : '?'}
+                      {(e?.donated || e?.state === 'caught') && <span class="nm">{sp.commonName}</span>}
+                      {e?.donated && <span class="badge">🏛️</span>}
+                      {spec && <button class="btn small gold" style={{ marginTop: '4px', minHeight: '28px', padding: '0 10px' }} onClick={() => store.run(donate, id)}>Donate</button>}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+          <p class="muted">Bring a fresh one in your catch basket to donate it. Protected animals and bait are not collected. A finished wing pays, and people talk.</p>
+        </>
+      )}
+      {tab === 'trophies' && (
+        <>
+          {!wall.length && <p class="quote muted">An empty wall, waiting.</p>}
+          {wall.map((t) => (
+            <div class="item" key={t.speciesId}>
+              <div class="ic" style={{ width: '66px' }}><FishArt speciesId={t.speciesId} width={60} /></div>
+              <div class="grow">
+                <div class="t">{c.species[t.speciesId].commonName} <span class={`pill ${t.grade}`}>{GRADE_LABEL[t.grade]}</span></div>
+                <div class="d">{formatLength(t.lengthCm)} · bigger than {Math.min(99.9, Math.round(t.percentile * 1000) / 10)}% of its kind · {c.locations[t.locationId]?.name}</div>
+              </div>
+            </div>
+          ))}
+        </>
+      )}
+      {tab === 'badges' && (
+        <div class="guide-grid">
+          {bs.map((b) => (
+            <div key={b.id} class={`gcell ${b.got ? 'caught' : 'unknown'}`} style={{ fontFamily: 'var(--sans)', fontSize: '13px' }}>
+              <span style={{ fontSize: '30px', filter: b.got ? 'none' : 'grayscale(1) opacity(.4)' }}>{b.glyph}</span>
+              <span class="nm">{b.name}</span>
+              <span class="muted" style={{ fontSize: '10.5px', lineHeight: 1.2, marginTop: '2px' }}>{b.desc}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </Sheet>
+  );
+}
+
 export function PortPanels({ panel, onClose }: { panel: PortPanel; onClose(): void }) {
   const { store } = useGame();
+  if (panel.kind === 'museum') return <Museum personId={panel.ref} onClose={onClose} />;
   if (panel.kind === 'market') return <Market personId={panel.ref} onClose={onClose} />;
   if (panel.kind === 'shop') return <Shop shopId={panel.ref} onClose={onClose} />;
   if (panel.kind === 'board') return <Board onClose={onClose} />;

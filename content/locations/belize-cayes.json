@@ -64,6 +64,25 @@
           "label": "Old Tobias",
           "glyph": "🧓",
           "ref": "tobias"
+        },
+        {
+          "id": "reyes",
+          "kind": "npc",
+          "x": 0.62,
+          "y": 0.71,
+          "label": "Dr Reyes",
+          "glyph": "👩‍🔬",
+          "ref": "reyes",
+          "showIf": "quest:alvarez-3"
+        },
+        {
+          "id": "museum",
+          "kind": "museum",
+          "x": 0.44,
+          "y": 0.82,
+          "label": "Museum",
+          "glyph": "🏛️",
+          "ref": "castillo"
         }
       ]
     }

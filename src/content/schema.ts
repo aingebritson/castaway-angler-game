@@ -95,7 +95,7 @@ export const GatherNode = z.object({
 
 export const Hotspot = z.object({
   id,
-  kind: z.enum(['gather', 'station', 'pickup', 'npc', 'shop', 'board', 'market']),
+  kind: z.enum(['gather', 'station', 'pickup', 'npc', 'shop', 'board', 'market', 'museum']),
   x: z.number().min(0).max(1),
   y: z.number().min(0).max(1),
   label: z.string(),
@@ -246,7 +246,9 @@ export const Legendary = z.object({
     moon: z.array(z.number()).optional(),
     chancePerCast: z.number(),
   }),
-  clues: z.array(z.object({ dimension: z.string(), text: z.string(), sourceQuestId: z.string() })),
+  clues: z.array(z.object({ dimension: z.enum(['where', 'when', 'season', 'bait', 'moon']), text: z.string(), sourceQuestId: z.string() })),
+  /** Legendaries fight on far longer than their kind. */
+  fight: z.object({ staminaMult: z.number().positive() }).optional(),
 });
 
 const QuestGoal = z.discriminatedUnion('type', [
@@ -265,7 +267,8 @@ const Reward = z.object({
   rumours: z.array(id).optional(),
   recipes: z.array(id).optional(),
   flags: z.array(z.string()).optional(),
-  clue: z.string().optional(),
+  /** Legendary clues, as "<legendary id>:<dimension>". */
+  clues: z.array(z.string()).optional(),
 });
 
 export const Quest = z.object({
