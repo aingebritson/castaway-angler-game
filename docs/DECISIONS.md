@@ -105,7 +105,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 46. **Every scene has real art**, 18 November 2026: the nine remaining scenes from Andy's ChatGPT batch, all 852 × 1846, so no phone crops them. Each scene's data was fitted to its image.
     - Horizons were measured from the images: 0.23 for the beach, lagoon, town pier, patch reef and the Cut. Mangrove Creek is 0.31, where the open water meets the far bank.
     - Tap spots were moved onto the things they name where the art put them elsewhere. Port Esperanza's market, orders board, tackle shop, museum and boatyard are painted about 20% higher than the old spots, and Old Tobias's spot was in the water; all six moved. The grove's coconuts and vines moved, the camp's fire moved onto the painted stone ring, and the pier's sardines moved onto the painted school.
-    - Known small departures from the prompt: a sport-fishing boat on the Cut's horizon, and a splash by the mangrove roots. Neither affects play.
+    - The first Cut had a sport-fishing boat on its horizon and the first Mangrove Creek a splash by the roots. Both were redone as edits of the same images with only that detail removed, so their horizons and tap spots stand.
 
 ## Schema additions (spec section 11)
 
