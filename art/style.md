@@ -17,8 +17,8 @@ Upload two or three of these at the start of every batch conversation and say "m
 | `art/reference/specimen__albula-vulpes.png` | Specimen: a slender silver fish, faint markings, exact fins | From the bake-off |
 | `art/reference/item__stone-knife.png` | Item: a three-quarter view of a small hand-made object | From the bake-off |
 | `art/reference/scene__rocky-point.png` | Scene: line, washes and palette only. **Not the layout**: its deep water runs down the right side, and the game needs it at the horizon | From the bake-off |
-| `art/reference/specimen__abudefduf-saxatilis.png` | Specimen: a deep-bodied fish with bold bars, to show strong markings in this style | To make |
-| `art/reference/specimen__panulirus-argus.png` | Specimen: an invertebrate (spiny lobster), to fix how shells and legs are drawn | To make |
+| `art/reference/specimen__abudefduf-saxatilis.png` | Specimen: a deep-bodied fish with bold bars, to show strong markings in this style. Its sixth bar, on the tail stem, is drawn as dark as the others; on the real fish it is faint or missing | Done, 18 November 2026 |
+| `art/reference/specimen__panulirus-argus.png` | Specimen seen from above: an invertebrate (spiny lobster), to fix how shells, legs and antennae are drawn | Done, 18 November 2026 |
 | `art/reference/scene__rocky-point-v2.png` | Scene: the re-prompted Rocky Point, now in the game. The layout reference: shallow near, deep far, horizon a third of the way down. Its finish is a little cleaner and more digital than the bible, so use the bonefish and knife for line and wash | Done, 18 November 2026 |
 
 ## Rules from the bake-off
@@ -67,6 +67,14 @@ Field-guide watercolour illustration with a fine dark ink line, naturalist's pla
 
 ```text
 A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+```
+
+### Specimen from above
+
+For animals the game shows from above: crabs, lobsters, rays, turtles, the octopus, the conch and manatees (the `TOP_DOWN` shapes in `src/scenes/silhouettes.ts`).
+
+```text
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 ```
 
 ### Item

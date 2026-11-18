@@ -329,7 +329,7 @@ Save as `art/inbox/specimen__callinectes-sapidus.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Blue crab (Callinectes sapidus). Broad olive-green carapace about twice as wide as long, ending in a sharp spine on each side; bright blue claws and legs; rear legs flattened into oval paddles.
 ```
@@ -341,7 +341,7 @@ Save as `art/inbox/specimen__trichechus-manatus.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: West Indian manatee (Trichechus manatus). Massive grey spindle-shaped body with wrinkled skin; small head with a bristled, squared muzzle; two paddle-like front flippers; broad rounded paddle tail; no dorsal fin.
 ```
@@ -356,18 +356,6 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Nurse shark (Ginglymostoma cirratum). Stout yellowish-brown shark with a broad flat head; two barbels at the nostrils; two rounded dorsal fins set far back, the first a little larger; very long upper tail lobe held low; small mouth ahead of the eyes.
-```
-
-## specimen/abudefduf-saxatilis
-
-Save as `art/inbox/specimen__abudefduf-saxatilis.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
-
-Subject: Sergeant major (Abudefduf saxatilis). Deep oval damselfish; five vertical black bars on silver-grey flanks, yellow wash across the upper back; forked tail; small terminal mouth; single continuous dorsal fin.
 ```
 
 ## specimen/thalassoma-bifasciatum
@@ -526,18 +514,6 @@ A single specimen, full body, side profile facing left, all fins extended and cl
 Subject: Tarpon (Megalops atlanticus). Massive, elongate silver body covered in very large scales; dark blue-green back; large upturned mouth with a protruding bony lower jaw; single dorsal fin whose last ray is drawn out into a long filament; deeply forked tail.
 ```
 
-## specimen/panulirus-argus
-
-Save as `art/inbox/specimen__panulirus-argus.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
-
-Subject: Caribbean spiny lobster (Panulirus argus). Cylindrical spiny carapace, brown to reddish with cream spots; two very long thick antennae covered in forward-pointing spines; no large claws; four large cream spots on the tail; broad tail fan.
-```
-
 ## specimen/octopus-briareus
 
 Save as `art/inbox/specimen__octopus-briareus.png`
@@ -545,7 +521,7 @@ Save as `art/inbox/specimen__octopus-briareus.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Caribbean reef octopus (Octopus briareus). Rounded mantle with long arms of unequal length joined by deep webbing; bright blue-green skin flecked and mottled with red-brown; dark red-brown eyes.
 ```
@@ -557,7 +533,7 @@ Save as `art/inbox/specimen__ocypode-quadrata.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Atlantic ghost crab (Ocypode quadrata). Square, box-like sand-coloured carapace; large club-shaped eyes on long stalks; one claw larger than the other; long pale walking legs with fine hairs.
 ```
@@ -569,7 +545,7 @@ Save as `art/inbox/specimen__grapsus-grapsus.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Sally Lightfoot crab (Grapsus grapsus). Flat, rounded carapace; adults bright red-orange above with a pale blue-white underside; spoon-tipped claws; long flattened legs; juveniles blackish with pale spots.
 ```
@@ -581,7 +557,7 @@ Save as `art/inbox/specimen__emerita-portoricensis.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Puerto Rican sand crab (Emerita portoricensis). Small, smooth, egg-shaped carapace, sand-grey to pale tan; no claws; short paddle-like legs tucked under the body; feathery antennae; pointed tail plate folded beneath.
 ```
@@ -593,7 +569,7 @@ Save as `art/inbox/specimen__aliger-gigas.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Queen conch (Aliger gigas). Large heavy spiral shell with blunt spines on the spire; broad flared outer lip, glossy pink to orange inside; sandy tan outside, often overgrown with algae; eyes on long stalks.
 ```
@@ -605,7 +581,7 @@ Save as `art/inbox/specimen__chelonia-mydas.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Green turtle (Chelonia mydas). Smooth, heart-shaped carapace in olive-brown with radiating streaks; small blunt head with a single pair of scales between the eyes; paddle-shaped flippers edged in pale yellow.
 ```
@@ -617,7 +593,7 @@ Save as `art/inbox/specimen__hypanus-americanus.png`
 ```text
 Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
 
-A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
 Subject: Southern stingray (Hypanus americanus). Flat diamond-shaped disc with pointed wing tips; olive-brown to grey above, white below; long whip tail with a serrated spine near its base; eyes raised on top of the head.
 ```

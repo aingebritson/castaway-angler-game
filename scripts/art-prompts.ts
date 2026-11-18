@@ -9,6 +9,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadContentNode } from '../src/content/loadNode';
 import type { Location } from '../src/content/schema';
+import { TOP_DOWN } from '../src/scenes/silhouettes';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const { content } = loadContentNode();
@@ -18,12 +19,19 @@ const manifest: Record<string, string> = existsSync(manifestPath) ? JSON.parse(r
 /** The ```text block under `### <name>` in art/style.md. */
 const bible = existsSync(join(root, 'art/style.md')) ? readFileSync(join(root, 'art/style.md'), 'utf8') : '';
 function block(name: string): string {
-  const m = bible.match(new RegExp(`^### ${name}\\s*\\n+\`\`\`text\\n([\\s\\S]*?)\\n\`\`\``, 'm'));
+  // the heading, any notes under it (but not the next heading), then the fenced block
+  const m = bible.match(new RegExp(`^### ${name}[ \\t]*\\n(?:(?!### )[\\s\\S])*?\`\`\`text\\n([\\s\\S]*?)\\n\`\`\``, 'm'));
   if (!m) throw new Error(`art/style.md has no "### ${name}" text block`);
   return m[1].trim();
 }
 const STYLE = block('Style');
-const TYPE = { scene: block('Scene'), specimen: block('Specimen'), item: block('Item'), portrait: block('Portrait') };
+const TYPE = {
+  scene: block('Scene'),
+  specimen: block('Specimen'),
+  specimenAbove: block('Specimen from above'),
+  item: block('Item'),
+  portrait: block('Portrait'),
+};
 
 const where = (x: number, y: number) =>
   `${y < 0.45 ? 'upper' : y < 0.7 ? 'middle' : 'lower'} ${x < 0.34 ? 'left' : x > 0.66 ? 'right' : 'centre'}`;
@@ -94,7 +102,10 @@ for (const l of Object.values(content.locations)) {
   add(l.scene.background, 'scene', `Scene: ${l.name}, ${l.habitat.charAt(0).toLowerCase()}${l.habitat.slice(1)}. ${l.blurb}\n\n${sceneLayout(l)}`.trim(), mjScene(l));
 }
 out.push('# Specimens', '');
-for (const s of Object.values(content.species)) add(`specimen/${s.id}`, 'specimen', `Subject: ${s.commonName} (${s.scientificName}). ${s.visualNotes}`);
+// crabs, lobsters, rays and the like are drawn from above, as the game shows them
+for (const s of Object.values(content.species)) {
+  add(`specimen/${s.id}`, TOP_DOWN.has(s.silhouette) ? 'specimenAbove' : 'specimen', `Subject: ${s.commonName} (${s.scientificName}). ${s.visualNotes}`);
+}
 out.push('# Items', '');
 for (const i of Object.values(content.items)) add(`item/${i.id}`, 'item', `Subject: ${i.name}. ${i.desc}`);
 out.push('# Portraits', '');

@@ -1,5 +1,7 @@
 {
   "item/stone-knife": "item__stone-knife.webp",
   "specimen/albula-vulpes": "specimen__albula-vulpes.webp",
-  "scene/rocky-point": "scene__rocky-point.webp"
+  "scene/rocky-point": "scene__rocky-point.webp",
+  "specimen/abudefduf-saxatilis": "specimen__abudefduf-saxatilis.webp",
+  "specimen/panulirus-argus": "specimen__panulirus-argus.webp"
 }
