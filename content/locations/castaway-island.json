@@ -40,11 +40,11 @@
       "waterPolygon": [
         [
           0,
-          0.3
+          0.23
         ],
         [
           1,
-          0.3
+          0.23
         ],
         [
           1,
@@ -252,8 +252,8 @@
         {
           "id": "coconuts",
           "kind": "gather",
-          "x": 0.66,
-          "y": 0.6,
+          "x": 0.49,
+          "y": 0.58,
           "label": "Coconuts",
           "glyph": "🥥",
           "node": {
@@ -265,8 +265,8 @@
         {
           "id": "vines",
           "kind": "gather",
-          "x": 0.46,
-          "y": 0.42,
+          "x": 0.58,
+          "y": 0.28,
           "label": "Hanging vines",
           "glyph": "🪴",
           "node": {
@@ -448,11 +448,11 @@
       "waterPolygon": [
         [
           0,
-          0.42
+          0.23
         ],
         [
           1,
-          0.42
+          0.23
         ],
         [
           1,
@@ -525,8 +525,8 @@
         {
           "id": "fire",
           "kind": "station",
-          "x": 0.54,
-          "y": 0.74,
+          "x": 0.6,
+          "y": 0.47,
           "label": "Fire and rack",
           "glyph": "🔥",
           "station": "fire"

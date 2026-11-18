@@ -3,5 +3,14 @@
   "specimen/albula-vulpes": "specimen__albula-vulpes.webp",
   "scene/rocky-point": "scene__rocky-point.webp",
   "specimen/abudefduf-saxatilis": "specimen__abudefduf-saxatilis.webp",
-  "specimen/panulirus-argus": "specimen__panulirus-argus.webp"
+  "specimen/panulirus-argus": "specimen__panulirus-argus.webp",
+  "scene/beach": "scene__beach.webp",
+  "scene/camp": "scene__camp.webp",
+  "scene/grove": "scene__grove.webp",
+  "scene/lagoon": "scene__lagoon.webp",
+  "scene/mangrove-creek": "scene__mangrove-creek.webp",
+  "scene/patch-reef": "scene__patch-reef.webp",
+  "scene/port-esperanza": "scene__port-esperanza.webp",
+  "scene/the-cut": "scene__the-cut.webp",
+  "scene/town-pier": "scene__town-pier.webp"
 }

@@ -102,6 +102,10 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Rocky Point uses the third version, generated from these prompts with the references uploaded (852 × 1846, not upscaled yet). It was picked from three candidates. Its horizon is at 0.23, measured from the image, and it is the scene reference in `art/style.md`.
     - Each scene in the prompt sheet also gets a Midjourney prompt of about 50 words, because Midjourney weights the first words and misreads "do not".
     - **Scene data is in art coordinates on every screen shape** (`src/scenes/fit.ts`). The art is cover-fitted and centred, so a wider screen crops its top and bottom and a narrower one its sides. The engine maps the horizon through the same fit, and publishes it as `--fit-*` CSS variables that place the hotspot buttons. Buttons are clamped clear of the top bar and the nav, which matters on an iPhone SE, where the bottom of the art sits behind the nav. Checked at 375 × 812 (no crop), 375 × 667 (horizon 0.29), the 520 × 1024 iPad frame (0.31) and a wide 520 × 768 window (0.25). Placeholder scenes are unchanged.
+46. **Every scene has real art**, 18 November 2026: the nine remaining scenes from Andy's ChatGPT batch, all 852 × 1846, so no phone crops them. Each scene's data was fitted to its image.
+    - Horizons were measured from the images: 0.23 for the beach, lagoon, town pier, patch reef and the Cut. Mangrove Creek is 0.31, where the open water meets the far bank.
+    - Tap spots were moved onto the things they name where the art put them elsewhere. Port Esperanza's market, orders board, tackle shop, museum and boatyard are painted about 20% higher than the old spots, and Old Tobias's spot was in the water; all six moved. The grove's coconuts and vines moved, the camp's fire moved onto the painted stone ring, and the pier's sardines moved onto the painted school.
+    - Known small departures from the prompt: a sport-fishing boat on the Cut's horizon, and a splash by the mangrove roots. Neither affects play.
 
 ## Schema additions (spec section 11)
 
