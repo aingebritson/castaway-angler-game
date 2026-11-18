@@ -10,7 +10,7 @@ A naturalist's plate drawn with cartoon economy. Transparent washes, a fine dark
 
 ## Reference images
 
-Upload two or three of these at the start of every batch conversation and say "match this style".
+Upload two or three of these at the start of every batch conversation, chosen from **Which references to upload** below. Not all five: image models copy content from references as well as style.
 
 | File | Shows | Status |
 | --- | --- | --- |
@@ -19,6 +19,21 @@ Upload two or three of these at the start of every batch conversation and say "m
 | `art/reference/specimen__abudefduf-saxatilis.png` | Specimen: a deep-bodied fish with bold bars, to show strong markings in this style. Its sixth bar, on the tail stem, is drawn as dark as the others; on the real fish it is faint or missing | Done, 18 November 2026 |
 | `art/reference/specimen__panulirus-argus.png` | Specimen seen from above: an invertebrate (spiny lobster), to fix how shells, legs and antennae are drawn | Done, 18 November 2026 |
 | `art/reference/scene__rocky-point-v2.png` | Scene: the third Rocky Point, now in the game and the reference for scenes. Black basalt, a straight horizon, water deepening evenly from pale shallows to deep blue, and real tide pools where the tap spot is | Done, 18 November 2026 |
+
+## Which references to upload
+
+| Making | Upload | Why |
+| --- | --- | --- |
+| Side-view fish | bonefish + sergeant major | Faint and bold markings side by side, so the model sees that marking strength varies by species |
+| From-above animals (crabs, lobster, rays, turtle, octopus, conch, manatee) | lobster + bonefish | The lobster sets the top-down view, legs and shell; the bonefish adds line and wash without pulling toward a side view |
+| Items | stone knife + bonefish | The knife sets the three-quarter view and icon scale. Never the scene |
+| Scenes | Rocky Point + bonefish | Rocky Point sets palette, depth and layout; the bonefish keeps the ink line crisp, which drifted on the second Rocky Point |
+| Portraits | bonefish + stone knife, for style only | Nothing yet shows a person. Make one good portrait, add it to the table, and use it for the rest |
+
+- **Say what the references are for**, before the first prompt: "Match the ink line and watercolour washes of these images; don't copy their subjects or composition." For scenes, add "match the style of the Rocky Point image, not its layout", or every scene comes out as a rocky shore with tide pools.
+- **One conversation per batch of one asset type**, for example the reef fish. Upload once, then paste the prompts in turn.
+- **Start a fresh conversation when the style drifts**: heavier outlines, more saturated colour or a cleaner digital finish. Upload the references again and carry on.
+- **Check for borrowed details** before keeping an image: bars from the sergeant major on a plain fish, the bonefish's snout on another species, extra legs on a crab.
 
 ## Rules from the bake-off
 
@@ -36,7 +51,7 @@ Glass-green and turquoise shallows, ultramarine deep water, black volcanic rock,
 ## Workflow
 
 1. `npm run art:prompts` writes `art/prompts.md` with a ready-to-paste prompt for every asset still on a placeholder.
-2. Work in batches by region and asset type, one ChatGPT conversation per batch, with the reference images uploaded first.
+2. Work in batches by region and asset type, one ChatGPT conversation per batch, with the references for that type uploaded first (see **Which references to upload**).
 3. Specimens: compare each with two or three photos of the species. Check fin count and position, tail shape, mouth position and markings. Allow three to five attempts.
 4. Save to `art/inbox/` under the name the prompt sheet gives, then run `npm run art:ingest`.
 5. Scenes only: set the top of the scene's `waterPolygon` to the horizon height in the image, and check the tap spots sit on the things they name.
