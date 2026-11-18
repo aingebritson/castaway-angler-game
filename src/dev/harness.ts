@@ -84,6 +84,17 @@ export function installHarness(): void {
           await tick();
           continue;
         }
+        const th = document.querySelector<HTMLElement>('.thought-wrap');
+        if (th) {
+          const key = `thought|${(th.textContent ?? '').slice(0, 48)}`;
+          cards[key] = (cards[key] ?? 0) + 1;
+          // Thought cards ignore taps for their first moment; wait it out in real time.
+          for (let j = 0; j < 40 && !th.querySelector('.thought-tap.on'); j++) await new Promise((r) => setTimeout(r, 100));
+          th.click();
+          await tick();
+          await tick();
+          continue;
+        }
         step(bot);
         if (i % 4 === 0) await tick();
       }

@@ -95,5 +95,10 @@
   "creelLimit": 12,
   "lessons": {
     "gapCasts": 10
+  },
+  "thoughts": {
+    "gapCasts": 6,
+    "repeatCasts": 30,
+    "repeats": 3
   }
 }

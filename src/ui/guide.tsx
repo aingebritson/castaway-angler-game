@@ -3,6 +3,7 @@ import type { Species } from '../content/schema';
 import { formatLength, formatWeight } from '../sim/catch';
 import { MONTH_NAMES, MOON_NAMES, displayTz, formatClock, formatDate, localTime, moonIndex } from '../sim/time';
 import { setNote, togglePin } from '../state/actions';
+import { nextGoal } from '../state/goals';
 import type { GameState, GuideEntry, JournalKind } from '../state/state';
 import { BAIT_LABEL, FishArt, Sheet, Tab } from './bits';
 import { useGame, useGameState } from './hooks';
@@ -170,8 +171,8 @@ function EntryView({ speciesId, onBack, onClose }: { speciesId: string; onBack()
 }
 
 const KIND_LABEL: Record<JournalKind, string> = {
-  story: 'Journal', catch: 'First catch', pb: 'Personal best', away: 'One that got away', rumour: 'Rumour', page: 'Found page', craft: 'Made',
-  trap: 'Trap', quest: 'Errand', sighting: 'Sighting', travel: 'New place', clue: 'Legend', lesson: 'Learned',
+  story: 'Journal', catch: 'First catch', pb: 'Personal best', away: 'One that got away', rumour: 'Rumour', page: 'Their journal', craft: 'Made',
+  trap: 'Trap', quest: 'Errand', sighting: 'Sighting', travel: 'New place', clue: 'Legend', lesson: 'Learned', thought: 'Thought',
 };
 
 const FILTERS: { id: string; label: string; test(k: JournalKind, pinned: boolean): boolean }[] = [
@@ -180,7 +181,8 @@ const FILTERS: { id: string; label: string; test(k: JournalKind, pinned: boolean
   { id: 'catch', label: 'Catches', test: (k) => k === 'catch' || k === 'pb' || k === 'trap' },
   { id: 'away', label: 'Got away', test: (k) => k === 'away' },
   { id: 'rumour', label: 'Rumours', test: (k) => k === 'rumour' || k === 'clue' || k === 'sighting' },
-  { id: 'page', label: 'Pages', test: (k) => k === 'page' },
+  { id: 'thought', label: 'Thoughts', test: (k) => k === 'thought' || k === 'story' },
+  { id: 'page', label: 'Their pages', test: (k) => k === 'page' },
   { id: 'quest', label: 'Errands', test: (k) => k === 'quest' },
   { id: 'legends', label: '✨ Legends', test: () => false },
   { id: 'know', label: '🎣 Know-how', test: () => false },
@@ -195,6 +197,7 @@ export function JournalPanel({ onClose }: { onClose(): void }) {
   const f = FILTERS.find((x) => x.id === filter)!;
   const loc = c.locations[s.locationId];
   const deviceTz = store.ctx().deviceTz;
+  const goal = nextGoal(s, c);
   const entries = filter === 'legends' || filter === 'know' ? [] : [...s.journal].reverse().filter((e) => f.test(e.kind, !!e.pinned) && (!hereOnly || e.locationId === s.locationId));
   const shown = FILTERS.filter((x) => (x.id !== 'quest' || s.flags.launched) && (x.id !== 'legends' || s.clues.length > 0) && (x.id !== 'know' || s.lessons.length > 0));
   return (
@@ -203,6 +206,7 @@ export function JournalPanel({ onClose }: { onClose(): void }) {
       {filter === 'legends' && <Legends />}
       {filter === 'know' && <KnowHow />}
       {filter !== 'legends' && filter !== 'know' && <>
+      {goal && <div class="onmind"><b>On my mind</b>{goal.text}</div>}
       <div class="row" style={{ justifyContent: 'space-between' }}>
         <h3 style={{ margin: '4px 0' }}>Notes on {loc.name}</h3>
         <button class={`tab ${hereOnly ? 'on' : ''}`} onClick={() => setHereOnly(!hereOnly)}>Only here</button>

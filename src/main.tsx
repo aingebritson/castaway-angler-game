@@ -8,6 +8,7 @@ import { clearSave, loadSave, makeSaver, requestPersist } from './platform/stora
 import { type GameState, migrate, newGame } from './state/state';
 import { Store } from './state/store';
 import { syncLessons } from './state/lessons';
+import { syncThoughts } from './state/thoughts';
 import { App } from './ui/App';
 import { type Game, GameCtx } from './ui/hooks';
 import './ui/styles.css';
@@ -28,6 +29,7 @@ async function boot() {
   }
   if (!content.locations[state.locationId]) state.locationId = 'beach';
   syncLessons(state, content);
+  syncThoughts(state, { content, now, deviceTz: deviceTimeZone() });
   const saver = makeSaver();
   const store = new Store(state, { content, now: () => systemClock.now(), deviceTz: deviceTimeZone(), onChange: (s) => saver.queue(s) });
   audio.enabled = state.settings.sound;

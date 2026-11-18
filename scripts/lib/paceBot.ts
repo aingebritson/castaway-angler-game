@@ -16,6 +16,7 @@ import {
   sunAt, travel,
 } from '../../src/state/actions';
 import { checkLessons } from '../../src/state/lessons';
+import { checkThoughts } from '../../src/state/thoughts';
 import { sourceOf } from '../../src/state/sources';
 import { type GameState, newGame } from '../../src/state/state';
 
@@ -28,6 +29,7 @@ export const HUMAN = {
   craft: 5,
   clean: 3,
   readCard: 20, // a lesson or a journal page
+  readThought: 7,
   browse: 0.06, // fraction of extra time spent looking around menus
   missNoFloat: 0.12, // strikes missed without a float
   missFloat: 0.05,
@@ -37,6 +39,8 @@ export interface PaceResult {
   minutes: number;
   launched: boolean;
   events: { minute: number; what: string }[];
+  /** Every thought card, story or mind, with when it came up. */
+  thoughts: { minute: number; cast: number; id: string }[];
   milestones: Record<string, number>;
   state: GameState;
 }
@@ -53,6 +57,7 @@ export function runPace(content: Content, seed: number, startIso = '2027-02-01T1
   s.flags.introSeen = true;
   const rng = makeRng(seed ^ 0x5bd1e995);
   const events: PaceResult['events'] = [];
+  const thoughts: PaceResult['thoughts'] = [];
   const milestones: Record<string, number> = {};
   const minute = () => played;
   const ctx = (): Ctx => ({ content, now, deviceTz: 'America/Belize' });
@@ -76,11 +81,17 @@ export function runPace(content: Content, seed: number, startIso = '2027-02-01T1
   const act = <A extends unknown[], R>(fn: (s: GameState, c: Ctx, ...a: A) => R, ...args: A): R => {
     const before = { pages: s.pagesFound, held: { ...s.everHeld } };
     const out = fn(s, ctx(), ...args);
-    for (const e of checkLessons(s, ctx())) {
+    const taught = checkLessons(s, ctx());
+    for (const e of taught) {
       if (e.type === 'lesson') {
         note(`lesson: ${e.lessonId}`);
         spend(HUMAN.readCard);
       }
+    }
+    for (const e of checkThoughts(s, ctx(), taught.length > 0)) {
+      if (e.type !== 'thought') continue;
+      thoughts.push({ minute: Math.round(minute() * 10) / 10, cast: s.stats.casts, id: e.thoughtId ?? `mind: ${e.lines[0]}` });
+      spend(HUMAN.readThought);
     }
     if (s.pagesFound > before.pages) {
       note(`page ${s.pagesFound}`);
@@ -303,7 +314,7 @@ export function runPace(content: Content, seed: number, startIso = '2027-02-01T1
     if (s.flags.bearing) note('bearing');
   }
   if (s.flags.launched) note('launched');
-  return { minutes: minute(), launched: !!s.flags.launched, events, milestones, state: s };
+  return { minutes: minute(), launched: !!s.flags.launched, events, thoughts, milestones, state: s };
 }
 
 export { RAFT_PARTS };

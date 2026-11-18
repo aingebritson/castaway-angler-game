@@ -12,7 +12,7 @@ import { badges } from '../state/museum';
 import { moonIndex } from '../sim/time';
 import { Coach, Intro } from './coach';
 import { Icon } from './bits';
-import { EndingCard, HaulCard, LessonCard, PageCard, RevealCard, type ToastMsg, Toasts } from './cards';
+import { EndingCard, HaulCard, LessonCard, PageCard, RevealCard, ThoughtCard, type ThoughtMsg, type ToastMsg, Toasts } from './cards';
 import { GuidePanel, JournalPanel } from './guide';
 import { useGame, useGameState, useTick } from './hooks';
 import { BagPanel, CraftPanel, DebugPanel, FirePanel, MapPanel, RaftPanel, RigPanel, SettingsPanel, TrapPanel } from './panels';
@@ -53,7 +53,7 @@ export function App() {
   const [toasts, setToasts] = useState<ToastMsg[]>([]);
   const [gains, setGains] = useState<{ id: number; itemId: string; qty: number }[]>([]);
   const [title, setTitle] = useState(true);
-  const [goalOpen, setGoalOpen] = useState(true);
+  const [thoughts, setThoughts] = useState<ThoughtMsg[]>([]);
 
   const toast = (text: string, glyph?: string, tone?: string) => {
     const id = nextId++;
@@ -87,6 +87,12 @@ export function App() {
         case 'lesson':
           setLessons((l) => [...l, e.lessonId]);
           break;
+        case 'thought': {
+          const id = nextId++;
+          // A newer thought about what to do next replaces an unread older one.
+          setThoughts((q) => [...q.filter((x) => !(e.mind && x.mind)), { id, lines: e.lines, mind: e.mind }]);
+          break;
+        }
         case 'page':
           setPages((p) => [...p, e.pageId]);
           audio.play('page');
@@ -145,7 +151,10 @@ export function App() {
     }
   }, [earned.join(',')]);
 
-  const card = !!(reveal || pages.length || haul || ending || lessons.length);
+  const bigCard = !!(reveal || pages.length || haul || ending || lessons.length);
+  // A thought waits for a quiet moment: no menu, no other card, nothing on the line.
+  const thinking = thoughts.length > 0 && !bigCard && !panel && !port && !title && (phase === 'idle' || phase === 'aiming');
+  const card = bigCard || thinking;
   const step = title ? null : coachStep(s, { phase, panel: panel ?? (port ? 'port' : null), card });
   const overlay = !!(panel || port || card || title || step === 'intro');
   useEffect(() => {
@@ -212,11 +221,6 @@ export function App() {
             <span style={{ width: '16px', height: '16px', display: 'inline-grid' }}><Icon name="gear" /></span>
           </button>
         </div>
-        {goal && !busy && !title && !coaching && step !== 'intro' && (
-          <button class={`goal ${goalOpen ? '' : 'min'}`} onClick={() => setGoalOpen(!goalOpen)}>
-            {goalOpen ? <span><b>Thinking</b>{goal.text}</span> : <span>✎ …</span>}
-          </button>
-        )}
       </div>
 
       <div class={`hotspots ${busy || phase === 'aiming' || title || step === 'intro' ? 'off' : ''}`}>
@@ -282,6 +286,7 @@ export function App() {
       {haul && !reveal && <HaulCard reveals={haul.reveals} soakH={haul.soakH} onDone={() => setHaul(null)} />}
       {pages.length > 0 && <PageCard pageId={pages[0]} onDone={() => setPages((p) => p.slice(1))} />}
       {lessons.length > 0 && !reveal && !pages.length && !haul && <LessonCard lessonId={lessons[0]} onDone={() => setLessons((l) => l.slice(1))} />}
+      {thinking && <ThoughtCard key={thoughts[0].id} msg={thoughts[0]} onDone={() => setThoughts((q) => q.slice(1))} />}
       {ending && (
         <EndingCard
           hasPort={!!c.locations['port-esperanza']}

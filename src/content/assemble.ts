@@ -17,6 +17,7 @@ export interface Content {
   rumours: Record<string, S.Rumour>;
   pages: S.Page[];
   lessons: S.Lesson[];
+  thoughts: S.Thought[];
   junk: Record<string, S.JunkTable>;
   rigs: Record<string, S.RigPreset>;
   legendaries: Record<string, S.Legendary>;
@@ -78,6 +79,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
   const rumours = index(one(S.Rumour, 'rumours.json'), 'rumour', issues);
   const pages = one(S.Page, 'pages.json').sort((a, b) => a.order - b.order);
   const lessons = one(S.Lesson, 'lessons.json').sort((a, b) => a.order - b.order);
+  const thoughts = one(S.Thought, 'thoughts.json').sort((a, b) => a.order - b.order);
   const junk = index(one(S.JunkTable, 'junk.json'), 'junk table', issues);
   const rigs = index(one(S.RigPreset, 'rigs.json'), 'rig', issues);
   const legendaries = index(one(S.Legendary, 'legendaries.json'), 'legendary', issues);
@@ -174,6 +176,19 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
       issues.warnings.push(`${where}: every way to learn it waits on an event; add a fallback`);
     }
   }
+  const thoughtIds = new Set<string>();
+  for (const th of thoughts) {
+    const where = `thought ${th.id}`;
+    if (thoughtIds.has(th.id)) err(`${where}: duplicate id`);
+    thoughtIds.add(th.id);
+    if (!regions[th.regionId]) err(`${where}: missing region "${th.regionId}"`);
+    for (const group of th.when) for (const c of group) {
+      if (c.type === 'held') needItem(c.item, where);
+      if (c.type === 'at' && !locations[c.location]) err(`${where}: missing location "${c.location}"`);
+      if (c.type === 'know' && !lessonIds.has(c.lesson)) err(`${where}: unknown lesson "${c.lesson}"`);
+    }
+  }
+
   for (const r of Object.values(recipes)) {
     if (r.known === 'discover' && !lessons.some((l) => l.unlocks.recipes.includes(r.id)) && !pages.some((p) => p.recipes.includes(r.id)) && !Object.values(quests).some((q) => q.reward.recipes?.includes(r.id))) {
       err(`recipe ${r.id}: nothing teaches it (no lesson, page or quest)`);
@@ -226,7 +241,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
   if (pending) issues.warnings.push(`${pending} source references are marked "pending-review" (research pass has not verified them)`);
 
   const content: Content = {
-    balance, regions, locations, species, occurrences, occByLocation, items, recipes, rumours, pages, lessons, junk, rigs,
+    balance, regions, locations, species, occurrences, occByLocation, items, recipes, rumours, pages, lessons, thoughts, junk, rigs,
     legendaries, people, quests, questsByPerson, shops, baitTypes: [...baitTypes],
   };
   return { content, issues };

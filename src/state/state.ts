@@ -5,7 +5,7 @@
 import type { Grade } from '../sim/catch';
 import type { NodeSave, TrapSave } from '../sim/world';
 
-export const SAVE_VERSION = 3;
+export const SAVE_VERSION = 4;
 
 export interface KeptFish {
   uid: number;
@@ -38,7 +38,7 @@ export interface GuideEntry {
   donated?: boolean;
 }
 
-export type JournalKind = 'story' | 'catch' | 'pb' | 'away' | 'rumour' | 'page' | 'craft' | 'trap' | 'quest' | 'sighting' | 'travel' | 'clue' | 'lesson';
+export type JournalKind = 'story' | 'catch' | 'pb' | 'away' | 'rumour' | 'page' | 'craft' | 'trap' | 'quest' | 'sighting' | 'travel' | 'clue' | 'lesson' | 'thought';
 
 export interface JournalEntry {
   id: number;
@@ -128,6 +128,12 @@ export interface GameState {
   clues: string[];
   /** Species caught today (local day at the place), for same-day badges. */
   today: { day: string; ids: string[] };
+  /** Story thoughts already had. */
+  thoughts: string[];
+  /** What is on the castaway's mind (the next goal), and how often it has come up. */
+  mind: { key: string; at: number; shown: number; last: number } | null;
+  /** Days lived, by the local calendar: n is 1 on the first day. */
+  days: { key: string; n: number };
   settings: { sound: boolean; haptics: boolean };
   debug: { timeOffsetMs: number };
 }
@@ -172,6 +178,9 @@ export function newGame(seed: number, now: number): GameState {
     legendariesCaught: [],
     clues: [],
     today: { day: '', ids: [] },
+    thoughts: [],
+    mind: null,
+    days: { key: '', n: 0 },
     settings: { sound: true, haptics: true },
     debug: { timeOffsetMs: 0 },
   };
@@ -188,6 +197,10 @@ const MIGRATIONS: Record<number, Migration> = {
     s.orders ??= null;
     s.quests ??= {};
     s.coins ??= 0;
+  },
+  3: (s) => {
+    // Thoughts arrived in v4: whatever this save would already have thought is marked as thought on load.
+    (s.flags as Record<string, boolean>).syncThoughts = true;
   },
 };
 

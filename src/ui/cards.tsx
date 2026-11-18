@@ -70,15 +70,24 @@ export function RevealCard({ reveal, onDone }: { reveal: Reveal; onDone(): void 
 export function PageCard({ pageId, onDone }: { pageId: string; onDone(): void }) {
   const { store } = useGame();
   const page = store.content.pages.find((p) => p.id === pageId)!;
+  const first = page.order === store.content.pages[0]?.order;
   const learned = [
     ...page.recipes.map((r) => store.content.items[store.content.recipes[r].output.item].name),
   ];
   return (
     <div class="card-wrap">
       <div class="card pagecard">
-        <span class="banner new">A page in a bottle</span>
-        <h2>{page.title}</h2>
-        <div class="body">{page.text}</div>
+        <span class="banner new">A message in a bottle</span>
+        <p class="page-pre">
+          {first
+            ? 'Rolled tight inside the glass, and dry: a page torn from somebody’s notebook. The handwriting is not mine. Somebody else was stranded here, before me.'
+            : 'Another page, in the same hand.'}
+        </p>
+        <div class="page-sheet">
+          <div class="page-kicker">From the other castaway’s journal</div>
+          <h2>{page.title}</h2>
+          <div class="body">{page.text}</div>
+        </div>
         {(learned.length > 0 || page.rumours.length > 0 || page.bearing) && (
           <div class="learned">
             {learned.length > 0 && <div><b>Now I know how to make:</b> {learned.join(', ').toLowerCase()}.</div>}
@@ -87,6 +96,35 @@ export function PageCard({ pageId, onDone }: { pageId: string; onDone(): void })
           </div>
         )}
         <div class="actions"><button class="btn" onClick={onDone}>Keep the page</button></div>
+      </div>
+    </div>
+  );
+}
+
+export interface ThoughtMsg {
+  id: number;
+  lines: string[];
+  /** The next goal said out loud, rather than a story thought. */
+  mind?: boolean;
+}
+
+/**
+ * The castaway thinking: a few lines that drift in over the scene. Tap to
+ * carry on. Taps in the first moment are ignored so a cast in progress does
+ * not dismiss it unread.
+ */
+export function ThoughtCard({ msg, onDone }: { msg: ThoughtMsg; onDone(): void }) {
+  const [armed, setArmed] = useState(false);
+  useEffect(() => {
+    const id = setTimeout(() => setArmed(true), 500 + msg.lines.length * 250);
+    return () => clearTimeout(id);
+  }, [msg.id]);
+  return (
+    <div class={`thought-wrap ${msg.mind ? 'mind' : ''}`} onClick={() => armed && onDone()}>
+      <div class="tcard">
+        {msg.mind && <b class="thought-k">On my mind</b>}
+        {msg.lines.map((l, i) => <p key={i} style={{ animationDelay: `${0.15 + i * 0.55}s` }}>{l}</p>)}
+        <div class={`thought-tap ${armed ? 'on' : ''}`}>Tap to carry on</div>
       </div>
     </div>
   );

@@ -46,6 +46,7 @@ export type GameEvent =
   | { type: 'sfx'; id: string }
   | { type: 'haul'; reveals: Reveal[]; soakH: number }
   | { type: 'lesson'; lessonId: string }
+  | { type: 'thought'; lines: string[]; thoughtId?: string; mind?: boolean }
   | { type: 'ending' };
 
 const toast = (text: string, glyph?: string, tone: 'good' | 'warn' | 'info' = 'info'): GameEvent => ({ type: 'toast', text, glyph, tone });
@@ -313,6 +314,7 @@ export function openBottle(s: GameState, ctx: Ctx): GameEvent[] {
   const next = ctx.content.pages[s.pagesFound];
   if (!next || !bottleEligible(s, ctx.content)) {
     addItem(s, 'sea-glass', 1);
+    if (next) countEvent(s, 'pulpBottle');
     const why = next ? 'The paper inside has gone to pulp. Whatever it said, I am not ready to read it.' : 'Empty, but the glass is a pretty green.';
     return [toast(`A corked bottle. ${why}`, '🍾'), { type: 'gain', itemId: 'sea-glass', qty: 1 }];
   }

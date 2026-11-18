@@ -226,6 +226,12 @@ export const LessonCond = z.discriminatedUnion('type', [
   z.object({ type: z.literal('at'), location: id }),
   /** No hook left to fish with: the player must never be stuck. */
   z.object({ type: z.literal('hookless') }),
+  /** Island days lived: 1 on the first day, counted from the device clock. */
+  z.object({ type: z.literal('day'), min: z.number() }),
+  /** Journal pages found from the earlier castaway. */
+  z.object({ type: z.literal('pages'), min: z.number() }),
+  z.object({ type: z.literal('know'), lesson: id }),
+  z.object({ type: z.literal('flag'), flag: z.string() }),
 ]);
 
 /**
@@ -244,13 +250,31 @@ export const Lesson = z.object({
   lesson: z.string().min(20),
   /** What it means in the game: what you can now make, and where to find what it needs. */
   effect: z.string().min(10),
-  /** Shown in the "Thinking" note while this is the next thing to work out. */
+  /** What is on the castaway's mind while this is the next thing to work out. */
   hint: z.string(),
   requires: z.array(id).default([]),
   /** Any one group of conditions, all holding, teaches the lesson. */
   when: z.array(z.array(LessonCond).min(1)).min(1),
   unlocks: z.object({ recipes: z.array(id).default([]), flags: z.array(z.string()).default([]) }).default({ recipes: [], flags: [] }),
   /** False for a lesson that follows straight on from the last (cut bait, the moment you hold a knife). */
+  gap: z.boolean().default(true),
+});
+
+/**
+ * A thought: the castaway's own voice, popping up when something in their
+ * days has changed. This is the story: a person with nothing to do but fish,
+ * fishing their way off an island.
+ */
+export const Thought = z.object({
+  id,
+  order: z.number().int(),
+  /** Only thought in this region. */
+  regionId: id,
+  /** Shown one under the other. {days} becomes "a day" or "N days"; {catches} and {kinds} are counts. */
+  lines: z.array(z.string().min(2)).min(1),
+  /** Any one group of conditions, all holding, brings the thought. */
+  when: z.array(z.array(LessonCond).min(1)).min(1),
+  /** False for a thought that belongs straight after whatever caused it. */
   gap: z.boolean().default(true),
 });
 
@@ -378,6 +402,8 @@ export const Balance = z.object({
   legendaryChance: z.number(),
   /** Casts between one lesson and the next, so ideas arrive one at a time. */
   lessons: z.object({ gapCasts: z.number() }).default({ gapCasts: 10 }),
+  /** Casts between thought cards; casts before a stuck thought comes back, and how often it may. */
+  thoughts: z.object({ gapCasts: z.number(), repeatCasts: z.number(), repeats: z.number() }).default({ gapCasts: 6, repeatCasts: 30, repeats: 3 }),
   creelLimit: z.number(),
 });
 
@@ -396,6 +422,7 @@ export type Rumour = z.infer<typeof Rumour>;
 export type Page = z.infer<typeof Page>;
 export type Lesson = z.infer<typeof Lesson>;
 export type LessonCond = z.infer<typeof LessonCond>;
+export type Thought = z.infer<typeof Thought>;
 export type JunkTable = z.infer<typeof JunkTable>;
 export type RigPreset = z.infer<typeof RigPreset>;
 export type Legendary = z.infer<typeof Legendary>;

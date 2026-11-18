@@ -40,10 +40,6 @@ textarea, input { font: inherit; -webkit-user-select: text; user-select: text; }
 .clock { flex: none; white-space: nowrap; pointer-events: auto; display: flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px; background: rgba(10,26,36,.55); color: #fff; font-size: 13px; font-weight: 600; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .clock .ph { opacity: .75; font-weight: 500; text-transform: capitalize; }
 .coins { color: #ffd874; }
-.goal { pointer-events: auto; align-self: flex-start; max-width: 100%; display: flex; gap: 8px; align-items: flex-start; padding: 8px 12px; border-radius: 12px; background: rgba(245,236,214,.94); color: var(--ink); font-family: var(--serif); font-size: 14px; line-height: 1.35; font-style: italic; box-shadow: 0 2px 10px rgba(0,0,0,.25); text-align: left; }
-.goal b { font-style: normal; font-family: var(--sans); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--coral); display: block; margin-bottom: 1px; }
-.goal.min { padding: 6px 10px; font-size: 12px; }
-
 /* ---------- hotspots ---------- */
 .hotspots { position: absolute; inset: 0; pointer-events: none; z-index: 3; transition: opacity .25s; }
 .hotspots.off { opacity: 0; }
@@ -208,6 +204,11 @@ textarea.note { width: 100%; min-height: 64px; border-radius: 10px; border: 1px 
 .pagecard { text-align: left; background-color: #f1e4c2; transform: rotate(-.6deg); }
 .pagecard h2 { font-size: 20px; }
 .pagecard .body { font-family: var(--serif); font-size: 17px; line-height: 1.55; font-style: italic; margin: 12px 0; }
+.pagecard .page-pre { font-size: 14px; color: var(--ink-soft); margin: 2px 0 10px; line-height: 1.45; }
+.pagecard .page-sheet { background: #fbf3dc; border-radius: 6px; padding: 12px 14px 4px; box-shadow: inset 0 0 0 1px rgba(120,96,50,.18), 0 2px 6px rgba(60,40,10,.12); transform: rotate(.9deg); margin-bottom: 10px; }
+.pagecard .page-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #8a6410; }
+.pagecard .page-sheet h2 { margin: 2px 0 0; }
+.pagecard .page-sheet .body { margin: 8px 0 10px; }
 .pagecard .learned { font-size: 13px; color: var(--ink-soft); border-top: 1px dashed var(--ink-faint); padding-top: 10px; }
 
 /* toasts */
@@ -283,3 +284,18 @@ hr { border: 0; border-top: 1px dashed var(--paper-3); margin: 14px 0; }
 .know h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 17px; }
 .know p { margin: 4px 0; font-size: 14.5px; line-height: 1.45; }
 .slot .why { font-size: 12.5px; color: var(--ink-soft); margin: -2px 0 8px; line-height: 1.35; }
+
+/* ---------- thoughts ---------- */
+.thought-wrap { position: absolute; inset: 0; z-index: 19; display: flex; align-items: flex-end; justify-content: center; padding: 20px 18px calc(var(--nav-h) + var(--safe-b) + 22px); background: linear-gradient(to top, rgba(4,12,18,.62), rgba(4,12,18,.18) 60%, rgba(4,12,18,0)); animation: fade .35s; }
+.tcard { width: 100%; max-width: 380px; padding: 16px 18px 12px; border-radius: 18px 18px 18px 6px; background: rgba(245,236,214,.96); color: var(--ink); box-shadow: 0 10px 34px rgba(0,0,0,.4); animation: drift .45s cubic-bezier(.2,.9,.3,1); }
+.tcard p { margin: 0 0 8px; font-family: var(--serif); font-style: italic; font-size: 16.5px; line-height: 1.45; opacity: 0; animation: thought-in .6s ease forwards; }
+.thought-k { display: block; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--coral); margin-bottom: 4px; }
+.thought-wrap.mind .tcard p { font-size: 15.5px; }
+.thought-tap { font-size: 11px; font-weight: 600; letter-spacing: .04em; color: var(--ink-faint); text-align: right; opacity: 0; transition: opacity .4s; }
+.thought-tap.on { opacity: 1; }
+@keyframes drift { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes thought-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .tcard, .tcard p { animation: none; opacity: 1; } }
+
+.onmind { margin: 4px 0 10px; padding: 10px 12px; border-radius: 12px; background: #fff3c8; font-family: var(--serif); font-style: italic; font-size: 15px; line-height: 1.4; }
+.onmind b { display: block; font-family: var(--sans); font-style: normal; font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase; color: #8a6410; margin-bottom: 2px; }

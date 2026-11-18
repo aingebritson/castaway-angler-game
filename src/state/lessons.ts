@@ -11,7 +11,8 @@ import type { Lesson, LessonCond } from '../content/schema';
 import { type Ctx, type GameEvent, has, log, speciesCaught, sunAt } from './actions';
 import type { GameState } from './state';
 
-function holds(c: LessonCond, s: GameState, ctx: Ctx): boolean {
+/** Does one condition hold? Shared by lessons and thoughts. */
+export function holds(c: LessonCond, s: GameState, ctx: Ctx): boolean {
   switch (c.type) {
     case 'stat':
       return (s.stats[c.stat] ?? 0) >= c.min;
@@ -27,6 +28,14 @@ function holds(c: LessonCond, s: GameState, ctx: Ctx): boolean {
       return s.locationId === c.location;
     case 'hookless':
       return !!s.flags.hasRod && !Object.keys(s.inventory).some((id) => has(s, id) && ctx.content.items[id]?.kind === 'hook');
+    case 'day':
+      return s.days.n >= c.min;
+    case 'pages':
+      return s.pagesFound >= c.min;
+    case 'know':
+      return s.lessons.includes(c.lesson);
+    case 'flag':
+      return !!s.flags[c.flag];
   }
 }
 

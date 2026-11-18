@@ -5,6 +5,7 @@
 import type { Content } from '../content/assemble';
 import type { Ctx, GameEvent } from './actions';
 import { checkLessons } from './lessons';
+import { checkThoughts } from './thoughts';
 import type { GameState } from './state';
 
 export interface StoreDeps {
@@ -40,6 +41,8 @@ export class Store {
     const out = fn(draft, ctx, ...args);
     // Whatever just happened may have taught the castaway something.
     const learned = checkLessons(draft, ctx);
+    // …or given them something to think about.
+    learned.push(...checkThoughts(draft, ctx, learned.length > 0));
     draft.lastSeen = ctx.now;
     this.state = draft;
     this.deps.onChange?.(draft);

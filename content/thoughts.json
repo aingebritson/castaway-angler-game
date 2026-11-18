@@ -1,0 +1,559 @@
+[
+  {
+    "id": "the-rod",
+    "order": 1,
+    "regionId": "castaway-island",
+    "lines": [
+      "A fishing rod. The ship’s old rod, with line still on the reel and a rusty hook on the end.",
+      "Not a boat. Not a radio. A fishing rod.",
+      "Well. I am hungry, and it is what I have."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "old-rod"
+        }
+      ]
+    ],
+    "gap": false
+  },
+  {
+    "id": "first-fish",
+    "order": 2,
+    "regionId": "castaway-island",
+    "lines": [
+      "One fish. Not much of a fish, but I caught it, and I am going to eat it.",
+      "Nobody is coming down the beach. No sail, no smoke, all the way round.",
+      "So: I have a rod, and the sea has fish in it. I suppose I fish."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 1
+        }
+      ]
+    ],
+    "gap": false
+  },
+  {
+    "id": "cast-it-out",
+    "order": 3,
+    "regionId": "castaway-island",
+    "lines": [
+      "I am starting to see how this goes: bait on, cast out, wait, watch the float.",
+      "It is easier than thinking about anything else.",
+      "When in doubt, cast it out."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 3
+        }
+      ]
+    ]
+  },
+  {
+    "id": "pulp",
+    "order": 4,
+    "regionId": "castaway-island",
+    "lines": [
+      "A bottle, but the sea got in before I did. The paper inside is pulp.",
+      "There will be others. There always seem to be, once I have fished a while longer."
+    ],
+    "when": [
+      [
+        {
+          "type": "count",
+          "key": "pulpBottle",
+          "min": 1
+        }
+      ]
+    ]
+  },
+  {
+    "id": "the-other-castaway",
+    "order": 5,
+    "regionId": "castaway-island",
+    "lines": [
+      "Somebody else was here.",
+      "Somebody else woke up on this beach, and on their third day they were already making knives. They wrote it down, corked it in a bottle and let the tide have it. For whoever came next.",
+      "For me, I suppose."
+    ],
+    "when": [
+      [
+        {
+          "type": "pages",
+          "min": 1
+        }
+      ]
+    ],
+    "gap": false
+  },
+  {
+    "id": "day-two",
+    "order": 6,
+    "regionId": "castaway-island",
+    "lines": [
+      "Still here.",
+      "I half expected to wake up on a ship’s deck with someone shaking me. Instead: sand fleas, the same old rod, and the tide going out.",
+      "The fish do not know I am stranded. They just keep biting. I may as well keep fishing."
+    ],
+    "when": [
+      [
+        {
+          "type": "day",
+          "min": 2
+        },
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 1
+        }
+      ]
+    ]
+  },
+  {
+    "id": "first-night",
+    "order": 7,
+    "regionId": "castaway-island",
+    "lines": [
+      "Dark. Not one light on the water, all the way round.",
+      "I am trying not to think about how far it is to anywhere.",
+      "The sea is very loud at night."
+    ],
+    "when": [
+      [
+        {
+          "type": "phase",
+          "phases": [
+            "night"
+          ]
+        },
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 2
+        }
+      ]
+    ]
+  },
+  {
+    "id": "ten",
+    "order": 8,
+    "regionId": "castaway-island",
+    "lines": [
+      "Ten fish. I counted.",
+      "I know almost nothing about fishing. A hook goes in a mouth, and that is about the end of it.",
+      "But every fish shows me something, if I pay attention."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 10
+        }
+      ]
+    ]
+  },
+  {
+    "id": "kinds",
+    "order": 9,
+    "regionId": "castaway-island",
+    "lines": [
+      "Three kinds of fish off the same few rocks. Same bait, same water, completely different animals.",
+      "I have started to wonder what else is down there."
+    ],
+    "when": [
+      [
+        {
+          "type": "kinds",
+          "min": 3
+        }
+      ]
+    ]
+  },
+  {
+    "id": "thieves",
+    "order": 10,
+    "regionId": "castaway-island",
+    "lines": [
+      "The little striped ones have eaten more of my bait than I have eaten fish.",
+      "I have decided they are doing it on purpose."
+    ],
+    "when": [
+      [
+        {
+          "type": "count",
+          "key": "stolen",
+          "min": 4
+        }
+      ]
+    ]
+  },
+  {
+    "id": "got-away",
+    "order": 11,
+    "regionId": "castaway-island",
+    "lines": [
+      "Lost one. A good one, I think. I felt it shake its head, and then nothing.",
+      "I am angrier about that fish than I have been about anything since the storm. Which is probably a good sign."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "lost",
+          "min": 1
+        },
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 4
+        }
+      ]
+    ]
+  },
+  {
+    "id": "knife",
+    "order": 12,
+    "regionId": "castaway-island",
+    "lines": [
+      "A sharp stone lashed to a stick. Ten thousand years of progress, and here I am back at the start of it.",
+      "It cuts, though. It really cuts."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "stone-knife"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "day-three",
+    "order": 13,
+    "regionId": "castaway-island",
+    "lines": [
+      "Third morning. I scratched three lines into a palm at camp.",
+      "I am not going to be someone with a hundred lines on a tree. I am going to be someone who gets off."
+    ],
+    "when": [
+      [
+        {
+          "type": "day",
+          "min": 3
+        }
+      ]
+    ]
+  },
+  {
+    "id": "quiet",
+    "order": 14,
+    "regionId": "castaway-island",
+    "lines": [
+      "I have stopped jumping at every twitch of the line. My hands know the cast now.",
+      "Out, wait, watch. While I am doing that, the part of my head that worries goes quiet for a while."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 25
+        }
+      ]
+    ]
+  },
+  {
+    "id": "friend",
+    "order": 15,
+    "regionId": "castaway-island",
+    "lines": [
+      "I have started to think of whoever wrote the pages as a friend. A friend who is always a few weeks ahead of me.",
+      "They never sign anything. I wish I knew their name."
+    ],
+    "when": [
+      [
+        {
+          "type": "pages",
+          "min": 3
+        }
+      ]
+    ]
+  },
+  {
+    "id": "bamboo",
+    "order": 16,
+    "regionId": "castaway-island",
+    "lines": [
+      "A real rod. All right: a long cane with a line on it. But it bends like a real one, and it throws like one.",
+      "The reef edge, then."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "bamboo-rod"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "talking",
+    "order": 17,
+    "regionId": "castaway-island",
+    "lines": [
+      "I talk to the fish now. Mostly about the weather, which is always the same.",
+      "They are good listeners. Better than some people I could name."
+    ],
+    "when": [
+      [
+        {
+          "type": "day",
+          "min": 4
+        },
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 20
+        }
+      ]
+    ]
+  },
+  {
+    "id": "fifty",
+    "order": 18,
+    "regionId": "castaway-island",
+    "lines": [
+      "Fifty fish.",
+      "Somewhere along the way I stopped being someone stranded on an island who fishes, and became someone who fishes, stranded on an island.",
+      "It is a small difference. I think it matters."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 50
+        }
+      ]
+    ]
+  },
+  {
+    "id": "fire",
+    "order": 19,
+    "regionId": "castaway-island",
+    "lines": [
+      "A fire of my own, and fish cooked on it. I sat up late just to watch it.",
+      "It is the first time this place has felt like somewhere a person could live."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "campfire"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "week",
+    "order": 20,
+    "regionId": "castaway-island",
+    "lines": [
+      "A week, near enough. The island has started to feel less like something that happened to me and more like a place I live.",
+      "Which is exactly why I need to leave it."
+    ],
+    "when": [
+      [
+        {
+          "type": "day",
+          "min": 7
+        }
+      ]
+    ]
+  },
+  {
+    "id": "night-water",
+    "order": 21,
+    "regionId": "castaway-island",
+    "lines": [
+      "Out with the torch. The rocks I fish every day are a different place after dark, full of eyes.",
+      "I was not scared. Mostly I was not scared."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "torch"
+        },
+        {
+          "type": "phase",
+          "phases": [
+            "night",
+            "dusk"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "leaving",
+    "order": 22,
+    "regionId": "castaway-island",
+    "lines": [
+      "“Not with this gear. Not on this island.”",
+      "They were not giving up. They were getting ready to go.",
+      "Then so am I."
+    ],
+    "when": [
+      [
+        {
+          "type": "pages",
+          "min": 9
+        }
+      ]
+    ]
+  },
+  {
+    "id": "hundred",
+    "order": 23,
+    "regionId": "castaway-island",
+    "lines": [
+      "A hundred fish.",
+      "If anyone ever asks what I did on the island, that is the answer. I fished. I kept fishing. And every one of them got me a little further off this beach."
+    ],
+    "when": [
+      [
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 100
+        }
+      ]
+    ]
+  },
+  {
+    "id": "bearing",
+    "order": 24,
+    "regionId": "castaway-island",
+    "lines": [
+      "West-south-west. Smoke on the horizon some evenings, and a port two days off.",
+      "It took them seventy-one days. I have been here {days}.",
+      "A hull, a mast, a sail, an oar to steer, food for the crossing. I know what to do now. I just have to do it."
+    ],
+    "when": [
+      [
+        {
+          "type": "pages",
+          "min": 10
+        }
+      ]
+    ],
+    "gap": false
+  },
+  {
+    "id": "hull",
+    "order": 25,
+    "regionId": "castaway-island",
+    "lines": [
+      "A hull. It floats. I sat on it in the lagoon for an hour, just to be sure.",
+      "It is the best thing I have ever made."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "raft-hull"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "ready",
+    "order": 26,
+    "regionId": "castaway-island",
+    "lines": [
+      "Everything is ready. I walked the whole island one last time.",
+      "I will miss the point at sunset. I will not miss the striped thieves.",
+      "When in doubt, cast off."
+    ],
+    "when": [
+      [
+        {
+          "type": "held",
+          "item": "raft-hull"
+        },
+        {
+          "type": "held",
+          "item": "raft-lashings"
+        },
+        {
+          "type": "held",
+          "item": "raft-mast"
+        },
+        {
+          "type": "held",
+          "item": "raft-sail"
+        },
+        {
+          "type": "held",
+          "item": "raft-oar"
+        },
+        {
+          "type": "held",
+          "item": "provisions"
+        }
+      ]
+    ],
+    "gap": false
+  },
+  {
+    "id": "port",
+    "order": 27,
+    "regionId": "belize-cayes",
+    "lines": [
+      "People. Noise. Somebody frying fish on a cart and shouting about it.",
+      "I stood on the pier for a long time, just listening to voices that were not mine.",
+      "Then I went and found somewhere to fish. Old habits."
+    ],
+    "when": [
+      [
+        {
+          "type": "at",
+          "location": "port-esperanza"
+        }
+      ]
+    ],
+    "gap": false
+  },
+  {
+    "id": "pages-kept",
+    "order": 28,
+    "regionId": "belize-cayes",
+    "lines": [
+      "I still have the pages. All ten, dried out and pressed flat in the back of my log.",
+      "Somebody in this town might remember a castaway who came in on a raft. I keep meaning to ask."
+    ],
+    "when": [
+      [
+        {
+          "type": "flag",
+          "flag": "launched"
+        },
+        {
+          "type": "stat",
+          "stat": "catches",
+          "min": 140
+        }
+      ]
+    ]
+  }
+]

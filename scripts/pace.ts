@@ -19,7 +19,10 @@ for (let seed = 1; seed <= seeds; seed++) {
   const r = runPace(content, seed, start);
   if (seed === 1) {
     console.log(`\nSeed 1 timeline (minutes of play, human pace):`);
-    for (const e of r.events) console.log(`  ${String(e.minute).padStart(6)}  ${e.what}`);
+    const merged = [...r.events.map((e) => ({ minute: e.minute, what: e.what })), ...r.thoughts.map((x) => ({ minute: x.minute, what: `  … ${x.id.slice(0, 70)}` }))];
+    for (const e of merged.sort((a, b) => a.minute - b.minute)) console.log(`  ${String(e.minute).padStart(6)}  ${e.what}`);
+    const story = r.thoughts.filter((x) => !x.id.startsWith('mind:')).length;
+    console.log(`  thoughts: ${story} story, ${r.thoughts.length - story} on my mind`);
   }
   for (const [k, v] of Object.entries(r.milestones)) (all[k] ??= []).push(v);
   if (!r.launched) (all['NOT LAUNCHED'] ??= []).push(r.minutes);

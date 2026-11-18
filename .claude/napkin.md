@@ -16,7 +16,9 @@
 
 4. **[2026-11-16] The built-in browser pane is usually hidden, so `requestAnimationFrame` and CSS animations stall**
    Do instead: drive the game with the dev harness (`await T.start(); await T.fast(60)`, `T.until('fight')`, `T.set(d => …)`), and take a throwaway screenshot before the real one because the first lags a frame.
-5. **[2026-11-16] Harness and tool output can be enormous**
+5. **[2026-11-18] In the hidden pane, CSS animations that start at opacity 0 never finish, so screenshots show blank text**
+   Do instead: before a screenshot, inject a style setting `animation:none;opacity:1` on the animated elements (thought cards: `.tcard p`).
+6. **[2026-11-16] Harness and tool output can be enormous**
    Do instead: return counts and short summaries from page scripts, never raw logs or whole state.
 
 ## Research Workstream
