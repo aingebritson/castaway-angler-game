@@ -477,7 +477,7 @@ Research produces, for each region, one dossier and a set of validated content f
 
 Andy generates all final art with an image model. The game always runs on placeholders, so art never blocks the build. This section is the brief and the pipeline.
 
-**Step 0: style bake-off, during M0.** Generate the same three test assets (the Rocky Point scene, a bonefish, a stone knife icon) in three candidate styles, then pick one and write a one-page style bible with six reference images.
+**Step 0: style bake-off, during M0.** Generate the same three test assets (the Rocky Point scene, a bonefish, a stone knife icon) in three candidate styles, then pick one and write a one-page style bible with six reference images. Done on 17 November 2026: field-guide watercolour won, and the style bible is `art/style.md`.
 
 | Candidate | Character |
 | --- | --- |
@@ -548,7 +548,7 @@ Six milestones. M0 is a gate: if casting and landing a fish is not fun with plac
 None of these block M0. The first four should be settled before M1.
 
 - [ ] **Name.** "Castaway Angler" is a placeholder.
-- [ ] **Art style.** Pick one of the three candidates after the bake-off.
+- [x] **Art style.** Field-guide watercolour, chosen after the bake-off on 17 November 2026. See `art/style.md`.
 - [ ] **Island clock.** The spec uses the phone's time on the island. The alternative is real Caribbean time from the first minute.
 - [ ] **Audience.** Just Andy, or public? Public adds onboarding polish and a closer look at source licences; FishBase's licence is non-commercial.
 - [ ] **Image tool.** Whichever is used must produce transparent backgrounds or be paired with a background-removal step in `art:ingest`.

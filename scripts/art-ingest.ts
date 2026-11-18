@@ -25,7 +25,8 @@ const RULES: Record<string, { w: number; h: number; alpha: boolean; trim: boolea
 const files = existsSync(inbox) ? readdirSync(inbox).filter((f) => /\.(png|jpe?g|webp)$/i.test(f)) : [];
 let ok = 0;
 for (const f of files) {
-  const id = f.replace(/\.[^.]+$/, '').replace('__', '/');
+  // accept scene__beach.png and the easy-to-type scene_beach.png
+  const id = f.replace(/\.[^.]+$/, '').replace(/^(scene|specimen|item|portrait)__?/, '$1/');
   const kind = id.split('/')[0];
   const rule = RULES[kind];
   if (!rule) {

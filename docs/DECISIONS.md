@@ -94,6 +94,10 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Where the same species and habitat are on the island, the island data was changed to match.
 43. **Cayes rumours checked against the data and the real fish.** All 31 rumours that touch the Cayes pass the data check, and every rare or epic species at the port has two obtainable rumours.
     - Seven were rewritten because they overstated reality: jacks against the sea wall, cero at dawn, black grouper at dusk, hogfish and crab, the snook and blue crab hyperbole, and Nassau grouper going back "by law" (Belize allows them in season, so it now says there are too few left).
+44. **Art style: field-guide watercolour**, after the bake-off on 17 November 2026 (Andy's scores: watercolour 35, cartoon 34, gouache 28, out of 40). The style bible is `art/style.md`; three reference images are in `art/reference/`, and three more are listed there to make. The bake-off images stay out of git.
+    - **ChatGPT for every asset type.** Its cut-outs came out with clean transparency, which settles most of the image-tool question. Midjourney's watercolour drifted toward realism; it stays an option only for scenes ChatGPT can't get right.
+    - **Every bake-off scene had the wrong layout for casting**: deep water at the sides or the bottom, and the horizon too high. `art:prompts` now writes each scene's layout from its data: where the water starts, its cast zones from near to far, where its tap spots go and which spots to keep clear.
+    - `art:prompts` builds every prompt from text blocks in `art/style.md`, so the bible is the one place to edit the style. `art:ingest` also accepts `scene_beach.png` as well as `scene__beach.png`.
 
 ## Schema additions (spec section 11)
 
