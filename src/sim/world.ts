@@ -102,21 +102,14 @@ export function soakPhases(soakH: number, phaseAtHaul: Phase): Phase[] {
   return [phaseAtHaul];
 }
 
-export type RecipeView = 'hidden' | 'silhouette' | 'known';
+export type RecipeView = 'hidden' | 'known';
 
 /**
- * A recipe shows as a silhouette once the player has held one ingredient, and
- * is worked out in full once they have held every ingredient and tool. Journal
- * pages reveal recipes early.
+ * A recipe is known from the start, or once a lesson, a journal page or a
+ * person has taught it. Holding the ingredients does not teach anything.
  */
-export function recipeView(recipe: Recipe, everHeld: Record<string, unknown>, revealed: readonly string[]): RecipeView {
-  if (recipe.known === 'start' || revealed.includes(recipe.id)) return 'known';
-  if (recipe.known === 'taught') return 'hidden';
-  const parts = [...recipe.inputs.map((i) => i.item), ...recipe.tools, ...(recipe.station ? [recipe.station] : [])];
-  if (!parts.length) return 'hidden';
-  const held = parts.filter((p) => everHeld[p]).length;
-  if (held === parts.length) return 'known';
-  return held > 0 ? 'silhouette' : 'hidden';
+export function recipeView(recipe: Recipe, known: readonly string[]): RecipeView {
+  return recipe.known === 'start' || known.includes(recipe.id) ? 'known' : 'hidden';
 }
 
 export interface CraftCheck {

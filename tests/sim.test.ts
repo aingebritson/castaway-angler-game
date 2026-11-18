@@ -238,13 +238,10 @@ describe('world', () => {
     const def = content.locations.beach.scene.hotspots.find((h) => h.id === 'wrack')!.node!;
     expect(tablePick(def, 5, 'k', 1)).toBe(tablePick(def, 5, 'k', 1));
   });
-  it('recipes go hidden, silhouette, known', () => {
+  it('recipes are known only once something teaches them', () => {
     const r = content.recipes['stone-knife'];
-    expect(recipeView(r, {}, [])).toBe('hidden');
-    expect(recipeView(r, { stone: true }, [])).toBe('silhouette');
-    expect(recipeView(r, { stone: true, vine: true, hammerstone: true }, [])).toBe('known');
-    expect(recipeView(r, {}, ['stone-knife'])).toBe('known');
-    expect(recipeView(content.recipes['shell-hook'], {}, [])).toBe('known');
+    expect(recipeView(r, [])).toBe('hidden');
+    expect(recipeView(r, ['stone-knife'])).toBe('known');
   });
   it('craft check reports what is missing', () => {
     const r = content.recipes['stone-knife'];

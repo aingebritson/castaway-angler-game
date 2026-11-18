@@ -297,7 +297,7 @@ export class Fishing {
     audio.play('plop');
     this.ripples.push({ x: this.cast.x, y: this.cast.y, age: 0, life: 1.2, size: 0.07 });
     this.splash(this.cast.x, this.cast.y, 6, 0.5);
-    const plan = store.act(beginCast, this.cast.zoneId);
+    const plan = store.act(beginCast, this.cast.zoneId, this.aim.power);
     if (!plan) return this.setPhase('idle');
     const rig = this.rig();
     if (rig?.method === 'lure') {

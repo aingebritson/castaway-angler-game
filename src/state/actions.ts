@@ -12,7 +12,7 @@ import {
 } from '../sim/catch';
 import { type Rng, chance, makeRng, weighted } from '../sim/rng';
 import { type SunInfo, moonIndex, sunInfo } from '../sim/time';
-import { craftCheck, nodeOpen, pickProvisions, refreshNode, resolveTrap, soakPhases, tablePick } from '../sim/world';
+import { craftCheck, nodeOpen, pickProvisions, recipeView, refreshNode, resolveTrap, soakPhases, tablePick } from '../sim/world';
 import type { GameState, GuideEntry, JournalKind, KeptFish } from './state';
 
 export interface Ctx {
@@ -45,6 +45,7 @@ export type GameEvent =
   | { type: 'reveal'; reveal: Reveal }
   | { type: 'sfx'; id: string }
   | { type: 'haul'; reveals: Reveal[]; soakH: number }
+  | { type: 'lesson'; lessonId: string }
   | { type: 'ending' };
 
 const toast = (text: string, glyph?: string, tone: 'good' | 'warn' | 'info' = 'info'): GameEvent => ({ type: 'toast', text, glyph, tone });
@@ -64,6 +65,11 @@ export function withRng<T>(s: GameState, fn: (rng: Rng) => T): T {
 }
 
 export const has = (s: GameState, itemId: string): boolean => (s.inventory[itemId] ?? 0) > 0;
+
+/** Count an event that a lesson may be waiting for. */
+export function countEvent(s: GameState, key: string, n = 1): void {
+  s.counts[key] = (s.counts[key] ?? 0) + n;
+}
 
 export function addItem(s: GameState, itemId: string, qty = 1): void {
   s.inventory[itemId] = (s.inventory[itemId] ?? 0) + qty;
@@ -98,7 +104,8 @@ export function cond(s: GameState, expr: string | undefined): boolean {
   if (!expr) return true;
   const neg = expr.startsWith('!');
   const [kind, val] = (neg ? expr.slice(1) : expr).split(':');
-  const v = kind === 'flag' ? !!s.flags[val] : kind === 'has' ? has(s, val) : kind === 'everHeld' ? !!s.everHeld[val] : kind === 'quest' ? s.quests[val]?.state === 'done' : false;
+  const v = kind === 'flag' ? !!s.flags[val] : kind === 'has' ? has(s, val) : kind === 'everHeld' ? !!s.everHeld[val] : kind === 'quest' ? s.quests[val]?.state === 'done'
+    : kind === 'know' ? s.lessons.includes(val) : kind === 'recipe' ? s.recipesKnown.includes(val) : false;
   return neg ? !v : v;
 }
 
@@ -285,6 +292,7 @@ function bareHands(content: Content): Rig {
 function bottleEligible(s: GameState, content: Content): boolean {
   const next = content.pages[s.pagesFound];
   if (!next) return false;
+  if (s.lessons.length < next.minLessons) return false;
   return !next.bearing || speciesCaught(s, content) >= content.balance.bearing.speciesNeeded;
 }
 
@@ -332,10 +340,12 @@ export function catchCtx(s: GameState, ctx: Ctx, zoneId: string, method: CatchCt
 }
 
 /** The line is in the water. Returns how long until something happens. */
-export function beginCast(s: GameState, ctx: Ctx, zoneId: string): WaitPlan | null {
+export function beginCast(s: GameState, ctx: Ctx, zoneId: string, power = 0.5): WaitPlan | null {
   const c = catchCtx(s, ctx, zoneId, s.rig.method);
   if (!c) return null;
   s.stats.casts++;
+  countEvent(s, `cast:${s.locationId}/${zoneId}`);
+  if (power >= 0.92) countEvent(s, 'longCast');
   s.stats.castsSinceBottle++;
   s.zonesSeen[`${s.locationId}/${zoneId}`] = true;
   const plan = withRng(s, (rng) => planWait(c, rng));
@@ -443,6 +453,7 @@ export function loseFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string,
   const zone = loc.zones.find((z) => z.id === zoneId);
   const sun = sunAt(ctx, s.locationId);
   if (reason === 'missed') {
+    countEvent(s, 'missed');
     if (s.rig.method === 'bait' && !withRng(s, (rng) => chance(rng, ctx.content.balance.bite.missKeepBaitChance))) {
       useBait(s, ctx);
       events.push(toast('Missed it. The bait is gone.', '💨', 'warn'));
@@ -452,6 +463,7 @@ export function loseFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string,
   s.stats.lost++;
   useBait(s, ctx);
   if (reason === 'snapped' || reason === 'spooled') {
+    countEvent(s, 'snapped');
     const lost = s.rig.method === 'lure' ? s.rig.lure : s.rig.hook;
     if (lost) {
       takeItem(s, lost);
@@ -473,6 +485,7 @@ export function loseFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string,
 }
 
 export function stolenBait(s: GameState, ctx: Ctx): GameEvent[] {
+  countEvent(s, 'stolen');
   useBait(s, ctx);
   return [toast('Something small stripped the hook. Too small for this hook to catch.', '🐟', 'warn')];
 }
@@ -531,7 +544,10 @@ export function refusal(s: GameState, ctx: Ctx, speciesId: string, reason: 'bait
 export function keepFish(s: GameState, ctx: Ctx, r: Reveal): GameEvent[] {
   const sp = ctx.content.species[r.speciesId];
   if (sp.conservation.releaseOnly) return releaseFish(s, ctx, r);
-  if (s.creel.length >= creelLimit(s, ctx.content)) return [toast('The basket is full. Release it, or make room at camp.', '🧺', 'warn')];
+  if (s.creel.length >= creelLimit(s, ctx.content)) {
+    countEvent(s, 'creelFull');
+    return [toast('The basket is full. Release it, or make room at camp.', '🧺', 'warn')];
+  }
   s.creel.push({ uid: s.nextUid++, speciesId: r.speciesId, lengthCm: r.lengthCm, weightG: r.weightG, grade: r.grade, at: ctx.now, locationId: r.locationId });
   return [{ type: 'sfx', id: 'keep' }];
 }
@@ -581,6 +597,7 @@ export function fishToBait(s: GameState, ctx: Ctx, r: Reveal): GameEvent[] {
 export function craft(s: GameState, ctx: Ctx, recipeId: string): GameEvent[] {
   const r = ctx.content.recipes[recipeId];
   if (!r) return [];
+  if (recipeView(r, s.recipesKnown) !== 'known') return [toast('I do not know how to make that yet.', '✋', 'warn')];
   const events: GameEvent[] = [];
   if (r.special === 'provisions') {
     const p = ctx.content.balance.provisions;

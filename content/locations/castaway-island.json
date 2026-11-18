@@ -92,7 +92,8 @@
             "max": 5,
             "regrowMin": 4,
             "infinite": true
-          }
+          },
+          "showIf": "know:hooks"
         },
         {
           "id": "driftwood",
@@ -105,7 +106,8 @@
             "item": "driftwood",
             "max": 4,
             "regrowMin": 12
-          }
+          },
+          "showIf": "know:fire"
         },
         {
           "id": "wrack",
@@ -136,7 +138,8 @@
             "max": 4,
             "regrowMin": 1440,
             "daily": true
-          }
+          },
+          "showIf": "know:hooks"
         },
         {
           "id": "feathers",
@@ -149,7 +152,8 @@
             "item": "feather",
             "max": 2,
             "regrowMin": 40
-          }
+          },
+          "showIf": "know:lure"
         },
         {
           "id": "ghost-crabs",
@@ -166,7 +170,8 @@
               "dusk",
               "night"
             ]
-          }
+          },
+          "showIf": "know:sight"
         },
         {
           "id": "wreck",
@@ -224,7 +229,12 @@
     "lon": -87.6,
     "tz": "device",
     "solarTz": "America/Belize",
-    "unlock": [],
+    "unlock": [
+      {
+        "type": "lesson",
+        "lesson": "edge"
+      }
+    ],
     "zones": [],
     "sightZones": [],
     "map": {
@@ -247,7 +257,8 @@
             "item": "palm-frond",
             "max": 5,
             "regrowMin": 8
-          }
+          },
+          "showIf": "know:cord"
         },
         {
           "id": "coconuts",
@@ -258,9 +269,10 @@
           "glyph": "🥥",
           "node": {
             "item": "coconut",
-            "max": 3,
-            "regrowMin": 20
-          }
+            "max": 4,
+            "regrowMin": 12
+          },
+          "showIf": "know:cord"
         },
         {
           "id": "vines",
@@ -273,7 +285,8 @@
             "item": "vine",
             "max": 4,
             "regrowMin": 12
-          }
+          },
+          "showIf": "know:edge"
         },
         {
           "id": "bamboo",
@@ -287,7 +300,8 @@
             "max": 4,
             "regrowMin": 18,
             "requiresTool": "stone-knife"
-          }
+          },
+          "showIf": "know:rod"
         }
       ]
     }
@@ -376,7 +390,8 @@
             "handZone": "tide-pools",
             "max": 2,
             "regrowMin": 15
-          }
+          },
+          "showIf": "know:sight"
         },
         {
           "id": "stones",
@@ -389,7 +404,8 @@
             "item": "stone",
             "max": 4,
             "regrowMin": 10
-          }
+          },
+          "showIf": "know:edge"
         },
         {
           "id": "trap",
@@ -415,7 +431,12 @@
     "lon": -87.6,
     "tz": "device",
     "solarTz": "America/Belize",
-    "unlock": [],
+    "unlock": [
+      {
+        "type": "lesson",
+        "lesson": "sight"
+      }
+    ],
     "zones": [
       {
         "id": "flats",
@@ -501,7 +522,12 @@
     "lon": -87.6,
     "tz": "device",
     "solarTz": "America/Belize",
-    "unlock": [],
+    "unlock": [
+      {
+        "type": "lesson",
+        "lesson": "hooks"
+      }
+    ],
     "zones": [],
     "sightZones": [],
     "map": {
@@ -529,7 +555,8 @@
           "y": 0.47,
           "label": "Fire and rack",
           "glyph": "🔥",
-          "station": "fire"
+          "station": "fire",
+          "showIf": "know:fire"
         },
         {
           "id": "basket",
@@ -538,7 +565,8 @@
           "y": 0.82,
           "label": "Catch basket",
           "glyph": "🐟",
-          "station": "creel"
+          "station": "creel",
+          "showIf": "know:cutbait"
         },
         {
           "id": "raft",
@@ -547,7 +575,8 @@
           "y": 0.56,
           "label": "Raft",
           "glyph": "⛵",
-          "station": "raft"
+          "station": "raft",
+          "showIf": "recipe:raft-hull"
         }
       ]
     }

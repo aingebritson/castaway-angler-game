@@ -16,6 +16,7 @@ export interface Content {
   recipes: Record<string, S.Recipe>;
   rumours: Record<string, S.Rumour>;
   pages: S.Page[];
+  lessons: S.Lesson[];
   junk: Record<string, S.JunkTable>;
   rigs: Record<string, S.RigPreset>;
   legendaries: Record<string, S.Legendary>;
@@ -76,6 +77,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
   const recipes = index(one(S.Recipe, 'recipes.json'), 'recipe', issues);
   const rumours = index(one(S.Rumour, 'rumours.json'), 'rumour', issues);
   const pages = one(S.Page, 'pages.json').sort((a, b) => a.order - b.order);
+  const lessons = one(S.Lesson, 'lessons.json').sort((a, b) => a.order - b.order);
   const junk = index(one(S.JunkTable, 'junk.json'), 'junk table', issues);
   const rigs = index(one(S.RigPreset, 'rigs.json'), 'rig', issues);
   const legendaries = index(one(S.Legendary, 'legendaries.json'), 'legendary', issues);
@@ -155,6 +157,29 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
       if (dim === 'bait' && !baitTypes.has(val) && !['trap', 'hand', 'net'].includes(val)) err(`rumour ${r.id}: unknown bait type "${val}"`);
     }
   }
+  const lessonIds = new Set<string>();
+  for (const l of lessons) {
+    const where = `lesson ${l.id}`;
+    if (lessonIds.has(l.id)) err(`${where}: duplicate id`);
+    for (const r of l.requires) if (!lessonIds.has(r)) err(`${where}: requires "${r}", which must come earlier`);
+    lessonIds.add(l.id);
+    if (!regions[l.regionId]) err(`${where}: missing region "${l.regionId}"`);
+    l.unlocks.recipes.forEach((r) => !recipes[r] && err(`${where}: missing recipe "${r}"`));
+    for (const group of l.when) for (const c of group) {
+      if (c.type === 'held') needItem(c.item, where);
+      if (c.type === 'at' && !locations[c.location]) err(`${where}: missing location "${c.location}"`);
+    }
+    // Never stuck: some way to learn it must not depend on luck with a particular event.
+    if (!l.when.some((g) => g.every((c) => c.type === 'stat' || c.type === 'held' || c.type === 'kinds' || c.type === 'hookless'))) {
+      issues.warnings.push(`${where}: every way to learn it waits on an event; add a fallback`);
+    }
+  }
+  for (const r of Object.values(recipes)) {
+    if (r.known === 'discover' && !lessons.some((l) => l.unlocks.recipes.includes(r.id)) && !pages.some((p) => p.recipes.includes(r.id)) && !Object.values(quests).some((q) => q.reward.recipes?.includes(r.id))) {
+      err(`recipe ${r.id}: nothing teaches it (no lesson, page or quest)`);
+    }
+  }
+  for (const loc of Object.values(locations)) for (const u of loc.unlock) if (u.type === 'lesson' && !lessonIds.has(u.lesson)) err(`location ${loc.id}: unknown lesson "${u.lesson}"`);
   for (const p of pages) {
     p.recipes.forEach((r) => !recipes[r] && err(`page ${p.id}: missing recipe "${r}"`));
     p.rumours.forEach((r) => !rumours[r] && err(`page ${p.id}: missing rumour "${r}"`));
@@ -201,7 +226,7 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
   if (pending) issues.warnings.push(`${pending} source references are marked "pending-review" (research pass has not verified them)`);
 
   const content: Content = {
-    balance, regions, locations, species, occurrences, occByLocation, items, recipes, rumours, pages, junk, rigs,
+    balance, regions, locations, species, occurrences, occByLocation, items, recipes, rumours, pages, lessons, junk, rigs,
     legendaries, people, quests, questsByPerson, shops, baitTypes: [...baitTypes],
   };
   return { content, issues };

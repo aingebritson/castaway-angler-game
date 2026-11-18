@@ -13,7 +13,8 @@
     "sim": "tsx scripts/sim.ts",
     "icons": "tsx scripts/make-icons.ts",
     "art:prompts": "tsx scripts/art-prompts.ts",
-    "art:ingest": "tsx scripts/art-ingest.ts"
+    "art:ingest": "tsx scripts/art-ingest.ts",
+    "pace": "tsx scripts/pace.ts"
   },
   "dependencies": {
     "preact": "^11.2.0",

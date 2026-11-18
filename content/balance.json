@@ -82,7 +82,7 @@
   "bearing": {
     "speciesNeeded": 8,
     "pityCasts": 6,
-    "pagePityCasts": 12
+    "pagePityCasts": 25
   },
   "provisions": {
     "fish": 5,
@@ -92,5 +92,8 @@
     "catchesPerHour": 0.6
   },
   "legendaryChance": 0.1,
-  "creelLimit": 12
+  "creelLimit": 12,
+  "lessons": {
+    "gapCasts": 10
+  }
 }

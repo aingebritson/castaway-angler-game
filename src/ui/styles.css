@@ -267,3 +267,19 @@ hr { border: 0; border-top: 1px dashed var(--paper-3); margin: 14px 0; }
 @keyframes drag { 0% { transform: translateY(0) scale(1.15); opacity: 0; } 12% { transform: translateY(0) scale(1); opacity: 1; } 62% { transform: translateY(150px); opacity: 1; } 72% { transform: translateY(150px) scale(1.15); opacity: 0; } 100% { opacity: 0; } }
 @keyframes trail { 0%,12% { transform: scaleY(0); opacity: 1; } 62% { transform: scaleY(1); opacity: 1; } 75%,100% { transform: scaleY(1); opacity: 0; } }
 .tip { margin: 10px 0 0; padding: 8px 10px; border-radius: 10px; background: #fff3c8; font-size: 13.5px; line-height: 1.35; text-align: left; color: var(--ink); }
+
+/* ---------- lessons ---------- */
+.lessoncard { text-align: center; }
+.lesson-glyph { font-size: 46px; line-height: 1; margin: 2px 0 4px; }
+.lessoncard .seen { font-size: 15px; color: var(--ink-soft); margin: 8px 0 12px; }
+.lesson-box, .lesson-now { text-align: left; border-radius: 12px; padding: 10px 12px; margin-top: 8px; font-size: 14.5px; line-height: 1.45; }
+.lesson-box { background: #e6f1ef; }
+.lesson-now { background: #fff3c8; }
+.lesson-box b, .lesson-now b { font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--sea); }
+.lesson-now b { color: #8a6410; }
+.lesson-box p, .lesson-now p { margin: 3px 0 0; }
+.lesson-now .need { margin-top: 8px; }
+.know { padding: 12px 0; border-bottom: 1px dashed var(--paper-3); }
+.know h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 17px; }
+.know p { margin: 4px 0; font-size: 14.5px; line-height: 1.45; }
+.slot .why { font-size: 12.5px; color: var(--ink-soft); margin: -2px 0 8px; line-height: 1.35; }

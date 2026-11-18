@@ -64,6 +64,12 @@ function spec(step: CoachStep, fleas: number): Spec | null {
         target: '[data-nav="guide"]', at: 'above', ok: 'Got it',
         text: 'Your first fish. Every new kind you catch, see or hear about fills a page in the field guide. When you are not sure what to do next, read the note at the top of the screen.',
       };
+    case 'to-camp':
+      return { target: '[data-nav="map"]', at: 'above', text: 'You have worked out how to make a hook. Things are made at camp: open the map.' };
+    case 'camp-pin':
+      return { target: '[data-pin="camp"]', at: 'below', text: 'Tap Camp.' };
+    case 'workbench':
+      return { target: '[data-hs="workbench"]', at: 'below', text: 'This is the workbench. Everything you learn to make shows up here, with what it needs and where to find it.' };
     default:
       return null;
   }

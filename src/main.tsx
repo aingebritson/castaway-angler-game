@@ -7,6 +7,7 @@ import { registerServiceWorker } from './platform/install';
 import { clearSave, loadSave, makeSaver, requestPersist } from './platform/storage';
 import { type GameState, migrate, newGame } from './state/state';
 import { Store } from './state/store';
+import { syncLessons } from './state/lessons';
 import { App } from './ui/App';
 import { type Game, GameCtx } from './ui/hooks';
 import './ui/styles.css';
@@ -26,6 +27,7 @@ async function boot() {
     state = newGame(freshSeed(), now);
   }
   if (!content.locations[state.locationId]) state.locationId = 'beach';
+  syncLessons(state, content);
   const saver = makeSaver();
   const store = new Store(state, { content, now: () => systemClock.now(), deviceTz: deviceTimeZone(), onChange: (s) => saver.queue(s) });
   audio.enabled = state.settings.sound;

@@ -33,6 +33,7 @@ Open the address it prints on your phone (same Wi-Fi), or in a desktop browser a
 | `npm run dev` | Dev server |
 | `npm run build` | Validate content, typecheck, build to `dist/` |
 | `npm test` | Simulation tests and a scripted playthrough from waking up to launching the raft |
+| `npm run pace` | Pacing simulator: plays the island at human speed and prints when each lesson and milestone arrives |
 | `npm run validate` | Check every content file against its schema and cross-references |
 | `npm run sim -- --location rocky-point --rig starter --casts 10000 --at 2027-01-15T16:00Z` | Balance simulator: catch distribution, fight time, coins per hour |
 | `npm run art:prompts` | Write a prompt sheet for every asset still on a placeholder |

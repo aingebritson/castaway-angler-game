@@ -5,7 +5,7 @@
  */
 import type { GameState } from './state';
 
-export type CoachStep = 'intro' | 'rod' | 'bait' | 'map' | 'map-pin' | 'cast' | 'wait' | 'bite' | 'guide';
+export type CoachStep = 'intro' | 'rod' | 'bait' | 'map' | 'map-pin' | 'cast' | 'wait' | 'bite' | 'guide' | 'to-camp' | 'camp-pin' | 'workbench';
 
 export const FLEAS_NEEDED = 3;
 
@@ -34,6 +34,11 @@ export function coachStep(s: GameState, v: CoachView): CoachStep | null {
     return null;
   }
   if (!s.flags.tutGuide) return v.panel ? null : 'guide';
+  // The first idea: show where things are made.
+  if (s.lessons.includes('hooks') && !s.flags.tutBench && !s.everHeld['shell-hook']) {
+    if (s.locationId !== 'camp') return v.panel === 'map' ? 'camp-pin' : v.panel ? null : v.phase === 'idle' ? 'to-camp' : null;
+    return v.panel ? null : 'workbench';
+  }
   return null;
 }
 

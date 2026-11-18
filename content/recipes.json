@@ -13,7 +13,7 @@
       "item": "shell-hook",
       "qty": 1
     },
-    "known": "start",
+    "known": "discover",
     "blurb": "Grind one shell against another until it hooks."
   },
   {

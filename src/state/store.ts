@@ -4,6 +4,7 @@
  */
 import type { Content } from '../content/assemble';
 import type { Ctx, GameEvent } from './actions';
+import { checkLessons } from './lessons';
 import type { GameState } from './state';
 
 export interface StoreDeps {
@@ -37,10 +38,13 @@ export class Store {
     const draft = structuredClone(this.state);
     const ctx = this.ctx();
     const out = fn(draft, ctx, ...args);
+    // Whatever just happened may have taught the castaway something.
+    const learned = checkLessons(draft, ctx);
     draft.lastSeen = ctx.now;
     this.state = draft;
     this.deps.onChange?.(draft);
     for (const l of this.listeners) l();
+    if (learned.length) this.emit(learned);
     return out;
   }
 

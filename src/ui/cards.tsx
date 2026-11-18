@@ -184,3 +184,37 @@ export function EndingCard({ onDone, hasPort }: { onDone(): void; hasPort: boole
     </div>
   );
 }
+
+/** A lesson learned: what happened, the fishing idea behind it, and what it unlocks. */
+export function LessonCard({ lessonId, onDone }: { lessonId: string; onDone(): void }) {
+  const { store } = useGame();
+  const c = store.content;
+  const l = c.lessons.find((x) => x.id === lessonId)!;
+  return (
+    <div class="card-wrap">
+      <div class="card lessoncard">
+        <span class="banner new">Learned something</span>
+        <div class="lesson-glyph">{l.glyph}</div>
+        <h2>{l.title}</h2>
+        <p class="quote seen">{l.seen}</p>
+        <div class="lesson-box">
+          <b>How it works</b>
+          <p>{l.lesson}</p>
+        </div>
+        <div class="lesson-now">
+          <b>Now</b>
+          <p>{l.effect}</p>
+          {l.unlocks.recipes.length > 0 && (
+            <div class="need" style={{ justifyContent: 'center' }}>
+              {l.unlocks.recipes.map((r) => {
+                const out = c.items[c.recipes[r].output.item];
+                return <span key={r} class="chip ok"><ItemIcon id={out.id} size={16} /> {out.name}</span>;
+              })}
+            </div>
+          )}
+        </div>
+        <div class="actions"><button class="btn" onClick={onDone}>Got it</button></div>
+      </div>
+    </div>
+  );
+}

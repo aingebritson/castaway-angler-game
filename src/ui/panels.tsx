@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import type { Item, Recipe } from '../content/schema';
 import { castRange, fishValue, formatLength, formatWeight, rigPower } from '../sim/catch';
 import { craftCheck, pickProvisions, recipeView } from '../sim/world';
+import { sourceOf } from '../state/sources';
 import {
   RAFT_PARTS, addItem, cleanFish, craft, creelLimit, equip, has, launchRaft, rackAdd, rackCollect, rackReady, raftStatus, releaseKept, rigOf,
   setMethod, speciesCaught, sunAt, trapHaul, trapPeek, trapSet, travel,
@@ -104,6 +105,17 @@ const SLOTS: { slot: 'rod' | 'line' | 'reel' | 'hook' | 'bait' | 'lure' | 'float
   { slot: 'sinker', label: 'Sinker', optional: true }, { slot: 'lure', label: 'Lure' },
 ];
 
+const SLOT_WHY: Record<string, string> = {
+  rod: 'How far you can cast, and how hard you can pull back.',
+  line: 'Usually the weakest link: it decides how strong a fish you can hold.',
+  reel: 'Holds spare line, so a fish can run without breaking free.',
+  hook: 'What holds the fish. Its size decides which fish can take it.',
+  bait: 'What the fish smell and eat. Different fish want different bait.',
+  float: 'Shows you the bite, and gives you longer to strike.',
+  sinker: 'Carries the bait further and holds it near the bottom.',
+  lure: 'A fake that moves. Reel it back at a speed the fish believe.',
+};
+
 export function RigPanel({ onClose }: { onClose(): void }) {
   const { store } = useGame();
   const s = useGameState();
@@ -140,6 +152,7 @@ export function RigPanel({ onClose }: { onClose(): void }) {
         return (
           <div class="slot" key={slot}>
             <div class="name">{label}</div>
+            {SLOT_WHY[slot] && <div class="why">{SLOT_WHY[slot]}</div>}
             <div class="opts">
               {options.map((id) => (
                 <button key={id} class={`opt ${cur === id ? 'on' : ''}`} onClick={() => store.run(equip, slot, id)}>
@@ -178,44 +191,36 @@ function RecipeRow({ r, s }: { r: Recipe; s: GameState }) {
   const { store } = useGame();
   const c = store.content;
   const out = c.items[r.output.item];
-  const view = recipeView(r, s.everHeld, s.recipesKnown);
-  if (view === 'hidden') return null;
-  if (view === 'silhouette') {
-    return (
-      <div class="item dim">
-        <div class="ic">❔</div>
-        <div class="grow">
-          <div class="t">Something I could make…</div>
-          <div class="need">
-            {[...r.inputs.map((i) => i.item), ...r.tools, ...(r.station ? [r.station] : [])].map((id) => (
-              <span class="chip" key={id}>{s.everHeld[id] ? <><ItemIcon id={id} size={14} /> {c.items[id].name}</> : '?'}</span>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (recipeView(r, s.recipesKnown) === 'hidden') return null;
   let ok: boolean;
   if (r.special === 'provisions') ok = !!pickProvisions(s.larder, c.balance.provisions.fish, c.balance.provisions.species);
   else ok = craftCheck(r, s.inventory).ok;
   const single = ['tool', 'station', 'utility', 'raft', 'rod', 'line'].includes(out.kind);
   const owned = single && has(s, out.id);
+  const where = (item: string) => {
+    const src = sourceOf(c, item, s);
+    return src ? c.locations[src.locationId].name : null;
+  };
   return (
     <div class={`item ${owned ? 'dim' : ''}`}>
       <div class="ic"><ItemIcon id={out.id} size={26} /></div>
       <div class="grow">
         <div class="t">{out.name}{r.output.qty > 1 ? ` ×${r.output.qty}` : ''} {owned && <span class="pill large">Made</span>}</div>
-        <div class="d">{r.blurb}</div>
+        <div class="d">{owned ? r.blurb : out.desc}</div>
         {!owned && (
           <div class="need">
             {r.special === 'provisions' && (
               <span class={`chip ${ok ? 'ok' : 'no'}`}>🍱 {s.larder.length}/{c.balance.provisions.fish} smoked fish, {new Set(s.larder.map((f) => f.speciesId)).size}/{c.balance.provisions.species} kinds</span>
             )}
-            {r.inputs.map((i) => (
-              <span key={i.item} class={`chip ${(s.inventory[i.item] ?? 0) >= i.qty ? 'ok' : 'no'}`}>
-                <ItemIcon id={i.item} size={14} /> {s.inventory[i.item] ?? 0}/{i.qty} {c.items[i.item].name}
-              </span>
-            ))}
+            {r.inputs.map((i) => {
+              const enough = (s.inventory[i.item] ?? 0) >= i.qty;
+              const w = !enough ? where(i.item) : null;
+              return (
+                <span key={i.item} class={`chip ${enough ? 'ok' : 'no'}`}>
+                  <ItemIcon id={i.item} size={14} /> {s.inventory[i.item] ?? 0}/{i.qty} {c.items[i.item].name}{w ? ` · ${w}` : ''}
+                </span>
+              );
+            })}
             {[...r.tools, ...(r.station ? [r.station] : [])].map((t) => (
               <span key={t} class={`chip tool ${has(s, t) ? 'ok' : 'no'}`}><ItemIcon id={t} size={14} /> {c.items[t].name}</span>
             ))}
@@ -227,17 +232,19 @@ function RecipeRow({ r, s }: { r: Recipe; s: GameState }) {
   );
 }
 
-const TIER_NAMES = ['', 'Toolmaker', 'Angler', 'Raft', 'Tackle bench'];
+const TIER_NAMES = ['', 'Tools and tackle', 'Better tackle', 'The raft', 'Tackle bench'];
 
 export function CraftPanel({ onClose }: { onClose(): void }) {
   const { store } = useGame();
   const s = useGameState();
   const all = Object.values(store.content.recipes);
-  const hidden = all.filter((r) => recipeView(r, s.everHeld, s.recipesKnown) === 'hidden' && r.known !== 'taught').length;
+  const made = (r: Recipe) => ['tool', 'station', 'utility', 'raft', 'rod', 'line'].includes(store.content.items[r.output.item].kind) && has(s, r.output.item);
+  // Newest ideas first: the order they were learned, most recent at the top.
+  const rank = (r: Recipe) => -s.recipesKnown.indexOf(r.id);
   return (
-    <Sheet title="Workbench" sub={`${STAGE_NAMES[stage(s)]} · pages found: ${s.pagesFound}/${store.content.pages.length}`} onClose={onClose} tall>
+    <Sheet title="Workbench" sub={`${STAGE_NAMES[stage(s)]} · ${s.lessons.length} lesson${s.lessons.length === 1 ? '' : 's'} learned`} onClose={onClose} tall>
       {[1, 2, 3, 4].map((tier) => {
-        const rows = all.filter((r) => r.tier === tier && recipeView(r, s.everHeld, s.recipesKnown) !== 'hidden');
+        const rows = all.filter((r) => r.tier === tier && recipeView(r, s.recipesKnown) !== 'hidden').sort((a, b) => Number(made(a)) - Number(made(b)) || rank(a) - rank(b));
         if (!rows.length) return null;
         return (
           <div key={tier}>
@@ -246,7 +253,7 @@ export function CraftPanel({ onClose }: { onClose(): void }) {
           </div>
         );
       })}
-      {hidden > 0 && <p class="quote muted">…and {hidden} more thing{hidden > 1 ? 's' : ''} I have not thought of yet. New materials give new ideas.</p>}
+      <p class="quote muted">Fishing teaches me what to make next. What I have learned so far is in the journal, under Know-how.</p>
     </Sheet>
   );
 }
@@ -327,7 +334,7 @@ export function RaftPanel({ onClose }: { onClose(): void }) {
   const c = store.content;
   const st = raftStatus(s);
   const caught = speciesCaught(s, c);
-  const anyKnown = RAFT_PARTS.some((id) => recipeView(c.recipes[id], s.everHeld, s.recipesKnown) !== 'hidden');
+  const anyKnown = RAFT_PARTS.some((id) => recipeView(c.recipes[id], s.recipesKnown) !== 'hidden');
   return (
     <Sheet title="The raft" sub="A way off the island." onClose={onClose} tall>
       {!anyKnown && !st.bearing && (
@@ -335,7 +342,7 @@ export function RaftPanel({ onClose }: { onClose(): void }) {
       )}
       {RAFT_PARTS.map((id) => {
         const r = c.recipes[id];
-        if (recipeView(r, s.everHeld, s.recipesKnown) === 'hidden') {
+        if (recipeView(r, s.recipesKnown) === 'hidden') {
           return (
             <div class="item dim" key={id}>
               <div class="ic">❔</div>
@@ -445,7 +452,7 @@ export function MapPanel({ onClose }: { onClose(): void }) {
           return (
             <button key={l.id} data-pin={l.id} class={`pin-btn ${l.id === s.locationId ? 'here' : ''} ${goal?.where === l.id ? 'goal' : ''} ${locked ? 'locked' : ''}`}
               style={{ left: `${l.map.x * 100}%`, top: `${l.map.y * 100}%` }}
-              onClick={() => (locked ? store.emit([{ type: 'toast', text: crossing ? 'That is open sea. The raft will not make that crossing twice; a proper boat would.' : 'Too far for this boat. The boatyard has something that would reach it.', glyph: '🔒', tone: 'warn' }]) : go(l.id))}>
+              onClick={() => (locked ? store.emit([{ type: 'toast', text: crossing ? 'That is open sea. The raft will not make that crossing twice; a proper boat would.' : (l.unlock.some((u) => u.type === 'lesson') ? 'I have not found a reason to go there yet. Keep fishing.' : 'Too far for this boat. The boatyard has something that would reach it.'), glyph: '🔒', tone: 'warn' }]) : go(l.id))}>
               <span class="d">{locked ? '🔒' : PLACE_GLYPH[l.kind] ?? '📍'}</span>
               <span class="l">{l.name}</span>
             </button>
@@ -453,7 +460,7 @@ export function MapPanel({ onClose }: { onClose(): void }) {
         })}
       </div>
       <p class="quote">{!away ? `${here.name}. ${here.blurb}` : crossing ? 'Out of reach for now.' : 'Tap a place to sail there.'}</p>
-      {!away && locs.some((l) => !locationOpen(s, l.id, c)) && <p class="muted">Locked places need a better boat.</p>}
+      {!away && locs.some((l) => !locationOpen(s, l.id, c)) && <p class="muted">{here.regionId === 'castaway-island' ? 'Locked places open up as I learn what I need from them.' : 'Locked places need a better boat.'}</p>}
     </Sheet>
   );
 }
@@ -462,12 +469,12 @@ const PLACE_GLYPH: Record<string, string> = { port: '⚓', spot: '🎣', camp: '
 
 export function regionOpen(s: GameState, regionId: string, c: import('../content/assemble').Content): boolean {
   const r = c.regions[regionId];
-  return r.unlock.every((u) => (u.type === 'flag' ? !!s.flags[u.flag] : u.type === 'boat' ? boatTier(s, c) >= u.tier : has(s, u.chart)));
+  return r.unlock.every((u) => (u.type === 'flag' ? !!s.flags[u.flag] : u.type === 'lesson' ? s.lessons.includes(u.lesson) : u.type === 'boat' ? boatTier(s, c) >= u.tier : has(s, u.chart)));
 }
 
 export function locationOpen(s: GameState, locationId: string, c: import('../content/assemble').Content): boolean {
   const l = c.locations[locationId];
-  return l.unlock.every((u) => (u.type === 'flag' ? !!s.flags[u.flag] : u.type === 'boat' ? boatTier(s, c) >= u.tier : has(s, u.chart)));
+  return l.unlock.every((u) => (u.type === 'flag' ? !!s.flags[u.flag] : u.type === 'lesson' ? s.lessons.includes(u.lesson) : u.type === 'boat' ? boatTier(s, c) >= u.tier : has(s, u.chart)));
 }
 
 export function boatTier(s: GameState, c: import('../content/assemble').Content): number {

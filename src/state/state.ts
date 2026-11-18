@@ -5,7 +5,7 @@
 import type { Grade } from '../sim/catch';
 import type { NodeSave, TrapSave } from '../sim/world';
 
-export const SAVE_VERSION = 2;
+export const SAVE_VERSION = 3;
 
 export interface KeptFish {
   uid: number;
@@ -38,7 +38,7 @@ export interface GuideEntry {
   donated?: boolean;
 }
 
-export type JournalKind = 'story' | 'catch' | 'pb' | 'away' | 'rumour' | 'page' | 'craft' | 'trap' | 'quest' | 'sighting' | 'travel' | 'clue';
+export type JournalKind = 'story' | 'catch' | 'pb' | 'away' | 'rumour' | 'page' | 'craft' | 'trap' | 'quest' | 'sighting' | 'travel' | 'clue' | 'lesson';
 
 export interface JournalEntry {
   id: number;
@@ -102,6 +102,10 @@ export interface GameState {
   nextJournalId: number;
   notes: Record<string, string>;
   recipesKnown: string[];
+  /** Lessons learned, in the order they were learned. */
+  lessons: string[];
+  /** Event counters that lessons wait on: stolen, missed, snapped, longCast, creelFull, cast:<loc>/<zone>. */
+  counts: Record<string, number>;
   pagesFound: number;
   traps: TrapSave[];
   rack: RackSlot[];
@@ -153,6 +157,8 @@ export function newGame(seed: number, now: number): GameState {
     nextJournalId: 2,
     notes: {},
     recipesKnown: [],
+    lessons: [],
+    counts: {},
     pagesFound: 0,
     traps: [],
     rack: [],

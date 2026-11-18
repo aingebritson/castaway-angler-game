@@ -73,6 +73,7 @@ export const Occurrence = z.object({
 
 export const Condition = z.discriminatedUnion('type', [
   z.object({ type: z.literal('flag'), flag: z.string() }),
+  z.object({ type: z.literal('lesson'), lesson: id }),
   z.object({ type: z.literal('boat'), tier: z.number() }),
   z.object({ type: z.literal('chart'), chart: id }),
 ]);
@@ -210,6 +211,47 @@ export const Page = z.object({
   rumours: z.array(id).default([]),
   /** The last page carries the bearing off the island; it needs eight species first. */
   bearing: z.boolean().optional(),
+  /** Pages only wash up once this many lessons have been learned, so they arrive alongside the player. */
+  minLessons: z.number().int().min(0).default(0),
+});
+
+/** A condition a lesson waits for: something that has happened while playing. */
+export const LessonCond = z.discriminatedUnion('type', [
+  z.object({ type: z.literal('stat'), stat: z.enum(['casts', 'catches', 'lost']), min: z.number() }),
+  /** Event counters: stolen, missed, snapped, longCast, creelFull, cast:<location>/<zone>. */
+  z.object({ type: z.literal('count'), key: z.string(), min: z.number() }),
+  z.object({ type: z.literal('held'), item: id }),
+  z.object({ type: z.literal('kinds'), min: z.number() }),
+  z.object({ type: z.literal('phase'), phases: z.array(z.enum(PHASES)).min(1) }),
+  z.object({ type: z.literal('at'), location: id }),
+  /** No hook left to fish with: the player must never be stuck. */
+  z.object({ type: z.literal('hookless') }),
+]);
+
+/**
+ * A lesson: something the castaway works out by fishing. It explains one idea
+ * in plain words and unlocks what that idea lets you make or reach.
+ */
+export const Lesson = z.object({
+  id,
+  order: z.number().int(),
+  regionId: id,
+  title: z.string(),
+  glyph: z.string(),
+  /** What just happened, in the castaway's voice. */
+  seen: z.string().min(10),
+  /** The fishing idea, plainly, for someone who has never fished. */
+  lesson: z.string().min(20),
+  /** What it means in the game: what you can now make, and where to find what it needs. */
+  effect: z.string().min(10),
+  /** Shown in the "Thinking" note while this is the next thing to work out. */
+  hint: z.string(),
+  requires: z.array(id).default([]),
+  /** Any one group of conditions, all holding, teaches the lesson. */
+  when: z.array(z.array(LessonCond).min(1)).min(1),
+  unlocks: z.object({ recipes: z.array(id).default([]), flags: z.array(z.string()).default([]) }).default({ recipes: [], flags: [] }),
+  /** False for a lesson that follows straight on from the last (cut bait, the moment you hold a knife). */
+  gap: z.boolean().default(true),
 });
 
 export const JunkTable = z.object({
@@ -334,6 +376,8 @@ export const Balance = z.object({
   provisions: z.object({ fish: z.number(), species: z.number() }),
   trap: z.object({ catchesPerHour: z.number() }),
   legendaryChance: z.number(),
+  /** Casts between one lesson and the next, so ideas arrive one at a time. */
+  lessons: z.object({ gapCasts: z.number() }).default({ gapCasts: 10 }),
   creelLimit: z.number(),
 });
 
@@ -350,6 +394,8 @@ export type Item = z.infer<typeof Item>;
 export type Recipe = z.infer<typeof Recipe>;
 export type Rumour = z.infer<typeof Rumour>;
 export type Page = z.infer<typeof Page>;
+export type Lesson = z.infer<typeof Lesson>;
+export type LessonCond = z.infer<typeof LessonCond>;
 export type JunkTable = z.infer<typeof JunkTable>;
 export type RigPreset = z.infer<typeof RigPreset>;
 export type Legendary = z.infer<typeof Legendary>;

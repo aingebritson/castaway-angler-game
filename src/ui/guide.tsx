@@ -171,7 +171,7 @@ function EntryView({ speciesId, onBack, onClose }: { speciesId: string; onBack()
 
 const KIND_LABEL: Record<JournalKind, string> = {
   story: 'Journal', catch: 'First catch', pb: 'Personal best', away: 'One that got away', rumour: 'Rumour', page: 'Found page', craft: 'Made',
-  trap: 'Trap', quest: 'Errand', sighting: 'Sighting', travel: 'New place', clue: 'Legend',
+  trap: 'Trap', quest: 'Errand', sighting: 'Sighting', travel: 'New place', clue: 'Legend', lesson: 'Learned',
 };
 
 const FILTERS: { id: string; label: string; test(k: JournalKind, pinned: boolean): boolean }[] = [
@@ -183,6 +183,7 @@ const FILTERS: { id: string; label: string; test(k: JournalKind, pinned: boolean
   { id: 'page', label: 'Pages', test: (k) => k === 'page' },
   { id: 'quest', label: 'Errands', test: (k) => k === 'quest' },
   { id: 'legends', label: '✨ Legends', test: () => false },
+  { id: 'know', label: '🎣 Know-how', test: () => false },
 ];
 
 export function JournalPanel({ onClose }: { onClose(): void }) {
@@ -194,13 +195,14 @@ export function JournalPanel({ onClose }: { onClose(): void }) {
   const f = FILTERS.find((x) => x.id === filter)!;
   const loc = c.locations[s.locationId];
   const deviceTz = store.ctx().deviceTz;
-  const entries = filter === 'legends' ? [] : [...s.journal].reverse().filter((e) => f.test(e.kind, !!e.pinned) && (!hereOnly || e.locationId === s.locationId));
-  const shown = FILTERS.filter((x) => (x.id !== 'quest' || s.flags.launched) && (x.id !== 'legends' || s.clues.length > 0));
+  const entries = filter === 'legends' || filter === 'know' ? [] : [...s.journal].reverse().filter((e) => f.test(e.kind, !!e.pinned) && (!hereOnly || e.locationId === s.locationId));
+  const shown = FILTERS.filter((x) => (x.id !== 'quest' || s.flags.launched) && (x.id !== 'legends' || s.clues.length > 0) && (x.id !== 'know' || s.lessons.length > 0));
   return (
     <Sheet title={s.flags.launched ? 'Captain’s log' : 'Journal'} sub="It writes itself. Pin what matters." onClose={onClose} tall
       tabs={<>{shown.map((x) => <Tab key={x.id} on={x.id === filter} onClick={() => setFilter(x.id)}>{x.label}</Tab>)}</>}>
       {filter === 'legends' && <Legends />}
-      {filter !== 'legends' && <>
+      {filter === 'know' && <KnowHow />}
+      {filter !== 'legends' && filter !== 'know' && <>
       <div class="row" style={{ justifyContent: 'space-between' }}>
         <h3 style={{ margin: '4px 0' }}>Notes on {loc.name}</h3>
         <button class={`tab ${hereOnly ? 'on' : ''}`} onClick={() => setHereOnly(!hereOnly)}>Only here</button>
@@ -225,6 +227,25 @@ export function JournalPanel({ onClose }: { onClose(): void }) {
 const DIMENSIONS: { id: string; label: string }[] = [
   { id: 'where', label: 'Where' }, { id: 'when', label: 'Time of day' }, { id: 'season', label: 'Season' }, { id: 'moon', label: 'Moon and tide' }, { id: 'bait', label: 'Bait' },
 ];
+
+function KnowHow() {
+  const { store } = useGame();
+  const s = useGameState();
+  const c = store.content;
+  const learned = s.lessons.map((id) => c.lessons.find((l) => l.id === id)).filter((l): l is NonNullable<typeof l> => !!l);
+  return (
+    <>
+      <p class="muted">Everything I have worked out about fishing, in the order I worked it out.</p>
+      {learned.map((l) => (
+        <div class="know" key={l.id}>
+          <h4>{l.glyph} {l.title}</h4>
+          <p>{l.lesson}</p>
+          <p class="muted">{l.effect}</p>
+        </div>
+      ))}
+    </>
+  );
+}
 
 function Legends() {
   const { store } = useGame();

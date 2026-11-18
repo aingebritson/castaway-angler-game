@@ -12,7 +12,7 @@ import { badges } from '../state/museum';
 import { moonIndex } from '../sim/time';
 import { Coach, Intro } from './coach';
 import { Icon } from './bits';
-import { EndingCard, HaulCard, PageCard, RevealCard, type ToastMsg, Toasts } from './cards';
+import { EndingCard, HaulCard, LessonCard, PageCard, RevealCard, type ToastMsg, Toasts } from './cards';
 import { GuidePanel, JournalPanel } from './guide';
 import { useGame, useGameState, useTick } from './hooks';
 import { BagPanel, CraftPanel, DebugPanel, FirePanel, MapPanel, RaftPanel, RigPanel, SettingsPanel, TrapPanel } from './panels';
@@ -46,6 +46,7 @@ export function App() {
   const [port, setPort] = useState<PortPanel | null>(null);
   const [reveal, setReveal] = useState<Reveal | null>(null);
   const [pages, setPages] = useState<string[]>([]);
+  const [lessons, setLessons] = useState<string[]>([]);
   const [haul, setHaul] = useState<{ reveals: Reveal[]; soakH: number } | null>(null);
   const [ending, setEnding] = useState(false);
   const [phase, setPhase] = useState<FishPhase>('idle');
@@ -83,6 +84,9 @@ export function App() {
           audio.play('gain');
           break;
         }
+        case 'lesson':
+          setLessons((l) => [...l, e.lessonId]);
+          break;
         case 'page':
           setPages((p) => [...p, e.pageId]);
           audio.play('page');
@@ -141,7 +145,7 @@ export function App() {
     }
   }, [earned.join(',')]);
 
-  const card = !!(reveal || pages.length || haul || ending);
+  const card = !!(reveal || pages.length || haul || ending || lessons.length);
   const step = title ? null : coachStep(s, { phase, panel: panel ?? (port ? 'port' : null), card });
   const overlay = !!(panel || port || card || title || step === 'intro');
   useEffect(() => {
@@ -160,6 +164,7 @@ export function App() {
   const tense = phase === 'fight' || phase === 'bite' || phase === 'landing' || phase === 'retrieve';
 
   const open = (p: Panel) => {
+    if (p === 'craft' && !s.flags.tutBench) store.act((d) => { d.flags.tutBench = true; });
     audio.unlock();
     audio.play('tap');
     engineRef.current?.fishing?.reset();
@@ -276,6 +281,7 @@ export function App() {
       )}
       {haul && !reveal && <HaulCard reveals={haul.reveals} soakH={haul.soakH} onDone={() => setHaul(null)} />}
       {pages.length > 0 && <PageCard pageId={pages[0]} onDone={() => setPages((p) => p.slice(1))} />}
+      {lessons.length > 0 && !reveal && !pages.length && !haul && <LessonCard lessonId={lessons[0]} onDone={() => setLessons((l) => l.slice(1))} />}
       {ending && (
         <EndingCard
           hasPort={!!c.locations['port-esperanza']}

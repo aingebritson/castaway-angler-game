@@ -4,12 +4,9 @@
     "order": 1,
     "title": "Day 3",
     "text": "I have stopped watching for a sail. A stone struck on a stone gives an edge. An edge gives a knife, and a knife gives everything else. Coconut husk, rolled wet against the thigh, twists into a cord that holds a knot.",
-    "recipes": [
-      "hammerstone",
-      "stone-knife",
-      "cordage"
-    ],
-    "rumours": []
+    "recipes": [],
+    "rumours": [],
+    "minLessons": 1
   },
   {
     "id": "page-2",
@@ -19,34 +16,29 @@
     "recipes": [],
     "rumours": [
       "squirrelfish-night"
-    ]
+    ],
+    "minLessons": 3
   },
   {
     "id": "page-3",
     "order": 3,
     "title": "Day 14",
     "text": "Bone makes a better hook than shell: bigger, and it holds. The small fry cannot swallow it, so only better fish come to it. A disc of coconut shell rides the water well and tells me the moment to strike. A grooved pebble takes the bait out further.",
-    "recipes": [
-      "bone-hook",
-      "coconut-float",
-      "stone-sinker",
-      "coconut-meat"
-    ],
-    "rumours": []
+    "recipes": [],
+    "rumours": [],
+    "minLessons": 4
   },
   {
     "id": "page-4",
     "order": 4,
     "title": "Day 20",
     "text": "Bamboo grows behind the palms where the ground is wet. A long cane throws nearly twice as far as the ship's rod, out to where the reef falls away. Three strands of cord, braided and oiled, did not part on a fish as long as my arm. Twice I have seen grey backs rolling along that edge: dolphins, hunting together, pushing the small fish up against the shallows.",
-    "recipes": [
-      "bamboo-rod",
-      "braided-line"
-    ],
+    "recipes": [],
     "rumours": [
       "dolphin-dropoff",
       "dolphin-herd"
-    ]
+    ],
+    "minLessons": 7
   },
   {
     "id": "page-5",
@@ -57,38 +49,35 @@
     "rumours": [
       "bonefish-flats",
       "bonefish-bait"
-    ]
+    ],
+    "minLessons": 9
   },
   {
     "id": "page-6",
     "order": 6,
     "title": "Day 33",
     "text": "Some fish want nothing dead. The blue-backed jacks at the reef edge follow a bait and turn away. A tuft of gull feather on a flash of shell, drawn back in steady pulses, they hit like a thrown stone. So does the long toothed one that hangs off the edge.",
-    "recipes": [
-      "feather-lure"
-    ],
+    "recipes": [],
     "rumours": [
       "barjack-lure",
       "barracuda-flash",
       "barracuda-edge"
-    ]
+    ],
+    "minLessons": 10
   },
   {
     "id": "page-7",
     "order": 7,
     "title": "Day 41",
     "text": "Wove a basket trap from fronds on a cane frame. Left overnight by the rocks with fish scraps in it, it held a whiskered lobster by morning. Once it held nothing but crab shells and a smear of ink. Under the ledges of the lagoon channel their whips poke from every crack by day; at night they walk out to feed. Split cane packed with husk burns an hour. The night water is another country.",
-    "recipes": [
-      "woven-trap",
-      "torch",
-      "bait-basket"
-    ],
+    "recipes": [],
     "rumours": [
       "lobster-trap",
       "lobster-channel",
       "octopus-night",
       "octopus-crab"
-    ]
+    ],
+    "minLessons": 12
   },
   {
     "id": "page-8",
@@ -101,7 +90,8 @@
       "permit-flats",
       "mutton-dusk",
       "mutton-bait"
-    ]
+    ],
+    "minLessons": 13
   },
   {
     "id": "page-9",
@@ -109,14 +99,13 @@
     "title": "Day 60",
     "text": "Fish split and hung over a slow fire keeps for weeks. I will need it. At first light great silver fish roll in the lagoon channel, gulping air like men. One took my feather and I never turned it. Not with this gear. Not on this island.",
     "recipes": [
-      "campfire",
-      "drying-rack",
       "bone-needle"
     ],
     "rumours": [
       "tarpon-dawn",
       "tarpon-feather"
-    ]
+    ],
+    "minLessons": 14
   },
   {
     "id": "page-10",
@@ -132,6 +121,7 @@
       "provisions"
     ],
     "rumours": [],
-    "bearing": true
+    "bearing": true,
+    "minLessons": 15
   }
 ]
