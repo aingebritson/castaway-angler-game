@@ -36,14 +36,15 @@ function sceneLayout(l: Location): string {
   const parts: string[] = [];
   const water = l.scene.waterPolygon;
   if (water.length) {
-    const top = Math.round(Math.min(...water.map((p) => p[1])) * 100);
-    parts.push(`Seen from the shore looking out over the water. The water begins ${top} percent of the way down from the top of the image; everything above that is shore, land and sky.`);
+    // Image models ignore exact percentages, so ask for a horizon about a third
+    // down and fit the scene data (waterPolygon) to the image after it is chosen.
+    parts.push('Seen from the shore looking out over the water. A straight sea horizon runs across the image about a third of the way down; above it are sky and any far headland.');
     const zones = l.zones.filter((z) => z.cast !== false).sort((a, b) => a.minCastRange - b.minCastRange);
     if (zones.length > 1) {
       const desc = zones.map((z) => (z.blurb ? `${lower(z.name)} (${lower(z.blurb.replace(/\.$/, ''))})` : lower(z.name)));
-      parts.push(`Depth runs from near to far: the bottom of the frame is the nearest and shallowest water, then ${list(desc)} toward the horizon. Do not put deep water along the sides or the bottom.`);
+      parts.push(`Depth runs from near to far: the bottom of the frame is the nearest and shallowest water, then ${list(desc)} toward the horizon. The water gets steadily deeper and bluer with distance: clear and pale at the bottom of the image, deepest blue along the horizon.`);
     } else {
-      parts.push('The nearest water at the bottom of the frame is the shallowest; it deepens toward the horizon.');
+      parts.push('The water gets steadily deeper and bluer with distance: clear and pale nearest the shore, deepest blue along the horizon.');
     }
   }
   const painted = l.scene.hotspots.filter((h) => PAINTED.has(h.kind) && !h.showIf && !h.hideIf);
@@ -54,6 +55,22 @@ function sceneLayout(l: Location): string {
   return parts.join(' ');
 }
 
+/** A short Midjourney prompt: it weights the first words and ignores long or negative instructions. */
+function mjScene(l: Location): string {
+  const painted = l.scene.hotspots.filter((h) => PAINTED.has(h.kind) && !h.showIf && !h.hideIf);
+  const subject = `${l.name}, ${lower(l.habitat)}`;
+  let layout: string;
+  if (l.scene.waterPolygon.length) {
+    const near = painted.filter((h) => h.y >= 0.7).map((h) => lower(h.label));
+    const zones = l.zones.filter((z) => z.cast !== false).sort((a, b) => a.minCastRange - b.minCastRange).map((z) => lower(z.name));
+    layout = ['View from the shore out to sea', near.length ? `${list(near)} in the foreground` : '', zones.length > 1 ? `then ${list(zones)} farther out` : '', 'deep blue sea and a straight horizon a third of the way down']
+      .filter(Boolean).join(', ');
+  } else {
+    layout = painted.length ? `Showing ${list(painted.map((h) => lower(h.label)))}` : '';
+  }
+  return block('Midjourney scene').replace('{subject}', subject).replace('{layout}', layout ? `${layout}.` : '').replace(/ {2,}/g, ' ');
+}
+
 const out: string[] = [
   '# Art prompt sheet',
   '',
@@ -61,17 +78,20 @@ const out: string[] = [
   '',
   'Paste each prompt into ChatGPT as it is, with two or three images from `art/reference/` uploaded at the start of the conversation. Save the result under the name given, then run `npm run art:ingest`.',
   '',
+  'After a scene is ingested, set the top of its `waterPolygon` in the location data to where the sea horizon sits in the image (0.33 means a third of the way down). The game measures its cast zones from that line.',
+  '',
 ];
 let n = 0;
-const add = (id: string, kind: keyof typeof TYPE, subject: string) => {
+const add = (id: string, kind: keyof typeof TYPE, subject: string, midjourney?: string) => {
   if (manifest[id]) return;
   n++;
   out.push(`## ${id}`, '', `Save as \`art/inbox/${id.replace('/', '__')}.png\``, '', '```text', STYLE, '', TYPE[kind], '', subject, '```', '');
+  if (midjourney) out.push('Midjourney version (add the reference images as style references):', '', '```text', midjourney, '```', '');
 };
 
 out.push('# Scenes', '');
 for (const l of Object.values(content.locations)) {
-  add(l.scene.background, 'scene', `Scene: ${l.name}, ${l.habitat.charAt(0).toLowerCase()}${l.habitat.slice(1)}. ${l.blurb}\n\n${sceneLayout(l)}`.trim());
+  add(l.scene.background, 'scene', `Scene: ${l.name}, ${l.habitat.charAt(0).toLowerCase()}${l.habitat.slice(1)}. ${l.blurb}\n\n${sceneLayout(l)}`.trim(), mjScene(l));
 }
 out.push('# Specimens', '');
 for (const s of Object.values(content.species)) add(`specimen/${s.id}`, 'specimen', `Subject: ${s.commonName} (${s.scientificName}). ${s.visualNotes}`);

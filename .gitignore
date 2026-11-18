@@ -6,3 +6,4 @@ art/inbox/*
 !art/inbox/.gitkeep
 .claude/settings.local.json
 art/bakeoff/*/
+/art/*.png

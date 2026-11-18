@@ -19,12 +19,13 @@ Upload two or three of these at the start of every batch conversation and say "m
 | `art/reference/scene__rocky-point.png` | Scene: line, washes and palette only. **Not the layout**: its deep water runs down the right side, and the game needs it at the horizon | From the bake-off |
 | `art/reference/specimen__abudefduf-saxatilis.png` | Specimen: a deep-bodied fish with bold bars, to show strong markings in this style | To make |
 | `art/reference/specimen__panulirus-argus.png` | Specimen: an invertebrate (spiny lobster), to fix how shells and legs are drawn | To make |
-| `art/reference/scene__rocky-point-v2.png` | Scene: the re-prompted Rocky Point with the right layout. It replaces the bake-off scene as the layout reference | To make |
+| `art/reference/scene__rocky-point-v2.png` | Scene: the re-prompted Rocky Point, now in the game. The layout reference: shallow near, deep far, horizon a third of the way down. Its finish is a little cleaner and more digital than the bible, so use the bonefish and knife for line and wash | Done, 18 November 2026 |
 
 ## Rules from the bake-off
 
-- **ChatGPT for everything.** Midjourney's watercolour drifted toward realism and lost the ink line. Use Midjourney only if a ChatGPT scene can't be fixed, and then check the line against the references.
-- **Scene layout follows the casting model.** Looking out to sea from the shore: the shallowest water is at the bottom of the frame, and it deepens with distance to the deepest blue at the horizon. The horizon sits where the scene data puts it (42% down for the fishing spots). Every bake-off scene got this wrong, so each scene prompt now spells it out.
+- **ChatGPT for everything.** Midjourney's watercolour drifted toward realism and lost the ink line. Each scene still gets a short Midjourney prompt for a second try. Midjourney gives the most weight to its first words, ignores long instructions and misreads "do not", so its prompt is about 50 words with the reference images added as style references.
+- **Scene layout follows the casting model.** Looking out to sea from the shore: the shallowest water is at the bottom of the frame, and it deepens with distance to the deepest blue at the horizon. Every bake-off scene got this wrong, so each scene prompt now spells it out.
+- **Fit the data to the image, not the image to the data.** Image models ignore exact heights, so the prompt asks for a horizon about a third of the way down. Once a scene is ingested, set the top of its `waterPolygon` to the horizon's real height (Rocky Point is 0.33). The game measures its cast zones from that line, and moves tap spots in the same file if they miss.
 - **Scenes come out too small.** ChatGPT's tallest frame is about 941 × 1672; the target is 1290 × 2796. Upscale 2× before `art:ingest`, and keep anything important in the middle 80% of the width, because the phone crops the sides.
 - **Markings stay as faint as the real fish's.** Image models darken and regularise bars. Reject a specimen whose markings would mislead.
 - **No paper texture on cut-outs.** Specimens and items need a fully transparent background. The bake-off cut-outs came out clean, with no halo.
@@ -39,7 +40,8 @@ Glass-green and turquoise shallows, ultramarine deep water, black volcanic rock,
 2. Work in batches by region and asset type, one ChatGPT conversation per batch, with the reference images uploaded first.
 3. Specimens: compare each with two or three photos of the species. Check fin count and position, tail shape, mouth position and markings. Allow three to five attempts.
 4. Save to `art/inbox/` under the name the prompt sheet gives, then run `npm run art:ingest`.
-5. When a batch turns out especially well, swap its best image into the reference table above.
+5. Scenes only: set the top of the scene's `waterPolygon` to the horizon height in the image, and check the tap spots sit on the things they name.
+6. When a batch turns out especially well, swap its best image into the reference table above.
 
 ## Prompt blocks
 
@@ -53,6 +55,12 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 ```text
 Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+```
+
+### Midjourney scene
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, bright Caribbean colours, clear blue midday sky. {subject}. {layout} --ar 6:13 --no text, people, boats, fish, border, white paper margin
 ```
 
 ### Specimen

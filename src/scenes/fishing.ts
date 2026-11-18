@@ -109,6 +109,11 @@ export class Fishing {
 
   // ---------- geometry ----------
 
+  /** The horizon moves when the screen changes shape or the scene art loads. */
+  setHorizon(horizon: number): void {
+    this.yFar = horizon + 0.018;
+  }
+
   /** Screen y (0..1) for a cast distance (0..1). Far water is compressed toward the horizon. */
   private yOf(d: number): number {
     const f = (1 - 1 / (1 + K * d)) / (1 - 1 / (1 + K));

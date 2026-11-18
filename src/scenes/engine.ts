@@ -9,6 +9,7 @@ import { moonPhase } from '../sim/time';
 import { has, sunAt } from '../state/actions';
 import type { Store } from '../state/store';
 import { Fishing, type FishingHost } from './fishing';
+import { type Fit, IDENTITY, coverFit, sceneHorizon } from './fit';
 import { type Light, css, lightFor } from './light';
 import { PAINTERS, type Painter, type SceneInfo } from './painters';
 import './paintersCayes';
@@ -29,6 +30,8 @@ export class Engine {
   private light: Light | null = null;
   private lightAge = 99;
   private fade = 1;
+  /** The last scene fit applied, so applyFit only acts on a change. */
+  private fitKey = '';
   private info: SceneInfo;
 
   constructor(private canvas: HTMLCanvasElement, private store: Store, private audio: GameAudio, private host: Omit<FishingHost, 'store' | 'audio'>) {
@@ -89,7 +92,9 @@ export class Engine {
     this.loc = loc;
     this.painter = PAINTERS[loc.scene.painter] ?? PAINTERS.beach;
     const castable = loc.zones.some((z) => z.cast);
+    // starts on the painter's horizon; frame() refits it once the art has loaded
     this.fishing = castable ? new Fishing(loc, this.painter.horizon, { store: this.store, audio: this.audio, ...this.host }) : null;
+    this.fitKey = '';
     this.host.onPhase('idle');
     this.lightAge = 99;
     this.fade = 1;
@@ -117,6 +122,22 @@ export class Engine {
     window.removeEventListener('orientationchange', this.resize);
   }
 
+  /**
+   * Scene data is in image coordinates; map it onto this screen. Moves the
+   * fishing horizon and publishes the fit as CSS variables, which place the
+   * hotspot buttons. Runs every frame but only acts when the fit changes
+   * (resize, art finished loading, new location).
+   */
+  private applyFit(fit: Fit | null): void {
+    const f = fit ?? IDENTITY;
+    const key = fit ? `${f.ox.toFixed(4)} ${f.oy.toFixed(4)} ${f.sx.toFixed(4)} ${f.sy.toFixed(4)}` : 'none';
+    if (key === this.fitKey || !this.loc || !this.painter) return;
+    this.fitKey = key;
+    const style = this.canvas.parentElement?.style;
+    if (style) for (const k of ['ox', 'oy', 'sx', 'sy'] as const) style.setProperty(`--fit-${k}`, String(f[k]));
+    this.fishing?.setHorizon(sceneHorizon(this.loc.scene, this.painter.horizon, fit));
+  }
+
   private frame(dt: number): void {
     const { g, W, H } = this;
     const loc = this.loc;
@@ -140,6 +161,7 @@ export class Engine {
 
     g.globalAlpha = 1;
     const bg = assetImage(loc.scene.background);
+    this.applyFit(bg ? coverFit(W, H, bg.width, bg.height) : null);
     if (bg) {
       // real art: cover-fit, then shade for the hour
       const k = Math.max(W / bg.width, H / bg.height);

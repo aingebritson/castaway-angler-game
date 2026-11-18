@@ -24,6 +24,17 @@ const PHASE_GLYPH: Record<string, string> = { dawn: '🌅', day: '☀️', dusk:
 const MOON_GLYPH = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
 let nextId = 1;
 
+/**
+ * Hotspot position on screen. Scene data is in art coordinates; the engine
+ * publishes how the art is fitted to this screen as --fit-* variables. The
+ * clamp keeps buttons clear of the top bar and the nav when a wide screen
+ * crops the top and bottom of the art.
+ */
+const hotspotPos = (x: number, y: number) => ({
+  left: `clamp(9%, calc((var(--fit-ox, 0) + ${x} * var(--fit-sx, 1)) * 100%), 91%)`,
+  top: `clamp(15%, calc((var(--fit-oy, 0) + ${y} * var(--fit-sy, 1)) * 100%), calc(100% - var(--nav-h) - 48px))`,
+});
+
 export function App() {
   const game = useGame();
   const { store, audio } = game;
@@ -228,7 +239,7 @@ export function App() {
           }
           if (!coaching && goal?.where === loc.id && goal.hs === h.id) cls += ' goal';
           return (
-            <button key={h.id} data-hs={h.id} class={`hs ${cls}`} style={{ left: `${h.x * 100}%`, top: `${h.y * 100}%` }} onClick={() => tapHotspot(h)}>
+            <button key={h.id} data-hs={h.id} class={`hs ${cls}`} style={hotspotPos(h.x, h.y)} onClick={() => tapHotspot(h)}>
               <span class="dot">{h.glyph}{count && <span class="cnt">{count}</span>}</span>
               <span class="lbl">{sub}</span>
             </button>
