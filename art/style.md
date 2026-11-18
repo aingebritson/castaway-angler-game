@@ -42,7 +42,7 @@ Upload two or three of these at the start of every batch conversation, chosen fr
 - **Fit the data to the image, not the image to the data.** Image models ignore exact heights, so the prompt asks for a horizon about a third of the way down. Once a scene is ingested, set the top of its `waterPolygon` to the horizon's real height (Rocky Point is 0.23). The game measures its cast zones from that line, and moves tap spots in the same file if they miss.
 - **Scenes come out too small.** ChatGPT's tallest frame is about 941 × 1672; the target is 1290 × 2796. Upscale 2× before `art:ingest`, and keep anything important in the middle 80% of the width, because the phone crops the sides.
 - **Markings stay as faint as the real fish's.** Image models darken and regularise bars. Reject a specimen whose markings would mislead.
-- **No paper texture on cut-outs.** Specimens and items need a fully transparent background. The bake-off cut-outs came out clean, with no halo.
+- **No paper texture on cut-outs.** Specimens and items need a fully transparent background. The bake-off cut-outs came out clean, with no halo. Some later ones carry a near-invisible haze over the background (the first snook); `art:ingest` clears anything fainter than alpha 16, so that needs no regeneration.
 
 ## Island palette (Castaway Island)
 

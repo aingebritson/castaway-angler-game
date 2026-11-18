@@ -12,5 +12,13 @@
   "scene/patch-reef": "scene__patch-reef.webp",
   "scene/port-esperanza": "scene__port-esperanza.webp",
   "scene/the-cut": "scene__the-cut.webp",
-  "scene/town-pier": "scene__town-pier.webp"
+  "scene/town-pier": "scene__town-pier.webp",
+  "specimen/balistes-vetula": "specimen__balistes-vetula.webp",
+  "specimen/caranx-hippos": "specimen__caranx-hippos.webp",
+  "specimen/epinephelus-striatus": "specimen__epinephelus-striatus.webp",
+  "specimen/haemulon-plumierii": "specimen__haemulon-plumierii.webp",
+  "specimen/lachnolaimus-maximus": "specimen__lachnolaimus-maximus.webp",
+  "specimen/lutjanus-griseus": "specimen__lutjanus-griseus.webp",
+  "specimen/mycteroperca-bonaci": "specimen__mycteroperca-bonaci.webp",
+  "specimen/centropomus-undecimalis": "specimen__centropomus-undecimalis.webp"
 }

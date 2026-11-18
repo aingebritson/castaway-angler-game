@@ -41,12 +41,21 @@ for (const f of files) {
   if (Math.abs(ratio - rule.w / rule.h) > 0.12) problems.push(`aspect ${ratio.toFixed(2)}, want ${(rule.w / rule.h).toFixed(2)}`);
   if (rule.alpha) {
     const stats = meta.hasAlpha ? await img.clone().extractChannel('alpha').stats() : null;
-    if (!stats || stats.channels[0].min > 8) {
+    // below 16 counts as clear: the haze cleared below
+    if (!stats || stats.channels[0].min >= 16) {
       console.log(`  ✗ ${f}: needs a transparent background`);
       continue;
     }
   }
   let pipe = img.clone();
+  if (rule.alpha) {
+    // ChatGPT cut-outs can carry a near-invisible haze over the background
+    // (alpha 1-15), which shows as a faint box and stops the trim. Clear it,
+    // and make bodies drawn at alpha 250-254 fully solid.
+    const { data, info } = await img.clone().ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    for (let i = 3; i < data.length; i += 4) data[i] = data[i] < 16 ? 0 : data[i] >= 250 ? 255 : data[i];
+    pipe = sharp(data, { raw: { width: info.width, height: info.height, channels: 4 } });
+  }
   if (rule.trim) pipe = pipe.trim();
   const file = `${id.replace('/', '__')}.webp`;
   await pipe.resize({ width: rule.max, height: rule.max * 3, fit: 'inside', withoutEnlargement: true }).webp({ quality: 86 }).toFile(join(outDir, file));
