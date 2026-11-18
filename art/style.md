@@ -16,7 +16,6 @@ Upload two or three of these at the start of every batch conversation and say "m
 | --- | --- | --- |
 | `art/reference/specimen__albula-vulpes.png` | Specimen: a slender silver fish, faint markings, exact fins | From the bake-off |
 | `art/reference/item__stone-knife.png` | Item: a three-quarter view of a small hand-made object | From the bake-off |
-| `art/reference/scene__rocky-point.png` | Scene: line, washes and palette only. **Not the layout**: its deep water runs down the right side, and the game needs it at the horizon | From the bake-off |
 | `art/reference/specimen__abudefduf-saxatilis.png` | Specimen: a deep-bodied fish with bold bars, to show strong markings in this style. Its sixth bar, on the tail stem, is drawn as dark as the others; on the real fish it is faint or missing | Done, 18 November 2026 |
 | `art/reference/specimen__panulirus-argus.png` | Specimen seen from above: an invertebrate (spiny lobster), to fix how shells, legs and antennae are drawn | Done, 18 November 2026 |
 | `art/reference/scene__rocky-point-v2.png` | Scene: the third Rocky Point, now in the game and the reference for scenes. Black basalt, a straight horizon, water deepening evenly from pale shallows to deep blue, and real tide pools where the tap spot is | Done, 18 November 2026 |
