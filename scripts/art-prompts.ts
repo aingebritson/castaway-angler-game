@@ -89,9 +89,11 @@ const out: string[] = [
   'After a scene is ingested, set the top of its `waterPolygon` in the location data to where the sea horizon sits in the image (0.33 means a third of the way down). The game measures its cast zones from that line.',
   '',
 ];
+// `npm run art:prompts -- scene/rocky-point` prints just the named assets, art or not, to redo them
+const only = new Set(process.argv.slice(2));
 let n = 0;
 const add = (id: string, kind: keyof typeof TYPE, subject: string, midjourney?: string) => {
-  if (manifest[id]) return;
+  if (only.size ? !only.has(id) : manifest[id]) return;
   n++;
   out.push(`## ${id}`, '', `Save as \`art/inbox/${id.replace('/', '__')}.png\``, '', '```text', STYLE, '', TYPE[kind], '', subject, '```', '');
   if (midjourney) out.push('Midjourney version (add the reference images as style references):', '', '```text', midjourney, '```', '');
@@ -112,5 +114,13 @@ out.push('# Portraits', '');
 for (const p of Object.values(content.people)) add(`portrait/${p.id}`, 'portrait', `Subject: ${p.name}, ${p.role}.`);
 
 mkdirSync(join(root, 'art'), { recursive: true });
-writeFileSync(join(root, 'art/prompts.md'), out.join('\n'));
-console.log(`art/prompts.md: ${n} assets still need art`);
+if (only.size) {
+  const missing = [...only].filter((id) => !out.includes(`## ${id}`));
+  if (missing.length) console.error(`No such asset: ${missing.join(', ')}`);
+  // just the asset sections, without the sheet's headings
+  const first = out.findIndex((l) => l.startsWith('## '));
+  console.log(first < 0 ? '' : out.slice(first).filter((l) => !/^# /.test(l)).join('\n').trimEnd());
+} else {
+  writeFileSync(join(root, 'art/prompts.md'), out.join('\n'));
+  console.log(`art/prompts.md: ${n} assets still need art`);
+}
