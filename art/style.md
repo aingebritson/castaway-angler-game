@@ -52,7 +52,7 @@ Glass-green and turquoise shallows, ultramarine deep water, black volcanic rock,
 
 1. `npm run art:prompts` writes `art/prompts.md` with a ready-to-paste prompt for every asset still on a placeholder.
 2. Work in batches by region and asset type, one ChatGPT conversation per batch, with the references for that type uploaded first (see **Which references to upload**).
-3. Specimens: compare each with two or three photos of the species. Check fin count and position, tail shape, mouth position and markings. Allow three to five attempts.
+3. Specimens: compare each with two or three photos of the species. Check fin count and position, tail shape, mouth position and markings. Allow three to five attempts. For animals seen from above, count everything that comes in a set: a crab's walking legs (four a side), an octopus's arms (eight), a turtle's scutes (five down the middle, four a side). The first batch lost a leg, an arm and three scutes, and each looked right at a glance. When one fails, put the correct count in the species' `visualNotes` so the next prompt asks for it.
 4. Save to `art/inbox/` under the name the prompt sheet gives, then run `npm run art:ingest`.
 5. Scenes only: set the top of the scene's `waterPolygon` to the horizon height in the image, and check the tap spots sit on the things they name.
 6. When a batch turns out especially well, swap its best image into the reference table above.

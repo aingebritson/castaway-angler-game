@@ -37,5 +37,11 @@
   "specimen/sphyraena-barracuda": "specimen__sphyraena-barracuda.webp",
   "specimen/thalassoma-bifasciatum": "specimen__thalassoma-bifasciatum.webp",
   "specimen/trachinotus-falcatus": "specimen__trachinotus-falcatus.webp",
-  "specimen/tylosurus-crocodilus": "specimen__tylosurus-crocodilus.webp"
+  "specimen/tylosurus-crocodilus": "specimen__tylosurus-crocodilus.webp",
+  "specimen/aliger-gigas": "specimen__aliger-gigas.webp",
+  "specimen/callinectes-sapidus": "specimen__callinectes-sapidus.webp",
+  "specimen/grapsus-grapsus": "specimen__grapsus-grapsus.webp",
+  "specimen/hypanus-americanus": "specimen__hypanus-americanus.webp",
+  "specimen/trichechus-manatus": "specimen__trichechus-manatus.webp",
+  "specimen/tursiops-truncatus": "specimen__tursiops-truncatus.webp"
 }
