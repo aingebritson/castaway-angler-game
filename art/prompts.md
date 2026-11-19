@@ -10,18 +10,6 @@ After a scene is ingested, set the top of its `waterPolygon` in the location dat
 
 # Specimens
 
-## specimen/chelonia-mydas
-
-Save as `art/inbox/specimen__chelonia-mydas.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
-
-Subject: Green turtle (Chelonia mydas). Smooth, heart-shaped carapace in olive-brown with radiating streaks. Inside the ring of small edge scutes, the carapace has exactly thirteen large scutes: five in a row down the centre, and only four along each side. The first side scute, beside the neck, is large and the last is small; there is no extra fifth scute at either end of a side row. Small blunt head; between the eyes, on top of the head, a single pair of long scales (prefrontals), the rest of the head with a few larger plates rather than a fine mosaic. Paddle-shaped flippers edged in pale yellow, one small claw on each front flipper.
-```
-
 # Items
 
 ## item/palm-frond

@@ -33,6 +33,7 @@ Upload two or three of these at the start of every batch conversation, chosen fr
 - **Say what the references are for**, before the first prompt: "Match the ink line and watercolour washes of these images; don't copy their subjects or composition." For scenes, add "match the style of the Rocky Point image, not its layout", or every scene comes out as a rocky shore with tide pools.
 - **One conversation per batch of one asset type**, for example the reef fish. Upload once, then paste the prompts in turn.
 - **Start a fresh conversation when the style drifts**: heavier outlines, more saturated colour or a cleaner digital finish. Upload the references again and carry on.
+- **When words fail, upload a photo.** The green turtle came back with the wrong scute pattern three times, however exactly the prompt spelled out the count. One photo of a real green turtle seen from above fixed it first time. Add it as a third reference and say what it is for: "Use the photo only for the shell pattern and anatomy; keep the style of the other images." Keep these photos out of the repo.
 - **Check for borrowed details** before keeping an image: bars from the sergeant major on a plain fish, the bonefish's snout on another species, extra legs on a crab.
 
 ## Rules from the bake-off
