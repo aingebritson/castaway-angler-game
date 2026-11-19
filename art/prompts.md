@@ -12,198 +12,6 @@ After a scene is ingested, set the top of its `waterPolygon` in the location dat
 
 # Items
 
-## item/palm-frond
-
-Save as `art/inbox/item__palm-frond.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Palm frond. Long, tough leaves. Good for weaving.
-```
-
-## item/coconut
-
-Save as `art/inbox/item__coconut.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Coconut. Husk for fibre, shell for floats, meat for bait.
-```
-
-## item/driftwood
-
-Save as `art/inbox/item__driftwood.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Driftwood. Sun-bleached and dry. Burns well, floats better.
-```
-
-## item/stone
-
-Save as `art/inbox/item__stone.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Stone. A fist of dark volcanic rock that takes an edge.
-```
-
-## item/vine
-
-Save as `art/inbox/item__vine.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Vine. Green and supple. Lashes anything to anything.
-```
-
-## item/bamboo
-
-Save as `art/inbox/item__bamboo.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Bamboo. Light, straight and strong. Needs a knife to cut.
-```
-
-## item/shell
-
-Save as `art/inbox/item__shell.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Shell. Hard and bright. Grinds into a hook with patience.
-```
-
-## item/fish-bone
-
-Save as `art/inbox/item__fish-bone.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Fish bone. A clean backbone. Hooks and needles hide inside.
-```
-
-## item/feather
-
-Save as `art/inbox/item__feather.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Feather. A gull's flight feather. It flutters in water as it does in air.
-```
-
-## item/cordage
-
-Save as `art/inbox/item__cordage.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Cordage. Coconut fibre twisted into cord. Holds a knot.
-```
-
-## item/rope
-
-Save as `art/inbox/item__rope.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Rope. Ship's rope, salt-stiff but sound.
-```
-
-## item/canvas
-
-Save as `art/inbox/item__canvas.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Canvas. A torn length of sailcloth.
-```
-
-## item/plank
-
-Save as `art/inbox/item__plank.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Plank. A length of ship's timber with the nails still in it.
-```
-
-## item/sea-glass
-
-Save as `art/inbox/item__sea-glass.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Sea glass. A bottle shard tumbled smooth by the sea. Someone will want it.
-```
-
-## item/message-bottle
-
-Save as `art/inbox/item__message-bottle.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Bottle. Corked. Something rattles inside.
-```
-
-## item/crate
-
-Save as `art/inbox/item__crate.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Waterlogged crate. Ship's stores, mostly ruined. Mostly.
-```
-
 ## item/sand-flea
 
 Save as `art/inbox/item__sand-flea.png`
@@ -213,7 +21,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Sand flea. A mole crab from the wet sand. Small fish love them.
+Subject: Sand flea. A mole crab from the wet sand. Small fish love them. It is a mole crab, Emerita, not a shrimp or a flea: a smooth, egg-shaped grey-tan shell like a large olive, seen slightly from above, with no claws and no visible legs (they tuck underneath). Only two tiny eyes on thin stalks and a pair of feathery antennae show at the front.
 ```
 
 ## item/small-crab
@@ -228,78 +36,6 @@ A single item icon, three-quarter view, centred, filling about 75 percent of the
 Subject: Small crab. A lively little crab. Wary fish that ignore everything else eat crabs.
 ```
 
-## item/cut-bait
-
-Save as `art/inbox/item__cut-bait.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Cut bait. Strips of fish. Bleeds scent into the water; predators notice.
-```
-
-## item/coconut-meat
-
-Save as `art/inbox/item__coconut-meat.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Coconut meat. White chunks of coconut. The little reef fish will peck at it.
-```
-
-## item/rusty-hook
-
-Save as `art/inbox/item__rusty-hook.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Rusty hook. Small, and more rust than steel. It came with the rod.
-```
-
-## item/shell-hook
-
-Save as `art/inbox/item__shell-hook.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Shell hook. Ground from a shell. Small and brittle, but it catches fish.
-```
-
-## item/bone-hook
-
-Save as `art/inbox/item__bone-hook.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Bone hook. A larger gorge of fish bone. Small fry cannot take it; better fish can.
-```
-
-## item/old-rod
-
-Save as `art/inbox/item__old-rod.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Old rod. A cracked ship's rod. Short casts, no backbone.
-```
-
 ## item/bamboo-rod
 
 Save as `art/inbox/item__bamboo-rod.png`
@@ -309,7 +45,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Bamboo rod. A long, whippy cane. Casts to the reef edge and bends instead of breaking.
+Subject: Bamboo rod. A long, whippy cane. Casts to the reef edge and bends instead of breaking. Made by hand from bamboo and cordage: a long cane, whipped with cord at the grip and the tip. A castaway made it, so there is no reel, no metal line guides and no cork handle. A plain length of green-gold bamboo, longer than the old rod, with its knuckles showing, tapering to a thin tip; brown coconut-fibre cord whipped round the butt as a grip and round the tip, where a line is tied on and hangs loose.
 ```
 
 ## item/old-line
@@ -333,7 +69,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Braided line. Three strands of cordage, braided and oiled. Strong.
+Subject: Braided line. Three strands of cordage, braided and oiled. Strong. Made by hand from cordage and vine: three strands, braided tight, rubbed with coconut oil.
 ```
 
 ## item/coconut-float
@@ -345,7 +81,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Coconut float. A disc of coconut shell. It shows a bite clearly and gives more time to strike.
+Subject: Coconut float. A disc of coconut shell. It shows a bite clearly and gives more time to strike. Made by hand from coconut and cordage: a disc of shell, drilled and pegged.
 ```
 
 ## item/stone-sinker
@@ -357,7 +93,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Stone sinker. A grooved pebble. Carries the bait further and holds it on the bottom.
+Subject: Stone sinker. A grooved pebble. Carries the bait further and holds it on the bottom. Made by hand from stone and cordage: peck a groove around a pebble and tie it on.
 ```
 
 ## item/feather-lure
@@ -369,7 +105,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Feather lure. Gull feather and shell flash on a bone hook. Wants a steady, pulsing retrieve.
+Subject: Feather lure. Gull feather and shell flash on a bone hook. Wants a steady, pulsing retrieve. Made by hand from feather, shell, bone hook and cordage: feather for flutter, shell for flash, bone for the point.
 ```
 
 ## item/hammerstone
@@ -381,7 +117,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Hammerstone. A round stone that fits the hand. Makes other tools.
+Subject: Hammerstone. A round stone that fits the hand. Makes other tools. Made by hand from stone: strike stone on stone until one fits the hand.
 ```
 
 ## item/bone-needle
@@ -393,7 +129,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Bone needle. Slender and eyed. Sews what the knife cuts.
+Subject: Bone needle. Slender and eyed. Sews what the knife cuts. Made by hand from fish bone: split a rib, grind a point, bore an eye.
 ```
 
 ## item/campfire
@@ -405,7 +141,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Campfire. A ring of stones and a bed of embers that never quite goes out.
+Subject: Campfire. A ring of stones and a bed of embers that never quite goes out. Made by hand from driftwood and stone: a ring of stones and dry wood. Husk for tinder.
 ```
 
 ## item/drying-rack
@@ -417,7 +153,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Drying rack. Bamboo rails over a slow fire. Smoked fish keeps for the voyage.
+Subject: Drying rack. Bamboo rails over a slow fire. Smoked fish keeps for the voyage. Made by hand from bamboo, vine and driftwood: rails over the smoke.
 ```
 
 ## item/torch
@@ -429,7 +165,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Torch. Split bamboo packed with husk and oil. Makes the night fishable.
+Subject: Torch. Split bamboo packed with husk and oil. Makes the night fishable. Made by hand from bamboo, coconut and cordage: split cane packed with husk and oil.
 ```
 
 ## item/bait-basket
@@ -441,7 +177,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Bait basket. A lidded basket kept damp. Bait gathered into it stays lively: you find more each time.
+Subject: Bait basket. A lidded basket kept damp. Bait gathered into it stays lively: you find more each time. Made by hand from palm frond and vine: a small lidded basket that keeps bait damp and alive.
 ```
 
 ## item/woven-trap
@@ -453,7 +189,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Woven trap. A funnel basket on a bamboo frame. Bait it, sink it, leave it.
+Subject: Woven trap. A funnel basket on a bamboo frame. Bait it, sink it, leave it. Made by hand from palm frond, vine and bamboo: a basket with a funnel mouth. Easy in, hard out.
 ```
 
 ## item/raft-hull
@@ -465,7 +201,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Raft hull. Driftwood logs under a bamboo deck.
+Subject: Raft hull. Driftwood logs under a bamboo deck. Made by hand from driftwood, bamboo and plank: logs below, cane deck above.
 ```
 
 ## item/raft-lashings
@@ -477,7 +213,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Lashings. Everything that holds the raft together.
+Subject: Lashings. Everything that holds the raft together. Made by hand from vine, cordage and rope: every joint bound twice.
 ```
 
 ## item/raft-mast
@@ -489,7 +225,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Mast. Three canes bound into one.
+Subject: Mast. Three canes bound into one. Made by hand from bamboo and rope: three canes bound into one, stepped in the deck.
 ```
 
 ## item/raft-sail
@@ -501,7 +237,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Woven sail. Frond matting backed with canvas. It will hold a wind.
+Subject: Woven sail. Frond matting backed with canvas. It will hold a wind. Made by hand from palm frond, canvas and cordage: frond matting sewn to sailcloth.
 ```
 
 ## item/raft-oar
@@ -513,7 +249,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
 
-Subject: Steering oar. A plank blade on a bamboo shaft.
+Subject: Steering oar. A plank blade on a bamboo shaft. Made by hand from plank, bamboo and cordage: a blade to steer by.
 ```
 
 ## item/provisions

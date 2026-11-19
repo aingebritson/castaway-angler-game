@@ -163,6 +163,8 @@ export const Item = z.object({
   kind: z.enum(['material', 'bait', 'hook', 'line', 'rod', 'reel', 'lure', 'float', 'sinker', 'tool', 'utility', 'trap', 'station', 'raft', 'boat', 'goods', 'chart']),
   glyph: z.string(),
   desc: z.string(),
+  /** Extra detail for the art prompt only; never shown in the game. */
+  visualNotes: z.string().min(10).optional(),
   /** Coins when sold at a market. */
   value: z.number().optional(),
   rod: z.object({ tier: z.number(), range: z.number(), power: z.number(), accuracy: z.number() }).optional(),

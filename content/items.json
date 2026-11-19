@@ -131,6 +131,7 @@
     "kind": "bait",
     "glyph": "🦐",
     "desc": "A mole crab from the wet sand. Small fish love them.",
+    "visualNotes": "It is a mole crab, Emerita, not a shrimp or a flea: a smooth, egg-shaped grey-tan shell like a large olive, seen slightly from above, with no claws and no visible legs (they tuck underneath). Only two tiny eyes on thin stalks and a pair of feathery antennae show at the front.",
     "bait": {
       "tags": [
         "crustacean"
@@ -233,6 +234,7 @@
     "kind": "rod",
     "glyph": "🎣",
     "desc": "A long, whippy cane. Casts to the reef edge and bends instead of breaking.",
+    "visualNotes": "A castaway made it, so there is no reel, no metal line guides and no cork handle. A plain length of green-gold bamboo, longer than the old rod, with its knuckles showing, tapering to a thin tip; brown coconut-fibre cord whipped round the butt as a grip and round the tip, where a line is tied on and hangs loose.",
     "rod": {
       "tier": 1,
       "range": 0.74,

@@ -109,7 +109,13 @@ for (const s of Object.values(content.species)) {
   add(`specimen/${s.id}`, TOP_DOWN.has(s.silhouette) ? 'specimenAbove' : 'specimen', `Subject: ${s.commonName} (${s.scientificName}). ${s.visualNotes}`);
 }
 out.push('# Items', '');
-for (const i of Object.values(content.items)) add(`item/${i.id}`, 'item', `Subject: ${i.name}. ${i.desc}`);
+// Crafted gear says what it is made from; otherwise image models draw shop-bought tackle
+const recipeFor = (itemId: string) => Object.values(content.recipes).find((r) => r.output.item === itemId && !r.special);
+for (const i of Object.values(content.items)) {
+  const r = recipeFor(i.id);
+  const made = r ? ` Made by hand from ${list(r.inputs.map((x) => lower(content.items[x.item].name)))}: ${r.blurb.replace(/^[A-Z](?=[a-z ])/, (c) => c.toLowerCase())}` : '';
+  add(`item/${i.id}`, 'item', [`Subject: ${i.name}. ${i.desc}${made}`, i.visualNotes].filter(Boolean).join(' '));
+}
 out.push('# Portraits', '');
 for (const p of Object.values(content.people)) add(`portrait/${p.id}`, 'portrait', `Subject: ${p.name}, ${p.role}.`);
 
