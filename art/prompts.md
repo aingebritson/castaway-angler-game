@@ -10,42 +10,6 @@ After a scene is ingested, set the top of its `waterPolygon` in the location dat
 
 # Specimens
 
-## specimen/octopus-briareus
-
-Save as `art/inbox/specimen__octopus-briareus.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
-
-Subject: Caribbean reef octopus (Octopus briareus). Exactly eight arms, all joined to the head and spread around it, long and of unequal length, with deep webbing between their bases. Rounded mantle; bright blue-green skin flecked and mottled with red-brown; dark red-brown eyes. Seen from above, so the suckers are mostly hidden under the arms.
-```
-
-## specimen/ocypode-quadrata
-
-Save as `art/inbox/specimen__ocypode-quadrata.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
-
-Subject: Atlantic ghost crab (Ocypode quadrata). Square, box-like sand-coloured carapace, slightly wider than long. Exactly four walking legs on each side (eight in all) plus two claws, one claw larger than the other; long pale walking legs with fine hairs. Large club-shaped eyes on stout stalks that rise from the front corners of the carapace and point upward and outward; the eyes do not project forward ahead of the shell.
-```
-
-## specimen/emerita-portoricensis
-
-Save as `art/inbox/specimen__emerita-portoricensis.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
-
-Subject: Puerto Rican sand crab (Emerita portoricensis). Small, smooth, egg-shaped carapace like a rounded pebble, sand-grey to pale tan; no claws. Seen from above it is almost all smooth shell: the short flattened legs are tucked under the body, with at most their edges showing at the sides. At the front, a pair of long feathery antennae curving back and a pair of short antennae, and tiny eyes on long thin stalks. The pointed tail plate is folded under the body and not visible from above.
-```
-
 ## specimen/chelonia-mydas
 
 Save as `art/inbox/specimen__chelonia-mydas.png`
@@ -55,7 +19,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
-Subject: Green turtle (Chelonia mydas). Smooth, heart-shaped carapace in olive-brown with radiating streaks. The carapace has exactly five large scutes in a row down the centre and four large scutes along each side (thirteen in all), inside a ring of small marginal scutes. Small blunt head; between the eyes, on top of the head, a single pair of long scales (prefrontals), the rest of the head with a few larger plates rather than a fine mosaic. Paddle-shaped flippers edged in pale yellow, one small claw on each front flipper.
+Subject: Green turtle (Chelonia mydas). Smooth, heart-shaped carapace in olive-brown with radiating streaks. Inside the ring of small edge scutes, the carapace has exactly thirteen large scutes: five in a row down the centre, and only four along each side. The first side scute, beside the neck, is large and the last is small; there is no extra fifth scute at either end of a side row. Small blunt head; between the eyes, on top of the head, a single pair of long scales (prefrontals), the rest of the head with a few larger plates rather than a fine mosaic. Paddle-shaped flippers edged in pale yellow, one small claw on each front flipper.
 ```
 
 # Items
