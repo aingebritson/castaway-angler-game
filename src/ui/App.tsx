@@ -12,7 +12,7 @@ import { badges } from '../state/museum';
 import { moonIndex } from '../sim/time';
 import { Coach, Intro } from './coach';
 import { Icon } from './bits';
-import { EndingCard, HaulCard, LessonCard, PageCard, RevealCard, ThoughtCard, type ThoughtMsg, type ToastMsg, Toasts } from './cards';
+import { EndingCard, HaulCard, LessonCard, type LessonMsg, PageCard, type PageMsg, RevealCard, ThoughtCard, type ThoughtMsg, type ToastMsg, Toasts } from './cards';
 import { GuidePanel, JournalPanel } from './guide';
 import { useGame, useGameState, useTick } from './hooks';
 import { BagPanel, CraftPanel, DebugPanel, FirePanel, MapPanel, RaftPanel, RigPanel, SettingsPanel, TrapPanel } from './panels';
@@ -45,8 +45,8 @@ export function App() {
   const [panel, setPanel] = useState<Panel | null>(null);
   const [port, setPort] = useState<PortPanel | null>(null);
   const [reveal, setReveal] = useState<Reveal | null>(null);
-  const [pages, setPages] = useState<string[]>([]);
-  const [lessons, setLessons] = useState<string[]>([]);
+  const [pages, setPages] = useState<PageMsg[]>([]);
+  const [lessons, setLessons] = useState<LessonMsg[]>([]);
   const [haul, setHaul] = useState<{ reveals: Reveal[]; soakH: number } | null>(null);
   const [ending, setEnding] = useState(false);
   const [phase, setPhase] = useState<FishPhase>('idle');
@@ -85,7 +85,7 @@ export function App() {
           break;
         }
         case 'lesson':
-          setLessons((l) => [...l, e.lessonId]);
+          setLessons((l) => [...l, { lessonId: e.lessonId, seen: e.seen }]);
           break;
         case 'thought': {
           const id = nextId++;
@@ -94,7 +94,7 @@ export function App() {
           break;
         }
         case 'page':
-          setPages((p) => [...p, e.pageId]);
+          setPages((p) => [...p, { pageId: e.pageId, lessonId: e.lessonId, seen: e.seen }]);
           audio.play('page');
           break;
         case 'reveal':
@@ -284,8 +284,8 @@ export function App() {
         <RevealCard reveal={reveal} onDone={() => { setReveal(null); engineRef.current?.fishing?.afterReveal(); }} />
       )}
       {haul && !reveal && <HaulCard reveals={haul.reveals} soakH={haul.soakH} onDone={() => setHaul(null)} />}
-      {pages.length > 0 && <PageCard pageId={pages[0]} onDone={() => setPages((p) => p.slice(1))} />}
-      {lessons.length > 0 && !reveal && !pages.length && !haul && <LessonCard lessonId={lessons[0]} onDone={() => setLessons((l) => l.slice(1))} />}
+      {pages.length > 0 && <PageCard msg={pages[0]} onDone={() => setPages((p) => p.slice(1))} />}
+      {lessons.length > 0 && !reveal && !pages.length && !haul && <LessonCard msg={lessons[0]} onDone={() => setLessons((l) => l.slice(1))} />}
       {thinking && <ThoughtCard key={thoughts[0].id} msg={thoughts[0]} onDone={() => setThoughts((q) => q.slice(1))} />}
       {ending && (
         <EndingCard

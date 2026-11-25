@@ -211,16 +211,16 @@ export const Page = z.object({
   text: z.string(),
   recipes: z.array(id).default([]),
   rumours: z.array(id).default([]),
-  /** The last page carries the bearing off the island; it needs eight species first. */
+  /** The last page carries the bearing off the island. */
   bearing: z.boolean().optional(),
-  /** Pages only wash up once this many lessons have been learned, so they arrive alongside the player. */
-  minLessons: z.number().int().min(0).default(0),
+  /** The lesson this page teaches. It arrives in a bottle the moment that lesson's trigger happens. */
+  lesson: id.optional(),
 });
 
 /** A condition a lesson waits for: something that has happened while playing. */
 export const LessonCond = z.discriminatedUnion('type', [
   z.object({ type: z.literal('stat'), stat: z.enum(['casts', 'catches', 'lost']), min: z.number() }),
-  /** Event counters: stolen, missed, snapped, longCast, creelFull, cast:<location>/<zone>. */
+  /** Event counters: stolen, missed, snapped, pulled, longCast, darkCast, nightCast, creelFull, kept, cleaned, newKind, cast:<location>/<zone>. */
   z.object({ type: z.literal('count'), key: z.string(), min: z.number() }),
   z.object({ type: z.literal('held'), item: id }),
   z.object({ type: z.literal('kinds'), min: z.number() }),
@@ -236,9 +236,24 @@ export const LessonCond = z.discriminatedUnion('type', [
   z.object({ type: z.literal('flag'), flag: z.string() }),
 ]);
 
+/** One way a lesson can be learned: what has happened, and how the castaway tells it. */
+export const LessonTrigger = z.object({
+  /**
+   * All must hold. Counts and stats are measured from the moment the lesson
+   * opened (its prerequisites learned and its `after` items made), so a lesson
+   * follows from what the player does next, not from what they did before.
+   */
+  if: z.array(LessonCond).min(1),
+  /** What just happened, in the castaway's voice. True for this trigger only. */
+  seen: z.string().min(10),
+});
+
 /**
  * A lesson: something the castaway works out by fishing. It explains one idea
- * in plain words and unlocks what that idea lets you make or reach.
+ * in plain words and unlocks what that idea lets you make or reach. Each one
+ * is caused by something that happens in play, and is taught the moment it
+ * happens: on a card in the castaway's words, or, when `via` names a page,
+ * by the other castaway's page in a bottle on the very next cast.
  */
 export const Lesson = z.object({
   id,
@@ -246,8 +261,6 @@ export const Lesson = z.object({
   regionId: id,
   title: z.string(),
   glyph: z.string(),
-  /** What just happened, in the castaway's voice. */
-  seen: z.string().min(10),
   /** The fishing idea, plainly, for someone who has never fished. */
   lesson: z.string().min(20),
   /** What it means in the game: what you can now make, and where to find what it needs. */
@@ -255,17 +268,20 @@ export const Lesson = z.object({
   /** What is on the castaway's mind while this is the next thing to work out. */
   hint: z.string(),
   requires: z.array(id).default([]),
-  /** Any one group of conditions, all holding, teaches the lesson. */
-  when: z.array(z.array(LessonCond).min(1)).min(1),
+  /** Items that must have been made first: the lesson opens once you have used what the last one taught. */
+  after: z.array(id).default([]),
+  /** Any one trigger teaches it; the first listed that holds supplies the words. */
+  triggers: z.array(LessonTrigger).min(1),
+  /** A page from the other castaway that brings this lesson, in a bottle on the next cast. */
+  via: id.optional(),
   unlocks: z.object({ recipes: z.array(id).default([]), flags: z.array(z.string()).default([]) }).default({ recipes: [], flags: [] }),
-  /** False for a lesson that follows straight on from the last (cut bait, the moment you hold a knife). */
-  gap: z.boolean().default(true),
 });
 
 /**
- * A thought: the castaway's own voice, popping up when something in their
- * days has changed. This is the story: a person with nothing to do but fish,
- * fishing their way off an island.
+ * A thought: the castaway's own voice, the moment something in their days
+ * changes. This is the story: a person with nothing to do but fish, fishing
+ * their way off an island. Each thought follows from one event and is had
+ * once, straight away.
  */
 export const Thought = z.object({
   id,
@@ -276,8 +292,6 @@ export const Thought = z.object({
   lines: z.array(z.string().min(2)).min(1),
   /** Any one group of conditions, all holding, brings the thought. */
   when: z.array(z.array(LessonCond).min(1)).min(1),
-  /** False for a thought that belongs straight after whatever caused it. */
-  gap: z.boolean().default(true),
 });
 
 export const JunkTable = z.object({
@@ -398,14 +412,11 @@ export const Balance = z.object({
     tagPayment: z.number(),
   }),
   camp: z.object({ smokeMin: z.number(), rackSlots: z.number(), cleanBones: z.number(), cleanBait: z.number() }),
-  bearing: z.object({ speciesNeeded: z.number(), pityCasts: z.number(), pagePityCasts: z.number() }),
+  bearing: z.object({ speciesNeeded: z.number() }),
   provisions: z.object({ fish: z.number(), species: z.number() }),
   trap: z.object({ catchesPerHour: z.number() }),
   legendaryChance: z.number(),
   /** Casts between one lesson and the next, so ideas arrive one at a time. */
-  lessons: z.object({ gapCasts: z.number() }).default({ gapCasts: 10 }),
-  /** Casts between thought cards; casts before a stuck thought comes back, and how often it may. */
-  thoughts: z.object({ gapCasts: z.number(), repeatCasts: z.number(), repeats: z.number() }).default({ gapCasts: 6, repeatCasts: 30, repeats: 3 }),
   creelLimit: z.number(),
 });
 
@@ -424,6 +435,7 @@ export type Rumour = z.infer<typeof Rumour>;
 export type Page = z.infer<typeof Page>;
 export type Lesson = z.infer<typeof Lesson>;
 export type LessonCond = z.infer<typeof LessonCond>;
+export type LessonTrigger = z.infer<typeof LessonTrigger>;
 export type Thought = z.infer<typeof Thought>;
 export type JunkTable = z.infer<typeof JunkTable>;
 export type RigPreset = z.infer<typeof RigPreset>;

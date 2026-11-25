@@ -5,24 +5,20 @@
     "regionId": "castaway-island",
     "title": "Hooks",
     "glyph": "🪝",
-    "seen": "The rusty hook is bending a little more with every fish that shakes its head on it. It will not last.",
     "lesson": "A hook is a bent point with a barb just behind the tip, so a fish that takes the bait cannot simply spit it out. Anything hard and sharp will do: people made hooks from shell and bone for thousands of years before steel.",
     "effect": "There was a clearing above the beach where I could work. Camp is on the map now: grind two shells into a hook at the workbench. Shells are on the beach. Make a spare; hooks get lost.",
-    "hint": "Keep fishing. That rusty hook will not last forever.",
+    "hint": "That rusty hook will not last forever.",
     "requires": [],
-    "when": [
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 5
-        }
-      ],
-      [
-        {
-          "type": "hookless"
-        }
-      ]
+    "after": [],
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "hookless"
+          }
+        ],
+        "seen": "The rusty hook snapped as I worked it out of a fish’s jaw. No hook, no fish."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -37,32 +33,37 @@
     "regionId": "castaway-island",
     "title": "An edge",
     "glyph": "🔪",
-    "seen": "I have fish, and nothing to cut them with. Every fish is one meal, and nothing more.",
     "lesson": "Anglers clean their catch: with a sharp edge one fish becomes bait for the next, and its backbone becomes tools. Before metal, edges came from stone. Strike one rock hard against another and a sharp flake breaks away.",
     "effect": "Two stones make a hammerstone. With it, two more stones and a vine make a knife. Loose stones lie at Rocky Point; vines hang in the palm grove behind the beach, now on the map.",
     "hint": "I keep wishing I had something to cut with.",
     "requires": [
       "hooks"
     ],
-    "when": [
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 16
-        },
-        {
-          "type": "held",
-          "item": "shell-hook"
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 24
-        }
-      ]
+    "after": [
+      "shell-hook"
+    ],
+    "via": "page-1",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "kept",
+            "min": 4
+          }
+        ],
+        "seen": "Four fish in the basket, and nothing to cut them with. Every fish is one meal, and nothing more."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 14
+          }
+        ],
+        "seen": "Every fish I catch is one meal and nothing more. Without something to cut with, I cannot even make bait of them."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -78,26 +79,30 @@
     "regionId": "castaway-island",
     "title": "Cut bait",
     "glyph": "🍣",
-    "seen": "Cleaned my first fish properly. The water around the rocks went cloudy with it, and every fish for yards came to see.",
     "lesson": "Fish find food by smell as much as by sight. Strips of fresh fish, called cut bait, leak scent into the water and draw bigger, hungrier fish than a sand flea does. Keep the backbone too: bone is hard enough to carve.",
     "effect": "Clean kept fish at the catch basket in camp, or cut one up when you land it. Each gives cut bait and a bone. Put cut bait on the hook in the Rig menu.",
     "hint": "",
     "requires": [
       "edge"
     ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "stone-knife"
-        }
-      ]
+    "after": [
+      "stone-knife"
+    ],
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "held",
+            "item": "stone-knife"
+          }
+        ],
+        "seen": "A sharp stone lashed to a stick. Ten thousand years of progress, and here I am back at the start of it. It cuts, though. It really cuts."
+      }
     ],
     "unlocks": {
       "recipes": [],
       "flags": []
-    },
-    "gap": false
+    }
   },
   {
     "id": "hooksize",
@@ -105,43 +110,56 @@
     "regionId": "castaway-island",
     "title": "Hook size",
     "glyph": "📏",
-    "seen": "Something heavy took the cut bait and straightened my little hook like a hairpin. Meanwhile the striped thieves nibble the bait away without ever getting caught.",
     "lesson": "Hooks come in sizes. Too small, and a big fish breaks it or tears free. Too big, and small fish can only pick at the bait. Matching the hook to the fish you want is half of fishing.",
     "effect": "Carve a bigger hook from a fish bone with your knife. Small fry cannot take it, so only better fish will. Swap hooks in the Rig menu; a small hook still has its uses.",
     "hint": "Something about these little hooks is not right for bigger fish.",
     "requires": [
       "cutbait"
     ],
-    "when": [
-      [
-        {
-          "type": "count",
-          "key": "snapped",
-          "min": 1
-        },
-        {
-          "type": "held",
-          "item": "cut-bait"
-        }
-      ],
-      [
-        {
-          "type": "count",
-          "key": "stolen",
-          "min": 3
-        },
-        {
-          "type": "held",
-          "item": "cut-bait"
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 30
-        }
-      ]
+    "after": [],
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "snapped",
+            "min": 1
+          },
+          {
+            "type": "held",
+            "item": "cut-bait"
+          }
+        ],
+        "seen": "Something heavy took the cut bait and straightened my little shell hook like a hairpin."
+      },
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "stolen",
+            "min": 3
+          },
+          {
+            "type": "held",
+            "item": "cut-bait"
+          }
+        ],
+        "seen": "The striped thieves stripped the cut bait off my hook three times running and never got caught. The bait is too big for them, and the hook is too small for anything else."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 10
+          },
+          {
+            "type": "held",
+            "item": "cut-bait"
+          }
+        ],
+        "seen": "A big dark shape came up under the cut bait, looked at it, and sank away. My little shell hook is lost in a bait that size."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -156,32 +174,25 @@
     "regionId": "castaway-island",
     "title": "Cord",
     "glyph": "🧵",
-    "seen": "Tried to tie the bone hook on and the old line frayed through at the knot. Everything in fishing is tied to something.",
     "lesson": "Line, knots and lashings hold a rig together, and a rig is only as good as its weakest knot. Coconut husk is full of tough fibre. Soaked and twisted, it makes cord strong enough for hooks, floats and weights.",
     "effect": "Twist cordage from a coconut and a palm frond, both from the grove. Cracking a coconut with the hammerstone also gives coconut meat, a bait the little reef fish like.",
     "hint": "This old line will not take another knot.",
     "requires": [
       "hooksize"
     ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "bone-hook"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 34
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 44
-        }
-      ]
+    "after": [
+      "bone-hook"
+    ],
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "held",
+            "item": "bone-hook"
+          }
+        ],
+        "seen": "Tried to tie the new bone hook on, and the old line frayed through at the knot. Everything in fishing is tied to something, and I have nothing left to tie with."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -197,28 +208,38 @@
     "regionId": "castaway-island",
     "title": "Floats",
     "glyph": "🟤",
-    "seen": "Missed another one. By the time I saw the line twitch, the fish had the bait and was gone.",
     "lesson": "A float, or bobber, does two jobs. It holds the bait at the same depth, and it shows you the moment a fish takes it: little dips are fish testing the bait, and when it goes right under, strike.",
     "effect": "A disc of coconut shell on cord makes a float. With one on the line you have noticeably longer to strike.",
     "hint": "I keep missing bites. I need to see them sooner.",
     "requires": [
-      "cord"
+      "cord",
+      "edge"
     ],
-    "when": [
-      [
-        {
-          "type": "count",
-          "key": "missed",
-          "min": 2
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 42
-        }
-      ]
+    "after": [
+      "cordage"
+    ],
+    "via": "page-2",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "missed",
+            "min": 2
+          }
+        ],
+        "seen": "Missed another one. By the time I saw the line twitch, the fish had the bait and was gone."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 14
+          }
+        ],
+        "seen": "In the glare off the water I can hardly see my line, let alone a bite."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -233,28 +254,38 @@
     "regionId": "castaway-island",
     "title": "Weight",
     "glyph": "⚫",
-    "seen": "Cast as hard as I could, and the bait still landed short of the dark water, then drifted back towards my feet.",
     "lesson": "Bait is light: it does not fly far and it will not stay down. A sinker is a small weight tied on above the hook. It carries the bait further out and holds it near the bottom, where many fish feed.",
     "effect": "A grooved pebble tied with cord makes a sinker. It adds just enough distance for the old rod to reach the reef edge.",
     "hint": "I cannot quite reach the deeper water from here.",
     "requires": [
-      "cord"
+      "cord",
+      "float"
     ],
-    "when": [
-      [
-        {
-          "type": "count",
-          "key": "longCast",
-          "min": 4
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 50
-        }
-      ]
+    "after": [
+      "coconut-float"
+    ],
+    "via": "page-3",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "longCast",
+            "min": 3
+          }
+        ],
+        "seen": "Cast as hard as I could, and the bait still landed short of the dark water and drifted back towards my feet."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 14
+          }
+        ],
+        "seen": "The deep blue water off the point is just out of reach. The bait lands short every time."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -269,30 +300,44 @@
     "regionId": "castaway-island",
     "title": "Fire",
     "glyph": "🔥",
-    "seen": "The sun went down and the cold came up off the sand. Raw fish again.",
     "lesson": "Fire turns a camp into a home: cooking, light, and the slow smoke that keeps fish from spoiling. Dry driftwood burns well; a ring of stones keeps the embers in.",
     "effect": "Build a campfire at camp from driftwood (on the beach) and stones. Torches and the drying rack will need it.",
     "hint": "It gets cold when the sun goes down.",
     "requires": [
       "cord"
     ],
-    "when": [
-      [
-        {
-          "type": "phase",
-          "phases": [
-            "dusk",
-            "night"
-          ]
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 56
-        }
-      ]
+    "after": [],
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "darkCast",
+            "min": 1
+          }
+        ],
+        "seen": "The sun went down while I was fishing, and the cold came up off the sand. Raw fish again, in the dark."
+      },
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "cleaned",
+            "min": 2
+          }
+        ],
+        "seen": "Cleaned another fish at the basket and looked at it. Raw, again. I am sick of raw."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 20
+          }
+        ],
+        "seen": "My hands are raw, my fish are raw, and the nights are cold. I need a fire."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -307,27 +352,42 @@
     "regionId": "castaway-island",
     "title": "Fish you can see",
     "glyph": "👁",
-    "seen": "From the top of the beach I saw a lagoon behind the reef, so clear that the fish in it cast shadows on the sand.",
     "lesson": "In clear, shallow water you can find the fish before you cast. They can see you too: drop the bait right on one and it bolts. Cast a few body lengths ahead of where it is going, and let it find the bait. What lives on the flats eats crabs.",
     "effect": "Lagoon Flats is on the map. Tap a shape in the water to sketch it in the field guide. Small crabs hide in the tide pools at Rocky Point and in burrows on the beach at dusk.",
     "hint": "I wonder what is behind the reef.",
     "requires": [
-      "float"
+      "float",
+      "sinker"
     ],
-    "when": [
-      [
-        {
-          "type": "kinds",
-          "min": 6
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 60
-        }
-      ]
+    "after": [
+      "stone-sinker"
+    ],
+    "via": "page-4",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "kinds",
+            "min": 6
+          },
+          {
+            "type": "count",
+            "key": "newKind",
+            "min": 1
+          }
+        ],
+        "seen": "Another kind of fish I had never seen, off the same few rocks. I keep wondering what lives on the other side of the reef."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 20
+          }
+        ],
+        "seen": "Same rocks, same fish. From the top of the beach I can see a lagoon behind the reef, and shadows moving in it."
+      }
     ],
     "unlocks": {
       "recipes": [],
@@ -342,28 +402,36 @@
     "regionId": "castaway-island",
     "title": "Line strength",
     "glyph": "➰",
-    "seen": "Hooked something strong at the reef edge. The line went tight, sang, and parted.",
     "lesson": "Every rig has a weakest link, and it is usually the line. A fish that pulls harder than the line can hold will break it, however good the rod. Stronger line holds bigger fish. In the fight, ease off when the strain is too much.",
     "effect": "Braid four lengths of cord with two vines into a much stronger line.",
     "hint": "Something out at the reef edge is too strong for this line.",
     "requires": [
       "sinker"
     ],
-    "when": [
-      [
-        {
-          "type": "count",
-          "key": "snapped",
-          "min": 2
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 66
-        }
-      ]
+    "after": [
+      "stone-sinker"
+    ],
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "snapped",
+            "min": 1
+          }
+        ],
+        "seen": "Hooked something strong at the reef edge. The line went tight, sang, and parted."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 16
+          }
+        ],
+        "seen": "The old line is frayed white everywhere I have tied it. The next good fish will take it."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -378,32 +446,38 @@
     "regionId": "castaway-island",
     "title": "Rod length",
     "glyph": "🎋",
-    "seen": "The ship's rod is short and stiff. Out where the coral ends there are bigger fish, and I can only just reach them.",
     "lesson": "A longer rod casts further, and it bends to soak up a fish's sudden runs instead of snapping. Bamboo is light, strong and springy: people made fishing rods from it long before anything else.",
     "effect": "Bamboo grows in the wet ground at the back of the grove. Cut two canes with the knife and whip them with cord. A bamboo rod reaches well past the reef edge and is much stronger.",
     "hint": "If only I could cast further, and hold on to what I hook.",
     "requires": [
-      "line"
+      "line",
+      "sight"
     ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "braided-line"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 72
-        }
-      ],
-      [
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 84
-        }
-      ]
+    "after": [
+      "braided-line"
+    ],
+    "via": "page-5",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "cast:rocky-point/reef-edge",
+            "min": 6
+          }
+        ],
+        "seen": "I can just reach the reef edge with the ship’s rod, and the big fish always seem to be a little further out."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 14
+          }
+        ],
+        "seen": "The ship’s rod is short and stiff. The big fish are out past the reef edge, and I can only just reach it."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -418,36 +492,37 @@
     "regionId": "castaway-island",
     "title": "Lures",
     "glyph": "🪶",
-    "seen": "A blue-backed fish shot straight past my bait, ignored it completely, and hit a flash of shell tumbling in the current.",
     "lesson": "Some fish hunt by sight and chase only things that move. A lure is a fake: something that wobbles and flashes like a small fish when you pull it through the water. Bring it back at a speed the fish believe, not too slow and not too fast.",
     "effect": "Feathers from the gull roost on the beach, a shell for flash and a bone hook make a feather lure. Switch between bait and lure in the Rig menu. With a lure, hold to reel and keep the speed in the green.",
     "hint": "Some fish out at the reef edge will not look at bait.",
     "requires": [
       "rod"
     ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "bamboo-rod"
-        },
-        {
-          "type": "count",
-          "key": "cast:rocky-point/reef-edge",
-          "min": 6
-        }
-      ],
-      [
-        {
-          "type": "held",
-          "item": "bamboo-rod"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 95
-        }
-      ]
+    "after": [
+      "bamboo-rod"
+    ],
+    "via": "page-6",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "cast:rocky-point/reef-edge",
+            "min": 6
+          }
+        ],
+        "seen": "A blue-backed fish shot straight past my bait, ignored it completely, and hit a flash of shell tumbling in the current."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 16
+          }
+        ],
+        "seen": "Out at the reef edge, fish follow my bait all the way in and turn away at the last moment. Whatever they want, it is not dead."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -462,37 +537,39 @@
     "regionId": "castaway-island",
     "title": "The night shift",
     "glyph": "🔦",
-    "seen": "After dark the shallows came alive with things I had never seen by day, and I could not see my float.",
     "lesson": "Many fish feed at night and hide by day, and others do the opposite: the same water holds different fish at different hours. To fish in the dark you need light to see the float by.",
     "effect": "Make a torch at the workbench; it needs the campfire. With it you can fish every zone at night and search the tide pools in the dark.",
     "hint": "The water sounds different after dark.",
     "requires": [
-      "fire"
+      "fire",
+      "lure"
     ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "campfire"
-        },
-        {
-          "type": "phase",
-          "phases": [
-            "night"
-          ]
-        }
-      ],
-      [
-        {
-          "type": "held",
-          "item": "campfire"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 90
-        }
-      ]
+    "after": [
+      "campfire",
+      "feather-lure"
+    ],
+    "via": "page-7",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "darkCast",
+            "min": 3
+          }
+        ],
+        "seen": "Fished on as it got dark and watched the shallows come alive: splashes, eyes, things moving. And I could not see my float."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 18
+          }
+        ],
+        "seen": "Every evening the shallows wake up just as the light goes, and I have no way to see what I am doing."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -507,37 +584,37 @@
     "regionId": "castaway-island",
     "title": "Traps",
     "glyph": "🪤",
-    "seen": "By torchlight, whiskered lobsters were walking out of every crack in the rocks. Gone the moment the light touched them.",
     "lesson": "Not everything is caught on a line. A trap is a basket with a funnel for a door: animals crawl in after the bait and cannot find the way out. Set it, leave it for hours, and come back.",
     "effect": "Weave a trap from fronds, vines and bamboo, and set it at Rocky Point or the lagoon. A bait basket keeps bait alive and finds you more of it.",
     "hint": "What walks the rocks at night?",
     "requires": [
       "night"
     ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "torch"
-        },
-        {
-          "type": "phase",
-          "phases": [
-            "night"
-          ]
-        }
-      ],
-      [
-        {
-          "type": "held",
-          "item": "torch"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 115
-        }
-      ]
+    "after": [
+      "torch"
+    ],
+    "via": "page-8",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "nightCast",
+            "min": 3
+          }
+        ],
+        "seen": "Out with the torch after dark. By its light, whiskered lobsters were walking out of every crack in the rocks, gone the moment the light touched them."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 18
+          }
+        ],
+        "seen": "Lobster whips poke out of every crack in the channel ledges. Nothing I put on a hook will move them."
+      }
     ],
     "unlocks": {
       "recipes": [
@@ -553,42 +630,109 @@
     "regionId": "castaway-island",
     "title": "Keeping fish",
     "glyph": "🪜",
-    "seen": "The basket is full, and the first fish I kept are already turning in the heat.",
     "lesson": "Fresh fish spoils in a day in the tropics. Split and hung over a slow, smoky fire, it dries out and keeps for weeks. People have smoked fish for long voyages for as long as there have been boats.",
-    "effect": "Build a drying rack over the campfire from bamboo, vines and driftwood. Smoked fish is food for a long crossing.",
+    "effect": "Build a drying rack over the campfire from bamboo, vines and driftwood. Smoked fish is food for a long crossing. A fish bone ground to a needle sews a sail, when the time comes.",
     "hint": "The fish I keep will not keep for long.",
     "requires": [
-      "fire"
+      "fire",
+      "traps"
     ],
-    "when": [
-      [
-        {
-          "type": "count",
-          "key": "creelFull",
-          "min": 1
-        },
-        {
-          "type": "held",
-          "item": "campfire"
-        }
-      ],
-      [
-        {
-          "type": "held",
-          "item": "campfire"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 105
-        }
-      ]
+    "after": [
+      "campfire",
+      "woven-trap"
+    ],
+    "via": "page-9",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "count",
+            "key": "creelFull",
+            "min": 1
+          }
+        ],
+        "seen": "The basket is full, and the first fish I kept are already turning in the heat."
+      },
+      {
+        "if": [
+          {
+            "type": "stat",
+            "stat": "catches",
+            "min": 14
+          }
+        ],
+        "seen": "The fish I keep will not keep. By afternoon the first of them are turning."
+      }
     ],
     "unlocks": {
       "recipes": [
-        "drying-rack"
+        "drying-rack",
+        "bone-needle"
       ],
       "flags": []
+    }
+  },
+  {
+    "id": "bearing",
+    "order": 16,
+    "regionId": "castaway-island",
+    "title": "A way off",
+    "glyph": "🧭",
+    "lesson": "A raft is a hull of lashed logs, a mast, a sail and an oar to steer by. A bearing is the direction to sail, taken from something you can see: here, smoke on the horizon at sunset. With a bearing and a following wind, a raft only has to keep pointing the right way.",
+    "effect": "Build the raft at camp: a hull, lashings, a mast, a woven sail, a steering oar, and smoked fish for the crossing. The raft is on the camp screen; it shows what each part still needs.",
+    "hint": "I should know these waters before I trust a raft to them.",
+    "requires": [
+      "lure",
+      "traps",
+      "smoke",
+      "sight"
+    ],
+    "after": [
+      "drying-rack"
+    ],
+    "via": "page-10",
+    "triggers": [
+      {
+        "if": [
+          {
+            "type": "kinds",
+            "min": 8
+          },
+          {
+            "type": "count",
+            "key": "newKind",
+            "min": 1
+          }
+        ],
+        "seen": "Another new kind of fish. I know these waters now, where and when, as well as anyone could. If I am ever going to leave, it is now."
+      },
+      {
+        "if": [
+          {
+            "type": "kinds",
+            "min": 8
+          },
+          {
+            "type": "stat",
+            "stat": "casts",
+            "min": 30
+          }
+        ],
+        "seen": "I have fished every corner of this island. I know these waters as well as anyone could. If I am ever going to leave, it is now."
+      }
+    ],
+    "unlocks": {
+      "recipes": [
+        "raft-hull",
+        "raft-lashings",
+        "raft-mast",
+        "raft-sail",
+        "raft-oar",
+        "provisions"
+      ],
+      "flags": [
+        "bearing"
+      ]
     }
   }
 ]

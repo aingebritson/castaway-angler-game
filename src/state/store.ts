@@ -41,8 +41,8 @@ export class Store {
     const out = fn(draft, ctx, ...args);
     // Whatever just happened may have taught the castaway something.
     const learned = checkLessons(draft, ctx);
-    // …or given them something to think about.
-    learned.push(...checkThoughts(draft, ctx, learned.length > 0));
+    // …or given them something to think about. A lesson just learned (on a card or a page) already says what to do next.
+    learned.push(...checkThoughts(draft, ctx, draft.lessons.length > this.state.lessons.length));
     draft.lastSeen = ctx.now;
     this.state = draft;
     this.deps.onChange?.(draft);

@@ -130,8 +130,12 @@ export interface GameState {
   today: { day: string; ids: string[] };
   /** Story thoughts already had. */
   thoughts: string[];
-  /** What is on the castaway's mind (the next goal), and how often it has come up. */
-  mind: { key: string; at: number; shown: number; last: number } | null;
+  /** Where the castaway was after the last action, and which goals they have already said out loud. */
+  mind: { loc: string; said: string[] } | null;
+  /** Counts at the moment each lesson opened, so its triggers follow from what happens next. */
+  opened: Record<string, Record<string, number>>;
+  /** A lesson whose page is coming up on the next cast, and the words for how it came about. */
+  stage: { lesson: string; seen: string } | null;
   /** Days lived, by the local calendar: n is 1 on the first day. */
   days: { key: string; n: number };
   settings: { sound: boolean; haptics: boolean };
@@ -180,6 +184,8 @@ export function newGame(seed: number, now: number): GameState {
     today: { day: '', ids: [] },
     thoughts: [],
     mind: null,
+    opened: {},
+    stage: null,
     days: { key: '', n: 0 },
     settings: { sound: true, haptics: true },
     debug: { timeOffsetMs: 0 },

@@ -80,9 +80,7 @@
     "cleanBait": 2
   },
   "bearing": {
-    "speciesNeeded": 8,
-    "pityCasts": 6,
-    "pagePityCasts": 25
+    "speciesNeeded": 8
   },
   "provisions": {
     "fish": 5,
@@ -92,13 +90,5 @@
     "catchesPerHour": 0.6
   },
   "legendaryChance": 0.1,
-  "creelLimit": 12,
-  "lessons": {
-    "gapCasts": 10
-  },
-  "thoughts": {
-    "gapCasts": 6,
-    "repeatCasts": 30,
-    "repeats": 3
-  }
+  "creelLimit": 12
 }

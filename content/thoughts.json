@@ -15,8 +15,7 @@
           "item": "old-rod"
         }
       ]
-    ],
-    "gap": false
+    ]
   },
   {
     "id": "first-fish",
@@ -35,49 +34,29 @@
           "min": 1
         }
       ]
-    ],
-    "gap": false
+    ]
   },
   {
-    "id": "cast-it-out",
+    "id": "shell-hook",
     "order": 3,
     "regionId": "castaway-island",
     "lines": [
-      "I am starting to see how this goes: bait on, cast out, wait, watch the float.",
-      "It is easier than thinking about anything else.",
+      "A hook I made myself, out of a shell off the beach. It is not much of a hook.",
+      "But it is on the line, and the line is in the water. Bait on, cast out, wait, watch the float.",
       "When in doubt, cast it out."
     ],
     "when": [
       [
         {
-          "type": "stat",
-          "stat": "catches",
-          "min": 3
-        }
-      ]
-    ]
-  },
-  {
-    "id": "pulp",
-    "order": 4,
-    "regionId": "castaway-island",
-    "lines": [
-      "A bottle, but the sea got in before I did. The paper inside is pulp.",
-      "There will be others. There always seem to be, once I have fished a while longer."
-    ],
-    "when": [
-      [
-        {
-          "type": "count",
-          "key": "pulpBottle",
-          "min": 1
+          "type": "held",
+          "item": "shell-hook"
         }
       ]
     ]
   },
   {
     "id": "the-other-castaway",
-    "order": 5,
+    "order": 4,
     "regionId": "castaway-island",
     "lines": [
       "Somebody else was here.",
@@ -91,8 +70,24 @@
           "min": 1
         }
       ]
+    ]
+  },
+  {
+    "id": "tide",
+    "order": 5,
+    "regionId": "castaway-island",
+    "lines": [
+      "Another of their pages, just when I needed it. The tide keeps bringing them in the moment I am stuck.",
+      "I have decided not to ask why. I just keep casting."
     ],
-    "gap": false
+    "when": [
+      [
+        {
+          "type": "pages",
+          "min": 3
+        }
+      ]
+    ]
   },
   {
     "id": "day-two",
@@ -201,44 +196,22 @@
     "order": 11,
     "regionId": "castaway-island",
     "lines": [
-      "Lost one. A good one, I think. I felt it shake its head, and then nothing.",
+      "Lost one. I felt it shake its head twice, and then the hook came back to me empty.",
       "I am angrier about that fish than I have been about anything since the storm. Which is probably a good sign."
     ],
     "when": [
       [
         {
-          "type": "stat",
-          "stat": "lost",
+          "type": "count",
+          "key": "pulled",
           "min": 1
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 4
-        }
-      ]
-    ]
-  },
-  {
-    "id": "knife",
-    "order": 12,
-    "regionId": "castaway-island",
-    "lines": [
-      "A sharp stone lashed to a stick. Ten thousand years of progress, and here I am back at the start of it.",
-      "It cuts, though. It really cuts."
-    ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "stone-knife"
         }
       ]
     ]
   },
   {
     "id": "day-three",
-    "order": 13,
+    "order": 12,
     "regionId": "castaway-island",
     "lines": [
       "Third morning. I scratched three lines into a palm at camp.",
@@ -255,7 +228,7 @@
   },
   {
     "id": "quiet",
-    "order": 14,
+    "order": 13,
     "regionId": "castaway-island",
     "lines": [
       "I have stopped jumping at every twitch of the line. My hands know the cast now.",
@@ -273,7 +246,7 @@
   },
   {
     "id": "friend",
-    "order": 15,
+    "order": 14,
     "regionId": "castaway-island",
     "lines": [
       "I have started to think of whoever wrote the pages as a friend. A friend who is always a few weeks ahead of me.",
@@ -283,14 +256,14 @@
       [
         {
           "type": "pages",
-          "min": 3
+          "min": 5
         }
       ]
     ]
   },
   {
     "id": "bamboo",
-    "order": 16,
+    "order": 15,
     "regionId": "castaway-island",
     "lines": [
       "A real rod. All right: a long cane with a line on it. But it bends like a real one, and it throws like one.",
@@ -307,7 +280,7 @@
   },
   {
     "id": "talking",
-    "order": 17,
+    "order": 16,
     "regionId": "castaway-island",
     "lines": [
       "I talk to the fish now. Mostly about the weather, which is always the same.",
@@ -329,7 +302,7 @@
   },
   {
     "id": "fifty",
-    "order": 18,
+    "order": 17,
     "regionId": "castaway-island",
     "lines": [
       "Fifty fish.",
@@ -348,7 +321,7 @@
   },
   {
     "id": "fire",
-    "order": 19,
+    "order": 18,
     "regionId": "castaway-island",
     "lines": [
       "A fire of my own, and fish cooked on it. I sat up late just to watch it.",
@@ -365,7 +338,7 @@
   },
   {
     "id": "week",
-    "order": 20,
+    "order": 19,
     "regionId": "castaway-island",
     "lines": [
       "A week, near enough. The island has started to feel less like something that happened to me and more like a place I live.",
@@ -381,32 +354,8 @@
     ]
   },
   {
-    "id": "night-water",
-    "order": 21,
-    "regionId": "castaway-island",
-    "lines": [
-      "Out with the torch. The rocks I fish every day are a different place after dark, full of eyes.",
-      "I was not scared. Mostly I was not scared."
-    ],
-    "when": [
-      [
-        {
-          "type": "held",
-          "item": "torch"
-        },
-        {
-          "type": "phase",
-          "phases": [
-            "night",
-            "dusk"
-          ]
-        }
-      ]
-    ]
-  },
-  {
     "id": "leaving",
-    "order": 22,
+    "order": 20,
     "regionId": "castaway-island",
     "lines": [
       "“Not with this gear. Not on this island.”",
@@ -424,7 +373,7 @@
   },
   {
     "id": "hundred",
-    "order": 23,
+    "order": 21,
     "regionId": "castaway-island",
     "lines": [
       "A hundred fish.",
@@ -442,12 +391,11 @@
   },
   {
     "id": "bearing",
-    "order": 24,
+    "order": 22,
     "regionId": "castaway-island",
     "lines": [
       "West-south-west. Smoke on the horizon some evenings, and a port two days off.",
-      "It took them seventy-one days. I have been here {days}.",
-      "A hull, a mast, a sail, an oar to steer, food for the crossing. I know what to do now. I just have to do it."
+      "It took them seventy-one days. I have been here {days}."
     ],
     "when": [
       [
@@ -456,12 +404,11 @@
           "min": 10
         }
       ]
-    ],
-    "gap": false
+    ]
   },
   {
     "id": "hull",
-    "order": 25,
+    "order": 23,
     "regionId": "castaway-island",
     "lines": [
       "A hull. It floats. I sat on it in the lagoon for an hour, just to be sure.",
@@ -478,7 +425,7 @@
   },
   {
     "id": "ready",
-    "order": 26,
+    "order": 24,
     "regionId": "castaway-island",
     "lines": [
       "Everything is ready. I walked the whole island one last time.",
@@ -512,12 +459,11 @@
           "item": "provisions"
         }
       ]
-    ],
-    "gap": false
+    ]
   },
   {
     "id": "port",
-    "order": 27,
+    "order": 25,
     "regionId": "belize-cayes",
     "lines": [
       "People. Noise. Somebody frying fish on a cart and shouting about it.",
@@ -529,29 +475,6 @@
         {
           "type": "at",
           "location": "port-esperanza"
-        }
-      ]
-    ],
-    "gap": false
-  },
-  {
-    "id": "pages-kept",
-    "order": 28,
-    "regionId": "belize-cayes",
-    "lines": [
-      "I still have the pages. All ten, dried out and pressed flat in the back of my log.",
-      "Somebody in this town might remember a castaway who came in on a raft. I keep meaning to ask."
-    ],
-    "when": [
-      [
-        {
-          "type": "flag",
-          "flag": "launched"
-        },
-        {
-          "type": "stat",
-          "stat": "catches",
-          "min": 140
         }
       ]
     ]

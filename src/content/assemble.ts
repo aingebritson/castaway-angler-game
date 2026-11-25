@@ -167,13 +167,19 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
     lessonIds.add(l.id);
     if (!regions[l.regionId]) err(`${where}: missing region "${l.regionId}"`);
     l.unlocks.recipes.forEach((r) => !recipes[r] && err(`${where}: missing recipe "${r}"`));
-    for (const group of l.when) for (const c of group) {
+    l.after.forEach((i) => needItem(i, where));
+    for (const tr of l.triggers) for (const c of tr.if) {
       if (c.type === 'held') needItem(c.item, where);
       if (c.type === 'at' && !locations[c.location]) err(`${where}: missing location "${c.location}"`);
     }
-    // Never stuck: some way to learn it must not depend on luck with a particular event.
-    if (!l.when.some((g) => g.every((c) => c.type === 'stat' || c.type === 'held' || c.type === 'kinds' || c.type === 'hookless'))) {
-      issues.warnings.push(`${where}: every way to learn it waits on an event; add a fallback`);
+    if (l.via) {
+      const pg = pages.find((p) => p.id === l.via);
+      if (!pg) err(`${where}: missing page "${l.via}"`);
+      else if (pg.lesson !== l.id) err(`${where}: page ${l.via} does not name this lesson back`);
+    }
+    // Never stuck: some trigger must come from simply fishing, not from luck with one particular event.
+    if (!l.triggers.some((tr) => tr.if.every((c) => c.type === 'stat' || c.type === 'held' || c.type === 'kinds' || c.type === 'hookless'))) {
+      issues.warnings.push(`${where}: every trigger waits on a particular event; add one that only needs fishing`);
     }
   }
   const thoughtIds = new Set<string>();
@@ -195,7 +201,14 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
     }
   }
   for (const loc of Object.values(locations)) for (const u of loc.unlock) if (u.type === 'lesson' && !lessonIds.has(u.lesson)) err(`location ${loc.id}: unknown lesson "${u.lesson}"`);
+  let lastPageLesson = -1;
   for (const p of pages) {
+    if (p.lesson) {
+      const li = lessons.findIndex((l) => l.id === p.lesson);
+      if (li < 0) err(`page ${p.id}: unknown lesson "${p.lesson}"`);
+      else if (li < lastPageLesson) err(`page ${p.id}: its lesson comes before the previous page's, so the pages would arrive out of order`);
+      lastPageLesson = li;
+    }
     p.recipes.forEach((r) => !recipes[r] && err(`page ${p.id}: missing recipe "${r}"`));
     p.rumours.forEach((r) => !rumours[r] && err(`page ${p.id}: missing rumour "${r}"`));
   }

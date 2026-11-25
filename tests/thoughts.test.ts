@@ -5,7 +5,7 @@
 import { describe, expect, it } from 'vitest';
 import { runPace } from '../scripts/lib/paceBot';
 import { loadContentNode } from '../src/content/loadNode';
-import { type Ctx, gather, pickup } from '../src/state/actions';
+import { type Ctx, gather, pickup, travel } from '../src/state/actions';
 import { checkThoughts, fillThought, syncThoughts } from '../src/state/thoughts';
 import { migrate, newGame } from '../src/state/state';
 
@@ -18,30 +18,57 @@ describe('thoughts', () => {
   it('the story arrives: the rod, the first fish, the other castaway, a hundred fish, the bearing', () => {
     for (const r of runs) {
       const ids = r.thoughts.map((t) => t.id);
-      for (const id of ['the-rod', 'first-fish', 'the-other-castaway', 'ten', 'knife', 'fifty', 'hundred', 'bearing', 'ready']) expect(ids, id).toContain(id);
+      for (const id of ['the-rod', 'first-fish', 'shell-hook', 'the-other-castaway', 'ten', 'fifty', 'hundred', 'bearing', 'ready']) expect(ids, id).toContain(id);
       expect(new Set(ids.filter((i) => !i.startsWith('mind:'))).size).toBe(ids.filter((i) => !i.startsWith('mind:')).length);
     }
   });
 
-  it('most of the island’s thoughts are had in a playthrough', () => {
-    const island = content.thoughts.filter((t) => t.regionId === 'castaway-island').map((t) => t.id);
+  it('every island thought that follows from fishing itself is had in a playthrough', () => {
+    // Days need real days to pass, and stolen bait and thrown hooks are luck; the rest must all come.
+    const luck = (t: (typeof content.thoughts)[number]) => t.when.every((g) => g.some((c) => c.type === 'day' || (c.type === 'count' && ['stolen', 'pulled'].includes(c.key))));
+    const island = content.thoughts.filter((t) => t.regionId === 'castaway-island' && !luck(t)).map((t) => t.id);
     const had = new Set(runs.flatMap((r) => r.thoughts.map((t) => t.id)));
-    expect(island.filter((id) => had.has(id)).length / island.length).toBeGreaterThan(0.85);
+    expect(island.filter((id) => !had.has(id))).toEqual([]);
   });
 
-  it('thoughts are spaced out, and never the same moment as a lesson', () => {
-    const gap = content.balance.thoughts.gapCasts;
-    const free = new Set(content.thoughts.filter((t) => !t.gap).map((t) => t.id));
+  it('nothing is said twice, and the castaway never nags', () => {
     for (const r of runs) {
-      const casts = r.thoughts.map((t) => t.cast);
-      r.thoughts.forEach((t, i) => {
-        if (i === 0 || free.has(t.id)) return;
-        expect(casts[i] - casts[i - 1], t.id).toBeGreaterThanOrEqual(gap);
-      });
-      // Not a wall of text either: no more than ten cards of any kind in the first ten minutes.
-      const early = r.thoughts.filter((t) => t.minute < 10).length + r.events.filter((e) => e.minute < 10 && /^(lesson|page)/.test(e.what)).length;
-      expect(early).toBeLessThanOrEqual(10);
+      const said = r.thoughts.filter((t) => t.id.startsWith('mind:')).map((t) => t.id);
+      expect(new Set(said).size).toBe(said.length);
+      // Goals are said when something prompts them, not on a timer: a handful per lesson at most.
+      expect(said.length).toBeLessThan(content.lessons.length * 4);
     }
+  });
+
+  it('thoughts about a page come with the page', () => {
+    for (const r of runs) {
+      for (const [id, n] of [['the-other-castaway', 1], ['tide', 3], ['friend', 5], ['leaving', 9], ['bearing', 10]] as const) {
+        const th = r.thoughts.find((t) => t.id === id)!;
+        const page = r.events.find((e) => e.what === `page ${n}`)!;
+        expect(Math.abs(th.minute - page.minute), id).toBeLessThan(0.5);
+      }
+    }
+  });
+
+  it('says where a missing part is when the castaway walks into that place', () => {
+    const s = newGame(13, START);
+    s.flags.tutDone = true;
+    pickup(s, ctx(), 'start-rod');
+    s.everHeld['sand-flea'] = true;
+    s.stats.catches = 6;
+    s.lessons.push('hooks');
+    s.recipesKnown.push('shell-hook');
+    s.thoughts = content.thoughts.map((t) => t.id);
+    s.inventory.shell = 1;
+    s.locationId = 'rocky-point';
+    expect(checkThoughts(s, ctx())).toEqual([]);
+    travel(s, ctx(), 'beach');
+    const ev = checkThoughts(s, ctx());
+    expect(ev).toEqual([expect.objectContaining({ type: 'thought', mind: true })]);
+    travel(s, ctx(), 'rocky-point');
+    checkThoughts(s, ctx());
+    travel(s, ctx(), 'beach');
+    expect(checkThoughts(s, ctx())).toEqual([]);
   });
 
   it('says the next thing out loud once it is ready to do, and not again straight away', () => {

@@ -13,6 +13,7 @@ import {
 import { type Rng, chance, makeRng, weighted } from '../sim/rng';
 import { type SunInfo, moonIndex, sunInfo } from '../sim/time';
 import { craftCheck, nodeOpen, pickProvisions, recipeView, refreshNode, resolveTrap, soakPhases, tablePick } from '../sim/world';
+import { teach } from './lessons';
 import type { GameState, GuideEntry, JournalKind, KeptFish } from './state';
 
 export interface Ctx {
@@ -41,11 +42,11 @@ export interface Reveal {
 export type GameEvent =
   | { type: 'toast'; text: string; glyph?: string; tone?: 'good' | 'warn' | 'info' }
   | { type: 'gain'; itemId: string; qty: number }
-  | { type: 'page'; pageId: string }
+  | { type: 'page'; pageId: string; lessonId?: string; seen?: string }
   | { type: 'reveal'; reveal: Reveal }
   | { type: 'sfx'; id: string }
   | { type: 'haul'; reveals: Reveal[]; soakH: number }
-  | { type: 'lesson'; lessonId: string }
+  | { type: 'lesson'; lessonId: string; seen: string }
   | { type: 'thought'; lines: string[]; thoughtId?: string; mind?: boolean }
   | { type: 'ending' };
 
@@ -269,10 +270,7 @@ export function gather(s: GameState, ctx: Ctx, hotspotId: string): GameEvent[] {
   let itemId = def.item ?? null;
   if (def.table) {
     const nth = def.max - save.stock;
-    const next = ctx.content.pages[s.pagesFound];
-    // The tide brings a bottle first thing each day while there are pages left to find.
-    if (nth === 0 && next && bottleEligible(s, ctx.content)) itemId = 'message-bottle';
-    else itemId = tablePick(def, s.seed, `${key}@${save.day ?? ''}`, nth);
+    itemId = tablePick(def, s.seed, `${key}@${save.day ?? ''}`, nth);
   }
   if (!itemId) return [];
   take();
@@ -290,13 +288,6 @@ function bareHands(content: Content): Rig {
 
 // ---------- bottles, pages, rumours ----------
 
-function bottleEligible(s: GameState, content: Content): boolean {
-  const next = content.pages[s.pagesFound];
-  if (!next) return false;
-  if (s.lessons.length < next.minLessons) return false;
-  return !next.bearing || speciesCaught(s, content) >= content.balance.bearing.speciesNeeded;
-}
-
 export function applyRumour(s: GameState, ctx: Ctx, rumourId: string): void {
   const r = ctx.content.rumours[rumourId];
   if (!r) return;
@@ -309,24 +300,27 @@ export function applyRumour(s: GameState, ctx: Ctx, rumourId: string): void {
   log(s, ctx, 'rumour', `${who}: “${r.text}” (${r.source})`, { speciesId: r.speciesId });
 }
 
+/**
+ * A bottle on the line. When a lesson is waiting on the other castaway's
+ * page, this is it: the page teaches the lesson. Otherwise it is just glass.
+ */
 export function openBottle(s: GameState, ctx: Ctx): GameEvent[] {
   s.stats.castsSinceBottle = 0;
-  const next = ctx.content.pages[s.pagesFound];
-  if (!next || !bottleEligible(s, ctx.content)) {
+  const lesson = s.stage ? ctx.content.lessons.find((l) => l.id === s.stage!.lesson) : null;
+  const page = lesson?.via ? ctx.content.pages.find((p) => p.id === lesson.via) : null;
+  if (!lesson || !page || s.lessons.includes(lesson.id)) {
+    s.stage = null;
     addItem(s, 'sea-glass', 1);
-    if (next) countEvent(s, 'pulpBottle');
-    const why = next ? 'The paper inside has gone to pulp. Whatever it said, I am not ready to read it.' : 'Empty, but the glass is a pretty green.';
-    return [toast(`A corked bottle. ${why}`, '🍾'), { type: 'gain', itemId: 'sea-glass', qty: 1 }];
+    return [toast('An empty bottle, worn frosty by the sand. The glass is a pretty green.', '🍾'), { type: 'gain', itemId: 'sea-glass', qty: 1 }];
   }
-  s.pagesFound++;
-  for (const r of next.recipes) if (!s.recipesKnown.includes(r)) s.recipesKnown.push(r);
-  log(s, ctx, 'page', `${next.title}. ${next.text}`);
-  for (const r of next.rumours) applyRumour(s, ctx, r);
-  if (next.bearing) {
-    s.flags.bearing = true;
-    log(s, ctx, 'story', 'A bearing. West-south-west, two days. There is somewhere to go.');
-  }
-  return [{ type: 'page', pageId: next.id }];
+  const seen = s.stage!.seen;
+  s.stage = null;
+  s.pagesFound = Math.max(s.pagesFound + 1, page.order);
+  log(s, ctx, 'page', `${page.title}. ${page.text}`);
+  for (const r of page.rumours) applyRumour(s, ctx, r);
+  teach(s, ctx, lesson, seen);
+  if (page.bearing) log(s, ctx, 'story', 'A bearing. West-south-west, two days. There is somewhere to go.');
+  return [{ type: 'page', pageId: page.id, lessonId: lesson.id, seen }];
 }
 
 // ---------- fishing ----------
@@ -348,9 +342,13 @@ export function beginCast(s: GameState, ctx: Ctx, zoneId: string, power = 0.5): 
   s.stats.casts++;
   countEvent(s, `cast:${s.locationId}/${zoneId}`);
   if (power >= 0.92) countEvent(s, 'longCast');
+  if (c.phase === 'dusk' || c.phase === 'night') countEvent(s, 'darkCast');
+  if (c.phase === 'night') countEvent(s, 'nightCast');
   s.stats.castsSinceBottle++;
   s.zonesSeen[`${s.locationId}/${zoneId}`] = true;
   const plan = withRng(s, (rng) => planWait(c, rng));
+  // A page is waiting: this cast brings it in, without keeping anyone waiting.
+  if (s.stage) return { ...plan, active: true, waitS: Math.min(plan.waitS, 3), nibbles: 0 };
   // The very first fish comes quickly, after a nibble or two, so the player learns the rhythm.
   if (s.stats.catches === 0 && plan.active) return { ...plan, waitS: Math.min(plan.waitS, 3 + 2 * (s.stats.casts - 1)), nibbles: Math.max(1, plan.nibbles) };
   return plan;
@@ -366,9 +364,7 @@ export function rollBite(s: GameState, ctx: Ctx, zoneId: string): Bite {
       if (s.legendariesCaught.includes(leg.id)) continue;
       if (legendaryActive(leg, c) && chance(rng, leg.spawn.chancePerCast || b.legendaryChance)) return legendaryBite(leg, c);
     }
-    const next = ctx.content.pages[s.pagesFound];
-    const pity = next?.bearing ? b.bearing.pityCasts : b.bearing.pagePityCasts;
-    if (bottleEligible(s, ctx.content) && s.stats.castsSinceBottle >= pity) return { kind: 'junk', itemId: 'message-bottle' };
+    if (s.stage) return { kind: 'junk', itemId: 'message-bottle' };
     let bite = resolveBite(c, rng);
     // Until the first catch, the water is kind: a fish, small enough to land, with time to strike.
     for (let i = 0; i < 8 && s.stats.catches === 0 && !(bite.kind === 'fish' && bite.outcome !== 'overmatched'); i++) bite = resolveBite(c, rng);
@@ -399,6 +395,7 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
   const phase = phaseOverride ?? sun.phase;
   const e = entry(s, sp.id);
   const isNew = e.state !== 'caught';
+  if (isNew && sp.kind !== 'sighting') countEvent(s, 'newKind');
   e.state = 'caught';
   e.count++;
   e.firstAt ??= ctx.now;
@@ -442,7 +439,13 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
 /** A fish is in hand after a cast. */
 export function landFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string): Reveal {
   useBait(s, ctx);
-  return recordCatch(s, ctx, bite, zoneId, 'rod');
+  const r = recordCatch(s, ctx, bite, zoneId, 'rod');
+  // The ship's rusty hook gives out on the fifth fish: the first thing the castaway has to work out.
+  if (s.rig.hook === 'rusty-hook' && s.stats.catches >= 5 && !s.lessons.includes('hooks')) {
+    takeItem(s, 'rusty-hook');
+    tidyRig(s, ctx.content);
+  }
+  return r;
 }
 
 export type LossReason = 'snapped' | 'pulled' | 'spooled' | 'missed';
@@ -472,7 +475,10 @@ export function loseFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string,
       tidyRig(s, ctx.content);
       events.push(toast(`The line parted. Lost the ${ctx.content.items[lost].name.toLowerCase()}.`, '💥', 'warn'));
     }
-  } else events.push(toast('The hook pulled free.', '🪝', 'warn'));
+  } else {
+    countEvent(s, 'pulled');
+    events.push(toast('The hook pulled free.', '🪝', 'warn'));
+  }
   const e = entry(s, sp.id);
   if (e.state === 'rumoured') e.state = 'sighted';
   if (bite.legendaryId) {
@@ -551,6 +557,7 @@ export function keepFish(s: GameState, ctx: Ctx, r: Reveal): GameEvent[] {
     return [toast('The basket is full. Release it, or make room at camp.', '🧺', 'warn')];
   }
   s.creel.push({ uid: s.nextUid++, speciesId: r.speciesId, lengthCm: r.lengthCm, weightG: r.weightG, grade: r.grade, at: ctx.now, locationId: r.locationId });
+  countEvent(s, 'kept');
   return [{ type: 'sfx', id: 'keep' }];
 }
 
@@ -589,6 +596,7 @@ export function grantClue(s: GameState, ctx: Ctx, clueId: string): boolean {
 export function fishToBait(s: GameState, ctx: Ctx, r: Reveal): GameEvent[] {
   if (!has(s, 'stone-knife') && !has(s, 'fillet-knife')) return [toast('I need a knife to cut bait.', '🔪', 'warn')];
   const events: GameEvent[] = [];
+  countEvent(s, 'cleaned');
   gain(s, ctx, 'cut-bait', ctx.content.balance.camp.cleanBait, events);
   gain(s, ctx, 'fish-bone', ctx.content.balance.camp.cleanBones, events);
   return events;
@@ -625,6 +633,7 @@ export function cleanFish(s: GameState, ctx: Ctx, uid: number): GameEvent[] {
   const i = s.creel.findIndex((f) => f.uid === uid);
   if (i < 0) return [];
   s.creel.splice(i, 1);
+  countEvent(s, 'cleaned');
   const events: GameEvent[] = [{ type: 'sfx', id: 'craft' }];
   gain(s, ctx, 'cut-bait', ctx.content.balance.camp.cleanBait, events);
   gain(s, ctx, 'fish-bone', ctx.content.balance.camp.cleanBones, events);

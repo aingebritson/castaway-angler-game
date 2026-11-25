@@ -1,14 +1,15 @@
 /**
- * Thoughts: the castaway talking to themself. Two kinds:
+ * Thoughts: the castaway talking to themself, the moment something happens.
  *
- * - Story thoughts (content/thoughts.json) arrive once, when something in
- *   their days has changed: the first fish, the first night, a page from the
- *   last castaway, the hundredth fish. Together they are the story.
- * - Mind thoughts are the next goal, said out loud only when it is new and
- *   urgent, or when the player has spent a while not getting to it.
+ * - Story thoughts (content/thoughts.json) each follow one event: picking up
+ *   the rod, the first fish, a hook of their own making, nightfall, a new
+ *   morning, a page from the other castaway, the hundredth fish. Had once,
+ *   straight away.
+ * - The next goal is said out loud only when something prompts it: the last
+ *   part for a recipe comes to hand ("I have everything for…"), a raft part
+ *   is finished, or the castaway arrives where a missing part is.
  *
- * Checked after every action, after lessons; at most one per action, spaced
- * a few casts apart so they never pile up.
+ * Nothing here runs on a timer or a count of casts.
  */
 import type { Content } from '../content/assemble';
 import type { Thought } from '../content/schema';
@@ -38,39 +39,34 @@ export function fillThought(line: string, s: GameState, content: Content): strin
 }
 
 /**
- * At most one thought for this action. `taught` is true when a lesson card
- * has just gone up: no thought then, and the lesson's own "Now" counts as
- * having said the next goal.
+ * The thought this action gives rise to, if any. `taught` is true when a
+ * lesson has just been learned: its card already says what to do next.
  */
 export function checkThoughts(s: GameState, ctx: Ctx, taught = false): GameEvent[] {
   tickDay(s, ctx);
-  const b = ctx.content.balance.thoughts;
+  const m = (s.mind = { loc: s.mind?.loc ?? s.locationId, said: Array.isArray(s.mind?.said) ? s.mind.said : [] });
+  const prevLoc = m.loc;
+  m.loc = s.locationId;
   const goal = nextGoal(s, ctx.content);
-  if (goal && s.mind?.key !== goal.key) s.mind = { key: goal.key, at: s.stats.casts, shown: 0, last: -1 };
-  if (!goal) s.mind = null;
-  if (taught) {
-    if (s.mind) s.mind = { ...s.mind, shown: Math.max(1, s.mind.shown), last: s.stats.casts };
-    return [];
-  }
-  const sinceAny = s.stats.casts - Math.max(s.counts.castsAtThought ?? -999, s.counts.castsAtLesson ?? -999);
-  const spaced = sinceAny >= b.gapCasts;
+  const say = (key: string) => {
+    if (!m.said.includes(key)) m.said = [...m.said.slice(-60), key];
+  };
+  // A lesson card or page has just said what to do next.
+  if (taught && goal) say(goal.key);
 
-  const th = ctx.content.thoughts.find((x) => ready(x, s, ctx) && (!x.gap || spaced));
+  const th = ctx.content.thoughts.find((x) => ready(x, s, ctx));
   if (th) {
     s.thoughts.push(th.id);
-    s.counts.castsAtThought = s.stats.casts;
+    if (goal?.nudge === 'now') say(goal.key);
     const lines = th.lines.map((l) => fillThought(l, s, ctx.content));
     log(s, ctx, 'thought', lines.join(' '));
     return [{ type: 'thought', thoughtId: th.id, lines }];
   }
 
-  const m = s.mind;
-  if (!goal || !m || goal.nudge == null || !spaced) return [];
-  const due = m.shown === 0 ? s.stats.casts - m.at >= goal.nudge : m.shown <= b.repeats && s.stats.casts - m.last >= b.repeatCasts;
-  if (!due) return [];
-  m.shown++;
-  m.last = s.stats.casts;
-  s.counts.castsAtThought = s.stats.casts;
+  if (!goal || m.said.includes(goal.key)) return [];
+  const arrived = goal.nudge === 'arrive' && goal.where === s.locationId && prevLoc !== s.locationId;
+  if (!arrived && goal.nudge !== 'now') return [];
+  say(goal.key);
   return [{ type: 'thought', lines: [goal.text], mind: true }];
 }
 

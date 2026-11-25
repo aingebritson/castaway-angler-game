@@ -6,7 +6,7 @@
 import { describe, expect, it } from 'vitest';
 import { runPace } from '../scripts/lib/paceBot';
 import { loadContentNode } from '../src/content/loadNode';
-import { type Ctx, craft, gather, keepFish, pickup, recordCatch, travel } from '../src/state/actions';
+import { type Ctx, beginCast, craft, gather, keepFish, landFish, landJunk, pickup, recordCatch, rollBite, travel } from '../src/state/actions';
 import { nextGoal } from '../src/state/goals';
 import { checkLessons, nextLesson, syncLessons } from '../src/state/lessons';
 import { decodeSave, encodeSave, migrate, newGame } from '../src/state/state';
@@ -37,14 +37,54 @@ describe('castaway playthrough', () => {
     console.log(`pace: knife ${when('made: stone-knife').toFixed(0)} min, bamboo rod ${when('made: bamboo-rod').toFixed(0)} min, launch ${when('launched').toFixed(0)} min of play`);
   });
 
-  it('lessons arrive one at a time, not in a pile', () => {
+  it('the other castaway’s pages arrive in order, one per lesson, never two at once', () => {
     for (const r of runs) {
-      const times = r.events.filter((e) => e.what.startsWith('lesson:')).map((e) => e.minute);
-      const gaps = times.slice(1).map((t, i) => t - times[i]);
-      // Cut bait follows the knife at once; everything else is spaced out.
-      const close = gaps.filter((g) => g < 2).length;
-      expect(close).toBeLessThanOrEqual(1);
+      const pages = r.events.filter((e) => /^page \d+$/.test(e.what));
+      expect(pages.map((e) => e.what)).toEqual(content.pages.map((_, i) => `page ${i + 1}`));
+      const gaps = pages.slice(1).map((e, i) => e.minute - pages[i].minute);
+      expect(Math.min(...gaps)).toBeGreaterThan(1);
     }
+  });
+
+  it('the rusty hook gives out on the fifth fish, and that teaches hooks at once', () => {
+    const s = newGame(5, Date.parse(START));
+    s.flags.tutDone = true;
+    pickup(s, ctx(), 'start-rod');
+    s.stats.catches = 4;
+    const bite = { kind: 'fish' as const, speciesId: 'abudefduf-saxatilis', lengthCm: 14, weightG: 60, grade: 'average' as const, percentile: 0.5, ratio: 0.2, outcome: 'fight' as const, hookWindowS: 1 };
+    landFish(s, ctx(), bite, 'shallows');
+    expect(s.inventory['rusty-hook']).toBeUndefined();
+    const ev = checkLessons(s, ctx());
+    expect(ev[0]).toMatchObject({ type: 'lesson', lessonId: 'hooks' });
+    expect(s.recipesKnown).toContain('shell-hook');
+  });
+
+  it('a page comes up on the very next cast after its moment, and teaches its lesson', () => {
+    const s = newGame(6, Date.parse(START));
+    s.flags.tutDone = true;
+    pickup(s, ctx(), 'start-rod');
+    s.stats.catches = 6;
+    s.lessons.push('hooks');
+    s.everHeld['shell-hook'] = true;
+    s.inventory['sand-flea'] = 5;
+    s.rig.bait = 'sand-flea';
+    // Fish kept before the lesson opened do not count: it follows from what happens next.
+    s.counts.kept = 9;
+    checkLessons(s, ctx());
+    expect(s.opened.edge).toBeTruthy();
+    expect(s.stage).toBeNull();
+    s.counts.kept += 4;
+    expect(checkLessons(s, ctx())).toEqual([]);
+    expect(s.stage?.lesson).toBe('edge');
+    const plan = beginCast(s, ctx(), 'shallows', 0.6);
+    expect(plan?.active).toBe(true);
+    const bite = rollBite(s, ctx(), 'shallows');
+    expect(bite).toEqual({ kind: 'junk', itemId: 'message-bottle' });
+    const ev = landJunk(s, ctx(), 'message-bottle');
+    expect(ev).toEqual([expect.objectContaining({ type: 'page', pageId: 'page-1', lessonId: 'edge', seen: expect.stringMatching(/Four fish/) })]);
+    expect(s.recipesKnown).toContain('stone-knife');
+    expect(s.stage).toBeNull();
+    expect(landJunk(s, ctx(), 'message-bottle')).toEqual(expect.arrayContaining([expect.objectContaining({ type: 'gain', itemId: 'sea-glass' })]));
   });
 
   it('the Thinking note always has something to say before the raft is ready', () => {

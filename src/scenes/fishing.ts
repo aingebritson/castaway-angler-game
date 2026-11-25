@@ -407,7 +407,11 @@ export class Fishing {
 
   private missed(): void {
     const { store } = this.host;
-    if (!this.bite) return;
+    if (!this.bite) {
+      // Nothing was on: never leave the line stuck waiting for a strike.
+      this.setPhase('idle');
+      return;
+    }
     store.run(loseFish, this.bite, this.cast.zoneId, 'missed');
     this.bite = null;
     this.under = 0;

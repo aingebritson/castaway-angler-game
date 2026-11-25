@@ -635,7 +635,10 @@ export function DebugPanel({ onClose }: { onClose(): void }) {
         <button class="btn small alt" onClick={() => store.act((d) => { d.rng = d.seed; })}>Rewind stream to seed</button>
         <button class="btn small alt" onClick={() => store.act((d) => { d.seed = (Math.random() * 2 ** 32) >>> 0; d.rng = d.seed; })}>New seed</button>
         <button class="btn small alt" onClick={() => store.act((d) => { d.nodes = {}; })}>Regrow everything</button>
-        <button class="btn small alt" onClick={() => store.act((d) => { d.stats.castsSinceBottle = 99; })}>Next bite: bottle</button>
+        <button class="btn small alt" onClick={() => store.act((d) => {
+          const l = store.content.lessons.find((x) => x.via && !d.lessons.includes(x.id));
+          if (l) d.stage = { lesson: l.id, seen: l.triggers[0].seen };
+        })}>Next cast: their next page</button>
       </div>
     </Sheet>
   );

@@ -66,34 +66,65 @@ export function RevealCard({ reveal, onDone }: { reveal: Reveal; onDone(): void 
   );
 }
 
-/** A page from the earlier castaway's journal. */
-export function PageCard({ pageId, onDone }: { pageId: string; onDone(): void }) {
+/** What a lesson lets you do now: the effect, and chips for what can now be made. */
+function LessonNow({ lessonId }: { lessonId: string }) {
   const { store } = useGame();
-  const page = store.content.pages.find((p) => p.id === pageId)!;
+  const c = store.content;
+  const l = c.lessons.find((x) => x.id === lessonId)!;
+  return (
+    <>
+      <div class="lesson-box">
+        <b>How it works</b>
+        <p>{l.lesson}</p>
+      </div>
+      <div class="lesson-now">
+        <b>Now</b>
+        <p>{l.effect}</p>
+        {l.unlocks.recipes.length > 0 && (
+          <div class="need" style={{ justifyContent: 'center' }}>
+            {l.unlocks.recipes.map((r) => {
+              const out = c.items[c.recipes[r].output.item];
+              return <span key={r} class="chip ok"><ItemIcon id={out.id} size={16} /> {out.name}</span>;
+            })}
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
+
+export interface PageMsg {
+  pageId: string;
+  lessonId?: string;
+  seen?: string;
+}
+
+/**
+ * A page from the earlier castaway's journal, come up on the line just when
+ * the castaway needed it: what had happened, the page, and what it teaches.
+ */
+export function PageCard({ msg, onDone }: { msg: PageMsg; onDone(): void }) {
+  const { store } = useGame();
+  const page = store.content.pages.find((p) => p.id === msg.pageId)!;
   const first = page.order === store.content.pages[0]?.order;
-  const learned = [
-    ...page.recipes.map((r) => store.content.items[store.content.recipes[r].output.item].name),
-  ];
   return (
     <div class="card-wrap">
       <div class="card pagecard">
         <span class="banner new">A message in a bottle</span>
         <p class="page-pre">
+          {msg.seen && <>{msg.seen} </>}
           {first
-            ? 'Rolled tight inside the glass, and dry: a page torn from somebody’s notebook. The handwriting is not mine. Somebody else was stranded here, before me.'
-            : 'Another page, in the same hand.'}
+            ? 'Then the next cast came back heavy: a bottle, corked and sealed with wax. Inside, dry, a page torn from somebody’s notebook. The handwriting is not mine. Somebody else was stranded here, before me.'
+            : 'Then the next cast came back heavy: another bottle, and another page in the same hand.'}
         </p>
         <div class="page-sheet">
           <div class="page-kicker">From the other castaway’s journal</div>
           <h2>{page.title}</h2>
           <div class="body">{page.text}</div>
         </div>
-        {(learned.length > 0 || page.rumours.length > 0 || page.bearing) && (
-          <div class="learned">
-            {learned.length > 0 && <div><b>Now I know how to make:</b> {learned.join(', ').toLowerCase()}.</div>}
-            {page.rumours.length > 0 && <div style={{ marginTop: '4px' }}><b>Field guide:</b> {page.rumours.length} rumour{page.rumours.length > 1 ? 's' : ''} noted.</div>}
-            {page.bearing && <div style={{ marginTop: '4px' }}><b>A bearing off the island.</b></div>}
-          </div>
+        {msg.lessonId && <LessonNow lessonId={msg.lessonId} />}
+        {page.rumours.length > 0 && (
+          <div class="learned"><b>Field guide:</b> {page.rumours.length} rumour{page.rumours.length > 1 ? 's' : ''} noted.</div>
         )}
         <div class="actions"><button class="btn" onClick={onDone}>Keep the page</button></div>
       </div>
@@ -223,34 +254,23 @@ export function EndingCard({ onDone, hasPort }: { onDone(): void; hasPort: boole
   );
 }
 
-/** A lesson learned: what happened, the fishing idea behind it, and what it unlocks. */
-export function LessonCard({ lessonId, onDone }: { lessonId: string; onDone(): void }) {
+export interface LessonMsg {
+  lessonId: string;
+  seen: string;
+}
+
+/** A lesson learned: what just happened, the fishing idea behind it, and what it unlocks. */
+export function LessonCard({ msg, onDone }: { msg: LessonMsg; onDone(): void }) {
   const { store } = useGame();
-  const c = store.content;
-  const l = c.lessons.find((x) => x.id === lessonId)!;
+  const l = store.content.lessons.find((x) => x.id === msg.lessonId)!;
   return (
     <div class="card-wrap">
       <div class="card lessoncard">
         <span class="banner new">Learned something</span>
         <div class="lesson-glyph">{l.glyph}</div>
         <h2>{l.title}</h2>
-        <p class="quote seen">{l.seen}</p>
-        <div class="lesson-box">
-          <b>How it works</b>
-          <p>{l.lesson}</p>
-        </div>
-        <div class="lesson-now">
-          <b>Now</b>
-          <p>{l.effect}</p>
-          {l.unlocks.recipes.length > 0 && (
-            <div class="need" style={{ justifyContent: 'center' }}>
-              {l.unlocks.recipes.map((r) => {
-                const out = c.items[c.recipes[r].output.item];
-                return <span key={r} class="chip ok"><ItemIcon id={out.id} size={16} /> {out.name}</span>;
-              })}
-            </div>
-          )}
-        </div>
+        <p class="quote seen">{msg.seen}</p>
+        <LessonNow lessonId={l.id} />
         <div class="actions"><button class="btn" onClick={onDone}>Got it</button></div>
       </div>
     </div>

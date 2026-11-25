@@ -17,6 +17,7 @@ import {
 } from '../../src/state/actions';
 import { checkLessons } from '../../src/state/lessons';
 import { checkThoughts } from '../../src/state/thoughts';
+import { worthMaking } from '../../src/state/goals';
 import { sourceOf } from '../../src/state/sources';
 import { type GameState, newGame } from '../../src/state/state';
 
@@ -45,7 +46,6 @@ export interface PaceResult {
   state: GameState;
 }
 
-const ONE_OFF = ['tool', 'station', 'utility', 'rod', 'line', 'float', 'sinker', 'lure', 'trap', 'hook'];
 
 export function runPace(content: Content, seed: number, startIso = '2027-02-01T14:00:00Z', maxMinutes = 420, session = { minutes: 40, breakHours: 9 }): PaceResult {
   const t0 = Date.parse(startIso);
@@ -79,16 +79,18 @@ export function runPace(content: Content, seed: number, startIso = '2027-02-01T1
   };
   /** Run a reducer, then let the game teach whatever it has become ready to teach. */
   const act = <A extends unknown[], R>(fn: (s: GameState, c: Ctx, ...a: A) => R, ...args: A): R => {
-    const before = { pages: s.pagesFound, held: { ...s.everHeld } };
+    const before = { pages: s.pagesFound, held: { ...s.everHeld }, lessons: s.lessons.length };
     const out = fn(s, ctx(), ...args);
     const taught = checkLessons(s, ctx());
+    // Lessons that came on a page were taught inside the action itself.
+    for (const l of s.lessons.slice(before.lessons)) note(`lesson: ${l}`);
     for (const e of taught) {
       if (e.type === 'lesson') {
         note(`lesson: ${e.lessonId}`);
         spend(HUMAN.readCard);
       }
     }
-    for (const e of checkThoughts(s, ctx(), taught.length > 0)) {
+    for (const e of checkThoughts(s, ctx(), s.lessons.length > before.lessons)) {
       if (e.type !== 'thought') continue;
       thoughts.push({ minute: Math.round(minute() * 10) / 10, cast: s.stats.casts, id: e.thoughtId ?? `mind: ${e.lines[0]}` });
       spend(HUMAN.readThought);
@@ -217,7 +219,7 @@ export function runPace(content: Content, seed: number, startIso = '2027-02-01T1
     const wanted = s.recipesKnown
       .map((id) => content.recipes[id])
       .filter((r) => r && recipeView(r, s.recipesKnown) === 'known')
-      .filter((r) => (r.tier >= 3 ? !has(s, r.output.item) && !s.flags.launched : ONE_OFF.includes(content.items[r.output.item].kind) && !s.everHeld[r.output.item]))
+      .filter((r) => (r.tier >= 3 ? !has(s, r.output.item) && !s.flags.launched : worthMaking(s, content, r.output.item)))
       .filter((r) => r.id !== 'provisions' || s.larder.length >= 5);
     // Keep a spare hook once shell hooks are known.
     const hookCount = hooks().reduce((n, id) => n + s.inventory[id], 0);
