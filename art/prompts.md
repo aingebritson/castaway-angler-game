@@ -12,18 +12,6 @@ After a scene is ingested, set the top of its `waterPolygon` in the location dat
 
 # Items
 
-## item/big-game-rod
-
-Save as `art/inbox/item__big-game-rod.png`
-
-```text
-Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
-
-A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
-
-Subject: Big-game rod. A stand-up rod built for fish heavier than you. There is nothing in these waters it cannot hold. It must look clearly different from the offshore rod, which is a blue rod with black grips and a gold lever reel. Draw no reel: the reel is a separate item. A massive stand-up rod: a short, very thick black blank with silver roller guides (small wheels instead of rings), a long curved silver aluminium butt ending in a slotted gimbal cap, and a thick white foam foregrip.
-```
-
 # Portraits
 
 ## portrait/alvarez
