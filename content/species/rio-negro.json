@@ -1,0 +1,2200 @@
+[
+  {
+    "id": "cichla-temensis",
+    "commonName": "Speckled peacock bass",
+    "scientificName": "Cichla temensis",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 25,
+      "common": 55,
+      "max": 99,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.01122,
+      "b": 3.08
+    },
+    "recordNote": "FishBase lists a largest published weight of 12.2 kg; a 14 kg fish from the Marié River was submitted as a world record.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.9,
+      "stamina": 30
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#9a9a3c",
+      "accent": "#1f2a1e"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 60,
+    "description": "The fish Barcelos is famous for: a long, heavy-shouldered cichlid that hunts the edges of the archipelago's lagoons and sandy banks. Young fish are speckled with pale spots; big ones turn gold with three dark bars and a black eyespot on the tail. It hits a lure like a falling tree and then tries to pull the angler into the timber.",
+    "facts": [
+      "Adults hold in the deeper edges of lagoons and on the sandy and rocky banks of the main river.",
+      "It eats mostly small fish, especially characins under 10 cm.",
+      "The Barcelos region on the Rio Negro is known for world-record peacock bass."
+    ],
+    "visualNotes": "Elongate, deep-shouldered cichlid; three broad dark vertical bars; black ocellus ringed in gold on the tail base; red eye; young fish and some adults spotted with pale dots; breeding fish golden-yellow with a hump on the head.",
+    "sources": [
+      {
+        "title": "FishBase: Cichla temensis",
+        "url": "https://www.fishbase.se/summary/Cichla-temensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 99 cm TL, largest published weight 12.2 kg, lagoon and river-bank habitat, diet; length-weight a and b (Bayesian TL estimate; 15.7 kg at 99 cm, +29%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "Lubich et al. (2023): freshwater sport fishing in the middle Negro River, Boletim do Instituto de Pesca 49: e738",
+        "url": "https://doi.org/10.20950/1678-2305/bip.2023.49.e738",
+        "accessed": "2026-11-25",
+        "supports": "the main sport-fishing target of the middle Rio Negro; Barcelos as the region's sport-fishing base (search excerpt)"
+      },
+      {
+        "title": "Socioambiental: Indigenous sport fishing submits world record for speckled peacock bass",
+        "url": "https://medium.com/@socioambiental/indigenous-sport-fishing-submits-world-record-for-speckled-peacock-bass-e906ba03271a",
+        "accessed": "2026-11-25",
+        "supports": "a 14 kg speckled peacock bass from the Marié River submitted as a world record (search excerpt)"
+      }
+    ]
+  },
+  {
+    "id": "cichla-orinocensis",
+    "commonName": "Butterfly peacock bass",
+    "scientificName": "Cichla orinocensis",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 18,
+      "common": 35,
+      "max": 74,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.01175,
+      "b": 3.07
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.4,
+      "stamina": 12
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#b8a43a",
+      "accent": "#202418"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 18,
+    "description": "The commoner peacock of the lagoons: smaller than the speckled kind, brighter, and far more forgiving. Three dark eyespots ringed in gold run along each side like the markings on a butterfly's wing. Schools of them work the shallow edges at first light, chasing small fish into the reeds.",
+    "facts": [
+      "It is usually caught in shallow water near the shore of lagoons and in slow reaches of the river.",
+      "Three large ringed eyespots on the flank give it its English name."
+    ],
+    "visualNotes": "Olive-gold peacock bass; three large black ocelli ringed in yellow along the flank; black ocellus on the tail base; red-orange pelvic and anal fins.",
+    "sources": [
+      {
+        "title": "FishBase: Cichla orinocensis",
+        "url": "https://www.fishbase.se/summary/Cichla-orinocensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 61.7 cm SL (about 74 cm TL, an estimated conversion), largest published weight 6.2 kg, shallow lagoon-edge habitat, diet; length-weight a and b (Bayesian TL estimate; 6.4 kg at 74 cm, +4%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ]
+  },
+  {
+    "id": "cichla-monoculus",
+    "commonName": "Monoculus peacock bass",
+    "scientificName": "Cichla monoculus",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 18,
+      "common": 38,
+      "max": 80,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.01202,
+      "b": 3.06
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.3,
+      "stamina": 10
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#a8a035",
+      "accent": "#1e2016"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 16,
+    "description": "A thickset peacock bass of the flooded lakes, with a single big eyespot on the tail and faint bars on its sides. It forays along the shore where small fish gather, and big males grow a hump on the forehead when they pair up to breed and guard the young.",
+    "facts": [
+      "Juveniles eat shrimp; adults are almost entirely fish-eaters.",
+      "It breeds three or four times a year rather than in one season.",
+      "Large breeding males grow a fatty hump on the forehead and defend a territory."
+    ],
+    "visualNotes": "Heavy-bodied peacock bass; three dark bars and a dark blotch behind the pectoral fin; one large ringed ocellus on the tail base; yellow-green body, reddish lower fins.",
+    "sources": [
+      {
+        "title": "FishBase: Cichla monoculus",
+        "url": "https://www.fishbase.se/summary/Cichla-monoculus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 80 cm TL (text; field gives 70 cm SL), largest published weight 9.0 kg, diet, breeding several times a year, male nuchal hump; length-weight a and b (Bayesian TL estimate; 8.0 kg at 80 cm, -11%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ]
+  },
+  {
+    "id": "astronotus-ocellatus",
+    "commonName": "Oscar (acará-açu)",
+    "scientificName": "Astronotus ocellatus",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 10,
+      "common": 22,
+      "max": 33,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.0475,
+      "b": 2.995
+    },
+    "recordNote": "FishBase lists a largest published weight of 1.6 kg.",
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.9,
+      "stamina": 4
+    },
+    "silhouette": "damsel",
+    "tint": {
+      "body": "#4b3a2a",
+      "accent": "#d9653a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 6,
+    "description": "A deep, velvety cichlid of quiet water, dark olive marbled with orange and with a gold-ringed eyespot at the base of the tail. Oscars hang under floating plants and in mud-bottomed backwaters, taking small fish, worms and shrimp. In the Amazon it is a prized food fish long before it is an aquarium one.",
+    "facts": [
+      "Both parents clean a spawning site and guard a clutch that often numbers in the thousands.",
+      "It is a highly esteemed food fish in South America."
+    ],
+    "visualNotes": "Deep oval cichlid; dark olive-brown body marbled with orange-red patches; black ocellus with an orange ring on the upper tail base; large mouth; rounded tail.",
+    "sources": [
+      {
+        "title": "FishBase: Astronotus ocellatus",
+        "url": "https://www.fishbase.se/summary/Astronotus-ocellatus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 45.7 cm TL (40 cm TL in the text), largest published weight 1.6 kg, quiet mud- and sand-bottomed habitat, diet, parental care, food-fish status. IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Astronotus ocellatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=3612&GenusName=Astronotus&SpeciesName=ocellatus&fc=349",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from Catalão Lake, middle Amazon (n=36); 1.7 kg at 33 cm SL (about 40 cm TL), +5%. The Bayesian TL set gives 3.3 kg at 45.7 cm, twice the record."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ]
+  },
+  {
+    "id": "heros-severus",
+    "commonName": "Severum",
+    "scientificName": "Heros severus",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 8,
+      "common": 14,
+      "max": 24,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.02951,
+      "b": 3.03
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.7,
+      "stamina": 2
+    },
+    "silhouette": "damsel",
+    "tint": {
+      "body": "#8a8a3e",
+      "accent": "#3a2a1a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 3,
+    "description": "A neat, disc-shaped cichlid of the lagoons and flooded margins, greenish-gold with faint dark bars and a bold bar running down through the tail base. Pairs guard their eggs on stones or roots and later carry the young in their mouths. It takes a small bait readily and pulls harder than it looks.",
+    "facts": [
+      "Up to 200 eggs are laid on stones or roots and defended by both parents.",
+      "The parents take the larvae into their mouths, and care can last six weeks."
+    ],
+    "visualNotes": "Compressed, deep cichlid; yellow-green to olive with six to eight faint vertical bars; a strong dark bar from dorsal to anal fin across the tail base; reddish dots on the head of adults.",
+    "sources": [
+      {
+        "title": "FishBase: Heros severus",
+        "url": "https://www.fishbase.se/summary/Heros-severus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 20 cm SL (about 24 cm TL, an estimated conversion), common length 13.5 cm TL, parental care; length-weight a and b (Bayesian TL estimate; no record weight). IUCN LC, assessed 19 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ]
+  },
+  {
+    "id": "geophagus-altifrons",
+    "commonName": "Eartheater (acará-tinga)",
+    "scientificName": "Geophagus altifrons",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 8,
+      "common": 17,
+      "max": 26.5,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0135,
+      "b": 3.07
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.7,
+      "stamina": 2
+    },
+    "silhouette": "grunt",
+    "tint": {
+      "body": "#b6a27a",
+      "accent": "#3a6a7a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 3,
+    "description": "A long-snouted cichlid that feeds by taking mouthfuls of sand off the beaches and lake beds and sifting out whatever lives in it. It is pale and pearly with blue-green lines on the face, and it is one of the few fish found in almost every habitat the river offers.",
+    "facts": [
+      "It is a mouthbrooder: the eggs and young are carried in the mouth.",
+      "It turns up in the main channel, lakes, tributaries and on the beaches alike."
+    ],
+    "visualNotes": "Moderately deep cichlid with a long sloping forehead and low-set mouth; pearly grey-gold with rows of iridescent blue spots; a dark spot mid-flank; long trailing dorsal and tail filaments.",
+    "sources": [
+      {
+        "title": "FishBase: Geophagus altifrons",
+        "url": "https://www.fishbase.se/summary/Geophagus-altifrons.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 26.5 cm TL, largest published weight 277 g, mouthbrooding. IUCN LC, assessed 7 November 2018 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Geophagus altifrons",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=57713&GenusName=Geophagus&SpeciesName=altifrons&fc=349",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (3.1-26.5 cm, n=762); 0.32 kg at 26.5 cm, +14%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCDF (main channel, lakes, tributaries, beaches))"
+      }
+    ]
+  },
+  {
+    "id": "lugubria-lugubris",
+    "commonName": "Pike cichlid (jacundá)",
+    "scientificName": "Lugubria lugubris",
+    "kind": "fish",
+    "family": "Cichlidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 22,
+      "max": 32.9,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00912,
+      "b": 3.1
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 0.9,
+      "stamina": 4
+    },
+    "silhouette": "wrasse",
+    "tint": {
+      "body": "#8a8460",
+      "accent": "#2a2418"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 5,
+    "description": "A long, lean cichlid built like a pike, with a wide mouth and a dark stripe from snout to tail. It lies still against roots and fallen branches and darts out at small fish. Anglers casting for peacock bass meet it all the time and are pleased to.",
+    "facts": [
+      "It was moved from the genus Crenicichla to Lugubria in a 2023 revision.",
+      "Its range includes the Negro, Branco and Uatumã rivers in Brazil."
+    ],
+    "visualNotes": "Elongate, pike-like cichlid; long dorsal fin; large mouth with a protruding lower jaw; olive-grey with a dark lateral stripe or row of blotches; dark spot above the pectoral fin.",
+    "sources": [
+      {
+        "title": "FishBase: Crenicichla lugubris",
+        "url": "https://www.fishbase.se/summary/Crenicichla-lugubris.html",
+        "accessed": "2026-11-25",
+        "supports": "accepted as Lugubria lugubris (Varella et al. 2023); maximum length 32.9 cm TL, largest published weight 440 g, Negro, Branco and Uatumã range; length-weight a and b (Bayesian TL estimate; 0.46 kg at 32.9 cm, +5%). IUCN LC, assessed 11 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDE (listed as Crenicichla lugubris))"
+      }
+    ]
+  },
+  {
+    "id": "hoplias-malabaricus",
+    "commonName": "Trahira (traíra)",
+    "scientificName": "Hoplias malabaricus",
+    "kind": "fish",
+    "family": "Erythrinidae",
+    "lengthCm": {
+      "min": 18,
+      "common": 38,
+      "max": 65,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0088,
+      "b": 3.06
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.2,
+      "stamina": 8
+    },
+    "silhouette": "grouper",
+    "tint": {
+      "body": "#4e4a36",
+      "accent": "#1c1a12"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 6,
+    "description": "A cylindrical, dark-mottled ambusher with a mouthful of sharp teeth, lying motionless in weed and leaf litter by day and hunting the lagoon edges after dark. It takes a bait without ceremony and keeps biting on the bank, so the guides handle it with care.",
+    "facts": [
+      "It rests in vegetation by day and is active at night.",
+      "Males guard the nest after the eggs hatch.",
+      "Live fish are hard and dangerous to handle because of the teeth and jaws."
+    ],
+    "visualNotes": "Cylindrical body with a rounded tail and rounded fins; big head and wide mouth full of conical teeth; brown-olive mottled with dark blotches; dark stripes radiating from the eye.",
+    "sources": [
+      {
+        "title": "FishBase: Hoplias malabaricus",
+        "url": "https://www.fishbase.se/summary/Hoplias-malabaricus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 65 cm TL, largest published weight 3.8 kg, nocturnal activity, nest guarding, handling danger. IUCN LC, assessed 15 April 2019 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Hoplias malabaricus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=4757&GenusName=Hoplias&SpeciesName=malabaricus&fc=103",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (6-65 cm, n=78); 3.1 kg at 65 cm, -18%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDEF)"
+      }
+    ]
+  },
+  {
+    "id": "hydrolycus-armatus",
+    "commonName": "Payara",
+    "scientificName": "Hydrolycus armatus",
+    "kind": "fish",
+    "family": "Cynodontidae",
+    "lengthCm": {
+      "min": 35,
+      "common": 60,
+      "max": 117,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0045,
+      "b": 3.2
+    },
+    "recordNote": "The largest payara FishBase lists weighed 17.8 kg.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 2.0,
+      "stamina": 30
+    },
+    "silhouette": "tarpon",
+    "tint": {
+      "body": "#b9c2c6",
+      "accent": "#2e3a40"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 55,
+    "description": "The vampire fish of the rapids: a silver, deep-chested predator with two long fangs in the lower jaw that slot into sockets in the top of its head. It holds in fast water below falls and in deep eddies, and when it takes a lure it jumps, shakes and very often throws the hook.",
+    "facts": [
+      "Its two lower fangs fit into holes in the upper jaw when the mouth closes.",
+      "In the Rio Negro basin the checklist records it in tributaries rather than the main river."
+    ],
+    "visualNotes": "Elongate, deep-bellied silver characin; huge pectoral fins; a pair of long fangs at the tip of the lower jaw; dark spot behind the gill cover; forked tail with a dark rear edge.",
+    "sources": [
+      {
+        "title": "FishBase: Hydrolycus armatus",
+        "url": "https://www.fishbase.se/summary/Hydrolycus-armatus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, Amazon and Orinoco range; FishBase gives a maximum of 89 cm TL and 8.5 kg for H. armatus, and 117 cm TL and 17.8 kg for H. scomberoides; the game uses the larger figures for the rapids payara. IUCN LC, assessed 14 July 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase: Hydrolycus scomberoides",
+        "url": "https://www.fishbase.se/summary/Hydrolycus-scomberoides.html",
+        "accessed": "2026-11-25",
+        "supports": "maximum length 117 cm TL and largest published weight 17.8 kg, listed under this name"
+      },
+      {
+        "title": "FishBase length-weight table: Hydrolycus armatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=57050&GenusName=Hydrolycus&SpeciesName=armatus&fc=527",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (16.3-89 cm, n=86); 18.7 kg at 117 cm, +5% against 17.8 kg"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
+      }
+    ]
+  },
+  {
+    "id": "rhaphiodon-vulpinus",
+    "commonName": "Dogfish characin (peixe-cachorro)",
+    "scientificName": "Rhaphiodon vulpinus",
+    "kind": "fish",
+    "family": "Cynodontidae",
+    "lengthCm": {
+      "min": 25,
+      "common": 42,
+      "max": 64,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.00387,
+      "b": 3.146
+    },
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.2,
+      "stamina": 8
+    },
+    "silhouette": "tarpon",
+    "tint": {
+      "body": "#c9d0d2",
+      "accent": "#3a4448"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 10,
+    "description": "A long, flat-sided silver fish with a short snout, a jutting lower jaw and two fangs like its cousin the payara. It hunts near the surface of the open water and comes out of it, again and again, once it is hooked.",
+    "facts": [
+      "It is related to the payara and shares the long lower fangs.",
+      "It is a fish-eater of open water in the Amazon, Orinoco and Paraná basins."
+    ],
+    "visualNotes": "Very elongate, compressed silver characin; short head, oblique mouth with two lower fangs; long pectoral fins; small forked tail; dark spot behind the gill cover.",
+    "sources": [
+      {
+        "title": "FishBase: Rhaphiodon vulpinus",
+        "url": "https://www.fishbase.se/summary/Rhaphiodon-vulpinus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm SL (field) and 64 cm SL (text), largest published weight 2.1 kg, pelagic fish-eater. IUCN LC, assessed 14 July 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Rhaphiodon vulpinus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8697&GenusName=Rhaphiodon&SpeciesName=vulpinus&fc=527",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (20.5-55.8 cm, n=600); 1.9 kg at 64 cm SL, -11%. At the 80 cm field maximum it gives 3.8 kg, 79% over the record, so the text's 64 cm is used."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF (listed as Raphiodon vulpinus))"
+      }
+    ]
+  },
+  {
+    "id": "boulengerella-cuvieri",
+    "commonName": "Bicuda",
+    "scientificName": "Boulengerella cuvieri",
+    "kind": "fish",
+    "family": "Ctenoluciidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 55,
+      "max": 88,
+      "measure": "FL"
+    },
+    "lengthWeight": {
+      "a": 0.00798,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.6,
+      "stamina": 14
+    },
+    "silhouette": "barracuda",
+    "tint": {
+      "body": "#b8b4a0",
+      "accent": "#2a2a22"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 20,
+    "description": "A slender pike-characin with a beak of a snout, built for speed. It lies just under the surface behind rocks and logs in moving water and launches at anything that flashes past, then spends more of the fight in the air than in the river.",
+    "facts": [
+      "It usually lives in fast water, always near the surface, behind obstacles such as rocks and logs.",
+      "It is solitary or forms small groups, and prefers fish as prey."
+    ],
+    "visualNotes": "Long, cylindrical silver body; long pointed snout with a fleshy tip on the upper jaw; dorsal fin set far back; dark stripe along the side; forked tail with dark lobes.",
+    "sources": [
+      {
+        "title": "FishBase: Boulengerella cuvieri",
+        "url": "https://www.fishbase.se/summary/Boulengerella-cuvieri.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 88 cm FL, largest published weight 6.0 kg, surface habit in rapid water behind obstacles, diet. IUCN LC, assessed 21 October 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Boulengerella cuvieri",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=27228&GenusName=Boulengerella&SpeciesName=cuvieri&fc=104",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: FL set (66-84 cm, n=2, weak); 5.4 kg at 88 cm FL, -9%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDFH)"
+      }
+    ]
+  },
+  {
+    "id": "acestrorhynchus-falcirostris",
+    "commonName": "Freshwater barracuda (peixe-cachorro)",
+    "scientificName": "Acestrorhynchus falcirostris",
+    "kind": "fish",
+    "family": "Acestrorhynchidae",
+    "lengthCm": {
+      "min": 15,
+      "common": 28,
+      "max": 45,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.00547,
+      "b": 3.172
+    },
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.0,
+      "stamina": 5
+    },
+    "silhouette": "barracuda",
+    "tint": {
+      "body": "#c8c4b4",
+      "accent": "#2c2a24"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 6,
+    "description": "A small, sharp-toothed hunter of clear and black waters that looks like a barracuda made in miniature. It patrols the lagoon edges in loose groups and grabs small lures and baits that fish twice its size would think about first.",
+    "facts": [
+      "FishBase calls it a voracious predator of clear and black waters.",
+      "Its range covers the Amazon and Orinoco basins and the rivers of Guyana."
+    ],
+    "visualNotes": "Elongate, compressed silver body; long snout and large mouth with canine teeth; dark spot at the tail base; reddish or yellowish fins.",
+    "sources": [
+      {
+        "title": "FishBase: Acestrorhynchus falcirostris",
+        "url": "https://www.fishbase.se/summary/Acestrorhynchus-falcirostris.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 45 cm SL, clear and blackwater habitat, voracious predator. IUCN LC, assessed 13 February 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Acestrorhynchus falcirostris",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=13123&GenusName=Acestrorhynchus&SpeciesName=falcirostris&fc=593",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (10-45 cm, n=735); 0.96 kg at 45 cm SL; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ]
+  },
+  {
+    "id": "serrasalmus-rhombeus",
+    "commonName": "Black piranha",
+    "scientificName": "Serrasalmus rhombeus",
+    "kind": "fish",
+    "family": "Serrasalmidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 25,
+      "max": 41.5,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.01388,
+      "b": 3.314
+    },
+    "recordNote": "FishBase lists a largest published weight of 3.8 kg.",
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 1.2,
+      "stamina": 6
+    },
+    "silhouette": "permit",
+    "tint": {
+      "body": "#4a4e52",
+      "accent": "#b02a20"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 5,
+    "description": "The big piranha of the blackwater: slate-grey to nearly black, with a blood-red eye and a jaw full of interlocking triangular teeth. It lives in rapids and deep channels as well as lagoons and takes almost any bait. A large one can bite through a wire leader and a careless finger.",
+    "facts": [
+      "It eats fish, crabs and coleopteran insects, and sometimes mammals and lizards.",
+      "Adults are found in rapids and are also caught on bait in deep parts of the main rivers."
+    ],
+    "visualNotes": "Deep, rhomboid body; dark grey to black adults with a silvery sheen; bright red eye; heavy undershot jaw with triangular teeth; dark band on the tail edge.",
+    "sources": [
+      {
+        "title": "FishBase: Serrasalmus rhombeus",
+        "url": "https://www.fishbase.se/summary/Serrasalmus-rhombeus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 41.5 cm SL, largest published weight 3.8 kg, diet, rapids and deep-channel habitat, traumatogenic. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Serrasalmus rhombeus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=11970&GenusName=Serrasalmus&SpeciesName=rhombeus&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (5.6-31 cm, n=693); 3.2 kg at 41.5 cm SL, -16%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BCDF)"
+      }
+    ]
+  },
+  {
+    "id": "serrasalmus-manueli",
+    "commonName": "Manuel's piranha",
+    "scientificName": "Serrasalmus manueli",
+    "kind": "fish",
+    "family": "Serrasalmidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 24,
+      "max": 43,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.006,
+      "b": 3.37
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 1.1,
+      "stamina": 5
+    },
+    "silhouette": "permit",
+    "tint": {
+      "body": "#9aa0a4",
+      "accent": "#c23a2a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 4,
+    "description": "A tall, silvery piranha speckled with dark spots, more often met in the main river and on the beaches than in the lagoons. It travels in groups along sand bars where baitfish gather, and a hooked fish brings the rest of the group to look.",
+    "facts": [
+      "It occurs in the Amazon and Orinoco basins.",
+      "The basin checklist records it in the main channel, lakes, tributaries and on beaches."
+    ],
+    "visualNotes": "Deep, compressed silver piranha with many small dark spots on the upper flank; reddish throat and anal fin; dark band on the tail; strong underslung jaw.",
+    "sources": [
+      {
+        "title": "FishBase: Serrasalmus manueli",
+        "url": "https://www.fishbase.se/summary/Serrasalmus-manueli.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 36 cm SL, largest published weight 2.5 kg, Amazon and Orinoco range. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Serrasalmus manueli",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=53362&GenusName=Serrasalmus&SpeciesName=manueli&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (5.5-38 cm, n=336); 1.9 kg at 43 cm TL (about 36 cm SL), -23%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDF)"
+      }
+    ]
+  },
+  {
+    "id": "colossoma-macropomum",
+    "commonName": "Tambaqui",
+    "scientificName": "Colossoma macropomum",
+    "kind": "fish",
+    "family": "Serrasalmidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 65,
+      "max": 108,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0249,
+      "b": 3.008
+    },
+    "recordNote": "FishBase lists a largest published weight of 40 kg.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 2.0,
+      "stamina": 40
+    },
+    "silhouette": "permit",
+    "tint": {
+      "body": "#5a5440",
+      "accent": "#1e1a12"
+    },
+    "conservation": {
+      "iucn": "NT",
+      "releaseOnly": false,
+      "note": "Near Threatened (IUCN 2020). Heavily fished for food across the Amazon, and protected by a closed season."
+    },
+    "baseValue": 50,
+    "description": "A great slab of a fish, dark above and pale below, with molar-like teeth for crushing seeds. When the river floods it moves into the forest and waits under fruiting trees for fruit to drop. It is scarce in blackwater, but a big one in the flooded forest is the fight of a season.",
+    "facts": [
+      "Adults stay in the flooded forest during the first five months of the flood, eating fruits and seeds.",
+      "Young fish grow up in the black waters of floodplains until they mature."
+    ],
+    "visualNotes": "Very deep, rounded body; dark olive to black back and lower body, pale yellow-grey middle; small adipose fin with rays; molar-like teeth; dark fins.",
+    "sources": [
+      {
+        "title": "FishBase: Colossoma macropomum",
+        "url": "https://www.fishbase.se/summary/Colossoma-macropomum.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 108 cm TL, common length 70 cm TL, largest published weight 40 kg, flooded-forest fruit feeding, blackwater nursery habitat. IUCN NT, assessed 17 December 2020 (as shown on FishBase)"
+      },
+      {
+        "title": "FishBase length-weight table: Colossoma macropomum",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=263&GenusName=Colossoma&SpeciesName=macropomum&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from Amazonas State (30-95 cm); 32.6 kg at 108 cm, -19%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
+      }
+    ]
+  },
+  {
+    "id": "myloplus-rubripinnis",
+    "commonName": "Redhook pacu",
+    "scientificName": "Myloplus rubripinnis",
+    "kind": "fish",
+    "family": "Serrasalmidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 25,
+      "max": 41.5,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0253,
+      "b": 3.01
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.2,
+      "stamina": 8
+    },
+    "silhouette": "permit",
+    "tint": {
+      "body": "#b4b8b0",
+      "accent": "#c23a2a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 8,
+    "description": "A silver, coin-shaped pacu with a red-edged anal fin hooked like a sickle in the males. It eats the leaves of riverside plants and lives in calm water under overhanging banks and in the rapids. It is gentle by nature, but its teeth can still do real damage.",
+    "facts": [
+      "Adults feed on the leaves of river plants.",
+      "The female ploughs a furrow in the gravel with her hooked anal fin to lay her eggs."
+    ],
+    "visualNotes": "Disc-shaped, compressed silver body; reddish to orange anal fin, hooked and lobed in males; dark-edged tail; small mouth with incisor-like teeth.",
+    "sources": [
+      {
+        "title": "FishBase: Myloplus rubripinnis",
+        "url": "https://www.fishbase.se/summary/Myloplus-rubripinnis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 41.5 cm TL, largest published weight 2.5 kg, leaf-eating diet, gravel-furrow spawning, calm water under overhanging vegetation. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Myloplus rubripinnis",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=11944&GenusName=Myloplus&SpeciesName=rubripinnis&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (4.5-41.5 cm, n=200); 1.9 kg at 41.5 cm, -25%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BCDG (lakes, tributaries, rapids))"
+      }
+    ]
+  },
+  {
+    "id": "brycon-amazonicus",
+    "commonName": "Matrinxã (jatuarana)",
+    "scientificName": "Brycon amazonicus",
+    "kind": "fish",
+    "family": "Bryconidae",
+    "lengthCm": {
+      "min": 15,
+      "common": 28,
+      "max": 46.2,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.02887,
+      "b": 2.944
+    },
+    "fight": {
+      "archetype": "runner",
+      "strengthFactor": 1.5,
+      "stamina": 12
+    },
+    "silhouette": "jack",
+    "tint": {
+      "body": "#c4c8c4",
+      "accent": "#c25a2a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 14,
+    "description": "A sleek, silver characin with an orange-tinged tail, strong and quick in the current. It feeds on fruit, seeds and insects that fall into the water, and it is one of the most important food fish of the Amazon. On light tackle it runs hard and does not give up.",
+    "facts": [
+      "It is an important food fish in the Amazon.",
+      "Its range covers the Amazon and its main tributaries in Brazil, and the Orinoco and Essequibo basins."
+    ],
+    "visualNotes": "Streamlined, moderately deep silver body; dark spot behind the gill cover; tail and anal fin tinged orange-red with a dark band through the tail.",
+    "sources": [
+      {
+        "title": "FishBase: Brycon amazonicus",
+        "url": "https://www.fishbase.se/summary/Brycon-amazonicus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 46.2 cm SL, food-fish status, range. IUCN LC, assessed 6 October 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brycon amazonicus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=52992&GenusName=Brycon&SpeciesName=amazonicus&fc=687",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (11.8-40.6 cm, n=43); 2.3 kg at 46.2 cm SL; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ]
+  },
+  {
+    "id": "semaprochilodus-insignis",
+    "commonName": "Jaraqui",
+    "scientificName": "Semaprochilodus insignis",
+    "kind": "fish",
+    "family": "Prochilodontidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 22,
+      "max": 29.5,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.0562,
+      "b": 2.74
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.8,
+      "stamina": 3
+    },
+    "silhouette": "mojarra",
+    "tint": {
+      "body": "#bcc0c0",
+      "accent": "#1e1e1e"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 4,
+    "description": "A schooling detritus-eater with sucker-like lips and a tail striped black and yellow. Huge schools move up and down the river with the seasons, and jaraqui is the everyday fish of the Barcelos table. It rarely takes a hook, but it does take a cast net.",
+    "facts": [
+      "Its lips form a sucking disc lined with rows of small teeth for scraping algae and detritus.",
+      "It is potamodromous: it migrates within rivers."
+    ],
+    "visualNotes": "Deep, compressed silver body; fleshy protractile lips; black and yellow horizontal stripes on both tail lobes and on the dorsal fin.",
+    "sources": [
+      {
+        "title": "FishBase: Semaprochilodus insignis",
+        "url": "https://www.fishbase.se/summary/Semaprochilodus-insignis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 22 cm SL (male) and 29.5 cm SL (female), largest published weight 560 g, potamodromous. IUCN LC, assessed 9 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Semaprochilodus insignis",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=25658&GenusName=Semaprochilodus&SpeciesName=insignis&fc=598",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set for females from the Amazon River (10.5-29.5 cm, n=387); 0.60 kg at 29.5 cm SL, +7%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ]
+  },
+  {
+    "id": "leporinus-fasciatus",
+    "commonName": "Banded leporinus (aracu-pinima)",
+    "scientificName": "Leporinus fasciatus",
+    "kind": "fish",
+    "family": "Anostomidae",
+    "lengthCm": {
+      "min": 12,
+      "common": 24,
+      "max": 37,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0084,
+      "b": 3.05
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 0.9,
+      "stamina": 4
+    },
+    "silhouette": "bonefish",
+    "tint": {
+      "body": "#e0c23a",
+      "accent": "#1a1a1a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 4,
+    "description": "A torpedo-shaped fish banded boldly in black and yellow, at home among rocks in fast water. It nibbles worms, insects, crustaceans and plant matter off the stones, and it is the bait-stealer every angler on the rapids learns to recognise.",
+    "facts": [
+      "Adults live among rocks in rapidly flowing water.",
+      "It breeds from December to May, in pairs, in densely weeded places."
+    ],
+    "visualNotes": "Elongate, cylindrical body; small mouth; yellow body with nine or ten broad black vertical bands; reddish throat in breeding fish.",
+    "sources": [
+      {
+        "title": "FishBase: Leporinus fasciatus",
+        "url": "https://www.fishbase.se/summary/Leporinus-fasciatus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 37 cm TL, rocky fast-water habitat, diet, breeding December to May. IUCN LC, assessed 18 June 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Leporinus fasciatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=5352&GenusName=Leporinus&SpeciesName=fasciatus&fc=559",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (10.6-37 cm, n=69); 0.51 kg at 37 cm; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDFH)"
+      }
+    ]
+  },
+  {
+    "id": "triportheus-albus",
+    "commonName": "Sardinha",
+    "scientificName": "Triportheus albus",
+    "kind": "fish",
+    "family": "Triportheidae",
+    "lengthCm": {
+      "min": 8,
+      "common": 16,
+      "max": 25.7,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0107,
+      "b": 2.99
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 0.6,
+      "stamina": 1.5
+    },
+    "silhouette": "sardine",
+    "tint": {
+      "body": "#d4d8dc",
+      "accent": "#3a4048"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 2,
+    "description": "A silver, keel-bellied fish that swims just under the surface in schools and flashes when the sun hits it. Its deep chest holds the muscles for long pectoral fins, which help it leap clear of the water. Everything in the river eats it, so a live one is the best bait in the boat.",
+    "facts": [
+      "It belongs to the hatchet characins, with a deep keel-shaped chest.",
+      "It is potamodromous: it migrates within rivers."
+    ],
+    "visualNotes": "Elongate silver fish with a deep keeled breast and long pectoral fins; upturned mouth; dark stripe on the middle tail rays.",
+    "sources": [
+      {
+        "title": "FishBase: Triportheus albus",
+        "url": "https://www.fishbase.se/summary/Triportheus-albus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 25.7 cm TL, largest published weight 200 g, potamodromous. IUCN LC, assessed 30 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Triportheus albus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=51200&GenusName=Triportheus&SpeciesName=albus&fc=688",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (3-25.7 cm, n=894); 0.18 kg at 25.7 cm, -12%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ]
+  },
+  {
+    "id": "plagioscion-squamosissimus",
+    "commonName": "Silver croaker (pescada)",
+    "scientificName": "Plagioscion squamosissimus",
+    "kind": "fish",
+    "family": "Sciaenidae",
+    "lengthCm": {
+      "min": 20,
+      "common": 38,
+      "max": 70,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00871,
+      "b": 3.08
+    },
+    "recordNote": "FishBase lists a largest published weight of 4.5 kg.",
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 1.1,
+      "stamina": 8
+    },
+    "silhouette": "snapper",
+    "tint": {
+      "body": "#c8ccd0",
+      "accent": "#5a5e66"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 10,
+    "description": "A freshwater drum of the main channel: silvery, big-mouthed and croaking when it is landed. It hunts small fish near the bottom of deep water, mostly in the evening and through the night, and it is one of the region's best food fish.",
+    "facts": [
+      "Juveniles eat crustacean larvae, especially of Macrobrachium prawns, and insects; adults eat fish.",
+      "It is a commercial food fish and a game fish across much of South America."
+    ],
+    "visualNotes": "Elongate silver drum; large oblique mouth; long dorsal fin with a deep notch; lateral line running onto the pointed tail; dark spot at the pectoral base.",
+    "sources": [
+      {
+        "title": "FishBase: Plagioscion squamosissimus",
+        "url": "https://www.fishbase.se/summary/Plagioscion-squamosissimus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm TL (field), largest published weight 4.5 kg, diet, commercial and game fish; length-weight a and b (Bayesian TL estimate; 4.2 kg at 70 cm, -7%). At 80 cm every set gives 6.3-6.7 kg, 41-49% over the record, so the game maximum is 70 cm. IUCN LC, assessed 30 July 2019 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCDF)"
+      }
+    ]
+  },
+  {
+    "id": "pellona-castelnaeana",
+    "commonName": "Apapá (Amazon pellona)",
+    "scientificName": "Pellona castelnaeana",
+    "kind": "fish",
+    "family": "Pristigasteridae",
+    "lengthCm": {
+      "min": 20,
+      "common": 40,
+      "max": 70,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.01038,
+      "b": 3.12
+    },
+    "recordNote": "FishBase lists a largest published weight of 7.1 kg.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.3,
+      "stamina": 10
+    },
+    "silhouette": "tarpon",
+    "tint": {
+      "body": "#e0d070",
+      "accent": "#4a4a3a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 10,
+    "description": "A deep-keeled, golden-silver herring-like fish of open river water, with a large upturned mouth and a tarpon's habit of jumping when hooked. It chases baitfish near the surface and is often the surprise on a lure meant for peacock bass.",
+    "facts": [
+      "It lives in rivers and apparently never enters the sea.",
+      "It is caught for food and as a game fish."
+    ],
+    "visualNotes": "Compressed, deep-bellied silver fish with a yellow-gold sheen; sharp keel of scutes along the belly; large upturned mouth; yellowish fins; forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Pellona castelnaeana",
+        "url": "https://www.fishbase.se/summary/Pellona-castelnaeana.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm FL, largest published weight 7.1 kg, river habitat, subsistence and game fish. IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Pellona castelnaeana",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1639&GenusName=Pellona&SpeciesName=castelnaeana&fc=620",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (8.7-60.9 cm, n=280); 5.9 kg at 70 cm SL (about 80 cm FL), -17%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABD)"
+      }
+    ]
+  },
+  {
+    "id": "osteoglossum-ferreirai",
+    "commonName": "Black arowana (aruanã-preta)",
+    "scientificName": "Osteoglossum ferreirai",
+    "kind": "fish",
+    "family": "Osteoglossidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 55,
+      "max": 90,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00479,
+      "b": 3.08
+    },
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.2,
+      "stamina": 10
+    },
+    "silhouette": "barracuda",
+    "tint": {
+      "body": "#3a3a40",
+      "accent": "#c8a040"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 18,
+    "description": "A long, ribbon-finned surface hunter found only in the Rio Negro basin. It cruises just under the surface along flooded margins, watching the branches above with eyes set high on its head, and leaps clean out of the water to take beetles and spiders off the leaves.",
+    "facts": [
+      "It is endemic to the Rio Negro basin.",
+      "The male carries the eggs in its mouth."
+    ],
+    "visualNotes": "Very long, compressed body tapering to a small tail; dorsal and anal fins long and set far back, almost meeting the tail; upturned mouth with two chin barbels; young fish black with a yellow stripe, adults dark grey-blue with gold-edged scales.",
+    "sources": [
+      {
+        "title": "FishBase: Osteoglossum ferreirai",
+        "url": "https://www.fishbase.se/summary/Osteoglossum-ferreirai.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 90 cm TL, Negro River basin range, mouthbrooding; length-weight a and b (Bayesian TL estimate; 5.0 kg at 90 cm; no record weight). IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF; flagged as probably endemic)"
+      },
+      {
+        "title": "FishBase length-weight table: Osteoglossum ferreirai",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8117&GenusName=Osteoglossum&SpeciesName=ferreirai&fc=38",
+        "accessed": "2026-11-25",
+        "supports": "an SL set from the Aracá and Demeni rivers near Barcelos (30-64 cm, n=25) exists; the game uses the Bayesian TL estimate to keep the TL measure"
+      }
+    ]
+  },
+  {
+    "id": "osteoglossum-bicirrhosum",
+    "commonName": "Silver arowana",
+    "scientificName": "Osteoglossum bicirrhosum",
+    "kind": "fish",
+    "family": "Osteoglossidae",
+    "lengthCm": {
+      "min": 35,
+      "common": 65,
+      "max": 119,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00417,
+      "b": 3.1
+    },
+    "recordNote": "An arowana of about 25 lb (11.5 kg) and 119 cm from Brazil was reported as the IGFA all-tackle record.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 1.4,
+      "stamina": 14
+    },
+    "silhouette": "barracuda",
+    "tint": {
+      "body": "#d0d4d8",
+      "accent": "#e0a0b0"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 22,
+    "description": "The black arowana's silver cousin, found across the Amazon: long, armoured in big pearly scales and almost always at the surface. It can tolerate water low in oxygen, eats fish and insects, and is famous for jumping two metres out of the river to snatch prey from overhanging branches.",
+    "facts": [
+      "It jumps out of the water to take large insects such as beetles.",
+      "The male carries the eggs, larvae and young in his mouth for nearly six weeks.",
+      "It can tolerate water low in oxygen."
+    ],
+    "visualNotes": "Very long, compressed silver body with huge pearly scales tinged pink or blue; upturned mouth with two forward-pointing chin barbels; long dorsal and anal fins far back; small tail.",
+    "sources": [
+      {
+        "title": "FishBase: Osteoglossum bicirrhosum",
+        "url": "https://www.fishbase.se/summary/Osteoglossum-bicirrhosum.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 90 cm TL (field), largest published weight 6.0 kg, surface feeding and jumping for beetles, low-oxygen tolerance, male mouthbrooding; length-weight a and b (Bayesian TL estimate; 11.3 kg at 119 cm, -1% against the reported record). IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Outdoor Life: world record fish gallery",
+        "url": "https://www.outdoorlife.com/photos/gallery/fishing/2010/04/world-record-fish.md",
+        "accessed": "2026-11-25",
+        "supports": "an IGFA all-tackle arowana record of about 25 lb (11.5 kg) and 47 in (119 cm) from Brazil; reports differ on the river (Aracá 2007 or Camaiú 2008) (search excerpt)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ]
+  },
+  {
+    "id": "arapaima-gigas",
+    "commonName": "Arapaima (pirarucu)",
+    "scientificName": "Arapaima gigas",
+    "kind": "fish",
+    "family": "Arapaimidae",
+    "lengthCm": {
+      "min": 90,
+      "common": 180,
+      "max": 280,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0278,
+      "b": 2.79
+    },
+    "recordNote": "IGFA all-tackle record is 339 lb (about 154 kg), from Ecuador in 2010.",
+    "fight": {
+      "archetype": "jumper",
+      "strengthFactor": 2.4,
+      "stamina": 110
+    },
+    "silhouette": "snook",
+    "tint": {
+      "body": "#5a5a4a",
+      "accent": "#b03020"
+    },
+    "conservation": {
+      "iucn": "DD",
+      "releaseOnly": true,
+      "note": "Data Deficient (IUCN 1996) and on CITES Appendix II. In the Amazon it may only be taken under managed quotas, as in the Unini reserve near Barcelos."
+    },
+    "baseValue": 0,
+    "description": "One of the largest freshwater fish on Earth: a long, armoured air-breather whose scales turn red towards the tail. Every few minutes it rises with a gulp that can be heard across a lake. As the river rises it moves out into the flooded forest; when the water falls it returns to the lakes.",
+    "facts": [
+      "It must breathe air, and its gulp at the surface carries a long way.",
+      "It spawns in April and May, in a nest on a sandy bottom, and guards the eggs and young.",
+      "It moves into the flooded forest with the rising water and back to the lakes at low water."
+    ],
+    "visualNotes": "Huge, elongate, cylindrical body; flat bony head with an upturned mouth; large thick scales, grey-green at the front and edged deep red towards the tail; dorsal and anal fins set far back near the rounded tail.",
+    "sources": [
+      {
+        "title": "FishBase: Arapaima gigas",
+        "url": "https://www.fishbase.se/summary/Arapaima-gigas.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 450 cm TL (field), common length 200 cm TL, largest published weight 200 kg, air-breathing, April-May nest spawning, seasonal floodplain migration; IUCN DD (1 August 1996) and CITES Appendix II"
+      },
+      {
+        "title": "FishBase length-weight table: Arapaima gigas",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=2076&GenusName=Arapaima&SpeciesName=gigas&fc=628",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the lower Amazon (109-224 cm, n=76); 187 kg at 280 cm, +21% against the IGFA record. At 300 cm it gives 227 kg, +47%."
+      },
+      {
+        "title": "Tackle Village: IGFA all-tackle records table (data as of June 2022)",
+        "url": "https://tacklevillage.com/igfa-world-record-list-table-of-species/",
+        "accessed": "2026-11-25",
+        "supports": "IGFA all-tackle arapaima record of 339 lb (154 kg), Ecuador, 2010"
+      },
+      {
+        "title": "CNN Brasil: IBAMA classifies arapaima as invasive outside the Amazon (IN 7/2026)",
+        "url": "https://www.cnnbrasil.com.br/noticias/ibama-classifica-pirarucu-como-especie-invasora/",
+        "accessed": "2026-11-25",
+        "supports": "protected and managed inside the Amazon (search excerpt)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ]
+  },
+  {
+    "id": "phractocephalus-hemioliopterus",
+    "commonName": "Redtail catfish (pirarara)",
+    "scientificName": "Phractocephalus hemioliopterus",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 40,
+      "common": 75,
+      "max": 141,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.0125,
+      "b": 3.04
+    },
+    "recordNote": "IGFA all-tackle record is 123 lb 7 oz (about 56 kg), from Brazil in 2010.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 2.1,
+      "stamina": 50
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#3a3a34",
+      "accent": "#d05a2a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 65,
+    "description": "A massive catfish with a dark back, a pale belly sharply divided from it, and a tail the colour of a sunset. It hunts the bottom of deep pools and channels for fish and crabs and will eat fallen fruit too. Hooking one is easy; moving one is not.",
+    "facts": [
+      "Adults eat fish, crabs and fruit.",
+      "It is potamodromous: it migrates within rivers."
+    ],
+    "visualNotes": "Broad, flattened head with a bony shield and long barbels; dark grey-brown back sharply separated from a white-yellow belly band; bright orange-red tail and tip of the dorsal fin.",
+    "sources": [
+      {
+        "title": "FishBase: Phractocephalus hemioliopterus",
+        "url": "https://www.fishbase.se/summary/Phractocephalus-hemioliopterus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 135 cm TL, common length 60 cm TL, largest published weight 44.2 kg, diet including fruit. IUCN LC, assessed 27 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Phractocephalus hemioliopterus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=6421&GenusName=Phractocephalus&SpeciesName=hemioliopterus&fc=150",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (32-134.9 cm, n=115); 42.7 kg at 141 cm, -24% against the IGFA record"
+      },
+      {
+        "title": "Game and Fish / angling press reports of the IGFA redtail catfish record",
+        "url": "https://www.gameandfishmag.com/gf-lists/10-biggest-catfish-world-records-time",
+        "accessed": "2026-11-25",
+        "supports": "IGFA all-tackle redtail record 123 lb 7 oz (56 kg), 55.43 in (141 cm), Brazil, 2010 (search excerpt)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ]
+  },
+  {
+    "id": "brachyplatystoma-filamentosum",
+    "commonName": "Piraíba",
+    "scientificName": "Brachyplatystoma filamentosum",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 60,
+      "common": 120,
+      "max": 230,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.02169,
+      "b": 2.914
+    },
+    "recordNote": "IGFA all-tackle record is 341 lb 11 oz (about 155 kg), from the Rio Solimões in Brazil.",
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 2.6,
+      "stamina": 120
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#5a5e60",
+      "accent": "#d8dadc"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 120,
+    "description": "The giant catfish of the main channel: grey, broad-headed and long-whiskered, a long-distance migrant that hunts other fish on the soft bottom of deep water. Fishermen tell stories of piraíba big enough to swallow a monkey, and the stomach contents say they are not all exaggerating.",
+    "facts": [
+      "It feeds on fish, and stomachs have been found to contain parts of monkeys.",
+      "It is one of the largest fish of the Rio Negro basin and a long-distance migrant."
+    ],
+    "visualNotes": "Huge, elongate catfish; broad flat head; very long maxillary barbels; grey to dark brown back, pale belly; forked tail with long upper lobe; juveniles spotted.",
+    "sources": [
+      {
+        "title": "FishBase: Brachyplatystoma filamentosum",
+        "url": "https://www.fishbase.se/summary/Brachyplatystoma-filamentosum.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 360 cm TL, common length 120 cm TL, largest published weight 200 kg, diet including monkeys, soft-bottom habitat. IUCN LC, assessed 14 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brachyplatystoma filamentosum",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=6420&GenusName=Brachyplatystoma&SpeciesName=filamentosum&fc=150",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (49-196 cm, n=517); 165 kg at 230 cm SL, +7% against the IGFA record. The Bayesian TL set gives 394 kg at 280 cm TL."
+      },
+      {
+        "title": "Game and Fish: 10 biggest catfish world records",
+        "url": "https://www.gameandfishmag.com/gf-lists/10-biggest-catfish-world-records-time",
+        "accessed": "2026-11-25",
+        "supports": "IGFA all-tackle piraíba record 341 lb 11 oz (155 kg), Rio Solimões, Brazil (search excerpt)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABC; named in the checklist text among the largest fishes and long-distance migrants)"
+      }
+    ]
+  },
+  {
+    "id": "pseudoplatystoma-punctifer",
+    "commonName": "Barred sorubim (caparari)",
+    "scientificName": "Pseudoplatystoma punctifer",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 40,
+      "common": 75,
+      "max": 140,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00589,
+      "b": 3.1
+    },
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 1.6,
+      "stamina": 25
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#8a8a80",
+      "accent": "#1e1e1e"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 30,
+    "description": "A long, shovel-nosed catfish striped and spotted like a tiger, one of the most handsome fish in the river. It hunts small fish at night along the bottom of channels and lagoon mouths and is highly prized at the table.",
+    "facts": [
+      "It was formerly treated as Pseudoplatystoma fasciatum in the Amazon.",
+      "Its maximum recorded length is 140 cm TL."
+    ],
+    "visualNotes": "Elongate, cylindrical catfish with a long flattened shovel-shaped head; grey-brown back with dark vertical bars and spots, white belly; long barbels; forked tail spotted black.",
+    "sources": [
+      {
+        "title": "FishBase: Pseudoplatystoma punctifer",
+        "url": "https://www.fishbase.se/summary/Pseudoplatystoma-punctifer.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, Amazon range; length-weight a and b (Bayesian TL estimate; 26 kg at 140 cm). FishBase gives no maximum length and lists 70 kg under the related P. fasciatum, which is implausible for this length. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "US Fish and Wildlife Service: ecological risk screening summary, spotted tiger shovelnose catfish",
+        "url": "https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Spotted-Tiger-Shovelnose-Catfish.pdf",
+        "accessed": "2026-11-25",
+        "supports": "maximum recorded length 1400 mm TL (Buitrago-Suárez and Burr 2007); formerly recognised as P. fasciatum in the Amazon (search excerpt)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+      }
+    ]
+  },
+  {
+    "id": "pinirampus-pirinampu",
+    "commonName": "Flatwhiskered catfish (barba-chata)",
+    "scientificName": "Pinirampus pirinampu",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 55,
+      "max": 90,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00851,
+      "b": 3.09
+    },
+    "recordNote": "FishBase lists a largest published weight of 7.7 kg.",
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 1.4,
+      "stamina": 15
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#a8aca8",
+      "accent": "#3a3c3a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 14,
+    "description": "A sleek, silver-grey catfish of the main channel with flat, ribbon-like barbels and a long, low fin along its back. It travels in schools over the bottom and bites best at night, when the fishing boats anchor on the deep bends.",
+    "facts": [
+      "It occurs in schools and feeds on bottom-living animals.",
+      "Its barbels are flattened like ribbons, which gives it its Portuguese name."
+    ],
+    "visualNotes": "Elongate, silver-grey catfish; flattened, ribbon-like maxillary barbels reaching past the dorsal fin; long, low adipose fin; deeply forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Pinirampus pirinampu",
+        "url": "https://www.fishbase.se/summary/Pinirampus-pirinampu.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 120 cm TL (field), largest published weight 7.7 kg, schooling, bottom-feeding; length-weight a and b (Bayesian TL estimate; 9.3 kg at 90 cm, +21%). At 120 cm every set gives 18-23 kg, more than twice the record, so the game maximum is 90 cm. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCD)"
+      }
+    ]
+  },
+  {
+    "id": "zungaro-zungaro",
+    "commonName": "Gilded catfish (jaú)",
+    "scientificName": "Zungaro zungaro",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 40,
+      "common": 80,
+      "max": 140,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.0279,
+      "b": 2.924
+    },
+    "recordNote": "Fish of 130 cm and 50 kg are not rare, according to FishBase.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 2.3,
+      "stamina": 70
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#6a5a3a",
+      "accent": "#2a2418"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 70,
+    "description": "A squat, enormously heavy catfish with a broad flat head and mottled yellow-brown skin, living in the deep holes and muddy beds of the big tributaries. It hunts other fish at night and sometimes follows the migrating schools into flooded areas. It fights by refusing to leave the bottom.",
+    "facts": [
+      "It is mainly a fish-eater that hunts at night, sometimes moving into flood-prone areas.",
+      "Fish of 130 cm and 50 kg are not rare.",
+      "It matures only on reaching about 10 kg."
+    ],
+    "visualNotes": "Massive, short-bodied catfish with a very broad flat head and small eyes; yellowish to olive-brown skin with darker marbling; short barbels; rounded fins.",
+    "sources": [
+      {
+        "title": "FishBase: Zungaro zungaro",
+        "url": "https://www.fishbase.se/summary/Zungaro-zungaro.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 140 cm SL, night hunting, fish of 130 cm and 50 kg not rare, maturity at about 10 kg, deep tributary habitat. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Zungaro zungaro",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=47756&GenusName=Zungaro&SpeciesName=zungaro&fc=150",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set for females from Serra da Mesa Reservoir (27.7-122 cm, n=55); 52.6 kg at 140 cm SL, +7% against 49 kg"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
+      }
+    ]
+  },
+  {
+    "id": "potamotrygon-motoro",
+    "commonName": "Ocellate river stingray",
+    "scientificName": "Potamotrygon motoro",
+    "kind": "fish",
+    "family": "Potamotrygonidae",
+    "lengthCm": {
+      "min": 20,
+      "common": 35,
+      "max": 50,
+      "measure": "CW"
+    },
+    "lengthWeight": {
+      "a": 0.08,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.4,
+      "stamina": 20
+    },
+    "silhouette": "ray",
+    "tint": {
+      "body": "#7a5a3a",
+      "accent": "#e0a040"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 10,
+    "description": "A round, brown freshwater ray covered in orange eyespots ringed with black, lying half-buried on sandy beaches and shallows. It is the reason Amazon guides shuffle their feet when they wade: the barbed spine on its tail delivers one of the most painful wounds in the river.",
+    "facts": [
+      "Its tail spine causes painful wounds; FishBase classes it as traumatogenic.",
+      "It is the freshwater stingray most often imported by the aquarium trade."
+    ],
+    "visualNotes": "Round, flat disc; brown above with many orange-yellow spots ringed in black; short tail with a serrated spine; pale underside.",
+    "sources": [
+      {
+        "title": "FishBase: Potamotrygon motoro",
+        "url": "https://www.fishbase.se/summary/Potamotrygon-motoro.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 50 cm disc width, larger specimens may weigh 10 kg, traumatogenic, aquarium trade; FishBase's 34.2 kg maximum weight is implausible beside its own note. IUCN LC, assessed 22 October 2024 (as shown on FishBase)"
+      },
+      {
+        "title": "FishBase: Potamotrygon motoro (no disc-width length-weight set)",
+        "url": "https://www.fishbase.se/summary/Potamotrygon-motoro.html",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b are derived, not published: chosen so a 50 cm disc weighs 10 kg"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDF)"
+      }
+    ]
+  },
+  {
+    "id": "electrophorus-varii",
+    "commonName": "Electric eel (poraquê)",
+    "scientificName": "Electrophorus varii",
+    "kind": "fish",
+    "family": "Gymnotidae",
+    "lengthCm": {
+      "min": 40,
+      "common": 90,
+      "max": 149,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00389,
+      "b": 3.12
+    },
+    "fight": {
+      "archetype": "thrasher",
+      "strengthFactor": 1.3,
+      "stamina": 12
+    },
+    "silhouette": "eel",
+    "tint": {
+      "body": "#3a3a30",
+      "accent": "#c86a3a"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": false
+    },
+    "baseValue": 15,
+    "description": "Not an eel but a knifefish: a long, dark, round-bodied fish that breathes air and lives in the still, muddy margins of the lowland floodplain. Most of its body is an electric organ that can stun prey and warn off anything that bothers it. Anglers usually meet one by accident and remember it.",
+    "facts": [
+      "Its high-voltage discharges range from about 151 V in a 20 cm fish to 572 V in a 61 cm fish.",
+      "It must breathe air.",
+      "It was described in 2019, when the electric eel was split into three species; this is the lowland one."
+    ],
+    "visualNotes": "Very long, cylindrical, scaleless body; dark grey to olive above, orange-red throat and belly; flat head with small eyes; no dorsal fin, a long anal fin running almost the whole length of the body.",
+    "sources": [
+      {
+        "title": "FishBase: Electrophorus varii",
+        "url": "https://www.fishbase.se/summary/Electrophorus-varii.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 149 cm TL, lowland Amazon range, air-breathing, discharge voltages 151-572 V; length-weight a and b (Bayesian TL estimate for this body shape; 23 kg at 149 cm; no record weight). IUCN Not Evaluated"
+      },
+      {
+        "title": "Smithsonian: Electrophorus varii from the Rio Negro (photo record)",
+        "url": "https://si.edu/newsdesk/photos/electrophorus-varii-rio-negro",
+        "accessed": "2026-11-25",
+        "supports": "E. varii occurs in the Rio Negro (search excerpt)"
+      },
+      {
+        "title": "de Santana et al. (2019): Unexpected species diversity in electric eels, Nature Communications 10: 4000",
+        "url": "https://doaj.org/article/7867f35382a8452fa46b6f4f42634450",
+        "accessed": "2026-11-25",
+        "supports": "the split into E. electricus, E. voltai and E. varii (search excerpt)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDE (listed as Electrophorus electricus, before the 2019 split))"
+      }
+    ]
+  },
+  {
+    "id": "paracheirodon-axelrodi",
+    "commonName": "Cardinal tetra",
+    "scientificName": "Paracheirodon axelrodi",
+    "kind": "fish",
+    "family": "Acestrorhamphidae",
+    "lengthCm": {
+      "min": 1.5,
+      "common": 2.5,
+      "max": 3.0,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.02522,
+      "b": 3.0
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "sardine",
+    "tint": {
+      "body": "#3ab0e0",
+      "accent": "#e0302a"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 1,
+    "description": "A fish no longer than a thumbnail, with an electric blue-green stripe above a scarlet belly. Shoals of them hang in the dark water of forest streams. Barcelos is built on them: the piabeiros of the middle Rio Negro catch them by hand-net for the world's aquariums.",
+    "facts": [
+      "Most cardinal tetras in the aquarium trade are caught in tributaries of the Rio Negro and Orinoco.",
+      "It lives in shoals in the middle layers of acid blackwater (pH 4 to 6).",
+      "Barcelos calls itself the capital of the ornamental fish, with an annual ornamental-fish festival since 1994."
+    ],
+    "visualNotes": "Tiny, slender tetra; iridescent neon blue-green stripe from eye to adipose fin; entire lower body bright red from snout to tail; translucent fins.",
+    "sources": [
+      {
+        "title": "FishBase: Paracheirodon axelrodi",
+        "url": "https://www.fishbase.se/summary/Paracheirodon-axelrodi.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 3.0 cm SL, blackwater shoaling, aquarium trade from Rio Negro and Orinoco tributaries. IUCN LC, assessed 4 March 2021 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Paracheirodon axelrodi",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8195&GenusName=Paracheirodon&SpeciesName=axelrodi&fc=812",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set (2.8-3.0 cm, n=3, weak)"
+      },
+      {
+        "title": "Wikipedia: Barcelos, Amazonas",
+        "url": "https://en.wikipedia.org/wiki/Barcelos,_Amazonas",
+        "accessed": "2026-11-25",
+        "supports": "annual ornamental-fish festival since 1994; Brazil's biggest exporter of ornamental fish; Project Piaba starts from Barcelos"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes DE (tributaries, streams))"
+      }
+    ]
+  },
+  {
+    "id": "macrobrachium-brasiliense",
+    "commonName": "Freshwater prawn",
+    "scientificName": "Macrobrachium brasiliense",
+    "kind": "crustacean",
+    "family": "Palaemonidae",
+    "lengthCm": {
+      "min": 0.5,
+      "common": 1.0,
+      "max": 2.0,
+      "measure": "CL"
+    },
+    "lengthWeight": {
+      "a": 1.0,
+      "b": 2.9
+    },
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "lobster",
+    "tint": {
+      "body": "#b8a890",
+      "accent": "#6a4a3a"
+    },
+    "conservation": {
+      "iucn": "NE",
+      "releaseOnly": false
+    },
+    "baseValue": 1,
+    "description": "A small, translucent prawn of forest streams and leaf litter, with long thin claws and a habit of backing into the shadows. It is one of the few crustaceans that thrive in acid blackwater, and every fish in the igarapé knows it as food.",
+    "facts": [
+      "It lives in small first-order streams, far from the coast.",
+      "Males reach about 2 cm in carapace length."
+    ],
+    "visualNotes": "Small, slender, translucent brownish prawn with darker bands; long rostrum; second pair of legs as long, slender claws, longer in males.",
+    "sources": [
+      {
+        "title": "Iheringia, Série Zoologia: population biology of Macrobrachium brasiliense",
+        "url": "https://scielo.br/j/isz/a/XrrJBVDBQQ4GfyJWYk3h9Pq/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "maximum carapace length 20.5 mm in males and 20.1 mm in females; first-order stream habitat (search excerpt)"
+      },
+      {
+        "title": "Lower Rio Negro Macrobrachium records (taxonomic literature)",
+        "url": "https://tb.plazi.org/GgServer/html/DE5F87ABFFCBFFBCD2833871A099FB3C",
+        "accessed": "2026-11-25",
+        "supports": "M. brasiliense among the Macrobrachium of the lower Rio Negro basin (search excerpt); length-weight a and b are unpublished placeholders"
+      }
+    ]
+  },
+  {
+    "id": "inia-geoffrensis",
+    "commonName": "Amazon river dolphin (boto)",
+    "scientificName": "Inia geoffrensis",
+    "kind": "sighting",
+    "family": "Iniidae",
+    "lengthCm": {
+      "min": 150,
+      "common": 210,
+      "max": 255,
+      "measure": "TL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "dolphin",
+    "tint": {
+      "body": "#d8a0a8",
+      "accent": "#8a5a60"
+    },
+    "conservation": {
+      "iucn": "EN",
+      "releaseOnly": true,
+      "note": "Endangered (IUCN 2018). Killed illegally for use as bait for piracatinga catfish; Brazil banned piracatinga fishing in 2015 and renewed the ban in 2023."
+    },
+    "baseValue": 0,
+    "description": "The pink dolphin of the Amazon: a long-beaked, round-headed river dolphin that turns from grey to pink with age. Its neck bends, and it can steer slowly between the trunks of the flooded forest. It surfaces with a heavy breath every minute or two and is never far from the boats at Barcelos.",
+    "facts": [
+      "Its neck vertebrae are not fused, so it can turn its head and manoeuvre through flooded forest.",
+      "Males reach 2.55 m and can weigh 185 kg; females are smaller.",
+      "Brazil banned fishing for piracatinga catfish because river dolphins were being killed for bait."
+    ],
+    "visualNotes": "Long narrow beak with stiff hairs; bulging forehead; low ridge instead of a dorsal fin; large paddle-like flippers; grey when young, pink in adults, especially males.",
+    "sources": [
+      {
+        "title": "Wikipedia: Amazon river dolphin",
+        "url": "https://en.wikipedia.org/wiki/Amazon_river_dolphin",
+        "accessed": "2026-11-25",
+        "supports": "length to 2.55 m (males) and 2.15 m (females), weight to 185 kg; IUCN Endangered (2018); range includes the Rio Negro; uses flooded forest; killed for bait"
+      },
+      {
+        "title": "IN MMA/MPA 6 of 2014: piracatinga moratorium",
+        "url": "https://www.icmbio.gov.br/cma/images/stories/Legislacao/Instruções_normativas/IN_mma_n6_de_17_de_julho_2014_Piracatinga.pdf",
+        "accessed": "2026-11-25",
+        "supports": "ban on piracatinga fishing from 1 January 2015, because of the killing of river dolphins for bait (search excerpt)"
+      }
+    ]
+  },
+  {
+    "id": "sotalia-fluviatilis",
+    "commonName": "Tucuxi",
+    "scientificName": "Sotalia fluviatilis",
+    "kind": "sighting",
+    "family": "Delphinidae",
+    "lengthCm": {
+      "min": 100,
+      "common": 145,
+      "max": 160,
+      "measure": "TL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "dolphin",
+    "tint": {
+      "body": "#8a9098",
+      "accent": "#d8dce0"
+    },
+    "conservation": {
+      "iucn": "EN",
+      "releaseOnly": true,
+      "note": "Endangered (IUCN 2020)."
+    },
+    "baseValue": 0,
+    "description": "A small grey dolphin of the main channels, shaped much like its ocean relatives and quite unlike the boto. Tucuxi travel in tight groups, chase fish in fast dashes near the surface, and leap and somersault where the river is wide. They are shy of boats.",
+    "facts": [
+      "It lives only in fresh water, in the Amazon basin.",
+      "Groups chase fish together in quick dashes near the surface."
+    ],
+    "visualNotes": "Small, streamlined dolphin; short beak; triangular, slightly hooked dorsal fin; grey to blue-grey back, paler sides and belly.",
+    "sources": [
+      {
+        "title": "Wikipedia: Tucuxi",
+        "url": "https://en.wikipedia.org/wiki/Tucuxi",
+        "accessed": "2026-11-25",
+        "supports": "typical length about 1.5 m; IUCN Endangered (da Silva et al. 2020); freshwater only; group foraging, leaping; used as piracatinga bait"
+      }
+    ]
+  },
+  {
+    "id": "pteronura-brasiliensis",
+    "commonName": "Giant otter",
+    "scientificName": "Pteronura brasiliensis",
+    "kind": "sighting",
+    "family": "Mustelidae",
+    "lengthCm": {
+      "min": 100,
+      "common": 160,
+      "max": 180,
+      "measure": "TL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "eel",
+    "tint": {
+      "body": "#5a3e2a",
+      "accent": "#e8dcc8"
+    },
+    "conservation": {
+      "iucn": "EN",
+      "releaseOnly": true,
+      "note": "Endangered (IUCN). Hunted almost to extinction for its fur in the twentieth century."
+    },
+    "baseValue": 0,
+    "description": "The river wolf: a long, dark-brown otter as big as a man, living in noisy family groups that fish the lagoons and backwaters together. Each has a pale throat patch as individual as a fingerprint. A family that has caught a large fish lets the whole lagoon hear about it.",
+    "facts": [
+      "Family groups usually have three to eight members.",
+      "It eats almost nothing but fish, especially characins and catfish.",
+      "Males reach about 1.7 m from head to tail and weigh up to 32 kg."
+    ],
+    "visualNotes": "Very long, sleek dark-brown body; broad flattened tail like a paddle; webbed feet; cream throat patch with an individual pattern; round head with small ears.",
+    "sources": [
+      {
+        "title": "Wikipedia: Giant otter",
+        "url": "https://en.wikipedia.org/wiki/Giant_otter",
+        "accessed": "2026-11-25",
+        "supports": "length to 1.8 m, weight to 32 kg (males), family groups of 3 to 8, fish diet, IUCN Endangered"
+      },
+      {
+        "title": "Ramsar Sites Information Service: Rio Negro",
+        "url": "https://rsis.ramsar.org/ris/2335",
+        "accessed": "2026-11-25",
+        "supports": "giant otter listed for the Rio Negro Ramsar site (search excerpt)"
+      }
+    ]
+  },
+  {
+    "id": "podocnemis-erythrocephala",
+    "commonName": "Red-headed river turtle (irapuca)",
+    "scientificName": "Podocnemis erythrocephala",
+    "kind": "sighting",
+    "family": "Podocnemididae",
+    "lengthCm": {
+      "min": 16,
+      "common": 25,
+      "max": 32.2,
+      "measure": "CL"
+    },
+    "lengthWeight": null,
+    "fight": {
+      "archetype": "none",
+      "strengthFactor": 0,
+      "stamina": 0
+    },
+    "silhouette": "turtle",
+    "tint": {
+      "body": "#4a4a3a",
+      "accent": "#d0402a"
+    },
+    "conservation": {
+      "iucn": "VU",
+      "releaseOnly": true,
+      "note": "Vulnerable (IUCN 1996); Near Threatened in Brazil."
+    },
+    "baseValue": 0,
+    "description": "The smallest of the Amazon river turtles, a blackwater specialist with bright red markings on its head. It lives in the flooded forest and quiet blackwater streams of the Rio Negro and basks on logs at low water. The middle Rio Negro holds one of its largest populations.",
+    "facts": [
+      "The Rio Negro basin is the centre of its range.",
+      "It is the smallest Podocnemis: females reach about 32 cm in carapace length, males about 24 cm.",
+      "It prefers blackwater streams and flooded forest to the main river."
+    ],
+    "visualNotes": "Small, smooth, dark brown-black oval shell; head dark with bright red or orange-red patches and stripes, brightest in juveniles and males.",
+    "sources": [
+      {
+        "title": "IUCN Tortoise and Freshwater Turtle Specialist Group: Podocnemis erythrocephala (Chelonian Research Monographs 5, account 087)",
+        "url": "https://iucn-tftsg.org/cbftt/podocnemis-erythrocephala-087/",
+        "accessed": "2026-11-25",
+        "supports": "Rio Negro centre of distribution; blackwater streams and flooded forest; maximum straight carapace length 322 mm (females) and 244 mm (males); IUCN VU (1996), Brazil NT (search excerpts)"
+      },
+      {
+        "title": "Chelonian Conservation and Biology 13(1): abundance and population structure of Podocnemis erythrocephala",
+        "url": "https://bioone.org/journals/chelonian-conservation-and-biology/volume-13/issue-1/CCB-1039.1/Abundance-and-Population-Structure-of-Podocnemis-erythrocephala-Testudines-Podocnemididae-in/10.2744/CCB-1039.1.full",
+        "accessed": "2026-11-25",
+        "supports": "middle Rio Negro sample of more than 3,000 adults; mean carapace 258 mm (females), 207 mm (males) (search excerpt)"
+      }
+    ]
+  }
+]

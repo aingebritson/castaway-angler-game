@@ -150,6 +150,13 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - In the field guide, each place shows an animal only if it was caught, seen or told of there. A French grunt caught at Rocky Point stays blank at the lagoon until it turns up there. Sightings now note the place. Anything known with no place on record yet goes under "Place not yet known".
     - Empty cells say "nothing on record", not "not yet": no one can prove a fish is not somewhere.
 
+## Rio Negro research (region 2, 25 November 2026)
+
+64. **The Amazon region is anchored at Barcelos on the middle Rio Negro** (Andy's choice, 25 November 2026). Barcelos is at 0.975°S 62.924°W, time zone `America/Manaus`.
+    - The 38 species records in `content/species/rio-negro.json` are researched against FishBase, the 2019 Rio Negro basin checklist, and the record and status sources in `research/rio-negro/`. They have no occurrences yet; those wait for the build to define the locations and the flood-pulse zones.
+    - Peacock bass stay sellable for now. Amazonas defines sport fishing as catch-and-release, so this is open question 2 in the dossier.
+    - The arapaima is release-only.
+
 ## Schema additions (spec section 11)
 
 - `Species`: `tint` (placeholder colours), `gathersAs` (hand-caught bait creatures go into the bag as an item); `lengthCm.measure` gains `CL`, `ML`, `SH`.

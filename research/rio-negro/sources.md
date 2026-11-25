@@ -1,0 +1,45 @@
+# Rio Negro sources
+
+Accessed 25 November 2026. "Search excerpt" means only the search result was seen, not the page itself.
+
+## Species presence
+
+- Beltrão, H., Zuanon, J. and Ferreira, E. (2019). [Checklist of the ichthyofauna of the Rio Negro basin in the Brazilian Amazon](https://zookeys.pensoft.net/article/32055/). *ZooKeys* 881: 53–89. Supplementary Table S1 (species by habitat: A main channel, B lake pelagic, C lake bottom, D tributaries, E streams, F beaches, G rapids, H literature) was read from the [journal's supplementary file](https://zookeys.pensoft.net/article/32055/download/suppl/31/). The [PMC copy](https://pmc.ncbi.nlm.nih.gov/articles/PMC6813176/) has the article text.
+- Lubich, C. et al. (2023). [Freshwater sport fishing: characterization of operations in the middle Negro River, Amazonas, Brazil](https://doi.org/10.20950/1678-2305/bip.2023.49.e738). *Boletim do Instituto de Pesca* 49: e738. Only headings could be read: *Cichla temensis*, *C. orinocensis*, *C. monoculus* and *C. nigromaculata* in the middle Negro.
+
+## Region and fishery
+
+- Search excerpts from a middle Rio Negro sport-fishing study (Barcelos as "international capital of freshwater sport fishing"; 3,219 anglers in 2013/14; the tributaries fished) and a Barcelos regional study (Mariuá archipelago with more than 1,000 islands; about 500 km from Manaus).
+- [MidCurrent (January 2026): Amazon lodges report bonanza conditions as dropping water triggers peacock bass feeding](https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/) (search excerpt)
+- Lodge and outfitter pages on the Rio Negro low-water season, for example [Acute Angling: Rio Negro basin](https://acuteangling.com/rionegrobasin-barge) (search excerpts)
+- [Socioambiental: Indigenous sport fishing submits world record for speckled peacock bass](https://medium.com/@socioambiental/indigenous-sport-fishing-submits-world-record-for-speckled-peacock-bass-e906ba03271a) (search excerpt)
+
+## Hydrology
+
+- Mello, J. A. N. and Barros, W. G. (2001). [Enchentes e vazantes do Rio Negro medidas no porto de Manaus](https://www.scielo.br/j/aa/a/KH8cBzrnZSQTSppFSB55Bjg/?lang=pt). *Acta Amazonica* 31(2). Abstract only: the extremes from 1903 to 1999.
+- [SGB technical note: Rio Negro low-water forecast, 2025](https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf): mean peak about 28 m, mean minimum 17.5 m, peak May to July, low October and November (search excerpt; the file could not be downloaded)
+- Parolin (2009), *Annals of Botany* 103(2), Rio Negro monthly means chart, via a [text description](https://wstyler.ucsd.edu/talks/img/manauswater.txt)
+- [Socioambiental: Barcelos flood record](https://site-antigo.socioambiental.org/pt-br/print/7303) (search excerpt)
+
+## Law and conservation
+
+- [Amazonas Decree 31.151 of 2011](https://www.legisweb.com.br/legislacao/?id=120283): sport fishing as catch-and-release (search excerpt)
+- [Portal Amazônia: peacock bass sport-fishing regulation](https://portalamazonia.com/meio-ambiente/regulamentacao-da-pesca-esportiva-do-tucunare-define-areas-para-pratica-da-pesca-e-o-defeso-do-peixe/) and the [UFAM technical note](https://www.edoc.ufam.edu.br/bitstream/123456789/4946/1/NOTA%20TECNICA.docx.pdf) on PL 249/2023 (search excerpts)
+- [IN MMA/MPA 6 of 2014: piracatinga moratorium](https://www.icmbio.gov.br/cma/images/stories/Legislacao/Instruções_normativas/IN_mma_n6_de_17_de_julho_2014_Piracatinga.pdf), and its [renewal by Portaria Interministerial MPA/MMA 4 of 2023](https://www.canalrural.com.br/aves-e-suinos/peixes/governo-renova-moratoria-da-pesca-da-piracatinga-no-pais/) (search excerpts)
+- [CNN Brasil: IBAMA classifies arapaima as invasive outside the Amazon (IN 7/2026)](https://www.cnnbrasil.com.br/noticias/ibama-classifica-pirarucu-como-especie-invasora/) (search excerpt)
+- [IUCN Tortoise and Freshwater Turtle Specialist Group: Podocnemis erythrocephala](https://iucn-tftsg.org/cbftt/podocnemis-erythrocephala-087/) (search excerpt)
+
+## Other creatures and sightings
+
+- Lower Rio Negro *Macrobrachium* records and Branco River trichodactylid crabs (*Sylviocarcinus pictus*, *Valdivia serrata*) (search excerpts; the species for Barcelos are still to confirm)
+- [Ramsar site description, Rio Negro](https://rsis.ramsar.org/ris/2335): giant otter; [UNESCO / IUCN World Heritage Outlook, Central Amazon Conservation Complex](https://worldheritageoutlook.iucn.org/node/1106): river dolphins (search excerpts)
+
+## Species records (step 4)
+
+- FishBase summary pages and length-weight tables for every fish, as cited in each record of `content/species/rio-negro.json`. All were read on 25 November 2026.
+- [Smithsonian: Electrophorus varii from the Rio Negro](https://si.edu/newsdesk/photos/electrophorus-varii-rio-negro) and [de Santana et al. (2019), Nature Communications 10: 4000](https://doaj.org/article/7867f35382a8452fa46b6f4f42634450) (search excerpts)
+- [US Fish and Wildlife Service: ecological risk screening summary, spotted tiger shovelnose catfish](https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Spotted-Tiger-Shovelnose-Catfish.pdf): *Pseudoplatystoma punctifer* to 140 cm TL (search excerpt)
+- Records: [Tackle Village IGFA table](https://tacklevillage.com/igfa-world-record-list-table-of-species/) (arapaima); [Game and Fish: 10 biggest catfish world records](https://www.gameandfishmag.com/gf-lists/10-biggest-catfish-world-records-time) (redtail, piraíba; search excerpts); [Outdoor Life: world record fish](https://www.outdoorlife.com/photos/gallery/fishing/2010/04/world-record-fish.md) (arowana; search excerpt)
+- [Iheringia: population biology of Macrobrachium brasiliense](https://scielo.br/j/isz/a/XrrJBVDBQQ4GfyJWYk3h9Pq/?lang=en) (search excerpt)
+- Wikipedia: [Amazon river dolphin](https://en.wikipedia.org/wiki/Amazon_river_dolphin), [Tucuxi](https://en.wikipedia.org/wiki/Tucuxi), [Giant otter](https://en.wikipedia.org/wiki/Giant_otter), [Barcelos, Amazonas](https://en.wikipedia.org/wiki/Barcelos,_Amazonas)
+- [IUCN TFTSG account 087: Podocnemis erythrocephala](https://iucn-tftsg.org/cbftt/podocnemis-erythrocephala-087/) and [Chelonian Conservation and Biology 13(1)](https://bioone.org/journals/chelonian-conservation-and-biology/volume-13/issue-1/CCB-1039.1/Abundance-and-Population-Structure-of-Podocnemis-erythrocephala-Testudines-Podocnemididae-in/10.2744/CCB-1039.1.full) (search excerpts)
