@@ -706,6 +706,7 @@
     "kind": "rod",
     "glyph": "🎣",
     "desc": "A stand-up rod built for fish heavier than you. There is nothing in these waters it cannot hold.",
+    "visualNotes": "It must look clearly different from the offshore rod, which is a blue rod with black grips and a gold lever reel. Draw no reel: the reel is a separate item. A massive stand-up rod: a short, very thick black blank with silver roller guides (small wheels instead of rings), a long curved silver aluminium butt ending in a slotted gimbal cap, and a thick white foam foregrip.",
     "rod": {
       "tier": 5,
       "range": 0.99,
