@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import type { Species } from '../content/schema';
 import { formatLength, formatWeight } from '../sim/catch';
 import { MONTH_NAMES, MOON_NAMES, displayTz, formatClock, formatDate, localTime, moonIndex } from '../sim/time';
-import { setNote, togglePin } from '../state/actions';
+import { type Here, placeState, setNote, togglePin } from '../state/actions';
 import { nextGoal } from '../state/goals';
 import type { GameState, GuideEntry, JournalKind } from '../state/state';
 import { BAIT_LABEL, FishArt, Sheet, Tab } from './bits';
@@ -34,6 +34,9 @@ export function GuidePanel({ onClose }: { onClose(): void }) {
   const regionSpecies = new Set(locs.flatMap((l) => speciesAt(c, l.id).map((sp) => sp.id)));
   const got = [...regionSpecies].filter((id) => s.guide[id]?.state === 'caught').length;
 
+  // Known animals with no place on record yet (a rumour that says only when, or a sighting from an old save).
+  const placeless = [...regionSpecies].filter((id) => s.guide[id] && !locs.some((l) => placeState(s.guide[id], l.id))).map((id) => c.species[id]);
+
   if (open) return <EntryView speciesId={open} onBack={() => setOpen(null)} onClose={onClose} />;
   return (
     <Sheet
@@ -42,7 +45,7 @@ export function GuidePanel({ onClose }: { onClose(): void }) {
     >
       {locs.map((l) => {
         const list = speciesAt(c, l.id);
-        const n = list.filter((sp) => s.guide[sp.id]?.state === 'caught').length;
+        const n = list.filter((sp) => placeState(s.guide[sp.id], l.id) === 'caught').length;
         const known = !!s.visited[l.id];
         return (
           <div key={l.id}>
@@ -50,24 +53,42 @@ export function GuidePanel({ onClose }: { onClose(): void }) {
             <div class="guide-grid">
               {list.map((sp, i) => {
                 const e = s.guide[sp.id];
-                if (!e) return <div key={sp.id} class="gcell unknown"><span class="no">{i + 1}</span>?</div>;
-                return (
-                  <button key={sp.id} class={`gcell ${e.state}`} onClick={() => setOpen(sp.id)}>
-                    <span class="no">{i + 1}</span>
-                    {e.state === 'caught' && <FishArt speciesId={sp.id} width={84} />}
-                    {e.state === 'sighted' && <FishArt speciesId={sp.id} width={84} ink />}
-                    {e.state === 'rumoured' && <span style={{ fontSize: '26px' }}>💬</span>}
-                    <span class="nm">{e.state === 'caught' ? sp.commonName : e.state === 'sighted' ? 'Seen, not caught' : 'Rumoured'}</span>
-                    {e.rumours.length > 0 && e.state !== 'rumoured' && <span class="badge">💬</span>}
-                  </button>
-                );
+                const here = placeState(e, l.id);
+                if (!e || !here) return <div key={sp.id} class="gcell unknown"><span class="no">{i + 1}</span>?</div>;
+                return <GuideCell key={sp.id} sp={sp} e={e} here={here} no={i + 1} onOpen={() => setOpen(sp.id)} />;
               })}
             </div>
           </div>
         );
       })}
-      <p class="muted" style={{ marginTop: '14px' }}>Blank slots are animals you have not met. Catch one, spot its shape in the water, or hear about it, and its page begins to fill.</p>
+      {placeless.length > 0 && (
+        <div>
+          <h3>Place not yet known</h3>
+          <div class="guide-grid">
+            {placeless.map((sp) => <GuideCell key={sp.id} sp={sp} e={s.guide[sp.id]} here={s.guide[sp.id].state === 'caught' ? 'caught' : s.guide[sp.id].state === 'sighted' ? 'seen' : 'told'} onOpen={() => setOpen(sp.id)} />)}
+          </div>
+        </div>
+      )}
+      <p class="muted" style={{ marginTop: '14px' }}>Each place lists only what you have caught, seen or been told of there. A fish caught at one place stays blank at another until it turns up there too.</p>
     </Sheet>
+  );
+}
+
+function GuideCell({ sp, e, here, no, onOpen }: { sp: Species; e: GuideEntry; here: Here; no?: number; onOpen(): void }) {
+  // Known by name from somewhere else, but only seen or heard of here.
+  const named = e.state === 'caught';
+  const cls = here === 'caught' ? 'caught' : here === 'seen' ? 'sighted' : 'rumoured';
+  return (
+    <button class={`gcell ${cls}`} onClick={onOpen}>
+      {no !== undefined && <span class="no">{no}</span>}
+      {here === 'caught' && <FishArt speciesId={sp.id} width={84} />}
+      {here === 'seen' && <FishArt speciesId={sp.id} width={84} ink />}
+      {here === 'told' && (named ? <FishArt speciesId={sp.id} width={84} ink /> : <span style={{ fontSize: '26px' }}>💬</span>)}
+      <span class="nm">
+        {here === 'caught' ? sp.commonName : here === 'seen' ? (named ? `${sp.commonName}, seen` : 'Seen, not caught') : named ? `${sp.commonName}, told` : 'Rumoured'}
+      </span>
+      {e.rumours.length > 0 && here !== 'told' && <span class="badge">💬</span>}
+    </button>
   );
 }
 
@@ -158,7 +179,7 @@ function EntryView({ speciesId, onBack, onClose }: { speciesId: string; onBack()
             <div class="lab">Taken on</div>
             <div class="cells">{[...heldTypes].map((t) => <span key={t} class={cellClass(e, `bait:${t}`)}>{BAIT_LABEL[t] ?? t}</span>)}</div>
           </div>
-          <p class="muted">The guide only records what you have seen or been told. Empty cells are not a “no”; they are a “not yet”.</p>
+          <p class="muted">The guide only records where and when a fish has turned up: caught, seen or told of. An empty cell is not a “no”, only nothing on record. You can never be sure a fish is not there.</p>
         </>
       )}
       {caught && (

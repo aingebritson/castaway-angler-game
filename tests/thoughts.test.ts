@@ -5,7 +5,7 @@
 import { describe, expect, it } from 'vitest';
 import { runPace } from '../scripts/lib/paceBot';
 import { loadContentNode } from '../src/content/loadNode';
-import { type Ctx, gather, pickup, travel } from '../src/state/actions';
+import { type Ctx, fishKinds, gather, pickup, placeState, recordCatch, sighting, travel } from '../src/state/actions';
 import { checkThoughts, fillThought, syncThoughts } from '../src/state/thoughts';
 import { migrate, newGame } from '../src/state/state';
 
@@ -118,5 +118,41 @@ describe('thoughts', () => {
     const fresh = newGame(12, START);
     syncThoughts(fresh, ctx());
     expect(fresh.thoughts).toEqual([]);
+  });
+
+  it('"three kinds of fish" means three kinds of fish: crabs gathered for bait do not count', () => {
+    const s = newGame(1, START);
+    s.flags.hasRod = true;
+    s.locationId = 'rocky-point';
+    s.thoughts = content.thoughts.map((x) => x.id).filter((id) => id !== 'kinds');
+    const land = (speciesId: string) => recordCatch(s, ctx(), { speciesId, lengthCm: 20, weightG: 200 } as never, 'shallows', 'rod');
+    land('haemulon-flavolineatum');
+    land('haemulon-flavolineatum');
+    land('abudefduf-saxatilis');
+    land('grapsus-grapsus');
+    expect(fishKinds(s, content)).toBe(2);
+    expect(checkThoughts(s, ctx()).some((e) => e.type === 'thought' && e.thoughtId === 'kinds')).toBe(false);
+    land('thalassoma-bifasciatum');
+    expect(checkThoughts(s, ctx()).some((e) => e.type === 'thought' && e.thoughtId === 'kinds')).toBe(true);
+  });
+
+  it('the guide shows a fish only at the places it has been caught, seen or told of', () => {
+    const s = newGame(1, START);
+    s.locationId = 'rocky-point';
+    recordCatch(s, ctx(), { speciesId: 'haemulon-flavolineatum', lengthCm: 20, weightG: 200 } as never, 'shallows', 'rod');
+    const grunt = s.guide['haemulon-flavolineatum'];
+    expect(placeState(grunt, 'rocky-point')).toBe('caught');
+    const elsewhere = Object.keys(content.occByLocation).filter((l) => l !== 'rocky-point' && content.occByLocation[l].some((o) => o.speciesId === 'haemulon-flavolineatum'));
+    expect(elsewhere.length).toBeGreaterThan(0);
+    for (const l of elsewhere) expect(placeState(grunt, l), l).toBeNull();
+    // Seen somewhere is not caught there.
+    s.locationId = elsewhere[0];
+    sighting(s, ctx(), 'haemulon-flavolineatum');
+    expect(placeState(grunt, elsewhere[0])).toBe('seen');
+    // Told it lives somewhere: a rumour's water counts as heard of, nothing more.
+    const told = Object.values(content.locations).find((l) => l.id !== 'rocky-point' && l.id !== elsewhere[0] && l.zones.length)!;
+    expect(placeState(grunt, told.id)).toBeNull();
+    grunt.cells[`zone:${told.id}/${told.zones[0].id}`] = 'r';
+    expect(placeState(grunt, told.id)).toBe('told');
   });
 });

@@ -3,7 +3,7 @@
  * the player can never be left without a way forward.
  */
 import type { Content } from '../content/assemble';
-import { has, raftStatus, speciesCaught } from './actions';
+import { fishKinds, has, raftStatus } from './actions';
 import { nextLesson } from './lessons';
 import { sourceOf } from './sources';
 import { recipeView, craftCheck } from '../sim/world';
@@ -56,7 +56,7 @@ function portGoal(s: GameState, content: Content): Goal | null {
 
 export function nextGoal(s: GameState, content: Content): Goal | null {
   if (s.flags.launched) return portGoal(s, content);
-  const caught = speciesCaught(s, content);
+  const caught = fishKinds(s, content);
   // The walkthrough says these itself; only someone who skipped it needs telling.
   const early = s.flags.tutDone ? 'now' : null;
   if (!s.flags.hasRod) return { text: 'Something long and thin is tangled in the wrack on the beach.', where: 'beach', hs: 'old-rod', key: 'rod', nudge: early };

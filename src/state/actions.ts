@@ -101,6 +101,28 @@ export function speciesCaught(s: GameState, content: Content): number {
   return Object.entries(s.guide).filter(([id, e]) => e.state === 'caught' && content.species[id]?.kind !== 'sighting').length;
 }
 
+/** Kinds of fish caught: not crabs picked up for bait, lobster from a trap or animals only seen. */
+export function fishKinds(s: GameState, content: Content): number {
+  return Object.entries(s.guide).filter(([id, e]) => e.state === 'caught' && content.species[id]?.kind === 'fish').length;
+}
+
+export type Here = 'caught' | 'seen' | 'told';
+
+/** What the guide knows of an animal at one place: caught there, seen there, told it lives there, or nothing. */
+export function placeState(e: GuideEntry | undefined, locationId: string): Here | null {
+  if (!e) return null;
+  let told = false;
+  for (const [k, v] of Object.entries(e.cells)) {
+    if (k.startsWith(`zone:${locationId}/`)) {
+      if (v === 'c') return 'caught';
+      told = true;
+    }
+  }
+  if (e.cells[`at:${locationId}`]) return 'caught';
+  if (e.cells[`seen:${locationId}`]) return 'seen';
+  return told ? 'told' : null;
+}
+
 /** Evaluate a hotspot condition such as "flag:hasRod", "has:torch" or "everHeld:woven-trap". */
 export function cond(s: GameState, expr: string | undefined): boolean {
   if (!expr) return true;
@@ -395,7 +417,7 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
   const phase = phaseOverride ?? sun.phase;
   const e = entry(s, sp.id);
   const isNew = e.state !== 'caught';
-  if (isNew && sp.kind !== 'sighting') countEvent(s, 'newKind');
+  if (isNew && sp.kind === 'fish') countEvent(s, 'newKind');
   e.state = 'caught';
   e.count++;
   e.firstAt ??= ctx.now;
@@ -511,6 +533,8 @@ export function sighting(s: GameState, ctx: Ctx, speciesId: string): GameEvent[]
   const sp = ctx.content.species[speciesId];
   if (!sp) return [];
   const e = entry(s, speciesId);
+  // Where it was seen, so the guide shows it under this place and no other.
+  e.cells[`${sp.kind === 'sighting' ? 'at' : 'seen'}:${s.locationId}`] = 'c';
   if (sp.kind === 'sighting') {
     const isNew = e.state !== 'caught';
     e.state = 'caught';

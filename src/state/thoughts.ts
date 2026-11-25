@@ -13,7 +13,7 @@
  */
 import type { Content } from '../content/assemble';
 import type { Thought } from '../content/schema';
-import { type Ctx, type GameEvent, log, speciesCaught, sunAt } from './actions';
+import { type Ctx, type GameEvent, fishKinds, log, sunAt } from './actions';
 import { nextGoal } from './goals';
 import { holds } from './lessons';
 import type { GameState } from './state';
@@ -35,7 +35,7 @@ export function fillThought(line: string, s: GameState, content: Content): strin
   return line
     .replace('{days}', s.days.n <= 1 ? 'a day' : `${s.days.n} days`)
     .replace('{catches}', String(s.stats.catches))
-    .replace('{kinds}', String(speciesCaught(s, content)));
+    .replace('{kinds}', String(fishKinds(s, content)));
 }
 
 /**

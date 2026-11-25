@@ -5,7 +5,7 @@ import { craftCheck, pickProvisions, recipeView } from '../sim/world';
 import { sourceOf } from '../state/sources';
 import {
   RAFT_PARTS, addItem, cleanFish, craft, creelLimit, equip, has, launchRaft, rackAdd, rackCollect, rackReady, raftStatus, releaseKept, rigOf,
-  setMethod, speciesCaught, sunAt, trapHaul, trapPeek, trapSet, travel,
+  fishKinds, setMethod, sunAt, trapHaul, trapPeek, trapSet, travel,
 } from '../state/actions';
 import { STAGE_NAMES, nextGoal, stage } from '../state/goals';
 import { type GameState, decodeSave, encodeSave } from '../state/state';
@@ -333,7 +333,7 @@ export function RaftPanel({ onClose }: { onClose(): void }) {
   const s = useGameState();
   const c = store.content;
   const st = raftStatus(s);
-  const caught = speciesCaught(s, c);
+  const caught = fishKinds(s, c);
   const anyKnown = RAFT_PARTS.some((id) => recipeView(c.recipes[id], s.recipesKnown) !== 'hidden');
   return (
     <Sheet title="The raft" sub="A way off the island." onClose={onClose} tall>

@@ -135,7 +135,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 60. **The other castaway's pages teach.** Ten of the sixteen island lessons come on a page: the knife, float, sinker, lagoon, bamboo rod, lure, torch, traps, smoking, and the bearing.
     - When such a lesson's trigger happens, the very next cast reels in a bottle. Its card tells what had just happened, then shows the page, then explains the idea and what it unlocks. Each page's text was rewritten to say exactly what it teaches.
     - Pages come in order, each lesson requiring the one before. They no longer wash up in the wrack or on a pity timer; a bottle that comes up when no page is due is empty.
-    - The bone needle moved to the smoking page and the raft to a new "A way off" lesson on the last page. The last page waits until the drying rack is made and a new kind of fish is caught, with eight kinds in all.
+    - The bone needle moved to the smoking page and the raft to a new "A way off" lesson on the last page. The last page waits until the drying rack is made and a new kind of fish is caught, with seven kinds of fish in all.
 61. **Thoughts follow events, straight away.** No thought waits for a gap.
     - Each story thought has one cause: picking up the rod, the first fish, the first hook you made, nightfall, a new morning, a page, the tenth, fiftieth and hundredth fish, a fish that throws the hook, the campfire, the bamboo rod, the hull, the finished raft.
     - Thoughts about a page come with that page.
@@ -145,6 +145,10 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
       - you walk into the place where a missing part is;
       - a raft part is finished.
 62. **Pace without timers** (bot, median of five): knife at 9 minutes of play, bamboo rod at 53, raft launch at about 2 hours 40. That is faster than before at the end, because nothing waits on a cast count any more. Each lesson asks for a little more of its event instead: four kept fish, two missed bites, three long casts, six casts at the reef edge.
+63. **Kinds means kinds of fish; the guide lists a fish only where it has turned up.**
+    - "Kinds" (the three-kinds thought, the lagoon and last-page lessons, the bearing count) counts fish only. Crabs gathered for bait, lobster, octopus, conch and animals only seen no longer count. The bearing asks for seven, which is what eight with the sand crab used to mean.
+    - In the field guide, each place shows an animal only if it was caught, seen or told of there. A French grunt caught at Rocky Point stays blank at the lagoon until it turns up there. Sightings now note the place. Anything known with no place on record yet goes under "Place not yet known".
+    - Empty cells say "nothing on record", not "not yet": no one can prove a fish is not somewhere.
 
 ## Schema additions (spec section 11)
 

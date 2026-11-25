@@ -696,7 +696,7 @@
         "if": [
           {
             "type": "kinds",
-            "min": 8
+            "min": 7
           },
           {
             "type": "count",
@@ -710,7 +710,7 @@
         "if": [
           {
             "type": "kinds",
-            "min": 8
+            "min": 7
           },
           {
             "type": "stat",

@@ -13,7 +13,7 @@
  */
 import type { Content } from '../content/assemble';
 import type { Lesson, LessonCond, LessonTrigger } from '../content/schema';
-import { type Ctx, type GameEvent, has, log, speciesCaught, sunAt } from './actions';
+import { type Ctx, type GameEvent, fishKinds, has, log, sunAt } from './actions';
 import type { GameState } from './state';
 
 type Base = Record<string, number>;
@@ -28,7 +28,7 @@ export function holds(c: LessonCond, s: GameState, ctx: Ctx, base?: Base): boole
     case 'held':
       return !!s.everHeld[c.item];
     case 'kinds':
-      return speciesCaught(s, ctx.content) >= c.min;
+      return fishKinds(s, ctx.content) >= c.min;
     case 'phase':
       return c.phases.includes(sunAt(ctx, s.locationId).phase);
     case 'at':
