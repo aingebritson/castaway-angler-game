@@ -268,6 +268,7 @@
     "kind": "float",
     "glyph": "🟤",
     "desc": "A disc of coconut shell. It shows a bite clearly and gives more time to strike.",
+    "visualNotes": "A round disc cut from a coconut shell, its rim whole and smooth with nothing bitten out of it ('shows a bite' means it bobs when a fish takes the bait). A short wooden peg through a hole in the centre, with the line tied to the peg.",
     "float": {
       "windowBonus": 0.35
     }
