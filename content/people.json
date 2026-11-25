@@ -5,6 +5,7 @@
     "name": "Mr Alvarez",
     "role": "Harbourmaster",
     "glyph": "🧑‍✈️",
+    "visualNotes": "A Belizean man in his late fifties who runs the harbour and the boatyard: weathered light-brown skin, a kind, amused squint, salt-and-pepper hair curling from under a navy cap with a gold cord and an anchor badge, a dark moustache over a short grey beard, a red neckerchief, and a light short-sleeved shirt open at the collar (no jacket: the town is hot).",
     "greeting": "You came in on that? I have seen coffins with better lines. Sit down before you fall down.",
     "idle": [
       "The pier is free to fish. Everything else needs a boat.",
@@ -17,6 +18,7 @@
     "name": "Marisol",
     "role": "Tackle seller",
     "glyph": "👩‍🔧",
+    "visualNotes": "A Belizean woman in her early forties who runs the tackle shop: tan skin, a thick dark braid over one shoulder, reading glasses pushed up on her head, small silver earrings shaped like fish hooks, and a sleeveless khaki work shirt with pliers clipped to the pocket. A sceptical, knowing half-smile.",
     "greeting": "A bamboo rod and a bone hook. I have not seen a rig like that since my grandmother’s. Does it catch?",
     "idle": [
       "Match the hook to the fish, not to your hopes.",
@@ -29,6 +31,7 @@
     "name": "Old Tobias",
     "role": "Old salt",
     "glyph": "🧓",
+    "visualNotes": "A Creole Belizean man in his late seventies, sixty years a fisherman: thin and wiry, deeply lined dark-brown skin, short white hair and white stubble, a frayed straw hat pushed back, and a faded short-sleeved shirt open at the neck. A wide, gap-toothed grin. No cap and no full beard: he must look nothing like the man in the reference portrait.",
     "greeting": "Sixty years on this water. Ask me where the fish are and I will tell you where they were.",
     "idle": [
       "The sea keeps its books. You only ever see one page.",
@@ -41,6 +44,7 @@
     "name": "Delphine",
     "role": "Fishmonger",
     "glyph": "👩‍🍳",
+    "visualNotes": "A Garifuna Belizean woman in her fifties who runs the fish market: strong and sturdy, dark-brown skin, hair tied up in a bright patterned head wrap, gold hoop earrings, and a rubber apron over a T-shirt. Brisk and shrewd: one eyebrow raised, a businesslike smile.",
     "greeting": "Fresh is money. Big is more money. Protected is none of my business and none of yours.",
     "idle": [
       "Check the board. Restaurants pay double when they are desperate.",
@@ -53,6 +57,7 @@
     "name": "Dr Imani Reyes",
     "role": "Marine biologist",
     "glyph": "👩‍🔬",
+    "visualNotes": "Dr Imani Reyes, a Black Belizean marine biologist in her early thirties: short natural hair, sunglasses pushed up on her head, a sun-faded field shirt with the sleeves rolled, and a pencil behind one ear. Eager and curious, as if about to ask a question.",
     "greeting": "You are the one who came in on the raft. I would very much like to know what you saw out there.",
     "idle": [
       "Every fish released is a fish that can be counted.",
@@ -65,6 +70,7 @@
     "name": "Abena Castillo",
     "role": "Museum curator",
     "glyph": "👩‍🏫",
+    "visualNotes": "Abena Castillo, a Black Belizean woman in her sixties who keeps the town's small natural history museum: silver-grey hair in a neat bun, round tortoiseshell glasses, a loose linen blouse and a beaded necklace. Warm and scholarly, with a patient smile.",
     "greeting": "A natural history museum with almost no specimens. You can help with that.",
     "idle": [
       "One of each kind. The best of each kind, if you can.",

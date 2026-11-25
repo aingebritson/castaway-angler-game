@@ -5,7 +5,7 @@ import { formatLength } from '../sim/catch';
 import { has } from '../state/actions';
 import { badges, donatable, donate, trophyWall, wings } from '../state/museum';
 import { acceptQuest, buy, currentQuest, ensureOrders, fillOrder, fishPrice, goalCount, orderMatch, questReady, sellAllFish, sellFish, sellItem, sellable, turnIn } from '../state/port';
-import { FishArt, GRADE_LABEL, ItemIcon, Sheet, Tab } from './bits';
+import { FishArt, GRADE_LABEL, ItemIcon, Portrait, Sheet, Tab } from './bits';
 import { useGame, useGameState } from './hooks';
 
 export type PortPanel = { kind: 'npc' | 'shop' | 'board' | 'market' | 'museum'; ref: string };
@@ -54,7 +54,7 @@ function PersonBlock({ personId }: { personId: string }) {
   return (
     <>
       <div class="item" style={{ alignItems: 'flex-start' }}>
-        <div class="ic" style={{ fontSize: '30px', width: '54px', height: '54px' }}>{p.glyph}</div>
+        <Portrait id={personId} />
         <div class="grow">
           <div class="t">{p.name} <span class="muted">· {p.role}</span></div>
           <div class="quote" style={{ fontSize: '15px', lineHeight: 1.4, marginTop: '3px' }}>“{line}”</div>

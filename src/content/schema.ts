@@ -371,6 +371,8 @@ export const Person = z.object({
   name: z.string(),
   role: z.string(),
   glyph: z.string(),
+  /** Detail for the portrait prompt only; never shown in the game. */
+  visualNotes: z.string().min(10).optional(),
   greeting: z.string(),
   idle: z.array(z.string()).min(1),
 });

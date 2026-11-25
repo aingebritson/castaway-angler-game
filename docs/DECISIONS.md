@@ -160,5 +160,6 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 - Quest `reward.clues` lists `"<legendary id>:<dimension>"`; hotspot conditions accept `quest:<id>` (done).
 - `Zone`: `cast` (false for hand and trap-only zones), `blurb`.
 - `Location`: `blurb`, `solarTz` (real zone for sun maths when `tz` is `"device"`), `sightZones`, `map`, `scene.painter`; `kind` gains `camp` and `gather`.
+- `Person.visualNotes` (optional): portrait-prompt detail, never shown in the game; the portrait prompt also names the person's town. Portraits show in the person panel, cropped to a circle around the face; people without one keep their emoji.
 - `Item.visualNotes` (optional): art-prompt detail, never shown in the game, as on `Species`. The item prompt also names a crafted item's recipe inputs and blurb.
 - `Hotspot`, `GatherNode`, `Item`, `Recipe`, `Page`, `Rumour`, `JunkTable`, `RigPreset`, `Region`, `Person`, `Quest`, `Shop`: defined in `src/content/schema.ts`, which is the reference.

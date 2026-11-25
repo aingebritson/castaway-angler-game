@@ -117,7 +117,12 @@ for (const i of Object.values(content.items)) {
   add(`item/${i.id}`, 'item', [`Subject: ${i.name}. ${i.desc}${made}`, i.visualNotes].filter(Boolean).join(' '));
 }
 out.push('# Portraits', '');
-for (const p of Object.values(content.people)) add(`portrait/${p.id}`, 'portrait', `Subject: ${p.name}, ${p.role}.`);
+for (const p of Object.values(content.people)) {
+  // where they live sets the clothes: Port Esperanza is a hot harbour town
+  const at = content.locations[p.locationId];
+  const home = at ? ` in ${at.name}, a ${lower(at.habitat)}` : '';
+  add(`portrait/${p.id}`, 'portrait', [`Subject: ${p.name}, ${lower(p.role)}${home}.`, p.visualNotes].filter(Boolean).join(' '));
+}
 
 mkdirSync(join(root, 'art'), { recursive: true });
 if (only.size) {

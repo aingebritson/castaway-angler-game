@@ -16,6 +16,16 @@ export function ItemIcon({ id, size = 28 }: { id: string; size?: number }) {
   );
 }
 
+/** A person's portrait cropped to a circle around the face, or their placeholder glyph. */
+export function Portrait({ id, size = 54 }: { id: string; size?: number }) {
+  const { store } = useGame();
+  const url = assetUrl(`portrait/${id}`);
+  const box = { width: `${size}px`, height: `${size}px` };
+  if (!url) return <div class="ic" style={{ ...box, fontSize: `${Math.round(size * 0.56)}px` }}>{store.content.people[id]?.glyph}</div>;
+  // the portraits are head and shoulders; zoom in so the face fills the circle
+  return <div class="ic portrait" role="img" aria-label={store.content.people[id]?.name} style={{ ...box, backgroundImage: `url("${url}")` }} />;
+}
+
 /**
  * Specimen art. Real art when the manifest has it; otherwise the species'
  * shape class drawn in its field colours. `ink` shows only the silhouette.

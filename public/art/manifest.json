@@ -119,5 +119,11 @@
   "item/steel-hook-small": "item__steel-hook-small.webp",
   "item/steel-hook": "item__steel-hook.webp",
   "item/tag-kit": "item__tag-kit.webp",
-  "item/big-game-rod": "item__big-game-rod.webp"
+  "item/big-game-rod": "item__big-game-rod.webp",
+  "portrait/alvarez": "portrait__alvarez.webp",
+  "portrait/castillo": "portrait__castillo.webp",
+  "portrait/delphine": "portrait__delphine.webp",
+  "portrait/marisol": "portrait__marisol.webp",
+  "portrait/reyes": "portrait__reyes.webp",
+  "portrait/tobias": "portrait__tobias.webp"
 }

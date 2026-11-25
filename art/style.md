@@ -10,7 +10,7 @@ A naturalist's plate drawn with cartoon economy. Transparent washes, a fine dark
 
 ## Reference images
 
-Upload two or three of these at the start of every batch conversation, chosen from **Which references to upload** below. Not all five: image models copy content from references as well as style.
+Upload two or three of these at the start of every batch conversation, chosen from **Which references to upload** below. Not all six: image models copy content from references as well as style.
 
 | File | Shows | Status |
 | --- | --- | --- |
@@ -19,6 +19,7 @@ Upload two or three of these at the start of every batch conversation, chosen fr
 | `art/reference/specimen__abudefduf-saxatilis.png` | Specimen: a deep-bodied fish with bold bars, to show strong markings in this style. Its sixth bar, on the tail stem, is drawn as dark as the others; on the real fish it is faint or missing | Done, 18 November 2026 |
 | `art/reference/specimen__panulirus-argus.png` | Specimen seen from above: an invertebrate (spiny lobster), to fix how shells, legs and antennae are drawn | Done, 18 November 2026 |
 | `art/reference/scene__rocky-point-v2.png` | Scene: the third Rocky Point, now in the game and the reference for scenes. Black basalt, a straight horizon, water deepening evenly from pale shallows to deep blue, and real tide pools where the tap spot is | Done, 18 November 2026 |
+| `art/reference/portrait__alvarez.png` | Portrait: Mr Alvarez, the reference for people. The second version: clean even line, flat washes and a few lines for age, after the first came out too painterly (fine wrinkles, a sketchy beard) and in a wool jacket. Its face is rounder and softer than the specimens; push back if later portraits drift further toward storybook | Done, 25 November 2026 |
 
 ## Which references to upload
 
@@ -28,7 +29,7 @@ Upload two or three of these at the start of every batch conversation, chosen fr
 | From-above animals (crabs, lobster, rays, turtle, octopus, conch, manatee) | lobster + bonefish | The lobster sets the top-down view, legs and shell; the bonefish adds line and wash without pulling toward a side view |
 | Items | stone knife + bonefish | The knife sets the three-quarter view and icon scale. Never the scene |
 | Scenes | Rocky Point + bonefish | Rocky Point sets palette, depth and layout; the bonefish keeps the ink line crisp, which drifted on the second Rocky Point |
-| Portraits | bonefish + stone knife, for style only | Nothing yet shows a person. Make one good portrait, add it to the table, and use it for the rest |
+| Portraits | Alvarez + bonefish | Alvarez sets the framing and the warmth; the bonefish pulls the rendering back toward clean washes and an even line. Say "don't copy his face, cap or clothes": each person's `visualNotes` describes them |
 
 - **Say what the references are for**, before the first prompt: "Match the ink line and watercolour washes of these images; don't copy their subjects or composition." For scenes, add "match the style of the Rocky Point image, not its layout", or every scene comes out as a rocky shore with tide pools.
 - **One conversation per batch of one asset type**, for example the reef fish. Upload once, then paste the prompts in turn.
@@ -102,5 +103,5 @@ A single item icon, three-quarter view, centred, filling about 75 percent of the
 ### Portrait
 
 ```text
-A head-and-shoulders portrait, facing slightly left, friendly and natural, on a soft plain watercolour wash background. Square 1024 x 1024.
+A head-and-shoulders portrait, facing slightly left, friendly and natural. The game shows it small, cropped to a circle around the face, so keep the face large and centred in the frame. Keep the rendering simple: flat washes, a few lines for age, no fine wrinkles or sketchy hatching, and a clean, even ink outline like the fish reference image. A soft plain watercolour wash background that reaches all four corners, with no white paper showing. Square 1024 x 1024.
 ```
