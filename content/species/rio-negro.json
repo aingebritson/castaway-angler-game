@@ -8,14 +8,14 @@
     "lengthCm": {
       "min": 25,
       "common": 55,
-      "max": 99,
+      "max": 90,
       "measure": "TL"
     },
     "lengthWeight": {
       "a": 0.01122,
       "b": 3.08
     },
-    "recordNote": "FishBase lists a largest published weight of 12.2 kg; a 14 kg fish from the Marié River was submitted as a world record.",
+    "recordNote": "The heaviest the IGFA has recorded is 13.19 kg (29 lb 1 oz), from Santa Isabel do Rio Negro in 2010. FishBase's 12.2 kg is an older record, from 1994. The longest reported is 94 cm, from the Marié River in 2023. FishBase gives a 99 cm maximum; the game stops ordinary fish at 90 cm, so its legendary is the biggest.",
     "fight": {
       "archetype": "bulldog",
       "strengthFactor": 1.9,
@@ -35,7 +35,7 @@
     "facts": [
       "Adults hold in the deeper edges of lagoons and on the sandy and rocky banks of the main river.",
       "It eats mostly small fish, especially characins under 10 cm.",
-      "The Barcelos region on the Rio Negro is known for world-record peacock bass."
+      "The record speckled peacock bass come from the Rio Negro upstream of Barcelos: the heaviest from Santa Isabel do Rio Negro, the longest from the Marié River."
     ],
     "visualNotes": "Elongate, deep-shouldered cichlid; three broad dark vertical bars; black ocellus ringed in gold on the tail base; red eye; young fish and some adults spotted with pale dots; breeding fish golden-yellow with a hump on the head.",
     "sources": [
@@ -43,7 +43,7 @@
         "title": "FishBase: Cichla temensis",
         "url": "https://www.fishbase.se/summary/Cichla-temensis.html",
         "accessed": "2026-11-25",
-        "supports": "taxonomy, maximum length 99 cm TL, largest published weight 12.2 kg, lagoon and river-bank habitat, diet; length-weight a and b (Bayesian TL estimate; 15.7 kg at 99 cm, +29%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+        "supports": "taxonomy, maximum length 99 cm TL (the game caps ordinary fish at 90 cm, below its 95 cm legendary), largest published weight 12.2 kg, lagoon and river-bank habitat, diet; length-weight a and b (Bayesian TL estimate; 11.7 kg at 90 cm, -11% against the 13.19 kg IGFA record and -4% against FishBase's 12.2 kg). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
       },
       {
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
@@ -61,7 +61,19 @@
         "title": "Socioambiental: Indigenous sport fishing submits world record for speckled peacock bass",
         "url": "https://medium.com/@socioambiental/indigenous-sport-fishing-submits-world-record-for-speckled-peacock-bass-e906ba03271a",
         "accessed": "2026-11-25",
-        "supports": "a 14 kg speckled peacock bass from the Marié River submitted as a world record (search excerpt)"
+        "supports": "a 14 kg, 87 cm speckled peacock bass from the Marié River submitted as a world record in 2017; I found no ratification (search excerpt)"
+      },
+      {
+        "title": "Game and Fish (2015): top 10 freshwater world records ever caught",
+        "url": "https://www.gameandfishmag.com/editorial/top-10-freshwater-world-records-ever-caught/192682",
+        "accessed": "2026-11-25",
+        "supports": "IGFA weight record 13.19 kg (29 lb 1 oz), Andrea Zaccherini, Santa Isabel do Rio Negro, 3 November 2010, on a prop topwater plug"
+      },
+      {
+        "title": "Fly Fisherman (2023): another new peacock bass record landed on fly",
+        "url": "https://www.flyfisherman.com/editorial/new-new-peacock-bass-record/468040",
+        "accessed": "2026-11-25",
+        "supports": "92 cm, 25.3 lb all-tackle length record, Rio Marié, 25 August 2022, and the earlier 91 cm fish of 4 September 2021. A 94 cm fish from the Marié on 7 September 2023 is known from a search excerpt only"
       }
     ]
   },
@@ -1129,6 +1141,10 @@
       "releaseOnly": false
     },
     "baseValue": 2,
+    "gathersAs": {
+      "item": "live-sardinha",
+      "qty": 2
+    },
     "description": "A silver, keel-bellied fish that swims just under the surface in schools and flashes when the sun hits it. Its deep chest holds the muscles for long pectoral fins, which help it leap clear of the water. Everything in the river eats it, so a live one is the best bait in the boat.",
     "facts": [
       "It belongs to the hatchet characins, with a deep keel-shaped chest.",
@@ -1914,6 +1930,10 @@
       "releaseOnly": false
     },
     "baseValue": 1,
+    "gathersAs": {
+      "item": "cardinal-tetras",
+      "qty": 1
+    },
     "description": "A fish no longer than a thumbnail, with an electric blue-green stripe above a scarlet belly. Shoals of them hang in the dark water of forest streams. Barcelos is built on them: the piabeiros of the middle Rio Negro catch them by hand-net for the world's aquariums.",
     "facts": [
       "Most cardinal tetras in the aquarium trade are caught in tributaries of the Rio Negro and Orinoco.",
@@ -1979,6 +1999,10 @@
       "releaseOnly": false
     },
     "baseValue": 1,
+    "gathersAs": {
+      "item": "river-prawn",
+      "qty": 2
+    },
     "description": "A small, translucent prawn of forest streams and leaf litter, with long thin claws and a habit of backing into the shadows. It is one of the few crustaceans that thrive in acid blackwater, and every fish in the igarapé knows it as food.",
     "facts": [
       "It lives in small first-order streams, far from the coast.",

@@ -43,3 +43,14 @@ Accessed 25 November 2026. "Search excerpt" means only the search result was see
 - [Iheringia: population biology of Macrobrachium brasiliense](https://scielo.br/j/isz/a/XrrJBVDBQQ4GfyJWYk3h9Pq/?lang=en) (search excerpt)
 - Wikipedia: [Amazon river dolphin](https://en.wikipedia.org/wiki/Amazon_river_dolphin), [Tucuxi](https://en.wikipedia.org/wiki/Tucuxi), [Giant otter](https://en.wikipedia.org/wiki/Giant_otter), [Barcelos, Amazonas](https://en.wikipedia.org/wiki/Barcelos,_Amazonas)
 - [IUCN TFTSG account 087: Podocnemis erythrocephala](https://iucn-tftsg.org/cbftt/podocnemis-erythrocephala-087/) and [Chelonian Conservation and Biology 13(1)](https://bioone.org/journals/chelonian-conservation-and-biology/volume-13/issue-1/CCB-1039.1/Abundance-and-Population-Structure-of-Podocnemis-erythrocephala-Testudines-Podocnemididae-in/10.2744/CCB-1039.1.full) (search excerpts)
+
+## Legendary (step 5)
+
+- [IGFA: King of the Jungle, giant peacock bass on fly](https://igfa.org/?p=66250) (Matt Harris and Rodrigo Salles, probably March 2023): feeding peaks 9 am to 3 pm on warm sunny days; lagoons packed with big pre-spawn fish at low water; fallen trees, deep pools and lagoon mouths; big poppers and topwater flies in structure; spawning and brood guarding; the 89 cm, 28.5 lb fly fish of 2017; the 91 and 92 cm Marié length records
+- [Game and Fish (2015): top 10 freshwater world records ever caught](https://www.gameandfishmag.com/editorial/top-10-freshwater-world-records-ever-caught/192682): IGFA weight record 13.19 kg, Andrea Zaccherini, Santa Isabel do Rio Negro, 3 November 2010, prop topwater plug
+- [Fly Fisherman (2023): another new peacock bass record landed on fly](https://www.flyfisherman.com/editorial/new-new-peacock-bass-record/468040): 92 cm, 25.3 lb, Rodrigo Salles, Rio Marié, 25 August 2022
+- [Thomas and Thomas: new world record for peacock bass](https://thomasandthomas.com/blogs/news/new-world-record-for-peacock-bass) and [Flylords (2022)](https://flylordsmag.com/new-world-record-speckled-peacock-bass-landed-in-brazil/): 91 cm, 25.5 lb, Rio Marié, 4 September 2021
+- 94 cm length record, Brent Van Niekerk, Rio Marié, 7 September 2023 (search excerpt; the page was not read)
+- [Field and Stream: Gerald Lawson's 27 lb Rio Negro record, December 1994](https://www.fieldandstream.com/new-world-record-peacock-bass-caught-brazils-rio-negro/?amp) (search excerpt)
+- [Florida Sportsman: the Marié River's 14 kg fish](https://www.floridasportsman.com/editorial/brazil-giant-peacock-bass/397730): 87 cm, 22 November 2017, pending at the time (search excerpt). The Socioambiental print page returned an error.
+- [Wikipedia: Cichla temensis](https://en.wikipedia.org/wiki/Cichla_temensis): breeding at the end of the dry season, brood guarding and fasting, the speckled and golden barred colour phases, the nuchal hump, the IGFA 28.5 lb figure

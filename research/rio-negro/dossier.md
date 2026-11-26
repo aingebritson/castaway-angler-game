@@ -1,6 +1,6 @@
 # Rio Negro research dossier (region 2, M3)
 
-Started 25 November 2026. Steps 1 and 2 (region and long list) are done, the anchor at Barcelos is confirmed (Andy, 25 November 2026), and step 4's **species records** are written: `content/species/rio-negro.json`, 38 species, all validated. Occurrence records, the legendary, rumours, the review and the simulator runs come next. Occurrences need the region's locations and zones, which are part of the M3 build.
+Started 25 November 2026. Steps 1 and 2 (region and long list) are done, the anchor at Barcelos is confirmed (Andy, 25 November 2026), and step 4's **species records** are written: `content/species/rio-negro.json`, 38 species, all validated. Step 5's **legendary is drafted** (Old Gold, a 95 cm speckled peacock bass) and waits on one decision (whether he is released). Occurrence records, rumours, the review and the simulator runs come next. Occurrences need the region's locations and zones, which are part of the M3 build.
 
 ## Region
 
@@ -54,7 +54,7 @@ Each entry gives the checklist's habitat codes: A main channel, B lake pelagic, 
 
 | Species | Common names | Codes | Role and reason |
 | --- | --- | --- | --- |
-| *Cichla temensis* | Speckled peacock bass, tucunaré-açu | BDF | The region's signature fish; Barcelos is famous for its world records. Legendary candidate. |
+| *Cichla temensis* | Speckled peacock bass, tucunaré-açu | BDF | The region's signature fish; the weight and length records come from the Negro upstream of Barcelos (Santa Isabel, the Marié). The legendary. |
 | *Cichla orinocensis* | Butterfly (Orinoco) peacock bass | BDF | Common lagoon peacock |
 | *Cichla monoculus* | Butterfly peacock bass | BD | Smaller lake peacock |
 | *Astronotus ocellatus* | Oscar, acará-açu | BD | Common lake cichlid |
@@ -157,7 +157,7 @@ IUCN statuses for the sightings are from general knowledge and still need checki
 
 | Species | Max (cm) | Weight at max | Record | Difference | Set |
 | --- | --- | --- | --- | --- | --- |
-| Speckled peacock bass | 99 TL | 15.7 kg | 12.2 kg (FishBase) | +29% | Bayesian |
+| Speckled peacock bass | 90 TL | 11.7 kg | 13.19 kg (IGFA, 2010) | −11% | Bayesian. Capped below FishBase's 99 cm so Old Gold (95 cm) is the biggest; at 99 cm it was +19%. |
 | Butterfly peacock bass | 74 TL* | 6.4 kg | 6.2 kg | +4% | Bayesian |
 | Monoculus peacock bass | 80 TL | 8.0 kg | 9.0 kg | −11% | Bayesian |
 | Oscar | 33 SL (≈40 TL) | 1.7 kg | 1.6 kg | +5% | Catalão Lake SL. The Bayesian set gives twice the record at 45.7 cm. |
@@ -193,6 +193,90 @@ The game has no silhouette shapes yet for cichlids, serrasalmids (piranha, pacu,
 
 Base values and fight settings are first guesses on the Caribbean scale. Small cichlids and sardinha are worth 2–6 coins. Peacock bass, payara and redtail are worth 18–65. Piraíba is 120. Arapaima is release-only, at 0. The build should tune these with the simulator.
 
+## Legendary (step 5, draft)
+
+**Old Gold** (*Velho Ouro* in town), a 95 cm speckled peacock bass (*Cichla temensis*) in his breeding colours, at the mouth of the lagoon. He is drafted on 25 November 2026 and is not in `content/legendaries.json` yet, because his location, zone and clue sources need the M3 build.
+
+### The real fish behind him
+
+- **Weight:** the heaviest peacock bass the IGFA has recorded is 13.19 kg (29 lb 1 oz). Andrea Zaccherini caught it at Santa Isabel do Rio Negro, upstream of Barcelos, on 3 November 2010, on a prop topwater plug (Game and Fish, 2015). A 14 kg, 87 cm fish from the Marié River, a Negro tributary in Indigenous land, was submitted as a record in 2017; I found nothing saying it was ratified. FishBase's 12.2 kg is Gerald Lawson's 27 lb Rio Negro fish of December 1994, an older record.
+- **Length:** the all-tackle length record has been raised three times on the Rio Marié: 91 cm (Rodrigo Salles, 4 September 2021, 25.5 lb), 92 cm (Salles, 25 August 2022, 25.3 lb) and 94 cm (Brent Van Niekerk, 7 September 2023; search excerpt only). FishBase's maximum is 99 cm TL.
+- **Every one of these fish was caught between late August and late November, at low water.**
+- **Behaviour** (IGFA, Harris and Salles, 2023; Wikipedia):
+  - Peacock bass are diurnal predators, feeding hardest "between 9 am and 3 pm" on warm, sunny days.
+  - In the low-water middle of the season the lagoons are packed with big fish preparing to spawn.
+  - They hold close to fallen trees, and deep water at the mouths of lagoons.
+  - Topwater flies are "unbeatable in the structure", and big ones move the big fish.
+  - Breeding adults lose their speckles and turn golden-olive with three dark bars; some males grow a hump on the head.
+  - Spawning begins at the end of the dry season, and the parents fast while they guard the brood.
+
+### Spawn rule
+
+| Condition | Value | Basis |
+| --- | --- | --- |
+| Location | The lagoon | Big fish crowd the lagoons at low water (IGFA) |
+| Zone | The lagoon mouth (new zone, deep, with fallen timber) | Deep pools and lagoon mouths; fallen trees (IGFA) |
+| Phase | Day | Diurnal; peak 9 am to 3 pm (IGFA) |
+| Months | September, October, November (`[8, 9, 10]`) | The game's low water (Sep–Dec), and the months of every record fish above |
+| Rig | Popper | The game's surface lure. The 2010 weight record took a prop topwater; IGFA advises big poppers in structure. The game's `plug` is a diving minnow, so it does not fit. |
+| Moon | None | No source links peacock bass to the moon |
+
+Four conditions, inside the spec's three to five. `chancePerCast` 0.1, the spec's default.
+
+### Size
+
+**95 cm TL, 13.9 kg** by the species' length-weight set. That is 1 cm over the 94 cm length record and about 5% over the 13.19 kg weight record, so he is bigger than anything ratified but not implausible. Three record fish check the set: it gives 11.3 kg at 89 cm (Florian Kaiser's fly fish, reported at 12.9 kg), 12.1 kg at 91 cm (reported 11.6 kg) and 12.5 kg at 92 cm (reported 11.5 kg).
+
+**The species' in-game maximum is now 90 cm (11.7 kg)** (Andy, 25 November 2026), so he is "just above the normal range" as the spec asks. It was FishBase's 99 cm (15.7 kg), which let ordinary fish out-grow him, the same problem Ironjaw and the Bishop still have (castaway-island dossier, open question 2). At 90 cm the weight is −11% against the IGFA record and −4% against FishBase's 12.2 kg, so it passes the weight check. FishBase's 99 cm stays in the source note and the record note.
+
+### Clues
+
+| Dimension | Text | Source (to assign in the M3 build) |
+| --- | --- | --- |
+| where | "He lies under the fallen tree in the mouth of the lagoon, where the water goes deep." | A guide (quest) |
+| when | "In the heat of the day, when the sun is high. He doesn't stir for the dawn." | A town fisher (quest) |
+| bait | "He wants noise on the surface. A big popper, chugged hard across the top." | The tackle seller (quest) |
+| season | "Only at low water, September to November, when the lagoon is cut off and crowded." | `museum:rio-negro` (the region's museum wing) |
+
+"He doesn't stir for the dawn" is a statement about him, not the species. Big peacocks are taken on sandbars early and late in the day (IGFA), so the rumour must not say that of peacock bass in general. When the occurrence records are written, the lagoon-mouth zone must give speckled peacock bass a day phase and September to November months at least as strong as dawn, or the season and phase clues will read as wrong against the field guide.
+
+### Lore
+
+"A speckled peacock bass in his gold: the spots long gone, three bars as dark as charcoal, a hump on his head like a closed fist. Every low water the guides at Barcelos swear he has boiled under the fallen tree at the mouth of the lagoon, and every low water somebody's popper comes back with the hooks straightened."
+
+### Draft record
+
+```json
+{
+  "id": "old-gold",
+  "speciesId": "cichla-temensis",
+  "name": "Old Gold",
+  "lore": "A speckled peacock bass in his gold: the spots long gone, three bars as dark as charcoal, a hump on his head like a closed fist. Every low water the guides at Barcelos swear he has boiled under the fallen tree at the mouth of the lagoon, and every low water somebody's popper comes back with the hooks straightened.",
+  "lengthCm": 95,
+  "spawn": {
+    "locationId": "lagoon (id from the M3 build)",
+    "zone": "lagoon-mouth",
+    "phases": ["day"],
+    "months": [8, 9, 10],
+    "rig": ["popper"],
+    "chancePerCast": 0.1
+  },
+  "clues": [
+    { "dimension": "where", "text": "He lies under the fallen tree in the mouth of the lagoon, where the water goes deep.", "sourceQuestId": "(guide quest)" },
+    { "dimension": "when", "text": "In the heat of the day, when the sun is high. He doesn't stir for the dawn.", "sourceQuestId": "(town fisher quest)" },
+    { "dimension": "bait", "text": "He wants noise on the surface. A big popper, chugged hard across the top.", "sourceQuestId": "(tackle seller quest)" },
+    { "dimension": "season", "text": "Only at low water, September to November, when the lagoon is cut off and crowded.", "sourceQuestId": "museum:rio-negro" }
+  ],
+  "fight": { "staminaMult": 2.5 }
+}
+```
+
+`staminaMult` 2.5 is a starting point between the Bishop (2) and Ironjaw (3.5). The bot must tune it to the spec's 60 to 120 seconds on the region's top rig.
+
+### Kept or released
+
+Real record peacock bass are released: Amazonas sport fishing is catch-and-release by decree, and the Marié fishery is catch-and-release. The draft proposes that Old Gold is released after the photograph whatever the species' sellable flag says. The schema has no release flag on a legendary, so the build would need one (open question 6). The Bishop is released only because tarpon are release-only.
+
 ## Selection against the quotas (draft)
 
 Thirty-four fish is at the top of the 25–35 range. The rarity column is a first draft, to be set per spot when the occurrence records are written.
@@ -223,12 +307,14 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 2. **Peacock bass: sellable or release-only?** The records keep them sellable for now. Amazonas sport fishing is catch-and-release by decree, and a 2023 bill bans selling tucunaré commercially. The game's market buys fish. This is the same kind of choice as bonefish in the Cayes.
 3. **How the flood pulse maps to the calendar.** The proposed seasons use Manaus timing, adjusted for Barcelos lodge reports. Each location runs on its own real local calendar, so the game will flood the forest from about April to August every year.
 4. **Net method content.** Cardinal tetra (and possibly *Potamotrygon wallacei*) would be the first true net catches. The schema reserves the method.
+5. **Resolved: the speckled peacock bass in-game maximum is 90 cm** (Andy, 25 November 2026), below Old Gold's 95 cm. FishBase gives 99 cm; the record fish run 89 to 94 cm.
+6. **Is Old Gold released?** Real record peacock bass are released, and Amazonas sport fishing is catch-and-release. Releasing him needs a flag on the legendary.
 
 ## Still to do
 
 - **Step 3:** confirm the selection and set rarity per spot and season.
 - **Step 4, occurrences:** draft per spot and water level once the build defines the locations. Spawning runs (jaraqui, matrinxã) and peacock bass by water level need specific sources.
 - **Other creatures quota:** the spec asks for 5–8. Blackwater supports few. The region has a prawn and the cardinal tetra (a fish, by net); a second prawn or crab needs a Barcelos source.
-- **Step 5:** legendary proposal. The lead candidate is a giant speckled peacock bass, built on Barcelos's world-record fame. A 14 kg fish from the Marié River in an Indigenous sport-fishing area was submitted as a world record.
+- **Step 5:** the legendary is drafted. The build must define the lagoon and its lagoon-mouth zone and assign the three quest clue sources; then he goes into `content/legendaries.json` and the bot tunes his fight. Open question 6 decides whether he is released.
 - **Steps 6–8:** rumours, independent review, validator and simulator.
 - **Hydrology:** read the SGB station table for Barcelos.

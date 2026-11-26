@@ -156,6 +156,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - The 38 species records in `content/species/rio-negro.json` are researched against FishBase, the 2019 Rio Negro basin checklist, and the record and status sources in `research/rio-negro/`. They have no occurrences yet; those wait for the build to define the locations and the flood-pulse zones.
     - Peacock bass stay sellable for now. Amazonas defines sport fishing as catch-and-release, so this is open question 2 in the dossier.
     - The arapaima is release-only.
+65. **The Rio Negro legendary is drafted, not built:** *Old Gold*, a 95 cm speckled peacock bass in breeding colours, at the mouth of the lagoon, by day, September to November, on a popper. The spawn rule, clues and lore are in `research/rio-negro/dossier.md`. He goes into `content/legendaries.json` once the M3 build defines the lagoon and its lagoon-mouth zone and the people who give his clues. The speckled peacock bass's in-game maximum is lowered from FishBase's 99 cm to 90 cm, so he is just above the normal range (Andy, 25 November 2026). Whether he is released is still open.
 
 ## Schema additions (spec section 11)
 
