@@ -155,7 +155,7 @@
       "livefish": 1.4,
       "worm": 0.2
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Cichla monoculus",
@@ -180,9 +180,21 @@
         "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
         "accessed": "2026-11-25",
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      },
+      {
+        "title": "Lubich et al. (2023): freshwater sport fishing in the middle Negro River, Boletim do Instituto de Pesca 49: e738",
+        "url": "https://doi.org/10.20950/1678-2305/bip.2023.49.e738",
+        "accessed": "2026-11-25",
+        "supports": "C. monoculus is one of the four peacock bass of the middle Negro sport fishery (headings only)"
+      },
+      {
+        "title": "Kullander and Ferreira (2006): a review of the South American cichlid genus Cichla, Ichthyological Exploration of Freshwaters 17(4)",
+        "url": "https://www.svenkullander.se/publications/Kullander_Ferreira_Cichla_2006.pdf",
+        "accessed": "2026-11-25",
+        "supports": "C. monoculus mainly along the Solimões-Amazonas and the lower courses of its tributaries; its Rio Negro specimens are from near Manaus (as reported in the review)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BD. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA)."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BD. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA). Review: the genus revision puts this species mainly in whitewater floodplains, with its Rio Negro specimens near Manaus; the middle Negro sport-fishing study lists it. Kept, at low confidence. Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "serrasalmus-rhombeus",
@@ -700,10 +712,10 @@
         "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       },
       {
-        "title": "Araujo-Lima and Goulding, as summarised in: life history and management of the tambaqui, Revista Brasileira de Zoologia",
+        "title": "Goulding and Carvalho (1982): life history and management of the tambaqui, Revista Brasileira de Zoologia",
         "url": "https://scielo.br/j/rbzool/a/gQRV47qdG65ttvNgnDzb6cd/?lang=en",
         "accessed": "2026-11-25",
-        "supports": "adults outside the breeding season stay in flooded forest, including blackwater igapó; fruit-eating in the flood (search excerpt)"
+        "supports": "immature tambaqui are confined to the floodplains of whitewater rivers; adults enter the flooded forests of blackwater, clearwater and whitewater rivers to eat fruit and seeds"
       },
       {
         "title": "Acta Amazonica (2003): seasonal variation of nutrients and energy in the tambaqui's natural food",
@@ -712,7 +724,7 @@
         "supports": "fruits and seeds dominate while the river rises and floods, with fruiting of igapó trees; zooplankton in the dry season (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats D. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: fruit-eating in the igapó through the flood confirmed."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats D. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: fruit-eating in the igapó through the flood confirmed. Kept sellable by design (Andy, 25 November 2026), although Brazil listed tambaqui as Vulnerable in April 2026; the field guide says so."
   },
   {
     "speciesId": "electrophorus-varii",
@@ -897,7 +909,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BDF. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA)."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BDF. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Its only zone exists at high water (June to August), where it is 0.9; the rising-water values never apply. Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "podocnemis-erythrocephala",
@@ -907,10 +919,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1,
-      "day": 1,
-      "dusk": 1,
-      "night": 1
+      "dawn": 1.0,
+      "day": 1.2,
+      "dusk": 1.0,
+      "night": 0.4
     },
     "monthMod": [
       1,
@@ -939,11 +951,12 @@
         "supports": "Rio Negro centre of distribution; blackwater streams and flooded forest; maximum straight carapace length 322 mm (females) and 244 mm (males); IUCN VU (1996), Brazil NT (search excerpts)"
       },
       {
-        "title": "Chelonian Conservation and Biology 13(1): abundance and population structure of Podocnemis erythrocephala",
-        "url": "https://bioone.org/journals/chelonian-conservation-and-biology/volume-13/issue-1/CCB-1039.1/Abundance-and-Population-Structure-of-Podocnemis-erythrocephala-Testudines-Podocnemididae-in/10.2744/CCB-1039.1.full",
+        "title": "Bernardes et al. (2014): abundance and population structure of Podocnemis erythrocephala in the Unini River, Chelonian Conservation and Biology 13(1): 89-95",
+        "url": "https://researchportalplus.anu.edu.au/en/publications/abundance-and-population-structure-of-podocnemis-erythrocephala-t/",
         "accessed": "2026-11-25",
-        "supports": "middle Rio Negro sample of more than 3,000 adults; mean carapace 258 mm (females), 207 mm (males) (search excerpt)"
+        "supports": "Unini River (Negro basin, in Barcelos municipality): 352 turtles marked (162 males, 150 females, 40 immatures); mean carapace 251 mm in females and 210 mm in males (abstract)"
       }
-    ]
+    ],
+    "designNotes": "Review: seen mostly by day, when it basks; no study of its time of day was found."
   }
 ]

@@ -165,7 +165,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABDFH)"
+        "supports": "present in the Rio Negro basin (habitat codes ABDFH (H = a literature record, not a habitat))"
       }
     ],
     "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABDF."
@@ -414,9 +414,15 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABCDF)"
+      },
+      {
+        "title": "Acta Scientiarum Biological Sciences (2009): Plagioscion squamosissimus in Piató Lagoon, Rio Grande do Norte",
+        "url": "https://doaj.org/article/93d2dfda25ff4d7eb6f7568e09b18a4b",
+        "accessed": "2026-11-25",
+        "supports": "a twilight-nocturnal habit, with shrimp eaten in the dim hours and insects in the bright ones (search excerpt; the paper could not be opened, and an upper Paraná study is reported to find daytime feeding)"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABCDF."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABCDF. Review: dusk and night follow one twilight-nocturnal study; another is reported to find daytime feeding."
   },
   {
     "speciesId": "pinirampus-pirinampu",
@@ -481,7 +487,7 @@
         "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: no study of its time of day was found; the night peak is the habit of its catfish family, assumed."
   },
   {
     "speciesId": "pellona-castelnaeana",
@@ -654,7 +660,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+        "supports": "present in the Rio Negro basin (habitat codes ABDH (H = a literature record, not a habitat))"
       },
       {
         "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
@@ -673,9 +679,15 @@
         "url": "https://fishbase.se/summary/8695",
         "accessed": "2026-11-25",
         "supports": "a nocturnal, opportunistic piscivore of the main river bed and flooded forest; migrates with its prey at the end of the dry season (search excerpt; congener of P. punctifer)"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-25",
+        "supports": "surubim (the Amazon fish once filed as P. fasciatum) and caparari are usually caught near margins, as in beach waters, at night"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: the English name is the spotted tiger shovelnose; caparari is P. tigrinum."
   },
   {
     "speciesId": "serrasalmus-manueli",

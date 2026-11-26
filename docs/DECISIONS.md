@@ -154,7 +154,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 
 64. **The Amazon region is anchored at Barcelos on the middle Rio Negro** (Andy's choice, 25 November 2026). Barcelos is at 0.975°S 62.924°W, time zone `America/Manaus`.
     - The 38 species records in `content/species/rio-negro.json` are researched against FishBase, the 2019 Rio Negro basin checklist, and the record and status sources in `research/rio-negro/`. They have no occurrences yet; those wait for the build to define the locations and the flood-pulse zones.
-    - Peacock bass stay sellable for now. Amazonas defines sport fishing as catch-and-release, so this is open question 2 in the dossier.
+    - Peacock bass stay sellable (Andy's choice, 25 November 2026), although Amazonas defines sport fishing as catch-and-release. A field guide fact on each species discloses it, as with bonefish (entry 36).
     - The arapaima is release-only.
 65. **The Rio Negro legendary is drafted, not built:** *Old Gold*, a 95 cm speckled peacock bass in breeding colours, at the mouth of the lagoon, by day, September to November, on a popper. The spawn rule, clues and lore are in `research/rio-negro/dossier.md`. He goes into `content/legendaries.json` once the M3 build defines the lagoon and its lagoon-mouth zone and the people who give his clues. The speckled peacock bass's in-game maximum is lowered from FishBase's 99 cm to 90 cm, so he is just above the normal range (Andy, 25 November 2026). Whether he is released is still open.
 
@@ -170,7 +170,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     All 38 researched species now have occurrence records (100 records). Each is placed by its habitat codes in the 2019 basin checklist, and its `designNotes` say so. Phase and month values are game readings, marked `low` confidence (`medium` for the peacock bass and the sightings). The independent review (spec section 12, step 7) has not been run on these records yet.
     - The rare and epic species are payara, tambaqui, redtail catfish, jaú, electric eel, caparari and speckled peacock bass (rare at some spots), plus arapaima and piraíba (epic). Each has two rumours, all given by Porto Mariuá's errands.
     - Jaraqui come only from the cast net, because they rarely take a hook. Cardinal tetras come only from the dip net, and go into the bag as a bag of live fish to sell.
-    - Sardinha and river prawns are bait animals (`gathersAs`). Peacock bass stay sellable; dossier open question 2 is still open.
+    - Sardinha and river prawns are bait animals (`gathersAs`). Peacock bass stay sellable (settled in entry 64).
 67. **The flood pulse is a content-model defect, now fixed.** The spec says high and low water change which zones exist, but zones had no way to depend on the calendar. Five additions:
     - `Region.water` gives the level for each month: rising January to March, high April to July, falling in August, low September to December.
     - `Zone.water` lists the levels at which a zone exists. The Main River's sand beach exists at low and falling water, and its drowned bank at rising and high. The forest's "under the canopy" zone exists only at high water.
@@ -192,7 +192,7 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - The lagoon's speckled peacock occurrence gives day at least as strong as dawn, and peaks in his months, so the field guide agrees with his clues.
     - `staminaMult` 2.5: the bot lands him every time in about 57 seconds on the graphite popper rig, and never on a glass rod with a jig. That is just under the spec's 60 to 120 seconds. Offshore gear overpowers a 14 kg fish.
     - The legendary-size test now allows up to 10% over the species maximum, because the spec says "just above the normal range".
-    - Whether he must be released is still open (dossier open question 6). For now the player chooses, as with any sellable fish.
+    - He can be kept (Andy's choice, 25 November 2026): the player chooses, as with any sellable fish, so legendaries need no release flag.
 75. **Placeholder art and the map.** `scenes/paintersRio.ts` draws the town and the five spots in blackwater colours, with beaches at low water and trunks in the river at high water. The map has a river placeholder and a line saying what the water is doing. `art:prompts` describes a river scene as blackwater with a far bank of forest, not a blue sea, and writes one prompt per water-level background, each listing only the zones at that level. Art for the six scenes, the low-water Main River, 38 specimens, 12 items and five portraits is still to come.
 76. **Errands point at the right town.** With two ports, the "Thinking" note sent a finished Cayes errand to Porto Mariuá. It now prefers the current region's errands, and points a finished one at the town of whoever set it. A player whose rig has no bait off the island is told to buy some in town, not to dig sand fleas.
 
@@ -200,6 +200,8 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - Water-following month curves moved one month later with it. New seasons from species sources: the jaraqui run (December to February), the matrinxã run, the cardinal tetra's low-water season, a mild low-water peak for the big catfish and the river dolphin, and peacock bass lethargic in rising water.
     - Time of day: peacock bass peak by day (9 am to 3 pm), except on the sandbars at dawn and dusk; stingrays at night; giant otters by day; black piranha at dawn and dusk, with night 0.6 so piranhas do not steal most live baits after dark.
     - Two rumours and Old Gold's season clue were reworded for the calendar. Coins per hour move under 10% almost everywhere. 69 of 100 records stay low confidence; `research/rio-negro/dossier.md` lists what has no source.
+
+78. **The Rio Negro review (spec step 7) is done** (25 November 2026). Three independent agents checked every rare and epic species (9), their 18 occurrences, rumours and Old Gold, and a seeded 30% of the rest (9 species, 25 occurrences). Four errors were fixed: *P. punctifer* is renamed the spotted tiger shovelnose (surubim), because caparari is *P. tigrinum*; the electric eel's weight set now gives 5.7 kg at 149 cm, not 23.5 kg; a misquoted turtle study; and the pacu's hooked fin belongs to the female. Doubtful points corrected include tambaqui nurseries (whitewater, not black), piraíba night feeding (softened; no source), the speckled peacock's colour phases, and the jaú record (51.48 kg). Tambaqui stays sellable (Andy's choice, 25 November 2026) despite its 2026 national Vulnerable listing, which a field guide fact discloses, as with bonefish (entry 36). Details are in `research/rio-negro/dossier.md`.
 
 ## Schema additions (spec section 11)
 

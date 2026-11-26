@@ -438,7 +438,7 @@
     "id": "piraiba-live",
     "speciesId": "brachyplatystoma-filamentosum",
     "dimension": "bait",
-    "text": "Bait for a piraíba is a whole fish, a big one, on a hook you could hang a coat on. They feed most at night.",
+    "text": "Bait for a piraíba is a whole fish, a big one, on a hook you could hang a coat on. The lines go out at sunset and come in at daybreak.",
     "fillsCells": [
       "bait:livefish",
       "bait:cutfish",
@@ -450,7 +450,7 @@
     "id": "redtail-night",
     "speciesId": "phractocephalus-hemioliopterus",
     "dimension": "when",
-    "text": "Pirarara feed at night. In the daytime you will only catch piranha trying.",
+    "text": "Pirarara feed in the evening and at night. In the daytime you will catch more piranha than pirarara.",
     "fillsCells": [
       "phase:night",
       "phase:dusk"
@@ -517,7 +517,7 @@
     "id": "caparari-night",
     "speciesId": "pseudoplatystoma-punctifer",
     "dimension": "when",
-    "text": "The caparari, the tiger catfish, comes up to the edge of the current at night, even off the town.",
+    "text": "The surubim, the spotted tiger catfish, comes up to the edge of the current at night, even off the town.",
     "fillsCells": [
       "phase:night",
       "zone:mariua-waterfront/river-edge"
@@ -528,7 +528,7 @@
     "id": "caparari-live",
     "speciesId": "pseudoplatystoma-punctifer",
     "dimension": "bait",
-    "text": "A caparari wants a live sardinha after dark. It ambushes them where the sand drops off.",
+    "text": "A surubim wants a live sardinha after dark. It ambushes them where the sand drops off.",
     "fillsCells": [
       "bait:livefish",
       "zone:rio-channel/channel-edge"

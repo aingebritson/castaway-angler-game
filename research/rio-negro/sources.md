@@ -72,3 +72,23 @@ Accessed 25 November 2026. "Search excerpt" means only the search result was see
 - Giant otter: [PeerJ (2024)](https://peerj.com/articles/17244) and [PeerJ (2023)](https://peerj.com/articles/15742) (search excerpts)
 - Red-headed river turtle nesting: [INPA: nesting ecology of Podocnemis erythrocephala on the Rio Negro](https://repositorio.inpa.gov.br/items/a743bda4-680a-4023-aeed-31565e6b2ea7/full) (search excerpt; not used in a record)
 - Upper Negro lodge season: [The Fly Shop: Rio Marié](https://www.theflyshop.com/travel/brazil/rio-marie.html) (search excerpt; not used in a record)
+
+## Review (step 7)
+
+- [Águas Amazônicas: surubim](https://en.aguasamazonicas.org/fish/surubim) and [Wikipedia: Pseudoplatystoma tigrinum](https://en.wikipedia.org/wiki/Pseudoplatystoma_tigrinum), [P. punctifer](https://en.wikipedia.org/wiki/Pseudoplatystoma_punctifer): caparari is *P. tigrinum*; *P. punctifer* is the spotted tiger shovelnose
+- [Águas Amazônicas: fishing on the Amazon River](https://en.aguasamazonicas.org/fisheries/fishing/amazon-river): surubim near margins and beaches at night; trotlines baited at sunset, checked at daybreak; jaú at cataracts; pirarara and fruit
+- [FishBase length-weight table: Electrophorus electricus](https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=4535&GenusName=Electrophorus&SpeciesName=electricus) and [FishBase: Electrophorus varii](https://www.fishbase.se/summary/Electrophorus-varii.html)
+- [Goulding and Carvalho (1982): life history and management of the tambaqui](https://scielo.br/j/rbzool/a/gQRV47qdG65ttvNgnDzb6cd/?lang=en)
+- [Portaria GM/MMA 1.667 of 2026](https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/saiba-mais/documentos-e-downloads/9-portaria-gm_mma-no-1-667-de-27-de-abril-de-2026.pdf) and [Portal Amazônia on the tambaqui listing](https://portalamazonia.com/amazonia/tambaqui-vulneravel-caminhos/) (search excerpts)
+- [IN IBAMA-AM 01 of 2005](https://www.icmbio.gov.br/cepsul/images/stories/legislacao/Instrucao_normativa/2005/in_ibama_01_2005_am_regulamenta_pesca_pirarucu_am.pdf) (search excerpt)
+- [AFS 2016 abstract: arapaima breathing frequency](https://afs.confex.com/afs/2016/webprogram/Paper25504.html) (search excerpt)
+- [IGFA recent records, April 2024](https://igfa.org/wp-content/uploads/2024/04/IARecentRecords_april-2024.pdf): jaú 51.48 kg (search excerpt)
+- [Sport Fishing (2022): the latest IGFA world records](https://www.sportfishingmag.com/?p=51422): redtail 123 lb 7 oz, 55.43 in
+- [Wikipedia: Redtail catfish](https://en.wikipedia.org/wiki/Redtail_catfish)
+- [Bernardes et al. (2014), Chelonian Conservation and Biology 13(1)](https://researchportalplus.anu.edu.au/en/publications/abundance-and-population-structure-of-podocnemis-erythrocephala-t/)
+- [FishBase: Myloplus rubripinnis](https://www.fishbase.se/summary/Myloplus-rubripinnis.html), [Leporinus fasciatus](https://www.fishbase.se/summary/Leporinus-fasciatus.html), [Hydrolycus scomberoides](https://www.fishbase.se/summary/Hydrolycus-scomberoides.html)
+- Fishing World Records (IGFA-verified rod and reel rows): [Cichla orinocensis](https://www.fishing-worldrecords.com/scientificname/Cichla%20orinocensis/show), [Serrasalmus rhombeus](https://www.fishing-worldrecords.com/scientificname/Serrasalmus%20rhombeus/show), [Plagioscion squamosissimus](https://www.fishing-worldrecords.com/scientificname/Plagioscion%20squamosissimus/show)
+- [Kullander and Ferreira (2006): review of Cichla](https://www.svenkullander.se/publications/Kullander_Ferreira_Cichla_2006.pdf) (as reported by the reviewer)
+- [Valle (2018): botos and tucuxis in the lower Negro, INPA](https://repositorio.inpa.gov.br/handle/1/11389) (search excerpt)
+- Silver croaker twilight-nocturnal habit: [Acta Scientiarum Biological Sciences (2009), Piató Lagoon](https://doaj.org/article/93d2dfda25ff4d7eb6f7568e09b18a4b) (search excerpt; the companion diet paper by Costa et al. 2009, vol. 31(3): 285–292, was downloaded but its body text could not be extracted)
+- [Wikipedia: Giant otter](https://en.wikipedia.org/wiki/Giant_otter) and [Amazon river dolphin](https://en.wikipedia.org/wiki/Amazon_river_dolphin)

@@ -1,6 +1,6 @@
 # Rio Negro research dossier (region 2, M3)
 
-**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. The occurrence pass (step 4) checked all 100 records on 25 November 2026 and moved the flood calendar to the Barcelos gauge; see "Occurrence pass" below. Still outstanding: step 7, an independent review, and open questions 2 (peacock bass sellable) and 6 (Old Gold released).
+**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. The occurrence pass (step 4) checked all 100 records on 25 November 2026 and moved the flood calendar to the Barcelos gauge; see "Occurrence pass" below. Step 7, the independent review, ran on 25 November 2026; see "Review" below. Every open decision is settled: peacock bass and tambaqui stay sellable, and Old Gold can be kept (open questions 2, 6 and 7).
 
 Started 25 November 2026. Steps 1 and 2 (region and long list) are done, the anchor at Barcelos is confirmed (Andy, 25 November 2026), and step 4's **species records** are written: `content/species/rio-negro.json`, 38 species, all validated. Step 5's **legendary is drafted** (Old Gold, a 95 cm speckled peacock bass) and waits on one decision (whether he is released). Occurrence records, rumours, the review and the simulator runs come next. Occurrences need the region's locations and zones, which are part of the M3 build.
 
@@ -89,7 +89,7 @@ Each entry gives the checklist's habitat codes: A main channel, B lake pelagic, 
 | *Arapaima gigas* | Arapaima, pirarucu | BD | Giant air-breather; managed and protected |
 | *Phractocephalus hemioliopterus* | Redtail catfish, pirarara | BD | The spec's redtail catfish |
 | *Brachyplatystoma filamentosum* | Piraíba | ABC | The giant catfish; main channel |
-| *Pseudoplatystoma punctifer* | Barred sorubim, caparari | ABDH | Night catfish |
+| *Pseudoplatystoma punctifer* | Spotted tiger shovelnose, surubim (renamed in the review: caparari is *P. tigrinum*) | ABD (H = literature record) | Night catfish |
 | *Pinirampus pirinampu* | Flatwhiskered catfish, barba-chata | ABCD | Main-channel catfish |
 | *Zungaro zungaro* | Gilded catfish, jaú | D | Heavy tributary catfish of deep holes |
 | *Potamotrygon motoro* | Ocellate river stingray | ABDF | Beach and shallows stingray; a sting hazard |
@@ -189,7 +189,7 @@ IUCN statuses for the sightings are from general knowledge and still need checki
 
 \* converted from FishBase's 61.7 cm SL; the conversion is an estimate.
 
-No record weight was found for severum, eartheater, freshwater barracuda, matrinxã, banded leporinus, black arowana, caparari, electric eel or cardinal tetra. Their sets come from FishBase (Bayesian or the closest Amazon study), and their weights at maximum look plausible.
+No record weight was found for severum, eartheater, freshwater barracuda, matrinxã, banded leporinus, black arowana, surubim, electric eel or cardinal tetra. Their sets come from FishBase (Bayesian or the closest Amazon study), and their weights at maximum look plausible.
 
 ### Placeholders for the art track
 
@@ -281,7 +281,7 @@ Four conditions, inside the spec's three to five. `chancePerCast` 0.1, the spec'
 
 ### Kept or released
 
-Real record peacock bass are released: Amazonas sport fishing is catch-and-release by decree, and the Marié fishery is catch-and-release. The draft proposes that Old Gold is released after the photograph whatever the species' sellable flag says. The schema has no release flag on a legendary, so the build would need one (open question 6). The Bishop is released only because tarpon are release-only.
+Real record peacock bass are released: Amazonas sport fishing is catch-and-release by decree, and the Marié fishery is catch-and-release. **Decided (Andy, 25 November 2026): he can be kept**, like any sellable peacock bass, so no release flag is needed. The draft had proposed that Old Gold is released after the photograph whatever the species' sellable flag says. The schema has no release flag on a legendary, so the build would need one (open question 6). The Bishop is released only because tarpon are release-only.
 
 ## Occurrence pass (step 4, 25 November 2026)
 
@@ -337,6 +337,69 @@ The same 16 runs (4,000 casts, seed 7), before and after:
 - **The giant rig in the rapids' eddies at night:** −35 to −41%, from the same bait theft. The plunge pool, where that rig belongs, moves 1–10%.
 - **The canopy zone** is gone in May and opens in June.
 
+## Review (step 7, 25 November 2026)
+
+Three independent agents reviewed the records. They had no access to this dossier or `docs/DECISIONS.md` and could not edit files.
+- **Two** checked all 9 species that are rare or epic at some spot (speckled peacock bass, arapaima, tambaqui, electric eel, payara, redtail, jaú, surubim, piraíba), their 18 occurrences, their rumours and Old Gold.
+- **The third** checked a seeded random 30% of the rest (seed 20261125): 9 of 29 species (monoculus and butterfly peacock bass, redhook pacu, silver croaker, giant otter, dogfish characin, jaraqui, black piranha, sardinha) and 25 of 82 occurrences.
+
+Every weight at maximum passed the 30% rule, and every length-weight set matched a FishBase row of the right length type. Each conflict was checked against its source before anything changed.
+
+### Errors fixed
+
+| Record | Problem | Fix |
+| --- | --- | --- |
+| *Pseudoplatystoma punctifer* name | "Barred sorubim (caparari)": in Brazil caparari is *P. tigrinum*, a different species also in the Negro, and "barred sorubim" is FishBase's name for *P. fasciatum* of the Guianas (Águas Amazônicas; Wikipedia) | **Spotted tiger shovelnose (surubim)**. The two rumours now say surubim; their ids stay, because errands use them. |
+| Electric eel weight | The Bayesian body-shape set gave 23.5 kg at 149 cm, heavier than any eel known (FishBase: 20 kg at 250 cm for *E. electricus*) | FishBase's only measured *Electrophorus* set (a 0.00171, b 3.0, SL, n=3): **5.7 kg** at 149 cm. Knifefish have no separate tail fin, so SL and TL are close; the set overstates *E. electricus* at 250 cm by about a third, so it is noted as an estimate. |
+| Red-headed river turtle source | The Chelonian Conservation and Biology citation claimed "more than 3,000 adults" and means of 258 and 207 mm | It is Bernardes et al. (2014), Unini River: 352 marked, means 251 mm (females) and 210 mm (males). The description's "one of its largest populations" is replaced by the Unini study. |
+| Redhook pacu | The description and visual notes put the hooked anal fin on the male; the fact and FishBase put it on the female, whose fin ploughs the spawning furrow | Hooked in the female, two-lobed in the male, everywhere |
+
+### Doubtful claims corrected
+
+- **Tambaqui:** "young fish grow up in the black waters of floodplains" (FishBase) is contradicted by Goulding and Carvalho (1982): juveniles are confined to whitewater floodplains. The fact now says so. The occurrence source was misattributed ("Araujo-Lima and Goulding"); it is Goulding and Carvalho. Brazil's 2026 Vulnerable listing is added to the conservation note (open question 7).
+- **Speckled peacock bass:**
+  - The description said young fish are speckled and big ones gold. The colour change is a breeding cycle, not age; now "out of season … in breeding condition".
+  - The flooded-forest record's note claimed a rising-water dip in a zone that exists only at high water; corrected.
+  - The Lubich (2023) source no longer claims to name Barcelos.
+  - Field and Stream is cited for the 1994 record.
+- **Arapaima:**
+  - "Every few minutes it rises" is now "every quarter of an hour or so": adults breathe on average every 16 minutes (AFS 2016 abstract).
+  - The CNN source now supports only the invasive ruling outside the Amazon, and IN IBAMA-AM 01/2005 is cited for managed fishing inside it.
+- **Piraíba:**
+  - No source gives its time of day. Night 1.8 and day 0.4 are softened to 1.4 and 0.7, on the trotline practice of baiting at sunset and checking at daybreak (Águas Amazônicas). The rumour now says the lines go out at sunset, not that it feeds at night.
+  - "A long-distance migrant" is now "migratory, like the other giant catfishes, though its own routes are poorly known" (Madeira diet study).
+  - Common length 120 cm was a TL figure used as SL; now 100 cm SL.
+- **Redtail:** night feeding is now cited (Wikipedia: "eat during the evening and night"), and the record's 141 cm length to Sport Fishing. The rumour "in the daytime you will only catch piranha" is now "more piranha than pirarara".
+- **Jaú:** the current IGFA all-tackle record is 51.48 kg (Essequibo, 2024), not the 49 kg the check used; +2%. FishBase's habitat wording is now quoted exactly.
+- **Payara:** the record note now explains why FishBase's 117 cm, 17.8 kg fish belong to *H. armatus*: the same *H. scomberoides* page says that species reaches only about 40 cm and lives only in the Amazon basin.
+- **Monoculus peacock bass:** the genus revision (Kullander and Ferreira 2006) puts it mainly in whitewater floodplains, with Rio Negro specimens near Manaus. The middle Negro sport-fishing study lists it, so it stays, at low confidence.
+- **Tucuxi:** no survey places it at Barcelos; the surveys found cover the lower Negro. Kept, at low confidence, with the assumption stated.
+- **Black piranha:** "can bite through a wire leader" is now "a nylon leader": anglers use wire because piranhas cut nylon.
+- **Silver croaker:** the dusk and night values now cite a twilight-nocturnal study (Piató Lagoon, search excerpt; another study is reported to find daytime feeding).
+- **Records:** butterfly peacock (7.31 kg, Rio Urubaxi near Barcelos, 2010), black piranha (3.83 kg) and silver croaker (5.10 kg) now cite IGFA-verified rod-and-reel records. All still pass the weight check (−12%, −16%, −18%).
+- **Smaller fixes:**
+  - The butterfly peacock's description no longer says "at first light", and its IGFA source is marked as being about the speckled peacock.
+  - Jaraqui: "the everyday fish of the Barcelos table" became "one of the main food fish of the central Amazon", and the lip fact no longer claims a sucking disc.
+  - Sardinha: the family is Triportheidae, and the tail is darkly edged, without a middle stripe.
+  - Giant otter: the diet adds cichlids.
+  - Turtle: night is 0.4, because it is seen basking by day.
+  - Checklist code H is marked as a literature record, not a habitat, wherever it appears.
+  - The rapids notes say the spot stands for codes D and G, since none of its species is recorded in G itself.
+  - The surubim's bank placement cites Águas Amazônicas (caught near margins and beaches at night).
+  - Pirinampu: its night peak has no source, and its note now says so.
+
+### Left as they are, with reasons
+
+- **The calendar's January.** Reviewer 1 noted that Chao's text says low water lasts "usually from December to March", and that lodge reports describe dropping water in late December. Chao's own monthly readings rise from December to January in both years he tabulates (by 1.0 m in 1998/99 and 1.6 m in 1995/96), so January stays rising, with the speckled peacock at 1.1. Real years vary by a month or more.
+- **River prawn** (*Macrobrachium brasiliense*) at the lagoon margin: a stand-in, as its `designNotes` say. A Barcelos decapod thesis lists other *Macrobrachium* species, but its text could not be read.
+- **Banded leporinus** on the beach and drowned bank: FishBase places adults in rocky fast water. It is also at the rapids; the river spots keep it at low confidence, with a note.
+- **Amazon river dolphin time of day:** Wikipedia's summary calls it predominantly crepuscular but also active day and night; left flat.
+- **Common lengths:** redtail 75 cm against FishBase's 60 cm is the game's typical catch.
+
+### Simulator effect
+
+The 16 standard runs move by under 2%. In targeted runs, the electric eel fights 2.8 s instead of 4.5 at the same coins per hour, and piraíba bites shift from night (30 → 20 per 4,000 casts) to day (18 → 31), with coins per hour within 3%.
+
 ## Selection against the quotas (draft)
 
 Thirty-four fish is at the top of the 25–35 range. The rarity column is a first draft, to be set per spot when the occurrence records are written.
@@ -344,12 +407,12 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 | Quota | Target | Draft |
 | --- | --- | --- |
 | Rarity | ~12 common, 9 uncommon, 6 rare, 3 epic | **Common:** butterfly peacocks (2), oscar, severum, eartheater, trahira, black piranha, Manuel's piranha, jaraqui, banded leporinus, sardinha, pescada, apapá. **Uncommon:** speckled peacock bass, pike cichlid, dogfish, bicuda, freshwater barracuda, small payara, redhook pacu, matrinxã, both arowanas, caparari, barba-chata, stingray. **Rare:** payara, giant trahira, tambaqui, redtail catfish, jaú, electric eel. **Epic:** arapaima, piraíba, and a trophy speckled peacock bass where water and spot allow. |
-| Night-biased (4+) | 4+ | Trahira, electric eel, caparari, barba-chata, jaú, redtail, piraíba |
+| Night-biased (4+) | 4+ | Trahira, electric eel, surubim, barba-chata, jaú, redtail, piraíba |
 | Dawn or dusk (4+) | 4+ | Peacock bass (first light), bicuda, payara, arowana |
 | Real month-to-month change (6+) | 6+ | Almost every species, through the flood pulse: lagoon predators peak at low water, forest fruit-eaters at high water. Jaraqui and matrinxã make spawning runs as the water changes (to source). |
 | Every method and zone has 3+ | – | To check once zones are fixed |
 | Gear spread | – | Panfish (cichlids, piranha, sardinha) up to giants (piraíba, arapaima) |
-| Release-only (2+) | 2+ | **Arapaima**: protected and managed under IBAMA rules in the Amazon. **Red-headed river turtle.** Peacock bass is a policy question (open question 2). |
+| Release-only (2+) | 2+ | **Arapaima**: protected and managed under IBAMA rules in the Amazon. **Red-headed river turtle.** Peacock bass stay sellable by choice (open question 2). |
 
 ## Law and conservation (first pass)
 
@@ -364,17 +427,17 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 ## Open questions
 
 1. **Is Barcelos the anchor?** It fits every spec seed species, with one caveat: arapaima and tambaqui are scarcer in blackwater than in the whitewater floodplains near Manaus. The checklist records both in the basin (arapaima in lakes and tributaries; tambaqui only in tributaries). The game can keep them as rare and epic.
-2. **Peacock bass: sellable or release-only?** The records keep them sellable for now. Amazonas sport fishing is catch-and-release by decree, and a 2023 bill bans selling tucunaré commercially. The game's market buys fish. This is the same kind of choice as bonefish in the Cayes.
+2. **Resolved: peacock bass stay sellable** (Andy, 25 November 2026), disclosed in a field guide fact on each of the three species. The question was: sellable or release-only? The records keep them sellable for now. Amazonas sport fishing is catch-and-release by decree, and a 2023 bill bans selling tucunaré commercially. The game's market buys fish. This is the same kind of choice as bonefish in the Cayes.
 3. **Resolved: the flood pulse follows the Barcelos gauge** (occurrence pass, 25 November 2026): rising January to May, high June to August, falling in September, low October to December (Chao 2001). The forest is open from January to August, as before. Real years vary by a month or more (the 1997/98 El Niño kept Barcelos 2 m low until March); the game uses one average year.
 4. **Net method content.** Cardinal tetra (and possibly *Potamotrygon wallacei*) would be the first true net catches. The schema reserves the method.
 5. **Resolved: the speckled peacock bass in-game maximum is 90 cm** (Andy, 25 November 2026), below Old Gold's 95 cm. FishBase gives 99 cm; the record fish run 89 to 94 cm.
-6. **Is Old Gold released?** Real record peacock bass are released, and Amazonas sport fishing is catch-and-release. Releasing him needs a flag on the legendary.
+6. **Resolved: Old Gold can be kept** (Andy, 25 November 2026). There is no release flag on legendaries; as with any sellable fish, the player chooses. Real record peacock bass are released, and Amazonas sport fishing is catch-and-release.
+7. **Resolved: tambaqui stays sellable** (Andy, 25 November 2026). A field guide fact discloses the national listing. The question was: should tambaqui be release-only? Brazil's national red list (Portaria GM/MMA 1.667, 27 April 2026) lists it as Vulnerable, and Portaria 1.666 restricts listed species, with the restrictions for newly listed ones due about 180 days after publication. Reports say the listing does not ban fishing at once and that a recovery plan is required, and a bill in Congress (PDL 767/2026) would cancel the listing. I did not read the annex or 1.666 itself. The record keeps it sellable and states the national status.
 
 ## Still to do
 
 - **Step 3:** confirm the selection and set rarity per spot and season.
 - **Step 4, occurrences:** done (occurrence pass). 69 of 100 records are still low confidence; the gaps are listed under "No source found".
 - **Other creatures quota:** the spec asks for 5–8. Blackwater supports few. The region has a prawn and the cardinal tetra (a fish, by net); a second prawn or crab needs a Barcelos source.
-- **Step 5:** the legendary is drafted. The build must define the lagoon and its lagoon-mouth zone and assign the three quest clue sources; then he goes into `content/legendaries.json` and the bot tunes his fight. Open question 6 decides whether he is released.
-- **Step 7:** independent review of every rare and epic record and 30% of the rest.
+- **Step 5:** done. Old Gold is built (DECISIONS 74) and can be kept.
 - **Hydrology:** done; the Barcelos gauge from Chao (2001). The SGB station table is still unread.

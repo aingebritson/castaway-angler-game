@@ -66,7 +66,7 @@
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late (about C. temensis on the Rio Marié; applied to this species by analogy)"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -75,7 +75,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA)."
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "cichla-monoculus",
@@ -119,7 +119,7 @@
       "livefish": 1.4,
       "worm": 0.2
     },
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "FishBase: Cichla monoculus",
@@ -150,9 +150,21 @@
         "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
         "accessed": "2026-11-25",
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      },
+      {
+        "title": "Lubich et al. (2023): freshwater sport fishing in the middle Negro River, Boletim do Instituto de Pesca 49: e738",
+        "url": "https://doi.org/10.20950/1678-2305/bip.2023.49.e738",
+        "accessed": "2026-11-25",
+        "supports": "C. monoculus is one of the four peacock bass of the middle Negro sport fishery (headings only)"
+      },
+      {
+        "title": "Kullander and Ferreira (2006): a review of the South American cichlid genus Cichla, Ichthyological Exploration of Freshwaters 17(4)",
+        "url": "https://www.svenkullander.se/publications/Kullander_Ferreira_Cichla_2006.pdf",
+        "accessed": "2026-11-25",
+        "supports": "C. monoculus mainly along the Solimões-Amazonas and the lower courses of its tributaries; its Rio Negro specimens are from near Manaus (as reported in the review)"
       }
     ],
-    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA)."
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Review: the genus revision puts this species mainly in whitewater floodplains, with its Rio Negro specimens near Manaus; the middle Negro sport-fishing study lists it. Kept, at low confidence. Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "astronotus-ocellatus",
@@ -704,7 +716,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Big lagoon fish feed hardest from mid-morning to mid-afternoon (IGFA), so day is at least as strong as dawn here; the legendary Old Gold's clues depend on it. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA)."
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Big lagoon fish feed hardest from mid-morning to mid-afternoon (IGFA), so day is at least as strong as dawn here; the legendary Old Gold's clues depend on it. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "electrophorus-varii",
@@ -817,9 +829,15 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABCDF)"
+      },
+      {
+        "title": "Acta Scientiarum Biological Sciences (2009): Plagioscion squamosissimus in Piató Lagoon, Rio Grande do Norte",
+        "url": "https://doaj.org/article/93d2dfda25ff4d7eb6f7568e09b18a4b",
+        "accessed": "2026-11-25",
+        "supports": "a twilight-nocturnal habit, with shrimp eaten in the dim hours and insects in the bright ones (search excerpt; the paper could not be opened, and an upper Paraná study is reported to find daytime feeding)"
       }
     ],
-    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats ABCDF."
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats ABCDF. Review: dusk and night follow one twilight-nocturnal study; another is reported to find daytime feeding."
   },
   {
     "speciesId": "osteoglossum-bicirrhosum",
@@ -1075,7 +1093,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes BDFH)"
+        "supports": "present in the Rio Negro basin (habitat codes BDFH (H = a literature record, not a habitat))"
       },
       {
         "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
@@ -1298,6 +1316,12 @@
         "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
         "accessed": "2026-11-25",
         "supports": "pirarara eat fruit in the flooded forest at high water and are common in river channels at low water (search excerpt)"
+      },
+      {
+        "title": "Wikipedia: Redtail catfish",
+        "url": "https://en.wikipedia.org/wiki/Redtail_catfish",
+        "accessed": "2026-11-25",
+        "supports": "eats during the evening and night and stays motionless during the day"
       }
     ],
     "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
@@ -1485,10 +1509,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1,
-      "day": 1,
-      "dusk": 1,
-      "night": 1
+      "dawn": 1.0,
+      "day": 1.2,
+      "dusk": 1.0,
+      "night": 0.4
     },
     "monthMod": [
       1,
@@ -1517,11 +1541,12 @@
         "supports": "Rio Negro centre of distribution; blackwater streams and flooded forest; maximum straight carapace length 322 mm (females) and 244 mm (males); IUCN VU (1996), Brazil NT (search excerpts)"
       },
       {
-        "title": "Chelonian Conservation and Biology 13(1): abundance and population structure of Podocnemis erythrocephala",
-        "url": "https://bioone.org/journals/chelonian-conservation-and-biology/volume-13/issue-1/CCB-1039.1/Abundance-and-Population-Structure-of-Podocnemis-erythrocephala-Testudines-Podocnemididae-in/10.2744/CCB-1039.1.full",
+        "title": "Bernardes et al. (2014): abundance and population structure of Podocnemis erythrocephala in the Unini River, Chelonian Conservation and Biology 13(1): 89-95",
+        "url": "https://researchportalplus.anu.edu.au/en/publications/abundance-and-population-structure-of-podocnemis-erythrocephala-t/",
         "accessed": "2026-11-25",
-        "supports": "middle Rio Negro sample of more than 3,000 adults; mean carapace 258 mm (females), 207 mm (males) (search excerpt)"
+        "supports": "Unini River (Negro basin, in Barcelos municipality): 352 turtles marked (162 males, 150 females, 40 immatures); mean carapace 251 mm in females and 210 mm in males (abstract)"
       }
-    ]
+    ],
+    "designNotes": "Review: seen mostly by day, when it basks; no study of its time of day was found."
   }
 ]

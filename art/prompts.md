@@ -343,7 +343,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
-Subject: Redhook pacu (Myloplus rubripinnis). Disc-shaped, compressed silver body; reddish to orange anal fin, hooked and lobed in males; dark-edged tail; small mouth with incisor-like teeth.
+Subject: Redhook pacu (Myloplus rubripinnis). Disc-shaped, compressed silver body; reddish to orange anal fin, hooked in females and bilobed in males; dark-edged tail; small mouth with incisor-like teeth.
 ```
 
 ## specimen/brycon-amazonicus
@@ -391,7 +391,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
-Subject: Sardinha (Triportheus albus). Elongate silver fish with a deep keeled breast and long pectoral fins; upturned mouth; dark stripe on the middle tail rays.
+Subject: Sardinha (Triportheus albus). Elongate silver fish with a deep keeled breast and long pectoral fins; upturned mouth; darkly edged tail.
 ```
 
 ## specimen/plagioscion-squamosissimus
@@ -487,7 +487,7 @@ Simplified field-guide watercolour illustration for a cozy mobile fishing game, 
 
 A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
 
-Subject: Barred sorubim (caparari) (Pseudoplatystoma punctifer). Elongate, cylindrical catfish with a long flattened shovel-shaped head; grey-brown back with dark vertical bars and spots, white belly; long barbels; forked tail spotted black.
+Subject: Spotted tiger shovelnose (surubim) (Pseudoplatystoma punctifer). Elongate, cylindrical catfish with a long flattened shovel-shaped head; grey-brown back with dark vertical bars and spots, white belly; long barbels; forked tail spotted black.
 ```
 
 ## specimen/pinirampus-pirinampu

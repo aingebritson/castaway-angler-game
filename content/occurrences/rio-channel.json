@@ -117,7 +117,7 @@
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late (about C. temensis on the Rio Marié; applied to this species by analogy)"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -126,7 +126,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF. Occurrence pass: big peacocks work the main-river sandbars early and late (IGFA); dawn and dusk raised."
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF. Occurrence pass: big peacocks work the main-river sandbars early and late (IGFA); dawn and dusk raised. Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "leporinus-fasciatus",
@@ -182,10 +182,10 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABDFH)"
+        "supports": "present in the Rio Negro basin (habitat codes ABDFH (H = a literature record, not a habitat))"
       }
     ],
-    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats ABDF."
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats ABDF. FishBase places adults in rocky fast water, which the rapids spot covers; on the beach and drowned bank it is kept at low confidence."
   },
   {
     "speciesId": "triportheus-albus",
@@ -444,7 +444,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes BDFH)"
+        "supports": "present in the Rio Negro basin (habitat codes BDFH (H = a literature record, not a habitat))"
       }
     ],
     "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
@@ -703,7 +703,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF. Occurrence pass: big peacocks work the main-river sandbars early and late (IGFA); dawn and dusk raised."
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF. Occurrence pass: big peacocks work the main-river sandbars early and late (IGFA); dawn and dusk raised. Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "heros-severus",
@@ -953,7 +953,7 @@
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late (about C. temensis on the Rio Marié; applied to this species by analogy)"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -962,7 +962,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BDF. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA)."
+    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BDF. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA). Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
   },
   {
     "speciesId": "osteoglossum-bicirrhosum",
@@ -1074,9 +1074,15 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABCDF)"
+      },
+      {
+        "title": "Acta Scientiarum Biological Sciences (2009): Plagioscion squamosissimus in Piató Lagoon, Rio Grande do Norte",
+        "url": "https://doaj.org/article/93d2dfda25ff4d7eb6f7568e09b18a4b",
+        "accessed": "2026-11-25",
+        "supports": "a twilight-nocturnal habit, with shrimp eaten in the dim hours and insects in the bright ones (search excerpt; the paper could not be opened, and an upper Paraná study is reported to find daytime feeding)"
       }
     ],
-    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCDF."
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCDF. Review: dusk and night follow one twilight-nocturnal study; another is reported to find daytime feeding."
   },
   {
     "speciesId": "serrasalmus-manueli",
@@ -1252,7 +1258,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABDFH)"
+        "supports": "present in the Rio Negro basin (habitat codes ABDFH (H = a literature record, not a habitat))"
       }
     ],
     "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABDF."
@@ -1384,7 +1390,7 @@
         "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: no study of its time of day was found; the night peak is the habit of its catfish family, assumed."
   },
   {
     "speciesId": "pseudoplatystoma-punctifer",
@@ -1433,7 +1439,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+        "supports": "present in the Rio Negro basin (habitat codes ABDH (H = a literature record, not a habitat))"
       },
       {
         "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
@@ -1452,9 +1458,15 @@
         "url": "https://fishbase.se/summary/8695",
         "accessed": "2026-11-25",
         "supports": "a nocturnal, opportunistic piscivore of the main river bed and flooded forest; migrates with its prey at the end of the dry season (search excerpt; congener of P. punctifer)"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-25",
+        "supports": "surubim (the Amazon fish once filed as P. fasciatum) and caparari are usually caught near margins, as in beach waters, at night"
       }
     ],
-    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: the English name is the spotted tiger shovelnose; caparari is P. tigrinum."
   },
   {
     "speciesId": "pinirampus-pirinampu",
@@ -1519,7 +1531,7 @@
         "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: no study of its time of day was found; the night peak is the habit of its catfish family, assumed."
   },
   {
     "speciesId": "pseudoplatystoma-punctifer",
@@ -1568,7 +1580,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+        "supports": "present in the Rio Negro basin (habitat codes ABDH (H = a literature record, not a habitat))"
       },
       {
         "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
@@ -1587,9 +1599,15 @@
         "url": "https://fishbase.se/summary/8695",
         "accessed": "2026-11-25",
         "supports": "a nocturnal, opportunistic piscivore of the main river bed and flooded forest; migrates with its prey at the end of the dry season (search excerpt; congener of P. punctifer)"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-25",
+        "supports": "surubim (the Amazon fish once filed as P. fasciatum) and caparari are usually caught near margins, as in beach waters, at night"
       }
     ],
-    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: the English name is the spotted tiger shovelnose; caparari is P. tigrinum."
   },
   {
     "speciesId": "brachyplatystoma-filamentosum",
@@ -1600,9 +1618,9 @@
     "rarity": "epic",
     "phaseMod": {
       "dawn": 0.8,
-      "day": 0.4,
+      "day": 0.7,
       "dusk": 1.3,
-      "night": 1.8
+      "night": 1.4
     },
     "monthMod": [
       1.1,
@@ -1659,9 +1677,15 @@
         "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
         "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-25",
+        "supports": "piraíba and jaú are taken on trotlines, which are baited just before sunset and checked at daybreak"
       }
     ],
-    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABC. Needs the fish finder: without one the player cannot find the deep hole where a piraíba lies. A finder does not make fish bite; this is the game's stand-in for knowing where to anchor. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABC. Needs the fish finder: without one the player cannot find the deep hole where a piraíba lies. A finder does not make fish bite; this is the game's stand-in for knowing where to anchor. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: no study of its time of day was found. Night is 1.4 and day 0.7, softened from 1.8 and 0.4, on the fishermen's practice of setting lines at sunset."
   },
   {
     "speciesId": "inia-geoffrensis",
@@ -1755,14 +1779,21 @@
       "sight"
     ],
     "affinity": {},
-    "confidence": "medium",
+    "confidence": "low",
     "sources": [
       {
         "title": "Wikipedia: Tucuxi",
         "url": "https://en.wikipedia.org/wiki/Tucuxi",
         "accessed": "2026-11-25",
         "supports": "typical length about 1.5 m; IUCN Endangered (da Silva et al. 2020); freshwater only; group foraging, leaping; used as piracatinga bait"
+      },
+      {
+        "title": "Valle (2018): botos and tucuxis in the lower Negro River, INPA thesis",
+        "url": "https://repositorio.inpa.gov.br/handle/1/11389",
+        "accessed": "2026-11-25",
+        "supports": "tucuxi surveyed in the lower Negro between Novo Airão and Manaus (search excerpt)"
       }
-    ]
+    ],
+    "designNotes": "Review: no survey places tucuxi at Barcelos; the surveys found cover the lower Negro, between Novo Airão and Manaus. Its presence here is assumed."
   }
 ]
