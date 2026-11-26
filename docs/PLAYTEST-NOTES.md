@@ -14,6 +14,7 @@ Things noticed while playing, to explore and maybe fix later. These are not yet 
 
 ### Purpose
 - **The catch basket at camp has no job.** Fish can be cleaned from the Catch tab in the bag, so there is no reason to visit the basket. Either give it a role or fold it away.
+- **The eye-roll emoji when a fish refuses the bait is off-tone.** It doesn't fit the quiet, observant voice of the rest of the game. Replace it with something that suits that voice, or drop the emoji.
 - **Green dots on some items in the bag, for no clear reason.** It is not "not yet examined", so either make the meaning clear or remove the dots.
 - **Places you can't reach yet show on the map as gated.** Undiscovered resources stay hidden until found, which works well. Places should behave the same way; showing them locked looks like gating for no reason you can see.
 
