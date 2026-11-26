@@ -8,6 +8,7 @@ import { type CatchCtx, type Rig, castRange, spoolOf, drawCruiser, fishValue, pl
 import { simulateFight } from './fight';
 import { makeRng } from './rng';
 import { moonIndex, sunInfo } from './time';
+import { waterLevel, zonesAt } from './water';
 
 export interface SimOptions {
   locationId: string;
@@ -18,6 +19,8 @@ export interface SimOptions {
   zoneId?: string;
   deviceTz?: string;
   method?: 'bait' | 'lure' | 'sight';
+  /** Fish finder tier carried, 0 for none. */
+  finder?: number;
 }
 
 export interface SpeciesRow {
@@ -56,6 +59,8 @@ export interface ZoneReport {
 export interface SimReport {
   locationName: string;
   rigLabel: string;
+  /** Where a river region's water stands at this instant; null elsewhere. */
+  water: string | null;
   phase: string;
   month: number;
   localTime: string;
@@ -86,7 +91,8 @@ export function runSim(content: Content, opts: SimOptions): SimReport {
   const sun = sunInfo(opts.at, loc, opts.deviceTz ?? loc.solarTz ?? 'UTC', content.balance);
   const b = content.balance;
   const range = castRange(rig);
-  const zones = loc.zones.filter((z) => z.cast && (!opts.zoneId || z.id === opts.zoneId));
+  const water = waterLevel(content, loc.regionId, sun.local.month);
+  const zones = zonesAt(loc, water).filter((z) => z.cast && (!opts.zoneId || z.id === opts.zoneId));
   const reports: ZoneReport[] = [];
 
   for (const [zi, zone] of zones.entries()) {
@@ -94,7 +100,7 @@ export function runSim(content: Content, opts: SimOptions): SimReport {
     const reachable = range >= zone.minCastRange;
     const ctx: CatchCtx = {
       content, locationId: loc.id, zoneId: zone.id, phase: sun.phase, month: sun.local.month, rig,
-      method: method === 'sight' ? 'sight' : rig.method, moon: moonIndex(opts.at),
+      method: method === 'sight' ? 'sight' : rig.method, moon: moonIndex(opts.at), finder: opts.finder ?? 0,
     };
     const rows = new Map<string, SpeciesRow & { sumCm: number; sumFight: number; fights: number }>();
     const rep: ZoneReport = {
@@ -179,7 +185,7 @@ export function runSim(content: Content, opts: SimOptions): SimReport {
   const hh = String(sun.local.hour).padStart(2, '0');
   const mm = String(sun.local.minute).padStart(2, '0');
   return {
-    locationName: loc.name, rigLabel: preset.label, phase: sun.phase, month: sun.local.month, localTime: `${sun.local.dayKey} ${hh}:${mm}`,
+    locationName: loc.name, rigLabel: preset.label, water, phase: sun.phase, month: sun.local.month, localTime: `${sun.local.dayKey} ${hh}:${mm}`,
     power: rigPower(rig), range, zones: reports,
   };
 }

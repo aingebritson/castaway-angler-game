@@ -26,7 +26,12 @@ export interface Goal {
 }
 
 export function stage(s: GameState): number {
-  if (s.flags.launched) return has(s, 'skiff') || has(s, 'sloop') ? (has(s, 'sloop') ? 5 : 4) : 3;
+  if (s.flags.launched) {
+    // Voyager: has crossed to a far region (the passage) and carries a fish finder
+    if (has(s, 'river-passage') && has(s, 'fish-finder')) return 6;
+    if (has(s, 'sloop') || has(s, 'river-passage') || has(s, 'riverboat')) return 5;
+    return has(s, 'skiff') || has(s, 'canoe') ? 4 : 3;
+  }
   if (has(s, 'bamboo-rod') && has(s, 'braided-line')) return 2;
   if (has(s, 'stone-knife')) return 1;
   return 0;
@@ -39,18 +44,27 @@ function portGoal(s: GameState, content: Content): Goal | null {
   const port = Object.values(content.locations).find((l) => l.kind === 'port' && l.regionId === content.locations[s.locationId]?.regionId)
     ?? Object.values(content.locations).find((l) => l.kind === 'port');
   if (!port) return null;
-  const entries = Object.entries(s.quests);
-  const ready = entries.find(([id, q]) => q.state === 'ready' && content.quests[id]);
-  if (ready) return { text: `${content.people[content.quests[ready[0]].personId].name} will want to hear about it.`, where: port.id, key: `told:${ready[0]}`, nudge: 'now' };
-  const active = entries.find(([id, q]) => q.state === 'active' && content.quests[id]);
+  // Errands from this region's people come first; a ready one points at the town of whoever set it.
+  const regionOf = (qid: string) => content.locations[content.people[content.quests[qid].personId]?.locationId]?.regionId;
+  const here = port.regionId;
+  const entries = Object.entries(s.quests).filter(([id]) => content.quests[id]).sort(([a], [b]) => Number(regionOf(b) === here) - Number(regionOf(a) === here));
+  const ready = entries.find(([, q]) => q.state === 'ready');
+  if (ready) return { text: `${content.people[content.quests[ready[0]].personId].name} will want to hear about it.`, where: content.people[content.quests[ready[0]].personId].locationId, key: `told:${ready[0]}`, nudge: 'now' };
+  const active = entries.find(([id, q]) => q.state === 'active' && regionOf(id) === here) ?? entries.find(([, q]) => q.state === 'active');
   if (active) {
     const q = content.quests[active[0]];
     const g = q.goal;
     const n = 'count' in g ? g.count : 1;
     return { text: `${content.people[q.personId].name}: ${q.progressText.toLowerCase()}${n > 1 ? ` (${Math.min(active[1].progress, n)} of ${n})` : ''}.`, where: 'locationId' in g ? g.locationId : undefined, key: `quest:${active[0]}`, nudge: null };
   }
-  if (!entries.length) return { text: 'A town, and people. Somebody at the boatyard must know about boats; the pier is free to fish.', where: port.id, key: 'town', nudge: null };
-  const open = Object.values(content.questsByPerson).some((list) => list.some((q) => !s.quests[q.id]));
+  const local = Object.values(content.people).filter((p) => content.locations[p.locationId]?.regionId === here);
+  if (!entries.some(([id]) => regionOf(id) === here) && local.length) {
+    return here === 'belize-cayes' || !port
+      ? { text: 'A town, and people. Somebody at the boatyard must know about boats; the pier is free to fish.', where: port.id, key: 'town', nudge: null }
+      : { text: `A new town. Somebody here will know the river; the waterfront is free to fish.`, where: port.id, key: `town:${here}`, nudge: null };
+  }
+  const open = local.some((p) => (content.questsByPerson[p.id] ?? []).some((q) => !s.quests[q.id]))
+    || Object.values(content.questsByPerson).some((list) => list.some((q) => !s.quests[q.id]));
   return open ? { text: 'Someone in town may have another errand.', where: port.id, key: 'errand', nudge: null } : null;
 }
 

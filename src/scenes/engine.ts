@@ -13,6 +13,10 @@ import { type Fit, IDENTITY, coverFit, sceneHorizon } from './fit';
 import { type Light, css, lightFor } from './light';
 import { PAINTERS, type Painter, type SceneInfo } from './painters';
 import './paintersCayes';
+import './paintersRio';
+import { backgroundAt } from '../sim/water';
+import { waterNow, zonesNow } from '../state/travel';
+import type { WaterLevel } from '../content/schema';
 
 const SEA_LEVEL: Record<string, number> = { beach: 1, 'rocky-point': 1, lagoon: 0.6, camp: 0.5, grove: 0.2 };
 
@@ -42,6 +46,7 @@ export class Engine {
       rackCount: 0,
       rackSlots: 3,
       moon: 0,
+      water: null,
     };
     this.resize();
     store.subscribe(() => { if (this.lightAge > 0.3) this.lightAge = 99; });
@@ -91,9 +96,7 @@ export class Engine {
     this.fishing?.reset();
     this.loc = loc;
     this.painter = PAINTERS[loc.scene.painter] ?? PAINTERS.beach;
-    const castable = loc.zones.some((z) => z.cast);
-    // starts on the painter's horizon; frame() refits it once the art has loaded
-    this.fishing = castable ? new Fishing(loc, this.painter.horizon, { store: this.store, audio: this.audio, ...this.host }) : null;
+    this.build();
     this.fitKey = '';
     this.host.onPhase('idle');
     this.lightAge = 99;
@@ -120,6 +123,17 @@ export class Engine {
     this.stop();
     window.removeEventListener('resize', this.resize);
     window.removeEventListener('orientationchange', this.resize);
+  }
+
+  /** The fishing interaction for this place as the water stands now: the flood pulse can add or take away zones. */
+  private build(): void {
+    const loc = this.loc!;
+    const ctx = this.store.ctx();
+    this.info.water = waterNow(ctx, loc.regionId);
+    const now = { ...loc, zones: zonesNow(ctx, loc.id) };
+    const castable = now.zones.some((z) => z.cast);
+    // starts on the painter's horizon; frame() refits it once the art has loaded
+    this.fishing = castable ? new Fishing(now, this.painter!.horizon, { store: this.store, audio: this.audio, ...this.host }) : null;
   }
 
   /**
@@ -154,13 +168,20 @@ export class Engine {
       this.info.moon = moonPhase(ctx.now);
       this.lightAge = 0;
       this.audio.ambient(SEA_LEVEL[loc.scene.painter] ?? 0.6, this.light.night);
+      // the month turned (or the debug clock moved): the river may have risen or fallen
+      const water: WaterLevel | null = waterNow(ctx, loc.regionId);
+      if (water !== this.info.water) {
+        this.fishing?.reset();
+        this.build();
+        this.fitKey = '';
+      }
     }
     this.info.rackCount = s.rack.length;
     const L = this.light;
     const p = { g, W, H, t: this.t, L, info: this.info };
 
     g.globalAlpha = 1;
-    const bg = assetImage(loc.scene.background);
+    const bg = assetImage(backgroundAt(loc, this.info.water));
     this.applyFit(bg ? coverFit(W, H, bg.width, bg.height) : null);
     if (bg) {
       // real art: cover-fit, then shade for the hour

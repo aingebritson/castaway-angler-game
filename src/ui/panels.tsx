@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
-import type { Item, Recipe } from '../content/schema';
+import type { Item, Recipe, WaterLevel } from '../content/schema';
+import { lockReason, locationOpen, regionOpen, waterNow } from '../state/travel';
 import { castRange, fishValue, formatLength, formatWeight, rigPower } from '../sim/catch';
 import { craftCheck, pickProvisions, recipeView } from '../sim/world';
 import { sourceOf } from '../state/sources';
@@ -425,63 +426,56 @@ export function TrapPanel({ onClose }: { onClose(): void }) {
 export function MapPanel({ onClose }: { onClose(): void }) {
   const { store } = useGame();
   const s = useGameState();
+  useTick(5000);
   const c = store.content;
+  const ctx = store.ctx();
   const here = c.locations[s.locationId];
   const seenRegion = (id: string) => Object.keys(s.visited).some((l) => c.locations[l]?.regionId === id);
-  const regions = Object.values(c.regions).filter((r) => seenRegion(r.id) || regionOpen(s, r.id, c)).sort((a, b) => a.order - b.order);
+  const regions = Object.values(c.regions).filter((r) => seenRegion(r.id) || regionOpen(s, ctx, r.id)).sort((a, b) => a.order - b.order);
   const [regionId, setRegion] = useState(here.regionId);
   const region = c.regions[regionId];
   const locs = Object.values(c.locations).filter((l) => l.regionId === regionId);
   const goal = nextGoal(s, c);
   const away = here.regionId !== regionId;
-  const crossing = away && !regionOpen(s, regionId, c);
+  const crossing = away && !regionOpen(s, ctx, regionId);
+  const water = waterNow(ctx, regionId);
   const go = (id: string) => {
-    if (away) store.emit([{ type: 'toast', text: `The crossing to ${region.name} takes two days. You arrive with the tide.`, glyph: '⛵' }]);
+    if (away) {
+      const first = !seenRegion(regionId);
+      store.emit([{ type: 'toast', text: (first && region.voyage) || `The crossing to ${region.name} takes two days. You arrive with the tide.`, glyph: '⛵' }]);
+    }
     store.run(travel, id);
     onClose();
   };
+  const lockedText = (id: string) => (crossing ? 'That is open sea. The raft will not make that crossing twice; a proper boat would.' : lockReason(s, ctx, id) ?? 'Out of reach for now.');
   return (
     <Sheet
       title={region.name} sub={region.blurb} onClose={onClose} tall
       tabs={regions.length > 1 ? regions.map((r) => <Tab key={r.id} on={r.id === regionId} onClick={() => setRegion(r.id)}>{r.name}</Tab>) : undefined}
     >
+      {water && <p class="muted" data-water={water}>🌊 {WATER_LABEL[water]}{region.waterNotes?.[water] ? `. ${region.waterNotes[water]}` : '.'}</p>}
       <div class="map">
         <MapArt regionId={regionId} />
         {locs.map((l) => {
-          const locked = crossing || !locationOpen(s, l.id, c);
+          const locked = crossing || !locationOpen(s, ctx, l.id);
           return (
             <button key={l.id} data-pin={l.id} class={`pin-btn ${l.id === s.locationId ? 'here' : ''} ${goal?.where === l.id ? 'goal' : ''} ${locked ? 'locked' : ''}`}
               style={{ left: `${l.map.x * 100}%`, top: `${l.map.y * 100}%` }}
-              onClick={() => (locked ? store.emit([{ type: 'toast', text: crossing ? 'That is open sea. The raft will not make that crossing twice; a proper boat would.' : (l.unlock.some((u) => u.type === 'lesson') ? 'I have not found a reason to go there yet. Keep fishing.' : 'Too far for this boat. The boatyard has something that would reach it.'), glyph: '🔒', tone: 'warn' }]) : go(l.id))}>
+              onClick={() => (locked ? store.emit([{ type: 'toast', text: lockedText(l.id), glyph: '🔒', tone: 'warn' }]) : go(l.id))}>
               <span class="d">{locked ? '🔒' : PLACE_GLYPH[l.kind] ?? '📍'}</span>
               <span class="l">{l.name}</span>
             </button>
           );
         })}
       </div>
-      <p class="quote">{!away ? `${here.name}. ${here.blurb}` : crossing ? 'Out of reach for now.' : 'Tap a place to sail there.'}</p>
-      {!away && locs.some((l) => !locationOpen(s, l.id, c)) && <p class="muted">{here.regionId === 'castaway-island' ? 'Locked places open up as I learn what I need from them.' : 'Locked places need a better boat.'}</p>}
+      <p class="quote">{!away ? `${here.name}. ${here.blurb}` : crossing ? 'Out of reach for now.' : 'Tap a place to go there.'}</p>
+      {!away && locs.some((l) => !locationOpen(s, ctx, l.id)) && <p class="muted">{here.regionId === 'castaway-island' ? 'Locked places open up as I learn what I need from them.' : water ? 'Locked places need a better boat, or other water.' : 'Locked places need a better boat.'}</p>}
     </Sheet>
   );
 }
 
 const PLACE_GLYPH: Record<string, string> = { port: '⚓', spot: '🎣', camp: '⛺', gather: '🌴' };
-
-export function regionOpen(s: GameState, regionId: string, c: import('../content/assemble').Content): boolean {
-  const r = c.regions[regionId];
-  return r.unlock.every((u) => (u.type === 'flag' ? !!s.flags[u.flag] : u.type === 'lesson' ? s.lessons.includes(u.lesson) : u.type === 'boat' ? boatTier(s, c) >= u.tier : has(s, u.chart)));
-}
-
-export function locationOpen(s: GameState, locationId: string, c: import('../content/assemble').Content): boolean {
-  const l = c.locations[locationId];
-  return l.unlock.every((u) => (u.type === 'flag' ? !!s.flags[u.flag] : u.type === 'lesson' ? s.lessons.includes(u.lesson) : u.type === 'boat' ? boatTier(s, c) >= u.tier : has(s, u.chart)));
-}
-
-export function boatTier(s: GameState, c: import('../content/assemble').Content): number {
-  let t = -1;
-  for (const id of Object.keys(s.inventory)) if (s.inventory[id] > 0 && c.items[id]?.boat) t = Math.max(t, c.items[id].boat!.tier);
-  return t;
-}
+const WATER_LABEL: Record<WaterLevel, string> = { low: 'Low water', rising: 'The river is rising', high: 'High water', falling: 'The river is falling' };
 
 function MapArt({ regionId }: { regionId: string }) {
   if (regionId === 'castaway-island') {
@@ -497,6 +491,25 @@ function MapArt({ regionId }: { regionId: string }) {
         <g fill="#3b3a40"><path d="M84 52 l6 -2 3 4 -4 5 -6 -1z" /><path d="M88 60 l4 1 1 4 -4 1z" /></g>
         <g stroke="#3a2f2a" stroke-width=".8" fill="none"><path d="M70 92 l8 -3 M73 91 v-6 M77 90 v-5" /></g>
         <text x="50" y="102" text-anchor="middle" font-size="4" fill="#dff" font-family="Georgia, serif" font-style="italic">Position unknown</text>
+      </svg>
+    );
+  }
+  if (regionId === 'rio-negro') {
+    return (
+      <svg viewBox="0 0 100 105" preserveAspectRatio="none">
+        <rect width="100" height="105" fill="#3f6f43" />
+        <g fill="#355f3a" opacity=".8"><circle cx="12" cy="14" r="9" /><circle cx="70" cy="90" r="11" /><circle cx="90" cy="45" r="8" /><circle cx="30" cy="30" r="7" /></g>
+        {/* the tributary up to the rapids */}
+        <path d="M66 52 C74 40 78 30 84 21 C88 14 92 8 96 0" fill="none" stroke="#4a3322" stroke-width="3.2" />
+        {/* the Negro, wide and black, with its archipelago */}
+        <path d="M-4 98 C14 84 24 62 40 50 C54 40 70 46 86 40 C94 37 100 34 104 30 L104 46 C92 52 76 58 62 60 C46 62 34 74 22 92 C18 98 14 104 12 108 L-4 108Z" fill="#4a3322" />
+        <g fill="#efe6cf"><path d="M40 55 C46 51 52 53 50 57 C46 59 41 58 40 55Z" /><path d="M64 52 C70 49 76 51 72 54 C68 55 64 55 64 52Z" /></g>
+        <g fill="#3f6f43"><path d="M30 66 C34 60 40 62 38 67 C35 70 30 70 30 66Z" /><path d="M56 54 C60 51 63 53 61 56 C59 58 55 57 56 54Z" /><path d="M18 82 C22 77 27 79 25 84 C22 87 17 86 18 82Z" /></g>
+        {/* the island lagoon and its mouth */}
+        <path d="M22 70 C24 64 34 64 36 70 C38 76 28 80 24 76 C22 74 21 72 22 70Z" fill="#3b2a1f" stroke="#c9b98a" stroke-width=".4" />
+        {/* the flooded forest, a blue-green margin on the far bank */}
+        <path d="M6 34 C10 30 22 34 22 42 C22 50 10 52 6 46 C4 42 4 38 6 34Z" fill="#2f5a4a" opacity=".85" />
+        <text x="50" y="102" text-anchor="middle" font-size="4" fill="#efe6cf" font-family="Georgia, serif" font-style="italic">Middle Rio Negro</text>
       </svg>
     );
   }

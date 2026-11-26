@@ -1,0 +1,534 @@
+[
+  {
+    "id": "porto-mariua",
+    "name": "Porto Mariuá",
+    "kind": "port",
+    "habitat": "River town on a sand bluff above the Negro",
+    "blurb": "Wooden houses on stilts, a floating market, river boats nosed into the bank and the boto rolling off the fish stalls. It takes its name from the old village that became Barcelos.",
+    "regionId": "rio-negro",
+    "lat": -0.975,
+    "lon": -62.924,
+    "tz": "America/Manaus",
+    "unlock": [],
+    "zones": [],
+    "sightZones": [],
+    "map": {
+      "x": 0.54,
+      "y": 0.32
+    },
+    "scene": {
+      "background": "scene/porto-mariua",
+      "painter": "river-port",
+      "waterPolygon": [],
+      "hotspots": [
+        {
+          "id": "market",
+          "kind": "market",
+          "x": 0.2,
+          "y": 0.47,
+          "label": "Floating market",
+          "glyph": "🐟",
+          "ref": "socorro"
+        },
+        {
+          "id": "board",
+          "kind": "board",
+          "x": 0.5,
+          "y": 0.45,
+          "label": "Orders board",
+          "glyph": "📋"
+        },
+        {
+          "id": "tackle",
+          "kind": "shop",
+          "x": 0.82,
+          "y": 0.45,
+          "label": "Casa do Pescador",
+          "glyph": "🎣",
+          "ref": "casa-do-pescador"
+        },
+        {
+          "id": "landing",
+          "kind": "shop",
+          "x": 0.78,
+          "y": 0.7,
+          "label": "Boat landing",
+          "glyph": "🛶",
+          "ref": "landing"
+        },
+        {
+          "id": "bene",
+          "kind": "npc",
+          "x": 0.22,
+          "y": 0.72,
+          "label": "Seu Bené",
+          "glyph": "👴",
+          "ref": "bene"
+        },
+        {
+          "id": "prado",
+          "kind": "npc",
+          "x": 0.5,
+          "y": 0.72,
+          "label": "Dr Prado",
+          "glyph": "👩‍🔬",
+          "ref": "prado",
+          "showIf": "quest:raimundo-2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mariua-waterfront",
+    "name": "Town Waterfront",
+    "kind": "spot",
+    "habitat": "Floating houses and moorings on the town bank",
+    "blurb": "Floating houses on log rafts, canoes tied three deep, and a school of sardinha flicking at the surface under the planks.",
+    "regionId": "rio-negro",
+    "lat": -0.975,
+    "lon": -62.924,
+    "tz": "America/Manaus",
+    "unlock": [],
+    "zones": [
+      {
+        "id": "moorings",
+        "name": "Moorings",
+        "minCastRange": 0,
+        "junkRate": 0.06,
+        "junkTable": "river-junk",
+        "blurb": "Shade under the floating houses."
+      },
+      {
+        "id": "river-edge",
+        "name": "River edge",
+        "minCastRange": 0.5,
+        "junkRate": 0.04,
+        "junkTable": "river-junk",
+        "blurb": "Where the current starts."
+      },
+      {
+        "id": "sardinha-school",
+        "name": "Sardinha school",
+        "minCastRange": 0,
+        "junkRate": 0,
+        "junkTable": "river-junk",
+        "blurb": "Silver flicks at the surface.",
+        "cast": false
+      }
+    ],
+    "sightZones": [],
+    "map": {
+      "x": 0.38,
+      "y": 0.5
+    },
+    "scene": {
+      "background": "scene/mariua-waterfront",
+      "painter": "waterfront",
+      "waterPolygon": [
+        [
+          0,
+          0.32
+        ],
+        [
+          1,
+          0.32
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "sardinha",
+          "kind": "gather",
+          "x": 0.2,
+          "y": 0.72,
+          "label": "Sardinha",
+          "glyph": "🐟",
+          "node": {
+            "handZone": "sardinha-school",
+            "max": 3,
+            "regrowMin": 6,
+            "requiresTool": "cast-net"
+          }
+        },
+        {
+          "id": "trap",
+          "kind": "station",
+          "x": 0.12,
+          "y": 0.58,
+          "label": "Trap",
+          "glyph": "🧺",
+          "station": "trap"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rio-channel",
+    "name": "Main River",
+    "kind": "spot",
+    "habitat": "The Negro main channel, with sand beaches at low water",
+    "blurb": "The river is three kilometres wide here and black as coffee. At low water a white beach runs along the island; at high water the beach is gone and the forest stands in the river.",
+    "regionId": "rio-negro",
+    "lat": -0.975,
+    "lon": -62.924,
+    "tz": "America/Manaus",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      }
+    ],
+    "zones": [
+      {
+        "id": "beach",
+        "name": "Sand beach",
+        "minCastRange": 0,
+        "junkRate": 0.03,
+        "junkTable": "river-junk",
+        "blurb": "White sand shelving into black water.",
+        "water": [
+          "low",
+          "falling"
+        ]
+      },
+      {
+        "id": "flooded-bank",
+        "name": "Drowned bank",
+        "minCastRange": 0,
+        "junkRate": 0.05,
+        "junkTable": "river-junk",
+        "blurb": "The beach is under water; bushes stand in the river.",
+        "water": [
+          "rising",
+          "high"
+        ]
+      },
+      {
+        "id": "channel-edge",
+        "name": "Channel edge",
+        "minCastRange": 0.45,
+        "junkRate": 0.03,
+        "junkTable": "river-junk",
+        "blurb": "Where the sand drops away."
+      },
+      {
+        "id": "deep-channel",
+        "name": "Deep channel",
+        "minCastRange": 0.85,
+        "junkRate": 0.02,
+        "junkTable": "river-junk",
+        "blurb": "Twenty metres of black water. Nothing shows from the surface."
+      }
+    ],
+    "sightZones": [
+      "beach"
+    ],
+    "map": {
+      "x": 0.7,
+      "y": 0.55
+    },
+    "scene": {
+      "background": "scene/rio-channel",
+      "painter": "river",
+      "waterPolygon": [
+        [
+          0,
+          0.3
+        ],
+        [
+          1,
+          0.3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [],
+      "backgrounds": {
+        "low": "scene/rio-channel-low",
+        "falling": "scene/rio-channel-low"
+      }
+    }
+  },
+  {
+    "id": "rio-lagoon",
+    "name": "Island Lagoon",
+    "kind": "spot",
+    "habitat": "A lake in the archipelago, joined to the river at high water",
+    "blurb": "A still lake among the islands, ringed with forest and fallen trees, with a deep mouth where it meets the river. At low water it is cut off, and every fish in it is crowded in.",
+    "regionId": "rio-negro",
+    "lat": -0.975,
+    "lon": -62.924,
+    "tz": "America/Manaus",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      }
+    ],
+    "zones": [
+      {
+        "id": "margin",
+        "name": "Lagoon margin",
+        "minCastRange": 0,
+        "junkRate": 0.05,
+        "junkTable": "river-junk",
+        "blurb": "Fallen trees and lily pads."
+      },
+      {
+        "id": "open-lagoon",
+        "name": "Open lagoon",
+        "minCastRange": 0.5,
+        "junkRate": 0.03,
+        "junkTable": "river-junk",
+        "blurb": "Still, dark and deep in the middle."
+      },
+      {
+        "id": "lagoon-mouth",
+        "name": "Lagoon mouth",
+        "minCastRange": 0.82,
+        "junkRate": 0.04,
+        "junkTable": "river-junk",
+        "blurb": "A fallen tree across the deep water where the lagoon meets the river."
+      },
+      {
+        "id": "igarape",
+        "name": "Forest stream",
+        "minCastRange": 0,
+        "junkRate": 0,
+        "junkTable": "river-junk",
+        "blurb": "A clear-black stream trickling in under the trees.",
+        "cast": false
+      }
+    ],
+    "sightZones": [
+      "margin",
+      "open-lagoon"
+    ],
+    "map": {
+      "x": 0.3,
+      "y": 0.7
+    },
+    "scene": {
+      "background": "scene/rio-lagoon",
+      "painter": "lake",
+      "waterPolygon": [
+        [
+          0,
+          0.34
+        ],
+        [
+          1,
+          0.34
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "piaba",
+          "kind": "gather",
+          "x": 0.14,
+          "y": 0.62,
+          "label": "Forest stream",
+          "glyph": "🐠",
+          "node": {
+            "handZone": "igarape",
+            "method": "net",
+            "max": 4,
+            "regrowMin": 20,
+            "requiresTool": "dip-net"
+          }
+        },
+        {
+          "id": "trap",
+          "kind": "station",
+          "x": 0.86,
+          "y": 0.66,
+          "label": "Trap",
+          "glyph": "🧺",
+          "station": "trap"
+        }
+      ]
+    }
+  },
+  {
+    "id": "igapo",
+    "name": "Flooded Forest",
+    "kind": "spot",
+    "habitat": "Igapó: blackwater forest flooded for half the year",
+    "blurb": "Trunks standing in still black water, two metres above the forest floor, and the plop of fruit falling from the canopy. In the dry months this is a forest you could walk through.",
+    "regionId": "rio-negro",
+    "lat": -0.975,
+    "lon": -62.924,
+    "tz": "America/Manaus",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 1
+      },
+      {
+        "type": "water",
+        "levels": [
+          "rising",
+          "high",
+          "falling"
+        ]
+      }
+    ],
+    "zones": [
+      {
+        "id": "forest-edge",
+        "name": "Forest edge",
+        "minCastRange": 0,
+        "junkRate": 0.06,
+        "junkTable": "river-junk",
+        "blurb": "Where the trees step down into the river."
+      },
+      {
+        "id": "deep-forest",
+        "name": "Under the canopy",
+        "minCastRange": 0.5,
+        "junkRate": 0.05,
+        "junkTable": "river-junk",
+        "blurb": "Between the trunks, where the water is deepest.",
+        "water": [
+          "high"
+        ]
+      }
+    ],
+    "sightZones": [
+      "forest-edge"
+    ],
+    "map": {
+      "x": 0.16,
+      "y": 0.42
+    },
+    "scene": {
+      "background": "scene/igapo",
+      "painter": "igapo",
+      "waterPolygon": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": [
+        {
+          "id": "fruit",
+          "kind": "gather",
+          "x": 0.8,
+          "y": 0.6,
+          "label": "Fallen fruit",
+          "glyph": "🌰",
+          "node": {
+            "item": "jauari-fruit",
+            "max": 5,
+            "regrowMin": 30
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "rapids",
+    "name": "Upriver Rapids",
+    "kind": "spot",
+    "habitat": "A rocky stretch of a tributary, two days upriver",
+    "blurb": "Two days up a tributary on the river boat, the forest closes in and the river breaks over black rock. Below the falls there is a hole nobody has found the bottom of.",
+    "regionId": "rio-negro",
+    "lat": -0.975,
+    "lon": -62.924,
+    "tz": "America/Manaus",
+    "unlock": [
+      {
+        "type": "boat",
+        "tier": 2
+      }
+    ],
+    "zones": [
+      {
+        "id": "eddies",
+        "name": "Rock eddies",
+        "minCastRange": 0,
+        "junkRate": 0.03,
+        "junkTable": "river-junk",
+        "blurb": "Slack water behind the boulders."
+      },
+      {
+        "id": "rapid",
+        "name": "The run",
+        "minCastRange": 0.5,
+        "junkRate": 0.03,
+        "junkTable": "river-junk",
+        "blurb": "Fast water over rock."
+      },
+      {
+        "id": "plunge-pool",
+        "name": "Plunge pool",
+        "minCastRange": 0.85,
+        "junkRate": 0.02,
+        "junkTable": "river-junk",
+        "blurb": "The deep hole under the falls."
+      }
+    ],
+    "sightZones": [],
+    "map": {
+      "x": 0.84,
+      "y": 0.2
+    },
+    "scene": {
+      "background": "scene/rapids",
+      "painter": "rapids",
+      "waterPolygon": [
+        [
+          0,
+          0.3
+        ],
+        [
+          1,
+          0.3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "hotspots": []
+    }
+  }
+]

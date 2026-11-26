@@ -34,6 +34,8 @@ export interface CatchCtx {
   dark?: boolean;
   /** Moon index 0..7, reserved for M4 conditions. */
   moon?: number;
+  /** Best fish finder carried, 0 for none. Some fish are only found where a finder shows them. */
+  finder?: number;
 }
 
 export interface Candidate {
@@ -108,6 +110,24 @@ export function presenceWeight(occ: Occurrence, ctx: Pick<CatchCtx, 'content' | 
   return ctx.content.balance.rarityWeights[occ.rarity] * occ.phaseMod[ctx.phase] * (occ.monthMod[ctx.month] ?? 1);
 }
 
+/**
+ * What a fish finder shows under one zone right now: how many kinds are down
+ * there at this hour and month, whatever the rig, and how many of them are
+ * not yet in the field guide. Sighting-only animals do not show on a finder.
+ */
+export function finderReadout(ctx: Pick<CatchCtx, 'content' | 'locationId' | 'zoneId' | 'phase' | 'month'>, known: (speciesId: string) => boolean): { kinds: number; unknown: number } {
+  const ids = new Set<string>();
+  for (const occ of ctx.content.occByLocation[ctx.locationId] ?? []) {
+    if (!occ.zones.includes(ctx.zoneId)) continue;
+    const sp = ctx.content.species[occ.speciesId];
+    if (!sp || sp.kind === 'sighting' || !occ.methods.some((m) => m === 'bait' || m === 'lure' || m === 'sight')) continue;
+    if (presenceWeight(occ, ctx) > 0) ids.add(sp.id);
+  }
+  let unknown = 0;
+  for (const id of ids) if (!known(id)) unknown++;
+  return { kinds: ids.size, unknown };
+}
+
 /** Step 1 and 2: build the pool and weight it. */
 export function candidatePool(ctx: CatchCtx): Candidate[] {
   const out: Candidate[] = [];
@@ -116,6 +136,7 @@ export function candidatePool(ctx: CatchCtx): Candidate[] {
     if (!occ.zones.includes(ctx.zoneId)) continue;
     if (!occ.methods.includes(ctx.method)) continue;
     if (occ.minGear?.rodTier != null && tier < occ.minGear.rodTier) continue;
+    if (occ.minGear?.requiresFinder && !(ctx.finder && ctx.finder > 0)) continue;
     const species = ctx.content.species[occ.speciesId];
     if (!species) continue;
     const affinity = affinityFor(occ, ctx);

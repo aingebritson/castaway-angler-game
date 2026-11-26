@@ -8,8 +8,812 @@ After a scene is ingested, set the top of its `waterPolygon` in the location dat
 
 # Scenes
 
+## scene/porto-mariua
+
+Save as `art/inbox/scene__porto-mariua.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Porto Mariuá, river town on a sand bluff above the Negro. Wooden houses on stilts, a floating market, river boats nosed into the bank and the boto rolling off the fish stalls. It takes its name from the old village that became Barcelos.
+
+Show these where the game places its tap targets: floating market at middle left, orders board at middle centre, Casa do Pescador at middle right and boat landing at lower right. Keep the lower left and lower centre of the image plain and uncluttered; the game draws objects there itself.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Porto Mariuá, River town on a sand bluff above the Negro. Showing floating market, orders board, Casa do Pescador and boat landing. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
+## scene/mariua-waterfront
+
+Save as `art/inbox/scene__mariua-waterfront.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Town Waterfront, floating houses and moorings on the town bank. Floating houses on log rafts, canoes tied three deep, and a school of sardinha flicking at the surface under the planks.
+
+Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky. Depth runs from near to far: the bottom of the frame is the nearest water, then moorings (shade under the floating houses) and river edge (where the current starts) toward the far bank. This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white. Show these where the game places its tap targets: sardinha at lower left. Keep the middle left of the image plain and uncluttered; the game draws objects there itself.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Town Waterfront, floating houses and moorings on the town bank. View from the bank across the river, sardinha in the foreground, then moorings and river edge farther out, black tea-coloured water and a straight far bank of forest a third of the way down. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
+## scene/rio-channel
+
+Save as `art/inbox/scene__rio-channel.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Main River, the Negro main channel, with sand beaches at low water. The river is three kilometres wide here and black as coffee. At low water a white beach runs along the island; at high water the beach is gone and the forest stands in the river.
+
+Water level: this image shows the river at rising or high water. The beaches are going under and the forest edge is starting to flood; The forest is flooded, and the fish have gone into it.
+
+Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky. Depth runs from near to far: the bottom of the frame is the nearest water, then drowned bank (the beach is under water; bushes stand in the river), channel edge (where the sand drops away) and deep channel (Twenty metres of black water. Nothing shows from the surface) toward the far bank. This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Main River, The Negro main channel, with sand beaches at low water. View from the bank across the river, then sand beach, drowned bank, channel edge and deep channel farther out, black tea-coloured water and a straight far bank of forest a third of the way down. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
+## scene/rio-channel-low
+
+Save as `art/inbox/scene__rio-channel-low.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Main River, the Negro main channel, with sand beaches at low water. The river is three kilometres wide here and black as coffee. At low water a white beach runs along the island; at high water the beach is gone and the forest stands in the river.
+
+Water level: this image shows the river at falling or low water. The water is leaving the forest, and the fish are leaving with it; Beaches out, the lagoons cut off and crowded, the forest dry. Same view, same horizon and same tap spots as `scene/rio-channel`; only the water level differs.
+
+Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky. Depth runs from near to far: the bottom of the frame is the nearest water, then sand beach (white sand shelving into black water), channel edge (where the sand drops away) and deep channel (Twenty metres of black water. Nothing shows from the surface) toward the far bank. This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Main River, The Negro main channel, with sand beaches at low water. View from the bank across the river, then sand beach, drowned bank, channel edge and deep channel farther out, black tea-coloured water and a straight far bank of forest a third of the way down. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
+## scene/rio-lagoon
+
+Save as `art/inbox/scene__rio-lagoon.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Island Lagoon, a lake in the archipelago, joined to the river at high water. A still lake among the islands, ringed with forest and fallen trees, with a deep mouth where it meets the river. At low water it is cut off, and every fish in it is crowded in.
+
+Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky. Depth runs from near to far: the bottom of the frame is the nearest water, then lagoon margin (fallen trees and lily pads), open lagoon (still, dark and deep in the middle) and lagoon mouth (a fallen tree across the deep water where the lagoon meets the river) toward the far bank. This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white. Show these where the game places its tap targets: forest stream at middle left. Keep the middle right of the image plain and uncluttered; the game draws objects there itself.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Island Lagoon, a lake in the archipelago, joined to the river at high water. View from the bank across the river, then lagoon margin, open lagoon and lagoon mouth farther out, black tea-coloured water and a straight far bank of forest a third of the way down. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
+## scene/igapo
+
+Save as `art/inbox/scene__igapo.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Flooded Forest, igapó: blackwater forest flooded for half the year. Trunks standing in still black water, two metres above the forest floor, and the plop of fruit falling from the canopy. In the dry months this is a forest you could walk through.
+
+Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky. Depth runs from near to far: the bottom of the frame is the nearest water, then forest edge (where the trees step down into the river) and under the canopy (between the trunks, where the water is deepest) toward the far bank. This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white. Show these where the game places its tap targets: fallen fruit at middle right.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Flooded Forest, igapó: blackwater forest flooded for half the year. View from the bank across the river, then forest edge and under the canopy farther out, black tea-coloured water and a straight far bank of forest a third of the way down. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
+## scene/rapids
+
+Save as `art/inbox/scene__rapids.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+Tall portrait phone background, as tall and narrow as possible (the game shows it at 9:19.5). Paint edge to edge with no white paper margin. Keep anything important in the middle 80 percent of the width. No people, no animals, no boats, no fish. Neutral midday light with a clear sky; the game tints it for dawn, dusk and night.
+
+Scene: Upriver Rapids, a rocky stretch of a tributary, two days upriver. Two days up a tributary on the river boat, the forest closes in and the river breaks over black rock. Below the falls there is a hole nobody has found the bottom of.
+
+Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky. Depth runs from near to far: the bottom of the frame is the nearest water, then rock eddies (slack water behind the boulders), the run (fast water over rock) and plunge pool (the deep hole under the falls) toward the far bank. This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white.
+```
+
+Midjourney version (add the reference images as style references):
+
+```text
+Field-guide watercolour illustration with a fine dark ink line, naturalist's plate, clean simple shapes, Amazon blackwater river colours, tea-dark water, white sand, clear blue midday sky. Upriver Rapids, a rocky stretch of a tributary, two days upriver. View from the bank across the river, then rock eddies, the run and plunge pool farther out, black tea-coloured water and a straight far bank of forest a third of the way down. --ar 6:13 --no text, people, boats, fish, border, white paper margin
+```
+
 # Specimens
+
+## specimen/cichla-temensis
+
+Save as `art/inbox/specimen__cichla-temensis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Speckled peacock bass (Cichla temensis). Elongate, deep-shouldered cichlid; three broad dark vertical bars; black ocellus ringed in gold on the tail base; red eye; young fish and some adults spotted with pale dots; breeding fish golden-yellow with a hump on the head.
+```
+
+## specimen/cichla-orinocensis
+
+Save as `art/inbox/specimen__cichla-orinocensis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Butterfly peacock bass (Cichla orinocensis). Olive-gold peacock bass; three large black ocelli ringed in yellow along the flank; black ocellus on the tail base; red-orange pelvic and anal fins.
+```
+
+## specimen/cichla-monoculus
+
+Save as `art/inbox/specimen__cichla-monoculus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Monoculus peacock bass (Cichla monoculus). Heavy-bodied peacock bass; three dark bars and a dark blotch behind the pectoral fin; one large ringed ocellus on the tail base; yellow-green body, reddish lower fins.
+```
+
+## specimen/astronotus-ocellatus
+
+Save as `art/inbox/specimen__astronotus-ocellatus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Oscar (acará-açu) (Astronotus ocellatus). Deep oval cichlid; dark olive-brown body marbled with orange-red patches; black ocellus with an orange ring on the upper tail base; large mouth; rounded tail.
+```
+
+## specimen/heros-severus
+
+Save as `art/inbox/specimen__heros-severus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Severum (Heros severus). Compressed, deep cichlid; yellow-green to olive with six to eight faint vertical bars; a strong dark bar from dorsal to anal fin across the tail base; reddish dots on the head of adults.
+```
+
+## specimen/geophagus-altifrons
+
+Save as `art/inbox/specimen__geophagus-altifrons.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Eartheater (acará-tinga) (Geophagus altifrons). Moderately deep cichlid with a long sloping forehead and low-set mouth; pearly grey-gold with rows of iridescent blue spots; a dark spot mid-flank; long trailing dorsal and tail filaments.
+```
+
+## specimen/lugubria-lugubris
+
+Save as `art/inbox/specimen__lugubria-lugubris.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Pike cichlid (jacundá) (Lugubria lugubris). Elongate, pike-like cichlid; long dorsal fin; large mouth with a protruding lower jaw; olive-grey with a dark lateral stripe or row of blotches; dark spot above the pectoral fin.
+```
+
+## specimen/hoplias-malabaricus
+
+Save as `art/inbox/specimen__hoplias-malabaricus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Trahira (traíra) (Hoplias malabaricus). Cylindrical body with a rounded tail and rounded fins; big head and wide mouth full of conical teeth; brown-olive mottled with dark blotches; dark stripes radiating from the eye.
+```
+
+## specimen/hydrolycus-armatus
+
+Save as `art/inbox/specimen__hydrolycus-armatus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Payara (Hydrolycus armatus). Elongate, deep-bellied silver characin; huge pectoral fins; a pair of long fangs at the tip of the lower jaw; dark spot behind the gill cover; forked tail with a dark rear edge.
+```
+
+## specimen/rhaphiodon-vulpinus
+
+Save as `art/inbox/specimen__rhaphiodon-vulpinus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Dogfish characin (peixe-cachorro) (Rhaphiodon vulpinus). Very elongate, compressed silver characin; short head, oblique mouth with two lower fangs; long pectoral fins; small forked tail; dark spot behind the gill cover.
+```
+
+## specimen/boulengerella-cuvieri
+
+Save as `art/inbox/specimen__boulengerella-cuvieri.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Bicuda (Boulengerella cuvieri). Long, cylindrical silver body; long pointed snout with a fleshy tip on the upper jaw; dorsal fin set far back; dark stripe along the side; forked tail with dark lobes.
+```
+
+## specimen/acestrorhynchus-falcirostris
+
+Save as `art/inbox/specimen__acestrorhynchus-falcirostris.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Freshwater barracuda (peixe-cachorro) (Acestrorhynchus falcirostris). Elongate, compressed silver body; long snout and large mouth with canine teeth; dark spot at the tail base; reddish or yellowish fins.
+```
+
+## specimen/serrasalmus-rhombeus
+
+Save as `art/inbox/specimen__serrasalmus-rhombeus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Black piranha (Serrasalmus rhombeus). Deep, rhomboid body; dark grey to black adults with a silvery sheen; bright red eye; heavy undershot jaw with triangular teeth; dark band on the tail edge.
+```
+
+## specimen/serrasalmus-manueli
+
+Save as `art/inbox/specimen__serrasalmus-manueli.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Manuel's piranha (Serrasalmus manueli). Deep, compressed silver piranha with many small dark spots on the upper flank; reddish throat and anal fin; dark band on the tail; strong underslung jaw.
+```
+
+## specimen/colossoma-macropomum
+
+Save as `art/inbox/specimen__colossoma-macropomum.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Tambaqui (Colossoma macropomum). Very deep, rounded body; dark olive to black back and lower body, pale yellow-grey middle; small adipose fin with rays; molar-like teeth; dark fins.
+```
+
+## specimen/myloplus-rubripinnis
+
+Save as `art/inbox/specimen__myloplus-rubripinnis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Redhook pacu (Myloplus rubripinnis). Disc-shaped, compressed silver body; reddish to orange anal fin, hooked and lobed in males; dark-edged tail; small mouth with incisor-like teeth.
+```
+
+## specimen/brycon-amazonicus
+
+Save as `art/inbox/specimen__brycon-amazonicus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Matrinxã (jatuarana) (Brycon amazonicus). Streamlined, moderately deep silver body; dark spot behind the gill cover; tail and anal fin tinged orange-red with a dark band through the tail.
+```
+
+## specimen/semaprochilodus-insignis
+
+Save as `art/inbox/specimen__semaprochilodus-insignis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Jaraqui (Semaprochilodus insignis). Deep, compressed silver body; fleshy protractile lips; black and yellow horizontal stripes on both tail lobes and on the dorsal fin.
+```
+
+## specimen/leporinus-fasciatus
+
+Save as `art/inbox/specimen__leporinus-fasciatus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Banded leporinus (aracu-pinima) (Leporinus fasciatus). Elongate, cylindrical body; small mouth; yellow body with nine or ten broad black vertical bands; reddish throat in breeding fish.
+```
+
+## specimen/triportheus-albus
+
+Save as `art/inbox/specimen__triportheus-albus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Sardinha (Triportheus albus). Elongate silver fish with a deep keeled breast and long pectoral fins; upturned mouth; dark stripe on the middle tail rays.
+```
+
+## specimen/plagioscion-squamosissimus
+
+Save as `art/inbox/specimen__plagioscion-squamosissimus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Silver croaker (pescada) (Plagioscion squamosissimus). Elongate silver drum; large oblique mouth; long dorsal fin with a deep notch; lateral line running onto the pointed tail; dark spot at the pectoral base.
+```
+
+## specimen/pellona-castelnaeana
+
+Save as `art/inbox/specimen__pellona-castelnaeana.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Apapá (Amazon pellona) (Pellona castelnaeana). Compressed, deep-bellied silver fish with a yellow-gold sheen; sharp keel of scutes along the belly; large upturned mouth; yellowish fins; forked tail.
+```
+
+## specimen/osteoglossum-ferreirai
+
+Save as `art/inbox/specimen__osteoglossum-ferreirai.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Black arowana (aruanã-preta) (Osteoglossum ferreirai). Very long, compressed body tapering to a small tail; dorsal and anal fins long and set far back, almost meeting the tail; upturned mouth with two chin barbels; young fish black with a yellow stripe, adults dark grey-blue with gold-edged scales.
+```
+
+## specimen/osteoglossum-bicirrhosum
+
+Save as `art/inbox/specimen__osteoglossum-bicirrhosum.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Silver arowana (Osteoglossum bicirrhosum). Very long, compressed silver body with huge pearly scales tinged pink or blue; upturned mouth with two forward-pointing chin barbels; long dorsal and anal fins far back; small tail.
+```
+
+## specimen/arapaima-gigas
+
+Save as `art/inbox/specimen__arapaima-gigas.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Arapaima (pirarucu) (Arapaima gigas). Huge, elongate, cylindrical body; flat bony head with an upturned mouth; large thick scales, grey-green at the front and edged deep red towards the tail; dorsal and anal fins set far back near the rounded tail.
+```
+
+## specimen/phractocephalus-hemioliopterus
+
+Save as `art/inbox/specimen__phractocephalus-hemioliopterus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Redtail catfish (pirarara) (Phractocephalus hemioliopterus). Broad, flattened head with a bony shield and long barbels; dark grey-brown back sharply separated from a white-yellow belly band; bright orange-red tail and tip of the dorsal fin.
+```
+
+## specimen/brachyplatystoma-filamentosum
+
+Save as `art/inbox/specimen__brachyplatystoma-filamentosum.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Piraíba (Brachyplatystoma filamentosum). Huge, elongate catfish; broad flat head; very long maxillary barbels; grey to dark brown back, pale belly; forked tail with long upper lobe; juveniles spotted.
+```
+
+## specimen/pseudoplatystoma-punctifer
+
+Save as `art/inbox/specimen__pseudoplatystoma-punctifer.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Barred sorubim (caparari) (Pseudoplatystoma punctifer). Elongate, cylindrical catfish with a long flattened shovel-shaped head; grey-brown back with dark vertical bars and spots, white belly; long barbels; forked tail spotted black.
+```
+
+## specimen/pinirampus-pirinampu
+
+Save as `art/inbox/specimen__pinirampus-pirinampu.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Flatwhiskered catfish (barba-chata) (Pinirampus pirinampu). Elongate, silver-grey catfish; flattened, ribbon-like maxillary barbels reaching past the dorsal fin; long, low adipose fin; deeply forked tail.
+```
+
+## specimen/zungaro-zungaro
+
+Save as `art/inbox/specimen__zungaro-zungaro.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Gilded catfish (jaú) (Zungaro zungaro). Massive, short-bodied catfish with a very broad flat head and small eyes; yellowish to olive-brown skin with darker marbling; short barbels; rounded fins.
+```
+
+## specimen/potamotrygon-motoro
+
+Save as `art/inbox/specimen__potamotrygon-motoro.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Ocellate river stingray (Potamotrygon motoro). Round, flat disc; brown above with many orange-yellow spots ringed in black; short tail with a serrated spine; pale underside.
+```
+
+## specimen/electrophorus-varii
+
+Save as `art/inbox/specimen__electrophorus-varii.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Electric eel (poraquê) (Electrophorus varii). Very long, cylindrical, scaleless body; dark grey to olive above, orange-red throat and belly; flat head with small eyes; no dorsal fin, a long anal fin running almost the whole length of the body.
+```
+
+## specimen/paracheirodon-axelrodi
+
+Save as `art/inbox/specimen__paracheirodon-axelrodi.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Cardinal tetra (Paracheirodon axelrodi). Tiny, slender tetra; iridescent neon blue-green stripe from eye to adipose fin; entire lower body bright red from snout to tail; translucent fins.
+```
+
+## specimen/macrobrachium-brasiliense
+
+Save as `art/inbox/specimen__macrobrachium-brasiliense.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Freshwater prawn (Macrobrachium brasiliense). Small, slender, translucent brownish prawn with darker bands; long rostrum; second pair of legs as long, slender claws, longer in males.
+```
+
+## specimen/inia-geoffrensis
+
+Save as `art/inbox/specimen__inia-geoffrensis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Amazon river dolphin (boto) (Inia geoffrensis). Long narrow beak with stiff hairs; bulging forehead; low ridge instead of a dorsal fin; large paddle-like flippers; grey when young, pink in adults, especially males.
+```
+
+## specimen/sotalia-fluviatilis
+
+Save as `art/inbox/specimen__sotalia-fluviatilis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Tucuxi (Sotalia fluviatilis). Small, streamlined dolphin; short beak; triangular, slightly hooked dorsal fin; grey to blue-grey back, paler sides and belly.
+```
+
+## specimen/pteronura-brasiliensis
+
+Save as `art/inbox/specimen__pteronura-brasiliensis.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Giant otter (Pteronura brasiliensis). Very long, sleek dark-brown body; broad flattened tail like a paddle; webbed feet; cream throat patch with an individual pattern; round head with small ears.
+```
+
+## specimen/podocnemis-erythrocephala
+
+Save as `art/inbox/specimen__podocnemis-erythrocephala.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Red-headed river turtle (irapuca) (Podocnemis erythrocephala). Small, smooth, dark brown-black oval shell; head dark with bright red or orange-red patches and stripes, brightest in juveniles and males.
+```
 
 # Items
 
+## item/river-passage
+
+Save as `art/inbox/item__river-passage.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Passage to the Rio Negro. A berth on a freighter to Belém and a hammock on the river boats beyond, all the way to Porto Mariuá. Good both ways. A folded paper ticket and a cargo manifest tied with string, stamped with a ship and a river, slightly water-stained.
+```
+
+## item/canoe
+
+Save as `art/inbox/item__canoe.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Canoe with a rabeta. A long wooden canoe with a long-tail outboard. Reaches the lagoon, the main river and, when the water is up, the flooded forest. A long narrow wooden canoe painted blue and white, with a small long-shaft "rabeta" outboard motor at the stern.
+```
+
+## item/riverboat
+
+Save as `art/inbox/item__riverboat.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: River boat. A two-deck wooden river boat with hammocks and a cook, towing your canoe. Two days up a tributary to the rapids. A two-deck wooden Amazon river boat (barco regional), white with a blue stripe, hammocks on the upper deck, a canoe tied alongside.
+```
+
+## item/fish-finder
+
+Save as `art/inbox/item__fish-finder.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Fish finder. A sonar screen that reads the water under the boat. Shows how many kinds are down there, and finds the deep holes where the giants lie. A small rugged sonar fish finder with a colour screen showing fish arches, on a swivel mount with a cable to a transducer.
+```
+
+## item/matapi
+
+Save as `art/inbox/item__matapi.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Matapi. A funnel trap woven from palm stems, the river way of catching prawns. Bait it and sink it by the bank. A cylindrical funnel trap woven from thin pale palm-stem slats, with a funnel entrance at each end and a woven tie.
+```
+
+## item/dip-net
+
+Save as `art/inbox/item__dip-net.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Dip net. A rapiché: a small fine-meshed hand net on a hoop, for scooping little fish out of the forest streams. A small hand net with a round wooden hoop, fine pale mesh bag and a short wooden handle.
+```
+
+## item/prop-bait
+
+Save as `art/inbox/item__prop-bait.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Prop bait. A long floating plug with a propeller at each end. Ripped across the top it sounds like a fish in trouble, and peacock bass hate it. A long cigar-shaped topwater plug, yellow with a green back, with a small metal propeller at nose and tail and two treble hooks.
+```
+
+## item/earthworm
+
+Save as `art/inbox/item__earthworm.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Earthworms. Minhoca, dug from the riverbank. Everything small in the river eats them. A small tin of dark soil with several pink earthworms.
+```
+
+## item/live-sardinha
+
+Save as `art/inbox/item__live-sardinha.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Live sardinha. A silver river sardinha, still kicking. The big predators of the river take it when they will take nothing else. A small silvery freshwater sardine-like fish (Triportheus) with a deep keeled belly and large pectoral fins.
+```
+
+## item/river-prawn
+
+Save as `art/inbox/item__river-prawn.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: River prawn. A translucent freshwater prawn from the matapi. Catfish and croakers come for it. A translucent grey-brown freshwater prawn with long thin claws and long antennae.
+```
+
+## item/jauari-fruit
+
+Save as `art/inbox/item__jauari-fruit.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Jauari fruit. The hard round fruit of the jauari palm, dropping into the flooded forest. Tambaqui crack them like nuts. Three round greenish-brown palm fruits about the size of a walnut, with a woody husk (Astrocaryum jauari).
+```
+
+## item/cardinal-tetras
+
+Save as `art/inbox/item__cardinal-tetras.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single item icon, three-quarter view, centred, filling about 75 percent of the frame. Square 1024 x 1024 on a fully transparent background, with no paper texture and no shadow. A simple, clear silhouette that still reads when shrunk to a 32 pixel inventory icon.
+
+Subject: Cardinal tetras. A bag of live cardinal tetras, blue and red as neon. The piaba buyer at the floating market pays for them by the bag. A clear plastic bag of water holding a few tiny fish with a glowing electric-blue stripe and a red belly.
+```
+
 # Portraits
+
+## portrait/raimundo
+
+Save as `art/inbox/portrait__raimundo.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A head-and-shoulders portrait, facing slightly left, friendly and natural. The game shows it small, cropped to a circle around the face, so keep the face large and centred in the frame. Keep the rendering simple: flat washes, a few lines for age, no fine wrinkles or sketchy hatching, and a clean, even ink outline like the fish reference image. A soft plain watercolour wash background that reaches all four corners, with no white paper showing. Square 1024 x 1024.
+
+Subject: Seu Raimundo, boatman and guide in Porto Mariuá, a River town on a sand bluff above the Negro. A riverside man of the middle Rio Negro in his sixties, lean and sun-dark, short grey hair, a faded red cap, a sleeveless shirt and a boat-pole over one shoulder, sitting easy on the gunwale of a wooden canoe.
+```
+
+## portrait/joelma
+
+Save as `art/inbox/portrait__joelma.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A head-and-shoulders portrait, facing slightly left, friendly and natural. The game shows it small, cropped to a circle around the face, so keep the face large and centred in the frame. Keep the rendering simple: flat washes, a few lines for age, no fine wrinkles or sketchy hatching, and a clean, even ink outline like the fish reference image. A soft plain watercolour wash background that reaches all four corners, with no white paper showing. Square 1024 x 1024.
+
+Subject: Joelma, tackle seller in Porto Mariuá, a River town on a sand bluff above the Negro. A Brazilian woman in her thirties who runs the tackle shop and guides anglers: curly dark hair tied back, a sun hat pushed up, a fishing shirt with rolled sleeves, a pair of pliers on her belt and a peacock-bass lure hooked through one buttonhole.
+```
+
+## portrait/bene
+
+Save as `art/inbox/portrait__bene.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A head-and-shoulders portrait, facing slightly left, friendly and natural. The game shows it small, cropped to a circle around the face, so keep the face large and centred in the frame. Keep the rendering simple: flat washes, a few lines for age, no fine wrinkles or sketchy hatching, and a clean, even ink outline like the fish reference image. A soft plain watercolour wash background that reaches all four corners, with no white paper showing. Square 1024 x 1024.
+
+Subject: Seu Bené, old fisherman in Porto Mariuá, a River town on a sand bluff above the Negro. An old riverside fisherman in his late seventies, small and wiry, brown skin creased by sun, a few white whiskers, a straw hat with a frayed brim, mending a cast net on his knees.
+```
+
+## portrait/prado
+
+Save as `art/inbox/portrait__prado.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A head-and-shoulders portrait, facing slightly left, friendly and natural. The game shows it small, cropped to a circle around the face, so keep the face large and centred in the frame. Keep the rendering simple: flat washes, a few lines for age, no fine wrinkles or sketchy hatching, and a clean, even ink outline like the fish reference image. A soft plain watercolour wash background that reaches all four corners, with no white paper showing. Square 1024 x 1024.
+
+Subject: Dr Luísa Prado, fisheries biologist in Porto Mariuá, a River town on a sand bluff above the Negro. Dr Luísa Prado, a Brazilian fisheries biologist in her forties, short black hair, glasses pushed up on her head, a field shirt with a research-project patch, a clipboard and a fish-measuring board under one arm.
+```
+
+## portrait/socorro
+
+Save as `art/inbox/portrait__socorro.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A head-and-shoulders portrait, facing slightly left, friendly and natural. The game shows it small, cropped to a circle around the face, so keep the face large and centred in the frame. Keep the rendering simple: flat washes, a few lines for age, no fine wrinkles or sketchy hatching, and a clean, even ink outline like the fish reference image. A soft plain watercolour wash background that reaches all four corners, with no white paper showing. Square 1024 x 1024.
+
+Subject: Dona Socorro, fishmonger in Porto Mariuá, a River town on a sand bluff above the Negro. A Brazilian woman in her fifties who runs a stall on the floating market: a broad smile, hair under a bright headscarf, an apron over a flowered dress, a scale hanging beside her and a basket of silver fish.
+```

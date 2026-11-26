@@ -1,0 +1,1653 @@
+[
+  {
+    "speciesId": "geophagus-altifrons",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "worm": 1.5,
+      "shrimp": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Geophagus altifrons",
+        "url": "https://www.fishbase.se/summary/Geophagus-altifrons.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 26.5 cm TL, largest published weight 277 g, mouthbrooding. IUCN LC, assessed 7 November 2018 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Geophagus altifrons",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=57713&GenusName=Geophagus&SpeciesName=altifrons&fc=349",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (3.1-26.5 cm, n=762); 0.32 kg at 26.5 cm, +14%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCDF (main channel, lakes, tributaries, beaches))"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats ABCDF."
+  },
+  {
+    "speciesId": "cichla-orinocensis",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "prop": 1.5,
+      "popper": 1.3,
+      "jig": 1.4,
+      "plug": 1.2,
+      "spoon": 1,
+      "feather": 0.8,
+      "livefish": 1.4,
+      "worm": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Cichla orinocensis",
+        "url": "https://www.fishbase.se/summary/Cichla-orinocensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 61.7 cm SL (about 74 cm TL, an estimated conversion), largest published weight 6.2 kg, shallow lagoon-edge habitat, diet; length-weight a and b (Bayesian TL estimate; 6.4 kg at 74 cm, +4%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "IGFA: King of the Jungle, giant peacock bass on fly",
+        "url": "https://igfa.org/?p=66250",
+        "accessed": "2026-11-25",
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+      },
+      {
+        "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
+        "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
+        "accessed": "2026-11-25",
+        "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "leporinus-fasciatus",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach",
+      "flooded-bank"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "fruit": 1,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Leporinus fasciatus",
+        "url": "https://www.fishbase.se/summary/Leporinus-fasciatus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 37 cm TL, rocky fast-water habitat, diet, breeding December to May. IUCN LC, assessed 18 June 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Leporinus fasciatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=5352&GenusName=Leporinus&SpeciesName=fasciatus&fc=559",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (10.6-37 cm, n=69); 0.51 kg at 37 cm; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDFH)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats ABDF."
+  },
+  {
+    "speciesId": "triportheus-albus",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach",
+      "flooded-bank"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "worm": 1.2,
+      "cutfish": 0.6,
+      "fruit": 0.6,
+      "feather": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Triportheus albus",
+        "url": "https://www.fishbase.se/summary/Triportheus-albus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 25.7 cm TL, largest published weight 200 g, potamodromous. IUCN LC, assessed 30 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Triportheus albus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=51200&GenusName=Triportheus&SpeciesName=albus&fc=688",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (3-25.7 cm, n=894); 0.18 kg at 25.7 cm, -12%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "serrasalmus-rhombeus",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach",
+      "flooded-bank"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "cutfish": 1.6,
+      "livefish": 1.2,
+      "worm": 0.9,
+      "spoon": 0.6,
+      "jig": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Serrasalmus rhombeus",
+        "url": "https://www.fishbase.se/summary/Serrasalmus-rhombeus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 41.5 cm SL, largest published weight 3.8 kg, diet, rapids and deep-channel habitat, traumatogenic. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Serrasalmus rhombeus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=11970&GenusName=Serrasalmus&SpeciesName=rhombeus&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (5.6-31 cm, n=693); 3.2 kg at 41.5 cm SL, -16%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BCDF)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BCDF."
+  },
+  {
+    "speciesId": "potamotrygon-motoro",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "sight"
+    ],
+    "affinity": {
+      "worm": 1.2,
+      "shrimp": 1.3,
+      "cutfish": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Potamotrygon motoro",
+        "url": "https://www.fishbase.se/summary/Potamotrygon-motoro.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 50 cm disc width, larger specimens may weigh 10 kg, traumatogenic, aquarium trade; FishBase's 34.2 kg maximum weight is implausible beside its own note. IUCN LC, assessed 22 October 2024 (as shown on FishBase)"
+      },
+      {
+        "title": "FishBase: Potamotrygon motoro (no disc-width length-weight set)",
+        "url": "https://www.fishbase.se/summary/Potamotrygon-motoro.html",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b are derived, not published: chosen so a 50 cm disc weighs 10 kg"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDF)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats ABDF."
+  },
+  {
+    "speciesId": "boulengerella-cuvieri",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 0.9,
+      "dusk": 1.5,
+      "night": 0.1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "prop": 1.4,
+      "popper": 1.4,
+      "spoon": 1.1,
+      "plug": 1,
+      "livefish": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Boulengerella cuvieri",
+        "url": "https://www.fishbase.se/summary/Boulengerella-cuvieri.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 88 cm FL, largest published weight 6.0 kg, surface habit in rapid water behind obstacles, diet. IUCN LC, assessed 21 October 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Boulengerella cuvieri",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=27228&GenusName=Boulengerella&SpeciesName=cuvieri&fc=104",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: FL set (66-84 cm, n=2, weak); 5.4 kg at 88 cm FL, -9%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDFH)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "rhaphiodon-vulpinus",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.3,
+      "jig": 1.2,
+      "plug": 1,
+      "livefish": 1.3
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Rhaphiodon vulpinus",
+        "url": "https://www.fishbase.se/summary/Rhaphiodon-vulpinus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm SL (field) and 64 cm SL (text), largest published weight 2.1 kg, pelagic fish-eater. IUCN LC, assessed 14 July 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Rhaphiodon vulpinus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8697&GenusName=Rhaphiodon&SpeciesName=vulpinus&fc=527",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (20.5-55.8 cm, n=600); 1.9 kg at 64 cm SL, -11%. At the 80 cm field maximum it gives 3.8 kg, 79% over the record, so the text's 64 cm is used."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF (listed as Raphiodon vulpinus))"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "acestrorhynchus-falcirostris",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.3,
+      "jig": 1,
+      "feather": 1,
+      "livefish": 1.2,
+      "cutfish": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Acestrorhynchus falcirostris",
+        "url": "https://www.fishbase.se/summary/Acestrorhynchus-falcirostris.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 45 cm SL, clear and blackwater habitat, voracious predator. IUCN LC, assessed 13 February 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Acestrorhynchus falcirostris",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=13123&GenusName=Acestrorhynchus&SpeciesName=falcirostris&fc=593",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (10-45 cm, n=735); 0.96 kg at 45 cm SL; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "osteoglossum-ferreirai",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.2,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "feather": 1.4,
+      "popper": 1.2,
+      "prop": 0.8,
+      "spoon": 0.7,
+      "worm": 0.8,
+      "shrimp": 0.6,
+      "livefish": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Osteoglossum ferreirai",
+        "url": "https://www.fishbase.se/summary/Osteoglossum-ferreirai.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 90 cm TL, Negro River basin range, mouthbrooding; length-weight a and b (Bayesian TL estimate; 5.0 kg at 90 cm; no record weight). IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF; flagged as probably endemic)"
+      },
+      {
+        "title": "FishBase length-weight table: Osteoglossum ferreirai",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8117&GenusName=Osteoglossum&SpeciesName=ferreirai&fc=38",
+        "accessed": "2026-11-25",
+        "supports": "an SL set from the Aracá and Demeni rivers near Barcelos (30-64 cm, n=25) exists; the game uses the Bayesian TL estimate to keep the TL measure"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "cichla-temensis",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "prop": 1.5,
+      "popper": 1.3,
+      "jig": 1.4,
+      "plug": 1.2,
+      "spoon": 1,
+      "feather": 0.8,
+      "livefish": 1.4,
+      "worm": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Cichla temensis",
+        "url": "https://www.fishbase.se/summary/Cichla-temensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 99 cm TL (the game caps ordinary fish at 90 cm, below its 95 cm legendary), largest published weight 12.2 kg, lagoon and river-bank habitat, diet; length-weight a and b (Bayesian TL estimate; 11.7 kg at 90 cm, -11% against the 13.19 kg IGFA record and -4% against FishBase's 12.2 kg). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "IGFA: King of the Jungle, giant peacock bass on fly",
+        "url": "https://igfa.org/?p=66250",
+        "accessed": "2026-11-25",
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+      },
+      {
+        "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
+        "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
+        "accessed": "2026-11-25",
+        "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in a sand beach (checklist code F); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "heros-severus",
+    "locationId": "rio-channel",
+    "zones": [
+      "flooded-bank"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "fruit": 1,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Heros severus",
+        "url": "https://www.fishbase.se/summary/Heros-severus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 20 cm SL (about 24 cm TL, an estimated conversion), common length 13.5 cm TL, parental care; length-weight a and b (Bayesian TL estimate; no record weight). IUCN LC, assessed 19 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ],
+    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "myloplus-rubripinnis",
+    "locationId": "rio-channel",
+    "zones": [
+      "flooded-bank"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1.2,
+      1.4,
+      1.7,
+      1.8,
+      1.8,
+      1.6,
+      1.1,
+      0.6,
+      0.4,
+      0.4,
+      0.6
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "fruit": 1.8,
+      "worm": 0.6,
+      "shrimp": 0.4
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Myloplus rubripinnis",
+        "url": "https://www.fishbase.se/summary/Myloplus-rubripinnis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 41.5 cm TL, largest published weight 2.5 kg, leaf-eating diet, gravel-furrow spawning, calm water under overhanging vegetation. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Myloplus rubripinnis",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=11944&GenusName=Myloplus&SpeciesName=rubripinnis&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (4.5-41.5 cm, n=200); 1.9 kg at 41.5 cm, -25%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BCDG (lakes, tributaries, rapids))"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BCDG. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse."
+  },
+  {
+    "speciesId": "brycon-amazonicus",
+    "locationId": "rio-channel",
+    "zones": [
+      "flooded-bank"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1.2,
+      1.4,
+      1.7,
+      1.8,
+      1.8,
+      1.6,
+      1.1,
+      0.6,
+      0.4,
+      0.4,
+      0.6
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "fruit": 1.5,
+      "spoon": 1.1,
+      "jig": 1,
+      "popper": 0.8,
+      "worm": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Brycon amazonicus",
+        "url": "https://www.fishbase.se/summary/Brycon-amazonicus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 46.2 cm SL, food-fish status, range. IUCN LC, assessed 6 October 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brycon amazonicus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=52992&GenusName=Brycon&SpeciesName=amazonicus&fc=687",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (11.8-40.6 cm, n=43); 2.3 kg at 46.2 cm SL; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BD. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse."
+  },
+  {
+    "speciesId": "cichla-orinocensis",
+    "locationId": "rio-channel",
+    "zones": [
+      "flooded-bank"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "prop": 1.5,
+      "popper": 1.3,
+      "jig": 1.4,
+      "plug": 1.2,
+      "spoon": 1,
+      "feather": 0.8,
+      "livefish": 1.4,
+      "worm": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Cichla orinocensis",
+        "url": "https://www.fishbase.se/summary/Cichla-orinocensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 61.7 cm SL (about 74 cm TL, an estimated conversion), largest published weight 6.2 kg, shallow lagoon-edge habitat, diet; length-weight a and b (Bayesian TL estimate; 6.4 kg at 74 cm, +4%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "IGFA: King of the Jungle, giant peacock bass on fly",
+        "url": "https://igfa.org/?p=66250",
+        "accessed": "2026-11-25",
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+      },
+      {
+        "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
+        "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
+        "accessed": "2026-11-25",
+        "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "osteoglossum-bicirrhosum",
+    "locationId": "rio-channel",
+    "zones": [
+      "flooded-bank"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.2,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "feather": 1.4,
+      "popper": 1.2,
+      "prop": 0.8,
+      "spoon": 0.7,
+      "worm": 0.8,
+      "shrimp": 0.6,
+      "livefish": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Osteoglossum bicirrhosum",
+        "url": "https://www.fishbase.se/summary/Osteoglossum-bicirrhosum.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 90 cm TL (field), largest published weight 6.0 kg, surface feeding and jumping for beetles, low-oxygen tolerance, male mouthbrooding; length-weight a and b (Bayesian TL estimate; 11.3 kg at 119 cm, -1% against the reported record). IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      }
+    ],
+    "designNotes": "Placed in the drowned bank at high water (flooded margin); the checklist records it in habitats BDF."
+  },
+  {
+    "speciesId": "plagioscion-squamosissimus",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge",
+      "deep-channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.8,
+      "dusk": 1.4,
+      "night": 1.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "shrimp": 1.4,
+      "crustacean": 1.2,
+      "cutfish": 1.2,
+      "livefish": 1.3,
+      "jig": 1,
+      "worm": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Plagioscion squamosissimus",
+        "url": "https://www.fishbase.se/summary/Plagioscion-squamosissimus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm TL (field), largest published weight 4.5 kg, diet, commercial and game fish; length-weight a and b (Bayesian TL estimate; 4.2 kg at 70 cm, -7%). At 80 cm every set gives 6.3-6.7 kg, 41-49% over the record, so the game maximum is 70 cm. IUCN LC, assessed 30 July 2019 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCDF)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCDF."
+  },
+  {
+    "speciesId": "serrasalmus-manueli",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "cutfish": 1.6,
+      "livefish": 1.2,
+      "worm": 0.9,
+      "spoon": 0.6,
+      "jig": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Serrasalmus manueli",
+        "url": "https://www.fishbase.se/summary/Serrasalmus-manueli.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 36 cm SL, largest published weight 2.5 kg, Amazon and Orinoco range. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Serrasalmus manueli",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=53362&GenusName=Serrasalmus&SpeciesName=manueli&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (5.5-38 cm, n=336); 1.9 kg at 43 cm TL (about 36 cm SL), -23%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDF)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABDF."
+  },
+  {
+    "speciesId": "pellona-castelnaeana",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.2,
+      "jig": 0.9,
+      "livefish": 1.2,
+      "cutfish": 0.7
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Pellona castelnaeana",
+        "url": "https://www.fishbase.se/summary/Pellona-castelnaeana.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm FL, largest published weight 7.1 kg, river habitat, subsistence and game fish. IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Pellona castelnaeana",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1639&GenusName=Pellona&SpeciesName=castelnaeana&fc=620",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (8.7-60.9 cm, n=280); 5.9 kg at 70 cm SL (about 80 cm FL), -17%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABD)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD."
+  },
+  {
+    "speciesId": "leporinus-fasciatus",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "fruit": 1,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Leporinus fasciatus",
+        "url": "https://www.fishbase.se/summary/Leporinus-fasciatus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 37 cm TL, rocky fast-water habitat, diet, breeding December to May. IUCN LC, assessed 18 June 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Leporinus fasciatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=5352&GenusName=Leporinus&SpeciesName=fasciatus&fc=559",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (10.6-37 cm, n=69); 0.51 kg at 37 cm; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDFH)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABDF."
+  },
+  {
+    "speciesId": "potamotrygon-motoro",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.2,
+      "shrimp": 1.3,
+      "cutfish": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Potamotrygon motoro",
+        "url": "https://www.fishbase.se/summary/Potamotrygon-motoro.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 50 cm disc width, larger specimens may weigh 10 kg, traumatogenic, aquarium trade; FishBase's 34.2 kg maximum weight is implausible beside its own note. IUCN LC, assessed 22 October 2024 (as shown on FishBase)"
+      },
+      {
+        "title": "FishBase: Potamotrygon motoro (no disc-width length-weight set)",
+        "url": "https://www.fishbase.se/summary/Potamotrygon-motoro.html",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b are derived, not published: chosen so a 50 cm disc weighs 10 kg"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDF)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABDF."
+  },
+  {
+    "speciesId": "pinirampus-pirinampu",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "shrimp": 1.2,
+      "livefish": 1,
+      "worm": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Pinirampus pirinampu",
+        "url": "https://www.fishbase.se/summary/Pinirampus-pirinampu.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 120 cm TL (field), largest published weight 7.7 kg, schooling, bottom-feeding; length-weight a and b (Bayesian TL estimate; 9.3 kg at 90 cm, +21%). At 120 cm every set gives 18-23 kg, more than twice the record, so the game maximum is 90 cm. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCD)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCD."
+  },
+  {
+    "speciesId": "pseudoplatystoma-punctifer",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.6,
+      "day": 0.1,
+      "dusk": 1.3,
+      "night": 2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 1.6,
+      "cutfish": 1.2,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Pseudoplatystoma punctifer",
+        "url": "https://www.fishbase.se/summary/Pseudoplatystoma-punctifer.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, Amazon range; length-weight a and b (Bayesian TL estimate; 26 kg at 140 cm). FishBase gives no maximum length and lists 70 kg under the related P. fasciatum, which is implausible for this length. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD."
+  },
+  {
+    "speciesId": "pinirampus-pirinampu",
+    "locationId": "rio-channel",
+    "zones": [
+      "deep-channel"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.4,
+      "shrimp": 1.2,
+      "livefish": 1,
+      "worm": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Pinirampus pirinampu",
+        "url": "https://www.fishbase.se/summary/Pinirampus-pirinampu.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 120 cm TL (field), largest published weight 7.7 kg, schooling, bottom-feeding; length-weight a and b (Bayesian TL estimate; 9.3 kg at 90 cm, +21%). At 120 cm every set gives 18-23 kg, more than twice the record, so the game maximum is 90 cm. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCD)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABCD."
+  },
+  {
+    "speciesId": "pseudoplatystoma-punctifer",
+    "locationId": "rio-channel",
+    "zones": [
+      "deep-channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.6,
+      "day": 0.1,
+      "dusk": 1.3,
+      "night": 2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 1.6,
+      "cutfish": 1.2,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Pseudoplatystoma punctifer",
+        "url": "https://www.fishbase.se/summary/Pseudoplatystoma-punctifer.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, Amazon range; length-weight a and b (Bayesian TL estimate; 26 kg at 140 cm). FishBase gives no maximum length and lists 70 kg under the related P. fasciatum, which is implausible for this length. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABD."
+  },
+  {
+    "speciesId": "brachyplatystoma-filamentosum",
+    "locationId": "rio-channel",
+    "zones": [
+      "deep-channel"
+    ],
+    "rarity": "epic",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 1.6,
+      "cutfish": 1.4
+    },
+    "minGear": {
+      "requiresFinder": true
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Brachyplatystoma filamentosum",
+        "url": "https://www.fishbase.se/summary/Brachyplatystoma-filamentosum.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 360 cm TL, common length 120 cm TL, largest published weight 200 kg, diet including monkeys, soft-bottom habitat. IUCN LC, assessed 14 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brachyplatystoma filamentosum",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=6420&GenusName=Brachyplatystoma&SpeciesName=filamentosum&fc=150",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (49-196 cm, n=517); 165 kg at 230 cm SL, +7% against the IGFA record. The Bayesian TL set gives 394 kg at 280 cm TL."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABC; named in the checklist text among the largest fishes and long-distance migrants)"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABC. Needs the fish finder: without one the player cannot find the deep hole where a piraíba lies. A finder does not make fish bite; this is the game's stand-in for knowing where to anchor."
+  },
+  {
+    "speciesId": "inia-geoffrensis",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1,
+      "night": 1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "Wikipedia: Amazon river dolphin",
+        "url": "https://en.wikipedia.org/wiki/Amazon_river_dolphin",
+        "accessed": "2026-11-25",
+        "supports": "length to 2.55 m (males) and 2.15 m (females), weight to 185 kg; IUCN Endangered (2018); range includes the Rio Negro; uses flooded forest; killed for bait"
+      },
+      {
+        "title": "IN MMA/MPA 6 of 2014: piracatinga moratorium",
+        "url": "https://www.icmbio.gov.br/cma/images/stories/Legislacao/Instruções_normativas/IN_mma_n6_de_17_de_julho_2014_Piracatinga.pdf",
+        "accessed": "2026-11-25",
+        "supports": "ban on piracatinga fishing from 1 January 2015, because of the killing of river dolphins for bait (search excerpt)"
+      }
+    ]
+  },
+  {
+    "speciesId": "sotalia-fluviatilis",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge",
+      "deep-channel"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1,
+      "night": 1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "Wikipedia: Tucuxi",
+        "url": "https://en.wikipedia.org/wiki/Tucuxi",
+        "accessed": "2026-11-25",
+        "supports": "typical length about 1.5 m; IUCN Endangered (da Silva et al. 2020); freshwater only; group foraging, leaping; used as piracatinga bait"
+      }
+    ]
+  }
+]

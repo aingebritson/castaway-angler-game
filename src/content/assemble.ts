@@ -138,6 +138,29 @@ export function assembleContent(files: RawFiles): { content: Content; issues: Is
     }
   }
 
+  // The flood pulse: zones and places tied to a water level need a region with a water calendar,
+  // and at every level a place that is open must still have water to cast into from the bank.
+  for (const loc of Object.values(locations)) {
+    const cal = regions[loc.regionId]?.water;
+    const where = `location ${loc.id}`;
+    const tied = loc.zones.some((z) => z.water) || loc.unlock.some((u) => u.type === 'water');
+    if (tied && !cal) err(`${where}: uses water levels, but region "${loc.regionId}" has no water calendar`);
+    if (!cal || !loc.zones.some((z) => z.cast)) continue;
+    for (const level of new Set(cal)) {
+      const gate = loc.unlock.find((u) => u.type === 'water');
+      if (gate && gate.type === 'water' && !gate.levels.includes(level)) continue;
+      const cast = loc.zones.filter((z) => z.cast && (!z.water || z.water.includes(level)));
+      if (!cast.some((z) => z.minCastRange === 0)) err(`${where}: at ${level} water no castable zone starts at the bank (minCastRange 0)`);
+    }
+  }
+  for (const it of Object.values(items)) for (const r of it.boat?.waters ?? []) if (!regions[r]) err(`item ${it.id}: boat waters name missing region "${r}"`);
+  for (const loc of Object.values(locations)) for (const h of loc.scene.hotspots) {
+    const n = h.node;
+    if (n?.handZone && n.method === 'net' && !(occByLocation[loc.id] ?? []).some((o) => o.methods.includes('net') && o.zones.includes(n.handZone!))) {
+      issues.warnings.push(`location ${loc.id} hotspot ${h.id}: net node, but nothing in zone "${n.handZone}" is caught by net`);
+    }
+  }
+
   for (const r of Object.values(recipes)) {
     const where = `recipe ${r.id}`;
     r.inputs.forEach((i) => needItem(i.item, where));

@@ -30,5 +30,42 @@
         "flag": "launched"
       }
     ]
+  },
+  {
+    "id": "rio-negro",
+    "name": "Rio Negro",
+    "order": 2,
+    "blurb": "A blackwater river the colour of strong tea, an archipelago of a thousand islands, white beaches at low water and a forest that stands in the river at high.",
+    "map": {
+      "x": 0.62,
+      "y": 0.8
+    },
+    "unlock": [
+      {
+        "type": "chart",
+        "chart": "river-passage"
+      }
+    ],
+    "voyage": "A freighter to Belém, then nine days up the Amazon on a river boat with the hammocks slung three deep, then a smaller boat up the Negro, where the water turns black and the sand turns white. Porto Mariuá, at last.",
+    "water": [
+      "rising",
+      "rising",
+      "rising",
+      "high",
+      "high",
+      "high",
+      "high",
+      "falling",
+      "low",
+      "low",
+      "low",
+      "low"
+    ],
+    "waterNotes": {
+      "low": "Beaches out, the lagoons cut off and crowded, the forest dry",
+      "rising": "The beaches are going under and the forest edge is starting to flood",
+      "high": "The forest is flooded, and the fish have gone into it",
+      "falling": "The water is leaving the forest, and the fish are leaving with it"
+    }
   }
 ]

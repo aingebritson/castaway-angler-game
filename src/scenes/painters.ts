@@ -14,6 +14,8 @@ export interface SceneInfo {
   rackCount: number;
   rackSlots: number;
   moon: number;
+  /** The flood pulse, for river scenes: where the water stands this month. */
+  water: 'low' | 'rising' | 'high' | 'falling' | null;
 }
 
 export interface P {

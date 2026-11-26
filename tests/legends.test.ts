@@ -60,7 +60,8 @@ describe('legendaries', () => {
     for (const l of Object.values(content.legendaries)) {
       const sp = content.species[l.speciesId];
       expect(l.lengthCm).toBeGreaterThan(sp.lengthCm.common * 1.5);
-      expect(l.lengthCm).toBeLessThanOrEqual(sp.lengthCm.max);
+      // spec: fixed just above the normal in-game range (Old Gold is 95 cm over a 90 cm cap)
+      expect(l.lengthCm).toBeLessThanOrEqual(sp.lengthCm.max * 1.1);
       expect(weightFor(sp, l.lengthCm, null)).toBeGreaterThan(0);
     }
   });

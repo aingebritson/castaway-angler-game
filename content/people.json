@@ -76,5 +76,70 @@
       "One of each kind. The best of each kind, if you can.",
       "Every wing we finish, somebody in town remembers a story."
     ]
+  },
+  {
+    "id": "raimundo",
+    "locationId": "porto-mariua",
+    "name": "Seu Raimundo",
+    "role": "Boatman and guide",
+    "glyph": "🧑‍🦱",
+    "visualNotes": "A riverside man of the middle Rio Negro in his sixties, lean and sun-dark, short grey hair, a faded red cap, a sleeveless shirt and a boat-pole over one shoulder, sitting easy on the gunwale of a wooden canoe.",
+    "greeting": "Belize? By the sea? Then you have never seen water this colour. Sit, sit. Everyone who comes here wants a canoe and a tucunaré.",
+    "idle": [
+      "The river goes up ten metres every year and comes down again. You learn to keep your house on legs.",
+      "Low water is for fishing. High water is for waiting, and for tambaqui."
+    ]
+  },
+  {
+    "id": "joelma",
+    "locationId": "porto-mariua",
+    "name": "Joelma",
+    "role": "Tackle seller",
+    "glyph": "👩‍🦰",
+    "visualNotes": "A Brazilian woman in her thirties who runs the tackle shop and guides anglers: curly dark hair tied back, a sun hat pushed up, a fishing shirt with rolled sleeves, a pair of pliers on her belt and a peacock-bass lure hooked through one buttonhole.",
+    "greeting": "You want peacock bass. Everyone wants peacock bass. Good: I sell peacock bass lures.",
+    "idle": [
+      "Worms for the little fish, sardinha for the big ones, and noise on top for tucunaré.",
+      "Here the sport fish go back in the water. The law says so, and so do I."
+    ]
+  },
+  {
+    "id": "bene",
+    "locationId": "porto-mariua",
+    "name": "Seu Bené",
+    "role": "Old fisherman",
+    "glyph": "👴",
+    "visualNotes": "An old riverside fisherman in his late seventies, small and wiry, brown skin creased by sun, a few white whiskers, a straw hat with a frayed brim, mending a cast net on his knees.",
+    "greeting": "Sixty years on this river and it still surprises me. Sit down. Do you eat jaraqui?",
+    "idle": [
+      "The boto takes the fish off your line if you let him. He is cleverer than both of us.",
+      "When the beaches come up, the big fish come with them. Wait for the water to drop."
+    ]
+  },
+  {
+    "id": "prado",
+    "locationId": "porto-mariua",
+    "name": "Dr Luísa Prado",
+    "role": "Fisheries biologist",
+    "glyph": "👩‍🔬",
+    "visualNotes": "Dr Luísa Prado, a Brazilian fisheries biologist in her forties, short black hair, glasses pushed up on her head, a field shirt with a research-project patch, a clipboard and a fish-measuring board under one arm.",
+    "greeting": "You are the angler from the coast. Good. I count fish for a living, and I need people who know how to let them go.",
+    "idle": [
+      "The pirarucu were nearly gone from these lakes. Now the communities count them every year, and there are more.",
+      "A cardinal tetra in an aquarium in Tokyo probably came through this town."
+    ]
+  },
+  {
+    "id": "socorro",
+    "locationId": "porto-mariua",
+    "name": "Dona Socorro",
+    "role": "Fishmonger",
+    "glyph": "👩‍🍳",
+    "visualNotes": "A Brazilian woman in her fifties who runs a stall on the floating market: a broad smile, hair under a bright headscarf, an apron over a flowered dress, a scale hanging beside her and a basket of silver fish.",
+    "greeting": "Fish? I buy fish. Jaraqui, pescada, tucunaré, whatever you bring. Tetras too, for the aquarium buyers.",
+    "idle": [
+      "The boto comes for the scraps every morning. He thinks the stall is his.",
+      "Big catfish sell well. Pirarara, less so: some people say it is bad luck."
+    ]
   }
 ]

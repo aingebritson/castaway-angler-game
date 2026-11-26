@@ -14,6 +14,7 @@ import { type Rng, chance, makeRng, weighted } from '../sim/rng';
 import { type SunInfo, moonIndex, sunInfo } from '../sim/time';
 import { craftCheck, nodeOpen, pickProvisions, recipeView, refreshNode, resolveTrap, soakPhases, tablePick } from '../sim/world';
 import { teach } from './lessons';
+import { zonesNow } from './travel';
 import type { GameState, GuideEntry, JournalKind, KeptFish } from './state';
 
 export interface Ctx {
@@ -31,7 +32,7 @@ export interface Reveal {
   isNew: boolean;
   isPB: boolean;
   releaseOnly: boolean;
-  source: 'rod' | 'hand' | 'trap';
+  source: 'rod' | 'hand' | 'trap' | 'net';
   locationId: string;
   legendaryId?: string;
   /** Bait creatures go straight into the bag. */
@@ -152,7 +153,7 @@ export function rigProblem(s: GameState, content: Content): string | null {
   if (!rig) return 'I have nothing to fish with.';
   if (rig.method === 'lure') return rig.lure ? null : 'No lure tied on. Open the rig to change it.';
   if (!rig.hook) return 'No hook. Two shells will grind into one.';
-  if (!rig.bait) return 'No bait on the hook. The wet sand on the beach is full of sand fleas.';
+  if (!rig.bait) return s.flags.launched ? 'No bait on the hook. Open the rig, or buy some in town.' : 'No bait on the hook. The wet sand on the beach is full of sand fleas.';
   return null;
 }
 
@@ -215,7 +216,10 @@ function gain(s: GameState, ctx: Ctx, itemId: string, qty: number, events: GameE
 export function travel(s: GameState, ctx: Ctx, locationId: string): GameEvent[] {
   const loc = ctx.content.locations[locationId];
   if (!loc) return [];
+  const firstInRegion = !Object.keys(s.visited).some((l) => ctx.content.locations[l]?.regionId === loc.regionId);
   s.locationId = locationId;
+  const voyage = ctx.content.regions[loc.regionId]?.voyage;
+  if (firstInRegion && voyage) log(s, ctx, 'story', voyage, { locationId });
   if (!s.visited[locationId]) {
     s.visited[locationId] = true;
     log(s, ctx, 'travel', `${loc.name}. ${loc.blurb}`, { locationId });
@@ -273,11 +277,11 @@ export function gather(s: GameState, ctx: Ctx, hotspotId: string): GameEvent[] {
   if (def.handZone) {
     if (sun.phase === 'night' && isDark(s, ctx) && def.handZone !== 'swash') return [toast('Too dark to see what I am reaching for.', '🌑', 'warn')];
     const rig = rigOf(s, ctx.content) ?? bareHands(ctx.content);
-    const cctx: CatchCtx = { content: ctx.content, locationId: loc.id, zoneId: def.handZone, phase: sun.phase, month: sun.local.month, rig, method: 'hand' };
+    const cctx: CatchCtx = { content: ctx.content, locationId: loc.id, zoneId: def.handZone, phase: sun.phase, month: sun.local.month, rig, method: def.method ?? 'hand' };
     const reveal = withRng(s, (rng) => {
       const pickd = weighted(rng, candidatePool(cctx), (c) => c.weight);
       if (!pickd) return null;
-      return recordCatch(s, ctx, resolveHandCatch(cctx, pickd.species.id, rng), def.handZone!, 'hand');
+      return recordCatch(s, ctx, resolveHandCatch(cctx, pickd.species.id, rng), def.handZone!, def.method === 'net' ? 'net' : 'hand');
     });
     if (!reveal) return [toast('Nothing here right now.', '🌊')];
     take();
@@ -353,8 +357,15 @@ export function catchCtx(s: GameState, ctx: Ctx, zoneId: string, method: CatchCt
   const sun = sunAt(ctx, s.locationId);
   return {
     content: ctx.content, locationId: s.locationId, zoneId, phase: sun.phase, month: sun.local.month, rig, method,
-    dark: isDark(s, ctx), moon: moonIndex(ctx.now),
+    dark: isDark(s, ctx), moon: moonIndex(ctx.now), finder: finderTier(s, ctx.content),
   };
+}
+
+/** The best fish finder carried, 0 for none. */
+export function finderTier(s: GameState, content: Content): number {
+  let t = 0;
+  for (const id of Object.keys(s.inventory)) if (s.inventory[id] > 0 && content.items[id]?.finder) t = Math.max(t, content.items[id].finder!.tier);
+  return t;
 }
 
 /** The line is in the water. Returns how long until something happens. */
@@ -435,7 +446,7 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
   if (isPB) {
     e.pb = {
       lengthCm: bite.lengthCm, weightG: bite.weightG, at: ctx.now, locationId: s.locationId,
-      rig: source === 'rod' && rig ? describeRig(rig) : source === 'trap' ? 'woven trap' : 'by hand',
+      rig: source === 'rod' && rig ? describeRig(rig) : source === 'trap' ? 'trap' : source === 'net' ? 'hand net' : 'by hand',
     };
   }
   if (!sp.gathersAs) s.stats.catches++;
@@ -446,7 +457,7 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
     s.legendariesCaught.push(leg.id);
     log(s, ctx, 'catch', `${leg.name}. ${formatLength(bite.lengthCm)} of ${sp.commonName.toLowerCase()}. I will not see its like again.`, { speciesId: sp.id });
   } else if (isNew) {
-    log(s, ctx, 'catch', `First ${sp.commonName.toLowerCase()}${size}, ${source === 'trap' ? 'from the trap' : source === 'hand' ? 'taken by hand' : `at ${loc.name}`} at ${phase}.`, { speciesId: sp.id });
+    log(s, ctx, 'catch', `First ${sp.commonName.toLowerCase()}${size}, ${source === 'trap' ? 'from the trap' : source === 'hand' ? 'taken by hand' : source === 'net' ? 'in the net' : `at ${loc.name}`} at ${phase}.`, { speciesId: sp.id });
   } else if (isPB && (bite.grade === 'large' || bite.grade === 'trophy' || bite.grade === 'record')) {
     log(s, ctx, 'pb', `New best ${sp.commonName.toLowerCase()}: ${formatLength(bite.lengthCm)}${bite.grade !== 'large' ? `, a ${bite.grade}` : ''}.`, { speciesId: sp.id });
   }
@@ -462,6 +473,11 @@ export function recordCatch(s: GameState, ctx: Ctx, bite: FishBite, zoneId: stri
 export function landFish(s: GameState, ctx: Ctx, bite: FishBite, zoneId: string): Reveal {
   useBait(s, ctx);
   const r = recordCatch(s, ctx, bite, zoneId, 'rod');
+  // a bait fish on the rod (a sardinha) goes into the bait bag, as it does from the net
+  if (r.bagged) {
+    addItem(s, r.bagged.item, r.bagged.qty);
+    autoEquip(s, ctx.content, r.bagged.item);
+  }
   // The ship's rusty hook gives out on the fifth fish: the first thing the castaway has to work out.
   if (s.rig.hook === 'rusty-hook' && s.stats.catches >= 5 && !s.lessons.includes('hooks')) {
     takeItem(s, 'rusty-hook');
@@ -692,13 +708,14 @@ export function rackCollect(s: GameState, ctx: Ctx): GameEvent[] {
 // ---------- traps ----------
 
 /** Where a trap sits at a location: the first zone anything can be trapped in. */
-export function trapZone(content: Content, locationId: string): string | null {
-  const occ = (content.occByLocation[locationId] ?? []).find((o) => o.methods.includes('trap'));
-  return occ?.zones.find((z) => content.locations[locationId].zones.some((lz) => lz.id === z && lz.cast)) ?? occ?.zones[0] ?? null;
+export function trapZone(content: Content, locationId: string, zones = content.locations[locationId]?.zones ?? []): string | null {
+  // Only zones that exist right now (the flood pulse can take one away).
+  const occ = (content.occByLocation[locationId] ?? []).find((o) => o.methods.includes('trap') && o.zones.some((z) => zones.some((lz) => lz.id === z)));
+  return occ?.zones.find((z) => zones.some((lz) => lz.id === z && lz.cast)) ?? occ?.zones.find((z) => zones.some((lz) => lz.id === z)) ?? null;
 }
 
 export function trapSet(s: GameState, ctx: Ctx, trapItemId: string, baitId: string | null): GameEvent[] {
-  const zoneId = trapZone(ctx.content, s.locationId);
+  const zoneId = trapZone(ctx.content, s.locationId, zonesNow(ctx, s.locationId));
   if (!zoneId) return [toast('Nowhere to set a trap here.', '🪤', 'warn')];
   if (s.traps.some((t) => t.locationId === s.locationId)) return [toast('There is already a trap down here.', '🪤')];
   if (!takeItem(s, trapItemId)) return [toast('No trap to set.', '🪤', 'warn')];
@@ -737,6 +754,8 @@ export function trapHaul(s: GameState, ctx: Ctx): GameEvent[] {
     const r = recordCatch(s, ctx, bite, trap.zoneId, 'trap', phases[k % phases.length]);
     reveals.push(r);
     if (r.releaseOnly) entry(s, r.speciesId).released++;
+    // bait animals (prawns from a matapi) go into the bag, not the creel
+    else if (r.bagged) addItem(s, r.bagged.item, r.bagged.qty);
     else if (s.creel.length < creelLimit(s, ctx.content)) keepFish(s, ctx, r);
   });
   const names = reveals.map((r) => ctx.content.species[r.speciesId].commonName.toLowerCase());

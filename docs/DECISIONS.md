@@ -158,6 +158,44 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
     - The arapaima is release-only.
 65. **The Rio Negro legendary is drafted, not built:** *Old Gold*, a 95 cm speckled peacock bass in breeding colours, at the mouth of the lagoon, by day, September to November, on a popper. The spawn rule, clues and lore are in `research/rio-negro/dossier.md`. He goes into `content/legendaries.json` once the M3 build defines the lagoon and its lagoon-mouth zone and the people who give his clues. The speckled peacock bass's in-game maximum is lowered from FishBase's 99 cm to 90 cm, so he is just above the normal range (Andy, 25 November 2026). Whether he is released is still open.
 
+## Wider world: the Rio Negro (M3, 25 November 2026)
+
+66. **The Rio Negro is playable.** The port is *Porto Mariuá*, a lightly fictional river town at Barcelos, named after Mariuá, the village Barcelos grew from. It has five spots:
+    - **Town Waterfront**: no boat needed, so coins can be earned on arrival. A matapi spot, and a sardinha school for the cast net.
+    - **Main River**: canoe.
+    - **Island Lagoon**: canoe. It has a dip-net stream for cardinal tetras.
+    - **Flooded Forest**: canoe, and only while the water is up.
+    - **Upriver Rapids**: the river boat.
+
+    All 38 researched species now have occurrence records (100 records). Each is placed by its habitat codes in the 2019 basin checklist, and its `designNotes` say so. Phase and month values are game readings, marked `low` confidence (`medium` for the peacock bass and the sightings). The independent review (spec section 12, step 7) has not been run on these records yet.
+    - The rare and epic species are payara, tambaqui, redtail catfish, jaú, electric eel, caparari and speckled peacock bass (rare at some spots), plus arapaima and piraíba (epic). Each has two rumours, all given by Porto Mariuá's errands.
+    - Jaraqui come only from the cast net, because they rarely take a hook. Cardinal tetras come only from the dip net, and go into the bag as a bag of live fish to sell.
+    - Sardinha and river prawns are bait animals (`gathersAs`). Peacock bass stay sellable; dossier open question 2 is still open.
+67. **The flood pulse is a content-model defect, now fixed.** The spec says high and low water change which zones exist, but zones had no way to depend on the calendar. Five additions:
+    - `Region.water` gives the level for each month: rising January to March, high April to July, falling in August, low September to December.
+    - `Zone.water` lists the levels at which a zone exists. The Main River's sand beach exists at low and falling water, and its drowned bank at rising and high. The forest's "under the canopy" zone exists only at high water.
+    - Location unlock `{ type: 'water' }`: the Flooded Forest can only be reached from January to August.
+    - `scene.backgrounds` gives one picture per level. The Main River has a low-water view.
+    - `Region.waterNotes` is a line for the map about what the water is doing now.
+
+    The validator requires that, at every level, an open place has a castable zone at the bank. The scene rebuilds its zones when the month turns. In late November the forest is closed, and the map says it floods again about January. That is the real river, so the giant tambaqui are a January-to-August catch. No errand needs a forest fish.
+68. **Boats belong to their waters (content-model defect).** Boat tier was global, so the Belize skiff would have opened river spots. `Item.boat.waters` now limits a boat to the regions it can be used in. The raft, skiff and sloop are Caribbean boats. Porto Mariuá sells a canoe with a rabeta (tier 1, 600 coins) and a river boat (tier 2, 6,000 coins), which goes two days upriver to the rapids.
+69. **The passage is an item, so it needed no engine change.** Mr Alvarez's fifth errand ("Further than the reef": own a spinning reel) puts a *Passage to the Rio Negro* (a `chart` item, 2,500 coins) on the boatyard's list. The region unlocks on holding it, both ways. The unused `Region.passage` price stays unused. `Region.voyage` is new: the crossing's text, shown on the voyage card and written to the log the first time. Rio Negro rumours reach the Cayes only through Alvarez's teaser about a fish that breathes air.
+70. **The fish finder works (content-model defect).** `minGear.requiresFinder` was in the schema, but nothing read it. A fish finder (tier 1, 3,200 coins at Casa do Pescador) is now needed to catch the piraíba in the deep channel and the redtail and jaú in the plunge pool. With one aboard, each zone label says how many kinds are below at that hour and month, and how many are not yet in the field guide. The spec's silhouettes in deep zones and the second finder tier are not built. A finder does not make fish bite; the game uses it for knowing where to anchor, and the occurrences' `designNotes` say so.
+71. **Nets, traps and bait animals.**
+    - `GatherNode.method: 'net'`: the dip net draws on the net pool, and the field guide records the method as "net". The cast net still counts as by hand (entry 19).
+    - The matapi is a palm-stem prawn trap. Trap hauls and rod catches of bait animals now go into the bag. Before, a trap ignored `gathersAs`, and a rod-caught bait fish said "Into the bait bag" but added nothing. That never showed in the Cayes, because no bait animal there was caught by rod or trap.
+72. **Stages and the sloop.** Stage 5 (Skipper) now also comes from the passage or the river boat. Stage 6 (Voyager) comes from the passage plus a fish finder. The sloop still opens nothing; its description no longer promises passages. An offshore Cayes spot for it is a follow-up.
+73. **Prices for region 2, from the simulator.** On arrival gear (glass rod, mono, small hook, earthworms), the waterfront sims at about 2,000 coins an hour, the same as the Cayes pier on deckhand gear. On graphite gear, the lagoon mouth with a prop bait and the rapids with live sardinha sim at 6,000 to 6,600 an hour, against 4,000 to 5,900 at the Cut. The deep holes on big-game gear sim at 8,000 to 10,000 an hour, because big catfish are valuable. The flatwhiskered catfish's value went from 14 to 9 coins, because it is common there. Piranhas take most cut bait, as they do on the real river.
+74. **Old Gold is built from the research draft (entry 65).** The 95 cm speckled peacock bass bites at the lagoon mouth by day, September to November, on a popper.
+    - His clues come from Seu Raimundo (where), Seu Bené (when), Joelma (bait) and the Rio Negro museum wing (season).
+    - The lagoon's speckled peacock occurrence gives day at least as strong as dawn, and peaks in his months, so the field guide agrees with his clues.
+    - `staminaMult` 2.5: the bot lands him every time in about 57 seconds on the graphite popper rig, and never on a glass rod with a jig. That is just under the spec's 60 to 120 seconds. Offshore gear overpowers a 14 kg fish.
+    - The legendary-size test now allows up to 10% over the species maximum, because the spec says "just above the normal range".
+    - Whether he must be released is still open (dossier open question 6). For now the player chooses, as with any sellable fish.
+75. **Placeholder art and the map.** `scenes/paintersRio.ts` draws the town and the five spots in blackwater colours, with beaches at low water and trunks in the river at high water. The map has a river placeholder and a line saying what the water is doing. `art:prompts` describes a river scene as blackwater with a far bank of forest, not a blue sea, and writes one prompt per water-level background, each listing only the zones at that level. Art for the six scenes, the low-water Main River, 38 specimens, 12 items and five portraits is still to come.
+76. **Errands point at the right town.** With two ports, the "Thinking" note sent a finished Cayes errand to Porto Mariuá. It now prefers the current region's errands, and points a finished one at the town of whoever set it. A player whose rig has no bait off the island is told to buy some in town, not to dig sand fleas.
+
 ## Schema additions (spec section 11)
 
 - `Species`: `tint` (placeholder colours), `gathersAs` (hand-caught bait creatures go into the bag as an item); `lengthCm.measure` gains `CL`, `ML`, `SH`.
@@ -170,4 +208,6 @@ Each entry records where the build departs from `docs/SPEC.md`, and why.
 - `Location`: `blurb`, `solarTz` (real zone for sun maths when `tz` is `"device"`), `sightZones`, `map`, `scene.painter`; `kind` gains `camp` and `gather`.
 - `Person.visualNotes` (optional): portrait-prompt detail, never shown in the game; the portrait prompt also names the person's town. Portraits show in the person panel, cropped to a circle around the face; people without one keep their emoji.
 - `Item.visualNotes` (optional): art-prompt detail, never shown in the game, as on `Species`. The item prompt also names a crafted item's recipe inputs and blurb.
+- Flood pulse: `Region.water` (12 levels: low, rising, high, falling), `Region.waterNotes`, `Zone.water`, `scene.backgrounds` (per level), location unlock `{ type: 'water', levels }`.
+- `Region.voyage`; `Item.boat.waters` (regions a boat can be used in); `GatherNode.method` (`hand` or `net`); `CatchCtx.finder` reads `minGear.requiresFinder`.
 - `Hotspot`, `GatherNode`, `Item`, `Recipe`, `Page`, `Rumour`, `JunkTable`, `RigPreset`, `Region`, `Person`, `Quest`, `Shop`: defined in `src/content/schema.ts`, which is the reference.

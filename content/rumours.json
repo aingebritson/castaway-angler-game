@@ -352,5 +352,233 @@
     "text": "Dolphins hunt together, pushing a school of small fish up against the shallows.",
     "fillsCells": [],
     "source": "The castaway's journal"
+  },
+  {
+    "id": "temensis-low",
+    "speciesId": "cichla-temensis",
+    "dimension": "when",
+    "text": "When the water drops, from September to the year’s end, the big tucunaré crowd into the lagoons with nowhere else to go.",
+    "fillsCells": [
+      "month:8",
+      "month:9",
+      "month:10",
+      "month:11",
+      "zone:rio-lagoon/lagoon-mouth"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "temensis-prop",
+    "speciesId": "cichla-temensis",
+    "dimension": "bait",
+    "text": "Rip a prop bait across the top, past a fallen tree. The açu cannot stand the noise. Bait it with a sardinha if you must.",
+    "fillsCells": [
+      "bait:prop",
+      "bait:livefish"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "payara-rapids",
+    "speciesId": "hydrolycus-armatus",
+    "dimension": "where",
+    "text": "Payara live in the fast water upriver, below the rapids. You will not meet one off the town.",
+    "fillsCells": [
+      "zone:rapids/rapid",
+      "zone:rapids/eddies"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "payara-live",
+    "speciesId": "hydrolycus-armatus",
+    "dimension": "bait",
+    "text": "A payara takes a heavy jig or a live sardinha worked through the run, best at first and last light.",
+    "fillsCells": [
+      "bait:jig",
+      "bait:livefish",
+      "phase:dawn",
+      "phase:dusk"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "jau-hole",
+    "speciesId": "zungaro-zungaro",
+    "dimension": "where",
+    "text": "The jaú lies in the deep hole under the falls, upriver, and comes out at night.",
+    "fillsCells": [
+      "zone:rapids/plunge-pool",
+      "phase:night"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "jau-finder",
+    "speciesId": "zungaro-zungaro",
+    "dimension": "method",
+    "text": "You will never find a jaú’s hole by looking at the water. The lodge boats find them with sonar, and drop a whole fish down.",
+    "fillsCells": [
+      "bait:livefish",
+      "bait:cutfish"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "piraiba-deep",
+    "speciesId": "brachyplatystoma-filamentosum",
+    "dimension": "where",
+    "text": "The piraíba lives on the bottom of the main channel, twenty metres down where the river runs deepest. You need a finder to know where.",
+    "fillsCells": [
+      "zone:rio-channel/deep-channel"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "piraiba-live",
+    "speciesId": "brachyplatystoma-filamentosum",
+    "dimension": "bait",
+    "text": "Bait for a piraíba is a whole fish, a big one, on a hook you could hang a coat on. They feed most at night.",
+    "fillsCells": [
+      "bait:livefish",
+      "bait:cutfish",
+      "phase:night"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "redtail-night",
+    "speciesId": "phractocephalus-hemioliopterus",
+    "dimension": "when",
+    "text": "Pirarara feed at night. In the daytime you will only catch piranha trying.",
+    "fillsCells": [
+      "phase:night",
+      "phase:dusk"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "redtail-mouth",
+    "speciesId": "phractocephalus-hemioliopterus",
+    "dimension": "where",
+    "text": "There is a pirarara in the deep water at the mouth of the lagoon. There is always one. Cut bait, on the bottom.",
+    "fillsCells": [
+      "zone:rio-lagoon/lagoon-mouth",
+      "bait:cutfish"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "tambaqui-fruit",
+    "speciesId": "colossoma-macropomum",
+    "dimension": "bait",
+    "text": "Tambaqui crack palm fruit like nuts. Fish a jauari under the trees where they are dropping, and hold on.",
+    "fillsCells": [
+      "bait:fruit",
+      "zone:igapo/forest-edge"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "tambaqui-high",
+    "speciesId": "colossoma-macropomum",
+    "dimension": "when",
+    "text": "Tambaqui go into the forest with the flood and eat all the high-water months, April to July. At low water they are gone from here.",
+    "fillsCells": [
+      "month:3",
+      "month:4",
+      "month:5",
+      "month:6"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "eel-night",
+    "speciesId": "electrophorus-varii",
+    "dimension": "when",
+    "text": "The poraquê hunts at night along the lagoon edge. Do not reach into the roots for your line.",
+    "fillsCells": [
+      "phase:night",
+      "zone:rio-lagoon/margin"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "eel-margin",
+    "speciesId": "electrophorus-varii",
+    "dimension": "method",
+    "text": "An electric eel comes up to breathe, like the pirarucu. It will take a worm or a scrap of fish in the shallows after dark.",
+    "fillsCells": [
+      "bait:worm",
+      "bait:cutfish"
+    ],
+    "source": "Dr Prado"
+  },
+  {
+    "id": "caparari-night",
+    "speciesId": "pseudoplatystoma-punctifer",
+    "dimension": "when",
+    "text": "The caparari, the tiger catfish, comes up to the edge of the current at night, even off the town.",
+    "fillsCells": [
+      "phase:night",
+      "zone:mariua-waterfront/river-edge"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "caparari-live",
+    "speciesId": "pseudoplatystoma-punctifer",
+    "dimension": "bait",
+    "text": "A caparari wants a live sardinha after dark. It ambushes them where the sand drops off.",
+    "fillsCells": [
+      "bait:livefish",
+      "zone:rio-channel/channel-edge"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "arapaima-air",
+    "speciesId": "arapaima-gigas",
+    "dimension": "method",
+    "text": "There is a fish in the Amazon lakes so big it has to come up for air every quarter of an hour. Watch for the swirl, and cast to it.",
+    "fillsCells": [
+      "zone:rio-lagoon/open-lagoon"
+    ],
+    "source": "Mr Alvarez"
+  },
+  {
+    "id": "arapaima-low",
+    "speciesId": "arapaima-gigas",
+    "dimension": "when",
+    "text": "The pirarucu are easiest to find when the lagoon shrinks at low water, September to December. They must be let go: they are counted, every one.",
+    "fillsCells": [
+      "month:8",
+      "month:9",
+      "month:10",
+      "month:11"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "prawn-matapi",
+    "speciesId": "macrobrachium-brasiliense",
+    "dimension": "method",
+    "text": "Sink a matapi by the floating houses with a scrap of fish in it, leave it overnight, and you will have prawns for the catfish.",
+    "fillsCells": [
+      "bait:trap",
+      "zone:mariua-waterfront/moorings"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "cardinal-net",
+    "speciesId": "paracheirodon-axelrodi",
+    "dimension": "method",
+    "text": "The piabeiros scoop cardinals from the forest streams with a fine hand net. There is a stream into the island lagoon.",
+    "fillsCells": [
+      "bait:net",
+      "zone:rio-lagoon/igarape"
+    ],
+    "source": "Dr Prado"
   }
 ]

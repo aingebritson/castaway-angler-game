@@ -7,6 +7,8 @@ import { z } from 'zod';
 export const PHASES = ['dawn', 'day', 'dusk', 'night'] as const;
 export const METHODS = ['bait', 'lure', 'sight', 'trap', 'net', 'hand'] as const;
 export const RARITIES = ['common', 'uncommon', 'rare', 'epic'] as const;
+/** The flood pulse: where a river region's water stands this month. */
+export const WATER = ['low', 'rising', 'high', 'falling'] as const;
 
 const id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'ids are lower-case kebab');
 const mod = z.number().min(0).max(2);
@@ -76,6 +78,8 @@ export const Condition = z.discriminatedUnion('type', [
   z.object({ type: z.literal('lesson'), lesson: id }),
   z.object({ type: z.literal('boat'), tier: z.number() }),
   z.object({ type: z.literal('chart'), chart: id }),
+  /** Only reachable while the region's water stands at one of these levels (the flood pulse). */
+  z.object({ type: z.literal('water'), levels: z.array(z.enum(WATER)).min(1) }),
 ]);
 
 export const GatherNode = z.object({
@@ -92,6 +96,8 @@ export const GatherNode = z.object({
   daily: z.boolean().optional(),
   /** Creatures caught by hand: each pick draws from this zone's hand-method pool. */
   handZone: id.optional(),
+  /** The method a handZone pick draws on: by hand, or with a hand net such as a dip net. */
+  method: z.enum(['hand', 'net']).optional(),
 }).refine((n) => !!n.item || !!n.table || !!n.handZone, 'node needs item, table or handZone');
 
 export const Hotspot = z.object({
@@ -118,6 +124,8 @@ export const Zone = z.object({
   /** False for hand-gathering and trap-only zones that a cast cannot land in. */
   cast: z.boolean().default(true),
   blurb: z.string().optional(),
+  /** The flood pulse: the zone exists only while the region's water stands at one of these levels. */
+  water: z.array(z.enum(WATER)).min(1).optional(),
 });
 
 export const Location = z.object({
@@ -141,6 +149,8 @@ export const Location = z.object({
   scene: z.object({
     background: z.string(),
     painter: z.string(),
+    /** Art for one water level, where the river changes the view (beaches out at low water). */
+    backgrounds: z.partialRecord(z.enum(WATER), z.string()).optional(),
     waterPolygon: z.array(z.array(z.number()).length(2)),
     hotspots: z.array(Hotspot),
   }),
@@ -155,6 +165,12 @@ export const Region = z.object({
   unlock: z.array(Condition),
   /** Cost of a passage, once the unlock conditions hold. */
   passage: z.number().optional(),
+  /** What the crossing is like, on the voyage card and in the log the first time. */
+  voyage: z.string().optional(),
+  /** The flood pulse: the water level for each calendar month at the region, January first. */
+  water: z.array(z.enum(WATER)).length(12).optional(),
+  /** What each water level means here, in a line, for the map. */
+  waterNotes: z.partialRecord(z.enum(WATER), z.string()).optional(),
 });
 
 export const Item = z.object({
@@ -176,7 +192,8 @@ export const Item = z.object({
   float: z.object({ windowBonus: z.number() }).optional(),
   sinker: z.object({ rangeBonus: z.number() }).optional(),
   trap: z.object({ capacity: z.number(), minSoakH: z.number(), maxSoakH: z.number(), method: z.enum(['trap', 'net']).default('trap') }).optional(),
-  boat: z.object({ tier: z.number() }).optional(),
+  /** `waters` lists the regions the boat can be used in; without it, everywhere. */
+  boat: z.object({ tier: z.number(), waters: z.array(id).optional() }).optional(),
   finder: z.object({ tier: z.number() }).optional(),
 });
 
@@ -451,3 +468,4 @@ export type Balance = z.infer<typeof Balance>;
 export type Phase = (typeof PHASES)[number];
 export type Method = (typeof METHODS)[number];
 export type Rarity = (typeof RARITIES)[number];
+export type WaterLevel = (typeof WATER)[number];

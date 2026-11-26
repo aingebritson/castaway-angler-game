@@ -409,7 +409,11 @@
     "glyph": "🛶",
     "desc": "Driftwood, bamboo and stubbornness. It got you off the island; it will not take you much further.",
     "boat": {
-      "tier": 0
+      "tier": 0,
+      "waters": [
+        "castaway-island",
+        "belize-cayes"
+      ]
     }
   },
   {
@@ -665,7 +669,11 @@
     "glyph": "🚤",
     "desc": "A flat-bottomed boat with a small outboard. Reaches the mangroves, the patch reef, the Cut, and back to the island.",
     "boat": {
-      "tier": 1
+      "tier": 1,
+      "waters": [
+        "castaway-island",
+        "belize-cayes"
+      ]
     }
   },
   {
@@ -673,9 +681,13 @@
     "name": "Sloop",
     "kind": "boat",
     "glyph": "⛵",
-    "desc": "A real sea boat. Offshore water, and passages to other coasts.",
+    "desc": "A real sea boat, decked and seaworthy, for open water beyond the reef.",
     "boat": {
-      "tier": 2
+      "tier": 2,
+      "waters": [
+        "castaway-island",
+        "belize-cayes"
+      ]
     }
   },
   {
@@ -734,5 +746,160 @@
       "greenBonus": 1,
       "capacity": 2
     }
+  },
+  {
+    "id": "river-passage",
+    "name": "Passage to the Rio Negro",
+    "kind": "chart",
+    "glyph": "🎫",
+    "desc": "A berth on a freighter to Belém and a hammock on the river boats beyond, all the way to Porto Mariuá. Good both ways.",
+    "visualNotes": "A folded paper ticket and a cargo manifest tied with string, stamped with a ship and a river, slightly water-stained."
+  },
+  {
+    "id": "canoe",
+    "name": "Canoe with a rabeta",
+    "kind": "boat",
+    "glyph": "🛶",
+    "desc": "A long wooden canoe with a long-tail outboard. Reaches the lagoon, the main river and, when the water is up, the flooded forest.",
+    "visualNotes": "A long narrow wooden canoe painted blue and white, with a small long-shaft \"rabeta\" outboard motor at the stern.",
+    "boat": {
+      "tier": 1,
+      "waters": [
+        "rio-negro"
+      ]
+    }
+  },
+  {
+    "id": "riverboat",
+    "name": "River boat",
+    "kind": "boat",
+    "glyph": "⛴️",
+    "desc": "A two-deck wooden river boat with hammocks and a cook, towing your canoe. Two days up a tributary to the rapids.",
+    "visualNotes": "A two-deck wooden Amazon river boat (barco regional), white with a blue stripe, hammocks on the upper deck, a canoe tied alongside.",
+    "boat": {
+      "tier": 2,
+      "waters": [
+        "rio-negro"
+      ]
+    }
+  },
+  {
+    "id": "fish-finder",
+    "name": "Fish finder",
+    "kind": "utility",
+    "glyph": "📡",
+    "desc": "A sonar screen that reads the water under the boat. Shows how many kinds are down there, and finds the deep holes where the giants lie.",
+    "visualNotes": "A small rugged sonar fish finder with a colour screen showing fish arches, on a swivel mount with a cable to a transducer.",
+    "finder": {
+      "tier": 1
+    }
+  },
+  {
+    "id": "matapi",
+    "name": "Matapi",
+    "kind": "trap",
+    "glyph": "🪤",
+    "desc": "A funnel trap woven from palm stems, the river way of catching prawns. Bait it and sink it by the bank.",
+    "visualNotes": "A cylindrical funnel trap woven from thin pale palm-stem slats, with a funnel entrance at each end and a woven tie.",
+    "trap": {
+      "capacity": 6,
+      "minSoakH": 1,
+      "maxSoakH": 10,
+      "method": "trap"
+    }
+  },
+  {
+    "id": "dip-net",
+    "name": "Dip net",
+    "kind": "tool",
+    "glyph": "🥅",
+    "desc": "A rapiché: a small fine-meshed hand net on a hoop, for scooping little fish out of the forest streams.",
+    "visualNotes": "A small hand net with a round wooden hoop, fine pale mesh bag and a short wooden handle."
+  },
+  {
+    "id": "prop-bait",
+    "name": "Prop bait",
+    "kind": "lure",
+    "glyph": "🪝",
+    "desc": "A long floating plug with a propeller at each end. Ripped across the top it sounds like a fish in trouble, and peacock bass hate it.",
+    "visualNotes": "A long cigar-shaped topwater plug, yellow with a green back, with a small metal propeller at nose and tail and two treble hooks.",
+    "lure": {
+      "type": "prop",
+      "speedBand": [
+        0.5,
+        0.85
+      ],
+      "sizeShift": 0.5
+    }
+  },
+  {
+    "id": "earthworm",
+    "name": "Earthworms",
+    "kind": "bait",
+    "glyph": "🪱",
+    "desc": "Minhoca, dug from the riverbank. Everything small in the river eats them.",
+    "visualNotes": "A small tin of dark soil with several pink earthworms.",
+    "bait": {
+      "tags": [
+        "worm"
+      ],
+      "sizeShift": -0.1
+    },
+    "value": 1
+  },
+  {
+    "id": "live-sardinha",
+    "name": "Live sardinha",
+    "kind": "bait",
+    "glyph": "🐟",
+    "desc": "A silver river sardinha, still kicking. The big predators of the river take it when they will take nothing else.",
+    "visualNotes": "A small silvery freshwater sardine-like fish (Triportheus) with a deep keeled belly and large pectoral fins.",
+    "bait": {
+      "tags": [
+        "livefish"
+      ],
+      "sizeShift": 0.6
+    },
+    "value": 1
+  },
+  {
+    "id": "river-prawn",
+    "name": "River prawn",
+    "kind": "bait",
+    "glyph": "🦐",
+    "desc": "A translucent freshwater prawn from the matapi. Catfish and croakers come for it.",
+    "visualNotes": "A translucent grey-brown freshwater prawn with long thin claws and long antennae.",
+    "bait": {
+      "tags": [
+        "shrimp",
+        "crustacean"
+      ],
+      "sizeShift": 0.1
+    },
+    "value": 1
+  },
+  {
+    "id": "jauari-fruit",
+    "name": "Jauari fruit",
+    "kind": "bait",
+    "glyph": "🌰",
+    "desc": "The hard round fruit of the jauari palm, dropping into the flooded forest. Tambaqui crack them like nuts.",
+    "visualNotes": "Three round greenish-brown palm fruits about the size of a walnut, with a woody husk (Astrocaryum jauari).",
+    "bait": {
+      "tags": [
+        "fruit"
+      ],
+      "sizeShift": 0.4
+    },
+    "value": 1
+  },
+  {
+    "id": "cardinal-tetras",
+    "name": "Cardinal tetras",
+    "kind": "goods",
+    "glyph": "🐠",
+    "desc": "A bag of live cardinal tetras, blue and red as neon. The piaba buyer at the floating market pays for them by the bag.",
+    "visualNotes": "A clear plastic bag of water holding a few tiny fish with a glowing electric-blue stripe and a red belly.",
+    "value": 4
   }
 ]

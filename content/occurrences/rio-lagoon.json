@@ -1,0 +1,1454 @@
+[
+  {
+    "speciesId": "cichla-orinocensis",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin",
+      "open-lagoon"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "prop": 1.5,
+      "popper": 1.3,
+      "jig": 1.4,
+      "plug": 1.2,
+      "spoon": 1,
+      "feather": 0.8,
+      "livefish": 1.4,
+      "worm": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Cichla orinocensis",
+        "url": "https://www.fishbase.se/summary/Cichla-orinocensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 61.7 cm SL (about 74 cm TL, an estimated conversion), largest published weight 6.2 kg, shallow lagoon-edge habitat, diet; length-weight a and b (Bayesian TL estimate; 6.4 kg at 74 cm, +4%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      },
+      {
+        "title": "IGFA: King of the Jungle, giant peacock bass on fly",
+        "url": "https://igfa.org/?p=66250",
+        "accessed": "2026-11-25",
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+      },
+      {
+        "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
+        "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
+        "accessed": "2026-11-25",
+        "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+  },
+  {
+    "speciesId": "cichla-monoculus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin",
+      "open-lagoon"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.5,
+      "day": 1.1,
+      "dusk": 1.3,
+      "night": 0
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "prop": 1.5,
+      "popper": 1.3,
+      "jig": 1.4,
+      "plug": 1.2,
+      "spoon": 1,
+      "feather": 0.8,
+      "livefish": 1.4,
+      "worm": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Cichla monoculus",
+        "url": "https://www.fishbase.se/summary/Cichla-monoculus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 80 cm TL (text; field gives 70 cm SL), largest published weight 9.0 kg, diet, breeding several times a year, male nuchal hump; length-weight a and b (Bayesian TL estimate; 8.0 kg at 80 cm, -11%). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      },
+      {
+        "title": "IGFA: King of the Jungle, giant peacock bass on fly",
+        "url": "https://igfa.org/?p=66250",
+        "accessed": "2026-11-25",
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+      },
+      {
+        "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
+        "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
+        "accessed": "2026-11-25",
+        "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+  },
+  {
+    "speciesId": "astronotus-ocellatus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.6
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "shrimp": 1.2,
+      "crustacean": 1,
+      "cutfish": 0.6,
+      "fruit": 0.4,
+      "jig": 0.4
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Astronotus ocellatus",
+        "url": "https://www.fishbase.se/summary/Astronotus-ocellatus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 45.7 cm TL (40 cm TL in the text), largest published weight 1.6 kg, quiet mud- and sand-bottomed habitat, diet, parental care, food-fish status. IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Astronotus ocellatus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=3612&GenusName=Astronotus&SpeciesName=ocellatus&fc=349",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from Catalão Lake, middle Amazon (n=36); 1.7 kg at 33 cm SL (about 40 cm TL), +5%. The Bayesian TL set gives 3.3 kg at 45.7 cm, twice the record."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "heros-severus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "fruit": 1,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Heros severus",
+        "url": "https://www.fishbase.se/summary/Heros-severus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 20 cm SL (about 24 cm TL, an estimated conversion), common length 13.5 cm TL, parental care; length-weight a and b (Bayesian TL estimate; no record weight). IUCN LC, assessed 19 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "serrasalmus-rhombeus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin",
+      "open-lagoon",
+      "lagoon-mouth"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "cutfish": 1.6,
+      "livefish": 1.2,
+      "worm": 0.9,
+      "spoon": 0.6,
+      "jig": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Serrasalmus rhombeus",
+        "url": "https://www.fishbase.se/summary/Serrasalmus-rhombeus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 41.5 cm SL, largest published weight 3.8 kg, diet, rapids and deep-channel habitat, traumatogenic. IUCN LC, assessed 22 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Serrasalmus rhombeus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=11970&GenusName=Serrasalmus&SpeciesName=rhombeus&fc=686",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (5.6-31 cm, n=693); 3.2 kg at 41.5 cm SL, -16%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BCDF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BCDF. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "lugubria-lugubris",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.2,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "jig": 1.2,
+      "spoon": 1,
+      "feather": 1,
+      "worm": 0.7,
+      "livefish": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Crenicichla lugubris",
+        "url": "https://www.fishbase.se/summary/Crenicichla-lugubris.html",
+        "accessed": "2026-11-25",
+        "supports": "accepted as Lugubria lugubris (Varella et al. 2023); maximum length 32.9 cm TL, largest published weight 440 g, Negro, Branco and Uatumã range; length-weight a and b (Bayesian TL estimate; 0.46 kg at 32.9 cm, +5%). IUCN LC, assessed 11 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDE (listed as Crenicichla lugubris))"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDE. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "hoplias-malabaricus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "livefish": 1.5,
+      "cutfish": 1.1,
+      "plug": 1,
+      "prop": 0.8,
+      "worm": 0.5
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Hoplias malabaricus",
+        "url": "https://www.fishbase.se/summary/Hoplias-malabaricus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 65 cm TL, largest published weight 3.8 kg, nocturnal activity, nest guarding, handling danger. IUCN LC, assessed 15 April 2019 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Hoplias malabaricus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=4757&GenusName=Hoplias&SpeciesName=malabaricus&fc=103",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (6-65 cm, n=78); 3.1 kg at 65 cm, -18%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDEF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDEF. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "acestrorhynchus-falcirostris",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin",
+      "open-lagoon"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.3,
+      "jig": 1,
+      "feather": 1,
+      "livefish": 1.2,
+      "cutfish": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Acestrorhynchus falcirostris",
+        "url": "https://www.fishbase.se/summary/Acestrorhynchus-falcirostris.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 45 cm SL, clear and blackwater habitat, voracious predator. IUCN LC, assessed 13 February 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Acestrorhynchus falcirostris",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=13123&GenusName=Acestrorhynchus&SpeciesName=falcirostris&fc=593",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (10-45 cm, n=735); 0.96 kg at 45 cm SL; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+  },
+  {
+    "speciesId": "osteoglossum-ferreirai",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.2,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "feather": 1.4,
+      "popper": 1.2,
+      "prop": 0.8,
+      "spoon": 0.7,
+      "worm": 0.8,
+      "shrimp": 0.6,
+      "livefish": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Osteoglossum ferreirai",
+        "url": "https://www.fishbase.se/summary/Osteoglossum-ferreirai.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 90 cm TL, Negro River basin range, mouthbrooding; length-weight a and b (Bayesian TL estimate; 5.0 kg at 90 cm; no record weight). IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF; flagged as probably endemic)"
+      },
+      {
+        "title": "FishBase length-weight table: Osteoglossum ferreirai",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8117&GenusName=Osteoglossum&SpeciesName=ferreirai&fc=38",
+        "accessed": "2026-11-25",
+        "supports": "an SL set from the Aracá and Demeni rivers near Barcelos (30-64 cm, n=25) exists; the game uses the Bayesian TL estimate to keep the TL measure"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "cichla-temensis",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin",
+      "open-lagoon",
+      "lagoon-mouth"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 1.3,
+      "dusk": 1.2,
+      "night": 0
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "prop": 1.5,
+      "popper": 1.3,
+      "jig": 1.4,
+      "plug": 1.2,
+      "spoon": 1,
+      "feather": 0.8,
+      "livefish": 1.4,
+      "worm": 0.2
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Cichla temensis",
+        "url": "https://www.fishbase.se/summary/Cichla-temensis.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 99 cm TL (the game caps ordinary fish at 90 cm, below its 95 cm legendary), largest published weight 12.2 kg, lagoon and river-bank habitat, diet; length-weight a and b (Bayesian TL estimate; 11.7 kg at 90 cm, -11% against the 13.19 kg IGFA record and -4% against FishBase's 12.2 kg). IUCN LC, assessed 5 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      },
+      {
+        "title": "IGFA: King of the Jungle, giant peacock bass on fly",
+        "url": "https://igfa.org/?p=66250",
+        "accessed": "2026-11-25",
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+      },
+      {
+        "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
+        "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
+        "accessed": "2026-11-25",
+        "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Big lagoon fish feed hardest from mid-morning to mid-afternoon (IGFA), so day is at least as strong as dawn here; the legendary Old Gold's clues depend on it."
+  },
+  {
+    "speciesId": "electrophorus-varii",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.5,
+      "day": 0.1,
+      "dusk": 1.2,
+      "night": 2
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1,
+      "cutfish": 1,
+      "livefish": 1.2
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Electrophorus varii",
+        "url": "https://www.fishbase.se/summary/Electrophorus-varii.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 149 cm TL, lowland Amazon range, air-breathing, discharge voltages 151-572 V; length-weight a and b (Bayesian TL estimate for this body shape; 23 kg at 149 cm; no record weight). IUCN Not Evaluated"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDE (listed as Electrophorus electricus, before the 2019 split))"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDE."
+  },
+  {
+    "speciesId": "plagioscion-squamosissimus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "open-lagoon",
+      "lagoon-mouth"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.2,
+      "day": 0.8,
+      "dusk": 1.4,
+      "night": 1.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "shrimp": 1.4,
+      "crustacean": 1.2,
+      "cutfish": 1.2,
+      "livefish": 1.3,
+      "jig": 1,
+      "worm": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Plagioscion squamosissimus",
+        "url": "https://www.fishbase.se/summary/Plagioscion-squamosissimus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm TL (field), largest published weight 4.5 kg, diet, commercial and game fish; length-weight a and b (Bayesian TL estimate; 4.2 kg at 70 cm, -7%). At 80 cm every set gives 6.3-6.7 kg, 41-49% over the record, so the game maximum is 70 cm. IUCN LC, assessed 30 July 2019 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABCDF)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats ABCDF."
+  },
+  {
+    "speciesId": "osteoglossum-bicirrhosum",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "open-lagoon"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.3,
+      "day": 1.1,
+      "dusk": 1.2,
+      "night": 0.2
+    },
+    "monthMod": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.8,
+      1.1,
+      1.3,
+      1.4,
+      1.4,
+      1.2
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "feather": 1.4,
+      "popper": 1.2,
+      "prop": 0.8,
+      "spoon": 0.7,
+      "worm": 0.8,
+      "shrimp": 0.6,
+      "livefish": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Osteoglossum bicirrhosum",
+        "url": "https://www.fishbase.se/summary/Osteoglossum-bicirrhosum.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 90 cm TL (field), largest published weight 6.0 kg, surface feeding and jumping for beetles, low-oxygen tolerance, male mouthbrooding; length-weight a and b (Bayesian TL estimate; 11.3 kg at 119 cm, -1% against the reported record). IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: a mild low-water peak, the flood pulse read loosely."
+  },
+  {
+    "speciesId": "arapaima-gigas",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "open-lagoon"
+    ],
+    "rarity": "epic",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.6
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "livefish": 1.4,
+      "cutfish": 0.8,
+      "plug": 0.9,
+      "spoon": 0.7,
+      "prop": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Arapaima gigas",
+        "url": "https://www.fishbase.se/summary/Arapaima-gigas.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 450 cm TL (field), common length 200 cm TL, largest published weight 200 kg, air-breathing, April-May nest spawning, seasonal floodplain migration; IUCN DD (1 August 1996) and CITES Appendix II"
+      },
+      {
+        "title": "FishBase length-weight table: Arapaima gigas",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=2076&GenusName=Arapaima&SpeciesName=gigas&fc=628",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the lower Amazon (109-224 cm, n=76); 187 kg at 280 cm, +21% against the IGFA record. At 300 cm it gives 227 kg, +47%."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+  },
+  {
+    "speciesId": "pellona-castelnaeana",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "lagoon-mouth"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.2,
+      "jig": 0.9,
+      "livefish": 1.2,
+      "cutfish": 0.7
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Pellona castelnaeana",
+        "url": "https://www.fishbase.se/summary/Pellona-castelnaeana.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm FL, largest published weight 7.1 kg, river habitat, subsistence and game fish. IUCN LC, assessed 4 November 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Pellona castelnaeana",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=1639&GenusName=Pellona&SpeciesName=castelnaeana&fc=620",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (8.7-60.9 cm, n=280); 5.9 kg at 70 cm SL (about 80 cm FL), -17%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes ABD)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats ABD."
+  },
+  {
+    "speciesId": "boulengerella-cuvieri",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "lagoon-mouth"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.6,
+      "day": 0.9,
+      "dusk": 1.5,
+      "night": 0.1
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "prop": 1.4,
+      "popper": 1.4,
+      "spoon": 1.1,
+      "plug": 1,
+      "livefish": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Boulengerella cuvieri",
+        "url": "https://www.fishbase.se/summary/Boulengerella-cuvieri.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 88 cm FL, largest published weight 6.0 kg, surface habit in rapid water behind obstacles, diet. IUCN LC, assessed 21 October 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Boulengerella cuvieri",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=27228&GenusName=Boulengerella&SpeciesName=cuvieri&fc=104",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: FL set (66-84 cm, n=2, weak); 5.4 kg at 88 cm FL, -9%"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDFH)"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+  },
+  {
+    "speciesId": "rhaphiodon-vulpinus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "lagoon-mouth"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
+      1.1,
+      1.5,
+      1.7,
+      1.7,
+      1.3
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "spoon": 1.3,
+      "jig": 1.2,
+      "plug": 1,
+      "livefish": 1.3
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Rhaphiodon vulpinus",
+        "url": "https://www.fishbase.se/summary/Rhaphiodon-vulpinus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 80 cm SL (field) and 64 cm SL (text), largest published weight 2.1 kg, pelagic fish-eater. IUCN LC, assessed 14 July 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Rhaphiodon vulpinus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8697&GenusName=Rhaphiodon&SpeciesName=vulpinus&fc=527",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (20.5-55.8 cm, n=600); 1.9 kg at 64 cm SL, -11%. At the 80 cm field maximum it gives 3.8 kg, 79% over the record, so the text's 64 cm is used."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BDF (listed as Raphiodon vulpinus))"
+      },
+      {
+        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
+        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "accessed": "2026-11-25",
+        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+  },
+  {
+    "speciesId": "brycon-amazonicus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "lagoon-mouth"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 1,
+      "dusk": 1.4,
+      "night": 0.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait",
+      "lure"
+    ],
+    "affinity": {
+      "fruit": 1.5,
+      "spoon": 1.1,
+      "jig": 1,
+      "popper": 0.8,
+      "worm": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Brycon amazonicus",
+        "url": "https://www.fishbase.se/summary/Brycon-amazonicus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 46.2 cm SL, food-fish status, range. IUCN LC, assessed 6 October 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brycon amazonicus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=52992&GenusName=Brycon&SpeciesName=amazonicus&fc=687",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set from the Madeira River (11.8-40.6 cm, n=43); 2.3 kg at 46.2 cm SL; no record weight"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD."
+  },
+  {
+    "speciesId": "phractocephalus-hemioliopterus",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "lagoon-mouth"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.6,
+      "livefish": 1.2,
+      "fruit": 0.6,
+      "shrimp": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Phractocephalus hemioliopterus",
+        "url": "https://www.fishbase.se/summary/Phractocephalus-hemioliopterus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 135 cm TL, common length 60 cm TL, largest published weight 44.2 kg, diet including fruit. IUCN LC, assessed 27 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Phractocephalus hemioliopterus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=6421&GenusName=Phractocephalus&SpeciesName=hemioliopterus&fc=150",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (32-134.9 cm, n=115); 42.7 kg at 141 cm, -24% against the IGFA record"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD."
+  },
+  {
+    "speciesId": "paracheirodon-axelrodi",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "igarape"
+    ],
+    "rarity": "common",
+    "phaseMod": {
+      "dawn": 1.1,
+      "day": 1.2,
+      "dusk": 1.1,
+      "night": 0.3
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "net"
+    ],
+    "affinity": {
+      "net": 1
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Paracheirodon axelrodi",
+        "url": "https://www.fishbase.se/summary/Paracheirodon-axelrodi.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 3.0 cm SL, blackwater shoaling, aquarium trade from Rio Negro and Orinoco tributaries. IUCN LC, assessed 4 March 2021 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Paracheirodon axelrodi",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=8195&GenusName=Paracheirodon&SpeciesName=axelrodi&fc=812",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: SL set (2.8-3.0 cm, n=3, weak)"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes DE (tributaries, streams))"
+      }
+    ],
+    "designNotes": "Placed in a forest stream (checklist code E); the checklist records it in habitats DE. Scooped with a dip net from the stream that feeds the lagoon, as the piabeiros of Barcelos do. Real cardinal fishing follows the flood (they live in streams and flooded margins); here the stream is fished all year."
+  },
+  {
+    "speciesId": "macrobrachium-brasiliense",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "trap"
+    ],
+    "affinity": {
+      "trap": 1.4,
+      "cutfish": 1.4,
+      "worm": 1,
+      "fruit": 0.8
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "Iheringia, Série Zoologia: population biology of Macrobrachium brasiliense",
+        "url": "https://scielo.br/j/isz/a/XrrJBVDBQQ4GfyJWYk3h9Pq/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "maximum carapace length 20.5 mm in males and 20.1 mm in females; first-order stream habitat (search excerpt)"
+      },
+      {
+        "title": "Lower Rio Negro Macrobrachium records (taxonomic literature)",
+        "url": "https://tb.plazi.org/GgServer/html/DE5F87ABFFCBFFBCD2833871A099FB3C",
+        "accessed": "2026-11-25",
+        "supports": "M. brasiliense among the Macrobrachium of the lower Rio Negro basin (search excerpt); length-weight a and b are unpublished placeholders"
+      }
+    ],
+    "designNotes": "Prawns are trapped with bait in a matapi. The Barcelos prawn species is not confirmed (dossier); M. brasiliense stands in."
+  },
+  {
+    "speciesId": "pteronura-brasiliensis",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1,
+      "night": 1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "Wikipedia: Giant otter",
+        "url": "https://en.wikipedia.org/wiki/Giant_otter",
+        "accessed": "2026-11-25",
+        "supports": "length to 1.8 m, weight to 32 kg (males), family groups of 3 to 8, fish diet, IUCN Endangered"
+      },
+      {
+        "title": "Ramsar Sites Information Service: Rio Negro",
+        "url": "https://rsis.ramsar.org/ris/2335",
+        "accessed": "2026-11-25",
+        "supports": "giant otter listed for the Rio Negro Ramsar site (search excerpt)"
+      }
+    ]
+  },
+  {
+    "speciesId": "podocnemis-erythrocephala",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "uncommon",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1,
+      "night": 1
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "sight"
+    ],
+    "affinity": {},
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "IUCN Tortoise and Freshwater Turtle Specialist Group: Podocnemis erythrocephala (Chelonian Research Monographs 5, account 087)",
+        "url": "https://iucn-tftsg.org/cbftt/podocnemis-erythrocephala-087/",
+        "accessed": "2026-11-25",
+        "supports": "Rio Negro centre of distribution; blackwater streams and flooded forest; maximum straight carapace length 322 mm (females) and 244 mm (males); IUCN VU (1996), Brazil NT (search excerpts)"
+      },
+      {
+        "title": "Chelonian Conservation and Biology 13(1): abundance and population structure of Podocnemis erythrocephala",
+        "url": "https://bioone.org/journals/chelonian-conservation-and-biology/volume-13/issue-1/CCB-1039.1/Abundance-and-Population-Structure-of-Podocnemis-erythrocephala-Testudines-Podocnemididae-in/10.2744/CCB-1039.1.full",
+        "accessed": "2026-11-25",
+        "supports": "middle Rio Negro sample of more than 3,000 adults; mean carapace 258 mm (females), 207 mm (males) (search excerpt)"
+      }
+    ]
+  }
+]

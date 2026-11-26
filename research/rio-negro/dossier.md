@@ -1,5 +1,7 @@
 # Rio Negro research dossier (region 2, M3)
 
+**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. Still outstanding: step 7, an independent review of the occurrence records, and open questions 2 (peacock bass sellable) and 6 (Old Gold released).
+
 Started 25 November 2026. Steps 1 and 2 (region and long list) are done, the anchor at Barcelos is confirmed (Andy, 25 November 2026), and step 4's **species records** are written: `content/species/rio-negro.json`, 38 species, all validated. Step 5's **legendary is drafted** (Old Gold, a 95 cm speckled peacock bass) and waits on one decision (whether he is released). Occurrence records, rumours, the review and the simulator runs come next. Occurrences need the region's locations and zones, which are part of the M3 build.
 
 ## Region

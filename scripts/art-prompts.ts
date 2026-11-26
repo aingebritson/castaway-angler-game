@@ -40,14 +40,23 @@ const list = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1)
 const lower = (s: string) => (/[A-Z]/.test(s.slice(1)) ? s : s.charAt(0).toLowerCase() + s.slice(1));
 const PAINTED = new Set(['gather', 'market', 'board', 'shop', 'museum']);
 
-function sceneLayout(l: Location): string {
+/** River regions (with a flood pulse) are blackwater with a far bank of forest, not a blue sea. */
+const isRiver = (l: Location) => !!content.regions[l.regionId]?.water;
+
+function sceneLayout(l: Location, zonesShown: Location['zones'] = l.zones): string {
   const parts: string[] = [];
   const water = l.scene.waterPolygon;
-  if (water.length) {
+  if (water.length && isRiver(l)) {
+    parts.push('Seen from the bank or a canoe, looking out over the river. A straight far bank of forest runs across the image about a third of the way down; above it is sky.');
+    const zones = zonesShown.filter((z) => z.cast !== false).sort((a, b) => a.minCastRange - b.minCastRange);
+    const desc = zones.map((z) => (z.blurb ? `${lower(z.name)} (${lower(z.blurb.replace(/\.$/, ''))})` : lower(z.name)));
+    if (zones.length > 1) parts.push(`Depth runs from near to far: the bottom of the frame is the nearest water, then ${list(desc)} toward the far bank.`);
+    parts.push('This is a blackwater river: the water is the colour of strong tea, amber and see-through at the bottom of the image where it is shallow, nearly black in the distance, with mirror-like reflections. Sand is bright white.');
+  } else if (water.length) {
     // Image models ignore exact percentages, so ask for a horizon about a third
     // down and fit the scene data (waterPolygon) to the image after it is chosen.
     parts.push('Seen from the shore looking out over the water. A straight sea horizon runs across the image about a third of the way down; above it are sky and any far headland.');
-    const zones = l.zones.filter((z) => z.cast !== false).sort((a, b) => a.minCastRange - b.minCastRange);
+    const zones = zonesShown.filter((z) => z.cast !== false).sort((a, b) => a.minCastRange - b.minCastRange);
     if (zones.length > 1) {
       const desc = zones.map((z) => (z.blurb ? `${lower(z.name)} (${lower(z.blurb.replace(/\.$/, ''))})` : lower(z.name)));
       parts.push(`Depth runs from near to far: the bottom of the frame is the nearest and shallowest water, then ${list(desc)} toward the horizon. The water gets steadily deeper and bluer with distance: clear and pale at the bottom of the image, deepest blue along the horizon.`);
@@ -76,7 +85,8 @@ function mjScene(l: Location): string {
   } else {
     layout = painted.length ? `Showing ${list(painted.map((h) => lower(h.label)))}` : '';
   }
-  return block('Midjourney scene').replace('{subject}', subject).replace('{layout}', layout ? `${layout}.` : '').replace(/ {2,}/g, ' ');
+  const mj = block('Midjourney scene').replace('{subject}', subject).replace('{layout}', layout ? `${layout}.` : '').replace(/ {2,}/g, ' ');
+  return isRiver(l) ? mj.replace('bright Caribbean colours', 'Amazon blackwater river colours, tea-dark water, white sand').replace('View from the shore out to sea', 'View from the bank across the river').replace('deep blue sea and a straight horizon', 'black tea-coloured water and a straight far bank of forest') : mj;
 }
 
 const out: string[] = [
@@ -101,7 +111,21 @@ const add = (id: string, kind: keyof typeof TYPE, subject: string, midjourney?: 
 
 out.push('# Scenes', '');
 for (const l of Object.values(content.locations)) {
-  add(l.scene.background, 'scene', `Scene: ${l.name}, ${l.habitat.charAt(0).toLowerCase()}${l.habitat.slice(1)}. ${l.blurb}\n\n${sceneLayout(l)}`.trim(), mjScene(l));
+  // River scenes can have one image per water level (the flood pulse): say which level each image shows
+  const region = content.regions[l.regionId];
+  const variants = Object.entries(l.scene.backgrounds ?? {}) as [string, string][];
+  const levelsFor = (id: string) => [...new Set((region.water ?? []).filter((w) => (l.scene.backgrounds?.[w] ?? l.scene.background) === id))];
+  const water = (id: string) => {
+    if (!variants.length) return '';
+    const lv = levelsFor(id);
+    const notes = lv.map((w) => region.waterNotes?.[w]).filter(Boolean).join('; ');
+    const twin = id === l.scene.background ? '' : ` Same view, same horizon and same tap spots as \`${l.scene.background}\`; only the water level differs.`;
+    return `\n\nWater level: this image shows the river at ${lv.join(' or ')} water. ${notes}.${twin}`;
+  };
+  const subject = `Scene: ${l.name}, ${l.habitat.charAt(0).toLowerCase()}${l.habitat.slice(1)}. ${l.blurb}`;
+  const shown = (id: string) => (variants.length ? l.zones.filter((z) => !z.water || levelsFor(id).some((w) => z.water!.includes(w))) : l.zones);
+  add(l.scene.background, 'scene', `${subject}${water(l.scene.background)}\n\n${sceneLayout(l, shown(l.scene.background))}`.trim(), mjScene(l));
+  for (const id of new Set(variants.map(([, v]) => v))) add(id, 'scene', `${subject}${water(id)}\n\n${sceneLayout(l, shown(id))}`.trim(), mjScene(l));
 }
 out.push('# Specimens', '');
 // crabs, lobsters, rays and the like are drawn from above, as the game shows them

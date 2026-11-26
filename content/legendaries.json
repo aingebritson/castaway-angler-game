@@ -110,5 +110,53 @@
     "fight": {
       "staminaMult": 2
     }
+  },
+  {
+    "id": "old-gold",
+    "speciesId": "cichla-temensis",
+    "name": "Old Gold",
+    "lore": "A speckled peacock bass in his gold: the spots long gone, three bars as dark as charcoal, a hump on his head like a closed fist. Every low water the guides at Barcelos swear he has boiled under the fallen tree at the mouth of the lagoon, and every low water somebody's popper comes back with the hooks straightened.",
+    "lengthCm": 95,
+    "spawn": {
+      "locationId": "rio-lagoon",
+      "zone": "lagoon-mouth",
+      "phases": [
+        "day"
+      ],
+      "months": [
+        8,
+        9,
+        10
+      ],
+      "rig": [
+        "popper"
+      ],
+      "chancePerCast": 0.1
+    },
+    "clues": [
+      {
+        "dimension": "where",
+        "text": "He lies under the fallen tree in the mouth of the lagoon, where the water goes deep.",
+        "sourceQuestId": "raimundo-3"
+      },
+      {
+        "dimension": "when",
+        "text": "In the heat of the day, when the sun is high. He doesn't stir for the dawn.",
+        "sourceQuestId": "bene-3"
+      },
+      {
+        "dimension": "bait",
+        "text": "He wants noise on the surface. A big popper, chugged hard across the top.",
+        "sourceQuestId": "joelma-3"
+      },
+      {
+        "dimension": "season",
+        "text": "Only at low water, September to November, when the lagoon is cut off and crowded.",
+        "sourceQuestId": "museum:rio-negro"
+      }
+    ],
+    "fight": {
+      "staminaMult": 2.5
+    }
   }
 ]

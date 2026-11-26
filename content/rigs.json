@@ -132,5 +132,89 @@
     "reel": "spinning-reel",
     "lure": "spoon",
     "method": "lure"
+  },
+  {
+    "id": "river-arrival",
+    "label": "River arrival: glass rod, mono, small steel hook, earthworm",
+    "rod": "glass-rod",
+    "line": "mono-line",
+    "hook": "steel-hook-small",
+    "bait": "earthworm",
+    "float": "coconut-float",
+    "method": "bait"
+  },
+  {
+    "id": "river-cut",
+    "label": "River: glass rod, mono, steel hook, cut bait",
+    "rod": "glass-rod",
+    "line": "mono-line",
+    "hook": "steel-hook",
+    "bait": "cut-bait",
+    "method": "bait"
+  },
+  {
+    "id": "river-jig",
+    "label": "River: glass rod, mono, jig",
+    "rod": "glass-rod",
+    "line": "mono-line",
+    "lure": "jig",
+    "method": "lure"
+  },
+  {
+    "id": "river-prop",
+    "label": "River skipper: graphite rod, heavy mono, reel, prop bait",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "lure": "prop-bait",
+    "method": "lure"
+  },
+  {
+    "id": "river-fruit",
+    "label": "River skipper: graphite rod, heavy mono, reel, steel hook, jauari fruit",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "hook": "steel-hook",
+    "bait": "jauari-fruit",
+    "method": "bait"
+  },
+  {
+    "id": "river-live",
+    "label": "River skipper: graphite rod, heavy mono, reel, large hook, live sardinha",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "hook": "steel-hook-large",
+    "bait": "live-sardinha",
+    "method": "bait"
+  },
+  {
+    "id": "river-giant",
+    "label": "River master: big-game rod and line, lever reel, large hook, cut bait",
+    "rod": "big-game-rod",
+    "line": "big-game-line",
+    "reel": "lever-reel",
+    "hook": "steel-hook-large",
+    "bait": "cut-bait",
+    "method": "bait"
+  },
+  {
+    "id": "river-popper",
+    "label": "River skipper: graphite rod, heavy mono, reel, popper",
+    "rod": "graphite-rod",
+    "line": "heavy-mono",
+    "reel": "spinning-reel",
+    "lure": "popper",
+    "method": "lure"
+  },
+  {
+    "id": "river-master-popper",
+    "label": "River master: offshore rod, braid, spinning reel, popper",
+    "rod": "offshore-rod",
+    "line": "braid-line",
+    "reel": "spinning-reel",
+    "lure": "popper",
+    "method": "lure"
   }
 ]

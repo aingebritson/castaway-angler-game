@@ -131,6 +131,129 @@
         "item": "sloop",
         "price": 14000,
         "once": true
+      },
+      {
+        "item": "river-passage",
+        "price": 2500,
+        "once": true,
+        "requiresFlag": "riverPassage"
+      }
+    ]
+  },
+  {
+    "id": "casa-do-pescador",
+    "locationId": "porto-mariua",
+    "name": "Casa do Pescador",
+    "keeper": "joelma",
+    "stock": [
+      {
+        "item": "earthworm",
+        "price": 1
+      },
+      {
+        "item": "steel-hook-small",
+        "price": 3
+      },
+      {
+        "item": "steel-hook",
+        "price": 6
+      },
+      {
+        "item": "steel-hook-large",
+        "price": 12
+      },
+      {
+        "item": "spoon",
+        "price": 30
+      },
+      {
+        "item": "jig",
+        "price": 35
+      },
+      {
+        "item": "popper",
+        "price": 50
+      },
+      {
+        "item": "plug",
+        "price": 65
+      },
+      {
+        "item": "prop-bait",
+        "price": 70
+      },
+      {
+        "item": "dip-net",
+        "price": 120,
+        "once": true
+      },
+      {
+        "item": "matapi",
+        "price": 200,
+        "once": true
+      },
+      {
+        "item": "cast-net",
+        "price": 300,
+        "once": true
+      },
+      {
+        "item": "lantern",
+        "price": 150,
+        "once": true
+      },
+      {
+        "item": "mono-line",
+        "price": 180,
+        "once": true
+      },
+      {
+        "item": "glass-rod",
+        "price": 420,
+        "once": true
+      },
+      {
+        "item": "spinning-reel",
+        "price": 900,
+        "once": true
+      },
+      {
+        "item": "heavy-mono",
+        "price": 1400,
+        "once": true
+      },
+      {
+        "item": "graphite-rod",
+        "price": 2800,
+        "once": true
+      },
+      {
+        "item": "fish-finder",
+        "price": 3200,
+        "once": true
+      },
+      {
+        "item": "braid-line",
+        "price": 4000,
+        "once": true
+      }
+    ]
+  },
+  {
+    "id": "landing",
+    "locationId": "porto-mariua",
+    "name": "Boat landing",
+    "keeper": "raimundo",
+    "stock": [
+      {
+        "item": "canoe",
+        "price": 600,
+        "once": true
+      },
+      {
+        "item": "riverboat",
+        "price": 6000,
+        "once": true
       }
     ]
   }

@@ -1,7 +1,7 @@
 /**
  * Balance simulator.
  *   npm run sim -- --location rocky-point --rig starter --casts 10000 --at 2027-01-15T06:00Z
- * Options: --zone <id>  --seed <n>  --method bait|lure|sight  --tz <IANA zone for "device" locations>
+ * Options: --zone <id>  --seed <n>  --method bait|lure|sight  --tz <IANA zone for "device" locations>  --finder
  */
 import { loadContentNode } from '../src/content/loadNode';
 import { runSim } from '../src/sim/simulate';
@@ -32,12 +32,13 @@ if (Number.isNaN(at)) {
 const report = runSim(content, {
   locationId: opt('location')!, rigId: opt('rig', 'starter')!, casts: Number(opt('casts', '10000')), at,
   seed: Number(opt('seed', '1')), zoneId: opt('zone'), deviceTz: opt('tz'), method: opt('method') as never,
+  finder: args.includes('--finder') ? 1 : 0,
 });
 
 const pct = (v: number) => `${(v * 100).toFixed(1)}%`.padStart(6);
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 console.log(`\n${report.locationName} · ${report.rigLabel}`);
-console.log(`local ${report.localTime} (${report.phase}, ${MONTHS[report.month]}) · rig power ${report.power} · cast range ${report.range.toFixed(2)}\n`);
+console.log(`local ${report.localTime} (${report.phase}, ${MONTHS[report.month]}${report.water ? `, ${report.water} water` : ''})${args.includes('--finder') ? ' · fish finder' : ''} · rig power ${report.power} · cast range ${report.range.toFixed(2)}\n`);
 for (const z of report.zones) {
   if (!z.reachable) {
     console.log(`── ${z.zoneName}: out of casting range for this rig\n`);

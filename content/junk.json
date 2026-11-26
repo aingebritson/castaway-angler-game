@@ -98,5 +98,30 @@
         "weight": 2
       }
     ]
+  },
+  {
+    "id": "river-junk",
+    "entries": [
+      {
+        "item": "driftwood",
+        "weight": 6
+      },
+      {
+        "item": "rope",
+        "weight": 2
+      },
+      {
+        "item": "plank",
+        "weight": 1
+      },
+      {
+        "item": "jig",
+        "weight": 1
+      },
+      {
+        "item": "spoon",
+        "weight": 1
+      }
+    ]
   }
 ]

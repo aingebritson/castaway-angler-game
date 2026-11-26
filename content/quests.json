@@ -362,5 +362,372 @@
     "reward": {
       "coins": 300
     }
+  },
+  {
+    "id": "alvarez-5",
+    "personId": "alvarez",
+    "order": 5,
+    "title": "Further than the reef",
+    "offer": "A man came through last month off a freighter from Belém. He said there is a river in Brazil the colour of coffee, with fish in it that tow canoes. You have the look of someone who would go. Get yourself a proper reel first, and I will find you a berth.",
+    "goal": {
+      "type": "have",
+      "item": "spinning-reel"
+    },
+    "progressText": "Own a spinning reel",
+    "done": "Good. I have written to a cousin of a cousin. The passage is on my board whenever you have the coins. Bring me back a story.",
+    "reward": {
+      "coins": 0,
+      "rumours": [
+        "arapaima-air"
+      ],
+      "flags": [
+        "riverPassage"
+      ]
+    }
+  },
+  {
+    "id": "raimundo-1",
+    "personId": "raimundo",
+    "order": 1,
+    "title": "Off the planks",
+    "offer": "Before I take anyone out, I watch them fish. Catch five fish off the floating houses, and sell them to Dona Socorro.",
+    "goal": {
+      "type": "catchAny",
+      "count": 5,
+      "distinct": false,
+      "locationId": "mariua-waterfront"
+    },
+    "progressText": "Fish caught at the Town Waterfront",
+    "done": "You can fish. Your casting is terrible, but you can fish.",
+    "reward": {
+      "coins": 40,
+      "rumours": [
+        "caparari-night"
+      ],
+      "items": [
+        {
+          "item": "earthworm",
+          "qty": 10
+        }
+      ]
+    }
+  },
+  {
+    "id": "raimundo-2",
+    "personId": "raimundo",
+    "order": 2,
+    "title": "A boat of your own",
+    "offer": "Nobody gets anywhere here without a canoe. I have one. It is a good one, with a rabeta that only stops when it wants to.",
+    "goal": {
+      "type": "have",
+      "item": "canoe"
+    },
+    "progressText": "Buy the canoe at the boat landing",
+    "done": "Now you can go anywhere. Not upriver, not yet. But anywhere. There is a biologist in town who will want to meet you.",
+    "reward": {
+      "coins": 0,
+      "rumours": [
+        "temensis-low"
+      ]
+    }
+  },
+  {
+    "id": "raimundo-3",
+    "personId": "raimundo",
+    "order": 3,
+    "title": "Tucunaré",
+    "offer": "Take the canoe to the island lagoon and catch me a butterfly peacock. Watch the water while you are there; you will see something you do not believe.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "cichla-orinocensis",
+      "count": 1,
+      "locationId": "rio-lagoon"
+    },
+    "progressText": "Catch a butterfly peacock bass at the Island Lagoon",
+    "done": "Did you see it come up? The pirarucu. They used to fill that lagoon.",
+    "reward": {
+      "coins": 80,
+      "rumours": [
+        "arapaima-low"
+      ],
+      "clues": [
+        "old-gold:where"
+      ]
+    }
+  },
+  {
+    "id": "raimundo-4",
+    "personId": "raimundo",
+    "order": 4,
+    "title": "Upriver",
+    "offer": "The real fish are two days up the tributaries, at the rapids. You need a river boat for that, with a cook and hammocks. I know a man who will sell one.",
+    "goal": {
+      "type": "have",
+      "item": "riverboat"
+    },
+    "progressText": "Buy a river boat at the boat landing",
+    "done": "Now you are a real expedition. Watch the rocks below the falls, and do not swim in the plunge pool.",
+    "reward": {
+      "coins": 150,
+      "rumours": [
+        "payara-rapids",
+        "jau-hole"
+      ]
+    }
+  },
+  {
+    "id": "joelma-1",
+    "personId": "joelma",
+    "order": 1,
+    "title": "Your first tucunaré",
+    "offer": "You cannot sell lures for a fish nobody has caught. Bring me a butterfly peacock, any size, from anywhere on the river.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "cichla-orinocensis",
+      "count": 1
+    },
+    "progressText": "Catch a butterfly peacock bass",
+    "done": "There. Now you are ruined for every other fish. Take this; you will need it for the big ones.",
+    "reward": {
+      "coins": 30,
+      "items": [
+        {
+          "item": "prop-bait",
+          "qty": 1
+        }
+      ],
+      "rumours": [
+        "temensis-prop",
+        "prawn-matapi"
+      ]
+    }
+  },
+  {
+    "id": "joelma-2",
+    "personId": "joelma",
+    "order": 2,
+    "title": "Live bait",
+    "offer": "The big fish here eat sardinha. Buy a cast net from me, throw it under the floating houses, and come back with live sardinha.",
+    "goal": {
+      "type": "have",
+      "item": "live-sardinha"
+    },
+    "progressText": "Catch live sardinha with a cast net",
+    "done": "Now you have the bait every predator in the river wants. Use it upriver.",
+    "reward": {
+      "coins": 30,
+      "rumours": [
+        "payara-live",
+        "piraiba-live"
+      ]
+    }
+  },
+  {
+    "id": "joelma-3",
+    "personId": "joelma",
+    "order": 3,
+    "title": "Açu",
+    "offer": "The speckled peacock, the tucunaré-açu: that is why anglers fly here from the other side of the world. Catch one over sixty centimetres, and let it go.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "cichla-temensis",
+      "count": 1,
+      "minCm": 60
+    },
+    "progressText": "Catch a speckled peacock bass over 60 cm",
+    "done": "Sixty! You will lie about it for the rest of your life. Everybody does.",
+    "reward": {
+      "coins": 120,
+      "items": [
+        {
+          "item": "popper",
+          "qty": 1
+        }
+      ],
+      "rumours": [
+        "redtail-mouth"
+      ],
+      "clues": [
+        "old-gold:bait"
+      ]
+    }
+  },
+  {
+    "id": "joelma-4",
+    "personId": "joelma",
+    "order": 4,
+    "title": "Eyes under the water",
+    "offer": "The giants live where you cannot see: twenty metres down in the channel, and in the holes below the falls. Buy a fish finder and you will know where to drop a bait.",
+    "goal": {
+      "type": "have",
+      "item": "fish-finder"
+    },
+    "progressText": "Buy a fish finder",
+    "done": "Now you will see them. Seeing them is not the same as landing them.",
+    "reward": {
+      "coins": 100,
+      "rumours": [
+        "piraiba-deep",
+        "jau-finder"
+      ]
+    }
+  },
+  {
+    "id": "bene-1",
+    "personId": "bene",
+    "order": 1,
+    "title": "Who eats jaraqui",
+    "offer": "There is a saying: whoever eats jaraqui never leaves. Bring me one. Throw a cast net under the planks; they do not take a hook.",
+    "goal": {
+      "type": "deliverFish",
+      "speciesId": "semaprochilodus-insignis",
+      "count": 1
+    },
+    "progressText": "Bring Seu Bené a jaraqui",
+    "done": "Grilled on the fire, with farinha. Now you will never leave. Sit, I will tell you about the fish I have seen.",
+    "reward": {
+      "coins": 20,
+      "rumours": [
+        "eel-night",
+        "tambaqui-fruit"
+      ]
+    }
+  },
+  {
+    "id": "bene-2",
+    "personId": "bene",
+    "order": 2,
+    "title": "The river at night",
+    "offer": "The river is a different place at night. The catfish come up. Catch three fish after dark, anywhere.",
+    "goal": {
+      "type": "catchAny",
+      "count": 3,
+      "distinct": false,
+      "phase": "night"
+    },
+    "progressText": "Fish caught at night",
+    "done": "You see? At night the river belongs to the bigger mouths.",
+    "reward": {
+      "coins": 35,
+      "rumours": [
+        "redtail-night",
+        "caparari-live"
+      ]
+    }
+  },
+  {
+    "id": "bene-3",
+    "personId": "bene",
+    "order": 3,
+    "title": "Something to remember",
+    "offer": "Everyone catches fish. Catch me one worth remembering: a trophy, the kind you see twice in a year.",
+    "goal": {
+      "type": "catchAny",
+      "count": 1,
+      "distinct": false,
+      "grade": "trophy"
+    },
+    "progressText": "Catch a trophy-grade fish",
+    "done": "That one you will tell your grandchildren about. I was the same.",
+    "reward": {
+      "coins": 100,
+      "rumours": [
+        "tambaqui-high"
+      ],
+      "clues": [
+        "old-gold:when"
+      ]
+    }
+  },
+  {
+    "id": "bene-4",
+    "personId": "bene",
+    "order": 4,
+    "title": "Pirarara",
+    "offer": "One more. The pirarara, the redtail catfish. I lost one at the lagoon mouth when I was twenty, and I have not stopped thinking about it. Catch one.",
+    "goal": {
+      "type": "catch",
+      "speciesId": "phractocephalus-hemioliopterus",
+      "count": 1
+    },
+    "progressText": "Catch a redtail catfish",
+    "done": "Red tail, yellow belly, a head like a shovel. Yes. That is the one. Thank you.",
+    "reward": {
+      "coins": 300
+    }
+  },
+  {
+    "id": "prado-1",
+    "personId": "prado",
+    "order": 1,
+    "title": "Let them go",
+    "offer": "Sport fishing in Amazonas is catch and release: that is the law, and it is why there are still big fish here. Show me. Release two butterfly peacocks.",
+    "goal": {
+      "type": "release",
+      "speciesId": "cichla-orinocensis",
+      "count": 2
+    },
+    "progressText": "Release two butterfly peacock bass",
+    "done": "Gently, wet hands, back in the water. You would be surprised how many people cannot do that.",
+    "reward": {
+      "coins": 60,
+      "rumours": [
+        "cardinal-net"
+      ]
+    }
+  },
+  {
+    "id": "prado-2",
+    "personId": "prado",
+    "order": 2,
+    "title": "Piaba",
+    "offer": "This town lives partly on cardinal tetras, caught by hand in the forest streams and flown to aquariums all over the world. When people earn from the fish, they keep the forest. Bring me two bags.",
+    "goal": {
+      "type": "deliver",
+      "item": "cardinal-tetras",
+      "qty": 2
+    },
+    "progressText": "Bring Dr Prado two bags of cardinal tetras",
+    "done": "Bright as neon, every one. These go to the project tank.",
+    "reward": {
+      "coins": 80,
+      "rumours": [
+        "eel-margin"
+      ]
+    }
+  },
+  {
+    "id": "prado-3",
+    "personId": "prado",
+    "order": 3,
+    "title": "The açu goes back",
+    "offer": "Catch a speckled peacock bass and release it. I want to know where the big ones are this year.",
+    "goal": {
+      "type": "release",
+      "speciesId": "cichla-temensis",
+      "count": 1
+    },
+    "progressText": "Release a speckled peacock bass",
+    "done": "Noted, measured, released. The breeding fish are what keep this river famous.",
+    "reward": {
+      "coins": 150
+    }
+  },
+  {
+    "id": "prado-4",
+    "personId": "prado",
+    "order": 4,
+    "title": "Pirarucu",
+    "offer": "The arapaima. The pirarucu. It was fished nearly to nothing; now the communities manage it and count it every year. If you ever have one on, bring it to the side of the boat and let it go.",
+    "goal": {
+      "type": "release",
+      "speciesId": "arapaima-gigas",
+      "count": 1
+    },
+    "progressText": "Release an arapaima",
+    "done": "Two hundred kilos of fish that breathes air, back in its lake. Thank you. That one is in my count.",
+    "reward": {
+      "coins": 500
+    }
   }
 ]

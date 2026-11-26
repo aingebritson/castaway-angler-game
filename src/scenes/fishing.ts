@@ -6,12 +6,12 @@
 import type { Location, Zone } from '../content/schema';
 import type { GameAudio } from '../platform/audio';
 import { vibrate } from '../platform/audio';
-import { type Cruiser, type FishBite, castRange, drawCruiser, spoolOf, strikeRate } from '../sim/catch';
+import { type Cruiser, type FishBite, castRange, drawCruiser, finderReadout, spoolOf, strikeRate } from '../sim/catch';
 import { type FightState, startFight, stepFight } from '../sim/fight';
 import { type Rng, clamp, lerp, makeRng, range } from '../sim/rng';
 import {
   type Reveal, beginCast, catchCtx, isDark, landFish, landJunk, loseFish, reactToBait, refusal, rigOf, rigProblem, rollBite, sighting,
-  stolenBait, sunAt,
+  stolenBait, sunAt, finderTier,
 } from '../state/actions';
 import type { Store } from '../state/store';
 import type { Light } from './light';
@@ -101,6 +101,8 @@ export class Fishing {
   private hint = '';
   private hintT = 0;
   private rodWhip = 0;
+  /** What the fish finder shows under each zone, refreshed every few seconds. */
+  private finder: { at: number; text: Record<string, string> } = { at: -99, text: {} };
 
   constructor(private loc: Location, horizon: number, private host: FishingHost) {
     this.yFar = horizon + 0.018;
@@ -1052,6 +1054,23 @@ export class Fishing {
     }
   }
 
+  /** With a fish finder aboard, each zone label says how many kinds are below right now, and how many are new. */
+  private finderText(): Record<string, string> {
+    if (this.t - this.finder.at < 3) return this.finder.text;
+    const { store } = this.host;
+    const s = store.state;
+    const text: Record<string, string> = {};
+    if (finderTier(s, store.content) > 0) {
+      const sun = sunAt(store.ctx(), this.loc.id);
+      for (const z of this.zones) {
+        const r = finderReadout({ content: store.content, locationId: this.loc.id, zoneId: z.id, phase: sun.phase, month: sun.local.month }, (id) => s.guide[id]?.state === 'caught');
+        text[z.id] = r.kinds ? ` · finder: ${r.kinds} kind${r.kinds > 1 ? 's' : ''} below${r.unknown ? `, ${r.unknown} new` : ''}` : ' · finder: nothing below';
+      }
+    }
+    this.finder = { at: this.t, text };
+    return text;
+  }
+
   private drawAim(g: G, L: Light, tip: { x: number; y: number }): void {
     const { W, H } = this;
     const tg = this.target();
@@ -1077,7 +1096,7 @@ export class Fishing {
       g.textAlign = 'left';
       g.fillStyle = `rgba(255,255,255,${inReach ? 0.8 : 0.45})`;
       const why = reach < z.minCastRange ? ' · out of range' : ' · too dark';
-      g.fillText(z.name + (inReach ? '' : why), W * 0.04, y - 3);
+      g.fillText(z.name + (inReach ? '' : why) + (this.finderText()[z.id] ?? ''), W * 0.04, y - 3);
     }
     // flight path
     g.strokeStyle = 'rgba(255,255,255,0.75)';
