@@ -122,20 +122,20 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.5,
-      "day": 1.1,
-      "dusk": 1.3,
+      "dawn": 1.2,
+      "day": 1.4,
+      "dusk": 1.1,
       "night": 0
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.9,
+      0.9,
+      0.9,
       1,
       1,
       1,
@@ -173,7 +173,7 @@
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -182,7 +182,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BD."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BD. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA)."
   },
   {
     "speciesId": "serrasalmus-rhombeus",
@@ -193,10 +193,10 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.1,
-      "day": 1.2,
-      "dusk": 1.1,
-      "night": 0.3
+      "dawn": 1.4,
+      "day": 0.9,
+      "dusk": 1.4,
+      "night": 0.6
     },
     "monthMod": [
       1,
@@ -223,7 +223,7 @@
       "spoon": 0.6,
       "jig": 0.6
     },
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Serrasalmus rhombeus",
@@ -242,9 +242,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BCDF)"
+      },
+      {
+        "title": "Cohen et al. (1999): radio-tracking of black piranhas in Coco Cocha, Peru, Environmental Biology of Fishes",
+        "url": "https://link.springer.com/article/10.1023/A:1007489424146",
+        "accessed": "2026-11-25",
+        "supports": "adult Serrasalmus rhombeus movement and activity cycles synchronised with dawn (dry season; search excerpt)"
+      },
+      {
+        "title": "The Scientific World Journal (2017): diel activity of Serrasalmus rhombeus and S. gibbus, Coaracy Nunes reservoir, Amapá",
+        "url": "https://doaj.org/article/2614bc112d9a4af9b9253cf81df8fce2",
+        "accessed": "2026-11-25",
+        "supports": "S. rhombeus bimodal over 24 hours, most active between dusk and early morning (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BCDF."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BCDF. Occurrence pass: dawn and dusk raised and night from 0.3 to 0.6: radio-tracked black piranhas peak at dawn, and a reservoir study found them most active from dusk to early morning. Night is held at 0.6, between the two, because at 1.0 piranhas stole most live baits after dark."
   },
   {
     "speciesId": "triportheus-albus",
@@ -321,15 +333,15 @@
       "night": 0.3
     },
     "monthMod": [
-      1,
+      0.9,
+      1.0,
       1.2,
       1.4,
-      1.7,
-      1.8,
-      1.8,
       1.6,
-      1.1,
-      0.6,
+      1.8,
+      1.8,
+      1.5,
+      0.8,
       0.4,
       0.4,
       0.6
@@ -363,13 +375,13 @@
         "supports": "present in the Rio Negro basin (habitat codes BCDG (lakes, tributaries, rapids))"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BCDG. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BCDG. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001)."
   },
   {
     "speciesId": "brycon-amazonicus",
@@ -386,15 +398,15 @@
       "night": 0.4
     },
     "monthMod": [
-      1,
+      0.9,
+      1.0,
       1.2,
       1.4,
-      1.7,
-      1.8,
-      1.8,
       1.6,
-      1.1,
-      0.6,
+      1.8,
+      1.8,
+      1.5,
+      0.8,
       0.4,
       0.4,
       0.6
@@ -431,13 +443,19 @@
         "supports": "present in the Rio Negro basin (habitat codes BD)"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "Águas Amazônicas: matrinxã",
+        "url": "https://en.aguasamazonicas.org/fish/matrinxa",
+        "accessed": "2026-11-25",
+        "supports": "medium-distance migrant making spawning runs in the rising-water season; adults most abundant in blackwater and clearwater tributaries; prefers fruits and seeds (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BD. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BD. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001)."
   },
   {
     "speciesId": "hoplias-malabaricus",
@@ -634,15 +652,15 @@
       "night": 0.6
     },
     "monthMod": [
-      1,
+      0.9,
+      1.0,
       1.2,
       1.4,
-      1.7,
-      1.8,
-      1.8,
       1.6,
-      1.1,
-      0.6,
+      1.8,
+      1.8,
+      1.5,
+      0.8,
       0.4,
       0.4,
       0.6
@@ -655,7 +673,7 @@
       "worm": 0.3,
       "cutfish": 0.2
     },
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Colossoma macropomum",
@@ -676,13 +694,25 @@
         "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "Araujo-Lima and Goulding, as summarised in: life history and management of the tambaqui, Revista Brasileira de Zoologia",
+        "url": "https://scielo.br/j/rbzool/a/gQRV47qdG65ttvNgnDzb6cd/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "adults outside the breeding season stay in flooded forest, including blackwater igapó; fruit-eating in the flood (search excerpt)"
+      },
+      {
+        "title": "Acta Amazonica (2003): seasonal variation of nutrients and energy in the tambaqui's natural food",
+        "url": "https://doaj.org/article/180784c9199b4ac4abfac9a25588a693",
+        "accessed": "2026-11-25",
+        "supports": "fruits and seeds dominate while the river rises and floods, with fruiting of igapó trees; zooplankton in the dry season (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats D. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats D. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: fruit-eating in the igapó through the flood confirmed."
   },
   {
     "speciesId": "electrophorus-varii",
@@ -719,7 +749,7 @@
       "cutfish": 1,
       "livefish": 1.2
     },
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Electrophorus varii",
@@ -732,9 +762,15 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BDE (listed as Electrophorus electricus, before the 2019 split))"
+      },
+      {
+        "title": "Bastos et al. (2021): social predation in electric eels, Ecology and Evolution",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7863634",
+        "accessed": "2026-11-25",
+        "supports": "Amazon electric eels long considered nocturnal solitary predators (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BDE."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BDE. Occurrence pass: night peak confirmed (nocturnal predator)."
   },
   {
     "speciesId": "osteoglossum-bicirrhosum",
@@ -801,20 +837,20 @@
     ],
     "rarity": "rare",
     "phaseMod": {
-      "dawn": 1.5,
-      "day": 1.1,
-      "dusk": 1.3,
+      "dawn": 1.2,
+      "day": 1.4,
+      "dusk": 1.1,
       "night": 0
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.9,
+      0.9,
+      0.9,
       1,
       1,
       1,
@@ -852,7 +888,7 @@
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -861,7 +897,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BDF."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats BDF. Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Occurrence pass: lower while the water rises (0.7), because peacocks are lethargic in rising water (IGFA)."
   },
   {
     "speciesId": "podocnemis-erythrocephala",

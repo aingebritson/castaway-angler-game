@@ -483,12 +483,11 @@
     "id": "tambaqui-high",
     "speciesId": "colossoma-macropomum",
     "dimension": "when",
-    "text": "Tambaqui go into the forest with the flood and eat all the high-water months, April to July. At low water they are gone from here.",
+    "text": "Tambaqui go into the forest with the flood and feed there through the high water, June to August. At low water they are gone from here.",
     "fillsCells": [
-      "month:3",
-      "month:4",
       "month:5",
-      "month:6"
+      "month:6",
+      "month:7"
     ],
     "source": "Seu Bené"
   },
@@ -550,7 +549,7 @@
     "id": "arapaima-low",
     "speciesId": "arapaima-gigas",
     "dimension": "when",
-    "text": "The pirarucu are easiest to find when the lagoon shrinks at low water, September to December. They must be let go: they are counted, every one.",
+    "text": "The pirarucu are easiest to find as the water drops and the lagoon shrinks, September to December. They must be let go: they are counted, every one.",
     "fillsCells": [
       "month:8",
       "month:9",

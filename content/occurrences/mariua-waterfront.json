@@ -178,10 +178,10 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.1,
-      "day": 1.2,
-      "dusk": 1.1,
-      "night": 0.3
+      "dawn": 1.4,
+      "day": 0.9,
+      "dusk": 1.4,
+      "night": 0.6
     },
     "monthMod": [
       1,
@@ -208,7 +208,7 @@
       "spoon": 0.6,
       "jig": 0.6
     },
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Serrasalmus rhombeus",
@@ -227,9 +227,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BCDF)"
+      },
+      {
+        "title": "Cohen et al. (1999): radio-tracking of black piranhas in Coco Cocha, Peru, Environmental Biology of Fishes",
+        "url": "https://link.springer.com/article/10.1023/A:1007489424146",
+        "accessed": "2026-11-25",
+        "supports": "adult Serrasalmus rhombeus movement and activity cycles synchronised with dawn (dry season; search excerpt)"
+      },
+      {
+        "title": "The Scientific World Journal (2017): diel activity of Serrasalmus rhombeus and S. gibbus, Coaracy Nunes reservoir, Amapá",
+        "url": "https://doaj.org/article/2614bc112d9a4af9b9253cf81df8fce2",
+        "accessed": "2026-11-25",
+        "supports": "S. rhombeus bimodal over 24 hours, most active between dusk and early morning (search excerpt)"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats BCDF."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats BCDF. Occurrence pass: dawn and dusk raised and night from 0.3 to 0.6: radio-tracked black piranhas peak at dawn, and a reservoir study found them most active from dusk to early morning. Night is held at 0.6, between the two, because at 1.0 piranhas stole most live baits after dark."
   },
   {
     "speciesId": "serrasalmus-manueli",
@@ -420,18 +432,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
     ],
     "methods": [
       "bait"
@@ -455,9 +467,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABCD)"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABCD."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
   },
   {
     "speciesId": "pellona-castelnaeana",
@@ -527,10 +551,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1,
-      "day": 1,
+      "dawn": 1.0,
+      "day": 0.8,
       "dusk": 1.2,
-      "night": 0.6
+      "night": 1.3
     },
     "monthMod": [
       1,
@@ -554,7 +578,7 @@
       "shrimp": 1.3,
       "cutfish": 1
     },
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Potamotrygon motoro",
@@ -573,9 +597,15 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABDF)"
+      },
+      {
+        "title": "Garrone Neto and Uieda (2012): activity and habitat use of Potamotrygon motoro and P. falkneri, Neotropical Ichthyology",
+        "url": "https://scielo.br/j/ni/a/DCP3tWhsbYrDRjnmPdLWPMG/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "mostly nocturnal, especially feeding; large rays deeper than 8 m by day and in the shallows at night; juveniles on sandy beaches all day (upper Paraná; search excerpt)"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABDF."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABDF. Occurrence pass: night raised: freshwater stingrays feed mostly at night, and big ones come into the shallows after dark."
   },
   {
     "speciesId": "pseudoplatystoma-punctifer",
@@ -591,18 +621,18 @@
       "night": 2
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
     ],
     "methods": [
       "bait"
@@ -625,9 +655,27 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "FishBase: Pseudoplatystoma tigrinum (congener)",
+        "url": "https://fishbase.se/summary/8695",
+        "accessed": "2026-11-25",
+        "supports": "a nocturnal, opportunistic piscivore of the main river bed and flooded forest; migrates with its prey at the end of the dry season (search excerpt; congener of P. punctifer)"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABD."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
   },
   {
     "speciesId": "serrasalmus-manueli",
@@ -758,24 +806,24 @@
       "night": 0.3
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.6,
+      1.6,
+      1.2,
+      1.0,
+      0.9,
+      0.7,
+      0.6,
+      0.6,
+      0.7,
+      0.8,
+      1.0,
+      1.4
     ],
     "methods": [
       "hand"
     ],
     "affinity": {},
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Semaprochilodus insignis",
@@ -794,9 +842,27 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BDF)"
+      },
+      {
+        "title": "Neotropical Ichthyology: Semaprochilodus migration between black and white water",
+        "url": "https://scielo.br/j/ni/a/YsCSXjbXzZ76tTygF6wC7Zg/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "adults leave blackwater rivers for white water to spawn in the rising-water season, and return afterwards (search excerpt)"
+      },
+      {
+        "title": "Ribeiro and Petrere: fisheries ecology and management of the jaraqui in central Amazonia",
+        "url": "https://repositorio.unesp.br:443/items/8b9c0924-5e88-44af-9ae8-df69bae94740/full",
+        "accessed": "2026-11-25",
+        "supports": "a spawning run at the start of the flood and a dispersal migration in mid-flood; about three months around the run act as a natural closed season (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats BDF. Jaraqui are detritivores and rarely take a hook; in town they are caught with cast nets, so the game gives them only to the cast net. Their spawning and dispersal runs are not modelled."
+    "designNotes": "Placed in the town bank of the main river (read as the checklist's main channel and beach habitats); the checklist records it in habitats BDF. Jaraqui are detritivores and rarely take a hook; in town they are caught with cast nets, so the game gives them only to the cast net. Their spawning and dispersal runs are not modelled. Occurrence pass: schools run past the town at the start of the rise, December to February, and again less strongly in mid-flood; scarce at high water."
   },
   {
     "speciesId": "macrobrachium-brasiliense",
@@ -865,18 +931,18 @@
       "night": 1
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.0,
+      0.9,
+      0.8,
+      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.9,
+      1.1,
+      1.3,
+      1.3,
+      1.2
     ],
     "methods": [
       "sight"
@@ -895,7 +961,20 @@
         "url": "https://www.icmbio.gov.br/cma/images/stories/Legislacao/Instruções_normativas/IN_mma_n6_de_17_de_julho_2014_Piracatinga.pdf",
         "accessed": "2026-11-25",
         "supports": "ban on piracatinga fishing from 1 January 2015, because of the killing of river dolphins for bait (search excerpt)"
+      },
+      {
+        "title": "Martin and da Silva (2004): river dolphins and flooded forest, seasonal habitat use",
+        "url": "https://nora.nerc.ac.uk/id/eprint/12275/",
+        "accessed": "2026-11-25",
+        "supports": "botos follow fish into the floodplain at high water and leave it for the rivers at low water (Mamirauá; search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
-    ]
+    ],
+    "designNotes": "Occurrence pass: more often in the river at low water, when botos leave the flooded forest."
   }
 ]

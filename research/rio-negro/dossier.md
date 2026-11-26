@@ -1,6 +1,6 @@
 # Rio Negro research dossier (region 2, M3)
 
-**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. Still outstanding: step 7, an independent review of the occurrence records, and open questions 2 (peacock bass sellable) and 6 (Old Gold released).
+**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. The occurrence pass (step 4) checked all 100 records on 25 November 2026 and moved the flood calendar to the Barcelos gauge; see "Occurrence pass" below. Still outstanding: step 7, an independent review, and open questions 2 (peacock bass sellable) and 6 (Old Gold released).
 
 Started 25 November 2026. Steps 1 and 2 (region and long list) are done, the anchor at Barcelos is confirmed (Andy, 25 November 2026), and step 4's **species records** are written: `content/species/rio-negro.json`, 38 species, all validated. Step 5's **legendary is drafted** (Old Gold, a 95 cm speckled peacock bass) and waits on one decision (whether he is released). Occurrence records, rumours, the review and the simulator runs come next. Occurrences need the region's locations and zones, which are part of the M3 build.
 
@@ -37,14 +37,18 @@ This is the region's signature mechanic in the spec: "high and low water change 
 - **Timing at Manaus:** peak from May to July, low in October and November (SGB). A long-term average chart (1987–2007) shows about 22 m in January, about 28 m in June and July, and a minimum of about 19 m in November.
 - **Barcelos** is about 500 km upstream. Lodges there fish the low water from about September to February or March, and describe the water starting to rise in December. Barcelos set a flood record of 10.33 m on its own gauge, beating 1976's 10.32 m. I could not read SGB's Barcelos station table: the bulletin links have moved. So the timing for Barcelos is medium confidence: highest about June and July, lowest about October to December.
 
-**Proposed game seasons** (for the build to confirm):
+**Barcelos gauge (found in the occurrence pass).** Chao (2001), reviewing Project Piaba, plots the Barcelos gauge from 1967 to 1998: high water "between June and August", low water "usually from December to March", a range of about 7 m in the channel. His monthly readings are lowest from October to December in both years he tabulates (1995/96: 216–239 cm; 1998/99: 313–315 cm in November and December, against 905 cm in July), and rise from January. So Barcelos runs about a month behind Manaus at the top of the year.
+
+**Game seasons** (`Region.water`, changed in the occurrence pass from the Manaus reading the build first used):
 
 | Months | Phase | Zones |
 | --- | --- | --- |
-| Sep–Dec | Low water | Beaches exposed; lagoons cut off and fish crowded; no flooded forest |
-| Jan–Mar | Rising water | Beaches go under; the forest starts to flood |
-| Apr–Aug | High water | Flooded forest open; fish spread out into it |
-| (late Jul–Aug) | Falling water | Fish leave the forest back into channels and lagoons |
+| Oct–Dec | Low water | Beaches exposed; lagoons cut off and fish crowded; no flooded forest |
+| Jan–May | Rising water | Beaches go under; the forest floods |
+| Jun–Aug | High water | The canopy zone opens; fish spread out into the forest |
+| Sep | Falling water | Fish leave the forest back into channels and lagoons; the beaches come back |
+
+The beach (low and falling), the drowned bank (rising and high) and the Flooded Forest (open January to August) keep the months they had. Only the canopy zone moves, from April–July to June–August.
 
 Anglers report the best peacock bass fishing as the water drops and in the low-water months, when fish concentrate (MidCurrent, January 2026; lodge pages). High water disperses them into the forest. That is the gameplay trade the mechanic offers: fruit-eaters and forest fish at high water, predators at low water.
 
@@ -238,7 +242,7 @@ Four conditions, inside the spec's three to five. `chancePerCast` 0.1, the spec'
 | where | "He lies under the fallen tree in the mouth of the lagoon, where the water goes deep." | A guide (quest) |
 | when | "In the heat of the day, when the sun is high. He doesn't stir for the dawn." | A town fisher (quest) |
 | bait | "He wants noise on the surface. A big popper, chugged hard across the top." | The tackle seller (quest) |
-| season | "Only at low water, September to November, when the lagoon is cut off and crowded." | `museum:rio-negro` (the region's museum wing) |
+| season | "As the water drops and then lies low, September to November, when the lagoon is cut off and crowded." (Changed in the occurrence pass: September is now falling water.) | `museum:rio-negro` (the region's museum wing) |
 
 "He doesn't stir for the dawn" is a statement about him, not the species. Big peacocks are taken on sandbars early and late in the day (IGFA), so the rumour must not say that of peacock bass in general. When the occurrence records are written, the lagoon-mouth zone must give speckled peacock bass a day phase and September to November months at least as strong as dawn, or the season and phase clues will read as wrong against the field guide.
 
@@ -267,7 +271,7 @@ Four conditions, inside the spec's three to five. `chancePerCast` 0.1, the spec'
     { "dimension": "where", "text": "He lies under the fallen tree in the mouth of the lagoon, where the water goes deep.", "sourceQuestId": "(guide quest)" },
     { "dimension": "when", "text": "In the heat of the day, when the sun is high. He doesn't stir for the dawn.", "sourceQuestId": "(town fisher quest)" },
     { "dimension": "bait", "text": "He wants noise on the surface. A big popper, chugged hard across the top.", "sourceQuestId": "(tackle seller quest)" },
-    { "dimension": "season", "text": "Only at low water, September to November, when the lagoon is cut off and crowded.", "sourceQuestId": "museum:rio-negro" }
+    { "dimension": "season", "text": "As the water drops and then lies low, September to November, when the lagoon is cut off and crowded.", "sourceQuestId": "museum:rio-negro" }
   ],
   "fight": { "staminaMult": 2.5 }
 }
@@ -278,6 +282,60 @@ Four conditions, inside the spec's three to five. `chancePerCast` 0.1, the spec'
 ### Kept or released
 
 Real record peacock bass are released: Amazonas sport fishing is catch-and-release by decree, and the Marié fishery is catch-and-release. The draft proposes that Old Gold is released after the photograph whatever the species' sellable flag says. The schema has no release flag on a legendary, so the build would need one (open question 6). The Bishop is released only because tarpon are release-only.
+
+## Occurrence pass (step 4, 25 November 2026)
+
+The M3 build placed all 38 species at the five spots (100 records) by their checklist habitat codes, with generic time-of-day values and, for 75 records, flat months. This pass checked them against species sources. 60 records changed; 31 are now medium confidence (was 17). Every changed record says what changed and why in `designNotes`.
+
+### The calendar
+
+The build used Manaus timing (high April to July). The Barcelos gauge in Chao (2001) peaks June to August and bottoms October to December, so `Region.water` now reads rising January to May, high June to August, falling September, low October to December (see "The flood pulse" above). Every month curve that followed the water (the 25 records with a low-water, high-water or mild low-water curve) moved one month later with it, and every record now cites Chao instead of the SGB Manaus note.
+
+### Months
+
+| Species | Spot | Change | Why |
+| --- | --- | --- | --- |
+| Jaraqui | Town (cast net) | Flat → peak December to February (1.4–1.6), low at high water (0.6) | Adults run out of black water to spawn as the water starts rising, with a weaker dispersal run in mid-flood (Neotropical Ichthyology; Ribeiro and Petrere) |
+| Matrinxã | Rapids, lagoon mouth | Flat → peak December to February (1.3–1.4) | A medium-distance migrant with spawning runs in rising water (Águas Amazônicas). The forest and drowned bank keep the high-water fruit curve. |
+| Cardinal tetra | Lagoon stream (net) | Flat → peak October to February (1.3–1.5), low June and July (0.4) | The Barcelos piabeiros' season is low water, October to February (Chao 2001) |
+| Redhook pacu | Rapids | Flat → mild low-water peak (1.2–1.3) | Barcelos pacu landings are highest in September, October and December (WIT 2015; search excerpt) |
+| Piraíba, redtail, sorubim, barba-chata, jaú | Channel, waterfront edge, lagoon mouth, plunge pool | Flat → mild low-water peak (1.2–1.4 October to December, 0.6–0.7 at high water) | Large catfish fall back to the channels at low water (Madeira diet study); redtail eat fruit in the forest at high water (Águas Amazônicas) |
+| Peacock bass (all three) | Flooded forest, drowned bank | Flat → 0.7 while the water rises, 0.9 at high water | Peacocks are "lethargic in rising water" (IGFA) |
+| Amazon river dolphin | Waterfront edge, channel edge | Flat → mild low-water peak | Botos follow fish into the forest at high water and leave it for the rivers at low water (Martin and da Silva 2004) |
+
+### Time of day
+
+| Species | Change | Why |
+| --- | --- | --- |
+| Peacock bass (all three) | Peak moved from dawn (1.5) to day (1.4); dawn 1.2, dusk 1.1 | Feeding is heightened from 9 am to 3 pm on warm sunny days (IGFA). On the main-river sandbars, where big fish come "in the early mornings and late afternoons", dawn and dusk stay high. |
+| Black piranha | Dawn and dusk 1.1 → 1.4, day 1.2 → 0.9, night 0.3 → 0.6 | Radio-tracked fish in Peru peaked at dawn; a reservoir study in Amapá found them most active from dusk to early morning. At night 1.0 piranhas stole most live baits after dark in the simulator, so night is held at 0.6, between the two studies. |
+| Ocellate stingray | Night 0.6 → 1.3 (1.6 on the beach), day lowered | Mostly nocturnal feeders; big rays move from deep water by day into the shallows at night (Garrone Neto and Uieda 2012, upper Paraná) |
+| Giant otter | Flat → day and twilight 1.2, night 0.3 | Mostly diurnal; 11% of den photos at night (PeerJ 2024) |
+
+### Confirmed as written
+
+- **Night feeders:** electric eel (nocturnal predator), redtail catfish (strictly nocturnal feeding in captive juveniles), sorubim (FishBase, for its congener *P. tigrinum*).
+- **Tambaqui** in the flooded forest eating fruit through the flood (two tambaqui studies).
+- **Arapaima** peaking at low water: pairs form from about September to January (Castello 2008).
+
+### No source found
+
+These keep the build's values, at low confidence: the time of day of trahira (a captive study found it switches between night and day), payara, piraíba, jaú, silver croaker, dogfish characin, bicuda, freshwater barracuda, apapá and Manuel's piranha; any season for the arowanas, payara, oscar, severum, eartheater and the small characins; and seasonal sightings of the turtle (it nests on Rio Negro beaches in October and December, at a spot the game does not have). Payara are fished at low water in the upper Negro's lodge season (mid-August to mid-November, The Fly Shop), but no source is about payara themselves.
+
+### Rumours and clues affected
+
+All 20 Rio Negro rumours were checked against the new values: every cell they mark is still at least 1.0.
+- *tambaqui-high* said "April to July" and marked those months. It now says "through the high water, June to August".
+- *arapaima-low* said "at low water, September to December". September is now falling water, so it says "as the water drops and the lagoon shrinks, September to December".
+- **Old Gold's season clue** said "Only at low water, September to November". It now says "As the water drops and then lies low, September to November". His months are unchanged, and the speckled peacock at the lagoon mouth still peaks in them (1.4 to 1.7) with day above dawn.
+
+### Simulator effect
+
+The same 16 runs (4,000 casts, seed 7), before and after:
+- **Coins per hour** move by under 10% in almost every spot and month, so the region's prices (DECISIONS 73) still hold. The waterfront on arrival gear moves 1–4%.
+- **Night live bait on the sand beach:** −16%. Piranhas now steal 42% of baits there after dark (26% before).
+- **The giant rig in the rapids' eddies at night:** −35 to −41%, from the same bait theft. The plunge pool, where that rig belongs, moves 1–10%.
+- **The canopy zone** is gone in May and opens in June.
 
 ## Selection against the quotas (draft)
 
@@ -307,7 +365,7 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 
 1. **Is Barcelos the anchor?** It fits every spec seed species, with one caveat: arapaima and tambaqui are scarcer in blackwater than in the whitewater floodplains near Manaus. The checklist records both in the basin (arapaima in lakes and tributaries; tambaqui only in tributaries). The game can keep them as rare and epic.
 2. **Peacock bass: sellable or release-only?** The records keep them sellable for now. Amazonas sport fishing is catch-and-release by decree, and a 2023 bill bans selling tucunaré commercially. The game's market buys fish. This is the same kind of choice as bonefish in the Cayes.
-3. **How the flood pulse maps to the calendar.** The proposed seasons use Manaus timing, adjusted for Barcelos lodge reports. Each location runs on its own real local calendar, so the game will flood the forest from about April to August every year.
+3. **Resolved: the flood pulse follows the Barcelos gauge** (occurrence pass, 25 November 2026): rising January to May, high June to August, falling in September, low October to December (Chao 2001). The forest is open from January to August, as before. Real years vary by a month or more (the 1997/98 El Niño kept Barcelos 2 m low until March); the game uses one average year.
 4. **Net method content.** Cardinal tetra (and possibly *Potamotrygon wallacei*) would be the first true net catches. The schema reserves the method.
 5. **Resolved: the speckled peacock bass in-game maximum is 90 cm** (Andy, 25 November 2026), below Old Gold's 95 cm. FishBase gives 99 cm; the record fish run 89 to 94 cm.
 6. **Is Old Gold released?** Real record peacock bass are released, and Amazonas sport fishing is catch-and-release. Releasing him needs a flag on the legendary.
@@ -315,8 +373,8 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 ## Still to do
 
 - **Step 3:** confirm the selection and set rarity per spot and season.
-- **Step 4, occurrences:** draft per spot and water level once the build defines the locations. Spawning runs (jaraqui, matrinxã) and peacock bass by water level need specific sources.
+- **Step 4, occurrences:** done (occurrence pass). 69 of 100 records are still low confidence; the gaps are listed under "No source found".
 - **Other creatures quota:** the spec asks for 5–8. Blackwater supports few. The region has a prawn and the cardinal tetra (a fish, by net); a second prawn or crab needs a Barcelos source.
 - **Step 5:** the legendary is drafted. The build must define the lagoon and its lagoon-mouth zone and assign the three quest clue sources; then he goes into `content/legendaries.json` and the bot tunes his fight. Open question 6 decides whether he is released.
-- **Steps 6–8:** rumours, independent review, validator and simulator.
-- **Hydrology:** read the SGB station table for Barcelos.
+- **Step 7:** independent review of every rare and epic record and 30% of the rest.
+- **Hydrology:** done; the Barcelos gauge from Chao (2001). The SGB station table is still unread.

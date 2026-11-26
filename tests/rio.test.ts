@@ -16,7 +16,7 @@ import { wingSpecies } from '../src/state/museum';
 const { content } = loadContentNode();
 // Manaus is UTC-4 with no daylight saving.
 const LOW = Date.parse('2026-11-20T15:00:00Z'); // 11:00 local, low water
-const HIGH = Date.parse('2027-05-12T15:00:00Z'); // high water
+const HIGH = Date.parse('2027-07-12T15:00:00Z'); // high water
 const RISING = Date.parse('2027-02-10T15:00:00Z');
 const at = (now: number): Ctx => ({ content, now, deviceTz: 'America/Chicago' });
 const REGION = 'rio-negro';
@@ -33,13 +33,13 @@ function veteran(now = LOW) {
 }
 
 describe('the flood pulse', () => {
-  it('follows the Rio Negro calendar: rising Jan–Mar, high Apr–Jul, falling Aug, low Sep–Dec', () => {
+  it('follows the Barcelos calendar: rising Jan–May, high Jun–Aug, falling Sep, low Oct–Dec', () => {
     const cal = Array.from({ length: 12 }, (_, m) => waterLevel(content, REGION, m));
-    expect(cal).toEqual(['rising', 'rising', 'rising', 'high', 'high', 'high', 'high', 'falling', 'low', 'low', 'low', 'low']);
+    expect(cal).toEqual(['rising', 'rising', 'rising', 'rising', 'rising', 'high', 'high', 'high', 'falling', 'low', 'low', 'low']);
     expect(waterLevel(content, 'belize-cayes', 5)).toBeNull();
     expect(waterNow(at(LOW), REGION)).toBe('low');
     expect(waterNow(at(HIGH), REGION)).toBe('high');
-    expect(nextWater(content, REGION, 10, ['high'])).toEqual({ month: 3, inMonths: 5 });
+    expect(nextWater(content, REGION, 10, ['high'])).toEqual({ month: 5, inMonths: 7 });
   });
 
   it('the beach exists only at low and falling water; the drowned bank only at rising and high', () => {

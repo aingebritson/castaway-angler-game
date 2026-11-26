@@ -54,3 +54,21 @@ Accessed 25 November 2026. "Search excerpt" means only the search result was see
 - [Field and Stream: Gerald Lawson's 27 lb Rio Negro record, December 1994](https://www.fieldandstream.com/new-world-record-peacock-bass-caught-brazils-rio-negro/?amp) (search excerpt)
 - [Florida Sportsman: the Marié River's 14 kg fish](https://www.floridasportsman.com/editorial/brazil-giant-peacock-bass/397730): 87 cm, 22 November 2017, pending at the time (search excerpt). The Socioambiental print page returned an error.
 - [Wikipedia: Cichla temensis](https://en.wikipedia.org/wiki/Cichla_temensis): breeding at the end of the dry season, brood guarding and fasting, the speckled and golden barred colour phases, the nuchal hump, the IGFA 28.5 lb figure
+
+## Occurrence pass (step 4)
+
+- Chao, N. L. (2001). [The fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, Brazil: a review of Project Piaba (1989–99)](https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf). Read in full (text extracted from the PDF): the Barcelos gauge (1967–98) and monthly levels for 1995/96 and 1998/99; the ornamental fishing season at low water, October to February.
+- [Reis et al. (2026): ethnoichthyological knowledge of commercial fishermen in Barcelos, Ethnobiology and Conservation 15:14](https://ethnobioconservation.com/ebc/article/view/818) (abstract only): fishers place the breeding of commercial fish from January to June, and of peacock bass all year.
+- [Fish landings in Barcelos, WIT Transactions on Ecology and the Environment 192 (2015)](https://www.witpress.com/elibrary/wit-transactions-on-ecology-and-the-environment/192/34136) (search excerpt; the paper returned an error): pacu landings highest in September, October and December.
+- Jaraqui: [Neotropical Ichthyology](https://scielo.br/j/ni/a/YsCSXjbXzZ76tTygF6wC7Zg/?lang=en) and [Ribeiro and Petrere](https://repositorio.unesp.br:443/items/8b9c0924-5e88-44af-9ae8-df69bae94740/full) (search excerpts)
+- Matrinxã: [Águas Amazônicas](https://en.aguasamazonicas.org/fish/matrinxa) (search excerpt)
+- Tambaqui: [life history and management, Revista Brasileira de Zoologia](https://scielo.br/j/rbzool/a/gQRV47qdG65ttvNgnDzb6cd/?lang=en) and [Acta Amazonica (2003): seasonal nutrients in its natural food](https://doaj.org/article/180784c9199b4ac4abfac9a25588a693) (search excerpts)
+- Black piranha: [Cohen et al. (1999), Environmental Biology of Fishes](https://link.springer.com/article/10.1023/A:1007489424146) and [The Scientific World Journal (2017)](https://doaj.org/article/2614bc112d9a4af9b9253cf81df8fce2) (search excerpts)
+- Stingray: [Garrone Neto and Uieda (2012), Neotropical Ichthyology](https://scielo.br/j/ni/a/DCP3tWhsbYrDRjnmPdLWPMG/?lang=en) (search excerpt)
+- Electric eel: [Bastos et al. (2021), Ecology and Evolution](https://pmc.ncbi.nlm.nih.gov/articles/PMC7863634) (search excerpt)
+- Large catfish: [diet seasonality in the Madeira River, Acta Amazonica](https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en); [Águas Amazônicas: fishing on the Amazon River](https://en.aguasamazonicas.org/fisheries/fishing/amazon-river) (redtail); [FishBase: Pseudoplatystoma tigrinum](https://fishbase.se/summary/8695) (sorubim congener) (search excerpts)
+- Arapaima: [Castello (2008): nesting habitat in Amazonian floodplains](https://mamiraua.org.br/wp-content/uploads/2025/11/Nesting-Habitat-of-Arapaima-gigas-Schinz-in-Amazonian-Floodplains.pdf) (search excerpt)
+- River dolphin: [Martin and da Silva (2004)](https://nora.nerc.ac.uk/id/eprint/12275/) (search excerpt)
+- Giant otter: [PeerJ (2024)](https://peerj.com/articles/17244) and [PeerJ (2023)](https://peerj.com/articles/15742) (search excerpts)
+- Red-headed river turtle nesting: [INPA: nesting ecology of Podocnemis erythrocephala on the Rio Negro](https://repositorio.inpa.gov.br/items/a743bda4-680a-4023-aeed-31565e6b2ea7/full) (search excerpt; not used in a record)
+- Upper Negro lodge season: [The Fly Shop: Rio Marié](https://www.theflyshop.com/travel/brazil/rio-marie.html) (search excerpt; not used in a record)

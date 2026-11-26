@@ -7,24 +7,24 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.5,
-      "day": 1.1,
-      "dusk": 1.3,
+      "dawn": 1.2,
+      "day": 1.4,
+      "dusk": 1.1,
       "night": 0
     },
     "monthMod": [
-      0.9,
+      1.1,
       0.8,
       0.7,
       0.6,
       0.5,
       0.5,
-      0.6,
-      1.1,
-      1.5,
+      0.5,
+      0.8,
+      1.4,
       1.7,
       1.7,
-      1.3
+      1.4
     ],
     "methods": [
       "bait",
@@ -55,16 +55,16 @@
         "supports": "present in the Rio Negro basin (habitat codes BDF)"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       },
       {
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -73,7 +73,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA)."
   },
   {
     "speciesId": "myloplus-rubripinnis",
@@ -90,18 +90,18 @@
       "night": 0.3
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.0,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1.2,
+      1.3,
+      1.2,
+      1.2
     ],
     "methods": [
       "bait"
@@ -130,9 +130,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BCDG (lakes, tributaries, rapids))"
+      },
+      {
+        "title": "Fish landings in Barcelos, middle Negro River, WIT Transactions on Ecology and the Environment 192 (2015)",
+        "url": "https://www.witpress.com/elibrary/wit-transactions-on-ecology-and-the-environment/192/34136",
+        "accessed": "2026-11-25",
+        "supports": "Barcelos landings (February 2012 to January 2013, against the Barcelos gauge): pacu catches highest in September, October and December, at low water (search excerpt; the paper could not be read)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BCDG."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BCDG. Occurrence pass: mild low-water peak: Barcelos pacu landings are highest in September, October and December."
   },
   {
     "speciesId": "leporinus-fasciatus",
@@ -208,18 +220,18 @@
       "night": 0.4
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.4,
+      1.3,
+      1.0,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.3
     ],
     "methods": [
       "bait",
@@ -251,9 +263,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "Águas Amazônicas: matrinxã",
+        "url": "https://en.aguasamazonicas.org/fish/matrinxa",
+        "accessed": "2026-11-25",
+        "supports": "medium-distance migrant making spawning runs in the rising-water season; adults most abundant in blackwater and clearwater tributaries; prefers fruits and seeds (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BD."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BD. Occurrence pass: peak at the start of the rise, December to February, for the spawning run."
   },
   {
     "speciesId": "cichla-temensis",
@@ -263,24 +287,24 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1.5,
-      "day": 1.1,
-      "dusk": 1.3,
+      "dawn": 1.2,
+      "day": 1.4,
+      "dusk": 1.1,
       "night": 0
     },
     "monthMod": [
-      0.9,
+      1.1,
       0.8,
       0.7,
       0.6,
       0.5,
       0.5,
-      0.6,
-      1.1,
-      1.5,
+      0.5,
+      0.8,
+      1.4,
       1.7,
       1.7,
-      1.3
+      1.4
     ],
     "methods": [
       "bait",
@@ -311,16 +335,16 @@
         "supports": "present in the Rio Negro basin (habitat codes BDF)"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       },
       {
         "title": "IGFA: King of the Jungle, giant peacock bass on fly",
         "url": "https://igfa.org/?p=66250",
         "accessed": "2026-11-25",
-        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures"
+        "supports": "peacock bass feed by day; at low water the lagoons are packed with big fish; they hold on fallen trees, deep pools and lagoon mouths, and take big surface lures; peacocks are \"lethargic in rising water\"; feeding heightened 9 am to 3 pm on warm sunny days; big fish on main-river sandbars early and late"
       },
       {
         "title": "MidCurrent (January 2026): dropping water triggers peacock bass feeding",
@@ -329,7 +353,7 @@
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA)."
   },
   {
     "speciesId": "rhaphiodon-vulpinus",
@@ -346,18 +370,18 @@
       "night": 0.4
     },
     "monthMod": [
-      0.9,
+      1.1,
       0.8,
       0.7,
       0.6,
       0.5,
       0.5,
-      0.6,
-      1.1,
-      1.5,
+      0.5,
+      0.8,
+      1.4,
       1.7,
       1.7,
-      1.3
+      1.4
     ],
     "methods": [
       "bait",
@@ -390,13 +414,13 @@
         "supports": "present in the Rio Negro basin (habitat codes BDF (listed as Raphiodon vulpinus))"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001)."
   },
   {
     "speciesId": "boulengerella-cuvieri",
@@ -413,18 +437,18 @@
       "night": 0.1
     },
     "monthMod": [
-      0.9,
+      1.1,
       0.8,
       0.7,
       0.6,
       0.5,
       0.5,
-      0.6,
-      1.1,
-      1.5,
+      0.5,
+      0.8,
+      1.4,
       1.7,
       1.7,
-      1.3
+      1.4
     ],
     "methods": [
       "bait",
@@ -458,13 +482,13 @@
         "supports": "present in the Rio Negro basin (habitat codes BDFH)"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001)."
   },
   {
     "speciesId": "hydrolycus-armatus",
@@ -481,18 +505,18 @@
       "night": 0.4
     },
     "monthMod": [
-      0.9,
+      1.1,
       0.8,
       0.7,
       0.6,
       0.5,
       0.5,
-      0.6,
-      1.1,
-      1.5,
+      0.5,
+      0.8,
+      1.4,
       1.7,
       1.7,
-      1.3
+      1.4
     ],
     "methods": [
       "bait",
@@ -532,13 +556,13 @@
         "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats D. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats D. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001)."
   },
   {
     "speciesId": "serrasalmus-manueli",
@@ -675,18 +699,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
     ],
     "methods": [
       "bait"
@@ -710,9 +734,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABCD)"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats ABCD."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats ABCD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
   },
   {
     "speciesId": "serrasalmus-rhombeus",
@@ -723,10 +759,10 @@
     ],
     "rarity": "common",
     "phaseMod": {
-      "dawn": 1.1,
-      "day": 1.2,
-      "dusk": 1.1,
-      "night": 0.3
+      "dawn": 1.4,
+      "day": 0.9,
+      "dusk": 1.4,
+      "night": 0.6
     },
     "monthMod": [
       1,
@@ -753,7 +789,7 @@
       "spoon": 0.6,
       "jig": 0.6
     },
-    "confidence": "low",
+    "confidence": "medium",
     "sources": [
       {
         "title": "FishBase: Serrasalmus rhombeus",
@@ -772,9 +808,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BCDF)"
+      },
+      {
+        "title": "Cohen et al. (1999): radio-tracking of black piranhas in Coco Cocha, Peru, Environmental Biology of Fishes",
+        "url": "https://link.springer.com/article/10.1023/A:1007489424146",
+        "accessed": "2026-11-25",
+        "supports": "adult Serrasalmus rhombeus movement and activity cycles synchronised with dawn (dry season; search excerpt)"
+      },
+      {
+        "title": "The Scientific World Journal (2017): diel activity of Serrasalmus rhombeus and S. gibbus, Coaracy Nunes reservoir, Amapá",
+        "url": "https://doaj.org/article/2614bc112d9a4af9b9253cf81df8fce2",
+        "accessed": "2026-11-25",
+        "supports": "S. rhombeus bimodal over 24 hours, most active between dusk and early morning (search excerpt)"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BCDF."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BCDF. Occurrence pass: dawn and dusk raised and night from 0.3 to 0.6: radio-tracked black piranhas peak at dawn, and a reservoir study found them most active from dusk to early morning. Night is held at 0.6, between the two, because at 1.0 piranhas stole most live baits after dark."
   },
   {
     "speciesId": "plagioscion-squamosissimus",
@@ -846,18 +894,18 @@
       "night": 2
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
     ],
     "methods": [
       "bait"
@@ -880,9 +928,27 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes ABDH)"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "FishBase: Pseudoplatystoma tigrinum (congener)",
+        "url": "https://fishbase.se/summary/8695",
+        "accessed": "2026-11-25",
+        "supports": "a nocturnal, opportunistic piscivore of the main river bed and flooded forest; migrates with its prey at the end of the dry season (search excerpt; congener of P. punctifer)"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats ABD."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats ABD. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
   },
   {
     "speciesId": "hydrolycus-armatus",
@@ -898,18 +964,18 @@
       "night": 0.4
     },
     "monthMod": [
-      0.9,
+      1.1,
       0.8,
       0.7,
       0.6,
       0.5,
       0.5,
-      0.6,
-      1.1,
-      1.5,
+      0.5,
+      0.8,
+      1.4,
       1.7,
       1.7,
-      1.3
+      1.4
     ],
     "methods": [
       "bait",
@@ -949,13 +1015,13 @@
         "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
       },
       {
-        "title": "SGB technical note: Rio Negro low-water forecast, 2025",
-        "url": "https://rigeo.sgb.gov.br/jspui/bitstream/doc/25675/3/prognostico_niveis_rio_negro_vazante_2025_nota_tecnica.pdf",
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
         "accessed": "2026-11-25",
-        "supports": "the Negro peaks May to July and is lowest in October and November (search excerpt); the game reads this as rising January to March, high April to July, falling in August, low September to December"
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats D. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats D. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001)."
   },
   {
     "speciesId": "phractocephalus-hemioliopterus",
@@ -971,18 +1037,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
     ],
     "methods": [
       "bait"
@@ -1015,9 +1081,27 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-25",
+        "supports": "pirarara eat fruit in the flooded forest at high water and are common in river channels at low water (search excerpt)"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BD. Needs the fish finder to find the deep hole under the falls."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats BD. Needs the fish finder to find the deep hole under the falls. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
   },
   {
     "speciesId": "zungaro-zungaro",
@@ -1033,18 +1117,18 @@
       "night": 1.8
     },
     "monthMod": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
     ],
     "methods": [
       "bait"
@@ -1075,9 +1159,21 @@
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
         "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats D. Jaú lie in deep holes below rapids. Needs the fish finder: without one the player cannot find the hole."
+    "designNotes": "Placed in a tributary with rapids (checklist codes D and G); the checklist records it in habitats D. Jaú lie in deep holes below rapids. Needs the fish finder: without one the player cannot find the hole. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water."
   },
   {
     "speciesId": "pteronura-brasiliensis",
@@ -1087,10 +1183,10 @@
     ],
     "rarity": "uncommon",
     "phaseMod": {
-      "dawn": 1,
-      "day": 1,
-      "dusk": 1,
-      "night": 1
+      "dawn": 1.2,
+      "day": 1.2,
+      "dusk": 1.2,
+      "night": 0.3
     },
     "monthMod": [
       1,
@@ -1123,7 +1219,20 @@
         "url": "https://rsis.ramsar.org/ris/2335",
         "accessed": "2026-11-25",
         "supports": "giant otter listed for the Rio Negro Ramsar site (search excerpt)"
+      },
+      {
+        "title": "PeerJ (2024): giant otters are more nocturnal around dens than neotropical otters",
+        "url": "https://peerj.com/articles/17244",
+        "accessed": "2026-11-25",
+        "supports": "giant otters mostly diurnal; 11% of den photos at night; dens in the bank reachable at low water (search excerpt)"
+      },
+      {
+        "title": "PeerJ (2023): human disturbance and the daytime activity of sympatric otters along equatorial Amazonian rivers",
+        "url": "https://peerj.com/articles/15742",
+        "accessed": "2026-11-25",
+        "supports": "little change in activity between seasons (search excerpt)"
       }
-    ]
+    ],
+    "designNotes": "Occurrence pass: seen by day, seldom at night (mostly diurnal); no seasonal change."
   }
 ]
