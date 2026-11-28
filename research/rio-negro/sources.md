@@ -92,3 +92,16 @@ Accessed 25 November 2026. "Search excerpt" means only the search result was see
 - [Valle (2018): botos and tucuxis in the lower Negro, INPA](https://repositorio.inpa.gov.br/handle/1/11389) (search excerpt)
 - Silver croaker twilight-nocturnal habit: [Acta Scientiarum Biological Sciences (2009), Piató Lagoon](https://doaj.org/article/93d2dfda25ff4d7eb6f7568e09b18a4b) (search excerpt; the companion diet paper by Costa et al. 2009, vol. 31(3): 285–292, was downloaded but its body text could not be extracted)
 - [Wikipedia: Giant otter](https://en.wikipedia.org/wiki/Giant_otter) and [Amazon river dolphin](https://en.wikipedia.org/wiki/Amazon_river_dolphin)
+
+## Step 8
+
+- [Wikipedia: Tambaqui](https://en.wikipedia.org/wiki/Tambaqui) (search excerpt): in blackwater rivers like the Negro it is rare beyond the lowermost 150 km
+- [Wikipedia: Cichla temensis](https://en.wikipedia.org/wiki/Cichla_temensis): most common where there is little current
+
+## New rare species (28 November 2026)
+
+- Beltrão, Zuanon and Ferreira (2019), Table S1, re-read from the [journal's supplement](https://zookeys.pensoft.net/article/32055/download/suppl/31/): *Oxydoras niger* BDFH, *Leiarius marmoratus* D, *Paratrygon aiereba* AD, *Brachyplatystoma rousseauxii* CDF, *Lepidosiren paradoxa* B
+- FishBase: [Oxydoras niger](https://www.fishbase.se/summary/Oxydoras-niger.html) and [its length-weight table](https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=12108&GenusName=Oxydoras&SpeciesName=niger&fc=146); [Leiarius marmoratus](https://www.fishbase.se/summary/Leiarius-marmoratus.html) and [table](https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=13262&GenusName=Leiarius&SpeciesName=marmoratus&fc=150); [Paratrygon aiereba](https://www.fishbase.se/summary/Paratrygon-aiereba.html); [Brachyplatystoma rousseauxii](https://www.fishbase.se/summary/Brachyplatystoma-rousseauxii.html) and [table](https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=58421&GenusName=Brachyplatystoma&SpeciesName=rousseauxii); [Lepidosiren paradoxa](https://www.fishbase.se/summary/Lepidosiren-paradoxa.html) (considered, not used)
+- [Wikipedia: Paratrygon aiereba](https://en.wikipedia.org/wiki/Paratrygon_aiereba): deep channel by day, shallows at night
+- [Fishing World Records: Brachyplatystoma rousseauxii](https://www.fishing-worldrecords.com/scientificname/Brachyplatystoma%20rousseauxii/show): 38.8 kg, IGFA-verified
+- Review of the new species: [Animal Diversity Web: Oxydoras niger](https://animaldiversity.org/accounts/Oxydoras_niger/) (63% caught by day, Saint-Paul et al. 2000); [Wikipedia: Brachyplatystoma rousseauxii](https://en.wikipedia.org/wiki/Brachyplatystoma_rousseauxii) (platinum head, gold body, short barbels in adults); [FishBase: common names of Leiarius marmoratus](https://www.fishbase.se/comnames/CommonNamesList.php?ID=13262&GenusName=Leiarius&SpeciesName=marmoratus&StockCode=13262)

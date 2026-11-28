@@ -188,7 +188,7 @@ describe('the Rio Negro region', () => {
 
   it('every researched species turns up somewhere in the region', () => {
     const ids = Object.values(content.species).filter((sp) => content.occurrences.some((o) => o.speciesId === sp.id && content.locations[o.locationId].regionId === REGION));
-    expect(ids.length).toBe(38);
+    expect(ids.length).toBe(42);
     expect(wingSpecies(content, REGION).length).toBeGreaterThanOrEqual(25);
   });
 

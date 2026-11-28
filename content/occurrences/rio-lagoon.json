@@ -759,7 +759,7 @@
         "title": "FishBase: Electrophorus varii",
         "url": "https://www.fishbase.se/summary/Electrophorus-varii.html",
         "accessed": "2026-11-25",
-        "supports": "taxonomy, maximum length 149 cm TL, lowland Amazon range, air-breathing, discharge voltages 151-572 V; length-weight a and b (Bayesian TL estimate for this body shape; 23 kg at 149 cm; no record weight). IUCN Not Evaluated"
+        "supports": "taxonomy, maximum length 149 cm TL, lowland Amazon range, air-breathing, discharge voltages 151-572 V; no record weight. Its Bayesian body-shape estimate (a 0.00389, b 3.12) gives 23 kg at 149 cm, more than the heaviest eels known, so it is not used. IUCN Not Evaluated"
       },
       {
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
@@ -976,6 +976,80 @@
       }
     ],
     "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: low-water peak confirmed: pairs form at low water, September to January."
+  },
+  {
+    "speciesId": "arapaima-gigas",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "margin"
+    ],
+    "rarity": "epic",
+    "phaseMod": {
+      "dawn": 1,
+      "day": 1,
+      "dusk": 1.2,
+      "night": 0.6
+    },
+    "monthMod": [
+      1.1,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
+      0.8,
+      1.4,
+      1.7,
+      1.7,
+      1.4
+    ],
+    "methods": [
+      "bait",
+      "lure",
+      "sight"
+    ],
+    "affinity": {
+      "livefish": 1.4,
+      "cutfish": 0.8,
+      "plug": 0.9,
+      "spoon": 0.7,
+      "prop": 0.6
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Arapaima gigas",
+        "url": "https://www.fishbase.se/summary/Arapaima-gigas.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum 450 cm TL (field), common length 200 cm TL, largest published weight 200 kg, air-breathing, April-May nest spawning, seasonal floodplain migration; IUCN DD (1 August 1996) and CITES Appendix II"
+      },
+      {
+        "title": "FishBase length-weight table: Arapaima gigas",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=2076&GenusName=Arapaima&SpeciesName=gigas&fc=628",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the lower Amazon (109-224 cm, n=76); 187 kg at 280 cm, +21% against the IGFA record. At 300 cm it gives 227 kg, +47%."
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "Castello (2008): nesting habitat of Arapaima gigas in Amazonian floodplains",
+        "url": "https://mamiraua.org.br/wp-content/uploads/2025/11/Nesting-Habitat-of-Arapaima-gigas-Schinz-in-Amazonian-Floodplains.pdf",
+        "accessed": "2026-11-25",
+        "supports": "adults pair at low water, about September to January, and nest on lake margins as the water rises (Mamirauá; search excerpt)"
+      }
+    ],
+    "designNotes": "Placed in an archipelago lake (checklist codes B and C); the checklist records it in habitats BD. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: low-water peak confirmed: pairs form at low water, September to January. Added in step 8 at the margin: pairs nest along lake margins as the water rises (Castello 2008)."
   },
   {
     "speciesId": "pellona-castelnaeana",
@@ -1548,5 +1622,69 @@
       }
     ],
     "designNotes": "Review: seen mostly by day, when it basks; no study of its time of day was found."
+  },
+  {
+    "speciesId": "oxydoras-niger",
+    "locationId": "rio-lagoon",
+    "zones": [
+      "open-lagoon"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.0,
+      "day": 1.1,
+      "dusk": 1.0,
+      "night": 0.9
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "shrimp": 1.0,
+      "cutfish": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Oxydoras niger",
+        "url": "https://www.fishbase.se/summary/Oxydoras-niger.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 100 cm SL, common length 59 cm SL, largest published weight 11 kg; adults over mud in streams and lakes, in schools, eating detritus, insect larvae and crustaceans; potamodromous; minor commercial and aquarium fish. IUCN LC, assessed 2 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Oxydoras niger",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=12108&GenusName=Oxydoras&SpeciesName=niger&fc=146",
+        "accessed": "2026-11-28",
+        "supports": "length-weight a and b: SL set, mixed sexes, Serra da Mesa Reservoir (11.1-86 cm, n=835); 14.1 kg at 100 cm SL, +28% against 11 kg. The Madeira SL set gives 16.8 kg (+52%), so it is not used"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes BDFH (H = a literature record, not a habitat))"
+      },
+      {
+        "title": "Animal Diversity Web: Oxydoras niger (as Pseudodoras niger)",
+        "url": "https://animaldiversity.org/accounts/Oxydoras_niger/",
+        "accessed": "2026-11-28",
+        "supports": "Saint-Paul et al. (2000): 63% of fish caught by day and 27% at night; found in black and white water, but not among the 50 commonest blackwater species"
+      }
+    ],
+    "designNotes": "Added on 28 November 2026. Placed in the open lagoon over a muddy bottom (checklist code B; FishBase: adults over mud in lakes). A field study caught 63% of them by day and 27% at night (Saint-Paul et al. 2000, via Animal Diversity Web), so day leans slightly higher."
   }
 ]

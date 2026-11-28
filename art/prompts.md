@@ -610,6 +610,54 @@ A single specimen, full body, seen from directly above with the head pointing le
 Subject: Red-headed river turtle (irapuca) (Podocnemis erythrocephala). Small, smooth, dark brown-black oval shell; head dark with bright red or orange-red patches and stripes, brightest in juveniles and males.
 ```
 
+## specimen/oxydoras-niger
+
+Save as `art/inbox/specimen__oxydoras-niger.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Ripsaw catfish (cuiu-cuiu) (Oxydoras niger). Heavy thorny catfish; dark grey to black; one row of large hooked bony scutes along each flank; three pairs of short barbels around a downturned mouth; tall first dorsal spine.
+```
+
+## specimen/leiarius-marmoratus
+
+Save as `art/inbox/specimen__leiarius-marmoratus.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Sailfin pimeloid (jandiá) (Leiarius marmoratus). Long-bodied pimelodid catfish; tall sail-like dorsal fin; grey-brown body heavily marbled and spotted with dark brown; very long maxillary barbels; forked tail.
+```
+
+## specimen/paratrygon-aiereba
+
+Save as `art/inbox/specimen__paratrygon-aiereba.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, seen from directly above with the head pointing left, any legs, antennae, arms, fins or flippers spread symmetrically and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: body outline, the number and arrangement of legs, arms or fins, and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Discus ray (aramaçá) (Paratrygon aiereba). Nearly circular flat disc; very short, thin tail; small eyes on top; brown upper side, pale below.
+```
+
+## specimen/brachyplatystoma-rousseauxii
+
+Save as `art/inbox/specimen__brachyplatystoma-rousseauxii.png`
+
+```text
+Simplified field-guide watercolour illustration for a cozy mobile fishing game, in the spirit of a naturalist's plate but with cartoon economy of detail. Transparent watercolour washes with a fine dark ink outline of one even weight around every shape, restrained natural palette, clean readable shapes, no fussy texture. Light from the upper left. No text, no lettering, no labels, no border, no frame, no signature, no drop shadow.
+
+A single specimen, full body, side profile facing left, all fins extended and clearly visible, centred with margin around it. Landscape 1536 x 1024 on a fully transparent background, with no paper texture, water, shadow or other animals. Anatomy must be exact: fin count and position, body shape, tail shape, mouth position and key markings. Keep markings as faint or bold as they are on the real animal; do not invent bars or spots.
+
+Subject: Dorado catfish (dourada) (Brachyplatystoma rousseauxii). Long, streamlined pimelodid catfish; pale platinum-grey head, golden body; deeply forked tail; short maxillary barbels in adults (longer in juveniles); small eyes.
+```
+
 # Items
 
 ## item/river-passage

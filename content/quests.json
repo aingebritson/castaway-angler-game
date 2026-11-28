@@ -402,7 +402,8 @@
     "reward": {
       "coins": 40,
       "rumours": [
-        "caparari-night"
+        "caparari-night",
+        "dourada-hole"
       ],
       "items": [
         {
@@ -471,7 +472,8 @@
       "coins": 150,
       "rumours": [
         "payara-rapids",
-        "jau-hole"
+        "jau-hole",
+        "jundia-rocks"
       ]
     }
   },
@@ -518,7 +520,9 @@
       "coins": 30,
       "rumours": [
         "payara-live",
-        "piraiba-live"
+        "piraiba-live",
+        "jundia-live",
+        "aramaca-release"
       ]
     }
   },
@@ -545,7 +549,8 @@
         }
       ],
       "rumours": [
-        "redtail-mouth"
+        "redtail-mouth",
+        "dourada-low"
       ],
       "clues": [
         "old-gold:bait"
@@ -611,7 +616,8 @@
       "coins": 35,
       "rumours": [
         "redtail-night",
-        "caparari-live"
+        "caparari-live",
+        "cuiu-beach"
       ]
     }
   },
@@ -653,7 +659,11 @@
     "progressText": "Catch a redtail catfish",
     "done": "Red tail, yellow belly, a head like a shovel. Yes. That is the one. Thank you.",
     "reward": {
-      "coins": 300
+      "coins": 300,
+      "rumours": [
+        "cuiu-mud",
+        "aramaca-night"
+      ]
     }
   },
   {

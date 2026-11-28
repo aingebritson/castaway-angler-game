@@ -1652,7 +1652,7 @@
         "title": "FishBase: Brachyplatystoma filamentosum",
         "url": "https://www.fishbase.se/summary/Brachyplatystoma-filamentosum.html",
         "accessed": "2026-11-25",
-        "supports": "taxonomy, maximum 360 cm TL, common length 120 cm TL, largest published weight 200 kg, diet including monkeys, soft-bottom habitat. IUCN LC, assessed 14 December 2020 (as shown on FishBase, Red List version 2025-2)"
+        "supports": "taxonomy, maximum 360 cm TL, common length 120 cm TL (about 100 cm SL, used by the game), largest published weight 200 kg, diet including monkeys, soft-bottom habitat. IUCN LC, assessed 14 December 2020 (as shown on FishBase, Red List version 2025-2)"
       },
       {
         "title": "FishBase length-weight table: Brachyplatystoma filamentosum",
@@ -1664,7 +1664,7 @@
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
         "url": "https://zookeys.pensoft.net/article/32055/",
         "accessed": "2026-11-25",
-        "supports": "present in the Rio Negro basin (habitat codes ABC; named in the checklist text among the largest fishes and long-distance migrants)"
+        "supports": "present in the Rio Negro basin (habitat codes ABC); named in the checklist text among the largest fishes; the text describes long-distance migrations for the genus"
       },
       {
         "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
@@ -1686,6 +1686,98 @@
       }
     ],
     "designNotes": "Placed in the main channel (checklist code A); the checklist records it in habitats ABC. Needs the fish finder: without one the player cannot find the deep hole where a piraíba lies. A finder does not make fish bite; this is the game's stand-in for knowing where to anchor. Occurrence pass: mild low-water peak: large catfish fall back to the channels and deep holes at low water. Review: no study of its time of day was found. Night is 1.4 and day 0.7, softened from 1.8 and 0.4, on the fishermen's practice of setting lines at sunset."
+  },
+  {
+    "speciesId": "phractocephalus-hemioliopterus",
+    "locationId": "rio-channel",
+    "zones": [
+      "deep-channel"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 0.8,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.8
+    },
+    "monthMod": [
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "cutfish": 1.6,
+      "livefish": 1.2,
+      "fruit": 0.6,
+      "shrimp": 0.8
+    },
+    "minGear": {
+      "requiresFinder": true
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Phractocephalus hemioliopterus",
+        "url": "https://www.fishbase.se/summary/Phractocephalus-hemioliopterus.html",
+        "accessed": "2026-11-25",
+        "supports": "taxonomy, maximum length 135 cm TL, common length 60 cm TL, largest published weight 44.2 kg, diet including fruit. IUCN LC, assessed 27 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Phractocephalus hemioliopterus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=6421&GenusName=Phractocephalus&SpeciesName=hemioliopterus&fc=150",
+        "accessed": "2026-11-25",
+        "supports": "length-weight a and b: TL set from the Xingu basin (32-134.9 cm, n=115); 42.7 kg at 141 cm, -24% against the IGFA record"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-25",
+        "supports": "present in the Rio Negro basin (habitat codes BD)"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-25",
+        "supports": "at low water the large catfishes retreat to the river channel (search excerpt)"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-25",
+        "supports": "water level at Barcelos (gauge, 1967-98): high June to August, low \"usually from December to March\"; monthly levels in 1998/99 peak in July (905 cm) and bottom in November and December (313-315 cm), and in 1995/96 are lowest October to December. The game reads this as rising January to May, high June to August, falling in September, low October to December"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-25",
+        "supports": "pirarara eat fruit in the flooded forest at high water and are common in river channels at low water (search excerpt)"
+      },
+      {
+        "title": "Wikipedia: Redtail catfish",
+        "url": "https://en.wikipedia.org/wiki/Redtail_catfish",
+        "accessed": "2026-11-25",
+        "supports": "eats during the evening and night and stays motionless during the day"
+      },
+      {
+        "title": "Águas Amazônicas: fishing on the Amazon River",
+        "url": "https://en.aguasamazonicas.org/fisheries/fishing/amazon-river",
+        "accessed": "2026-11-28",
+        "supports": "pirarara can be common in river channels during the low-water period"
+      }
+    ],
+    "designNotes": "Placed in the main channel (checklist code A is not recorded for it; codes BD). Added in step 8: pirarara are common in river channels at low water (Águas Amazônicas). Needs the fish finder, like the piraíba in the same zone. Night peak and low-water month curve as at the plunge pool."
   },
   {
     "speciesId": "inia-geoffrensis",
@@ -1795,5 +1887,127 @@
       }
     ],
     "designNotes": "Review: no survey places tucuxi at Barcelos; the surveys found cover the lower Negro, between Novo Airão and Manaus. Its presence here is assumed."
+  },
+  {
+    "speciesId": "oxydoras-niger",
+    "locationId": "rio-channel",
+    "zones": [
+      "beach"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.0,
+      "day": 1.1,
+      "dusk": 1.0,
+      "night": 0.9
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "worm": 1.4,
+      "shrimp": 1.0,
+      "cutfish": 0.6
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Oxydoras niger",
+        "url": "https://www.fishbase.se/summary/Oxydoras-niger.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 100 cm SL, common length 59 cm SL, largest published weight 11 kg; adults over mud in streams and lakes, in schools, eating detritus, insect larvae and crustaceans; potamodromous; minor commercial and aquarium fish. IUCN LC, assessed 2 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Oxydoras niger",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=12108&GenusName=Oxydoras&SpeciesName=niger&fc=146",
+        "accessed": "2026-11-28",
+        "supports": "length-weight a and b: SL set, mixed sexes, Serra da Mesa Reservoir (11.1-86 cm, n=835); 14.1 kg at 100 cm SL, +28% against 11 kg. The Madeira SL set gives 16.8 kg (+52%), so it is not used"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes BDFH (H = a literature record, not a habitat))"
+      },
+      {
+        "title": "Animal Diversity Web: Oxydoras niger (as Pseudodoras niger)",
+        "url": "https://animaldiversity.org/accounts/Oxydoras_niger/",
+        "accessed": "2026-11-28",
+        "supports": "Saint-Paul et al. (2000): 63% of fish caught by day and 27% at night; found in black and white water, but not among the 50 commonest blackwater species"
+      }
+    ],
+    "designNotes": "Added on 28 November 2026 to fill the rare tier of the species quota. Placed on a sand beach (checklist code F; it is recorded in BDF). Bottom baits only. A field study caught 63% of them by day and 27% at night (Saint-Paul et al. 2000, via Animal Diversity Web), so day leans slightly higher."
+  },
+  {
+    "speciesId": "paratrygon-aiereba",
+    "locationId": "rio-channel",
+    "zones": [
+      "channel-edge"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.0,
+      "day": 0.4,
+      "dusk": 1.3,
+      "night": 1.6
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 1.4,
+      "cutfish": 1.2,
+      "shrimp": 1.0
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Paratrygon aiereba",
+        "url": "https://www.fishbase.se/summary/Paratrygon-aiereba.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum 80 cm disc width, largest published weight 14 kg (the text says large ones may reach 25 kg); common in shallow areas and near banks; eats insects, crustaceans and fish; females bear about two young; Amazon basin including the Negro. No length-weight data; a and b derived from 14 kg at 80 cm. IUCN Critically Endangered (A2bcde), assessed 12 September 2024; CITES Appendix III (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Wikipedia: Paratrygon aiereba",
+        "url": "https://en.wikipedia.org/wiki/Paratrygon_aiereba",
+        "accessed": "2026-11-28",
+        "supports": "adults in relatively deep water in main river channels, moving to shallower water to feed at night; mainly eats fish; a top predator; juveniles on sandy beaches and in creeks; males mature at about 60 cm disc width and females at about 72 cm, so the game's typical catch is 60 cm; Last et al. (2016) give up to 1.6 m and 110 kg, which the game does not adopt"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes AD (main channel, tributaries))"
+      }
+    ],
+    "designNotes": "Added on 28 November 2026. Placed at the channel edge (checklist code A): adults lie in the deep channel and come up into shallower water to feed at night (Wikipedia), so the night peak is sourced. Release-only."
   }
 ]

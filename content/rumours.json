@@ -579,5 +579,97 @@
       "zone:rio-lagoon/igarape"
     ],
     "source": "Dr Prado"
+  },
+  {
+    "id": "cuiu-mud",
+    "speciesId": "oxydoras-niger",
+    "dimension": "where",
+    "text": "The cuiu-cuiu go about in schools over the mud of the lagoon, sucking up whatever is soft. Put a worm on the bottom and wait.",
+    "fillsCells": [
+      "zone:rio-lagoon/open-lagoon",
+      "bait:worm"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "cuiu-beach",
+    "speciesId": "oxydoras-niger",
+    "dimension": "where",
+    "text": "When the beaches are out, a cuiu-cuiu will take a worm off the sand. Mind the plates on its sides; they cut like a saw.",
+    "fillsCells": [
+      "zone:rio-channel/beach",
+      "bait:worm"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "jundia-rocks",
+    "speciesId": "leiarius-marmoratus",
+    "dimension": "when",
+    "text": "The jandiá lies on the rocks all day. It comes out at first light, at dusk and through the night.",
+    "fillsCells": [
+      "zone:rapids/eddies",
+      "phase:dawn",
+      "phase:dusk",
+      "phase:night"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "jundia-live",
+    "speciesId": "leiarius-marmoratus",
+    "dimension": "bait",
+    "text": "A jandiá wants a fish, live or in a chunk, dropped into the slack water behind the boulders or down into the hole under the falls.",
+    "fillsCells": [
+      "bait:livefish",
+      "bait:cutfish",
+      "zone:rapids/plunge-pool"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "aramaca-night",
+    "speciesId": "paratrygon-aiereba",
+    "dimension": "when",
+    "text": "The aramaçá lies deep in the channel all day. At night it comes up the drop to hunt, round as a cart wheel.",
+    "fillsCells": [
+      "zone:rio-channel/channel-edge",
+      "phase:night"
+    ],
+    "source": "Seu Bené"
+  },
+  {
+    "id": "aramaca-release",
+    "speciesId": "paratrygon-aiereba",
+    "dimension": "bait",
+    "text": "If you hook an aramaçá on a live sardinha after dark, let it go. There are hardly any left.",
+    "fillsCells": [
+      "bait:livefish",
+      "phase:night"
+    ],
+    "source": "Joelma"
+  },
+  {
+    "id": "dourada-hole",
+    "speciesId": "brachyplatystoma-rousseauxii",
+    "dimension": "where",
+    "text": "Dourada belong to the muddy rivers, but now and then one comes up the Negro. Look in the deep hole under the falls, with a live fish on the bottom.",
+    "fillsCells": [
+      "zone:rapids/plunge-pool",
+      "bait:livefish"
+    ],
+    "source": "Seu Raimundo"
+  },
+  {
+    "id": "dourada-low",
+    "speciesId": "brachyplatystoma-rousseauxii",
+    "dimension": "when",
+    "text": "The big catfish crowd into the holes when the water is low, October to December. That is when a dourada turns up, if one ever does.",
+    "fillsCells": [
+      "month:9",
+      "month:10",
+      "month:11"
+    ],
+    "source": "Joelma"
   }
 ]

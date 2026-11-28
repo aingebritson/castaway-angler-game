@@ -2309,5 +2309,268 @@
         "supports": "Unini River (Negro basin, in Barcelos municipality): 352 turtles marked (162 males, 150 females, 40 immatures); mean carapace 251 mm in females and 210 mm in males (abstract)"
       }
     ]
+  },
+  {
+    "id": "oxydoras-niger",
+    "commonName": "Ripsaw catfish (cuiu-cuiu)",
+    "scientificName": "Oxydoras niger",
+    "kind": "fish",
+    "family": "Doradidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 55,
+      "max": 100,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.0683,
+      "b": 2.658
+    },
+    "recordNote": "FishBase lists a largest published weight of 11 kg.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 1.8,
+      "stamina": 35
+    },
+    "silhouette": "grouper",
+    "tint": {
+      "body": "#4a4a48",
+      "accent": "#9a968c"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 28,
+    "description": "A big, slow, armoured catfish, grey-black, with a row of thorny bony plates down each side like the teeth of a saw. Schools of them root through the mud of lakes and slow channels for insect larvae and anything else soft. Handle one carefully: the plates cut.",
+    "facts": [
+      "Adults live over mud in streams and lakes, in schools, and eat detritus, insect larvae and crustaceans.",
+      "Its sides carry a row of hooked bony plates, which give it its English name."
+    ],
+    "visualNotes": "Heavy thorny catfish; dark grey to black; one row of large hooked bony scutes along each flank; three pairs of short barbels around a downturned mouth; tall first dorsal spine.",
+    "sources": [
+      {
+        "title": "FishBase: Oxydoras niger",
+        "url": "https://www.fishbase.se/summary/Oxydoras-niger.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 100 cm SL, common length 59 cm SL, largest published weight 11 kg; adults over mud in streams and lakes, in schools, eating detritus, insect larvae and crustaceans; potamodromous; minor commercial and aquarium fish. IUCN LC, assessed 2 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Oxydoras niger",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=12108&GenusName=Oxydoras&SpeciesName=niger&fc=146",
+        "accessed": "2026-11-28",
+        "supports": "length-weight a and b: SL set, mixed sexes, Serra da Mesa Reservoir (11.1-86 cm, n=835); 14.1 kg at 100 cm SL, +28% against 11 kg. The Madeira SL set gives 16.8 kg (+52%), so it is not used"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes BDFH (H = a literature record, not a habitat))"
+      },
+      {
+        "title": "Animal Diversity Web: Oxydoras niger (as Pseudodoras niger)",
+        "url": "https://animaldiversity.org/accounts/Oxydoras_niger/",
+        "accessed": "2026-11-28",
+        "supports": "Saint-Paul et al. (2000): 63% of fish caught by day and 27% at night; found in black and white water, but not among the 50 commonest blackwater species"
+      }
+    ]
+  },
+  {
+    "id": "leiarius-marmoratus",
+    "commonName": "Sailfin pimeloid (jandiá)",
+    "scientificName": "Leiarius marmoratus",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 55,
+      "max": 100,
+      "measure": "TL"
+    },
+    "lengthWeight": {
+      "a": 0.00589,
+      "b": 3.1
+    },
+    "recordNote": "FishBase lists a largest published weight of 12 kg.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 2.0,
+      "stamina": 50
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#7a7060",
+      "accent": "#2c2820"
+    },
+    "conservation": {
+      "iucn": "LC",
+      "releaseOnly": false
+    },
+    "baseValue": 45,
+    "description": "A marbled catfish with a dorsal fin raised like a sail and long whiskers that trail behind it. It spends the day lying on rocks and sunken trunks in deep water, then comes out at first light, at dusk and through the night to hunt.",
+    "facts": [
+      "By day it lies over rocks and tree trunks; it is most active at sunrise, at sunset and at night.",
+      "Young fish gather in large schools."
+    ],
+    "visualNotes": "Long-bodied pimelodid catfish; tall sail-like dorsal fin; grey-brown body heavily marbled and spotted with dark brown; very long maxillary barbels; forked tail.",
+    "sources": [
+      {
+        "title": "FishBase: Leiarius marmoratus",
+        "url": "https://www.fishbase.se/summary/Leiarius-marmoratus.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 100 cm TL, largest published weight 12 kg; riverbeds, deep wells and lakes; lies over rocks and tree trunks by day, more active at sunrise, sunset and night; young form large schools; length-weight a and b (Bayesian TL estimate for its body shape; 9.3 kg at 100 cm, -22%). IUCN LC, assessed 29 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase: common names of Leiarius marmoratus",
+        "url": "https://www.fishbase.se/comnames/CommonNamesList.php?ID=13262&GenusName=Leiarius&SpeciesName=marmoratus&StockCode=13262",
+        "accessed": "2026-11-28",
+        "supports": "Portuguese names include jandiá, jundiá and mandi-bandeira; English sailfin pimeloid"
+      },
+      {
+        "title": "FishBase length-weight table: Leiarius marmoratus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=13262&GenusName=Leiarius&SpeciesName=marmoratus&fc=150",
+        "accessed": "2026-11-28",
+        "supports": "one row (a 0.0258, b 3.0, TL, n=5, Teles Pires): 25.8 kg at 100 cm, more than twice the 12 kg record, so the Bayesian estimate is used instead"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
+      }
+    ]
+  },
+  {
+    "id": "paratrygon-aiereba",
+    "commonName": "Discus ray (aramaçá)",
+    "scientificName": "Paratrygon aiereba",
+    "kind": "fish",
+    "family": "Potamotrygonidae",
+    "lengthCm": {
+      "min": 30,
+      "common": 60,
+      "max": 80,
+      "measure": "CW"
+    },
+    "lengthWeight": {
+      "a": 0.02734,
+      "b": 3.0
+    },
+    "recordNote": "FishBase lists a largest published weight of 14 kg, and says large ones may reach 25 kg.",
+    "fight": {
+      "archetype": "bulldog",
+      "strengthFactor": 2.0,
+      "stamina": 45
+    },
+    "silhouette": "ray",
+    "tint": {
+      "body": "#6a5a44",
+      "accent": "#c8b898"
+    },
+    "conservation": {
+      "iucn": "CR",
+      "releaseOnly": true,
+      "note": "Critically Endangered (IUCN 2024) and on CITES Appendix III. It must be released."
+    },
+    "baseValue": 0,
+    "description": "A great round ray, almost a perfect disc, with a short whip of a tail. By day it lies in the deep water of the main channel; at night it comes up the drop-off into the shallows to hunt fish. It is now one of the rarest fish in the river, and every one must go back.",
+    "facts": [
+      "Adults live in deep water in the main channels and move into shallower water to feed at night.",
+      "Females bear only about two young at a time.",
+      "It is Critically Endangered (IUCN, 2024)."
+    ],
+    "visualNotes": "Nearly circular flat disc; very short, thin tail; small eyes on top; brown upper side, pale below.",
+    "sources": [
+      {
+        "title": "FishBase: Paratrygon aiereba",
+        "url": "https://www.fishbase.se/summary/Paratrygon-aiereba.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum 80 cm disc width, largest published weight 14 kg (the text says large ones may reach 25 kg); common in shallow areas and near banks; eats insects, crustaceans and fish; females bear about two young; Amazon basin including the Negro. No length-weight data; a and b derived from 14 kg at 80 cm. IUCN Critically Endangered (A2bcde), assessed 12 September 2024; CITES Appendix III (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "Wikipedia: Paratrygon aiereba",
+        "url": "https://en.wikipedia.org/wiki/Paratrygon_aiereba",
+        "accessed": "2026-11-28",
+        "supports": "adults in relatively deep water in main river channels, moving to shallower water to feed at night; mainly eats fish; a top predator; juveniles on sandy beaches and in creeks; males mature at about 60 cm disc width and females at about 72 cm, so the game's typical catch is 60 cm; Last et al. (2016) give up to 1.6 m and 110 kg, which the game does not adopt"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes AD (main channel, tributaries))"
+      }
+    ]
+  },
+  {
+    "id": "brachyplatystoma-rousseauxii",
+    "commonName": "Dorado catfish (dourada)",
+    "scientificName": "Brachyplatystoma rousseauxii",
+    "kind": "fish",
+    "family": "Pimelodidae",
+    "lengthCm": {
+      "min": 60,
+      "common": 100,
+      "max": 147,
+      "measure": "SL"
+    },
+    "lengthWeight": {
+      "a": 0.01233,
+      "b": 3.032
+    },
+    "recordNote": "The heaviest verified by the IGFA weighed 38.8 kg (85 lb 9 oz), from the Amazon River in 1986.",
+    "fight": {
+      "archetype": "diver",
+      "strengthFactor": 2.4,
+      "stamina": 80
+    },
+    "silhouette": "shark",
+    "tint": {
+      "body": "#b8a878",
+      "accent": "#e8e0c8"
+    },
+    "conservation": {
+      "iucn": "VU",
+      "releaseOnly": false,
+      "note": "Vulnerable (IUCN 2023) and on CMS Appendix II, as a long-distance migrant."
+    },
+    "baseValue": 75,
+    "description": "The golden catfish of the Amazon: long, fork-tailed and gold along the body, with a pale platinum head and short whiskers. It is a fish of the great whitewater rivers, and the Negro checklist has a single collection record of it. When one does turn up, it is in the deepest holes.",
+    "facts": [
+      "It is a fish of the whitewater rivers; the Negro checklist records it only in lakes, tributaries and beaches.",
+      "It is Vulnerable (IUCN, 2023)."
+    ],
+    "visualNotes": "Long, streamlined pimelodid catfish; pale platinum-grey head, golden body; deeply forked tail; short maxillary barbels in adults (longer in juveniles); small eyes.",
+    "sources": [
+      {
+        "title": "FishBase: Brachyplatystoma rousseauxii",
+        "url": "https://www.fishbase.se/summary/Brachyplatystoma-rousseauxii.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 192 cm TL, maturity at about 73 cm; Amazon and Orinoco basins; gamefish. IUCN Vulnerable (A3cd), assessed 18 June 2023; CMS Appendix II (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brachyplatystoma rousseauxii",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=58421&GenusName=Brachyplatystoma&SpeciesName=rousseauxii",
+        "accessed": "2026-11-28",
+        "supports": "length-weight a and b: SL set from the Madeira River (8.7-147 cm, n=1,102); 46 kg at 147 cm SL, +19% against the 38.8 kg rod-and-reel record. At 160 cm SL it would be 60 kg (+54%), so the game stops at the sample's 147 cm"
+      },
+      {
+        "title": "Fishing World Records: Brachyplatystoma rousseauxii",
+        "url": "https://www.fishing-worldrecords.com/scientificname/Brachyplatystoma%20rousseauxii/show",
+        "accessed": "2026-11-28",
+        "supports": "rod and reel record 38.8 kg (85 lb 9 oz), 137 cm, Amazon River, Brazil, 1986, marked as verified by the IGFA"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes CDF (lake bottom, tributaries, beaches))"
+      },
+      {
+        "title": "Wikipedia: Brachyplatystoma rousseauxii",
+        "url": "https://en.wikipedia.org/wiki/Brachyplatystoma_rousseauxii",
+        "accessed": "2026-11-28",
+        "supports": "also called gilded or dorado catfish; platinum head and gold body; adults have short barbels; demersal in deeper flowing channels; primarily piscivorous"
+      }
+    ]
   }
 ]

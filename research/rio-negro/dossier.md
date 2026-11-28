@@ -1,6 +1,6 @@
 # Rio Negro research dossier (region 2, M3)
 
-**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. The occurrence pass (step 4) checked all 100 records on 25 November 2026 and moved the flood calendar to the Barcelos gauge; see "Occurrence pass" below. Step 7, the independent review, ran on 25 November 2026; see "Review" below. Every open decision is settled: peacock bass and tambaqui stay sellable, and Old Gold can be kept (open questions 2, 6 and 7).
+**Build status (M3, 25 November 2026):** the region is built (`docs/DECISIONS.md` entries 66 to 76). The locations are Porto Mariuá, the Town Waterfront, the Main River, the Island Lagoon, the Flooded Forest and the Upriver Rapids. The occurrence records are in `content/occurrences/` for those five spots, and the rumours come from Porto Mariuá's errands. Old Gold is in `content/legendaries.json` at `rio-lagoon` / `lagoon-mouth`. The occurrence pass (step 4) checked all 100 records on 25 November 2026 and moved the flood calendar to the Barcelos gauge; see "Occurrence pass" below. Step 7, the independent review, ran on 25 November 2026; see "Review" below. Peacock bass and tambaqui stay sellable, and Old Gold can be kept (open questions 2, 6 and 7). Step 8 ran on 28 November 2026. The rarity target is the species quota (open question 8, resolved), and four rare species were added to meet it.
 
 Started 25 November 2026. Steps 1 and 2 (region and long list) are done, the anchor at Barcelos is confirmed (Andy, 25 November 2026), and step 4's **species records** are written: `content/species/rio-negro.json`, 38 species, all validated. Step 5's **legendary is drafted** (Old Gold, a 95 cm speckled peacock bass) and waits on one decision (whether he is released). Occurrence records, rumours, the review and the simulator runs come next. Occurrences need the region's locations and zones, which are part of the M3 build.
 
@@ -400,19 +400,75 @@ Every weight at maximum passed the 30% rule, and every length-weight set matched
 
 The 16 standard runs move by under 2%. In targeted runs, the electric eel fights 2.8 s instead of 4.5 at the same coins per hour, and piraíba bites shift from night (30 → 20 per 4,000 casts) to day (18 → 31), with coins per hour within 3%.
 
+## Simulator and rarity targets (step 8, 28 November 2026)
+
+The spec asks for about 70% common, 22% uncommon, 7% rare and 1% epic of bites "in a full pool". A grid of runs measured the Rio Negro against that target: all five spots, all nine river rigs, four water levels (February, July, September and November) and the four phases, 800 casts each. The fish finder was on for the two big-game rigs.
+
+### Result
+
+| | Common | Uncommon | Rare | Epic |
+| --- | --- | --- | --- | --- |
+| Target | 70 | 22 | 7 | 1 |
+| Rio Negro, before | 69.4 | 28.1 | 2.5 | 0.0 |
+| Rio Negro, after the changes below | 69.7 | 27.6 | 2.6 | 0.1 |
+| Belize Cayes (same method, finder on) | 68.1 | 25.5 | 6.3 | 0.0 |
+
+By spot (after): Town Waterfront 85/14/1/0; Main River 67/32/2/0; Island Lagoon 70/28/2/0.1; Flooded Forest 71/26/3/0.2; Upriver Rapids 61/34/5/0. The rapids' eddies come closest (72/21/7/0).
+
+### Why the target cannot be met at the current weights
+
+The base weights are global: 100, 30, 8 and 1.5 (`balance.json`). With every modifier at 1.0, a pool's shares depend only on how many species of each tier it holds. The target needs roughly equal numbers in every tier. The spec's own species quota does not: a region built exactly to 12 common, 9 uncommon, 6 rare and 3 epic gives 79/18/3/0.3. To make that quota hit 70/22/7/1, the weights would have to be about 100/42/20/6. An in-memory test of those weights raised rare shares (Rio Negro to 6.5%, Cayes to 9.5%), but it also raised coins per hour by 5 to 20% at every Caribbean spot, and the playtest notes ask for the port economy to be left alone. The weights are unchanged. This was open question 8. Andy chose the species quota as the target (28 November 2026).
+
+The uncommon excess comes mostly from lure rigs: most of the region's common fish are bait-takers, so a lure pool is mostly uncommon. That is the castaway-island dossier's open question 4 (per location, per zone or per rig?).
+
+### Changes made (each justified on its own)
+
+| Record | Change | Why |
+| --- | --- | --- |
+| Tambaqui, Flooded Forest | rare → **epic** | In blackwater rivers like the Negro it is rare beyond the lowermost 150 km (Wikipedia); Barcelos is about 500 km above Manaus |
+| Speckled peacock bass, rapids' eddies | uncommon → **rare** | Most common where there is little current (Wikipedia) |
+| Redtail catfish, Main River deep channel | **new, rare**, needs the fish finder | Common in river channels at low water (Águas Amazônicas); copies its plunge-pool values |
+| Arapaima, Island Lagoon margin | **new, epic** | Pairs nest along lake margins as the water rises (Castello 2008); copies its open-lagoon values |
+
+Every rumour still matches the data, and Old Gold is unaffected. Coins per hour move by under 5% except at the rapids' eddies on a prop bait (−26%, fewer speckled peacock) and the deep channel at night with a finder (+19%, the new redtail).
+
+### New rare species (28 November 2026)
+
+Against the species quota the region was 4 rare species short. Four rare fish from the long list's cut species were added, each placed where Table S1 of the checklist records it (re-read from the journal's supplement):
+
+| Species | Codes | Placed | Size and weight | Notes |
+| --- | --- | --- | --- | --- |
+| **Ripsaw catfish (cuiu-cuiu)**, *Oxydoras niger* | BDFH | Main River beach; Island Lagoon open water | 100 cm SL; 14.1 kg (+29% against FishBase's 11 kg), Serra da Mesa SL set (n=835) | Schools over mud eating larvae and detritus (FishBase). Bottom baits. Caught more by day (63%) than night (27%) in one field study, so day leans slightly higher. |
+| **Sailfin pimeloid (jandiá)**, *Leiarius marmoratus* | D | Rapids eddies and plunge pool | 100 cm TL; 9.3 kg (−22% against 12 kg), Bayesian TL estimate; the only measured set gives twice the record | Lies on rocks and trunks by day, active at sunrise, sunset and night (FishBase): day 0.4, other phases 1.4. |
+| **Discus ray (aramaçá)**, *Paratrygon aiereba* | AD | Main River channel edge | 80 cm disc width; 14 kg, derived (no length-weight data) | Deep channel by day, shallows at night to feed (Wikipedia). **Critically Endangered (IUCN 2024): release-only.** |
+| **Dorado catfish (dourada)**, *Brachyplatystoma rousseauxii* | CDF | Rapids plunge pool, with the fish finder | 147 cm SL (the Madeira sample's largest); 46 kg (+18% against the 38.8 kg IGFA-verified record) | A whitewater migrant; the Negro checklist has a single collection record. Vulnerable (IUCN 2023), not legally protected, so sellable. Mild low-water peak like the other big catfish. |
+
+The lungfish (*Lepidosiren paradoxa*) was considered and dropped: FishBase has no weight for it and no source says anglers catch it.
+
+**Independent review (28 November 2026).** One agent, without this dossier, checked the four species, five occurrences and eight rumours, and read Table S1 itself. Every weight and habitat code passed. Corrected:
+- The ripsaw catfish's night lean ran against a field study (63% caught by day); it now leans slightly to day, and its beach rumour no longer says "at dusk".
+- The dourada has a platinum head, a gold body and, as an adult, short barbels (Wikipedia). It is now the "dorado catfish (dourada)", because "gilded catfish" is already the jaú's name.
+- The sailfin pimeloid is the jandiá: FishBase lists both jandiá and jundiá, and jundiá usually means *Rhamdia* elsewhere in Brazil. Its fish-bait preference is marked as assumed; no field diet study was found.
+- The discus ray's typical catch is 60 cm, its size at maturity, since the occurrence is built on adult behaviour.
+- Two rumour wordings ("a live fish on the bottom") and the notes on why the rapids stand for code D were tidied.
+
+Each has two rumours, given by Porto Mariuá's errands (Seu Bené, Seu Raimundo and Joelma), so the region test that every rare species has two obtainable rumours still holds. All 28 Rio Negro rumours match the data.
+
+**Quota after:** 14 common, 13 uncommon, 7 rare and 3 epic of 37 fish, against a scaled 15/11/7/4. Bite shares: the region is 69/27/4/0.1 (rapids 58/33/9/0). Coins per hour move by under 4%, except the big-game rig at night at the rapids with a finder (+31%, from the jandiá and dourada).
+
 ## Selection against the quotas (draft)
 
 Thirty-four fish is at the top of the 25–35 range. The rarity column is a first draft, to be set per spot when the occurrence records are written.
 
 | Quota | Target | Draft |
 | --- | --- | --- |
-| Rarity | ~12 common, 9 uncommon, 6 rare, 3 epic | **Common:** butterfly peacocks (2), oscar, severum, eartheater, trahira, black piranha, Manuel's piranha, jaraqui, banded leporinus, sardinha, pescada, apapá. **Uncommon:** speckled peacock bass, pike cichlid, dogfish, bicuda, freshwater barracuda, small payara, redhook pacu, matrinxã, both arowanas, caparari, barba-chata, stingray. **Rare:** payara, giant trahira, tambaqui, redtail catfish, jaú, electric eel. **Epic:** arapaima, piraíba, and a trophy speckled peacock bass where water and spot allow. |
+| Rarity | ~12 common, 9 uncommon, 6 rare, 3 epic (per 30 fish) | **Counted at each species' easiest tier in the region (28 November 2026): 14 common, 13 uncommon, 7 rare, 3 epic of 37 fish**, against a scaled 15/11/7/4. Rare at best: electric eel, redtail catfish, jaú, ripsaw catfish, jandiá, discus ray, dourada. Epic: arapaima, piraíba, tambaqui. |
 | Night-biased (4+) | 4+ | Trahira, electric eel, surubim, barba-chata, jaú, redtail, piraíba |
 | Dawn or dusk (4+) | 4+ | Peacock bass (first light), bicuda, payara, arowana |
 | Real month-to-month change (6+) | 6+ | Almost every species, through the flood pulse: lagoon predators peak at low water, forest fruit-eaters at high water. Jaraqui and matrinxã make spawning runs as the water changes (to source). |
 | Every method and zone has 3+ | – | To check once zones are fixed |
 | Gear spread | – | Panfish (cichlids, piranha, sardinha) up to giants (piraíba, arapaima) |
-| Release-only (2+) | 2+ | **Arapaima**: protected and managed under IBAMA rules in the Amazon. **Red-headed river turtle.** Peacock bass stay sellable by choice (open question 2). |
+| Release-only (2+) | 2+ | **Arapaima**: protected and managed under IBAMA rules in the Amazon. **Discus ray**: Critically Endangered. **Red-headed river turtle.** Peacock bass stay sellable by choice (open question 2). |
 
 ## Law and conservation (first pass)
 
@@ -433,6 +489,7 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 5. **Resolved: the speckled peacock bass in-game maximum is 90 cm** (Andy, 25 November 2026), below Old Gold's 95 cm. FishBase gives 99 cm; the record fish run 89 to 94 cm.
 6. **Resolved: Old Gold can be kept** (Andy, 25 November 2026). There is no release flag on legendaries; as with any sellable fish, the player chooses. Real record peacock bass are released, and Amazonas sport fishing is catch-and-release.
 7. **Resolved: tambaqui stays sellable** (Andy, 25 November 2026). A field guide fact discloses the national listing. The question was: should tambaqui be release-only? Brazil's national red list (Portaria GM/MMA 1.667, 27 April 2026) lists it as Vulnerable, and Portaria 1.666 restricts listed species, with the restrictions for newly listed ones due about 180 days after publication. Reports say the listing does not ban fishing at once and that a recovery plan is required, and a bill in Congress (PDL 767/2026) would cancel the listing. I did not read the annex or 1.666 itself. The record keeps it sellable and states the national status.
+8. **Resolved: the target is the species quota** (Andy, 28 November 2026). About 12 common, 9 uncommon, 6 rare and 3 epic per 30 fish, each species counted at its easiest tier anywhere in the region. The simulator's bite shares are a guide, and `balance.json` is unchanged. The region was 4 rare species short (14/13/3/3 of 33); four rare species were added (see "New rare species"), and it is now 14/13/7/3 of 37 against a scaled 15/11/7/4.
 
 ## Still to do
 
@@ -440,4 +497,5 @@ Thirty-four fish is at the top of the 25–35 range. The rarity column is a firs
 - **Step 4, occurrences:** done (occurrence pass). 69 of 100 records are still low confidence; the gaps are listed under "No source found".
 - **Other creatures quota:** the spec asks for 5–8. Blackwater supports few. The region has a prawn and the cardinal tetra (a fish, by net); a second prawn or crab needs a Barcelos source.
 - **Step 5:** done. Old Gold is built (DECISIONS 74) and can be kept.
+- **Step 8:** done; see "Simulator and rarity targets". The region meets the species quota after the four new rare species.
 - **Hydrology:** done; the Barcelos gauge from Chao (2001). The SGB station table is still unread.

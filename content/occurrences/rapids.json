@@ -285,7 +285,7 @@
     "zones": [
       "eddies"
     ],
-    "rarity": "uncommon",
+    "rarity": "rare",
     "phaseMod": {
       "dawn": 1.2,
       "day": 1.4,
@@ -351,9 +351,15 @@
         "url": "https://midcurrent.com/2026/01/07/amazon-lodges-report-bonanza-conditions-as-dropping-water-triggers-peacock-bass-feeding-frenzy/",
         "accessed": "2026-11-25",
         "supports": "the best fishing comes as the water drops and predators concentrate (search excerpt)"
+      },
+      {
+        "title": "Wikipedia: Cichla temensis",
+        "url": "https://en.wikipedia.org/wiki/Cichla_temensis",
+        "accessed": "2026-11-28",
+        "supports": "most common in areas with minimal current, such as lagoons and oxbow lakes"
       }
     ],
-    "designNotes": "Placed in a tributary with rapids (the spot stands for checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so."
+    "designNotes": "Placed in a tributary with rapids (the spot stands for checklist codes D and G); the checklist records it in habitats BDF. Month curve: more often met as the water drops and fish crowd into lagoons, beaches and rapids, fewer at high water when they spread into the forest. A game reading of the flood pulse, not a measured catch rate. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: peak moved from dawn to the middle of the day: feeding is heightened 9 am to 3 pm (IGFA). Kept sellable by design (Andy, 25 November 2026), although sport fishing in Amazonas is catch-and-release by law; the field guide says so. Step 8: rare, not uncommon. It is most common where there is little current; the eddies are the only slack water at the rapids."
   },
   {
     "speciesId": "rhaphiodon-vulpinus",
@@ -541,7 +547,7 @@
         "title": "FishBase: Hydrolycus scomberoides",
         "url": "https://www.fishbase.se/summary/Hydrolycus-scomberoides.html",
         "accessed": "2026-11-25",
-        "supports": "maximum length 117 cm TL and largest published weight 17.8 kg, listed under this name"
+        "supports": "maximum length 117 cm TL and largest published weight 17.8 kg, listed under this name; the same page's biology text gives a maximum of 40 cm TL and an Amazon-only range"
       },
       {
         "title": "FishBase length-weight table: Hydrolycus armatus",
@@ -1012,7 +1018,7 @@
         "title": "FishBase: Hydrolycus scomberoides",
         "url": "https://www.fishbase.se/summary/Hydrolycus-scomberoides.html",
         "accessed": "2026-11-25",
-        "supports": "maximum length 117 cm TL and largest published weight 17.8 kg, listed under this name"
+        "supports": "maximum length 117 cm TL and largest published weight 17.8 kg, listed under this name; the same page's biology text gives a maximum of 40 cm TL and an Amazon-only range"
       },
       {
         "title": "FishBase length-weight table: Hydrolycus armatus",
@@ -1164,13 +1170,13 @@
         "title": "FishBase: Zungaro zungaro",
         "url": "https://www.fishbase.se/summary/Zungaro-zungaro.html",
         "accessed": "2026-11-25",
-        "supports": "taxonomy, maximum length 140 cm SL, night hunting, fish of 130 cm and 50 kg not rare, maturity at about 10 kg, deep tributary habitat. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
+        "supports": "taxonomy, maximum length 140 cm SL, night hunting, fish of 130 cm and 50 kg not rare, maturity at about 10 kg, main channels of large tributaries with muddy bottoms. IUCN LC, assessed 21 December 2020 (as shown on FishBase, Red List version 2025-2)"
       },
       {
         "title": "FishBase length-weight table: Zungaro zungaro",
         "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=47756&GenusName=Zungaro&SpeciesName=zungaro&fc=150",
         "accessed": "2026-11-25",
-        "supports": "length-weight a and b: SL set for females from Serra da Mesa Reservoir (27.7-122 cm, n=55); 52.6 kg at 140 cm SL, +7% against 49 kg"
+        "supports": "length-weight a and b: SL set for females from Serra da Mesa Reservoir (27.7-122 cm, n=55); 52.6 kg at 140 cm SL, +2% against the 51.48 kg IGFA record"
       },
       {
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
@@ -1258,5 +1264,154 @@
       }
     ],
     "designNotes": "Occurrence pass: seen by day, seldom at night (mostly diurnal); no seasonal change."
+  },
+  {
+    "speciesId": "leiarius-marmoratus",
+    "locationId": "rapids",
+    "zones": [
+      "eddies",
+      "plunge-pool"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.4,
+      "day": 0.4,
+      "dusk": 1.4,
+      "night": 1.4
+    },
+    "monthMod": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 1.4,
+      "cutfish": 1.3,
+      "worm": 0.8
+    },
+    "confidence": "medium",
+    "sources": [
+      {
+        "title": "FishBase: Leiarius marmoratus",
+        "url": "https://www.fishbase.se/summary/Leiarius-marmoratus.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 100 cm TL, largest published weight 12 kg; riverbeds, deep wells and lakes; lies over rocks and tree trunks by day, more active at sunrise, sunset and night; young form large schools; length-weight a and b (Bayesian TL estimate for its body shape; 9.3 kg at 100 cm, -22%). IUCN LC, assessed 29 December 2020 (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Leiarius marmoratus",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=13262&GenusName=Leiarius&SpeciesName=marmoratus&fc=150",
+        "accessed": "2026-11-28",
+        "supports": "one row (a 0.0258, b 3.0, TL, n=5, Teles Pires): 25.8 kg at 100 cm, more than twice the 12 kg record, so the Bayesian estimate is used instead"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes D (tributaries))"
+      },
+      {
+        "title": "FishBase: common names of Leiarius marmoratus",
+        "url": "https://www.fishbase.se/comnames/CommonNamesList.php?ID=13262&GenusName=Leiarius&SpeciesName=marmoratus&StockCode=13262",
+        "accessed": "2026-11-28",
+        "supports": "Portuguese names include jandiá, jundiá and mandi-bandeira; English sailfin pimeloid"
+      }
+    ],
+    "designNotes": "Added on 28 November 2026. Placed at the rapids (checklist code D, tributaries; the spot stands for codes D and G). FishBase: it lies over rocks and trunks by day and is more active at sunrise, sunset and night, so day is low and the other three phases are raised. No field diet study was found; the fish-bait preference is assumed from its predator trophic level and gut anatomy."
+  },
+  {
+    "speciesId": "brachyplatystoma-rousseauxii",
+    "locationId": "rapids",
+    "zones": [
+      "plunge-pool"
+    ],
+    "rarity": "rare",
+    "phaseMod": {
+      "dawn": 1.0,
+      "day": 0.6,
+      "dusk": 1.2,
+      "night": 1.3
+    },
+    "monthMod": [
+      1.1,
+      0.9,
+      0.8,
+      0.7,
+      0.7,
+      0.6,
+      0.7,
+      0.9,
+      1.2,
+      1.4,
+      1.4,
+      1.3
+    ],
+    "methods": [
+      "bait"
+    ],
+    "affinity": {
+      "livefish": 1.6,
+      "cutfish": 1.3
+    },
+    "minGear": {
+      "requiresFinder": true
+    },
+    "confidence": "low",
+    "sources": [
+      {
+        "title": "FishBase: Brachyplatystoma rousseauxii",
+        "url": "https://www.fishbase.se/summary/Brachyplatystoma-rousseauxii.html",
+        "accessed": "2026-11-28",
+        "supports": "taxonomy, maximum length 192 cm TL, maturity at about 73 cm; Amazon and Orinoco basins; gamefish. IUCN Vulnerable (A3cd), assessed 18 June 2023; CMS Appendix II (as shown on FishBase, Red List version 2025-2)"
+      },
+      {
+        "title": "FishBase length-weight table: Brachyplatystoma rousseauxii",
+        "url": "https://www.fishbase.se/popdyn/LWRelationshipList.php?ID=58421&GenusName=Brachyplatystoma&SpeciesName=rousseauxii",
+        "accessed": "2026-11-28",
+        "supports": "length-weight a and b: SL set from the Madeira River (8.7-147 cm, n=1,102); 46 kg at 147 cm SL, +19% against the 38.8 kg rod-and-reel record. At 160 cm SL it would be 60 kg (+54%), so the game stops at the sample's 147 cm"
+      },
+      {
+        "title": "Fishing World Records: Brachyplatystoma rousseauxii",
+        "url": "https://www.fishing-worldrecords.com/scientificname/Brachyplatystoma%20rousseauxii/show",
+        "accessed": "2026-11-28",
+        "supports": "rod and reel record 38.8 kg (85 lb 9 oz), 137 cm, Amazon River, Brazil, 1986, marked as verified by the IGFA"
+      },
+      {
+        "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
+        "url": "https://zookeys.pensoft.net/article/32055/",
+        "accessed": "2026-11-28",
+        "supports": "present in the Rio Negro basin (habitat codes CDF (lake bottom, tributaries, beaches))"
+      },
+      {
+        "title": "Diet seasonality and resource partitioning by large catfishes in the Madeira River, Acta Amazonica",
+        "url": "https://www.scielo.br/j/aa/a/9ydHfsvsKvzg9DwpdqX6vPD/?lang=en",
+        "accessed": "2026-11-28",
+        "supports": "at low water the large catfishes retreat to the river channel"
+      },
+      {
+        "title": "Chao (2001): the fishery, diversity and conservation of ornamental fishes in the Rio Negro basin, a review of Project Piaba",
+        "url": "https://projectpiaba.org/wp-content/uploads/2024/08/Chao-Universidade-do-Amazonas-2001-The-Fishery-Diversity-Conservation-of-Ornamental-Fishes-of-the-Rio-Negro.pdf",
+        "accessed": "2026-11-28",
+        "supports": "water level at Barcelos: high June to August, lowest October to December (the game's calendar)"
+      },
+      {
+        "title": "Wikipedia: Brachyplatystoma rousseauxii",
+        "url": "https://en.wikipedia.org/wiki/Brachyplatystoma_rousseauxii",
+        "accessed": "2026-11-28",
+        "supports": "also called gilded or dorado catfish; platinum head and gold body; adults have short barbels; demersal in deeper flowing channels; primarily piscivorous"
+      }
+    ],
+    "designNotes": "Added on 28 November 2026. Placed in the deep hole under the falls (checklist code D; the rapids spot stands for D, not a recorded G). Rare because the Negro checklist has a single collection record (INPA 8351). Needs the fish finder, like the other giants there. Mild low-water peak, as for the other large catfish. No source gives its time of day; the lean to dusk and night is assumed."
   }
 ]

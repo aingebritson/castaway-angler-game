@@ -656,7 +656,7 @@
       "forest-edge",
       "deep-forest"
     ],
-    "rarity": "rare",
+    "rarity": "epic",
     "phaseMod": {
       "dawn": 1,
       "day": 1,
@@ -691,7 +691,7 @@
         "title": "FishBase: Colossoma macropomum",
         "url": "https://www.fishbase.se/summary/Colossoma-macropomum.html",
         "accessed": "2026-11-25",
-        "supports": "taxonomy, maximum length 108 cm TL, common length 70 cm TL, largest published weight 40 kg, flooded-forest fruit feeding, blackwater nursery habitat. IUCN NT, assessed 17 December 2020 (as shown on FishBase)"
+        "supports": "taxonomy, maximum length 108 cm TL, common length 70 cm TL, largest published weight 40 kg, flooded-forest fruit feeding. FishBase also says the young grow up in blackwater floodplains; Goulding and Carvalho (1982) say whitewater, which is used. IUCN NT, assessed 17 December 2020 (as shown on FishBase)"
       },
       {
         "title": "FishBase length-weight table: Colossoma macropomum",
@@ -722,9 +722,15 @@
         "url": "https://doaj.org/article/180784c9199b4ac4abfac9a25588a693",
         "accessed": "2026-11-25",
         "supports": "fruits and seeds dominate while the river rises and floods, with fruiting of igapó trees; zooplankton in the dry season (search excerpt)"
+      },
+      {
+        "title": "Wikipedia: Tambaqui",
+        "url": "https://en.wikipedia.org/wiki/Tambaqui",
+        "accessed": "2026-11-28",
+        "supports": "in nutrient-poor blackwater rivers such as the Rio Negro it generally occurs only in the lower 300 km or so and is rare beyond the lowermost 150 km (search excerpt)"
       }
     ],
-    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats D. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: fruit-eating in the igapó through the flood confirmed. Kept sellable by design (Andy, 25 November 2026), although Brazil listed tambaqui as Vulnerable in April 2026; the field guide says so."
+    "designNotes": "Placed in flooded forest (fish of lakes and tributaries, codes B and D, enter it at high water); the checklist records it in habitats D. Month curve: a fruit-eater that follows the flood into the forest, so it peaks at high water. A game reading of the flood pulse. Occurrence pass: month curve moved one month later to the Barcelos gauge calendar (Chao 2001). Occurrence pass: fruit-eating in the igapó through the flood confirmed. Kept sellable by design (Andy, 25 November 2026), although Brazil listed tambaqui as Vulnerable in April 2026; the field guide says so. Step 8: epic, not rare. Barcelos is about 500 km up the Negro, and tambaqui are rare beyond its lowermost 150 km."
   },
   {
     "speciesId": "electrophorus-varii",
@@ -767,7 +773,7 @@
         "title": "FishBase: Electrophorus varii",
         "url": "https://www.fishbase.se/summary/Electrophorus-varii.html",
         "accessed": "2026-11-25",
-        "supports": "taxonomy, maximum length 149 cm TL, lowland Amazon range, air-breathing, discharge voltages 151-572 V; length-weight a and b (Bayesian TL estimate for this body shape; 23 kg at 149 cm; no record weight). IUCN Not Evaluated"
+        "supports": "taxonomy, maximum length 149 cm TL, lowland Amazon range, air-breathing, discharge voltages 151-572 V; no record weight. Its Bayesian body-shape estimate (a 0.00389, b 3.12) gives 23 kg at 149 cm, more than the heaviest eels known, so it is not used. IUCN Not Evaluated"
       },
       {
         "title": "Beltrão, Zuanon and Ferreira (2019): checklist of the ichthyofauna of the Rio Negro basin, ZooKeys 881, Table S1",
